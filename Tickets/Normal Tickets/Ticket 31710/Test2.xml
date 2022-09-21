@@ -1,0 +1,68 @@
+<policy>
+    <accessToken>d8fd62f4-9840-4c85-830e-b9225c246861</accessToken>
+    <status>NEW</status>
+    <reference>302-1019037-A</reference>
+    <premiumpaidcurrency>USD</premiumpaidcurrency>
+    <premiumpaid>399.95</premiumpaid>
+    <warrantycostpricecurrency>USD</warrantycostpricecurrency>
+    <warrantycostprice>42.50</warrantycostprice>
+    <salesman>RGO</salesman>
+    <storecode>302</storecode>
+    <retailerbrand>26856</retailerbrand>
+    <consumer>
+        <reference>1228265</reference>
+        <firstname>STACI</firstname>
+        <lastname>DONALDSON</lastname>
+        <addresses>
+            <address>
+                <type>HOME_ADDRESS</type>
+                <line1>417 EAST LAKE HILL DRIVE</line1>
+                <line2>NA </line2>
+                <city>Unknown</city>
+                <state>Unknown</state>
+                <zip> </zip>
+            </address>
+        </addresses>
+        <contacts>
+            <contact>
+                <type>EMAIL</type>
+                <detail>HRHERITAGEREALTY@AOL.COM</detail>
+            </contact>
+            <contact>
+                <type>PHONE</type>
+                <detail>--</detail>
+            </contact>
+        </contacts>
+    </consumer>
+    <policyitems>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-04-23</dateordered>
+            <datedelivered>2022-06-04</datedelivered>
+            <manufacturer>L.F.T.E. (DALIAN)</manufacturer>
+            <itemtype>PROVANCE ALUMINUM CHAISE</itemtype>
+            <modeldescrption>PROVANCE ALUMINUM CHAISE</modeldescrption>
+            <modelname>40532</modelname>
+            <modelnumber>40532</modelnumber>
+            <characteristics>PROVANCE ALUMINUM CHAISE</characteristics>
+            <material>Cast Aluminum</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>1639.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-04-23</dateordered>
+            <datedelivered>2022-06-04</datedelivered>
+            <itemtype>PROVANCE CHAISE CUSHION</itemtype>
+            <modeldescrption>PROVANCE CHAISE CUSHION</modeldescrption>
+            <modelname>8214280W4280</modelname>
+            <modelnumber>8214280W4280</modelnumber>
+            <characteristics>PROVANCE CHAISE CUSHION</characteristics>
+            <material>Cushions</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>315.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+    </policyitems>
+</policy>

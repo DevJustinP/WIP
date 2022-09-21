@@ -12,7 +12,7 @@ go
  select * from [SugarCrm].[tvf_BuildInvoiceLineDataset]()
  =============================================
 */
-create function [SugarCRM].[svf_InvoiceLineJob_Json](
+alter function [SugarCRM].[svf_InvoiceLineJob_Json](
 	@ServerName as Varchar(50),
 	@Offset as int
 )
@@ -22,29 +22,27 @@ begin
 	declare @ExportType as varchar(50) = 'MGCIV_InvoiceLineItems'
 	return(
 			Select
-				@ExportType					as [module],
-				'Import'					as [job],
-				DB_NAME()					as [context.source.database],
-				@ServerName					as [context.source.server],
-				[Export].[TrnYear]			as [context.field.lookup_invoice_trnyear],
-				[Export].[TrnMonth]			as [context.field.lookup_invoice_trnmonth],
-				[Export].[Invoice]			as [context.field.lookup_invoice],
-				[Export].[DetailLine]		as [context.field.detailline],
-				[Export].[InvoiceDate]		as [context.field.invoicedate],
-				[Export].[Branch]			as [context.field.branch],
-				[Export].[StockCode]		as [context.field.description],
-				[Export].[ProductClass]		as [context.field.productclass],
-				[Export].[QtyInvoiced]		as [context.field.qtyinvoiced],
-				[Export].[NetSalesValue]	as [context.field.netsalesvalue],
-				[Export].[TaxValue]			as [context.field.taxvalue],
-				[Export].[CostValue]		as [context.field.costvalue],
-				[Export].[DiscValue]		as [context.field.discvalue],
-				[Export].[SalesGlIntReqd]	as [context.field.salesglintreqd],
-				[Export].[SalesOrder]		as [context.field.lookup_sales_order],
-				[Export].[SalesOrderLine]	as [context.field.lookup_sales_order_line_number],
-				[Export].[CustomerPoNumber]	as [context.field.customerponumber],
-				[Export].[PimDepartment]	as [context.field.pimdepartment_c],
-				[Export].[PimCategory]		as [context.field.pimcategory_c]
+				@ExportType								as [job_module],
+				'Import'								as [job],
+				DB_NAME()								as [context.source.database],
+				@ServerName								as [context.source.server],
+				[Export].[Invoice]						as [context.fields.lookup_invoice_number],
+				[Export].[DetailLine]					as [context.fields.detailline],
+				cast([Export].[InvoiceDate]	as date)	as [context.fields.invoicedate],
+				[Export].[Branch]						as [context.fields.branch],
+				[Export].[StockCode]					as [context.fields.name],
+				[Export].[ProductClass]					as [context.fields.productclass],
+				[Export].[QtyInvoiced]					as [context.fields.qtyinvoiced],
+				[Export].[NetSalesValue]				as [context.fields.netsalesvalue],
+				[Export].[TaxValue]						as [context.fields.taxvalue],
+				[Export].[CostValue]					as [context.fields.costvalue],
+				[Export].[DiscValue]					as [context.fields.discvalue],
+				[Export].[SalesGlIntReqd]				as [context.fields.salesglintreqd],
+				[Export].[SalesOrder]					as [context.fields.lookup_sales_order_number],
+				[Export].[SalesOrderLine]				as [context.fields.lookup_sales_order_line_number],
+				[Export].[CustomerPoNumber]				as [context.fields.customerponumber],
+				[Export].[PimDepartment]				as [context.fields.pimdepartment_c],
+				[Export].[PimCategory]					as [context.fields.pimcategory_c]
 			from [SugarCrm].[tvf_BuildInvoiceLineDataset]() as [Export]
 			order by [TrnYear],[TrnMonth],[Invoice],[InvoiceDate],[DetailLine]
 			offset @Offset rows

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Reports">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=sqlreporting;Initial Catalog=Reports</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <rd:DataSourceID>ea4a57cc-90da-43b8-9c82-62df48896854</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="App_rsp_BoxLabelsByStockCode_Lot">
+      <Query>
+        <DataSourceName>Reports</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Parameters">
+            <Value>=Parameters!Parameters.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Reports.App.rsp_BoxLabelsByStockCode_Lot</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="StockCode">
+          <DataField>StockCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LongDescription">
+          <DataField>LongDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LabelPosition">
+          <DataField>LabelPosition</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LabelNumber">
+          <DataField>LabelNumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LotNumber">
+          <DataField>LotNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UserName">
+          <DataField>UserName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ComputerName">
+          <DataField>ComputerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrinterName">
+          <DataField>PrinterName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ApplicationVersion">
+          <DataField>ApplicationVersion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DateTimeGenerated">
+          <DataField>DateTimeGenerated</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="QtyPerBox">
+          <DataField>QtyPerBox</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>3in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>1in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle1">
+                          <ReportItems>
+                            <Textbox Name="BarcodeText">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!StockCode.Value</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontFamily>Droid Sans Mono</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <TextDecoration>None</TextDecoration>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.125in</Top>
+                              <Left>0.60417in</Left>
+                              <Height>0.18888in</Height>
+                              <Width>2.26944in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Description">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!Description.Value</Value>
+                                      <Style>
+                                        <FontFamily>Droid Sans Mono</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Description</rd:DefaultName>
+                              <Top>0.37083in</Top>
+                              <Left>0.59167in</Left>
+                              <Height>0.1875in</Height>
+                              <Width>2.3125in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox3">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Qty Per Box:</Value>
+                                      <Style>
+                                        <FontFamily>Droid Sans Mono</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox3</rd:DefaultName>
+                              <Top>0.69722in</Top>
+                              <Left>0.04167in</Left>
+                              <Height>0.24027in</Height>
+                              <Width>1.16111in</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox4">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!QtyPerBox.Value</Value>
+                                      <Style>
+                                        <FontFamily>Droid Sans Mono</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Format>0;(0)</Format>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox3</rd:DefaultName>
+                              <Top>0.69722in</Top>
+                              <Left>1.35556in</Left>
+                              <Height>0.24027in</Height>
+                              <Width>0.92361in</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <VerticalAlign>Middle</VerticalAlign>
+                              </Style>
+                            </Textbox>
+                            <CustomReportItem Name="NBarcode2">
+                              <Type>NBarcode</Type>
+                              <CustomData>
+                                <DataSetName>App_rsp_BoxLabelsByStockCode_Lot</DataSetName>
+                                <DataColumnHierarchy>
+                                  <DataMembers>
+                                    <DataMember>
+                                      <CustomProperties>
+                                        <CustomProperty>
+                                          <Name>DGT</Name>
+                                          <Value>Root Column</Value>
+                                        </CustomProperty>
+                                      </CustomProperties>
+                                    </DataMember>
+                                  </DataMembers>
+                                </DataColumnHierarchy>
+                                <DataRowHierarchy>
+                                  <DataMembers>
+                                    <DataMember>
+                                      <CustomProperties>
+                                        <CustomProperty>
+                                          <Name>DGT</Name>
+                                          <Value>Root Column</Value>
+                                        </CustomProperty>
+                                      </CustomProperties>
+                                    </DataMember>
+                                  </DataMembers>
+                                </DataRowHierarchy>
+                                <DataRows>
+                                  <DataRow>
+                                    <DataCell>
+                                      <DataValue>
+                                        <Name>PH</Name>
+                                        <Value>PH</Value>
+                                      </DataValue>
+                                    </DataCell>
+                                  </DataRow>
+                                </DataRows>
+                              </CustomData>
+                              <Top>0.0875in</Top>
+                              <Left>0.05833in</Left>
+                              <Height>0.5in</Height>
+                              <Width>0.5in</Width>
+                              <ZIndex>4</ZIndex>
+                              <CustomProperties>
+                                <CustomProperty>
+                                  <Name>BarcodeAreas.Count</Name>
+                                  <Value>1</Value>
+                                </CustomProperty>
+                                <CustomProperty>
+                                  <Name>BarcodeAreas0.MatrixBarcodeSymbology</Name>
+                                  <Value>DataMatrix</Value>
+                                </CustomProperty>
+                                <CustomProperty>
+                                  <Name>BarcodeAreas0.Text</Name>
+                                  <Value>=Fields!StockCode.Value</Value>
+                                </CustomProperty>
+                                <CustomProperty>
+                                  <Name>LicenseKey</Name>
+                                  <Value>4c910f76-a01b-9bc9-0827-00d63c080109</Value>
+                                </CustomProperty>
+                              </CustomProperties>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </CustomReportItem>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!LabelPosition.Value</Value>
+                    </SortExpression>
+                    <SortExpression>
+                      <Value>=Fields!LabelNumber.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>App_rsp_BoxLabelsByStockCode_Lot</DataSetName>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <Height>1in</Height>
+            <Width>3in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1in</Height>
+        <Style />
+      </Body>
+      <Width>3in</Width>
+      <Page>
+        <PageHeight>1in</PageHeight>
+        <PageWidth>3in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Parameters">
+      <DataType>String</DataType>
+      <Prompt>Parameters</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Parameters</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>2f40522c-039e-472a-924a-0d8f80b68717</rd:ReportID>
+</Report>

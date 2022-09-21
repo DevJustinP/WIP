@@ -1,4 +1,5 @@
-
+use Reports
+go
 
 
 /*
@@ -11,6 +12,19 @@ Modification:  Added in logic to exclude cancelled POs and limited by MN-Warehou
 Report Schema: Cush = Cushion Plant
 Report Name:   Fabric Demand with Running Total
 
+declare @FabricNumberList			as varchar(max) = '1005,10006,10007,10008,10009,1001,1002,1003,1004,101,102,103,104'
+	   ,@EndingJobDeliveryDate		as date			= '2525-12-31'
+	   ,@ExcludeNewCushion			as bit			= 'FALSE'
+	   ,@UserId						as varchar(50)	= 'SUMMERCLASSICS\LibbyM'
+	   ,@Blocked					AS VARCHAR(30)	= 'N'
+	   ,@Discontinued				AS VARCHAR(30)	= 'N'
+execute [Cush].[rsp_FabricDemand_wTotal]
+ @FabricNumberList     
+,@EndingJobDeliveryDate
+,@ExcludeNewCushion    
+,@UserId               
+,@Blocked              
+,@Discontinued         
 =============================================
 */
 
@@ -24,13 +38,7 @@ alter PROCEDURE [Cush].[rsp_FabricDemand_wTotal]
 
 AS
 BEGIN
---declare
-  -- @FabricNumberList   varchar(max)   = '10008,10009,1001,101'
-  --,@EndingJobDeliveryDate date = '2525-12-31'
-  --,@ExcludeNewCushion  bit   = 'FALSE'
-  --,@UserId        varchar(50)        = 'SUMMERCLASSICS\LibbyM'
-  --  ,@Blocked               AS VARCHAR(30) = 'N'
-  --,@Discontinued          AS VARCHAR(30) = 'N'
+
   SET NOCOUNT ON;
 
 --SET @Blocked = (Case when @Blocked = 'N' then 'N' else 'Y,N' end)

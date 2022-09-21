@@ -41,9 +41,3 @@ select
 from [PRODUCT_INFO].[dbo].Procedures_JKP
 where [DataBase] = 'Transport'
 
-
-select
-	*
-from [PRODUCT_INFO].[dbo].[Procedures_JKP]
-where [Notes] <> ''
-	

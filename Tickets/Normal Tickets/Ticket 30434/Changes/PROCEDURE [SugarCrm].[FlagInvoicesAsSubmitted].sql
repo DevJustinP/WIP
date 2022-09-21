@@ -14,7 +14,7 @@ GO
  =============================================
 */
 
-CREATE   PROCEDURE [SugarCrm].[FlagInvoicesAsSubmitted]
+create   PROCEDURE [SugarCrm].[FlagInvoicesAsSubmitted]
 AS
 BEGIN
 
@@ -92,8 +92,8 @@ BEGIN
 		FROM [SugarCrm].[tvf_BuildInvoiceDataset]()
 
 		update [SugarCrm].[ArTrnSummary_Ref]
-			set InvoiceSubmitted = @False
-		where InvoiceSubmitted = @True
+			set InvoiceSubmitted = @True 
+		where InvoiceSubmitted = @False
 		
 		commit transaction;
 

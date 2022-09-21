@@ -26,4 +26,4 @@ execute [Global].[Settings].[usp_Send_Email] @Mail_id, @Mail_SubCode, @Mail_Type
 
 
 select * from [msdb].[dbo].[sysmail_allitems]
-where mailitem_id in (158145, 158146)
+where mailitem_id = 158146
