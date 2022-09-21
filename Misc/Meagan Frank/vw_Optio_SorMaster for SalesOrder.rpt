@@ -1,0 +1,26 @@
+﻿SalesOrder           InvoiceNumber        BillOfLadingNumber   CarrierId CADate                         Description                                        ProNumber
+-------------------- -------------------- -------------------- --------- ------------------------------ -------------------------------------------------- --------------------
+200-1092441          200-1141262          7900618474           AVRT      01-13-2022                     AVERITT EXPRESS                                    0201211226
+200-1092441          200-1142316          7900621835           SEFL      01-13-2022                     SOUTHEASTERN FREIGHT LINES                         8364664
+
+(2 rows affected)
+
+SalesOrder           InvoiceNumber        BillOfLadingNumber   CarrierId CADate                         Description                                        ProNumber
+-------------------- -------------------- -------------------- --------- ------------------------------ -------------------------------------------------- --------------------
+210-1017368          210-1030109          196654               TL        02-01-2022                     TRUCKLOAD                                          (none)
+210-1017368          210-1032546          196654               TL        02-01-2022                     TRUCKLOAD                                          (none)
+210-1017368          210-1032682          196654               TL        02-01-2022                     TRUCKLOAD                                          (none)
+
+(3 rows affected)
+
+SalesOrder           InvoiceNumber        BillOfLadingNumber   CarrierId CADate                         Description                                        ProNumber
+-------------------- -------------------- -------------------- --------- ------------------------------ -------------------------------------------------- --------------------
+301-1010600          301-1019026          (none)               (none)    NULL                           (none)                                             (none)
+301-1010600          301-1020827          (none)               (none)    NULL                           (none)                                             (none)
+301-1010600          301-1020828          (none)               (none)    NULL                           (none)                                             (none)
+301-1010600          301-1021531          (none)               (none)    NULL                           (none)                                             (none)
+
+(4 rows affected)
+
+
+Completion time: 2022-05-26T13:14:26.8894825-05:00

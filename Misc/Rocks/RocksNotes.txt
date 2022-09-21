@@ -1,0 +1,12 @@
+SugarCRM Open Order Project
+- Sugar Process Documentation
+New eCat Fields order import changes and export to CSV functionality
+- Documentation with ticket 29677
+* Also, I still do not have any kind of direction on the CSV functionality that this rock is needing.
+SmartyStreets address verification changes to eCat import and export
+- Still researching address fields throughout the system.
+- Will a technical document just be what we touch to propagate the changes?
+Syspro Upgrade Support
+- No documentation
+Talend Learning
+- Combined with Sugar

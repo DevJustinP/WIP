@@ -1,0 +1,62 @@
+﻿<SalesOrders>
+	<Orders>
+		<OrderHeader>
+			<CustomerPoNumber>ATLW22- 81624-01172022-1-S-B</CustomerPoNumber>
+			<OrderActionType>C</OrderActionType>
+			<NewCustomerPoNumber/>
+			<Supplier/>
+			<Customer>1245445</Customer>
+			<OrderDate>2022-01-17</OrderDate>
+			<CustomerName>THE HAPPY HOME- MAXWELL</CustomerName>
+			<Email>INFO@HAPPYHOMEFURNISHINGS.COM</Email>
+			<Warehouse/>
+			<SpecialInstrs/>
+			<SalesOrder>220-1145583</SalesOrder>
+			<OrderType>S </OrderType>
+			<RequestedShipDate>2022-03-01</RequestedShipDate>
+			<eSignature/>
+		</OrderHeader>
+		<OrderDetails>
+			<MiscChargeLine>
+				<CustomerPoLine>39</CustomerPoLine>
+				<LineActionType>A</LineActionType>
+				<MiscChargeValue>380.29</MiscChargeValue>
+				<MiscChargeCost>0.00</MiscChargeCost>
+				<MiscQuantity>0.000000</MiscQuantity>
+				<MiscTaxCode>N</MiscTaxCode>
+				<MiscFstCode/>
+				<MiscDescription>Raw Material/International Freight Surcharge</MiscDescription>
+				<MiscChargeCode>SURCHG</MiscChargeCode>
+				<MiscTariffCode/>
+			</MiscChargeLine>
+			<MiscChargeLine>
+				<CustomerPoLine>39</CustomerPoLine>
+				<LineActionType>C</LineActionType>
+				<MiscChargeValue>1572.71</MiscChargeValue>
+				<MiscChargeCost>0.00</MiscChargeCost>
+				<MiscQuantity>0.000000</MiscQuantity>
+				<MiscTaxCode>N</MiscTaxCode>
+				<MiscFstCode/>
+				<MiscDescription>Raw Material/International Freight Surcharge</MiscDescription>
+				<MiscChargeCode>SURCHG</MiscChargeCode>
+				<MiscTariffCode/>
+			</MiscChargeLine>
+			<FreightLine>
+				<CustomerPoLine>40</CustomerPoLine>
+				<LineActionType>A</LineActionType>
+				<FreightValue>444.94</FreightValue>
+				<FreightCost>0.00</FreightCost>
+				<FreightTaxCode>N</FreightTaxCode>
+				<FreightFstCode/>
+			</FreightLine>
+			<FreightLine>
+				<CustomerPoLine>40</CustomerPoLine>
+				<LineActionType>C</LineActionType>
+				<FreightValue>1840.06</FreightValue>
+				<FreightCost>0.00</FreightCost>
+				<FreightTaxCode>N</FreightTaxCode>
+				<FreightFstCode/>
+			</FreightLine>
+		</OrderDetails>
+	</Orders>
+</SalesOrders>

@@ -1,0 +1,442 @@
+﻿<MercuryGate>
+  <Header>
+    <SenderID>Summer Classics</SenderID>
+    <ReceiverID>MTLE</ReceiverID>
+    <Action>UpdateOrAdd</Action>
+    <DocTypeID>MasterBillOfLading</DocTypeID>
+    <DocCount>1</DocCount>
+    <Date type="created">05/03/2022  14:46</Date>
+  </Header>
+  <MasterBillOfLading>
+    <Owner>SUMMERCLASSICSINC_199</Owner>
+    <AssignedTo />
+    <ReferenceNumbers>
+      <ReferenceNumber type="Customer Acct Number" isPrimary="false">SUMMERCLASSICSINC_199</ReferenceNumber>
+      <ReferenceNumber type="EDI Created" isPrimary="false">05/03/2022  14:46</ReferenceNumber>
+      <ReferenceNumber type="Unique ID" isPrimary="true">251909</ReferenceNumber>
+    </ReferenceNumbers>
+    <Payment>
+      <Method>Prepaid</Method>
+      <BillTo>
+        <Address>
+          <ReferenceNumbers />
+          <LoctionCode />
+        </Address>
+      </BillTo>
+    </Payment>
+    <Comments>
+      <Comment type="SpecialInstructions" />
+    </Comments>
+    <Plan>
+      <Events count="2">
+        <Event type="Pickup" sequenceNum="1">
+          <CarrierActionCode />
+          <Dates>
+            <Date type="earliest">05/04/2022  09:00</Date>
+            <Date type="latest">05/04/2022  16:00</Date>
+          </Dates>
+          <Address>
+            <ReferenceNumbers />
+            <LocationCode />
+            <Name>Consider It’s Delivered</Name>
+            <AddrLine1>20191 Windrow Drive</AddrLine1>
+            <AddrLine2>suite B</AddrLine2>
+            <City>Lake Forest</City>
+            <StateProvince>CA</StateProvince>
+            <PostalCode>92630</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>Mark Anderson</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">949-387-4414</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">Mark@consideritsdelivered.com</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+          <Weight />
+          <Shipments>
+            <ReferenceNumbers>
+              <ReferenceNumber type="ShipId" isPrimary="true">251909_1</ReferenceNumber>
+            </ReferenceNumbers>
+          </Shipments>
+        </Event>
+        <Event type="Drop" sequenceNum="2">
+          <CarrierActionCode />
+          <Dates>
+            <Date type="earliest">05/05/2022  08:00</Date>
+            <Date type="latest">05/05/2022  17:00</Date>
+          </Dates>
+          <Address>
+            <ReferenceNumbers />
+            <LocationCode />
+            <Name>OLYMPIC CLUB</Name>
+            <AddrLine1>599 SKYLINE BLVD.</AddrLine1>
+            <AddrLine2 />
+            <City>SAN FRANCISCO</City>
+            <StateProvince>CA</StateProvince>
+            <PostalCode>94132</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>OLYMPIC CLUB</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">916-496-6370</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">CATHY.DWYIM@GMAIL.COM</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+          <Weight />
+          <Shipments>
+            <ReferenceNumbers>
+              <ReferenceNumber type="ShipId" isPrimary="true">251909_2</ReferenceNumber>
+            </ReferenceNumbers>
+          </Shipments>
+        </Event>
+      </Events>
+    </Plan>
+    <Shipments>
+      <Shipment type="Normal">
+        <ReferenceNumbers>
+          <ReferenceNumber type="Carrier Type" isPrimary="false">CC</ReferenceNumber>
+          <ReferenceNumber type="Cost of Goods Sold" isPrimary="false">14520.00</ReferenceNumber>
+          <ReferenceNumber type="EDI Created" isPrimary="false">05/03/2022  14:46</ReferenceNumber>
+          <ReferenceNumber type="Final Flag" isPrimary="false">N</ReferenceNumber>
+          <ReferenceNumber type="GL Code" isPrimary="false">62650-200-000</ReferenceNumber>
+          <ReferenceNumber type="ShipId" isPrimary="true">251909_2</ReferenceNumber>
+          <ReferenceNumber type="Shipment Type" isPrimary="false">OB</ReferenceNumber>
+          <ReferenceNumber type="Total Cube" isPrimary="false">230</ReferenceNumber>
+          <ReferenceNumber type="Disposition Number" isPrimary="false">230</ReferenceNumber>
+          <ReferenceNumber type="Unique ID" isPrimary="false">251909</ReferenceNumber>
+          <ReferenceNumber type="Sales Order" isPrimary="false">200-1089581</ReferenceNumber>
+          <ReferenceNumber type="Sales ID" isPrimary="false">KF</ReferenceNumber>
+          <ReferenceNumber type="PO Number" isPrimary="false">1014</ReferenceNumber>
+        </ReferenceNumbers>
+        <Comments>
+          <Comment type="SpecialInstructions" />
+          <Comment type="SpecialInstructions">916-496-6370</Comment>
+        </Comments>
+        <Notes />
+        <Status>Scheduled</Status>
+        <AssignedTo />
+        <Owner>SUMMERCLASSICSINC_199</Owner>
+        <Dates>
+          <Pickup>
+            <Date type="earliest">05/04/2022  09:00</Date>
+            <Date type="latest">05/04/2022  16:00</Date>
+          </Pickup>
+          <Drop>
+            <Date type="earliest">05/05/2022  08:00</Date>
+            <Date type="latest">05/05/2022  17:00</Date>
+          </Drop>
+        </Dates>
+        <Shipper>
+          <Address>
+            <ReferenceNumbers>
+              <ReferenceNumber type="Stop Number">1</ReferenceNumber>
+            </ReferenceNumbers>
+            <LocationCode />
+            <Name>Consider It’s Delivered</Name>
+            <AddrLine1>20191 Windrow Drive</AddrLine1>
+            <AddrLine2>suite B</AddrLine2>
+            <City>Lake Forest</City>
+            <StateProvince>CA</StateProvince>
+            <PostalCode>92630</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>Mark Anderson</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">949-387-4414</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">Mark@consideritsdelivered.com</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+        </Shipper>
+        <Consignee>
+          <Address>
+            <ReferenceNumbers>
+              <ReferenceNumber type="Stop Number">2</ReferenceNumber>
+            </ReferenceNumbers>
+            <LocationCode />
+            <Name>OLYMPIC CLUB</Name>
+            <AddrLine1>599 SKYLINE BLVD.</AddrLine1>
+            <AddrLine2 />
+            <City>SAN FRANCISCO</City>
+            <StateProvince>CA</StateProvince>
+            <PostalCode>94132</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>OLYMPIC CLUB</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">916-496-6370</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">CATHY.DWYIM@GMAIL.COM</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+        </Consignee>
+        <Packages>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>TABLES; density of 4 but &lt; 6</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">41</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">6</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>175</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">41</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">6</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>TABLES; density of 4 but &lt; 6</Description>
+                  <FreightClass>175</FreightClass>
+                  <NmfcCode>82100.4</NmfcCode>
+                  <Cube>54</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>CHAIRS, STOOLS; density of 2 but &lt; 4</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">1440</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">24</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>250</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">1440</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">24</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>CHAIRS, STOOLS; density of 2 but &lt; 4</Description>
+                  <FreightClass>250</FreightClass>
+                  <NmfcCode>80580.3</NmfcCode>
+                  <Cube>106</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>PADS, CUSHIONS, PILLOWS; density of 1 but &lt; 2</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">60</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">24</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>300</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">60</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">24</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>PADS, CUSHIONS, PILLOWS; density of 1 but &lt; 2</Description>
+                  <FreightClass>300</FreightClass>
+                  <NmfcCode>149265.2</NmfcCode>
+                  <Cube>30</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>UMBRELLAS; with sectional poles or standards</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">111</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">6</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>60</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">111</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">6</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>UMBRELLAS; with sectional poles or standards</Description>
+                  <FreightClass>60</FreightClass>
+                  <NmfcCode>188080.2</NmfcCode>
+                  <Cube>12</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>BASES, HOLDERS, STANDS; aluminum/plastic, hollow</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">684</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">6</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>60</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">684</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">6</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>BASES, HOLDERS, STANDS; aluminum/plastic, hollow</Description>
+                  <FreightClass>60</FreightClass>
+                  <NmfcCode>22067.2</NmfcCode>
+                  <Cube>6</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>TOPS; metal</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">351</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">6</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>85</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">351</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">6</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>TOPS; metal</Description>
+                  <FreightClass>85</FreightClass>
+                  <NmfcCode>83620.4</NmfcCode>
+                  <Cube>18</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>PADS, CUSHIONS, PILLOWS; density of 10 but &lt; 12</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">48</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">6</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>92.5</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">48</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">6</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>PADS, CUSHIONS, PILLOWS; density of 10 but &lt; 12</Description>
+                  <FreightClass>92.5</FreightClass>
+                  <NmfcCode>149265.7</NmfcCode>
+                  <Cube>5</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+        </Packages>
+        <Payment>
+          <Method>Prepaid</Method>
+          <BillTo>
+            <Address>
+              <ReferenceNumbers />
+              <LocationCode />
+            </Address>
+          </BillTo>
+        </Payment>
+      </Shipment>
+    </Shipments>
+  </MasterBillOfLading>
+</MercuryGate>

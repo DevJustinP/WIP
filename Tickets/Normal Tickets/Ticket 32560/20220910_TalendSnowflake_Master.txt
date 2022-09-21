@@ -1,0 +1,142 @@
+1662800413658	2022-09-10 09:00:13.658	INFO	Task 62f6cd9f9aa3810f36ce6821:7.7/6dbabb66-8600-4306-be84-7efd4a9613ac was started; MDC: {accountID=ae14d411-d46a-4261-87eb-91858449197c, remoteEngineId=ca960220-c016-4cb0-8d0c-065cbdf3f89c, flowExecutionId=6dbabb66-8600-4306-be84-7efd4a9613ac, flowVersion=7.7, flowID=62f6cd9f9aa3810f36ce6821, userId=jarguedas, workspaceId=612e9f68f15490334e9ede35, executionDestination=REMOTE_ENGINE}; containerVersion: 2.12.0_tipaas-base/release%2FR2022-04-04_239_tipaas-remote-engine-build/master
+
+1662800413663	2022-09-10 09:00:13.663	INFO	
+  "remote_engine_id": "ca960220-c016-4cb0-8d0c-065cbdf3f89c",
+  "remote_engine_name": "GWC_Talend_Server",
+  "task_execution_id": "6dbabb66-8600-4306-be84-7efd4a9613ac",
+  "workspace_name": "Personal",
+  "workspace_id": "612e9f68f15490334e9ede35",
+  "environment_name": "default",
+  "environment_id": "612e9f68f15490334e9ede32",
+  "environment_version": "1.3",
+  "trigger_timestamp": 1662800413307,
+  "artifact_name": "TalendSnowflake_Master",
+  "artifact_version": "0.1.6.20220709033535",
+  "task_id": "62f6cd9f9aa3810f36ce6821",
+  "task_name": "TalendSnowflake_Master",
+  "task_version": "7.7",
+  "run_type": "SCHEDULED",
+  "compatibility_version": "7.3.1",
+  "count_of_attempts": 0,
+  "parallel_execution_allowed": false
+
+1662800413913	2022-09-10 09:00:13.913	INFO	job is starting - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 6dbabb66-8600-4306-be84-7efd4a9613ac 2022-09-10T04:00:13.913-05:00[America/Chicago]
+1662800413915	2022-09-10 09:00:13.915	INFO	Job State added for ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 6dbabb66-8600-4306-be84-7efd4a9613ac 2022-09-10T04:00:13.913-05:00[America/Chicago]
+1662800413918	2022-09-10 09:00:13.918	INFO	starting job d9f9aa3810f36ce682177 for task execution 6dbabb66-8600-4306-be84-7efd4a9613ac
+1662800414419	2022-09-10 09:00:14.419	INFO	job d9f9aa3810f36ce682177 for task execution 6dbabb66-8600-4306-be84-7efd4a9613ac was requested to start under execution 20220910040013_XHSYf
+1662800415062	2022-09-10 09:00:15.062	INFO	TalendJob: 'TalendSnowflake_Master' - Start.
+1662800415434	2022-09-10 09:00:15.434	INFO	tRunJob_1 - The child job 'sc_tmc_project_talend_jobs.invwarehouse_0_1.INVWAREHOUSE' starts on the version '0.1' with the context 'Default'.
+1662800415434	2022-09-10 09:00:15.434	INFO	TalendJob: 'INVWAREHOUSE' - Start.
+1662801194060	2022-09-10 09:13:14.060	INFO	tRunJob_1 - The child job 'sc_tmc_project_talend_jobs.invwarehouse_0_1.INVWAREHOUSE' is done.
+1662801194071	2022-09-10 09:13:14.071	INFO	tRunJob_2 - The child job 'sc_tmc_project_talend_jobs.invmaster_0_1.INVMASTER' starts on the version '0.1' with the context 'Default'.
+1662801194071	2022-09-10 09:13:14.071	INFO	TalendJob: 'INVMASTER' - Start.
+1662801216799	2022-09-10 09:13:36.799	INFO	tRunJob_2 - The child job 'sc_tmc_project_talend_jobs.invmaster_0_1.INVMASTER' is done.
+1662801216807	2022-09-10 09:13:36.807	INFO	tRunJob_3 - The child job 'sc_tmc_project_talend_jobs.admform_0_1.ADMFORM' starts on the version '0.1' with the context 'Default'.
+1662801216807	2022-09-10 09:13:36.807	INFO	TalendJob: 'ADMFORM' - Start.
+1662801219334	2022-09-10 09:13:39.334	INFO	tRunJob_3 - The child job 'sc_tmc_project_talend_jobs.admform_0_1.ADMFORM' is done.
+1662801219343	2022-09-10 09:13:39.343	INFO	tRunJob_4 - The child job 'sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2' starts on the version '0.1' with the context 'Default'.
+1662801219343	2022-09-10 09:13:39.343	INFO	TalendJob: 'BACKLOG_BRANCH_V2' - Start.
+1662838043915	2022-09-10 19:27:23.915	FATAL	tDBOutput_1 net.snowflake.client.loader.Loader$ConnectionError: File could not be uploaded to remote stage after retrying 6 times: C:\Windows\System32\config\systemprofile\AppData\Local\Temp\snowflake\stage\BACKLOG_BRANCH\INSERT\20220910_041339_654_EFP8R8_5\stream_20220910_041339_6540.gz
+java.io.IOException: net.snowflake.client.loader.Loader$ConnectionError: File could not be uploaded to remote stage after retrying 6 times: C:\Windows\System32\config\systemprofile\AppData\Local\Temp\snowflake\stage\BACKLOG_BRANCH\INSERT\20220910_041339_654_EFP8R8_5\stream_20220910_041339_6540.gz
+	at org.talend.components.snowflake.runtime.SnowflakeWriter.close(SnowflakeWriter.java:502)
+	at org.talend.components.snowflake.runtime.SnowflakeWriter.close(SnowflakeWriter.java:59)
+	at sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2.tDBInput_1Process(BACKLOG_BRANCH_V2.java:5271)
+	at sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2.runJobInTOS(BACKLOG_BRANCH_V2.java:6722)
+	at sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2.runJob(BACKLOG_BRANCH_V2.java:6493)
+	at sc_tmc_project_talend_jobs.talendsnowflake_master_0_1.TalendSnowflake_Master.tRunJob_4Process(TalendSnowflake_Master.java:1903)
+	at sc_tmc_project_talend_jobs.talendsnowflake_master_0_1.TalendSnowflake_Master.tRunJob_3Process(TalendSnowflake_Master.java:1679)
+	at sc_tmc_project_talend_jobs.talendsnowflake_master_0_1.TalendSnowflake_Master.tRunJob_2Process(TalendSnowflake_Master.java:1371)
+	at sc_tmc_project_talend_jobs.talendsnowflake_master_0_1.TalendSnowflake_Master.tRunJob_1Process(TalendSnowflake_Master.java:1063)
+	at sc_tmc_project_talend_jobs.talendsnowflake_master_0_1.TalendSnowflake_Master.runJobInTOS(TalendSnowflake_Master.java:12743)
+	at sc_tmc_project_talend_jobs.talendsnowflake_master_0_1.TalendSnowflake_Master.main(TalendSnowflake_Master.java:12512)
+Caused by: net.snowflake.client.loader.Loader$ConnectionError: File could not be uploaded to remote stage after retrying 6 times: C:\Windows\System32\config\systemprofile\AppData\Local\Temp\snowflake\stage\BACKLOG_BRANCH\INSERT\20220910_041339_654_EFP8R8_5\stream_20220910_041339_6540.gz
+	at net.snowflake.client.loader.FileUploader.run(FileUploader.java:56)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: net.snowflake.client.jdbc.SnowflakeReauthenticationRequest: Authentication token has expired.  The user must authenticate again.
+	at net.snowflake.client.jdbc.SnowflakeUtil.checkErrorAndThrowExceptionSub(SnowflakeUtil.java:121)
+	at net.snowflake.client.jdbc.SnowflakeUtil.checkErrorAndThrowExceptionIncludingReauth(SnowflakeUtil.java:60)
+	at net.snowflake.client.core.SessionUtil.tokenRequest(SessionUtil.java:855)
+	at net.snowflake.client.core.SessionUtil.renewSession(SessionUtil.java:775)
+	at net.snowflake.client.core.SFSession.renewSession(SFSession.java:575)
+	at net.snowflake.client.core.SFStatement.executeHelper(SFStatement.java:488)
+	at net.snowflake.client.jdbc.SnowflakeFileTransferAgent.parseCommandInGS(SnowflakeFileTransferAgent.java:1180)
+	at net.snowflake.client.jdbc.SnowflakeFileTransferAgent.parseCommand(SnowflakeFileTransferAgent.java:843)
+	at net.snowflake.client.jdbc.SnowflakeFileTransferAgent.<init>(SnowflakeFileTransferAgent.java:819)
+	at net.snowflake.client.core.SFStatement.executeFileTransfer(SFStatement.java:748)
+	at net.snowflake.client.core.SFStatement.executeQuery(SFStatement.java:127)
+	at net.snowflake.client.core.SFStatement.execute(SFStatement.java:737)
+	at net.snowflake.client.core.SFStatement.execute(SFStatement.java:635)
+	at net.snowflake.client.jdbc.SnowflakeStatementV1.executeInternal(SnowflakeStatementV1.java:287)
+	at net.snowflake.client.jdbc.SnowflakeStatementV1.execute(SnowflakeStatementV1.java:337)
+	at net.snowflake.client.loader.FileUploader.run(FileUploader.java:118)
+	... 1 more
+
+1662838043958	2022-09-10 19:27:23.958	INFO	tRunJob_4 - The child job 'sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2' is done.
+1662838043972	2022-09-10 19:27:23.972	INFO	tRunJob_5 - The child job 'sc_tmc_project_talend_jobs.invoicedetail_0_1.INVOICEDETAIL' starts on the version '0.1' with the context 'Default'.
+1662838043972	2022-09-10 19:27:23.972	INFO	TalendJob: 'INVOICEDETAIL' - Start.
+1662838049733	2022-09-10 19:27:29.733	INFO	tRunJob_5 - The child job 'sc_tmc_project_talend_jobs.invoicedetail_0_1.INVOICEDETAIL' is done.
+1662838049746	2022-09-10 19:27:29.746	INFO	tRunJob_6 - The child job 'sc_tmc_project_talend_jobs.invoicesummary_0_1.INVOICESUMMARY' starts on the version '0.1' with the context 'Default'.
+1662838049746	2022-09-10 19:27:29.746	INFO	TalendJob: 'INVOICESUMMARY' - Start.
+1662838054903	2022-09-10 19:27:34.903	INFO	tRunJob_6 - The child job 'sc_tmc_project_talend_jobs.invoicesummary_0_1.INVOICESUMMARY' is done.
+1662838054916	2022-09-10 19:27:34.916	INFO	tRunJob_7 - The child job 'sc_tmc_project_talend_jobs.lookup_0_1.LOOKUP' starts on the version '0.1' with the context 'Default'.
+1662838054916	2022-09-10 19:27:34.916	INFO	TalendJob: 'LOOKUP' - Start.
+1662838057135	2022-09-10 19:27:37.135	INFO	tRunJob_7 - The child job 'sc_tmc_project_talend_jobs.lookup_0_1.LOOKUP' is done.
+1662838057147	2022-09-10 19:27:37.147	INFO	tRunJob_8 - The child job 'sc_tmc_project_talend_jobs.dim_area_0_1.DIM_AREA' starts on the version '0.1' with the context 'Default'.
+1662838057147	2022-09-10 19:27:37.147	INFO	TalendJob: 'DIM_AREA' - Start.
+1662838057151	2022-09-10 19:27:37.151	INFO	tWarn_1 - Message: DIM_AREA: Started. Code: 42
+1662838057736	2022-09-10 19:27:37.736	INFO	tWarn_2 - Message: DIM_AREA: SQLREPORTING Query succeeded, rows 12. Code: 42
+1662838059422	2022-09-10 19:27:39.422	INFO	tWarn_3 - Message: DIM_AREA: SNOWFLAKE refresh succeeded, rows 12. Code: 42
+1662838059571	2022-09-10 19:27:39.571	INFO	tWarn_4 - Message: DIM_AREA: job done - 2022-09-10 14:27:39. Code: 42
+1662838059571	2022-09-10 19:27:39.571	INFO	tRunJob_8 - The child job 'sc_tmc_project_talend_jobs.dim_area_0_1.DIM_AREA' is done.
+1662838059582	2022-09-10 19:27:39.582	INFO	tRunJob_9 - The child job 'sc_tmc_project_talend_jobs.salsalesperson_plus_0_1.SALSALESPERSON_PLUS' starts on the version '0.1' with the context 'Default'.
+1662838059583	2022-09-10 19:27:39.583	INFO	TalendJob: 'SALSALESPERSON_PLUS' - Start.
+1662838062262	2022-09-10 19:27:42.262	INFO	tRunJob_9 - The child job 'sc_tmc_project_talend_jobs.salsalesperson_plus_0_1.SALSALESPERSON_PLUS' is done.
+1662838062274	2022-09-10 19:27:42.274	INFO	tRunJob_10 - The child job 'sc_tmc_project_talend_jobs.dim_branch_0_1.DIM_BRANCH' starts on the version '0.1' with the context 'Default'.
+1662838062274	2022-09-10 19:27:42.274	INFO	TalendJob: 'DIM_BRANCH' - Start.
+1662838064607	2022-09-10 19:27:44.607	INFO	tRunJob_10 - The child job 'sc_tmc_project_talend_jobs.dim_branch_0_1.DIM_BRANCH' is done.
+1662838064621	2022-09-10 19:27:44.621	INFO	tRunJob_11 - The child job 'sc_tmc_project_talend_jobs.soradditions_0_1.SORADDITIONS' starts on the version '0.1' with the context 'Default'.
+1662838064621	2022-09-10 19:27:44.621	INFO	TalendJob: 'SORADDITIONS' - Start.
+1662838110453	2022-09-10 19:28:30.453	INFO	tRunJob_11 - The child job 'sc_tmc_project_talend_jobs.soradditions_0_1.SORADDITIONS' is done.
+1662838110467	2022-09-10 19:28:30.467	INFO	tRunJob_12 - The child job 'sc_tmc_project_talend_jobs.sorcancelled_0_1.SORCANCELLED' starts on the version '0.1' with the context 'Default'.
+1662838110467	2022-09-10 19:28:30.467	INFO	TalendJob: 'SORCANCELLED' - Start.
+1662838126093	2022-09-10 19:28:46.093	INFO	tRunJob_12 - The child job 'sc_tmc_project_talend_jobs.sorcancelled_0_1.SORCANCELLED' is done.
+1662838126128	2022-09-10 19:28:46.128	INFO	tRunJob_13 - The child job 'sc_tmc_project_talend_jobs.sordetail_0_1.SORDETAIL' starts on the version '0.1' with the context 'Default'.
+1662838126129	2022-09-10 19:28:46.129	INFO	TalendJob: 'SORDETAIL' - Start.
+1662838692189	2022-09-10 19:38:12.189	INFO	tRunJob_13 - The child job 'sc_tmc_project_talend_jobs.sordetail_0_1.SORDETAIL' is done.
+1662838692215	2022-09-10 19:38:12.215	INFO	tRunJob_14 - The child job 'sc_tmc_project_talend_jobs.sormaster_0_1.SORMASTER' starts on the version '0.1' with the context 'Default'.
+1662838692215	2022-09-10 19:38:12.215	INFO	TalendJob: 'SORMASTER' - Start.
+1662838779878	2022-09-10 19:39:39.878	INFO	tRunJob_14 - The child job 'sc_tmc_project_talend_jobs.sormaster_0_1.SORMASTER' is done.
+1662838779889	2022-09-10 19:39:39.889	INFO	tRunJob_15 - The child job 'sc_tmc_project_talend_jobs.entitygoal_0_1.ENTITYGOAL' starts on the version '0.1' with the context 'Default'.
+1662838779889	2022-09-10 19:39:39.889	INFO	TalendJob: 'ENTITYGOAL' - Start.
+1662838783137	2022-09-10 19:39:43.137	INFO	tRunJob_15 - The child job 'sc_tmc_project_talend_jobs.entitygoal_0_1.ENTITYGOAL' is done.
+1662838783148	2022-09-10 19:39:43.148	INFO	tRunJob_16 - The child job 'sc_tmc_project_talend_jobs.productcategory_0_1.PRODUCTCATEGORY' starts on the version '0.1' with the context 'Default'.
+1662838783149	2022-09-10 19:39:43.149	INFO	TalendJob: 'PRODUCTCATEGORY' - Start.
+1662838785760	2022-09-10 19:39:45.760	INFO	tRunJob_16 - The child job 'sc_tmc_project_talend_jobs.productcategory_0_1.PRODUCTCATEGORY' is done.
+1662838785790	2022-09-10 19:39:45.790	INFO	tRunJob_17 - The child job 'sc_tmc_project_talend_jobs.supplier_0_1.SUPPLIER' starts on the version '0.1' with the context 'Default'.
+1662838785790	2022-09-10 19:39:45.790	INFO	TalendJob: 'SUPPLIER' - Start.
+1662838789127	2022-09-10 19:39:49.127	INFO	tRunJob_17 - The child job 'sc_tmc_project_talend_jobs.supplier_0_1.SUPPLIER' is done.
+1662838789137	2022-09-10 19:39:49.137	INFO	tRunJob_18 - The child job 'sc_tmc_project_talend_jobs.lctcalc_0_1.LCTCALC' starts on the version '0.1' with the context 'Default'.
+1662838789137	2022-09-10 19:39:49.137	INFO	TalendJob: 'LCTCALC' - Start.
+1662838791864	2022-09-10 19:39:51.864	INFO	tRunJob_18 - The child job 'sc_tmc_project_talend_jobs.lctcalc_0_1.LCTCALC' is done.
+1662838791877	2022-09-10 19:39:51.877	INFO	tRunJob_19 - The child job 'sc_tmc_project_talend_jobs.lctconstant_0_1.LCTCONSTANT' starts on the version '0.1' with the context 'Default'.
+1662838791878	2022-09-10 19:39:51.878	INFO	TalendJob: 'LCTCONSTANT' - Start.
+1662838795067	2022-09-10 19:39:55.067	INFO	tRunJob_19 - The child job 'sc_tmc_project_talend_jobs.lctconstant_0_1.LCTCONSTANT' is done.
+1662838795078	2022-09-10 19:39:55.078	INFO	tRunJob_20 - The child job 'sc_tmc_project_talend_jobs.lctcost_0_1.LCTCOST' starts on the version '0.1' with the context 'Default'.
+1662838795078	2022-09-10 19:39:55.078	INFO	TalendJob: 'LCTCOST' - Start.
+1662838799432	2022-09-10 19:39:59.432	INFO	tRunJob_20 - The child job 'sc_tmc_project_talend_jobs.lctcost_0_1.LCTCOST' is done.
+1662838799445	2022-09-10 19:39:59.445	INFO	tRunJob_21 - The child job 'sc_tmc_project_talend_jobs.route_0_1.ROUTE' starts on the version '0.1' with the context 'Default'.
+1662838799445	2022-09-10 19:39:59.445	INFO	TalendJob: 'ROUTE' - Start.
+1662838801759	2022-09-10 19:40:01.759	INFO	tRunJob_21 - The child job 'sc_tmc_project_talend_jobs.route_0_1.ROUTE' is done.
+1662838801775	2022-09-10 19:40:01.775	INFO	tRunJob_22 - The child job 'sc_tmc_project_talend_jobs.podetail_0_1.PODETAIL' starts on the version '0.1' with the context 'Default'.
+1662838801775	2022-09-10 19:40:01.775	INFO	TalendJob: 'PODETAIL' - Start.
+1662838807973	2022-09-10 19:40:07.973	INFO	tRunJob_22 - The child job 'sc_tmc_project_talend_jobs.podetail_0_1.PODETAIL' is done.
+1662838807985	2022-09-10 19:40:07.985	INFO	tRunJob_23 - The child job 'sc_tmc_project_talend_jobs.invmultbin_0_1.INVMULTBIN' starts on the version '0.1' with the context 'Default'.
+1662838807985	2022-09-10 19:40:07.985	INFO	TalendJob: 'INVMULTBIN' - Start.
+1662838879007	2022-09-10 19:41:19.007	INFO	tRunJob_23 - The child job 'sc_tmc_project_talend_jobs.invmultbin_0_1.INVMULTBIN' is done.
+1662838879027	2022-09-10 19:41:19.027	INFO	tRunJob_24 - The child job 'sc_tmc_project_talend_jobs.lctcostdet_0_1.LCTCOSTDET' starts on the version '0.1' with the context 'Default'.
+1662838879027	2022-09-10 19:41:19.027	INFO	TalendJob: 'LCTCOSTDET' - Start.
+1662838886985	2022-09-10 19:41:26.985	INFO	tRunJob_24 - The child job 'sc_tmc_project_talend_jobs.lctcostdet_0_1.LCTCOSTDET' is done.
+1662838886996	2022-09-10 19:41:26.996	INFO	tRunJob_25 - The child job 'sc_tmc_project_talend_jobs.container_0_1.CONTAINER' starts on the version '0.1' with the context 'Default'.
+1662838886996	2022-09-10 19:41:26.996	INFO	TalendJob: 'CONTAINER' - Start.
+1662905519174	2022-09-11 14:11:59.174	INFO	job is finished - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 6dbabb66-8600-4306-be84-7efd4a9613ac
+1662905519175	2022-09-11 14:11:59.175	INFO	logs are sent - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 6dbabb66-8600-4306-be84-7efd4a9613ac

@@ -1,0 +1,13 @@
+Users need to be able to insert into [SysproDocument].[SOH].[SorMaster_Process_Staged]
+
+users are _syspro and DS-
+
+There is an issue with installing the service on 7syspro in dev.
+Permission needs a fully authenticated username aka justinp@summerclassics.com
+
+I need to get with Johnny to set up account to run the service
+then give access to that account
+
+New update to [Product_Info].[Syspro].[usp_SalesOrder_DepositValue] 5/11/2022
+
+Clean up on freight adjustments get with ben 5/11/2022

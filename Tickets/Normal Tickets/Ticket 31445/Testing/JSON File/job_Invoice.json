@@ -1,0 +1,39 @@
+{
+    "job_module": "Invoice",
+    "job": "Import",
+    "context": {
+      "source": {
+        "database": "PRODUCT_INFO",
+        "server": "Talend"
+      },
+      "fields": {
+        "trnmonth_c": "",
+        "trnyear_c": "",
+        "carrierid2_c": "",
+        "name": "",
+        "description": "",
+        "invoicedate": "",
+        "branch": "",
+        "customerponumber": "",
+        "merchandisevalue": 0.00,
+        "freightvalue": 0.00,
+        "othervalue": 0.00,
+        "taxvalue": 0.00,
+        "merchandisecost": 0.00,
+        "documenttype": "",
+        "ordertype": "",
+        "termscode": "",
+        "billofladinnumber": "",
+        "carrierid": "",
+        "cadate": "",
+        "pronumber": ""
+      }
+    },
+    "options": {
+      "prevent_duplicates": "true",
+      "retries_allowed": "300",
+      "alert_on_failure": "true",
+      "alert_on_completion": "false",
+      "assigned_user_id":"<Meagans Sugar ID>"
+    }
+}

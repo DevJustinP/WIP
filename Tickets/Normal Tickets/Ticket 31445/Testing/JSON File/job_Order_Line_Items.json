@@ -1,0 +1,31 @@
+{
+  "job_module": "Orders",
+  "job": "Import",
+  "context": {
+	"source": {
+	  "database": "PRODUCT_INFO",
+	  "server": "Talend"
+	},
+    "fields": {
+      "lookup_order_number": "SorDetail.SalesOrder",
+      "name": "SorDetail.SalesOrderLine",
+      "item_number_c": "SorDetail.MStockCode",
+      "qty_c": "SorDatail.MStockDes",
+      "qty_invoiced_c": "SorDetail.MOrderQty - (SorDetail.MShipQty + SorDetail.MBackOrderQty + SorDetail.QtyReserved)",
+      "qty_available_c": "SorDetail.QtyReserved",
+      "qty_backordered_c": "SorDetail.MBackOrderQty",
+      "unit_price_c": "SorDetail.MPrice",
+      "product_class_c": "SorDetail.MProductClass",
+      "qty_pending_invoice_c": "SorDetail.MShipQty",
+      "initial_line_number": "SorDetail.SalesOrderInitLine",
+      "description": "SorDetail.MStockDes"
+    }
+  },
+  "options": {
+    "prevent_duplicates": "true",
+    "retries_allowed": "300",
+    "alert_on_failure": "true",
+    "alert_on_completion": "false",
+	"assigned_user_id":"<Meagans Sugar ID>"
+  }
+}

@@ -1,0 +1,37 @@
+Deployment:
+
+1) Set up SysproDocuments
+  1.a) execute 'Setup_GWC_SaleseOrderHandler_service' script
+  1.b) execute 'Create [SOH].[SorMaster_Process_Staged]' script
+  1.c) execute remaining create scripts
+	- Create [SOH].[MdnDetail_INSERT]
+	- Create [SOH].[SalesOrderProcessCharges_Get]
+	- Create [SOH].[SorMaster_Process_Staged_GET]
+	- Create [SOH].[SorMaster_Process_Staged_UPDATE]
+	- Create [SOH].[svf_Create_SysPro_BusObj_SORTOIDOC_FreightLine]
+	- Create [SOH].[svf_Create_SysPro_BusObj_SORTOIDOC_MiscChargeLine]
+	- Create [SOH].[svf_Create_SysPro_BusObj_SORTOIDOC_SalesOrderHeader]
+	- Create [SOH].[usp_SorMaster_Process_Staged_Get]
+  1.d) execute alter scripts
+	- Alter [dbo].[trg_AdmSignatureLog_625100_AfterUpdate]
+	- Alter [Syspro].[usp_SalesOrder_ReserveValue]
+
+2) Account Security Setup
+  2.a) SysPro users need insert access to [SOH].[SorMaster_Process_Staged]
+    - execute AddSyspro_UserToSysproDocument
+  2.b) Service user account needs access to [SysproDocument] tables and [SOH] schema
+
+3) Deploy service to GWC_apps
+  3.a)Deployment files are located in Application_compress.zip
+  3.b)Once logged on to GWC_apps go to directory P:\Services
+  3.c)Create Directory 'GWC Service - SOH - SalesOrderHandler'
+  4.d)within new directory extract contents of Application_compress.zip
+  4.e)open command prompt as administrator
+  4.f)navigate to P:\Services\GWC Service - SOH - SalesOrderHandler\Application
+  4.g)execute command: installutil GWC_Service_Order_Handler.exe
+  4.h) a window will popup called 'Set Service Login'
+    4.h.1) Username:
+    4.h.2) Password:
+    4.h.3) Confirm password:
+  4.i) open up services tool and scroll to GWC Service - SOH - SalesOrder Process
+  4.j) right click and start

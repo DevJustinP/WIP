@@ -1,0 +1,15 @@
+Implementation Plan:
+
+Theory:
+	Talend takes about 45 min on normal amount of data being transmitted but for files that are larger the process takes a longer time. 
+	Example:
+		\\sql08\p\SSIS\Data\Datafeed\SugarCRM\Completed2022_07_28 06_01_07SugarCustomerExport_20220728T060003.csv
+		The above file is 24,604kb while a normal SugarCustomerExport.csv is about <10kb. This is caused by how the process of determining changes to send to sugar.
+		We can look at the log file: \\sql08\p\SSIS\Data\Datafeed\SugarCRM\Logs2022_07_28_06_01_07_logs_Accounts.csv
+		From the two lines that the log contains it started at 6:01:07 and finished around 6:57:37 about 56minutes of processing.
+		A normal time for processing is about 0seconds for no data or 20seconds for a file 20kb.
+
+Steps:
+	1) Disable the SugarCRM Agent job.
+		This will stop files being created.
+	2) Once the Talend job has finished processing the files in the Active directory we can turn back on the SugarCRM Agent job.

@@ -1,0 +1,54 @@
+<policy>
+  <accessToken>fffdb6fb-788d-40c3-9092-db3386073d59</accessToken>
+  <status>NEW</status>
+  <reference>301-1012481</reference>
+  <premiumpaidcurrency>USD</premiumpaidcurrency>
+  <premiumpaid>0.00</premiumpaid>
+  <warrantycostpricecurrency>USD</warrantycostpricecurrency>
+  <warrantycostprice>0.00</warrantycostprice>
+  <salesman>DES</salesman>
+  <storecode>301</storecode>
+  <retailerbrand>N/A</retailerbrand>
+  <consumer>
+    <reference>1254209</reference>
+    <firstname>MARIE</firstname>
+    <lastname>HAGGARD</lastname>
+    <addresses>
+      <address>
+        <type>HOME_ADDRESS</type>
+        <line1>2444 RESERVE TRAIL</line1>
+        <line2> </line2>
+        <city>BIRMINGHAM</city>
+        <state>AL</state>
+        <zip>35243</zip>
+      </address>
+    </addresses>
+    <contacts>
+      <contact>
+        <type>EMAIL</type>
+        <detail>HAGGARDMRE@GMAIL.COM</detail>
+      </contact>
+      <contact>
+        <type>PHONE</type>
+        <detail>913-449-9760</detail>
+      </contact>
+    </contacts>
+  </consumer>
+  <policyitems>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-08-09</dateordered>
+      <datedelivered>2022-09-20</datedelivered>
+      <manufacturer>KALALOU</manufacturer>
+      <itemtype>WODDEN TIC-TAC-TOE SET</itemtype>
+      <modeldescrption>WODDEN TIC-TAC-TOE SET</modeldescrption>
+      <modelname>KAL-CLA1289</modelname>
+      <modelnumber>KAL-CLA1289</modelnumber>
+      <characteristics>WODDEN TIC-TAC-TOE SET</characteristics>
+      <material>Accessory</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>78.00</retailvalue>
+      <numberofitems>1</numberofitems>
+    </policyitem>
+  </policyitems>
+</policy>

@@ -1,0 +1,4438 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Label Printing
+</name>
+</assembly>
+<members>
+<member name="T:Label_Printing.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Label_Printing.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Label_Printing.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Label_Printing.My.Resources.Resources.AnimatedPrinter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Label_Printing.PrintManager.RenderReport(System.String,Label_Printing.ExecutionService.ParameterValue[])">
+ <summary> 
+ This method renders the report as multidimentional byte array. 
+ </summary> 
+</member>
+<member name="M:Label_Printing.PrintManager.pd_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+ <summary>
+ Handle the Printing of each page
+ </summary>
+ <param name="sender"></param>
+ <param name="ev"></param>
+</member>
+<member name="T:Label_Printing.ExecutionService.ReportExecutionService">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.#ctor">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.ListSecureMethodsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadReportCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadReport3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadReport2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinitionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentialsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParametersCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.ResetExecutionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.RenderCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.Render2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.DeliverReportItemCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.RenderStreamCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfoCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.GetDocumentMapCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTargetCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.ToggleItemCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.NavigateDocumentMapCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.NavigateBookmarkCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.FindStringCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.SortCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.Sort2Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.Sort3Completed">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.GetRenderResourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.ListRenderingExtensionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LogonUserCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ExecutionService.ReportExecutionService.LogoffCompleted">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ListSecureMethods">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ListSecureMethodsAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ListSecureMethodsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport3(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport3Async(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport3Async(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport2(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport2Async(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReport2Async(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition(System.Byte[],Label_Printing.ExecutionService.Warning[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinitionAsync(System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinitionAsync(System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition2(System.Byte[],Label_Printing.ExecutionService.Warning[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition2Async(System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition2Async(System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition3(System.Byte[],Label_Printing.ExecutionService.Warning[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition3Async(System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadReportDefinition3Async(System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials(Label_Printing.ExecutionService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentialsAsync(Label_Printing.ExecutionService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentialsAsync(Label_Printing.ExecutionService.DataSourceCredentials[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials2(Label_Printing.ExecutionService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials2Async(Label_Printing.ExecutionService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials2Async(Label_Printing.ExecutionService.DataSourceCredentials[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials3(Label_Printing.ExecutionService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials3Async(Label_Printing.ExecutionService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionCredentials3Async(Label_Printing.ExecutionService.DataSourceCredentials[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters(Label_Printing.ExecutionService.ParameterValue[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParametersAsync(Label_Printing.ExecutionService.ParameterValue[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParametersAsync(Label_Printing.ExecutionService.ParameterValue[],System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters2(Label_Printing.ExecutionService.ParameterValue[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters2Async(Label_Printing.ExecutionService.ParameterValue[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters2Async(Label_Printing.ExecutionService.ParameterValue[],System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters3(Label_Printing.ExecutionService.ParameterValue[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters3Async(Label_Printing.ExecutionService.ParameterValue[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SetExecutionParameters3Async(Label_Printing.ExecutionService.ParameterValue[],System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecutionAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecutionAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution2">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution2Async">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution2Async(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution3">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution3Async">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ResetExecution3Async(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Render(System.String,System.String,System.String@,System.String@,System.String@,Label_Printing.ExecutionService.Warning[]@,System.String[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.RenderAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.RenderAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Render2(System.String,System.String,Label_Printing.ExecutionService.PageCountMode,System.String@,System.String@,System.String@,Label_Printing.ExecutionService.Warning[]@,System.String[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Render2Async(System.String,System.String,Label_Printing.ExecutionService.PageCountMode)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Render2Async(System.String,System.String,Label_Printing.ExecutionService.PageCountMode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.DeliverReportItem(System.String,System.String,Label_Printing.ExecutionService.ExtensionSettings,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.DeliverReportItemAsync(System.String,System.String,Label_Printing.ExecutionService.ExtensionSettings,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.DeliverReportItemAsync(System.String,System.String,Label_Printing.ExecutionService.ExtensionSettings,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.RenderStream(System.String,System.String,System.String,System.String@,System.String@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.RenderStreamAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.RenderStreamAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfoAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfoAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo2">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo2Async">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo2Async(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo3">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo3Async">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetExecutionInfo3Async(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetDocumentMap">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetDocumentMapAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetDocumentMapAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTargetAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTargetAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget2(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget2Async(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget2Async(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget3(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget3Async(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LoadDrillthroughTarget3Async(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ToggleItem(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ToggleItemAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ToggleItemAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.NavigateDocumentMap(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.NavigateDocumentMapAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.NavigateDocumentMapAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.NavigateBookmark(System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.NavigateBookmarkAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.NavigateBookmarkAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.FindString(System.Int32,System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.FindStringAsync(System.Int32,System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.FindStringAsync(System.Int32,System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,System.String@,System.Int32@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SortAsync(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.SortAsync(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort2(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,Label_Printing.ExecutionService.PageCountMode,System.String@,Label_Printing.ExecutionService.ExecutionInfo2@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort2Async(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,Label_Printing.ExecutionService.PageCountMode)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort2Async(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,Label_Printing.ExecutionService.PageCountMode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort3(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,Label_Printing.ExecutionService.PageCountMode,System.String@,Label_Printing.ExecutionService.ExecutionInfo3@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort3Async(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,Label_Printing.ExecutionService.PageCountMode)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Sort3Async(System.String,Label_Printing.ExecutionService.SortDirectionEnum,System.Boolean,Label_Printing.ExecutionService.PageCountMode,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetRenderResource(System.String,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetRenderResourceAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.GetRenderResourceAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ListRenderingExtensions">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ListRenderingExtensionsAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.ListRenderingExtensionsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LogonUser(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LogonUserAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LogonUserAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.Logoff">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LogoffAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.LogoffAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ExecutionService.ReportExecutionService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.TrustedUserHeader">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.TrustedUserHeader.UserName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.TrustedUserHeader.UserToken">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.TrustedUserHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Extension.ExtensionType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Extension.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Extension.LocalizedName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Extension.Visible">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Extension.IsModelGenerationSupported">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ExtensionTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ExtensionTypeEnum.Delivery">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ExtensionTypeEnum.Render">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ExtensionTypeEnum.Data">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ExtensionTypeEnum.All">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.DocumentMapNode">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DocumentMapNode.Label">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DocumentMapNode.UniqueName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DocumentMapNode.Children">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ExtensionSettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExtensionSettings.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExtensionSettings.ParameterValues">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParameterFieldReference">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParameterFieldReference.ParameterName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParameterFieldReference.FieldAlias">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParameterValueOrFieldReference">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParameterValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParameterValue.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParameterValue.Value">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParameterValue.Label">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.DataSourceCredentials">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DataSourceCredentials.DataSourceName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DataSourceCredentials.UserName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DataSourceCredentials.Password">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Warning">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Warning.Code">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Warning.Severity">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Warning.ObjectName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Warning.ObjectType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Warning.Message">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParametersGridCellDefinition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParametersGridCellDefinition.RowIndex">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParametersGridCellDefinition.ColumnsIndex">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParametersGridCellDefinition.ParameterName">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParametersGridLayoutDefinition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParametersGridLayoutDefinition.NumberOfColumns">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParametersGridLayoutDefinition.NumberOfRows">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ParametersGridLayoutDefinition.CellDefinitions">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ReportMargins">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportMargins.Top">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportMargins.Bottom">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportMargins.Left">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportMargins.Right">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ReportPaperSize">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportPaperSize.Height">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportPaperSize.Width">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.PageSettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.PageSettings.PaperSize">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.PageSettings.Margins">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.DataSourcePrompt">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DataSourcePrompt.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DataSourcePrompt.DataSourceID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.DataSourcePrompt.Prompt">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ValidValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ValidValue.Label">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ValidValue.Value">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ReportParameter">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.Type">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.Nullable">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.NullableSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.AllowBlank">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.AllowBlankSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.MultiValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.MultiValueSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.QueryParameter">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.QueryParameterSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.Prompt">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.PromptUser">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.PromptUserSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.Dependencies">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.ValidValuesQueryBased">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.ValidValuesQueryBasedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.ValidValues">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.DefaultValuesQueryBased">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.DefaultValuesQueryBasedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.DefaultValues">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.State">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.StateSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ReportParameter.ErrorMessage">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParameterTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterTypeEnum.Boolean">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterTypeEnum.DateTime">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterTypeEnum.Integer">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterTypeEnum.Float">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterTypeEnum.String">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ParameterStateEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterStateEnum.HasValidValue">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterStateEnum.MissingValidValue">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterStateEnum.HasOutstandingDependencies">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.ParameterStateEnum.DynamicValuesUnavailable">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ExecutionInfo">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.HasSnapshot">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.NeedsProcessing">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.AllowQueryExecution">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.CredentialsRequired">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.ParametersRequired">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.ExpirationDateTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.ExecutionDateTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.NumPages">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.Parameters">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.DataSourcePrompts">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.HasDocumentMap">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.ExecutionID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.ReportPath">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.HistoryID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.ReportPageSettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo.AutoRefreshInterval">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ExecutionInfo2">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo2.PageCountMode">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.PageCountMode">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.PageCountMode.Actual">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.PageCountMode.Estimate">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ExecutionInfo3">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionInfo3.ParametersLayout">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ServerInfoHeader">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ServerInfoHeader.ReportServerVersionNumber">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ServerInfoHeader.ReportServerEdition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ServerInfoHeader.ReportServerVersion">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ServerInfoHeader.ReportServerDateTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ServerInfoHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ExecutionHeader">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionHeader.ExecutionID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ExecutionHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SortDirectionEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.SortDirectionEnum.None">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.SortDirectionEnum.Ascending">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ExecutionService.SortDirectionEnum.Descending">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ListSecureMethodsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ListSecureMethodsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ListSecureMethodsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReport3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReport3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReport3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReport2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReport2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReport2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportDefinitionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportDefinitionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportDefinitionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportDefinitionCompletedEventArgs.warnings">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportDefinition2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportDefinition2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportDefinition2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportDefinition2CompletedEventArgs.warnings">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportDefinition3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadReportDefinition3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportDefinition3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadReportDefinition3CompletedEventArgs.warnings">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionCredentialsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionCredentialsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SetExecutionCredentialsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionCredentials2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionCredentials2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SetExecutionCredentials2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionCredentials3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionCredentials3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SetExecutionCredentials3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionParametersCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionParametersCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SetExecutionParametersCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionParameters2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionParameters2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SetExecutionParameters2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionParameters3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SetExecutionParameters3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SetExecutionParameters3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ResetExecutionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ResetExecutionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ResetExecutionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ResetExecution2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ResetExecution2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ResetExecution2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ResetExecution3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ResetExecution3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ResetExecution3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.RenderCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.RenderCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderCompletedEventArgs.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderCompletedEventArgs.MimeType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderCompletedEventArgs.Encoding">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderCompletedEventArgs.Warnings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderCompletedEventArgs.StreamIds">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Render2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Render2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Render2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Render2CompletedEventArgs.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Render2CompletedEventArgs.MimeType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Render2CompletedEventArgs.Encoding">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Render2CompletedEventArgs.Warnings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Render2CompletedEventArgs.StreamIds">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.DeliverReportItemCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.RenderStreamCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.RenderStreamCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderStreamCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderStreamCompletedEventArgs.Encoding">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.RenderStreamCompletedEventArgs.MimeType">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetExecutionInfoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetExecutionInfoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.GetExecutionInfoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetExecutionInfo2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetExecutionInfo2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.GetExecutionInfo2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetExecutionInfo3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetExecutionInfo3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.GetExecutionInfo3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetDocumentMapCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetDocumentMapCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.GetDocumentMapCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadDrillthroughTargetCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadDrillthroughTargetCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadDrillthroughTargetCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadDrillthroughTarget2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadDrillthroughTarget2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadDrillthroughTarget2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadDrillthroughTarget3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LoadDrillthroughTarget3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.LoadDrillthroughTarget3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ToggleItemCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ToggleItemCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ToggleItemCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.NavigateDocumentMapCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.NavigateDocumentMapCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.NavigateDocumentMapCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.NavigateBookmarkCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.NavigateBookmarkCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.NavigateBookmarkCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.NavigateBookmarkCompletedEventArgs.UniqueName">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.FindStringCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.FindStringCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.FindStringCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SortCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.SortCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SortCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SortCompletedEventArgs.ReportItem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.SortCompletedEventArgs.NumPages">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Sort2CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Sort2CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Sort2CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Sort2CompletedEventArgs.ReportItem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Sort2CompletedEventArgs.ExecutionInfo">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Sort3CompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.Sort3CompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Sort3CompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Sort3CompletedEventArgs.ReportItem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.Sort3CompletedEventArgs.ExecutionInfo">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetRenderResourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.GetRenderResourceCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.GetRenderResourceCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.GetRenderResourceCompletedEventArgs.MimeType">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ListRenderingExtensionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.ListRenderingExtensionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ExecutionService.ListRenderingExtensionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LogonUserCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ExecutionService.LogoffCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ReportingService2005">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.#ctor">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListSecureMethodsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateBatchCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CancelBatchCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ExecuteBatchCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetSystemPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetSystemPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.DeleteItemCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.MoveItemCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListChildrenCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListDependentItemsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetItemTypeCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateFolderCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateReportCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetReportDefinitionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetReportDefinitionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateResourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetResourceContentsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetResourceContentsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetReportParametersCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetReportParametersCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateLinkedReportCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetReportLinkCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetReportLinkCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetRenderResourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetExecutionOptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetExecutionOptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetCacheOptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetCacheOptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.UpdateReportExecutionSnapshotCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.FlushCacheCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListJobsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CancelJobCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateDataSourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetDataSourceContentsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetDataSourceContentsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.EnableDataSourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.DisableDataSourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetItemDataSourcesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcePromptsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateReportHistorySnapshotCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetReportHistoryOptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetReportHistoryOptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetReportHistoryLimitCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetReportHistoryLimitCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListReportHistoryCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.DeleteReportHistorySnapshotCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.FindItemsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateScheduleCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.DeleteScheduleCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetSchedulePropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetSchedulePropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListScheduledReportsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListSchedulesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.PauseScheduleCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ResumeScheduleCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateSubscriptionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateDataDrivenSubscriptionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetSubscriptionPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetDataDrivenSubscriptionPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetSubscriptionPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetDataDrivenSubscriptionPropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.DeleteSubscriptionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.PrepareQueryCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetExtensionSettingsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ValidateExtensionSettingsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsUsingDataSourceCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListExtensionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListEventsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.FireEventCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListTasksCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListRolesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateRoleCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.DeleteRoleCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetRolePropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetRolePropertiesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetSystemPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetSystemPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.InheritParentSecurityCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetSystemPermissionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetPermissionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.LogonUserCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.LogoffCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.CreateModelCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetModelDefinitionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetModelDefinitionCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListModelPerspectivesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetUserModelCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListModelItemChildrenCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetModelItemPermissionsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GetModelItemPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetModelItemPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.InheritModelItemParentSecurityCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.RemoveAllModelItemPoliciesCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.SetModelDrillthroughReportsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.ListModelDrillthroughReportsCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.GenerateModelCompleted">
+<remarks/>
+</member>
+<member name="E:Label_Printing.ReportService.ReportingService2005.RegenerateModelCompleted">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSecureMethods">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSecureMethodsAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSecureMethodsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateBatch">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateBatchAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateBatchAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelBatch">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelBatchAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelBatchAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ExecuteBatch">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ExecuteBatchAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ExecuteBatchAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemProperties(Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPropertiesAsync(Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPropertiesAsync(Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSystemProperties(Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSystemPropertiesAsync(Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSystemPropertiesAsync(Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteItem(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteItemAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteItemAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.MoveItem(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.MoveItemAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.MoveItemAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListChildren(System.String,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListChildrenAsync(System.String,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListChildrenAsync(System.String,System.Boolean,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListDependentItems(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListDependentItemsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListDependentItemsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetProperties(System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPropertiesAsync(System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPropertiesAsync(System.String,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetProperties(System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetPropertiesAsync(System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetPropertiesAsync(System.String,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemType(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemTypeAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemTypeAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateFolder(System.String,System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateFolderAsync(System.String,System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateFolderAsync(System.String,System.String,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateReport(System.String,System.String,System.Boolean,System.Byte[],Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateReportAsync(System.String,System.String,System.Boolean,System.Byte[],Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateReportAsync(System.String,System.String,System.Boolean,System.Byte[],Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportDefinition(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportDefinitionAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportDefinitionAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportDefinition(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportDefinitionAsync(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportDefinitionAsync(System.String,System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateResource(System.String,System.String,System.Boolean,System.Byte[],System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateResourceAsync(System.String,System.String,System.Boolean,System.Byte[],System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateResourceAsync(System.String,System.String,System.Boolean,System.Byte[],System.String,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetResourceContents(System.String,System.Byte[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetResourceContentsAsync(System.String,System.Byte[],System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetResourceContentsAsync(System.String,System.Byte[],System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetResourceContents(System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetResourceContentsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetResourceContentsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportParameters(System.String,System.String,System.Boolean,Label_Printing.ReportService.ParameterValue[],Label_Printing.ReportService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportParametersAsync(System.String,System.String,System.Boolean,Label_Printing.ReportService.ParameterValue[],Label_Printing.ReportService.DataSourceCredentials[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportParametersAsync(System.String,System.String,System.Boolean,Label_Printing.ReportService.ParameterValue[],Label_Printing.ReportService.DataSourceCredentials[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportParameters(System.String,Label_Printing.ReportService.ReportParameter[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportParametersAsync(System.String,Label_Printing.ReportService.ReportParameter[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportParametersAsync(System.String,Label_Printing.ReportService.ReportParameter[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateLinkedReport(System.String,System.String,System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateLinkedReportAsync(System.String,System.String,System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateLinkedReportAsync(System.String,System.String,System.String,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportLink(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportLinkAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportLinkAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportLink(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportLinkAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportLinkAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetRenderResource(System.String,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetRenderResourceAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetRenderResourceAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetExecutionOptions(System.String,Label_Printing.ReportService.ExecutionSettingEnum,Label_Printing.ReportService.ScheduleDefinitionOrReference)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetExecutionOptionsAsync(System.String,Label_Printing.ReportService.ExecutionSettingEnum,Label_Printing.ReportService.ScheduleDefinitionOrReference)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetExecutionOptionsAsync(System.String,Label_Printing.ReportService.ExecutionSettingEnum,Label_Printing.ReportService.ScheduleDefinitionOrReference,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetExecutionOptions(System.String,Label_Printing.ReportService.ScheduleDefinitionOrReference@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetExecutionOptionsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetExecutionOptionsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetCacheOptions(System.String,System.Boolean,Label_Printing.ReportService.ExpirationDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetCacheOptionsAsync(System.String,System.Boolean,Label_Printing.ReportService.ExpirationDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetCacheOptionsAsync(System.String,System.Boolean,Label_Printing.ReportService.ExpirationDefinition,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetCacheOptions(System.String,Label_Printing.ReportService.ExpirationDefinition@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetCacheOptionsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetCacheOptionsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.UpdateReportExecutionSnapshot(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.UpdateReportExecutionSnapshotAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.UpdateReportExecutionSnapshotAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FlushCache(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FlushCacheAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FlushCacheAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListJobs">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListJobsAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListJobsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelJob(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelJobAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelJobAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateDataSource(System.String,System.String,System.Boolean,Label_Printing.ReportService.DataSourceDefinition,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateDataSourceAsync(System.String,System.String,System.Boolean,Label_Printing.ReportService.DataSourceDefinition,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateDataSourceAsync(System.String,System.String,System.Boolean,Label_Printing.ReportService.DataSourceDefinition,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetDataSourceContents(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetDataSourceContentsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetDataSourceContentsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetDataSourceContents(System.String,Label_Printing.ReportService.DataSourceDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetDataSourceContentsAsync(System.String,Label_Printing.ReportService.DataSourceDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetDataSourceContentsAsync(System.String,Label_Printing.ReportService.DataSourceDefinition,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.EnableDataSource(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.EnableDataSourceAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.EnableDataSourceAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DisableDataSource(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DisableDataSourceAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DisableDataSourceAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetItemDataSources(System.String,Label_Printing.ReportService.DataSource[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetItemDataSourcesAsync(System.String,Label_Printing.ReportService.DataSource[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetItemDataSourcesAsync(System.String,Label_Printing.ReportService.DataSource[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemDataSources(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcePrompts(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcePromptsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetItemDataSourcePromptsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateReportHistorySnapshot(System.String,Label_Printing.ReportService.Warning[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateReportHistorySnapshotAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateReportHistorySnapshotAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportHistoryOptions(System.String,System.Boolean,System.Boolean,Label_Printing.ReportService.ScheduleDefinitionOrReference)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportHistoryOptionsAsync(System.String,System.Boolean,System.Boolean,Label_Printing.ReportService.ScheduleDefinitionOrReference)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportHistoryOptionsAsync(System.String,System.Boolean,System.Boolean,Label_Printing.ReportService.ScheduleDefinitionOrReference,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportHistoryOptions(System.String,System.Boolean@,Label_Printing.ReportService.ScheduleDefinitionOrReference@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportHistoryOptionsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportHistoryOptionsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportHistoryLimit(System.String,System.Boolean,System.Int32)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportHistoryLimitAsync(System.String,System.Boolean,System.Int32)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetReportHistoryLimitAsync(System.String,System.Boolean,System.Int32,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportHistoryLimit(System.String,System.Boolean@,System.Int32@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportHistoryLimitAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetReportHistoryLimitAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListReportHistory(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListReportHistoryAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListReportHistoryAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteReportHistorySnapshot(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteReportHistorySnapshotAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteReportHistorySnapshotAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FindItems(System.String,Label_Printing.ReportService.BooleanOperatorEnum,Label_Printing.ReportService.SearchCondition[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FindItemsAsync(System.String,Label_Printing.ReportService.BooleanOperatorEnum,Label_Printing.ReportService.SearchCondition[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FindItemsAsync(System.String,Label_Printing.ReportService.BooleanOperatorEnum,Label_Printing.ReportService.SearchCondition[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateSchedule(System.String,Label_Printing.ReportService.ScheduleDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateScheduleAsync(System.String,Label_Printing.ReportService.ScheduleDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateScheduleAsync(System.String,Label_Printing.ReportService.ScheduleDefinition,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteSchedule(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteScheduleAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteScheduleAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetScheduleProperties(System.String,System.String,Label_Printing.ReportService.ScheduleDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSchedulePropertiesAsync(System.String,System.String,Label_Printing.ReportService.ScheduleDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSchedulePropertiesAsync(System.String,System.String,Label_Printing.ReportService.ScheduleDefinition,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetScheduleProperties(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSchedulePropertiesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSchedulePropertiesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListScheduledReports(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListScheduledReportsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListScheduledReportsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSchedules">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSchedulesAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSchedulesAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.PauseSchedule(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.PauseScheduleAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.PauseScheduleAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ResumeSchedule(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ResumeScheduleAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ResumeScheduleAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateSubscription(System.String,Label_Printing.ReportService.ExtensionSettings,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValue[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateSubscriptionAsync(System.String,Label_Printing.ReportService.ExtensionSettings,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValue[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateSubscriptionAsync(System.String,Label_Printing.ReportService.ExtensionSettings,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValue[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateDataDrivenSubscription(System.String,Label_Printing.ReportService.ExtensionSettings,Label_Printing.ReportService.DataRetrievalPlan,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateDataDrivenSubscriptionAsync(System.String,Label_Printing.ReportService.ExtensionSettings,Label_Printing.ReportService.DataRetrievalPlan,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateDataDrivenSubscriptionAsync(System.String,Label_Printing.ReportService.ExtensionSettings,Label_Printing.ReportService.DataRetrievalPlan,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSubscriptionProperties(System.String,Label_Printing.ReportService.ExtensionSettings,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValue[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSubscriptionPropertiesAsync(System.String,Label_Printing.ReportService.ExtensionSettings,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValue[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSubscriptionPropertiesAsync(System.String,Label_Printing.ReportService.ExtensionSettings,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValue[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetDataDrivenSubscriptionProperties(System.String,Label_Printing.ReportService.ExtensionSettings,Label_Printing.ReportService.DataRetrievalPlan,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetDataDrivenSubscriptionPropertiesAsync(System.String,Label_Printing.ReportService.ExtensionSettings,Label_Printing.ReportService.DataRetrievalPlan,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetDataDrivenSubscriptionPropertiesAsync(System.String,Label_Printing.ReportService.ExtensionSettings,Label_Printing.ReportService.DataRetrievalPlan,System.String,System.String,System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSubscriptionProperties(System.String,Label_Printing.ReportService.ExtensionSettings@,System.String@,Label_Printing.ReportService.ActiveState@,System.String@,System.String@,System.String@,Label_Printing.ReportService.ParameterValue[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSubscriptionPropertiesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSubscriptionPropertiesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetDataDrivenSubscriptionProperties(System.String,Label_Printing.ReportService.ExtensionSettings@,Label_Printing.ReportService.DataRetrievalPlan@,System.String@,Label_Printing.ReportService.ActiveState@,System.String@,System.String@,System.String@,Label_Printing.ReportService.ParameterValueOrFieldReference[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetDataDrivenSubscriptionPropertiesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetDataDrivenSubscriptionPropertiesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteSubscription(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteSubscriptionAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteSubscriptionAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.PrepareQuery(Label_Printing.ReportService.DataSource,Label_Printing.ReportService.DataSetDefinition,System.Boolean@,System.String[]@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.PrepareQueryAsync(Label_Printing.ReportService.DataSource,Label_Printing.ReportService.DataSetDefinition)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.PrepareQueryAsync(Label_Printing.ReportService.DataSource,Label_Printing.ReportService.DataSetDefinition,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetExtensionSettings(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetExtensionSettingsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetExtensionSettingsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ValidateExtensionSettings(System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ValidateExtensionSettingsAsync(System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ValidateExtensionSettingsAsync(System.String,Label_Printing.ReportService.ParameterValueOrFieldReference[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSubscriptions(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsUsingDataSource(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsUsingDataSourceAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListSubscriptionsUsingDataSourceAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListExtensions(Label_Printing.ReportService.ExtensionTypeEnum)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListExtensionsAsync(Label_Printing.ReportService.ExtensionTypeEnum)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListExtensionsAsync(Label_Printing.ReportService.ExtensionTypeEnum,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListEvents">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListEventsAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListEventsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FireEvent(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FireEventAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.FireEventAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListTasks(Label_Printing.ReportService.SecurityScopeEnum)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListTasksAsync(Label_Printing.ReportService.SecurityScopeEnum)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListTasksAsync(Label_Printing.ReportService.SecurityScopeEnum,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListRoles(Label_Printing.ReportService.SecurityScopeEnum)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListRolesAsync(Label_Printing.ReportService.SecurityScopeEnum)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListRolesAsync(Label_Printing.ReportService.SecurityScopeEnum,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateRole(System.String,System.String,Label_Printing.ReportService.Task[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateRoleAsync(System.String,System.String,Label_Printing.ReportService.Task[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateRoleAsync(System.String,System.String,Label_Printing.ReportService.Task[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteRole(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteRoleAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.DeleteRoleAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetRoleProperties(System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetRolePropertiesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetRolePropertiesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetRoleProperties(System.String,System.String,Label_Printing.ReportService.Task[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetRolePropertiesAsync(System.String,System.String,Label_Printing.ReportService.Task[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetRolePropertiesAsync(System.String,System.String,Label_Printing.ReportService.Task[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPolicies">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPoliciesAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPoliciesAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSystemPolicies(Label_Printing.ReportService.Policy[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSystemPoliciesAsync(Label_Printing.ReportService.Policy[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetSystemPoliciesAsync(Label_Printing.ReportService.Policy[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPolicies(System.String,System.Boolean@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPoliciesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPoliciesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetPolicies(System.String,Label_Printing.ReportService.Policy[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetPoliciesAsync(System.String,Label_Printing.ReportService.Policy[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetPoliciesAsync(System.String,Label_Printing.ReportService.Policy[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.InheritParentSecurity(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.InheritParentSecurityAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.InheritParentSecurityAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPermissions">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPermissionsAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetSystemPermissionsAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPermissions(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPermissionsAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetPermissionsAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.LogonUser(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.LogonUserAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.LogonUserAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.Logoff">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.LogoffAsync">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.LogoffAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateModel(System.String,System.String,System.Byte[],Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateModelAsync(System.String,System.String,System.Byte[],Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CreateModelAsync(System.String,System.String,System.Byte[],Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelDefinition(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelDefinitionAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelDefinitionAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelDefinition(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelDefinitionAsync(System.String,System.Byte[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelDefinitionAsync(System.String,System.Byte[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelPerspectives(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelPerspectivesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelPerspectivesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetUserModel(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetUserModelAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetUserModelAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelItemChildren(System.String,System.String,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelItemChildrenAsync(System.String,System.String,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelItemChildrenAsync(System.String,System.String,System.Boolean,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelItemPermissions(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelItemPermissionsAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelItemPermissionsAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelItemPolicies(System.String,System.String,System.Boolean@)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelItemPoliciesAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GetModelItemPoliciesAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelItemPolicies(System.String,System.String,Label_Printing.ReportService.Policy[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelItemPoliciesAsync(System.String,System.String,Label_Printing.ReportService.Policy[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelItemPoliciesAsync(System.String,System.String,Label_Printing.ReportService.Policy[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.InheritModelItemParentSecurity(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.InheritModelItemParentSecurityAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.InheritModelItemParentSecurityAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.RemoveAllModelItemPolicies(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.RemoveAllModelItemPoliciesAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.RemoveAllModelItemPoliciesAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelDrillthroughReports(System.String,System.String,Label_Printing.ReportService.ModelDrillthroughReport[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelDrillthroughReportsAsync(System.String,System.String,Label_Printing.ReportService.ModelDrillthroughReport[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.SetModelDrillthroughReportsAsync(System.String,System.String,Label_Printing.ReportService.ModelDrillthroughReport[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelDrillthroughReports(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelDrillthroughReportsAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.ListModelDrillthroughReportsAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GenerateModel(System.String,System.String,System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GenerateModelAsync(System.String,System.String,System.String,Label_Printing.ReportService.Property[])">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.GenerateModelAsync(System.String,System.String,System.String,Label_Printing.ReportService.Property[],System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.RegenerateModel(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.RegenerateModelAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.RegenerateModelAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:Label_Printing.ReportService.ReportingService2005.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.BatchHeader">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.BatchHeader.BatchID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.BatchHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ModelDrillthroughReport">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelDrillthroughReport.Path">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelDrillthroughReport.Type">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DrillthroughType">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.DrillthroughType.Detail">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.DrillthroughType.List">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ModelItem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelItem.ID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelItem.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelItem.Type">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelItem.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelItem.ModelItems">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ModelItemTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ModelItemTypeEnum.Model">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ModelItemTypeEnum.EntityFolder">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ModelItemTypeEnum.FieldFolder">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ModelItemTypeEnum.Entity">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ModelItemTypeEnum.Attribute">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ModelItemTypeEnum.Role">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ModelPerspective">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelPerspective.ID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelPerspective.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelPerspective.Description">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ModelCatalogItem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelCatalogItem.Model">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelCatalogItem.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ModelCatalogItem.Perspectives">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Policy">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Policy.GroupUserName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Policy.Roles">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Role">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Role.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Role.Description">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Task">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Task.TaskID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Task.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Task.Description">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Event">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Event.Type">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Extension.ExtensionType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Extension.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Extension.LocalizedName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Extension.Visible">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Extension.IsModelGenerationSupported">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ExtensionTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ExtensionTypeEnum.Delivery">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ExtensionTypeEnum.Render">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ExtensionTypeEnum.Data">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ExtensionTypeEnum.All">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Subscription">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.SubscriptionID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.Owner">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.Path">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.VirtualPath">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.Report">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.DeliverySettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.Status">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.Active">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.LastExecuted">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.LastExecutedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.ModifiedBy">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.ModifiedDate">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.EventType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Subscription.IsDataDriven">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ExtensionSettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionSettings.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionSettings.ParameterValues">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ParameterFieldReference">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ParameterFieldReference.ParameterName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ParameterFieldReference.FieldAlias">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ParameterValueOrFieldReference">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ParameterValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ParameterValue.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ParameterValue.Value">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ParameterValue.Label">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ActiveState">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.DeliveryExtensionRemoved">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.DeliveryExtensionRemovedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.SharedDataSourceRemoved">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.SharedDataSourceRemovedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.MissingParameterValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.MissingParameterValueSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.InvalidParameterValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.InvalidParameterValueSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.UnknownReportParameter">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.UnknownReportParameterSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.DisabledByUser">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ActiveState.DisabledByUserSpecified">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ExtensionParameter">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.DisplayName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.Required">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.RequiredSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.ReadOnly">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.Value">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.Error">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.Encrypted">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.IsPassword">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ExtensionParameter.ValidValues">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ValidValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ValidValue.Label">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ValidValue.Value">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.QueryDefinition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.QueryDefinition.CommandType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.QueryDefinition.CommandText">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.QueryDefinition.Timeout">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.QueryDefinition.TimeoutSpecified">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Field">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Field.Alias">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Field.Name">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSetDefinition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.Fields">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.Query">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.CaseSensitivity">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.CaseSensitivitySpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.Collation">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.AccentSensitivity">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.AccentSensitivitySpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.KanatypeSensitivity">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.KanatypeSensitivitySpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.WidthSensitivity">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.WidthSensitivitySpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSetDefinition.Name">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SensitivityEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SensitivityEnum.True">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SensitivityEnum.False">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SensitivityEnum.Auto">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataRetrievalPlan">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataRetrievalPlan.Item">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataRetrievalPlan.DataSet">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSourceDefinition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.Extension">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.ConnectString">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.UseOriginalConnectString">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.OriginalConnectStringExpressionBased">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.CredentialRetrieval">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.WindowsCredentials">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.ImpersonateUser">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.ImpersonateUserSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.Prompt">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.UserName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.Password">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.Enabled">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceDefinition.EnabledSpecified">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CredentialRetrievalEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.CredentialRetrievalEnum.Prompt">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.CredentialRetrievalEnum.Store">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.CredentialRetrievalEnum.Integrated">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.CredentialRetrievalEnum.None">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSourceDefinitionOrReference">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.InvalidDataSourceReference">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSourceReference">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceReference.Reference">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Schedule">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.ScheduleID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.Definition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.Creator">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.NextRunTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.NextRunTimeSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.LastRunTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.LastRunTimeSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.ReferencesPresent">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Schedule.State">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ScheduleDefinition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleDefinition.Item">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleDefinition.StartDateTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleDefinition.EndDate">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleDefinition.EndDateSpecified">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DailyRecurrence">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DailyRecurrence.DaysInterval">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.RecurrencePattern">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.WeeklyRecurrence">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.WeeklyRecurrence.WeeksInterval">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.WeeklyRecurrence.WeeksIntervalSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.WeeklyRecurrence.DaysOfWeek">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DaysOfWeekSelector">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Sunday">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Monday">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Tuesday">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Wednesday">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Thursday">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Friday">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DaysOfWeekSelector.Saturday">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.MonthlyRecurrence">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthlyRecurrence.Days">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthlyRecurrence.MonthsOfYear">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.MonthsOfYearSelector">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.January">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.February">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.March">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.April">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.May">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.June">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.July">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.August">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.September">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.October">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.November">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthsOfYearSelector.December">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.MonthlyDOWRecurrence">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthlyDOWRecurrence.WhichWeek">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthlyDOWRecurrence.WhichWeekSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthlyDOWRecurrence.DaysOfWeek">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MonthlyDOWRecurrence.MonthsOfYear">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.WeekNumberEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.WeekNumberEnum.FirstWeek">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.WeekNumberEnum.SecondWeek">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.WeekNumberEnum.ThirdWeek">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.WeekNumberEnum.FourthWeek">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.WeekNumberEnum.LastWeek">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.MinuteRecurrence">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.MinuteRecurrence.MinutesInterval">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ScheduleDefinitionOrReference">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ScheduleReference">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleReference.ScheduleID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleReference.Definition">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.NoSchedule">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ScheduleStateEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ScheduleStateEnum.Ready">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ScheduleStateEnum.Running">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ScheduleStateEnum.Paused">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ScheduleStateEnum.Expired">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ScheduleStateEnum.Failing">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ReportHistorySnapshot">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportHistorySnapshot.HistoryID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportHistorySnapshot.CreationDate">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportHistorySnapshot.Size">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSourcePrompt">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourcePrompt.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourcePrompt.DataSourceID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourcePrompt.Prompt">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSource">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSource.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSource.Item">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Job">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.JobID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Path">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Machine">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.User">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.StartDateTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Action">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Type">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Job.Status">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.JobActionEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobActionEnum.Render">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobActionEnum.SnapshotCreation">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobActionEnum.ReportHistoryCreation">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobActionEnum.ExecuteQuery">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.JobTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobTypeEnum.User">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobTypeEnum.System">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.JobStatusEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobStatusEnum.New">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobStatusEnum.Running">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.JobStatusEnum.CancelRequested">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ExpirationDefinition">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ScheduleExpiration">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ScheduleExpiration.Item">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.TimeExpiration">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.TimeExpiration.Minutes">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ReportParameter">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.Type">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.TypeSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.Nullable">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.NullableSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.AllowBlank">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.AllowBlankSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.MultiValue">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.MultiValueSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.QueryParameter">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.QueryParameterSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.Prompt">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.PromptUser">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.PromptUserSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.Dependencies">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.ValidValuesQueryBased">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.ValidValuesQueryBasedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.ValidValues">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.DefaultValuesQueryBased">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.DefaultValuesQueryBasedSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.DefaultValues">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.State">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.StateSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ReportParameter.ErrorMessage">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ParameterTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterTypeEnum.Boolean">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterTypeEnum.DateTime">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterTypeEnum.Integer">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterTypeEnum.Float">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterTypeEnum.String">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ParameterStateEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterStateEnum.HasValidValue">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterStateEnum.MissingValidValue">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterStateEnum.HasOutstandingDependencies">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ParameterStateEnum.DynamicValuesUnavailable">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DataSourceCredentials">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceCredentials.DataSourceName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceCredentials.UserName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.DataSourceCredentials.Password">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Warning">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Warning.Code">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Warning.Severity">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Warning.ObjectName">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Warning.ObjectType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Warning.Message">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CatalogItem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.ID">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.Path">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.VirtualPath">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.Type">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.Size">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.SizeSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.Hidden">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.HiddenSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.CreationDate">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.CreationDateSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.ModifiedDate">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.ModifiedDateSpecified">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.CreatedBy">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.ModifiedBy">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.MimeType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.ExecutionDate">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CatalogItem.ExecutionDateSpecified">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ItemTypeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.Unknown">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.Folder">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.Report">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.Resource">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.LinkedReport">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.DataSource">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemTypeEnum.Model">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.Property">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Property.Name">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.Property.Value">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SearchCondition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.SearchCondition.Condition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.SearchCondition.ConditionSpecified">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ConditionEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ConditionEnum.Contains">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ConditionEnum.Equals">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ServerInfoHeader">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ServerInfoHeader.ReportServerVersionNumber">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ServerInfoHeader.ReportServerEdition">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ServerInfoHeader.ReportServerVersion">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ServerInfoHeader.ReportServerDateTime">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ServerInfoHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ItemNamespaceHeader">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ItemNamespaceHeader.ItemNamespace">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ItemNamespaceHeader.AnyAttr">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ItemNamespaceEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemNamespaceEnum.PathBased">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ItemNamespaceEnum.GUIDBased">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ExecutionSettingEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ExecutionSettingEnum.Live">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.ExecutionSettingEnum.Snapshot">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.BooleanOperatorEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.BooleanOperatorEnum.And">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.BooleanOperatorEnum.Or">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SecurityScopeEnum">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SecurityScopeEnum.System">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SecurityScopeEnum.Catalog">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SecurityScopeEnum.Model">
+<remarks/>
+</member>
+<member name="F:Label_Printing.ReportService.SecurityScopeEnum.All">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSecureMethodsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSecureMethodsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListSecureMethodsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateBatchCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateBatchCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateBatchCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CancelBatchCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ExecuteBatchCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSystemPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSystemPropertiesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSystemPropertiesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetSystemPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DeleteItemCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.MoveItemCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListChildrenCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListChildrenCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListChildrenCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListDependentItemsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListDependentItemsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListDependentItemsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetPropertiesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetPropertiesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetItemTypeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetItemTypeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetItemTypeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateFolderCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateReportCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateReportCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateReportCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportDefinitionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportDefinitionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportDefinitionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetReportDefinitionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetReportDefinitionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.SetReportDefinitionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateResourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetResourceContentsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetResourceContentsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetResourceContentsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetResourceContentsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetResourceContentsCompletedEventArgs.MimeType">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportParametersCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportParametersCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportParametersCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetReportParametersCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateLinkedReportCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportLinkCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportLinkCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportLinkCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetReportLinkCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetRenderResourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetRenderResourceCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetRenderResourceCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetRenderResourceCompletedEventArgs.MimeType">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetExecutionOptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetExecutionOptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetExecutionOptionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetExecutionOptionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetExecutionOptionsCompletedEventArgs.Item">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetCacheOptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetCacheOptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetCacheOptionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetCacheOptionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetCacheOptionsCompletedEventArgs.Item">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.UpdateReportExecutionSnapshotCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.FlushCacheCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListJobsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListJobsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListJobsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CancelJobCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CancelJobCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CancelJobCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateDataSourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetDataSourceContentsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetDataSourceContentsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataSourceContentsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetDataSourceContentsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.EnableDataSourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DisableDataSourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetItemDataSourcesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetItemDataSourcesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetItemDataSourcesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetItemDataSourcesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetItemDataSourcePromptsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetItemDataSourcePromptsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetItemDataSourcePromptsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateReportHistorySnapshotCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateReportHistorySnapshotCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateReportHistorySnapshotCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateReportHistorySnapshotCompletedEventArgs.Warnings">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetReportHistoryOptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportHistoryOptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportHistoryOptionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportHistoryOptionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportHistoryOptionsCompletedEventArgs.KeepExecutionSnapshots">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportHistoryOptionsCompletedEventArgs.Item">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetReportHistoryLimitCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportHistoryLimitCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetReportHistoryLimitCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportHistoryLimitCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportHistoryLimitCompletedEventArgs.IsSystem">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetReportHistoryLimitCompletedEventArgs.SystemLimit">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListReportHistoryCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListReportHistoryCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListReportHistoryCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DeleteReportHistorySnapshotCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.FindItemsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.FindItemsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.FindItemsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateScheduleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateScheduleCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateScheduleCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DeleteScheduleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetSchedulePropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSchedulePropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSchedulePropertiesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSchedulePropertiesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListScheduledReportsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListScheduledReportsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListScheduledReportsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSchedulesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSchedulesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListSchedulesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.PauseScheduleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ResumeScheduleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateSubscriptionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateSubscriptionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateSubscriptionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateDataDrivenSubscriptionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateDataDrivenSubscriptionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateDataDrivenSubscriptionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetSubscriptionPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetDataDrivenSubscriptionPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.ExtensionSettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.Active">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.Status">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.EventType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.MatchData">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSubscriptionPropertiesCompletedEventArgs.Parameters">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.ExtensionSettings">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.DataRetrievalPlan">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.Description">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.Active">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.Status">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.EventType">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.MatchData">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetDataDrivenSubscriptionPropertiesCompletedEventArgs.Parameters">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DeleteSubscriptionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.PrepareQueryCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.PrepareQueryCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.PrepareQueryCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.PrepareQueryCompletedEventArgs.Changed">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.PrepareQueryCompletedEventArgs.ParameterNames">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetExtensionSettingsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetExtensionSettingsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetExtensionSettingsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ValidateExtensionSettingsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ValidateExtensionSettingsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ValidateExtensionSettingsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSubscriptionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSubscriptionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListSubscriptionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSubscriptionsUsingDataSourceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListSubscriptionsUsingDataSourceCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListSubscriptionsUsingDataSourceCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListExtensionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListExtensionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListExtensionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListEventsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListEventsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListEventsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.FireEventCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListTasksCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListTasksCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListTasksCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListRolesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListRolesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListRolesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateRoleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.DeleteRoleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetRolePropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetRolePropertiesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetRolePropertiesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetRolePropertiesCompletedEventArgs.Description">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetRolePropertiesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSystemPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSystemPoliciesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSystemPoliciesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetSystemPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetPoliciesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetPoliciesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetPoliciesCompletedEventArgs.InheritParent">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.InheritParentSecurityCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSystemPermissionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetSystemPermissionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetSystemPermissionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetPermissionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetPermissionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetPermissionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.LogonUserCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.LogoffCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateModelCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.CreateModelCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.CreateModelCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetModelDefinitionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetModelDefinitionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetModelDefinitionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetModelDefinitionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetModelDefinitionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.SetModelDefinitionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListModelPerspectivesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListModelPerspectivesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListModelPerspectivesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetUserModelCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetUserModelCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetUserModelCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListModelItemChildrenCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListModelItemChildrenCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListModelItemChildrenCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetModelItemPermissionsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetModelItemPermissionsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetModelItemPermissionsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetModelItemPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GetModelItemPoliciesCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetModelItemPoliciesCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GetModelItemPoliciesCompletedEventArgs.InheritParent">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetModelItemPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.InheritModelItemParentSecurityCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.RemoveAllModelItemPoliciesCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.SetModelDrillthroughReportsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListModelDrillthroughReportsCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.ListModelDrillthroughReportsCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.ListModelDrillthroughReportsCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GenerateModelCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.GenerateModelCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.GenerateModelCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.RegenerateModelCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Label_Printing.ReportService.RegenerateModelCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Label_Printing.ReportService.RegenerateModelCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

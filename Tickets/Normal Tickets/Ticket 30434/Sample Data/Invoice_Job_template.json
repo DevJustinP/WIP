@@ -1,0 +1,34 @@
+{
+    "module": "MGCIV_Invoice",
+    "job": "Import",
+    "context": {
+        "source": {
+            "database": "PRODUCT_INFO",
+            "server": "Talend"
+        },
+        "field": {
+            "trnyear_c": 2020,
+            "trnmonth_c": 9,
+            "name": "200-1008620",
+            "description": "",
+            "invoicedate": "2020-09-15T00:00:00",
+            "branch": "200",
+            "lookup_assigned_user_email": "TimP@summerclassics.com",
+            "lookup_account_number": "1102320",
+            "customerponumber": "RMA:200-1006868\/200-1062066",
+            "merchandisevalue": 0.00,
+            "freightvalue": 0.00,
+            "othervalue": 0.00,
+            "taxvalue": 0.00,
+            "merchandisecost": -0.00,
+            "documenttype": "",
+            "lookup_sales_order": "",
+            "ordertype": "",
+            "termscode": "",
+            "lookup_operator": "",
+            "billofladingnumber": "",
+            "carrieried": "",
+            "pronumber": ""
+        }
+    }
+}

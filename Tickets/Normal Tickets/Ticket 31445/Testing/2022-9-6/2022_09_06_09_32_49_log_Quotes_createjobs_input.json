@@ -1,0 +1,51 @@
+{
+    "jobs": [
+        {
+            "job_module": "WQUO1_Quotes",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_account_number": "",
+                    "lookup_assigned_user_email": "DierdreE@summerclassics.com",
+                    "lookup_lead_email": "homewood@suddenlink.net",
+                    "customer_po_c": "72632-081922-1390-3",
+                    "name": "72632-081922-1390-3",
+                    "delievery_type_c": "White Glove",
+                    "bill_to_street_c": "603 Little Choctaw Rd",
+                    "bill_to_city_c": "St.Joseph",
+                    "bill_to_state_c": "LA",
+                    "bill_to_postalcode_c": "71366",
+                    "bill_to_country_c": "",
+                    "ship_to_street_c": "603 Little Choctaw Rd",
+                    "ship_to_city_c": "St.Joseph",
+                    "ship_to_state_c": "LA",
+                    "ship_to_postalcode_c": "71366",
+                    "ship_to_country_c": "",
+                    "tag_for_c": "",
+                    "address_type_c": "Residential",
+                    "buyer_email_c": "homewood@suddenlink.net",
+                    "quote_total_c": "1527199",
+                    "organization_id_c": "301",
+                    "buyerfirstname_c": "Grace",
+                    "buyerlastname_c": "Ponthie",
+                    "customername_c": "Grace Ponthie",
+                    "projectname_c": "",
+                    "Notes": "      Pre-sale Labor Day",
+                    "account_name_c": "Grace Ponthie",
+                    "discount_level_c": "rcalc"
+                }
+            }
+        }
+    ],
+    "options": {
+        "prevent_duplicates": true,
+        "retries_allowed": 300,
+        "alert_on_failure": true,
+        "alert_on_completion": false,
+        "assigned_user_id": "ddc253a7-e166-4d4e-a1d4-dc8f76c6fcee"
+    }
+}

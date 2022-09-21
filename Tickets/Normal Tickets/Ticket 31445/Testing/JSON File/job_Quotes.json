@@ -1,0 +1,49 @@
+{
+  "job_module": "Quotes",
+  "job": "Import",
+  "context": {
+	"source": {
+	  "database": "PRODUCT_INFO",
+	  "server": "Talend"
+	},
+    "fields": {
+      "lookup_account_number": "QuoteMaster.customer_number",
+      "lookup_assigned_user_email": "QuoteMaster.rep_email",
+      "lookup_lead_email": "QuoteMaster.customer_email_address",
+      "customer_po_c": "QuoteMaster.customer_po_number",
+      "date_shipped_c": "QuoteMaster.ship_date",
+      "ship_preference_c": "QuoteMaster.shipment_preference",
+      "deliever_type_c": "QuoteMaster.billto_delieverytype",
+      "delievery_notes_c": "QuoteMaster.billto_deliveryinfo",
+      "bill_to_street_c": "QuoteMaster.bill_to_line1 & QuoteMaster.bill_to_line2",
+      "bill_to_city_c": "QuoteMaster.bill_to_city",
+      "bill_to_state_c": "QuoteMaster.bill_to_state",
+      "bill_to_postalcode_c": "QuoteMaster.bill_to_postal_code",
+      "bill_to_country_c": "QuoteMaster.bill_to_country",
+      "ship_to_street_c": "QuoteMaster.ship_to_line1 & QuoteMaster.ship_to_line2",
+      "ship_to_city_c": "QuoteMaster.ship_to_city",
+      "ship_to_state_c": "QuoteMaster.ship_to_state",
+      "ship_to_postalcode_c": "QuoteMaster.ship_to_postal_code",
+      "ship_to_country_c": "QuoteMaster.ship_to_country",
+      "tag_for_c": "QuoteMaster.tag_for",
+      "address_type_c": "QuoteMaster.billto_addresstype",
+      "buyer_email_c": "QuoteMaster.customer_email_address",
+      "quote_total_c": "QuoteMaster.total_cents",
+      "organization_id_c": "QuoteMaster.Branch",
+      "buyerfirstname_c": "QuoteMaster.buyer_first_name",
+      "buyerlastname_c": "QuoteMaster.buyer_last_name || QuoteMaster.bill_to_company_name",
+      "customername_c": "QuoteMaster.bill_to_company_name",
+      "projectname_c": "QuoteMaster.billto_proj",
+      "Notes": "QuoteMaster.notes",
+      "account_name_c": "QuoteMaster.bill_to_company_name",
+      "discount_level_c": "QuoteMaster.price_level"
+    }
+  },
+  "options": {
+    "prevent_duplicates": "true",
+    "retries_allowed": "300",
+    "alert_on_failure": "true",
+    "alert_on_completion": "false",
+	"assigned_user_id":"<Meagans Sugar ID>"
+  }
+}

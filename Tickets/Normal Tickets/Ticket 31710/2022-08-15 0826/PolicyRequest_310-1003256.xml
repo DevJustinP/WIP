@@ -1,0 +1,84 @@
+<policy>
+  <accessToken>fffdb6fb-788d-40c3-9092-db3386073d59</accessToken>
+  <status>NEW</status>
+  <reference>310-1003256</reference>
+  <premiumpaidcurrency>USD</premiumpaidcurrency>
+  <premiumpaid>0.00</premiumpaid>
+  <warrantycostpricecurrency>USD</warrantycostpricecurrency>
+  <warrantycostprice>0.00</warrantycostprice>
+  <salesman>GAN</salesman>
+  <storecode>310</storecode>
+  <retailerbrand>N/A</retailerbrand>
+  <consumer>
+    <reference>1246382</reference>
+    <firstname>AMBER</firstname>
+    <lastname>ISLEY</lastname>
+    <addresses>
+      <address>
+        <type>HOME_ADDRESS</type>
+        <line1>1307 OAKLANDING LANE</line1>
+        <line2>-- </line2>
+        <city>ORANGE PARK</city>
+        <state>FL</state>
+        <zip>32003</zip>
+      </address>
+    </addresses>
+    <contacts>
+      <contact>
+        <type>EMAIL</type>
+        <detail>AISLEY5@COMCAST.NET</detail>
+      </contact>
+      <contact>
+        <type>PHONE</type>
+        <detail>--</detail>
+      </contact>
+    </contacts>
+  </consumer>
+  <policyitems>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-08-14</dateordered>
+      <datedelivered>2022-09-25</datedelivered>
+      <manufacturer>IMAX CORPORATION</manufacturer>
+      <itemtype>PAPER ART IN SHADOWBOX</itemtype>
+      <modeldescrption>PAPER ART IN SHADOWBOX</modeldescrption>
+      <modelname>IM-75048</modelname>
+      <modelnumber>IM-75048</modelnumber>
+      <characteristics>PAPER ART IN SHADOWBOX</characteristics>
+      <material>Accessory</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>363.30</retailvalue>
+      <numberofitems>1</numberofitems>
+    </policyitem>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-08-14</dateordered>
+      <datedelivered>2022-09-25</datedelivered>
+      <manufacturer>GOLDEN CARE</manufacturer>
+      <itemtype>TEAK PROTECTOR</itemtype>
+      <modeldescrption>TEAK PROTECTOR</modeldescrption>
+      <modelname>PNT-00360</modelname>
+      <modelnumber>PNT-00360</modelnumber>
+      <characteristics>TEAK PROTECTOR</characteristics>
+      <material>Parts and Maint Supplies</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>30.00</retailvalue>
+      <numberofitems>1</numberofitems>
+    </policyitem>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-08-14</dateordered>
+      <datedelivered>2022-09-25</datedelivered>
+      <manufacturer>GOLDEN CARE</manufacturer>
+      <itemtype>TEAK/HARDWOOD CLEANER</itemtype>
+      <modeldescrption>TEAK/HARDWOOD CLEANER</modeldescrption>
+      <modelname>PNT-00359</modelname>
+      <modelnumber>PNT-00359</modelnumber>
+      <characteristics>TEAK/HARDWOOD CLEANER</characteristics>
+      <material>Parts and Maint Supplies</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>20.00</retailvalue>
+      <numberofitems>1</numberofitems>
+    </policyitem>
+  </policyitems>
+</policy>

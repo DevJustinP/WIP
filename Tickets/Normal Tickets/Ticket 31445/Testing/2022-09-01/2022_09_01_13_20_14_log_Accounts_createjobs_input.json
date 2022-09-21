@@ -1,0 +1,87 @@
+{
+    "jobs": [
+        {
+            "job_module": "Accounts",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "account_number_c": "1249467",
+                    "name": "Amber Marie Interiors",
+                    "lookup_assigned_user_email": "No-Reply@summerclassics.com",
+                    "lookup_salesperson1_email": "",
+                    "lookup_salesperson2_email": "",
+                    "lookup_salesperson3_email": "",
+                    "discount_level_c": "SR",
+                    "account_type": "",
+                    "branch": "314",
+                    "channel_c": "Retail",
+                    "tax_exempt_id_c": " ",
+                    "phone_office": "904-568-1278",
+                    "primary_contact": "THEN, AMBER MARIE",
+                    "email": "amber@ambermarieinteriors.com",
+                    "billing_address_street": "17 EAST 54TH ST ",
+                    "billing_address_city": "SAVANNAH, GA",
+                    "billing_address_state": " ",
+                    "billing_address_country": " ",
+                    "billing_address_postalcode": "31405",
+                    "shipping_address_street": "17 EAST 54TH ST ",
+                    "shipping_address_city": "SAVANNAH, GA",
+                    "shipping_address_state": " ",
+                    "shipping_address_country": " ",
+                    "shipping_address_postalcode": "31405",
+                    "lead_source_c": "",
+                    "lookup_csr_email": ""
+                }
+            }
+        },
+        {
+            "job_module": "Accounts",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "account_number_c": "1249468",
+                    "name": "Susan Stewart",
+                    "lookup_assigned_user_email": "No-Reply@summerclassics.com",
+                    "lookup_salesperson1_email": "",
+                    "lookup_salesperson2_email": "",
+                    "lookup_salesperson3_email": "",
+                    "discount_level_c": "SR",
+                    "account_type": "",
+                    "branch": "314",
+                    "channel_c": "Retail",
+                    "tax_exempt_id_c": " ",
+                    "phone_office": "404-915-3767",
+                    "primary_contact": "STEWART, SUSAN",
+                    "email": "sc3stewart@gmail.com",
+                    "billing_address_street": "2483 HYDE MANOR DRIVE NW ",
+                    "billing_address_city": "ATLANTA, GA",
+                    "billing_address_state": " ",
+                    "billing_address_country": "USA",
+                    "billing_address_postalcode": "30327",
+                    "shipping_address_street": "2483 HYDE MANOR DRIVE NW ",
+                    "shipping_address_city": "ATLANTA, GA",
+                    "shipping_address_state": " ",
+                    "shipping_address_country": "USA",
+                    "shipping_address_postalcode": "30327",
+                    "lead_source_c": "",
+                    "lookup_csr_email": ""
+                }
+            }
+        }
+    ],
+    "options": {
+        "prevent_duplicates": true,
+        "retries_allowed": 300,
+        "alert_on_failure": true,
+        "alert_on_completion": false,
+        "assigned_user_id": "ddc253a7-e166-4d4e-a1d4-dc8f76c6fcee"
+    }
+}

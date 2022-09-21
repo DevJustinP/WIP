@@ -1,0 +1,14 @@
+moment;pid;root_pid;father_pid;project;job;context;priority;type;origin;message;code
+2022-06-09 20:48:34;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;4;tWarn;tWarn_1;The Order Line Items integration job started;0
+2022-06-09 20:48:34;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;4;tWarn;tWarn_2;The Order Line Items integration job had no input and stopped!;0
+2022-06-09 21:49:01;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-09 22:49:24;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-09 23:24:56;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.ProcessingException:java.net.SocketTimeoutException: SocketTimeoutException invoking https://summerclassics.sugarondemand.com/rest/v11/getQueryResultFromDb: Read timed out;1
+2022-06-10 00:25:24;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 01:25:53;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 02:26:17;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 03:26:43;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 04:27:04;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 05:27:20;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 06:27:40;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1
+2022-06-10 07:28:00;KMof0M;N6UT4G;N6UT4G;LOCAL_PROJECT;Sugar_SysPro_Order_Line_Items_v3_Prod;Default;6;Java Exception;tRESTClient_12;javax.ws.rs.WebApplicationException:HTTP 401 Unauthorized;1

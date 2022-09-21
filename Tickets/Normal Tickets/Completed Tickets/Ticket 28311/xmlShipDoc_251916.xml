@@ -1,0 +1,235 @@
+﻿<MercuryGate>
+  <Header>
+    <SenderID>Summer Classics</SenderID>
+    <ReceiverID>MTLE</ReceiverID>
+    <Action>UpdateOrAdd</Action>
+    <DocTypeID>MasterBillOfLading</DocTypeID>
+    <DocCount>1</DocCount>
+    <Date type="created">05/03/2022  14:46</Date>
+  </Header>
+  <MasterBillOfLading>
+    <Owner>SUMMERCLASSICSINC_199</Owner>
+    <AssignedTo />
+    <ReferenceNumbers>
+      <ReferenceNumber type="Customer Acct Number" isPrimary="false">SUMMERCLASSICSINC_199</ReferenceNumber>
+      <ReferenceNumber type="EDI Created" isPrimary="false">05/03/2022  14:46</ReferenceNumber>
+      <ReferenceNumber type="Unique ID" isPrimary="true">251916</ReferenceNumber>
+    </ReferenceNumbers>
+    <Payment>
+      <Method>Prepaid</Method>
+      <BillTo>
+        <Address>
+          <ReferenceNumbers />
+          <LoctionCode />
+        </Address>
+      </BillTo>
+    </Payment>
+    <Comments>
+      <Comment type="SpecialInstructions" />
+    </Comments>
+    <Plan>
+      <Events count="2">
+        <Event type="Pickup" sequenceNum="1">
+          <CarrierActionCode />
+          <Dates>
+            <Date type="earliest">05/04/2022  09:00</Date>
+            <Date type="latest">05/04/2022  16:00</Date>
+          </Dates>
+          <Address>
+            <ReferenceNumbers />
+            <LocationCode />
+            <Name>Summer Classics</Name>
+            <AddrLine1>Shipping / Returns Dept</AddrLine1>
+            <AddrLine2>7000 Hwy 25</AddrLine2>
+            <City>Montevallo</City>
+            <StateProvince>AL</StateProvince>
+            <PostalCode>35115</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>Traffic Office Manager Montevallo Warehouse</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">205-358-9301</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">TrafficOfficeManagerMontevalloWarehouse@summerclassics.com</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+          <Weight />
+          <Shipments>
+            <ReferenceNumbers>
+              <ReferenceNumber type="ShipId" isPrimary="true">251916_1</ReferenceNumber>
+            </ReferenceNumbers>
+          </Shipments>
+        </Event>
+        <Event type="Drop" sequenceNum="2">
+          <CarrierActionCode />
+          <Dates>
+            <Date type="earliest">05/05/2022  08:00</Date>
+            <Date type="latest">05/05/2022  17:00</Date>
+          </Dates>
+          <Address>
+            <ReferenceNumbers />
+            <LocationCode />
+            <Name>CHIPMAN RELO C/O ROSEMARY HOME</Name>
+            <AddrLine1>7372 DOIG DR</AddrLine1>
+            <AddrLine2>---</AddrLine2>
+            <City>GARDEN GROVE</City>
+            <StateProvince>CA</StateProvince>
+            <PostalCode>92841</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>CHIPMAN RELO C/O ROSEMARY HOME</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">615-308-5488</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">LAUREN@ROSEMARY-HOME.COM</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+          <Weight />
+          <Shipments>
+            <ReferenceNumbers>
+              <ReferenceNumber type="ShipId" isPrimary="true">251916_2</ReferenceNumber>
+            </ReferenceNumbers>
+          </Shipments>
+        </Event>
+      </Events>
+    </Plan>
+    <Shipments>
+      <Shipment type="Normal">
+        <ReferenceNumbers>
+          <ReferenceNumber type="Carrier Type" isPrimary="false">FC</ReferenceNumber>
+          <ReferenceNumber type="Cost of Goods Sold" isPrimary="false">1860.00</ReferenceNumber>
+          <ReferenceNumber type="EDI Created" isPrimary="false">05/03/2022  14:46</ReferenceNumber>
+          <ReferenceNumber type="Final Flag" isPrimary="false">N</ReferenceNumber>
+          <ReferenceNumber type="GL Code" isPrimary="false">62650-220-000</ReferenceNumber>
+          <ReferenceNumber type="ShipId" isPrimary="true">251916_2</ReferenceNumber>
+          <ReferenceNumber type="Shipment Type" isPrimary="false">OB</ReferenceNumber>
+          <ReferenceNumber type="Total Cube" isPrimary="false">24</ReferenceNumber>
+          <ReferenceNumber type="Disposition Number" isPrimary="false">24</ReferenceNumber>
+          <ReferenceNumber type="Unique ID" isPrimary="false">251916</ReferenceNumber>
+          <ReferenceNumber type="Sales Order" isPrimary="false">220-1146884</ReferenceNumber>
+          <ReferenceNumber type="Sales ID" isPrimary="false">MJT-MARIANNEM</ReferenceNumber>
+          <ReferenceNumber type="PO Number" isPrimary="false">BIGLIN</ReferenceNumber>
+        </ReferenceNumbers>
+        <Services>
+          <Service code="RSD">RSD</Service>
+        </Services>
+        <Comments>
+          <Comment type="SpecialInstructions" />
+          <Comment type="SpecialInstructions">615-350-5943</Comment>
+        </Comments>
+        <Notes />
+        <Status>Scheduled</Status>
+        <AssignedTo />
+        <Owner>SUMMERCLASSICSINC_199</Owner>
+        <Dates>
+          <Pickup>
+            <Date type="earliest">05/04/2022  09:00</Date>
+            <Date type="latest">05/04/2022  16:00</Date>
+          </Pickup>
+          <Drop>
+            <Date type="earliest">05/05/2022  08:00</Date>
+            <Date type="latest">05/05/2022  17:00</Date>
+          </Drop>
+        </Dates>
+        <Shipper>
+          <Address>
+            <ReferenceNumbers>
+              <ReferenceNumber type="Stop Number">1</ReferenceNumber>
+            </ReferenceNumbers>
+            <LocationCode />
+            <Name>Summer Classics</Name>
+            <AddrLine1>Shipping / Returns Dept</AddrLine1>
+            <AddrLine2>7000 Hwy 25</AddrLine2>
+            <City>Montevallo</City>
+            <StateProvince>AL</StateProvince>
+            <PostalCode>35115</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>Traffic Office Manager Montevallo Warehouse</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">205-358-9301</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">TrafficOfficeManagerMontevalloWarehouse@summerclassics.com</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+        </Shipper>
+        <Consignee>
+          <Address>
+            <ReferenceNumbers>
+              <ReferenceNumber type="Stop Number">2</ReferenceNumber>
+            </ReferenceNumbers>
+            <LocationCode />
+            <Name>CHIPMAN RELO C/O ROSEMARY HOME</Name>
+            <AddrLine1>7372 DOIG DR</AddrLine1>
+            <AddrLine2>---</AddrLine2>
+            <City>GARDEN GROVE</City>
+            <StateProvince>CA</StateProvince>
+            <PostalCode>92841</PostalCode>
+            <CountryCode>USA</CountryCode>
+            <Contacts>
+              <Contact>
+                <Name>CHIPMAN RELO C/O ROSEMARY HOME</Name>
+                <ContactMethods>
+                  <ContactMethod type="Phone" sequenceNum="1">615-308-5488</ContactMethod>
+                  <ContactMethod type="Email" sequenceNum="2">LAUREN@ROSEMARY-HOME.COM</ContactMethod>
+                </ContactMethods>
+              </Contact>
+            </Contacts>
+          </Address>
+        </Consignee>
+        <Packages>
+          <Package>
+            <ItemGroups>
+              <ItemGroup>
+                <Description>TABLES; density of 4 but &lt; 6</Description>
+                <Weights>
+                  <Weight type="actual" uom="lbs">264</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="PCS">2</Quantity>
+                </Quantities>
+                <Dimensions>
+                  <Dimension />
+                </Dimensions>
+                <FreightClass>175</FreightClass>
+                <LineItem>
+                  <Weights>
+                    <Weight type="actual" uom="lbs">264</Weight>
+                  </Weights>
+                  <Quantities>
+                    <Quantity type="actual" uom="PCS">2</Quantity>
+                  </Quantities>
+                  <Dimensions>
+                    <Dimension />
+                  </Dimensions>
+                  <Description>TABLES; density of 4 but &lt; 6</Description>
+                  <FreightClass>175</FreightClass>
+                  <NmfcCode>82100.4</NmfcCode>
+                  <Cube>24</Cube>
+                  <TemperatureRange />
+                  <HazardousMaterial />
+                  <HazMatDetail />
+                </LineItem>
+              </ItemGroup>
+            </ItemGroups>
+          </Package>
+        </Packages>
+        <Payment>
+          <Method>Prepaid</Method>
+          <BillTo>
+            <Address>
+              <ReferenceNumbers />
+              <LocationCode />
+            </Address>
+          </BillTo>
+        </Payment>
+      </Shipment>
+    </Shipments>
+  </MasterBillOfLading>
+</MercuryGate>

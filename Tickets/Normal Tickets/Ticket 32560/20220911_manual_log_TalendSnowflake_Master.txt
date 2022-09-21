@@ -1,0 +1,40 @@
+1662905543700	2022-09-11 14:12:23.700	INFO	Task 62f6cd9f9aa3810f36ce6821:7.7/0d88ce6b-123b-4879-8b83-a2ee6363e0a5 was started; MDC: {accountID=ae14d411-d46a-4261-87eb-91858449197c, remoteEngineId=ca960220-c016-4cb0-8d0c-065cbdf3f89c, flowExecutionId=0d88ce6b-123b-4879-8b83-a2ee6363e0a5, flowVersion=7.7, flowID=62f6cd9f9aa3810f36ce6821, userId=jarguedas, workspaceId=612e9f68f15490334e9ede35, executionDestination=REMOTE_ENGINE}; containerVersion: 2.12.0_tipaas-base/release%2FR2022-04-04_239_tipaas-remote-engine-build/master
+
+1662905543704	2022-09-11 14:12:23.704	INFO	
+  "remote_engine_id": "ca960220-c016-4cb0-8d0c-065cbdf3f89c",
+  "remote_engine_name": "GWC_Talend_Server",
+  "task_execution_id": "0d88ce6b-123b-4879-8b83-a2ee6363e0a5",
+  "workspace_name": "Personal",
+  "workspace_id": "612e9f68f15490334e9ede35",
+  "environment_name": "default",
+  "environment_id": "612e9f68f15490334e9ede32",
+  "environment_version": "1.3",
+  "trigger_timestamp": 1662905543443,
+  "artifact_name": "TalendSnowflake_Master",
+  "artifact_version": "0.1.6.20220709033535",
+  "task_id": "62f6cd9f9aa3810f36ce6821",
+  "task_name": "TalendSnowflake_Master",
+  "task_version": "7.7",
+  "run_type": "MANUAL",
+  "compatibility_version": "7.3.1",
+  "count_of_attempts": 0,
+  "parallel_execution_allowed": false
+
+1662905543953	2022-09-11 14:12:23.953	INFO	job is starting - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 0d88ce6b-123b-4879-8b83-a2ee6363e0a5 2022-09-11T09:12:23.953-05:00[America/Chicago]
+1662905543955	2022-09-11 14:12:23.955	INFO	Job State added for ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 0d88ce6b-123b-4879-8b83-a2ee6363e0a5 2022-09-11T09:12:23.953-05:00[America/Chicago]
+1662905543959	2022-09-11 14:12:23.959	INFO	starting job d9f9aa3810f36ce682177 for task execution 0d88ce6b-123b-4879-8b83-a2ee6363e0a5
+1662905544145	2022-09-11 14:12:24.145	INFO	job d9f9aa3810f36ce682177 for task execution 0d88ce6b-123b-4879-8b83-a2ee6363e0a5 was requested to start under execution 20220911091223_DC97z
+1662905545361	2022-09-11 14:12:25.361	INFO	TalendJob: 'TalendSnowflake_Master' - Start.
+1662905545849	2022-09-11 14:12:25.849	INFO	tRunJob_1 - The child job 'sc_tmc_project_talend_jobs.invwarehouse_0_1.INVWAREHOUSE' starts on the version '0.1' with the context 'Default'.
+1662905545849	2022-09-11 14:12:25.849	INFO	TalendJob: 'INVWAREHOUSE' - Start.
+1662906292108	2022-09-11 14:24:52.108	INFO	tRunJob_1 - The child job 'sc_tmc_project_talend_jobs.invwarehouse_0_1.INVWAREHOUSE' is done.
+1662906292120	2022-09-11 14:24:52.120	INFO	tRunJob_2 - The child job 'sc_tmc_project_talend_jobs.invmaster_0_1.INVMASTER' starts on the version '0.1' with the context 'Default'.
+1662906292120	2022-09-11 14:24:52.120	INFO	TalendJob: 'INVMASTER' - Start.
+1662906314446	2022-09-11 14:25:14.446	INFO	tRunJob_2 - The child job 'sc_tmc_project_talend_jobs.invmaster_0_1.INVMASTER' is done.
+1662906314453	2022-09-11 14:25:14.453	INFO	tRunJob_3 - The child job 'sc_tmc_project_talend_jobs.admform_0_1.ADMFORM' starts on the version '0.1' with the context 'Default'.
+1662906314453	2022-09-11 14:25:14.453	INFO	TalendJob: 'ADMFORM' - Start.
+1662906322808	2022-09-11 14:25:22.808	INFO	tRunJob_3 - The child job 'sc_tmc_project_talend_jobs.admform_0_1.ADMFORM' is done.
+1662906322817	2022-09-11 14:25:22.817	INFO	tRunJob_4 - The child job 'sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2' starts on the version '0.1' with the context 'Default'.
+1662906322817	2022-09-11 14:25:22.817	INFO	TalendJob: 'BACKLOG_BRANCH_V2' - Start.
+1662908441117	2022-09-11 15:00:41.117	INFO	logs are sent - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 0d88ce6b-123b-4879-8b83-a2ee6363e0a5
+1662908441118	2022-09-11 15:00:41.118	INFO	job is finished - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 0d88ce6b-123b-4879-8b83-a2ee6363e0a5

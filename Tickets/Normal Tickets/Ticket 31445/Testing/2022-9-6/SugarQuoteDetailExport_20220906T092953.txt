@@ -1,0 +1,8 @@
+"OrderNumber","ItemNumber","ItemDescription","Quantity","ExtendedPrice","CalculatedPrice","ProductClass"
+"72632-081922-1390-3","124405","High Back Lounge Chair Cover","4","438.0","109.5","SCW"
+"72632-081922-1390-3","26262","Club Woven Swivel Glider","4","5470.0","1367.5","SCW"
+"72632-081922-1390-3","334117","Club Aluminum Square Coffee Table","1","979.5","979.5","SCW"
+"72632-081922-1390-3","334217","Club Aluminum Rectangular Dining Table","1","1849.5","1849.5","SCW"
+"72632-081922-1390-3","35802","Skye Woven Arm Chair","2","641.0","320.5","SCW"
+"72632-081922-1390-3","35812","Skye Woven Side Chair","6","1731.0","288.5","SCW"
+"72632-081922-1390-3","C589P","Club Woven Sectional Swivel Lou... Full Set Prem","4","1310.0","327.5","SCW"

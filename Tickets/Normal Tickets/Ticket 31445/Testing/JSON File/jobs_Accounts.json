@@ -1,0 +1,48 @@
+{
+  "jobs": [
+    {
+      "job_module": "Accounts",
+      "job": "Import",
+      "context": {
+        "source": {
+          "database": "PRODUCT_INFO",
+          "server": "Talend"
+        },
+        "fields": {
+          "account_number_c": "ArCustomer.Customer",
+          "name": "ArCustomer.Name",
+          "lookup_assigned_user_email": "ArCustomer.Salesperson = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+          "lookup_salesperson1_email": "ArCustomer.Salesperson1 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+          "lookup_salesperson2_email": "ArCustomer.Salesperson2 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+          "lookup_salesperson3_email": "ArCustomer.Salesperson3 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+          "discount_level_c": "ArCustomer.PriceCode",
+          "account_type": "",
+          "branch_c": "ArCustomer.Branch",
+          "channel_c": "",
+          "tax_exempt_id_c": "ArCustomer.TaxExemptNumber",
+          "phone_office": "ArCustomer.Telephone",
+          "primary_contact_c": "ArCustomer.Contact",
+          "email": "ArCustomer.Email",
+          "billing_address_street": "ArCustomer.SoldToAddr1 & ArCustomer.SoldToAddr2",
+          "billing_address_city": "ArCustomer.SoldToAddr3",
+          "billing_address_state": "ArCustomer.SoldToAddr4",
+          "billing_address_country": "ArCustomer.SoldToAddr5",
+          "billing_address_postalcode": "ArCustomer.SoldPostalCode",
+          "shipping_address_street": "ArCustomer.ShipToAddr1 & ArCustomer.ShipToAddr2",
+          "shipping_address_city": "ArCustomer.ShipToAddr3",
+          "shipping_address_state": "ArCustomer.ShipToAddr4",
+          "shipping_address_country": "ArCustomer.ShipToAddr5",
+          "shipping_address_postalcode": "ArCustomer.ShipPostalCode",
+          "lookup_csr_email": "ArCustomer.CustomerServiceRep"
+        }
+      },
+      "options": {
+        "prevent_duplicates": "true",
+        "retries_allowed": "300",
+        "alert_on_failure": "true",
+        "alert_on_completion": "false",
+        "assigned_user_id": "<Meagans Sugar ID>"
+      }
+    }
+  ]
+}

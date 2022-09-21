@@ -1,0 +1,19 @@
+/*
+Note the below does not include order level discounts which we do not utilize but are available in Syspro.
+SD refers to SysproCompany100.dbo.SorDetail
+*/
+
+--To get the extended order value of a line item less any line item discounts
+CASE SD.[MDiscValFlag]
+WHEN 'U' THEN ROUND(SD.[MOrderQty] * (SD.[MPrice] - SD.[MDiscValue]),2)
+WHEN 'V' THEN ROUND((SD.[MOrderQty] * SD.[MPrice]) - SD.[MDiscValue],2)
+ELSE ROUND(SD.[MOrderQty] * SD.[MPrice] * ((1 - SD.[MDiscPct1] / 100) * (1 - SD.[MDiscPct2] / 100) * (1 - SD.[MDiscPct3] / 100)),2)
+END
+
+
+--To calculating the discounted Unit Price
+CASE SD.[MDiscValFlag]
+WHEN 'U' THEN ROUND((SD.[MPrice] - SD.[MDiscValue]),2)
+WHEN 'V' THEN ROUND(((SD.[MOrderQty] * SD.[MPrice]) - SD.[MDiscValue])/SD.MOrderQty,2)
+ELSE ROUND((SD.[MPrice] * (1 - SD.[MDiscPct1] / 100) * (1 - SD.[MDiscPct2] / 100) * (1 - SD.[MDiscPct3] / 100)),2)
+END

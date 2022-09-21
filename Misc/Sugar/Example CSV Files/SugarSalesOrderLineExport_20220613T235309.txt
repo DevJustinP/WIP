@@ -1,0 +1,1 @@
+"SalesOrder","SalesOrderLine","MStockCode","MStockDes","MWarehouse","MOrderQty","InvoicedQty","MShipQty","QtyReserved","MBackOrderQty","MPrice","MProductClass","InitLine","Action"

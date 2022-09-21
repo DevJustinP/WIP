@@ -1,0 +1,83 @@
+<policy>
+  <accessToken>fffdb6fb-788d-40c3-9092-db3386073d59</accessToken>
+  <status>NEW</status>
+  <reference>314-1000540</reference>
+  <premiumpaidcurrency>USD</premiumpaidcurrency>
+  <premiumpaid>0.00</premiumpaid>
+  <warrantycostpricecurrency>USD</warrantycostpricecurrency>
+  <warrantycostprice>0.00</warrantycostprice>
+  <salesman>KDI</salesman>
+  <storecode>314</storecode>
+  <retailerbrand>N/A</retailerbrand>
+  <consumer>
+    <reference>1252634</reference>
+    <firstname>JAY</firstname>
+    <lastname>BRYANT</lastname>
+    <addresses>
+      <address>
+        <type>HOME_ADDRESS</type>
+        <line1>3 EAST GALVEZ CT.</line1>
+        <line2> </line2>
+        <city>GULF BREEZE</city>
+        <state>FL</state>
+        <zip>32561</zip>
+      </address>
+    </addresses>
+    <contacts>
+      <contact>
+        <type>EMAIL</type>
+        <detail>JAYB@CLEVELANDGROUP.COM</detail>
+      </contact>
+      <contact>
+        <type>PHONE</type>
+        <detail>404-502-0937</detail>
+      </contact>
+    </contacts>
+  </consumer>
+  <policyitems>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-05-31</dateordered>
+      <datedelivered>2022-07-12</datedelivered>
+      <itemtype>FIRM MONTECITO DREAM CLOUD CHAIR CUSHION</itemtype>
+      <modeldescrption>FIRM MONTECITO DREAM CLOUD CHAIR CUSHION</modeldescrption>
+      <modelname>C773F664N</modelname>
+      <modelnumber>C773F664N</modelnumber>
+      <characteristics>FIRM MONTECITO DREAM CLOUD CHAIR CUSHION</characteristics>
+      <material>Cushions</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>469.00</retailvalue>
+      <numberofitems>2</numberofitems>
+    </policyitem>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-05-31</dateordered>
+      <datedelivered>2022-07-12</datedelivered>
+      <manufacturer>DETALIA AURORA, INC</manufacturer>
+      <itemtype>IBIS END TABLE</itemtype>
+      <modeldescrption>IBIS END TABLE</modeldescrption>
+      <modelname>1753101</modelname>
+      <modelnumber>1753101</modelnumber>
+      <characteristics>IBIS END TABLE</characteristics>
+      <material>Cast Stone</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>599.50</retailvalue>
+      <numberofitems>2</numberofitems>
+    </policyitem>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-05-31</dateordered>
+      <datedelivered>2022-07-12</datedelivered>
+      <manufacturer>PT ANEKA REGALINDO</manufacturer>
+      <itemtype>MONTECITO WOVEN LOUNGE</itemtype>
+      <modeldescrption>MONTECITO WOVEN LOUNGE</modeldescrption>
+      <modelname>339331</modelname>
+      <modelnumber>339331</modelnumber>
+      <characteristics>MONTECITO WOVEN LOUNGE</characteristics>
+      <material>N-dura™ Resin Wicker</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>1672.46</retailvalue>
+      <numberofitems>2</numberofitems>
+    </policyitem>
+  </policyitems>
+</policy>

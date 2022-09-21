@@ -1,0 +1,44 @@
+﻿ProcessNumber SalesOrder           SalesOrderLine                          DispatchNote         LineType NChargeCode NMscProductCls       NMscChargeValue
+------------- -------------------- --------------------------------------- -------------------- -------- ----------- -------------------- ---------------------------------------
+74            314-1000023          20                                      NULL                 5                    _OTH                 -0.02
+74            314-1000023          21                                      NULL                 5                    _OTH                 0.01
+79            220-1135893          10                                      100000000242496      5        SURCHG      _SURCHARGE           4.24
+79            220-1135893          12                                      100000000242496      5        SURCHG      _SURCHARGE           1.11
+79            220-1135893          15                                      100000000242496      5        SURCHG      _SURCHARGE           0.15
+79            220-1135893          18                                      100000000242496      5        SURCHG      _SURCHARGE           0.02
+81            220-1145092          12                                      NULL                 4                    _FRT                 73.44
+71            220-1144685          18                                      NULL                 5        SURCHG      _SURCHARGE           603.30
+75            313-1000340          15                                      NULL                 4                    _FRT                 199.00
+75            313-1000340          16                                      NULL                 5                    _DONATION            150.00
+79            220-1135893          22                                      NULL                 5        SURCHG      _SURCHARGE           0.00
+79            220-1135893          24                                      NULL                 5        SURCHG      _SURCHARGE           0.00
+73            200-0206013          17                                      NULL                 5                    WP                   -15.00
+81            220-1145092          3                                       100000000242497      5        SURCHG      _SURCHARGE           124.11
+81            220-1145092          11                                      NULL                 5        SURCHG      _SURCHARGE           104.09
+78            220-1137114          3                                       100000000222832      5        SURCHG      _SURCHARGE           113.40
+72            200-8005101          1                                       NULL                 5        200DIS      _SALESDISC           -23.20
+76            313-1000328          30                                      NULL                 5                    _DEP                 137.50
+80            200-1092319          2                                       100000000242498      5        SURCHG      _SURCHARGE           114.40
+80            200-1092319          3                                       100000000242498      4                    _FRT                 172.00
+79            220-1135893          8                                       100000000242496      5        SURCHG      _SURCHARGE           16.22
+79            220-1135893          14                                      100000000242496      5        SURCHG      _SURCHARGE           0.29
+79            220-1135893          17                                      100000000242496      5        SURCHG      _SURCHARGE           0.04
+79            220-1135893          19                                      100000000242496      5        SURCHG      _SURCHARGE           0.02
+79            220-1135893          20                                      100000000242496      5        SURCHG      _SURCHARGE           0.01
+79            220-1135893          23                                      NULL                 5        SURCHG      _SURCHARGE           0.00
+79            220-1135893          25                                      NULL                 5        SURCHG      _SURCHARGE           0.00
+77            311-1002552          4                                       NULL                 5        UIND05      _SERVPLAN            299.95
+81            220-1145092          4                                       100000000242497      4                    _FRT                 87.56
+70            220-0140686          4                                       NULL                 4                    _FRT                 100.00
+70            220-0140686          5                                       NULL                 4                    _FRT                 70.00
+74            314-1000023          19                                      NULL                 5                    _OTH                 0.01
+78            220-1137114          4                                       100000000222832      4                    _FRT                 170.00
+71            220-1144685          19                                      NULL                 4                    _FRT                 905.00
+79            220-1135893          7                                       100000000242496      5        SURCHG      _SURCHARGE           31.75
+79            220-1135893          9                                       100000000242496      5        SURCHG      _SURCHARGE           8.29
+79            220-1135893          11                                      100000000242496      5        SURCHG      _SURCHARGE           2.17
+79            220-1135893          13                                      100000000242496      5        SURCHG      _SURCHARGE           0.56
+79            220-1135893          16                                      100000000242496      5        SURCHG      _SURCHARGE           0.04
+79            220-1135893          21                                      100000000242496      5        SURCHG      _SURCHARGE           0.01
+73            200-0206013          16                                      NULL                 4                    _FRT                 333.00
+77            311-1002552          3                                       NULL                 5        UOUT05      _SERVPLAN            299.95

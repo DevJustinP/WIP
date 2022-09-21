@@ -1,0 +1,5 @@
+SalesOrder,InvoiceNumber,BillOfLadingNumber,CarrierId,CADate,Description,ProNumber
+301-1010600          ,301-1019026          ,(none)               ,(none)    ,NULL                           ,(none)                                             ,(none)
+301-1010600          ,301-1020827          ,(none)               ,(none)    ,NULL                           ,(none)                                             ,(none)
+301-1010600          ,301-1020828          ,(none)               ,(none)    ,NULL                           ,(none)                                             ,(none)
+301-1010600          ,301-1021531          ,(none)               ,(none)    ,NULL                           ,(none)                                             ,(none)

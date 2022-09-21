@@ -1,0 +1,88 @@
+﻿Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe assembly.
+Committing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Installing service GWC Service - SOH - SalesOrder Process...
+Creating EventLog source GWC Service - SOH - SalesOrder Process in log Application...
+Rolling back assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Restoring event log to previous state for source GWC Service - SOH - SalesOrder Process.
+Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Installing service GWC Service - SOH - SalesOrder Process...
+Creating EventLog source GWC Service - SOH - SalesOrder Process in log Application...
+Rolling back assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Restoring event log to previous state for source GWC Service - SOH - SalesOrder Process.
+Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Rolling back assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Installing service GWC Service - SOH - SalesOrder Process...
+Creating EventLog source GWC Service - SOH - SalesOrder Process in log Application...
+Rolling back assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Restoring event log to previous state for source GWC Service - SOH - SalesOrder Process.
+Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Installing service GWC Service - SOH - SalesOrder Process...
+Creating EventLog source GWC Service - SOH - SalesOrder Process in log Application...
+Rolling back assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Restoring event log to previous state for source GWC Service - SOH - SalesOrder Process.
+Installing assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Installing service GWC Service - SOH - SalesOrder Process...
+Creating EventLog source GWC Service - SOH - SalesOrder Process in log Application...
+Rolling back assembly 'P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.InstallLog
+   assemblypath = P:\Services\GWC Service - SOH - SalesOrder Process\Install\GWC_Service_Order_Handler.exe
+Restoring event log to previous state for source GWC Service - SOH - SalesOrder Process.

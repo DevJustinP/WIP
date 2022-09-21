@@ -1,0 +1,3 @@
+moment;pid;root_pid;father_pid;project;job;context;priority;type;origin;message;code
+2022-07-12 13:21:08;JVqkgd;habf6I;UhOeai;LOCAL_PROJECT;Sugar_SysPro_Accounts_v5_Prod_Load_Staging;Default;4;tWarn;tWarn_1;The Accounts integration job started;0
+2022-07-12 13:21:25;JVqkgd;habf6I;UhOeai;LOCAL_PROJECT;Sugar_SysPro_Accounts_v5_Prod_Load_Staging;Default;6;Java Exception;tFileDelete_1;java.lang.RuntimeException:File \\SQL08\SugarCRM\Processing\SugarCustomerExport_20220712T124503.txt does not exist or is invalid or is not a file.;1

@@ -1,0 +1,3 @@
+SalesOrder,InvoiceNumber,BillOfLadingNumber,CarrierId,CADate,Description,ProNumber
+200-1092441          ,200-1141262          ,7900618474           ,AVRT      ,01-13-2022                     ,AVERITT EXPRESS                                    ,0201211226
+200-1092441         ,200-1142316          ,7900621835           ,SEFL      ,01-13-2022                     ,SOUTHEASTERN FREIGHT LINES                         ,8364664

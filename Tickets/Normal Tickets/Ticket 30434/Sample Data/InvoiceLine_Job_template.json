@@ -1,0 +1,31 @@
+{
+    "module": "MGCIV_InvoiceLineItems",
+    "job": "Import",
+    "context": {
+        "source": {
+            "database": "PRODUCT_INFO",
+            "server": "Talend"
+        },
+        "field": {
+            "lookup_invoice_trnyear": 0,
+            "lookup_invoice_trnmonth": 0,
+            "lookup_invoice": "",
+            "detailline": 0,
+            "invoicedate": "2020-09-22T00:00:00",
+            "branch": "",
+            "description": "",
+            "productclass": "",
+            "qtyinvoiced": 0.000000,
+            "netsalesvalue": 0.00,
+            "taxvalue": 0.00,
+            "costvalue": 0.00,
+            "discvalue": 0.00,
+            "salesglintreqd": "",
+            "lookup_sales_order": "",
+            "lookup_sales_order_line_number": 0,
+            "customerponumber": "",
+            "pimdepartment_c": "",
+            "pimcategory_c": ""
+        }
+    }
+}

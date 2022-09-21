@@ -1,0 +1,4 @@
+Talend Job Deployment:
+1) On the IIS server, within Talend Studio, right click on Sales_Branch_Day_Sku job
+2) select publish to cloud and hit finish on wizard
+3) within talend cloud, schedule the job

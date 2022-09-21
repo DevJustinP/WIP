@@ -1,0 +1,3 @@
+moment;pid;root_pid;father_pid;project;job;context;priority;type;origin;message;code
+2022-07-12 12:36:01;EioMxG;EioMxG;EioMxG;LOCAL_PROJECT;Sugar_Master_New;Default;4;tWarn;tWarn_1;The Master integration job started;0
+2022-07-12 13:17:43;EioMxG;EioMxG;EioMxG;LOCAL_PROJECT;Sugar_Master_New;Default;4;tWarn;tWarn_2;The Master integration job finished successfully!;0

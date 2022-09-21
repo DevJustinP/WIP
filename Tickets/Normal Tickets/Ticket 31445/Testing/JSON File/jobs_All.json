@@ -1,0 +1,175 @@
+{
+	"jobs": {
+	{
+	  "job_module": "Accounts",
+	  "job": "Import",
+	  "context": {
+		"source": {
+		  "database": "PRODUCT_INFO",
+		  "server": "Talend"
+		},
+		"fields": {
+		  "account_number_c": "ArCustomer.Customer",
+		  "name": "ArCustomer.Name",
+		  "lookup_assigned_user_email": "ArCustomer.Salesperson = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "lookup_salesperson1_email": "ArCustomer.Salesperson1 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "lookup_salesperson2_email": "ArCustomer.Salesperson2 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "lookup_salesperson3_email": "ArCustomer.Salesperson3 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "discount_level_c": "ArCustomer.PriceCode",
+		  "account_type": "",
+		  "branch_c": "ArCustomer.Branch",
+		  "channel_c": "",
+		  "tax_exempt_id_c": "ArCustomer.TaxExemptNumber",
+		  "phone_office": "ArCustomer.Telephone",
+		  "primary_contact_c": "ArCustomer.Contact",
+		  "email": "ArCustomer.Email",
+		  "billing_address_street": "ArCustomer.SoldToAddr1 & ArCustomer.SoldToAddr2",
+		  "billing_address_city": "ArCustomer.SoldToAddr3",
+		  "billing_address_state": "ArCustomer.SoldToAddr4",
+		  "billing_address_country": "ArCustomer.SoldToAddr5",
+		  "billing_address_postalcode": "ArCustomer.SoldPostalCode",
+		  "shipping_address_street": "ArCustomer.ShipToAddr1 & ArCustomer.ShipToAddr2",
+		  "shipping_address_city": "ArCustomer.ShipToAddr3",
+		  "shipping_address_state": "ArCustomer.ShipToAddr4",
+		  "shipping_address_country": "ArCustomer.ShipToAddr5",
+		  "shipping_address_postaclode": "ArCustomer.ShipPostalCode",
+		  "lookup_csr_email": "ArCustomer.CustomerServiceRep"
+		}
+	  }	  
+	},
+	{
+	  "job_module": "Quotes",
+	  "job": "Import",
+	  "context": {
+		"source": {
+		  "database": "PRODUCT_INFO",
+		  "server": "Talend"
+		},
+		"fields": {
+		  "lookup_account_number": "QuoteMaster.customer_number",
+		  "lookup_assigned_user_email": "QuoteMaster.rep_email",
+		  "lookup_lead_email": "QuoteMaster.customer_email_address",
+		  "customer_po_c": "QuoteMaster.customer_po_number",
+		  "date_shipped_c": "QuoteMaster.ship_date",
+		  "ship_preference_c": "QuoteMaster.shipment_preference",
+		  "deliever_type_c": "QuoteMaster.billto_delieverytype",
+		  "delievery_notes_c": "QuoteMaster.billto_deliveryinfo",
+		  "bill_to_street_c": "QuoteMaster.bill_to_line1 & QuoteMaster.bill_to_line2",
+		  "bill_to_city_c": "QuoteMaster.bill_to_city",
+		  "bill_to_state_c": "QuoteMaster.bill_to_state",
+		  "bill_to_postalcode_c": "QuoteMaster.bill_to_postal_code",
+		  "bill_to_country_c": "QuoteMaster.bill_to_country",
+		  "ship_to_street_c": "QuoteMaster.ship_to_line1 & QuoteMaster.ship_to_line2",
+		  "ship_to_city_c": "QuoteMaster.ship_to_city",
+		  "ship_to_state_c": "QuoteMaster.ship_to_state",
+		  "ship_to_postalcode_c": "QuoteMaster.ship_to_postal_code",
+		  "ship_to_country_c": "QuoteMaster.ship_to_country",
+		  "tag_for_c": "QuoteMaster.tag_for",
+		  "address_type_c": "QuoteMaster.billto_addresstype",
+		  "buyer_email_c": "QuoteMaster.customer_email_address",
+		  "quote_total_c": "QuoteMaster.total_cents",
+		  "organization_id_c": "QuoteMaster.Branch",
+		  "buyerfirstname_c": "QuoteMaster.buyer_first_name",
+		  "buyerlastname_c": "QuoteMaster.buyer_last_name || QuoteMaster.bill_to_company_name",
+		  "customername_c": "QuoteMaster.bill_to_company_name",
+		  "projectname_c": "QuoteMaster.billto_proj",
+		  "Notes": "QuoteMaster.notes",
+		  "account_name_c": "QuoteMaster.bill_to_company_name",
+		  "discount_level_c": "QuoteMaster.price_level"
+		}
+	  }
+	},
+	{
+	  "job_module": "Quote Line Items",
+	  "job": "Import",
+	  "context": {
+		"source": {
+		  "database": "PRODUCT_INFO",
+		  "server": "Talend"
+		},
+		"fields": {
+		  "quote_header_num_c": "QuoteDetail.EcatOrderNumber",
+		  "name": "QuoteDetail.item_number",
+		  "description": "QuoteDetail.description",
+		  "quantity_c": "QuoteDetail.quantity",
+		  "unit_price_c": "QuoteDetail.calculated_price",
+		  "line_item_total_c": "QuoteDetail.extended_price",
+		  "product_class_c": "calculated"
+		}
+	  },
+	  "options": {
+		"prevent_duplicates": "true",
+		"retries_allowed": "300",
+		"alert_on_failure": "true",
+		"alert_on_completion": "false",
+		"assigned_user_id":"<Meagans Sugar ID>"
+	  }
+	},
+	{
+	  "job_module": "Orders",
+	  "job": "Import",
+	  "context": {
+		"source": {
+		  "database": "PRODUCT_INFO",
+		  "server": "Talend"
+		},
+		"fields": {
+		  "order_date_c": "SorMaster.OrderDate",
+		  "name": "SorMaster.SalesOrder",
+		  "po_number_c": "SorMaster.CustomerPoNumber",
+		  "shipping_address_street_c": "SorMaster.ShipAddress1&SorMaster.ShipAddress2",
+		  "shipping_address_city_c": "SorMaster.ShipAddress3",
+		  "shipping_address_state_c": "SorMaster.ShipAddress4",
+		  "shipping_address_postalcode_c": "SorMaster.ShipPostalCode",
+		  "shipping_address_country_c": "SorMaster.ShipAddress5",
+		  "market_segment_c": "SorMaster.MarketSegment",
+		  "shipment_request_c": "SorMaster.ShipmentRequest",
+		  "branch_c": "SorMaster.Branch",
+		  "channel_c": "case statement based on SorMaster.Branch",
+		  "order_status_c": "SorMaster.OrderStatus",
+		  "noearlierthandate_c": "SorMaster.NoEarlierThanDate",
+		  "nolaterthandate_c": "SorMaster.NoLaterThanDate",
+		  "DocumentType": "SorMaster.DocumentType",
+		  "lookup_account_number": "SorMaster.Customer",
+		  "lookup_specifier_account_number": "SorMaster.Specifier",
+		  "lookup_purchaser_account_number": "SorMaster.Purchaser",
+		  "lookup_assigned_user_email": "SorMaster.Customer = ArCusomter.Customer | ArCustomer.Salesperson = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "lookup_salesperson1_email": "SorMaster.Customer = ArCusomter.Customer | ArCustomer.Salesperson1 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "lookup_salesperson2_email": "SorMaster.Customer = ArCusomter.Customer | ArCustomer.Salesperson2 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail",
+		  "lookup_salesperson3_email": "SorMaster.Customer = ArCusomter.Customer | ArCustomer.Salesperson3 = SalSalesperson+.Salesperson | SalSalesperson+.CrmEmail"
+		}
+	  }
+	},
+	{
+	  "job_module": "Orders",
+	  "job": "Import",
+	  "context": {
+		"source": {
+		  "database": "PRODUCT_INFO",
+		  "server": "Talend"
+		},
+		"fields": {
+		  "lookup_order_number": "SorDetail.SalesOrder",
+		  "name": "SorDetail.SalesOrderLine",
+		  "item_number_c": "SorDetail.MStockCode",
+		  "qty_c": "SorDatail.MStockDes",
+		  "qty_invoiced_c": "SorDetail.MOrderQty - (SorDetail.MShipQty + SorDetail.MBackOrderQty + SorDetail.QtyReserved)",
+		  "qty_available_c": "SorDetail.QtyReserved",
+		  "qty_backordered_c": "SorDetail.MBackOrderQty",
+		  "unit_price_c": "SorDetail.MPrice",
+		  "product_class_c": "SorDetail.MProductClass",
+		  "qty_pending_invoice_c": "SorDetail.MShipQty",
+		  "initial_line_number": "SorDetail.SalesOrderInitLine",
+		  "description": "SorDetail.MStockDes"
+		}
+	  }
+	},
+	  "options": {
+		"prevent_duplicates": "true",
+		"retries_allowed": "300",
+		"alert_on_failure": "true",
+		"alert_on_completion": "false",
+		"assigned_user_id":"<Meagans Sugar ID>"
+	  }
+	}
+}

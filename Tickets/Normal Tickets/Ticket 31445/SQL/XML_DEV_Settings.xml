@@ -1,0 +1,9 @@
+﻿<Setting Type="talend " Name="Talend - SugarCRM ETL" ApplicationId="48" ApplicationCode="TSX">
+	<clientsecret />
+	<client_id>sugar</client_id>
+	<password>1Welcome1</password>
+	<username>wsysdata</username>
+	<platform>wTalend</platform>
+	<SugarURL>https://summerclassicsdev.sugarondemand.com/rest/v11_7/</SugarURL>
+	<SugarFileDirectory>\\Sql08\ssis\Data\Datafeed\SugarCRM\Dev</SugarFileDirectory>
+</Setting>

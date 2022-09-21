@@ -1,0 +1,1711 @@
+{
+    "jobs": [
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008620",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimP@summerclassics.com",
+                    "lookup_account_number": "1102320",
+                    "customerponumber": "RMA:200-1006868\/200-1062066",
+                    "merchandisevalue": -361.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -167.76,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008478",
+                    "ordertype": "AW",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008621",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimB@summerclassics.com",
+                    "lookup_account_number": "1208506",
+                    "customerponumber": "RMA:200-1006821",
+                    "merchandisevalue": -745.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -218.80,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008486",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008622",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JeremyR@summerclassics.com",
+                    "lookup_account_number": "1102733",
+                    "customerponumber": "RMA:200-1006980",
+                    "merchandisevalue": -696.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -360.50,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008554",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008623",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1102480",
+                    "customerponumber": "RMA:200-1006522",
+                    "merchandisevalue": -165.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -105.48,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008570",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008624",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimP@summerclassics.com",
+                    "lookup_account_number": "1103464",
+                    "customerponumber": "RMA:200-1006642",
+                    "merchandisevalue": -625.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008571",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008625",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1103464",
+                    "customerponumber": "RMA:200-1005160",
+                    "merchandisevalue": -483.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008575",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008626",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1103464",
+                    "customerponumber": "RMA:200-1003849",
+                    "merchandisevalue": -888.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008574",
+                    "ordertype": "AJ",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008627",
+                    "description": "",
+                    "invoicedate": "2020-09-15T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1103464",
+                    "customerponumber": "RMA:200-1002335",
+                    "merchandisevalue": -254.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008573",
+                    "ordertype": "BT",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008628",
+                    "description": "",
+                    "invoicedate": "2020-09-16T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1103690",
+                    "customerponumber": "RMA:200-1006923",
+                    "merchandisevalue": -264.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -216.41,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008516",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008629",
+                    "description": "",
+                    "invoicedate": "2020-09-16T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickL@summerclassics.com",
+                    "lookup_account_number": "1142608",
+                    "customerponumber": "CREDIT TO REPAIR",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": -50.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008572",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": " ",
+                    "carrieried": "(none)",
+                    "pronumber": " "
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008630",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "CoreyW@summerclassics.com",
+                    "lookup_account_number": "1102920",
+                    "customerponumber": "RMA:200-1006928",
+                    "merchandisevalue": -130.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -37.14,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008518",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008631",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1126645",
+                    "customerponumber": "RMA:200-1006988",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -680.86,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008560",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008632",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1102990",
+                    "customerponumber": "CN PRICE DIFF 1061256",
+                    "merchandisevalue": -90.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -197.43,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008576",
+                    "ordertype": "BS",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": " ",
+                    "carrieried": "(none)",
+                    "pronumber": " "
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008633",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "MarianneM@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "DIFFERENCE FOR FREIGHT",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": -235.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008577",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": " ",
+                    "carrieried": "(none)",
+                    "pronumber": " "
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008634",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "EdL@summerclassics.com",
+                    "lookup_account_number": "1124734",
+                    "customerponumber": "RMA:200-1006767",
+                    "merchandisevalue": -2512.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008585",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008635",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JoshS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006795",
+                    "merchandisevalue": -213.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -131.77,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008580",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008636",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JoshS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006795",
+                    "merchandisevalue": -237.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -131.77,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008581",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008637",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JoshS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006795",
+                    "merchandisevalue": -471.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -260.40,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008582",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008638",
+                    "description": "",
+                    "invoicedate": "2020-09-17T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RichardClinglyTeam@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006795",
+                    "merchandisevalue": -525.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -290.03,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008583",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008639",
+                    "description": "",
+                    "invoicedate": "2020-09-18T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "WynneJeremyTeam@summerclassics.com",
+                    "lookup_account_number": "1102733",
+                    "customerponumber": "RMA:200-1006941",
+                    "merchandisevalue": -876.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -528.72,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008527",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008640",
+                    "description": "",
+                    "invoicedate": "2020-09-18T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1126326",
+                    "customerponumber": "RMA:200-1006999",
+                    "merchandisevalue": -135.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -63.88,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008578",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008641",
+                    "description": "",
+                    "invoicedate": "2020-09-18T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1195416",
+                    "customerponumber": "RMA:200-1006987",
+                    "merchandisevalue": -137.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -579.84,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008586",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008642",
+                    "description": "",
+                    "invoicedate": "2020-09-18T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "GwenK@summerclassics.com",
+                    "lookup_account_number": "1102515",
+                    "customerponumber": "CN FOR ORDER 200-1063780",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": -48.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008588",
+                    "ordertype": "C1",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": " ",
+                    "carrieried": "(none)",
+                    "pronumber": " "
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008643",
+                    "description": "",
+                    "invoicedate": "2020-09-18T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "KevinF@summerclassics.com",
+                    "lookup_account_number": "1102719",
+                    "customerponumber": "RMA:200-1006581",
+                    "merchandisevalue": -480.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008589",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008644",
+                    "description": "",
+                    "invoicedate": "2020-09-18T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1195416",
+                    "customerponumber": "RMA:200-1006784",
+                    "merchandisevalue": -616.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008590",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008645",
+                    "description": "",
+                    "invoicedate": "2020-09-21T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "dswasser@shaw.ca",
+                    "lookup_account_number": "1118529",
+                    "customerponumber": "RMA:200-1006899",
+                    "merchandisevalue": -1027.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -594.15,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008502",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008646",
+                    "description": "",
+                    "invoicedate": "2020-09-21T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "KevinF@summerclassics.com",
+                    "lookup_account_number": "1103609",
+                    "customerponumber": "RMA:200-1006986",
+                    "merchandisevalue": -819.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": -472.63,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008556",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008647",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "CoreyW@summerclassics.com",
+                    "lookup_account_number": "1102654",
+                    "customerponumber": "RMA:200-1006731",
+                    "merchandisevalue": -400.00,
+                    "freightvalue": -120.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008601",
+                    "ordertype": "AW",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008648",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "CoreyW@summerclassics.com",
+                    "lookup_account_number": "1102654",
+                    "customerponumber": "FRT OVERCHARGES",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": -73.20,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008602",
+                    "ordertype": "  ",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": " ",
+                    "carrieried": "(none)",
+                    "pronumber": " "
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008649",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimB@summerclassics.com",
+                    "lookup_account_number": "1102687",
+                    "customerponumber": "RMA:200-1006787",
+                    "merchandisevalue": -342.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008604",
+                    "ordertype": "AW",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008650",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimB@summerclassics.com",
+                    "lookup_account_number": "1102687",
+                    "customerponumber": "RMA:200-1006552",
+                    "merchandisevalue": -280.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008603",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008651",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1102260",
+                    "customerponumber": "RMA:200-1006571",
+                    "merchandisevalue": -364.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008605",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008652",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1102260",
+                    "customerponumber": "RMA:200-1006598",
+                    "merchandisevalue": -328.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008606",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008653",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimP@summerclassics.com",
+                    "lookup_account_number": "1102260",
+                    "customerponumber": "RMA:200-1006650",
+                    "merchandisevalue": -1238.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008607",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008654",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1102260",
+                    "customerponumber": "RMA:200-1006759",
+                    "merchandisevalue": -316.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008608",
+                    "ordertype": "AW",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008655",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "RickLeslieTeam@summerclassics.com",
+                    "lookup_account_number": "1102260",
+                    "customerponumber": "RMA:200-1006777",
+                    "merchandisevalue": -442.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008609",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008656",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimP@summerclassics.com",
+                    "lookup_account_number": "1102260",
+                    "customerponumber": "RMA:200-1006829",
+                    "merchandisevalue": -458.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008610",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008657",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006388",
+                    "merchandisevalue": -626.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008611",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008658",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006388",
+                    "merchandisevalue": -626.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008612",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008659",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006456",
+                    "merchandisevalue": -530.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008613",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008660",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006751",
+                    "merchandisevalue": -345.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008614",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008661",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006751",
+                    "merchandisevalue": -345.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008615",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008662",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "RMA:200-1006639",
+                    "merchandisevalue": -491.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008616",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008663",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JenniferS@summerclassics.com",
+                    "lookup_account_number": "1181048",
+                    "customerponumber": "MISSING REPAIR CREDIT",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": -400.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008617",
+                    "ordertype": "  ",
+                    "termscode": "CN",
+                    "lookup_operator": "CARLAD",
+                    "billofladingnumber": " ",
+                    "carrieried": "(none)",
+                    "pronumber": " "
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008664",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JeremyR@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "RMA:200-1006463",
+                    "merchandisevalue": -96.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008618",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008665",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "WynneJeremyTeam@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "RMA:200-1006512",
+                    "merchandisevalue": -296.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008619",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008666",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JeremyR@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "RMA:200-1006512",
+                    "merchandisevalue": -296.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008620",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008667",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JeremyR@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "RMA:200-1006569",
+                    "merchandisevalue": -232.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008621",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008668",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JeremyR@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "RMA:200-1006592",
+                    "merchandisevalue": -504.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008622",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        },
+        {
+            "module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "field": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1008669",
+                    "description": "",
+                    "invoicedate": "2020-09-22T00:00:00",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "WynneW@summerclassics.com",
+                    "lookup_account_number": "1103467",
+                    "customerponumber": "RMA:200-1006605",
+                    "merchandisevalue": -425.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "C",
+                    "lookup_sales_order": "200-8008623",
+                    "ordertype": "BP",
+                    "termscode": "CN",
+                    "lookup_operator": "PATRI",
+                    "billofladingnumber": "(none)",
+                    "carrieried": "(none)",
+                    "pronumber": "(none)"
+                }
+            }
+        }
+    ],
+    "options": {
+        "prevent_duplicates": true,
+        "retries_allowed": 300,
+        "alert_on_failure": true,
+        "alert_on_completion": false,
+        "assigned_user_id": "ddc253a7-e166-4d4e-a1d4-dc8f76c6fcee"
+    }
+}

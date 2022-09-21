@@ -1,0 +1,34 @@
+{
+    "job_module": "Invoice Line Items",
+    "job": "Import",
+    "context": {
+      "source": {
+        "database": "PRODUCT_INFO",
+        "server": "Talend"
+      },
+      "fields": {
+        "branch": "",
+        "detailline": "",
+        "invoicedate": "",
+        "name": "",
+        "description": "",
+        "productclass": "",
+        "pimdepartment_c": "",
+        "pimcategory_c": "",
+        "qtyinvoice": 0,
+        "netsalesvalue": 0.00,
+        "taxvalue": 0.00,
+        "costvalue": 0.00,
+        "discvalue": 0.00,
+        "customerponumber": "",
+        "salesglintreqd": ""
+      }
+    },
+    "options": {
+      "prevent_duplicates": "true",
+      "retries_allowed": "300",
+      "alert_on_failure": "true",
+      "alert_on_completion": "false",
+      "assigned_user_id":"<Meagans Sugar ID>"
+    }
+}

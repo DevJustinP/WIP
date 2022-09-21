@@ -1,0 +1,4 @@
+moment;pid;root_pid;father_pid;project;job;context;priority;type;origin;message;code
+2022-07-12 13:55:54;9YZaFv;habf6I;habf6I;LOCAL_PROJECT;Sugar_SysPro_Orders_v6_Prod;Default;4;tWarn;tWarn_1;The Orders integration job started;0
+2022-07-12 13:55:54;9YZaFv;habf6I;habf6I;LOCAL_PROJECT;Sugar_SysPro_Orders_v6_Prod;Default;4;tWarn;tWarn_2;The Orders integration job had no input and stopped!;0
+2022-07-12 13:57:42;9YZaFv;habf6I;habf6I;LOCAL_PROJECT;Sugar_SysPro_Orders_v6_Prod;Default;4;tWarn;tWarn_3;The Orders integration job finished successfully!;0

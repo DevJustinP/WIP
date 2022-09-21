@@ -1,0 +1,46 @@
+﻿<SalesOrders xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTOI.XSD">
+	<Parameters>
+		<InBoxMsgReqd>Y</InBoxMsgReqd>
+		<Process>IMPORT</Process>
+		<CustomerToUse/>
+		<WarehouseListToUse>E,FG</WarehouseListToUse>
+		<UseCustomerSalesWarehouse/>
+		<TypeOfOrder>ORD</TypeOfOrder>
+		<OrderStatus>1</OrderStatus>
+		<MinimumDaysToShip>4</MinimumDaysToShip>
+		<AllowNonStockItems>Y</AllowNonStockItems>
+		<AcceptOrdersIfNoCredit>Y</AcceptOrdersIfNoCredit>
+		<AcceptEarlierShipDate>N</AcceptEarlierShipDate>
+		<OperatorToInform>ADMIN</OperatorToInform>
+		<CreditFailMessage>No credit available</CreditFailMessage>
+		<ValidProductClassList>SPEC,BA,FGC</ValidProductClassList>
+		<ShipFromDefaultBin>N</ShipFromDefaultBin>
+		<AllowDuplicateOrderNumbers>Y</AllowDuplicateOrderNumbers>
+		<CheckForCustomerPoNumbers>Y</CheckForCustomerPoNumbers>
+		<AllowInvoiceInformationEntry/>
+		<AlwaysUsePriceEntered/>
+		<AllowZeroPrice/>
+		<AllowChangeToZeroPrice/>
+		<AddStockSalesOrderText>N</AddStockSalesOrderText>
+		<AddDangerousGoodsText>N</AddDangerousGoodsText>
+		<UseStockDescSupplied/>
+		<ValidateShippingInstrs/>
+		<AllocationAction/>
+		<IgnoreWarnings>N</IgnoreWarnings>
+		<AddAttachedServiceCharges/>
+		<StatusInProcess/>
+		<StatusInProcessResponse/>
+		<WarnIfCustomerOnHold>N</WarnIfCustomerOnHold>
+		<AcceptKitOptional>N</AcceptKitOptional>
+		<AllowBackOrderForPartialHold/>
+		<AllowBackOrderForSuperseded/>
+		<OverrideCustomerBackOrder/>
+		<UseMasterAccountForCustomerPartNo/>
+		<ApplyLeadTimeCalculation/>
+		<ApplyParentDiscountToComponents>N</ApplyParentDiscountToComponents>
+		<AllowManualOrderNumberToBeUsed>N</AllowManualOrderNumberToBeUsed>
+		<ReserveStock/>
+		<ReserveStockRequestAllocs/>
+		<AllowBackOrderForNegativeMerchLine>N</AllowBackOrderForNegativeMerchLine>
+	</Parameters>
+</SalesOrders>

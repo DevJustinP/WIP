@@ -1,0 +1,145 @@
+1662714012705	2022-09-09 09:00:12.705	INFO	Task 62f6cd9f9aa3810f36ce6821:7.7/5fbc265c-3a71-476a-bcab-9ebb32747f14 was started; MDC: {accountID=ae14d411-d46a-4261-87eb-91858449197c, remoteEngineId=ca960220-c016-4cb0-8d0c-065cbdf3f89c, flowExecutionId=5fbc265c-3a71-476a-bcab-9ebb32747f14, flowVersion=7.7, flowID=62f6cd9f9aa3810f36ce6821, userId=jarguedas, workspaceId=612e9f68f15490334e9ede35, executionDestination=REMOTE_ENGINE}; containerVersion: 2.12.0_tipaas-base/release%2FR2022-04-04_239_tipaas-remote-engine-build/master
+
+1662714012710	2022-09-09 09:00:12.710	INFO	
+  "remote_engine_id": "ca960220-c016-4cb0-8d0c-065cbdf3f89c",
+  "remote_engine_name": "GWC_Talend_Server",
+  "task_execution_id": "5fbc265c-3a71-476a-bcab-9ebb32747f14",
+  "workspace_name": "Personal",
+  "workspace_id": "612e9f68f15490334e9ede35",
+  "environment_name": "default",
+  "environment_id": "612e9f68f15490334e9ede32",
+  "environment_version": "1.3",
+  "trigger_timestamp": 1662714012401,
+  "artifact_name": "TalendSnowflake_Master",
+  "artifact_version": "0.1.6.20220709033535",
+  "task_id": "62f6cd9f9aa3810f36ce6821",
+  "task_name": "TalendSnowflake_Master",
+  "task_version": "7.7",
+  "run_type": "SCHEDULED",
+  "compatibility_version": "7.3.1",
+  "count_of_attempts": 0,
+  "parallel_execution_allowed": false
+
+1662714012962	2022-09-09 09:00:12.962	INFO	job is starting - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 5fbc265c-3a71-476a-bcab-9ebb32747f14 2022-09-09T04:00:12.962-05:00[America/Chicago]
+1662714012964	2022-09-09 09:00:12.964	INFO	Job State added for ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 5fbc265c-3a71-476a-bcab-9ebb32747f14 2022-09-09T04:00:12.962-05:00[America/Chicago]
+1662714012967	2022-09-09 09:00:12.967	INFO	starting job d9f9aa3810f36ce682177 for task execution 5fbc265c-3a71-476a-bcab-9ebb32747f14
+1662714013130	2022-09-09 09:00:13.130	INFO	job d9f9aa3810f36ce682177 for task execution 5fbc265c-3a71-476a-bcab-9ebb32747f14 was requested to start under execution 20220909040012_izhZM
+1662714013779	2022-09-09 09:00:13.779	INFO	TalendJob: 'TalendSnowflake_Master' - Start.
+1662714014154	2022-09-09 09:00:14.154	INFO	tRunJob_1 - The child job 'sc_tmc_project_talend_jobs.invwarehouse_0_1.INVWAREHOUSE' starts on the version '0.1' with the context 'Default'.
+1662714014154	2022-09-09 09:00:14.154	INFO	TalendJob: 'INVWAREHOUSE' - Start.
+1662714805895	2022-09-09 09:13:25.895	INFO	tRunJob_1 - The child job 'sc_tmc_project_talend_jobs.invwarehouse_0_1.INVWAREHOUSE' is done.
+1662714805908	2022-09-09 09:13:25.908	INFO	tRunJob_2 - The child job 'sc_tmc_project_talend_jobs.invmaster_0_1.INVMASTER' starts on the version '0.1' with the context 'Default'.
+1662714805909	2022-09-09 09:13:25.909	INFO	TalendJob: 'INVMASTER' - Start.
+1662714831383	2022-09-09 09:13:51.383	INFO	tRunJob_2 - The child job 'sc_tmc_project_talend_jobs.invmaster_0_1.INVMASTER' is done.
+1662714831394	2022-09-09 09:13:51.394	INFO	tRunJob_3 - The child job 'sc_tmc_project_talend_jobs.admform_0_1.ADMFORM' starts on the version '0.1' with the context 'Default'.
+1662714831395	2022-09-09 09:13:51.395	INFO	TalendJob: 'ADMFORM' - Start.
+1662714834616	2022-09-09 09:13:54.616	INFO	tRunJob_3 - The child job 'sc_tmc_project_talend_jobs.admform_0_1.ADMFORM' is done.
+1662714834631	2022-09-09 09:13:54.631	INFO	tRunJob_4 - The child job 'sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2' starts on the version '0.1' with the context 'Default'.
+1662714834631	2022-09-09 09:13:54.631	INFO	TalendJob: 'BACKLOG_BRANCH_V2' - Start.
+1662714838362	2022-09-09 09:13:58.362	INFO	tRunJob_4 - The child job 'sc_tmc_project_talend_jobs.backlog_branch_v2_0_1.BACKLOG_BRANCH_V2' is done.
+1662714838374	2022-09-09 09:13:58.374	INFO	tRunJob_5 - The child job 'sc_tmc_project_talend_jobs.invoicedetail_0_1.INVOICEDETAIL' starts on the version '0.1' with the context 'Default'.
+1662714838374	2022-09-09 09:13:58.374	INFO	TalendJob: 'INVOICEDETAIL' - Start.
+1662714845055	2022-09-09 09:14:05.055	INFO	tRunJob_5 - The child job 'sc_tmc_project_talend_jobs.invoicedetail_0_1.INVOICEDETAIL' is done.
+1662714845066	2022-09-09 09:14:05.066	INFO	tRunJob_6 - The child job 'sc_tmc_project_talend_jobs.invoicesummary_0_1.INVOICESUMMARY' starts on the version '0.1' with the context 'Default'.
+1662714845067	2022-09-09 09:14:05.067	INFO	TalendJob: 'INVOICESUMMARY' - Start.
+1662714851175	2022-09-09 09:14:11.175	INFO	tRunJob_6 - The child job 'sc_tmc_project_talend_jobs.invoicesummary_0_1.INVOICESUMMARY' is done.
+1662714851184	2022-09-09 09:14:11.184	INFO	tRunJob_7 - The child job 'sc_tmc_project_talend_jobs.lookup_0_1.LOOKUP' starts on the version '0.1' with the context 'Default'.
+1662714851184	2022-09-09 09:14:11.184	INFO	TalendJob: 'LOOKUP' - Start.
+1662714855216	2022-09-09 09:14:15.216	INFO	tRunJob_7 - The child job 'sc_tmc_project_talend_jobs.lookup_0_1.LOOKUP' is done.
+1662714855225	2022-09-09 09:14:15.225	INFO	tRunJob_8 - The child job 'sc_tmc_project_talend_jobs.dim_area_0_1.DIM_AREA' starts on the version '0.1' with the context 'Default'.
+1662714855226	2022-09-09 09:14:15.226	INFO	TalendJob: 'DIM_AREA' - Start.
+1662714855229	2022-09-09 09:14:15.229	INFO	tWarn_1 - Message: DIM_AREA: Started. Code: 42
+1662714855991	2022-09-09 09:14:15.991	INFO	tWarn_2 - Message: DIM_AREA: SQLREPORTING Query succeeded, rows 12. Code: 42
+1662714857865	2022-09-09 09:14:17.865	INFO	tWarn_3 - Message: DIM_AREA: SNOWFLAKE refresh succeeded, rows 12. Code: 42
+1662714858018	2022-09-09 09:14:18.018	INFO	tWarn_4 - Message: DIM_AREA: job done - 2022-09-09 04:14:18. Code: 42
+1662714858018	2022-09-09 09:14:18.018	INFO	tRunJob_8 - The child job 'sc_tmc_project_talend_jobs.dim_area_0_1.DIM_AREA' is done.
+1662714858027	2022-09-09 09:14:18.027	INFO	tRunJob_9 - The child job 'sc_tmc_project_talend_jobs.salsalesperson_plus_0_1.SALSALESPERSON_PLUS' starts on the version '0.1' with the context 'Default'.
+1662714858027	2022-09-09 09:14:18.027	INFO	TalendJob: 'SALSALESPERSON_PLUS' - Start.
+1662714860966	2022-09-09 09:14:20.966	INFO	tRunJob_9 - The child job 'sc_tmc_project_talend_jobs.salsalesperson_plus_0_1.SALSALESPERSON_PLUS' is done.
+1662714860975	2022-09-09 09:14:20.975	INFO	tRunJob_10 - The child job 'sc_tmc_project_talend_jobs.dim_branch_0_1.DIM_BRANCH' starts on the version '0.1' with the context 'Default'.
+1662714860975	2022-09-09 09:14:20.975	INFO	TalendJob: 'DIM_BRANCH' - Start.
+1662714863542	2022-09-09 09:14:23.542	INFO	tRunJob_10 - The child job 'sc_tmc_project_talend_jobs.dim_branch_0_1.DIM_BRANCH' is done.
+1662714863551	2022-09-09 09:14:23.551	INFO	tRunJob_11 - The child job 'sc_tmc_project_talend_jobs.soradditions_0_1.SORADDITIONS' starts on the version '0.1' with the context 'Default'.
+1662714863551	2022-09-09 09:14:23.551	INFO	TalendJob: 'SORADDITIONS' - Start.
+1662714910883	2022-09-09 09:15:10.883	INFO	tRunJob_11 - The child job 'sc_tmc_project_talend_jobs.soradditions_0_1.SORADDITIONS' is done.
+1662714910892	2022-09-09 09:15:10.892	INFO	tRunJob_12 - The child job 'sc_tmc_project_talend_jobs.sorcancelled_0_1.SORCANCELLED' starts on the version '0.1' with the context 'Default'.
+1662714910892	2022-09-09 09:15:10.892	INFO	TalendJob: 'SORCANCELLED' - Start.
+1662714927603	2022-09-09 09:15:27.603	INFO	tRunJob_12 - The child job 'sc_tmc_project_talend_jobs.sorcancelled_0_1.SORCANCELLED' is done.
+1662714927637	2022-09-09 09:15:27.637	INFO	tRunJob_13 - The child job 'sc_tmc_project_talend_jobs.sordetail_0_1.SORDETAIL' starts on the version '0.1' with the context 'Default'.
+1662714927638	2022-09-09 09:15:27.638	INFO	TalendJob: 'SORDETAIL' - Start.
+1662715490132	2022-09-09 09:24:50.132	INFO	tRunJob_13 - The child job 'sc_tmc_project_talend_jobs.sordetail_0_1.SORDETAIL' is done.
+1662715490154	2022-09-09 09:24:50.154	INFO	tRunJob_14 - The child job 'sc_tmc_project_talend_jobs.sormaster_0_1.SORMASTER' starts on the version '0.1' with the context 'Default'.
+1662715490154	2022-09-09 09:24:50.154	INFO	TalendJob: 'SORMASTER' - Start.
+1662715577886	2022-09-09 09:26:17.886	INFO	tRunJob_14 - The child job 'sc_tmc_project_talend_jobs.sormaster_0_1.SORMASTER' is done.
+1662715577894	2022-09-09 09:26:17.894	INFO	tRunJob_15 - The child job 'sc_tmc_project_talend_jobs.entitygoal_0_1.ENTITYGOAL' starts on the version '0.1' with the context 'Default'.
+1662715577894	2022-09-09 09:26:17.894	INFO	TalendJob: 'ENTITYGOAL' - Start.
+1662715580855	2022-09-09 09:26:20.855	INFO	tRunJob_15 - The child job 'sc_tmc_project_talend_jobs.entitygoal_0_1.ENTITYGOAL' is done.
+1662715580864	2022-09-09 09:26:20.864	INFO	tRunJob_16 - The child job 'sc_tmc_project_talend_jobs.productcategory_0_1.PRODUCTCATEGORY' starts on the version '0.1' with the context 'Default'.
+1662715580864	2022-09-09 09:26:20.864	INFO	TalendJob: 'PRODUCTCATEGORY' - Start.
+1662715583369	2022-09-09 09:26:23.369	INFO	tRunJob_16 - The child job 'sc_tmc_project_talend_jobs.productcategory_0_1.PRODUCTCATEGORY' is done.
+1662715583381	2022-09-09 09:26:23.381	INFO	tRunJob_17 - The child job 'sc_tmc_project_talend_jobs.supplier_0_1.SUPPLIER' starts on the version '0.1' with the context 'Default'.
+1662715583382	2022-09-09 09:26:23.382	INFO	TalendJob: 'SUPPLIER' - Start.
+1662715586847	2022-09-09 09:26:26.847	INFO	tRunJob_17 - The child job 'sc_tmc_project_talend_jobs.supplier_0_1.SUPPLIER' is done.
+1662715586856	2022-09-09 09:26:26.856	INFO	tRunJob_18 - The child job 'sc_tmc_project_talend_jobs.lctcalc_0_1.LCTCALC' starts on the version '0.1' with the context 'Default'.
+1662715586856	2022-09-09 09:26:26.856	INFO	TalendJob: 'LCTCALC' - Start.
+1662715589131	2022-09-09 09:26:29.131	INFO	tRunJob_18 - The child job 'sc_tmc_project_talend_jobs.lctcalc_0_1.LCTCALC' is done.
+1662715589138	2022-09-09 09:26:29.138	INFO	tRunJob_19 - The child job 'sc_tmc_project_talend_jobs.lctconstant_0_1.LCTCONSTANT' starts on the version '0.1' with the context 'Default'.
+1662715589139	2022-09-09 09:26:29.139	INFO	TalendJob: 'LCTCONSTANT' - Start.
+1662715591516	2022-09-09 09:26:31.516	INFO	tRunJob_19 - The child job 'sc_tmc_project_talend_jobs.lctconstant_0_1.LCTCONSTANT' is done.
+1662715591523	2022-09-09 09:26:31.523	INFO	tRunJob_20 - The child job 'sc_tmc_project_talend_jobs.lctcost_0_1.LCTCOST' starts on the version '0.1' with the context 'Default'.
+1662715591524	2022-09-09 09:26:31.524	INFO	TalendJob: 'LCTCOST' - Start.
+1662715595530	2022-09-09 09:26:35.530	INFO	tRunJob_20 - The child job 'sc_tmc_project_talend_jobs.lctcost_0_1.LCTCOST' is done.
+1662715595537	2022-09-09 09:26:35.537	INFO	tRunJob_21 - The child job 'sc_tmc_project_talend_jobs.route_0_1.ROUTE' starts on the version '0.1' with the context 'Default'.
+1662715595538	2022-09-09 09:26:35.538	INFO	TalendJob: 'ROUTE' - Start.
+1662715598174	2022-09-09 09:26:38.174	INFO	tRunJob_21 - The child job 'sc_tmc_project_talend_jobs.route_0_1.ROUTE' is done.
+1662715598186	2022-09-09 09:26:38.186	INFO	tRunJob_22 - The child job 'sc_tmc_project_talend_jobs.podetail_0_1.PODETAIL' starts on the version '0.1' with the context 'Default'.
+1662715598186	2022-09-09 09:26:38.186	INFO	TalendJob: 'PODETAIL' - Start.
+1662715604539	2022-09-09 09:26:44.539	INFO	tRunJob_22 - The child job 'sc_tmc_project_talend_jobs.podetail_0_1.PODETAIL' is done.
+1662715604547	2022-09-09 09:26:44.547	INFO	tRunJob_23 - The child job 'sc_tmc_project_talend_jobs.invmultbin_0_1.INVMULTBIN' starts on the version '0.1' with the context 'Default'.
+1662715604547	2022-09-09 09:26:44.547	INFO	TalendJob: 'INVMULTBIN' - Start.
+1662715670960	2022-09-09 09:27:50.960	INFO	tRunJob_23 - The child job 'sc_tmc_project_talend_jobs.invmultbin_0_1.INVMULTBIN' is done.
+1662715670970	2022-09-09 09:27:50.970	INFO	tRunJob_24 - The child job 'sc_tmc_project_talend_jobs.lctcostdet_0_1.LCTCOSTDET' starts on the version '0.1' with the context 'Default'.
+1662715670970	2022-09-09 09:27:50.970	INFO	TalendJob: 'LCTCOSTDET' - Start.
+1662715679621	2022-09-09 09:27:59.621	INFO	tRunJob_24 - The child job 'sc_tmc_project_talend_jobs.lctcostdet_0_1.LCTCOSTDET' is done.
+1662715679630	2022-09-09 09:27:59.630	INFO	tRunJob_25 - The child job 'sc_tmc_project_talend_jobs.container_0_1.CONTAINER' starts on the version '0.1' with the context 'Default'.
+1662715679631	2022-09-09 09:27:59.631	INFO	TalendJob: 'CONTAINER' - Start.
+1662715683232	2022-09-09 09:28:03.232	INFO	tRunJob_25 - The child job 'sc_tmc_project_talend_jobs.container_0_1.CONTAINER' is done.
+1662715683241	2022-09-09 09:28:03.241	INFO	tRunJob_26 - The child job 'sc_tmc_project_talend_jobs.lctcostreg_0_1.LCTCOSTREG' starts on the version '0.1' with the context 'Default'.
+1662715683241	2022-09-09 09:28:03.241	INFO	TalendJob: 'LCTCOSTREG' - Start.
+1662715687355	2022-09-09 09:28:07.355	INFO	tRunJob_26 - The child job 'sc_tmc_project_talend_jobs.lctcostreg_0_1.LCTCOSTREG' is done.
+1662715687367	2022-09-09 09:28:07.367	INFO	tRunJob_27 - The child job 'sc_tmc_project_talend_jobs.poheader_0_1.POHEADER' starts on the version '0.1' with the context 'Default'.
+1662715687368	2022-09-09 09:28:07.368	INFO	TalendJob: 'POHEADER' - Start.
+1662715695525	2022-09-09 09:28:15.525	INFO	tRunJob_27 - The child job 'sc_tmc_project_talend_jobs.poheader_0_1.POHEADER' is done.
+1662715695538	2022-09-09 09:28:15.538	INFO	tRunJob_28 - The child job 'sc_tmc_project_talend_jobs.sales_branch_day_sku_0_1.SALES_BRANCH_DAY_SKU' starts on the version '0.1' with the context 'Default'.
+1662715695539	2022-09-09 09:28:15.539	INFO	TalendJob: 'SALES_BRANCH_DAY_SKU' - Start.
+1662715727077	2022-09-09 09:28:47.077	INFO	tRunJob_28 - The child job 'sc_tmc_project_talend_jobs.sales_branch_day_sku_0_1.SALES_BRANCH_DAY_SKU' is done.
+1662715727086	2022-09-09 09:28:47.086	INFO	tRunJob_29 - The child job 'sc_tmc_project_talend_jobs.producthier_v2_0_1.PRODUCTHIER_V2' starts on the version '0.1' with the context 'Default'.
+1662715727086	2022-09-09 09:28:47.086	INFO	TalendJob: 'PRODUCTHIER_V2' - Start.
+1662715732130	2022-09-09 09:28:52.130	INFO	tRunJob_29 - The child job 'sc_tmc_project_talend_jobs.producthier_v2_0_1.PRODUCTHIER_V2' is done.
+1662715732138	2022-09-09 09:28:52.138	INFO	tRunJob_30 - The child job 'sc_tmc_project_talend_jobs.cussordetailmerch_0_1.CusSorDetailMerch' starts on the version '0.1' with the context 'Default'.
+1662715732139	2022-09-09 09:28:52.139	INFO	TalendJob: 'CusSorDetailMerch' - Start.
+1662715737231	2022-09-09 09:28:57.231	INFO	tRunJob_30 - The child job 'sc_tmc_project_talend_jobs.cussordetailmerch_0_1.CusSorDetailMerch' is done.
+1662715737239	2022-09-09 09:28:57.239	INFO	tRunJob_31 - The child job 'sc_tmc_project_talend_jobs.containersoldpercentage_0_1.ContainerSoldPercentage' starts on the version '0.1' with the context 'Default'.
+1662715737239	2022-09-09 09:28:57.239	INFO	TalendJob: 'ContainerSoldPercentage' - Start.
+1662715739584	2022-09-09 09:28:59.584	INFO	tRunJob_31 - The child job 'sc_tmc_project_talend_jobs.containersoldpercentage_0_1.ContainerSoldPercentage' is done.
+1662715739592	2022-09-09 09:28:59.592	INFO	tRunJob_32 - The child job 'sc_tmc_project_talend_jobs.lctshipmenthdr_0_1.LctShipmentHdr' starts on the version '0.1' with the context 'Default'.
+1662715739593	2022-09-09 09:28:59.593	INFO	TalendJob: 'LctShipmentHdr' - Start.
+1662715742007	2022-09-09 09:29:02.007	INFO	tRunJob_32 - The child job 'sc_tmc_project_talend_jobs.lctshipmenthdr_0_1.LctShipmentHdr' is done.
+1662715742017	2022-09-09 09:29:02.017	INFO	tRunJob_33 - The child job 'sc_tmc_project_talend_jobs.productcollections_0_1.ProductCollections' starts on the version '0.1' with the context 'Default'.
+1662715742017	2022-09-09 09:29:02.017	INFO	TalendJob: 'ProductCollections' - Start.
+1662715747622	2022-09-09 09:29:07.622	INFO	tRunJob_33 - The child job 'sc_tmc_project_talend_jobs.productcollections_0_1.ProductCollections' is done.
+1662715747630	2022-09-09 09:29:07.630	INFO	tRunJob_34 - The child job 'sc_tmc_project_talend_jobs.activeslip_0_1.ActiveSlip' starts on the version '0.1' with the context 'Default'.
+1662715747631	2022-09-09 09:29:07.631	INFO	TalendJob: 'ActiveSlip' - Start.
+1662715749824	2022-09-09 09:29:09.824	INFO	tRunJob_34 - The child job 'sc_tmc_project_talend_jobs.activeslip_0_1.ActiveSlip' is done.
+1662715749832	2022-09-09 09:29:09.832	INFO	tRunJob_35 - The child job 'sc_tmc_project_talend_jobs.allocationfinal_0_1.AllocationFinal' starts on the version '0.1' with the context 'Default'.
+1662715749833	2022-09-09 09:29:09.833	INFO	TalendJob: 'AllocationFinal' - Start.
+1662715753030	2022-09-09 09:29:13.030	INFO	tRunJob_35 - The child job 'sc_tmc_project_talend_jobs.allocationfinal_0_1.AllocationFinal' is done.
+1662715753039	2022-09-09 09:29:13.039	INFO	tRunJob_36 - The child job 'sc_tmc_project_talend_jobs.porxrefprices_0_1.PORXREFPRICES' starts on the version '0.1' with the context 'Default'.
+1662715753039	2022-09-09 09:29:13.039	INFO	TalendJob: 'PORXREFPRICES' - Start.
+1662715763022	2022-09-09 09:29:23.022	INFO	tRunJob_36 - The child job 'sc_tmc_project_talend_jobs.porxrefprices_0_1.PORXREFPRICES' is done.
+1662715763032	2022-09-09 09:29:23.032	INFO	tRunJob_37 - The child job 'sc_tmc_project_talend_jobs.prodspec_gabby_0_1.PRODSPEC_GABBY' starts on the version '0.1' with the context 'Default'.
+1662715763032	2022-09-09 09:29:23.032	INFO	TalendJob: 'PRODSPEC_GABBY' - Start.
+1662715766818	2022-09-09 09:29:26.818	INFO	tRunJob_37 - The child job 'sc_tmc_project_talend_jobs.prodspec_gabby_0_1.PRODSPEC_GABBY' is done.
+1662715766818	2022-09-09 09:29:26.818	INFO	TalendJob: 'TalendSnowflake_Master' - Done.
+1662715767216	2022-09-09 09:29:27.216	INFO	logs are sent - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 5fbc265c-3a71-476a-bcab-9ebb32747f14
+1662715767217	2022-09-09 09:29:27.217	INFO	job is finished - ae14d411-d46a-4261-87eb-91858449197c 62f6cd9f9aa3810f36ce6821 5fbc265c-3a71-476a-bcab-9ebb32747f14

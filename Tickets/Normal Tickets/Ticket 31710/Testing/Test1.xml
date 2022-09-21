@@ -1,0 +1,155 @@
+<policy>
+    <accessToken>d8fd62f4-9840-4c85-830e-b9225c246861</accessToken>
+    <status>NEW</status>
+    <reference>304-1010579-A</reference>
+    <premiumpaidcurrency>USD</premiumpaidcurrency>
+    <premiumpaid>599.95</premiumpaid>
+    <warrantycostpricecurrency>USD</warrantycostpricecurrency>
+    <warrantycostprice>42.50</warrantycostprice>
+    <salesman>BEL</salesman>
+    <storecode>304</storecode>
+    <retailerbrand>26856</retailerbrand>
+    <consumer>
+        <reference>1253463</reference>
+        <firstname>TAMMY</firstname>
+        <lastname>FULK</lastname>
+        <addresses>
+            <address>
+                <type>HOME_ADDRESS</type>
+                <line1>2831 LAMBERT RD</line1>
+                <line2> </line2>
+                <city>MOUNT PLEASANT</city>
+                <state>NC</state>
+                <zip>28124</zip>
+            </address>
+        </addresses>
+        <contacts>
+            <contact>
+                <type>EMAIL</type>
+                <detail>TAMMYFULKREALESTATE@GMAIL.COM</detail>
+            </contact>
+            <contact>
+                <type>PHONE</type>
+                <detail>704-309-8286</detail>
+            </contact>
+        </contacts>
+    </consumer>
+    <policyitems>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <manufacturer>FOSHAN HUATONG FURNITURE LTD</manufacturer>
+            <itemtype>MAJORCA ALUMINUM SOFA</itemtype>
+            <modeldescrption>MAJORCA ALUMINUM SOFA</modeldescrption>
+            <modelname>424231</modelname>
+            <modelnumber>424231</modelnumber>
+            <characteristics>MAJORCA ALUMINUM SOFA</characteristics>
+            <material>Wrought Aluminum</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>2554.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <manufacturer>FOSHAN HUATONG FURNITURE LTD</manufacturer>
+            <itemtype>MAJORCA ALUMINUM OTTOMAN</itemtype>
+            <modeldescrption>MAJORCA ALUMINUM OTTOMAN</modeldescrption>
+            <modelname>424131</modelname>
+            <modelnumber>424131</modelnumber>
+            <characteristics>MAJORCA ALUMINUM OTTOMAN</characteristics>
+            <material>Wrought Aluminum</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>274.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <manufacturer>FOSHAN HUATONG FURNITURE LTD</manufacturer>
+            <itemtype>MAJORCA ALUMINUM SWIVEL ROCKER LOUNGE</itemtype>
+            <modeldescrption>MAJORCA ALUMINUM SWIVEL ROCKER LOUNGE</modeldescrption>
+            <modelname>423831</modelname>
+            <modelnumber>423831</modelnumber>
+            <characteristics>MAJORCA ALUMINUM SWIVEL ROCKER LOUNGE</characteristics>
+            <material>Wrought Aluminum</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>1014.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <manufacturer>FOSHAN HUATONG FURNITURE LTD</manufacturer>
+            <itemtype>MAJORCA ALUMINUM SPRING LOUNGE CHAIR</itemtype>
+            <modeldescrption>MAJORCA ALUMINUM SPRING LOUNGE CHAIR</modeldescrption>
+            <modelname>423931</modelname>
+            <modelnumber>423931</modelnumber>
+            <characteristics>MAJORCA ALUMINUM SPRING LOUNGE CHAIR</characteristics>
+            <material>Wrought Aluminum</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>999.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <itemtype>MAJORCA SOFA CUSHION</itemtype>
+            <modeldescrption>MAJORCA SOFA CUSHION</modeldescrption>
+            <modelname>C417P664N</modelname>
+            <modelnumber>C417P664N</modelnumber>
+            <characteristics>MAJORCA SOFA CUSHION</characteristics>
+            <material>Cushions</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>1240.00</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <itemtype>MAJORCA OTTOMAN CUSHION</itemtype>
+            <modeldescrption>MAJORCA OTTOMAN CUSHION</modeldescrption>
+            <modelname>C418P664N</modelname>
+            <modelnumber>C418P664N</modelnumber>
+            <characteristics>MAJORCA OTTOMAN CUSHION</characteristics>
+            <material>Cushions</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>139.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <itemtype>MAJORCA SPRING LOUNGE -PREM CUSHION</itemtype>
+            <modeldescrption>MAJORCA SPRING LOUNGE -PREM CUSHION</modeldescrption>
+            <modelname>C419P664N</modelname>
+            <modelnumber>C419P664N</modelnumber>
+            <characteristics>MAJORCA SPRING LOUNGE -PREM CUSHION</characteristics>
+            <material>Cushions</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>492.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+        <policyitem>
+            <status>NEW</status>
+            <dateordered>2022-07-05</dateordered>
+            <datedelivered>2022-08-16</datedelivered>
+            <itemtype>MAJORCA SPRING LOUNGE -PREM CUSHION</itemtype>
+            <modeldescrption>MAJORCA SPRING LOUNGE -PREM CUSHION</modeldescrption>
+            <modelname>C419P664N</modelname>
+            <modelnumber>C419P664N</modelnumber>
+            <characteristics>MAJORCA SPRING LOUNGE -PREM CUSHION</characteristics>
+            <material>Cushions</material>
+            <retailvaluecurrency>USD</retailvaluecurrency>
+            <retailvalue>492.50</retailvalue>
+            <numberofitems>1</numberofitems>
+        </policyitem>
+    </policyitems>
+</policy>

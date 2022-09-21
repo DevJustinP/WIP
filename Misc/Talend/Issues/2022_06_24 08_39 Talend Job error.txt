@@ -1,0 +1,69 @@
+[statistics] connecting to socket on port 3598
+[statistics] connected
+Warning: Parameter "startDate" has not been set by Implicit_Context_Context
+2022/06/24 08:39:34
+tWarn_1 - tWarn failed to log message due to internal error: local_project.sugar_master_0_1.Sugar_Master$TalendException
+Exception in component tFileOutputDelimited_1 (Sugar_Master)
+java.io.FileNotFoundException: \\SQL08\SugarCRM\Test_Folder\Logs\2022_06_24_08_39_34_logs_Master.csv (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at local_project.sugar_master_0_1.Sugar_Master.tLogCatcher_1Process(Sugar_Master.java:1705)
+	at local_project.sugar_master_0_1.Sugar_Master.tWarn_1Process(Sugar_Master.java:2298)
+	at local_project.sugar_master_0_1.Sugar_Master.tJava_1Process(Sugar_Master.java:2211)
+	at local_project.sugar_master_0_1.Sugar_Master.tPrejob_1Process(Sugar_Master.java:2088)
+	at local_project.sugar_master_0_1.Sugar_Master.runJobInTOS(Sugar_Master.java:3795)
+	at local_project.sugar_master_0_1.Sugar_Master.main(Sugar_Master.java:3553)
+Null value will be used for context parameter startDate: Unparseable date: ""
+Warning: Parameter "startDate" has not been set by Implicit_Context_Context
+Warning: Parameter "offset" has not been set by Implicit_Context_Context
+Warning: Parameter "counter" has not been set by Implicit_Context_Context
+Warning: Parameter "row_count" has not been set by Implicit_Context_Context
+Warning: Parameter "next_offset" has not been set by Implicit_Context_Context
+Warning: Parameter "file_name" has not been set by Implicit_Context_Context
+Warning: Parameter "current_file" has not been set by Implicit_Context_Context
+Warning: Parameter "total" has not been set by Implicit_Context_Context
+tWarn_1 - tWarn failed to log message due to internal error: local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5$TalendException
+Exception in component tFileOutputDelimited_3 (Sugar_SysPro_Accounts_v5)
+java.io.FileNotFoundException: \\SQL08\SugarCRM\Test_Folder\Logs\2022_06_24_08_39_34_logs_Accounts.csv (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tLogCatcher_1Process(Sugar_SysPro_Accounts_v5.java:57200)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tWarn_1Process(Sugar_SysPro_Accounts_v5.java:4126)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tJava_7Process(Sugar_SysPro_Accounts_v5.java:3996)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tLibraryLoad_3Process(Sugar_SysPro_Accounts_v5.java:3799)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tLibraryLoad_2Process(Sugar_SysPro_Accounts_v5.java:3602)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tLibraryLoad_1Process(Sugar_SysPro_Accounts_v5.java:3405)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tPrejob_1Process(Sugar_SysPro_Accounts_v5.java:3208)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.runJobInTOS(Sugar_SysPro_Accounts_v5.java:678)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.runJob(Sugar_SysPro_Accounts_v5.java:410)
+	at local_project.sugar_master_0_1.Sugar_Master.tRunJob_1Process(Sugar_Master.java:2474)
+	at local_project.sugar_master_0_1.Sugar_Master.runJobInTOS(Sugar_Master.java:3810)
+	at local_project.sugar_master_0_1.Sugar_Master.main(Sugar_Master.java:3553)
+tWarn_2 - tWarn failed to log message due to internal error: local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5$TalendException
+Exception in component tFileOutputDelimited_3 (Sugar_SysPro_Accounts_v5)
+java.io.FileNotFoundException: \\SQL08\SugarCRM\Test_Folder\Logs\2022_06_24_08_39_34_logs_Accounts.csv (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tLogCatcher_1Process(Sugar_SysPro_Accounts_v5.java:57200)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tWarn_2Process(Sugar_SysPro_Accounts_v5.java:51966)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.tFileList_1Process(Sugar_SysPro_Accounts_v5.java:4667)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.runJobInTOS(Sugar_SysPro_Accounts_v5.java:692)
+	at local_project.sugar_syspro_accounts_v5_0_1.Sugar_SysPro_Accounts_v5.runJob(Sugar_SysPro_Accounts_v5.java:410)
+	at local_project.sugar_master_0_1.Sugar_Master.tRunJob_1Process(Sugar_Master.java:2474)
+	at local_project.sugar_master_0_1.Sugar_Master.runJobInTOS(Sugar_Master.java:3810)
+	at local_project.sugar_master_0_1.Sugar_Master.main(Sugar_Master.java:3553)
+Exception in component tRunJob_1 (Sugar_Master)
+java.lang.RuntimeException: Child job running failed.
+java.io.FileNotFoundException: \\SQL08\SugarCRM\Test_Folder\Logs\2022_06_24_08_39_34_logs_Accounts.csv (Access is denied)
+	at local_project.sugar_master_0_1.Sugar_Master.tRunJob_1Process(Sugar_Master.java:2492)
+	at local_project.sugar_master_0_1.Sugar_Master.runJobInTOS(Sugar_Master.java:3810)
+	at local_project.sugar_master_0_1.Sugar_Master.main(Sugar_Master.java:3553)
+[statistics] disconnected
+
+Job Sugar_Master ended at 08:39 24/06/2022. [exit code=1]

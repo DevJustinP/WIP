@@ -1,0 +1,2221 @@
+WEBVTT
+
+1 "Terry Moore" (2155789824)
+00:00:00.000 --> 00:00:03.089
+Okay, smart something.
+
+2 "Terry Moore" (2155789824)
+00:00:03.089 --> 00:00:07.200
+1 of them contains your registration number and your, um.
+
+3 "Terry Moore" (2155789824)
+00:00:07.200 --> 00:00:10.589
+The 2 registration pieces for.
+
+4 "Terry Moore" (2155789824)
+00:00:10.589 --> 00:00:16.709
+Accessing the, um, the Smarty system.
+
+5 "Terry Moore" (2155789824)
+00:00:16.709 --> 00:00:24.600
+Okay, and the other 1 is storing what storing valid addresses that I found. And so.
+
+6 "Terry Moore" (2155789824)
+00:00:24.600 --> 00:00:33.540
+I don't do a call this Marty if I already find him that I've already verified him and that that address is good and it doesn't matter if that address was 4.
+
+7 "Terry Moore" (2155789824)
+00:00:35.790 --> 00:00:45.660
+A customer, and the same address is used for a supplier. The same dress used for a different customer. If it finds the address, it knows it's good because it's already verified it through.
+
+8 "Terry Moore" (2155789824)
+00:00:45.660 --> 00:00:49.080
+Through the call, cause you guys didn't want to call every time.
+
+9 "Terry Moore" (2155789824)
+00:00:50.130 --> 00:00:54.000
+Did you pay on it per.
+
+10 "Terry Moore" (2155789824)
+00:00:54.000 --> 00:00:59.070
+Transaction basis I believe it's important.
+
+11 "Terry Moore" (2155789824)
+00:00:59.070 --> 00:01:07.470
+There we go, um, so also, if there's there's a button that.
+
+12 "Terry Moore" (2155789824)
+00:01:07.470 --> 00:01:13.650
+You push to check the address if you want to if you have another, if it has never been checked.
+
+13 "Terry Moore" (2155789824)
+00:01:13.650 --> 00:01:16.830
+And also a button to update.
+
+14 "Terry Moore" (2155789824)
+00:01:16.830 --> 00:01:26.430
+You're working with the customer and you check the address and it's different because sometimes all you have to do is put a zip code in in the city and state will pop in automatically. You don't have to type the.
+
+15 "Terry Moore" (2155789824)
+00:01:26.430 --> 00:01:33.720
+And then you can click the update button and boom, it'll put it back in the screens. So when you save the customer, that's all saved with it.
+
+16 "Terry Moore" (2155789824)
+00:01:33.720 --> 00:01:37.230
+And the address that we just verified is saved.
+
+17 "Terry Moore" (2155789824)
+00:01:37.230 --> 00:01:42.090
+So the next time you go in there to look into just pop up on the bottom valid address.
+
+18 "Terry Moore" (2155789824)
+00:01:43.680 --> 00:01:53.280
+Uh, what else is cool about this and when it's attached to sales orders, there is no bill to address.
+
+19 "Terry Moore" (2155789824)
+00:01:53.280 --> 00:02:04.260
+And so you'll see, that's blank, but, you know, if you added a ship to a different ship to address or something like that, that's where it's going to pop it out. I haven't.
+
+20 "Terry Moore" (2155789824)
+00:02:04.260 --> 00:02:08.670
+The only thing I just thought of now, I didn't test a lot with multiple ship tools.
+
+21 "Terry Moore" (2155789824)
+00:02:09.750 --> 00:02:15.360
+But I do believe if you pick 1, it fills it into the sales order screen. And so then it'll still pop up.
+
+22 "Terry Moore" (2155789824)
+00:02:15.360 --> 00:02:19.710
+So, what happens is, is, let's say that you have a customer.
+
+23 "Terry Moore" (2155789824)
+00:02:19.710 --> 00:02:32.340
+And you have the bill to address, and they say, oh, I want to change this address to blah, blah, blah for a Dropbox lock or a different office, or something like that. And you change your address on the screen.
+
+24 "Terry Moore" (2155789824)
+00:02:32.340 --> 00:02:39.780
+Then over in my little pain, those changes you made will show up in red, and it'll again ask you to check the address.
+
+25 "Terry Moore" (2155789824)
+00:02:39.780 --> 00:02:43.800
+So, then you click the check dress button and if it's good, then it comes back.
+
+26 "Terry Moore" (2155789824)
+00:02:43.800 --> 00:02:47.970
+If the addresses bad, Smarty sends back nothing.
+
+27 "Terry Moore" (2155789824)
+00:02:48.990 --> 00:02:55.560
+And I'll just show you invalid address it. It's I'm, I'm not real thrilled with that, but that's how they do it.
+
+28 "Terry Moore" (2155789824)
+00:02:56.790 --> 00:03:01.230
+And it doesn't prompt me for things. Okay Pre uh, where are you.
+
+29 "Priya Gupta" (4055928320)
+00:03:02.700 --> 00:03:06.870
+Yes, I am copying the link right now.
+
+30 "Priya Gupta" (4055928320)
+00:03:06.870 --> 00:03:12.690
+Okay, I can share fine to say all of it.
+
+31 "Terry Moore" (2155789824)
+00:03:14.970 --> 00:03:27.060
+What was it? So through 1 of you I'm gonna have to get at the system.
+
+32 "Terry Moore" (2155789824)
+00:03:28.440 --> 00:03:34.380
+Probably whoever's the most powerful.
+
+33 "Ben Erickson" (1838977280)
+00:03:34.380 --> 00:03:43.170
+Okay.
+
+34 "Terry Moore" (2155789824)
+00:03:47.070 --> 00:03:50.910
+So, are you are you guys located again Florida.
+
+35 "Priya Gupta" (4055928320)
+00:03:50.910 --> 00:04:00.840
+I'm not sure if the chat will work, but I'll try here. 1st and Central. I'm going to send you the list, the link so you can forward it.
+
+36 "Terry Moore" (2155789824)
+00:04:03.150 --> 00:04:08.730
+Okay, thanks but let's say within, uh, within the.
+
+37 "Terry Moore" (2155789824)
+00:04:08.730 --> 00:04:12.540
+Chat and 1 of you open it up.
+
+38 "Terry Moore" (2155789824)
+00:04:14.070 --> 00:04:18.660
+Ben, can you open that link? Yeah, I'm done now.
+
+39 "Ben Erickson" (1838977280)
+00:04:19.890 --> 00:04:31.109
+There are different license levels that you can get.
+
+40 "Terry Moore" (2155789824)
+00:04:31.109 --> 00:04:34.289
+With Smarty, I don't know if we knew this, but there's.
+
+41 "Terry Moore" (2155789824)
+00:04:34.289 --> 00:04:40.439
+An international license you can get, and there's some other prompting licenses.
+
+42 "Terry Moore" (2155789824)
+00:04:40.439 --> 00:04:48.029
+I didn't play with those cause I just did the 1 that you guys have, but I do know that there's an international license and I'm guessing that that works the same.
+
+43 "Terry Moore" (2155789824)
+00:04:48.029 --> 00:04:56.399
+The only difference would be that it'll verify addresses in Germany or England or Canada. I don't know if you do sales in those places or not.
+
+44 "Ben Erickson" (1838977280)
+00:04:56.399 --> 00:05:02.429
+Not really, we got it figured out us covers the, most of our.
+
+45 "Terry Moore" (2155789824)
+00:05:03.689 --> 00:05:16.854
+Yep, and if you flip an international, usually you're pretty careful to make sure that address is correct. And so it will say invalid address, but just ignore that because you don't have to if it says invalid address that doesn't mean you can't use the address.
+
+46 "Terry Moore" (2155789824)
+00:05:16.854 --> 00:05:19.584
+It just means that Smarty doesn't have it yet.
+
+47 "Terry Moore" (2155789824)
+00:05:19.859 --> 00:05:23.369
+Like, we talked about a new development, a new.
+
+48 "Terry Moore" (2155789824)
+00:05:23.369 --> 00:05:26.789
+Industrial park or something that no, you guys want to.
+
+49 "Terry Moore" (2155789824)
+00:05:26.789 --> 00:05:29.909
+But you still do retailers, right?
+
+50 "Ben Erickson" (1838977280)
+00:05:31.019 --> 00:05:34.469
+All to all of the above.
+
+51 "Ben Erickson" (1838977280)
+00:05:34.469 --> 00:05:38.759
+Okay, it's not on anybody.
+
+52 "Terry Moore" (2155789824)
+00:06:00.239 --> 00:06:13.739
+Coming down slowly all. Let me share my screen here.
+
+53 "Ben Erickson" (1838977280)
+00:06:24.509 --> 00:06:35.849
+Can everybody see my screen.
+
+54 "Terry Moore" (2155789824)
+00:06:35.849 --> 00:06:42.839
+Wait a minute latest. What file do we have in there? What file did you download? It show me the file.
+
+55 "Ben Erickson" (1838977280)
+00:06:46.109 --> 00:06:52.379
+The file was this is a folder.
+
+56 "Terry Moore" (2155789824)
+00:06:53.909 --> 00:06:57.239
+That isn't what I Pre what where did you get that? 1 from.
+
+57 "Priya Gupta" (4055928320)
+00:06:58.439 --> 00:07:03.659
+Okay, um, this file.
+
+58 "Priya Gupta" (4055928320)
+00:07:03.659 --> 00:07:06.659
+Yeah.
+
+59 "Priya Gupta" (4055928320)
+00:07:06.659 --> 00:07:10.409
+I got it from my feet right?
+
+60 "Priya Gupta" (4055928320)
+00:07:15.449 --> 00:07:19.319
+It's not letting you extract files from there.
+
+61 "Priya Gupta" (4055928320)
+00:07:19.319 --> 00:07:24.389
+No, it's, it's a block. That's amazing.
+
+62 "Terry Moore" (2155789824)
+00:07:26.849 --> 00:07:32.579
+Did you copy the Smarty address install package 200 and and 2 2.
+
+63 "Priya Gupta" (4055928320)
+00:07:32.579 --> 00:07:37.229
+Yes, I renamed it.
+
+64 "Terry Moore" (2155789824)
+00:07:41.789 --> 00:07:45.719
+So, I put I copied the wrong 1 to you. I'm sorry.
+
+65 "Priya Gupta" (4055928320)
+00:07:45.719 --> 00:07:51.689
+Yeah, I, I'm not sure. Yeah, it has got to paint.
+
+66 "Terry Moore" (2155789824)
+00:07:51.689 --> 00:07:56.759
+Right. It's it was this read me.
+
+67 "Ben Erickson" (1838977280)
+00:07:57.959 --> 00:08:08.399
+It is 6, 1 city.
+
+68 "Terry Moore" (2155789824)
+00:08:08.399 --> 00:08:11.729
+The 1 that the real 1 has 3.
+
+69 "Terry Moore" (2155789824)
+00:08:11.729 --> 00:08:15.779
+Directories.
+
+70 "Priya Gupta" (4055928320)
+00:08:15.779 --> 00:08:21.659
+So, majority of it is like, sequel, custom paints and installing sections and.
+
+71 "Terry Moore" (2155789824)
+00:08:21.659 --> 00:08:24.899
+I believe you are oh, this is the 1.
+
+72 "Terry Moore" (2155789824)
+00:08:24.899 --> 00:08:29.459
+Um, I just put 1 on your machine.
+
+73 "Terry Moore" (2155789824)
+00:08:32.129 --> 00:08:36.089
+Which is a classic address, it says dash copy, but.
+
+74 "Priya Gupta" (4055928320)
+00:08:38.429 --> 00:08:43.889
+Did you copy the whole all all the files or just? Yep.
+
+75 "Terry Moore" (2155789824)
+00:08:46.679 --> 00:08:59.999
+I'm going to name it. I named it good summer classics.
+
+76 "Terry Moore" (2155789824)
+00:08:59.999 --> 00:09:03.539
+Mm, hmm let me find it.
+
+77 "Priya Gupta" (4055928320)
+00:09:04.829 --> 00:09:08.339
+Okay, copy it again on my.
+
+78 "Priya Gupta" (4055928320)
+00:09:08.339 --> 00:09:08.549
+Call.
+
+79 "Terry Moore" (2155789824)
+00:10:04.614 --> 00:10:05.544
+Mm, hmm.
+
+80 "Terry Moore" (2155789824)
+00:10:33.449 --> 00:10:41.729
+You pronounce your name Kathryn Kathryn.
+
+81 "Terry Moore" (2155789824)
+00:10:41.729 --> 00:10:46.259
+Okay, I just I had said your name I just didn't want to be wrong.
+
+82 "Priya Gupta" (4055928320)
+00:11:04.979 --> 00:11:10.079
+No.
+
+83 "Priya Gupta" (4055928320)
+00:11:11.909 --> 00:11:16.469
+Put it in chat again.
+
+84 "Priya Gupta" (4055928320)
+00:11:16.469 --> 00:11:22.169
+Let's try that 1.
+
+85 "Priya Gupta" (4055928320)
+00:11:22.169 --> 00:11:25.619
+Central, and I'm going to send you another email.
+
+86 "Shantrell Joubert" (1921993472)
+00:11:25.619 --> 00:11:30.659
+Okay, I'll delete the old 1. yeah, I'll send another 1.
+
+87 "Terry Moore" (2155789824)
+00:12:00.624 --> 00:12:00.954
+Then.
+
+88 "Terry Moore" (2155789824)
+00:12:39.419 --> 00:12:44.429
+That's better okay. If we can just.
+
+89 "Terry Moore" (2155789824)
+00:12:44.429 --> 00:12:52.409
+Um, have those 2 we have to to bring in to the SQL management.
+
+90 "Terry Moore" (2155789824)
+00:12:52.434 --> 00:13:07.254
+Object management there you go. Um, okay. Which company are you using? Cisco company 100. is that the 1? We're going to install this on? Yeah. yeah
+
+91 "Terry Moore" (2155789824)
+00:13:08.004 --> 00:13:08.544
+Okay,
+
+92 "Terry Moore" (2155789824)
+00:13:24.264 --> 00:13:27.954
+I'm just making a special, um, user.
+
+93 "Terry Moore" (2155789824)
+00:13:28.229 --> 00:13:33.539
+So, that I don't have to have you put everything in? As long as we have the user there.
+
+94 "Terry Moore" (2155789824)
+00:13:33.539 --> 00:13:38.339
+No matter which company you have the system will be smart enough.
+
+95 "Ben Erickson" (1838977280)
+00:13:41.339 --> 00:13:51.269
+What, Ah, yeah, it's gonna have to be longer for our password requirements.
+
+96 "Terry Moore" (2155789824)
+00:13:55.229 --> 00:13:59.489
+Um, what does it have to be.
+
+97 "Terry Moore" (2155789824)
+00:14:02.789 --> 00:14:06.029
+I think if you go down to security, you should be able to.
+
+98 "Terry Moore" (2155789824)
+00:14:06.029 --> 00:14:09.809
+Um, edit this user.
+
+99 "Terry Moore" (2155789824)
+00:14:12.389 --> 00:14:15.899
+Oh, you made it smarter Cisco. Okay. Yeah. Let's.
+
+100 "Terry Moore" (2155789824)
+00:14:15.899 --> 00:14:18.959
+It's, um.
+
+101 "Terry Moore" (2155789824)
+00:14:26.369 --> 00:14:31.199
+The same is what I okay, so we won't be able to test it right away, but that's okay.
+
+102 "Terry Moore" (2155789824)
+00:14:31.199 --> 00:14:35.969
+And the tables are created. Yeah.
+
+103 "Terry Moore" (2155789824)
+00:14:35.969 --> 00:14:41.129
+Okay, let's go to the, let's open up the.
+
+104 "Terry Moore" (2155789824)
+00:14:41.129 --> 00:14:44.609
+Uh, they're way at the bottom at the bottom bottom.
+
+105 "Terry Moore" (2155789824)
+00:14:47.489 --> 00:14:52.589
+Yep, yep let's open up Smarty control. Right click and say, add it.
+
+106 "Terry Moore" (2155789824)
+00:14:54.989 --> 00:15:03.209
+Oh, we want to edit cause there isn't any roles and we wanted to put something in because I'm going to let you put your your registration things in right away.
+
+107 "Terry Moore" (2155789824)
+00:15:03.474 --> 00:15:04.044
+Um,
+
+108 "Terry Moore" (2155789824)
+00:15:17.514 --> 00:15:18.684
+let me see.
+
+109 "Terry Moore" (2155789824)
+00:15:20.729 --> 00:15:24.719
+Okay, the Smarty ID and the token they should be.
+
+110 "Terry Moore" (2155789824)
+00:15:24.719 --> 00:15:29.909
+They should, you should have those both pretty long. I op ID is really long.
+
+111 "Priya Gupta" (4055928320)
+00:15:29.909 --> 00:15:39.089
+And the token isn't quite as bad central could could you please record the meeting?
+
+112 "Shantrell Joubert" (1921993472)
+00:15:39.089 --> 00:15:45.929
+I am I made a start a little bit early, but it's recording. All right. Perfect. I just wanted to take.
+
+113 "Priya Gupta" (4055928320)
+00:15:45.929 --> 00:15:49.829
+I hope it is. Fine with you. All yeah.
+
+114 "Terry Moore" (2155789824)
+00:15:52.764 --> 00:15:53.244
+Thank you,
+
+115 "Terry Moore" (2155789824)
+00:16:12.714 --> 00:16:13.764
+um, the 1st.
+
+116 "Terry Moore" (2155789824)
+00:16:14.009 --> 00:16:20.399
+If if you have your, the very 1st field has to be capital C, capital T, capital.
+
+117 "Terry Moore" (2155789824)
+00:16:22.829 --> 00:16:26.999
+And then, yeah, it's 1 of those numbers.
+
+118 "Terry Moore" (2155789824)
+00:16:34.649 --> 00:16:41.639
+I don't think we're gonna be able to test it because until I change the program with that new password, but we can get it all installed.
+
+119 "Ben Erickson" (1838977280)
+00:16:43.049 --> 00:16:51.779
+Let's see if it'll let me change it. Um, and oh, I see I'll pass the, uh.
+
+120 "Terry Moore" (2155789824)
+00:16:51.779 --> 00:16:58.229
+What was the, uh, just Pro, USA user? I believe Smarty.
+
+121 "Terry Moore" (2155789824)
+00:17:12.389 --> 00:17:16.679
+Why is that?
+
+122 "Terry Moore" (2155789824)
+00:17:18.629 --> 00:17:20.544
+It is this Pro USA cost
+
+123 "Terry Moore" (2155789824)
+00:17:44.004 --> 00:17:45.414
+starting with the dollar sign.
+
+124 "Terry Moore" (2155789824)
+00:17:46.554 --> 00:17:47.214
+Okay,
+
+125 "Terry Moore" (2155789824)
+00:18:07.044 --> 00:18:09.954
+let's change it. Let's see if we can do a new, um.
+
+126 "Terry Moore" (2155789824)
+00:18:10.229 --> 00:18:13.499
+Connection and sign in with that.
+
+127 "Terry Moore" (2155789824)
+00:18:22.679 --> 00:18:27.659
+Uh, what was it? Cisco, USA.
+
+128 "Terry Moore" (2155789824)
+00:18:27.954 --> 00:18:28.194
+Okay.
+
+129 "Terry Moore" (2155789824)
+00:18:47.729 --> 00:18:52.349
+Yep, it did. Let's make sure we can.
+
+130 "Terry Moore" (2155789824)
+00:18:52.349 --> 00:18:59.909
+Get those 2 tables 2, new ones.
+
+131 "Terry Moore" (2155789824)
+00:19:08.069 --> 00:19:20.129
+Let's try and edit them because I'm gonna be updating, em, not just looking at them.
+
+132 "Terry Moore" (2155789824)
+00:19:24.689 --> 00:19:30.359
+Let's try and change the to, or just make another role. We can delete it then.
+
+133 "Ben Erickson" (1838977280)
+00:19:30.359 --> 00:19:37.019
+Okay.
+
+134 "Terry Moore" (2155789824)
+00:19:38.219 --> 00:19:42.899
+All right, we have to find there.
+
+135 "Terry Moore" (2155789824)
+00:19:45.689 --> 00:19:53.219
+Okay, are the other files on this machine? We don't need sq open anymore. Oh, yeah.
+
+136 "Terry Moore" (2155789824)
+00:19:53.219 --> 00:19:59.069
+So, if we can put this over in the corner or something.
+
+137 "Terry Moore" (2155789824)
+00:19:59.069 --> 00:20:07.319
+Um, actually go to your your file and go to manage assembly space, manage assemblies and.
+
+138 "Terry Moore" (2155789824)
+00:20:18.719 --> 00:20:31.889
+Okay, the top 1 is the 1 that I wrote that controls your stuff.
+
+139 "Terry Moore" (2155789824)
+00:20:31.889 --> 00:20:35.699
+And the 2nd, 1, that's the Smarty street. Scott dash dot net.
+
+140 "Terry Moore" (2155789824)
+00:20:35.699 --> 00:20:42.179
+Et cetera, that's 1 that they furnished. So what I do is, I basically call their.
+
+141 "Terry Moore" (2155789824)
+00:20:42.179 --> 00:20:48.689
+Routines and then they talk to their to their databases and things and then they return back to me.
+
+142 "Terry Moore" (2155789824)
+00:20:48.689 --> 00:20:52.019
+So, that that's required to be in there.
+
+143 "Terry Moore" (2155789824)
+00:20:52.019 --> 00:20:57.869
+Okay. Um, all right.
+
+144 "Ben Erickson" (1838977280)
+00:20:57.869 --> 00:21:04.439
+Hm. Nice. It was well, yeah, we kept the.
+
+145 "Ben Erickson" (1838977280)
+00:21:04.439 --> 00:21:08.519
+When we did the upgrade left, the folder name the same. Okay. Okay.
+
+146 "Terry Moore" (2155789824)
+00:21:11.789 --> 00:21:21.449
+Somebody does here. Okay, let's open the.
+
+147 "Terry Moore" (2155789824)
+00:21:29.159 --> 00:21:32.159
+And let's go to accounts receivable.
+
+148 "Terry Moore" (2155789824)
+00:21:32.159 --> 00:21:43.769
+Customer set up customers. This is good because you'll have to put this in for other companies. If you, if you decide to cause these are my company.
+
+149 "Terry Moore" (2155789824)
+00:21:43.769 --> 00:21:49.049
+Um, just right click, like, on customer details.
+
+150 "Terry Moore" (2155789824)
+00:21:55.859 --> 00:22:00.419
+Customize pain. Oh, you have to turn on the designer.
+
+151 "Ben Erickson" (1838977280)
+00:22:05.699 --> 00:22:10.469
+Okay.
+
+152 "Terry Moore" (2155789824)
+00:22:34.374 --> 00:22:40.224
+Yeah, we don't have the I don't have it didn't make an important 1. I figured we'd make it so we're gonna have to go into, um.
+
+153 "Terry Moore" (2155789824)
+00:22:40.559 --> 00:22:43.649
+Administration and design the menus.
+
+154 "Terry Moore" (2155789824)
+00:22:45.869 --> 00:22:52.709
+Cause it won't let you do a new 1 here and I would, I would just.
+
+155 "Terry Moore" (2155789824)
+00:22:52.709 --> 00:22:56.789
+This should probably just be for everybody.
+
+156 "Terry Moore" (2155789824)
+00:22:56.789 --> 00:23:00.419
+What do you think? Yeah.
+
+157 "Ben Erickson" (1838977280)
+00:23:01.439 --> 00:23:06.659
+Okay.
+
+158 "Terry Moore" (2155789824)
+00:23:13.439 --> 00:23:19.619
+Okay, now go to customers new.
+
+159 "Terry Moore" (2155789824)
+00:23:23.159 --> 00:23:29.099
+Window title can be what I always called it address verification, but you can call it whatever you want.
+
+160 "Terry Moore" (2155789824)
+00:23:31.589 --> 00:23:35.429
+The 2nd 1 is that net user control and the drop down.
+
+161 "Terry Moore" (2155789824)
+00:23:38.009 --> 00:23:49.559
+And the initial docking position, I made it flow because then if somebody's using it, and they have 2 monitors, they can get this out of their way. And they don't have to have it within the screen. And they could always drag it in.
+
+162 "Terry Moore" (2155789824)
+00:23:51.239 --> 00:23:55.439
+And this is only the initial 1 once they changed and put it where they want to then.
+
+163 "Terry Moore" (2155789824)
+00:23:55.439 --> 00:23:59.969
+Um, ignores it now. Okay. Yeah, you'll see.
+
+164 "Terry Moore" (2155789824)
+00:23:59.969 --> 00:24:09.089
+Um, go down to assembly name. Uh, no we want to go to.
+
+165 "Terry Moore" (2155789824)
+00:24:13.709 --> 00:24:19.229
+Should be going into the, the, um, base manage assemblies folder.
+
+166 "Ben Erickson" (1838977280)
+00:24:21.899 --> 00:24:30.989
+Does that get copied over to the client?
+
+167 "Terry Moore" (2155789824)
+00:24:30.989 --> 00:24:35.999
+It should have.
+
+168 "Ben Erickson" (1838977280)
+00:24:35.999 --> 00:24:39.539
+I was already logged in, so, let me close out.
+
+169 "Terry Moore" (2155789824)
+00:25:23.994 --> 00:25:24.174
+Huh.
+
+170 "Terry Moore" (2155789824)
+00:25:24.509 --> 00:25:38.489
+Yep, I hate when people are watching.
+
+171 "Terry Moore" (2155789824)
+00:26:18.534 --> 00:26:19.224
+Oh, yeah.
+
+172 "Ben Erickson" (1838977280)
+00:26:25.739 --> 00:26:28.799
+Uh, this 1.
+
+173 "Terry Moore" (2155789824)
+00:26:28.799 --> 00:26:37.229
+Mm, hmm. And change the assembly name space to.
+
+174 "Terry Moore" (2155789824)
+00:26:37.229 --> 00:26:42.029
+With the drop down for that, uh, user control 1 to bottom 1.
+
+175 "Terry Moore" (2155789824)
+00:26:42.029 --> 00:26:46.949
+And change the namespace method to link from form.
+
+176 "Terry Moore" (2155789824)
+00:26:48.239 --> 00:26:51.539
+Okay, go to edit BB script.
+
+177 "Terry Moore" (2155789824)
+00:26:51.539 --> 00:26:56.939
+Up on the top.
+
+178 "Terry Moore" (2155789824)
+00:26:56.939 --> 00:27:00.449
+And now let's go to our, our folder with our files.
+
+179 "Terry Moore" (2155789824)
+00:27:02.519 --> 00:27:09.809
+They are, um, uh, open either. 1. I don't know I'll open the top 1. yeah, that should be the 1.
+
+180 "Terry Moore" (2155789824)
+00:27:12.749 --> 00:27:20.279
+Yep, copy all this pasted here.
+
+181 "Terry Moore" (2155789824)
+00:27:22.079 --> 00:27:30.299
+And do a quick syntax check and then save. No, there wasn't gonna be an error, but that's just how I always do it.
+
+182 "Terry Moore" (2155789824)
+00:27:30.299 --> 00:27:37.259
+Um, now I can just save and exit. Here's what the screen looks like.
+
+183 "Terry Moore" (2155789824)
+00:27:38.279 --> 00:27:44.429
+Um, I, you can you can take the edge and move it closer. I made it smaller today.
+
+184 "Terry Moore" (2155789824)
+00:27:44.429 --> 00:27:50.699
+Because it, it seemed to be too big, but you can, you can, you can size.
+
+185 "Terry Moore" (2155789824)
+00:27:50.699 --> 00:27:54.449
+The window how you want to? Yep, it's moving.
+
+186 "Terry Moore" (2155789824)
+00:27:59.489 --> 00:28:02.819
+Okay, Here's what you had, right?
+
+187 "Terry Moore" (2155789824)
+00:28:02.819 --> 00:28:06.389
+Now, in there, so.
+
+188 "Terry Moore" (2155789824)
+00:28:06.389 --> 00:28:13.949
+I don't know how often you have to get new authorizations. That's why I put this in. Okay you have to put a new 1 in. That's just all you have to do to get it.
+
+189 "Terry Moore" (2155789824)
+00:28:15.749 --> 00:28:22.709
+So, let's do 1 more thing let's go to right? Click on street address. 1.
+
+190 "Terry Moore" (2155789824)
+00:28:27.389 --> 00:28:33.059
+Add 2 Yep go back to our file.
+
+191 "Terry Moore" (2155789824)
+00:28:36.839 --> 00:28:47.939
+Not that 1 the other 1 we're gonna have to do the other 1 no just do control a.
+
+192 "Terry Moore" (2155789824)
+00:28:50.459 --> 00:29:02.909
+Control C, okay what this basically does Ben is whenever an address changes.
+
+193 "Terry Moore" (2155789824)
+00:29:03.929 --> 00:29:07.649
+It triggers that, so you should be able to pick a customer.
+
+194 "Ben Erickson" (1838977280)
+00:29:11.129 --> 00:29:14.429
+Huh.
+
+195 "Terry Moore" (2155789824)
+00:29:25.289 --> 00:29:28.769
+Oh, what did we name it? Renamed it something different.
+
+196 "Terry Moore" (2155789824)
+00:29:30.239 --> 00:29:33.509
+No, I thought you needed to address verification.
+
+197 "Terry Moore" (2155789824)
+00:29:39.419 --> 00:29:48.239
+Nope, I'm not spelled it. Oh, oh, yeah if you want it.
+
+198 "Terry Moore" (2155789824)
+00:29:53.369 --> 00:29:58.739
+Uh, you have to do the edit window title. There you go. Did you click that you know.
+
+199 "Terry Moore" (2155789824)
+00:30:03.299 --> 00:30:08.849
+I don't Danny. No space like everyone in the space? No, no it'll take the space out.
+
+200 "Terry Moore" (2155789824)
+00:30:08.849 --> 00:30:12.239
+Automatically.
+
+201 "Terry Moore" (2155789824)
+00:30:12.239 --> 00:30:16.319
+Okay.
+
+202 "Terry Moore" (2155789824)
+00:30:18.749 --> 00:30:24.419
+We might have to get out, get back in.
+
+203 "Ben Erickson" (1838977280)
+00:30:24.419 --> 00:30:29.039
+Nope, you don't want to do that.
+
+204 "Terry Moore" (2155789824)
+00:30:49.409 --> 00:31:02.609
+Oh, wait.
+
+205 "Terry Moore" (2155789824)
+00:31:21.779 --> 00:31:26.429
+Okay.
+
+206 "Terry Moore" (2155789824)
+00:31:28.349 --> 00:31:33.179
+See, what it has over here. Mm. Hmm. As the ship address.
+
+207 "Terry Moore" (2155789824)
+00:31:33.179 --> 00:31:37.109
+Just for the sole address, who just says or set.
+
+208 "Terry Moore" (2155789824)
+00:31:38.519 --> 00:31:42.659
+Do not use, you can click check address and.
+
+209 "Terry Moore" (2155789824)
+00:31:47.099 --> 00:31:50.189
+Oh, it doesn't like.
+
+210 "Terry Moore" (2155789824)
+00:31:50.189 --> 00:31:56.189
+Only having floors that if floor said, I think, would have been on street address 1 instead of do not use.
+
+211 "Terry Moore" (2155789824)
+00:31:57.329 --> 00:32:00.539
+Been okay, so.
+
+212 "Terry Moore" (2155789824)
+00:32:00.539 --> 00:32:09.179
+I want to look and see how you're doing your, how you're doing your addresses.
+
+213 "Terry Moore" (2155789824)
+00:32:11.369 --> 00:32:14.369
+It's a normal Yep.
+
+214 "Terry Moore" (2155789824)
+00:32:16.169 --> 00:32:27.599
+See, how it came back valid and it changed it changed. It changed it. Instead of Hoover, it put Hoover because.
+
+215 "Terry Moore" (2155789824)
+00:32:27.599 --> 00:32:34.049
+The 1st line is the address line 1, the 2nd line is like, sweet or something or whatever.
+
+216 "Terry Moore" (2155789824)
+00:32:34.049 --> 00:32:38.579
+The 3rd line is the city, uh, the 4th line is the state.
+
+217 "Terry Moore" (2155789824)
+00:32:39.929 --> 00:32:44.579
+And, uh, zip code goes in the zip. Uh.
+
+218 "Terry Moore" (2155789824)
+00:32:44.579 --> 00:32:52.199
+If you update the, it's gonna.
+
+219 "Terry Moore" (2155789824)
+00:32:53.459 --> 00:32:57.329
+So you'll have to do a little bit of the changing in here.
+
+220 "Terry Moore" (2155789824)
+00:32:57.329 --> 00:33:00.629
+In order to do that where it heads. So now it says, do not use.
+
+221 "Ben Erickson" (1838977280)
+00:33:00.629 --> 00:33:04.589
+I'd make that state. Um, mm. Hmm. Yeah.
+
+222 "Terry Moore" (2155789824)
+00:33:04.589 --> 00:33:10.349
+Something, you know, you understand, I couldn't didn't know how.
+
+223 "Terry Moore" (2155789824)
+00:33:10.349 --> 00:33:16.469
+How else to do it so I just left it with this the way you normally do with the addresses.
+
+224 "Terry Moore" (2155789824)
+00:33:18.689 --> 00:33:26.099
+It helps when I thought of, but it was going to take too long, it's to go after how you do the address, and then map it together and stuff but that was gonna take a while.
+
+225 "Terry Moore" (2155789824)
+00:33:29.189 --> 00:33:34.409
+That's all there is to it. Okay now, when you close out the customer.
+
+226 "Terry Moore" (2155789824)
+00:33:37.169 --> 00:33:46.439
+Hello.
+
+227 "Terry Moore" (2155789824)
+00:33:59.309 --> 00:34:04.709
+We didn't save it why it was asking for that other thing.
+
+228 "Terry Moore" (2155789824)
+00:34:12.689 --> 00:34:18.989
+There it's saved it, so if you just click tab or hit enter again.
+
+229 "Terry Moore" (2155789824)
+00:34:22.409 --> 00:34:26.039
+That's I mean.
+
+230 "Terry Moore" (2155789824)
+00:34:27.749 --> 00:34:37.529
+Now, if you wanted to drag this address verification, somewhere into your HR customer maintenance, wherever you put it just like any other pain, that's where it'll stay.
+
+231 "Terry Moore" (2155789824)
+00:34:37.529 --> 00:34:48.419
+I just kinda liked it outside of there, but you can, you can't go, um, on the edge and move it in toward the update address. Mm. Hmm.
+
+232 "Terry Moore" (2155789824)
+00:34:48.419 --> 00:34:52.049
+Make it the size you want it?
+
+233 "Terry Moore" (2155789824)
+00:34:52.049 --> 00:34:55.259
+Now, to be honest.
+
+234 "Terry Moore" (2155789824)
+00:34:55.259 --> 00:35:01.889
+And sales orders work. Exactly. The same way. The only difference is sales orders.
+
+235 "Terry Moore" (2155789824)
+00:35:01.889 --> 00:35:06.299
+Are do not have a billing address to them only a shipping address.
+
+236 "Terry Moore" (2155789824)
+00:35:06.299 --> 00:35:11.549
+And the AP has a physical address and a remit address.
+
+237 "Terry Moore" (2155789824)
+00:35:15.539 --> 00:35:27.209
+Was definitely differences. And so what we need to do is we just need to take we need to create the custom pain in each of those 2 things and then, um, copy in the macros just like we did.
+
+238 "Ben Erickson" (1838977280)
+00:35:27.209 --> 00:35:40.019
+Copy the script, can we put a check in for this?
+
+239 "Ben Erickson" (1838977280)
+00:35:40.019 --> 00:35:44.489
+Well, you have you have to have a street address I just saw it.
+
+240 "Ben Erickson" (1838977280)
+00:35:44.489 --> 00:35:47.789
+Fails gracefully instead of.
+
+241 "Terry Moore" (2155789824)
+00:35:47.789 --> 00:35:52.889
+See, it says it lack the street address, but I can change that. If you want.
+
+242 "Terry Moore" (2155789824)
+00:35:55.769 --> 00:35:59.909
+In fact, I can do the editing ahead of time and make a note here.
+
+243 "Terry Moore" (2155789824)
+00:35:59.909 --> 00:36:12.749
+At a minimum you have to have the, uh, street address address line 1.
+
+244 "Terry Moore" (2155789824)
+00:36:12.749 --> 00:36:19.349
+And also the zip code that's that's the minimum you need. And it'll, it'll figure everything else out from there.
+
+245 "Terry Moore" (2155789824)
+00:36:21.179 --> 00:36:24.539
+So, if you take out the start, Starkville, Mississippi.
+
+246 "Ben Erickson" (1838977280)
+00:36:28.589 --> 00:36:32.039
+Oh, I got it.
+
+247 "Terry Moore" (2155789824)
+00:36:34.019 --> 00:36:42.719
+That go straight street field. Oh, that's because of the ship address.
+
+248 "Terry Moore" (2155789824)
+00:36:45.869 --> 00:36:49.529
+Uh, I'll put those edits in. Okay.
+
+249 "Ben Erickson" (1838977280)
+00:37:00.749 --> 00:37:05.399
+It doesn't like either of them. Yeah, it's not a real address, but.
+
+250 "Terry Moore" (2155789824)
+00:37:05.399 --> 00:37:13.079
+We're not just popped up invalid address there and I have that on the bottom instead of having it in the middle. So that.
+
+251 "Terry Moore" (2155789824)
+00:37:14.789 --> 00:37:19.889
+Because if I had it in the middle and you clicked update by accident now, right now, if you click update.
+
+252 "Terry Moore" (2155789824)
+00:37:20.909 --> 00:37:29.849
+It's going to change it the blanks you can do it. Well, it didn't change it to blank.
+
+253 "Terry Moore" (2155789824)
+00:37:47.724 --> 00:37:48.444
+There you go now.
+
+254 "Terry Moore" (2155789824)
+00:37:55.769 --> 00:38:03.509
+And it didn't change it. It didn't change that 1 because that's invalid.
+
+255 "Terry Moore" (2155789824)
+00:38:03.509 --> 00:38:15.270
+I mean, it's smart enough go back to the 1 that we did the 1st time.
+
+256 "Terry Moore" (2155789824)
+00:38:15.270 --> 00:38:22.350
+Hello.
+
+257 "Terry Moore" (2155789824)
+00:38:26.070 --> 00:38:32.430
+I think it was 17, wasn't it?
+
+258 "Terry Moore" (2155789824)
+00:38:34.740 --> 00:38:46.380
+It already says valid address. You give me enough to check it. It, it knows that it's a valid address because we started in that table with the addresses. So it doesn't have to go out to Smarty.
+
+259 "Ben Erickson" (1838977280)
+00:38:50.820 --> 00:38:55.350
+Does that make sense? Yeah, that's, uh.
+
+260 "Terry Moore" (2155789824)
+00:38:57.270 --> 00:39:06.720
+Yep, the, uh, that 1, the other ones, we're all a little bit different.
+
+261 "Terry Moore" (2155789824)
+00:39:14.190 --> 00:39:21.120
+So, it's just checking is it here? Yep, well, it's checking both sides, but it really it checks here. 1st time.
+
+262 "Terry Moore" (2155789824)
+00:39:21.120 --> 00:39:24.960
+Because if there's nothing there, and it came up, um.
+
+263 "Terry Moore" (2155789824)
+00:39:26.490 --> 00:39:37.470
+No, it's not going to say it's valid. You can override it, but I'm not gonna I'm not assuming that it's right because you come in again. It's like, hey, let's check this again. Maybe they have it now or something.
+
+264 "Terry Moore" (2155789824)
+00:39:37.470 --> 00:39:42.810
+Yeah, this table you don't have to really worry about it'll take care of itself.
+
+265 "Terry Moore" (2155789824)
+00:39:47.520 --> 00:39:56.310
+The only reason that I have it for the checking, the other thing you can do is you could look at it and say, what was my old address, you know, find the 1 that you just did.
+
+266 "Terry Moore" (2155789824)
+00:39:56.310 --> 00:39:59.460
+Because you did it wrong and find the old address and and.
+
+267 "Terry Moore" (2155789824)
+00:39:59.460 --> 00:40:04.140
+You know what it was it's kind of an audit trail, but it's really used for that.
+
+268 "Ben Erickson" (1838977280)
+00:40:06.300 --> 00:40:10.110
+Avoiding using Smarty? Yeah. Okay.
+
+269 "Terry Moore" (2155789824)
+00:40:11.790 --> 00:40:15.810
+So you want to install it the other places? Yeah.
+
+270 "Terry Moore" (2155789824)
+00:40:27.570 --> 00:40:32.070
+And so it used to working, just on my machine and things so much faster.
+
+271 "Terry Moore" (2155789824)
+00:40:37.170 --> 00:40:40.740
+I didn't do it for for a quick entry.
+
+272 "Ben Erickson" (1838977280)
+00:40:40.740 --> 00:40:45.780
+Sales and entry express. That's fine. We don't use that. That's fine.
+
+273 "Terry Moore" (2155789824)
+00:40:45.780 --> 00:40:51.540
+You would do the same thing that we're doing here, except you're, you'd have to change some variable names and things.
+
+274 "Terry Moore" (2155789824)
+00:40:51.540 --> 00:40:57.840
+Got it so anywhere you want to you right? Click. Yep.
+
+275 "Terry Moore" (2155789824)
+00:41:01.260 --> 00:41:15.690
+It'll list out the same way. If you forget to go float it doesn't really matter.
+
+276 "Terry Moore" (2155789824)
+00:41:16.495 --> 00:41:30.625
+There it is now, this baby scripts, a little different than the other ones we have to open it up under the AP.
+
+277 "Terry Moore" (2155789824)
+00:41:32.310 --> 00:41:35.700
+Or, yeah, and it's, uh, the 4,000.
+
+278 "Terry Moore" (2155789824)
+00:41:35.700 --> 00:41:43.830
+Now, I have comments some stuff out. Okay.
+
+279 "Terry Moore" (2155789824)
+00:41:43.830 --> 00:41:49.200
+Because I took it from the.
+
+280 "Terry Moore" (2155789824)
+00:42:03.775 --> 00:42:07.705
+Now it just right click within the pain that has the addresses.
+
+281 "Terry Moore" (2155789824)
+00:42:13.050 --> 00:42:17.220
+The other 1.
+
+282 "Terry Moore" (2155789824)
+00:42:20.670 --> 00:42:25.230
+They're pretty cool. All these scripts are pretty close to the same, but they have different names.
+
+283 "Terry Moore" (2155789824)
+00:42:25.230 --> 00:42:35.760
+Different people broke the different things.
+
+284 "Ben Erickson" (1838977280)
+00:42:36.505 --> 00:42:36.655
+Hello.
+
+285 "Ben Erickson" (1838977280)
+00:43:22.500 --> 00:43:29.010
+Eastern timing yeah, we're Central.
+
+286 "Terry Moore" (2155789824)
+00:43:31.590 --> 00:43:41.580
+You're in Alabama, right?
+
+287 "Terry Moore" (2155789824)
+00:43:48.330 --> 00:43:51.510
+Oh, I gotta take those 2 out. We'll do that in a 2nd.
+
+288 "Terry Moore" (2155789824)
+00:43:51.510 --> 00:44:05.550
+I was testing something you can just say, okay, this 1 does have built this. Mine didn't have a.
+
+289 "Terry Moore" (2155789824)
+00:44:06.415 --> 00:44:20.575
+So, you must be including it in your in your pain and I didn't have it in my pain. So it's in that customer information on. Yep. And if, and if you didn't have that there, you know, if you didn't show it, it would still work. It would just be blank.
+
+290 "Terry Moore" (2155789824)
+00:44:22.440 --> 00:44:26.940
+I'm there. Mm. Hmm.
+
+291 "Ben Erickson" (1838977280)
+00:44:31.200 --> 00:44:42.780
+You make more of those.
+
+292 "Terry Moore" (2155789824)
+00:44:47.280 --> 00:44:52.890
+That's because I didn't have the other. Okay. You can say, okay, I wrote it down.
+
+293 "Terry Moore" (2155789824)
+00:44:57.540 --> 00:45:00.930
+There's probably something that it's probably gonna pop it up a few times.
+
+294 "Terry Moore" (2155789824)
+00:45:02.670 --> 00:45:05.850
+I don't I don't need it. I wrote it down. Okay.
+
+295 "Ben Erickson" (1838977280)
+00:45:14.010 --> 00:45:19.920
+So, we need to edit the script on that. Yep.
+
+296 "Richard Bentley" (3047046400)
+00:45:19.920 --> 00:45:25.410
+Yep, so.
+
+297 "Terry Moore" (2155789824)
+00:45:25.410 --> 00:45:29.400
+No, not yeah, you have to do.
+
+298 "Richard Bentley" (3047046400)
+00:45:29.400 --> 00:45:33.720
+What I was going to ask when you click update.
+
+299 "Richard Bentley" (3047046400)
+00:45:33.720 --> 00:45:37.860
+When you're in the sales order there, does it only update the sales order? Or is it.
+
+300 "Terry Moore" (2155789824)
+00:45:37.860 --> 00:45:41.940
+That make the customer take it only updates the sales order.
+
+301 "Terry Moore" (2155789824)
+00:45:41.940 --> 00:45:46.620
+I wasn't smart enough. I figured that you guys would never be changing.
+
+302 "Terry Moore" (2155789824)
+00:45:47.880 --> 00:45:53.340
+The bill to address, but yeah, you're right. It doesn't update the customer.
+
+303 "Terry Moore" (2155789824)
+00:46:01.500 --> 00:46:04.530
+Mm, hmm right. Click in uh.
+
+304 "Terry Moore" (2155789824)
+00:46:06.360 --> 00:46:18.870
+Oh, wait, no, this, this 1 you're okay. Go to over under field properties. Click the variable tab variables tab.
+
+305 "Terry Moore" (2155789824)
+00:46:20.250 --> 00:46:25.170
+Yep, and go to, uh, customer information.
+
+306 "Terry Moore" (2155789824)
+00:46:29.130 --> 00:46:32.700
+Okay, well we have to do is we have to.
+
+307 "Terry Moore" (2155789824)
+00:46:32.700 --> 00:46:39.840
+I like the 1st, half of line 22 where it says contact details, code, objects, ship address 1.
+
+308 "Terry Moore" (2155789824)
+00:46:41.910 --> 00:46:48.540
+And then, um, double click on the, or yeah, double click on the address. 1.
+
+309 "Terry Moore" (2155789824)
+00:46:48.540 --> 00:46:56.610
+In the in the other pain, and then the same thing with the other, it was address 2 and 3.
+
+310 "Terry Moore" (2155789824)
+00:46:58.350 --> 00:47:12.060
+And I don't ever do address 3. I don't ever use that 1. I have no clue what that.
+
+311 "Terry Moore" (2155789824)
+00:47:12.060 --> 00:47:18.540
+Truly for, and this should be the post, uh, the zip code postal code. Yep.
+
+312 "Terry Moore" (2155789824)
+00:47:18.540 --> 00:47:24.840
+That's it just do a syntax check and save it and the way we go.
+
+313 "Ben Erickson" (1838977280)
+00:47:26.970 --> 00:47:33.330
+Hello.
+
+314 "Terry Moore" (2155789824)
+00:47:39.480 --> 00:47:45.120
+How many transactions do you guys have a month? Did you or do you have an unlimited plan?
+
+315 "Ben Erickson" (1838977280)
+00:47:45.120 --> 00:47:52.170
+Um, it was, I think we went with the yearly, it's like, 1.8Million or something.
+
+316 "Terry Moore" (2155789824)
+00:47:52.170 --> 00:47:57.960
+Okay, um, each 1 of these is a 2 is 2.
+
+317 "Terry Moore" (2155789824)
+00:47:57.960 --> 00:48:00.990
+Because it's 2 addresses.
+
+318 "Terry Moore" (2155789824)
+00:48:00.990 --> 00:48:05.520
+Okay, so we really only have 500,000.
+
+319 "Ben Erickson" (1838977280)
+00:48:07.620 --> 00:48:14.250
+And are you checking the address type that custom field?
+
+320 "Terry Moore" (2155789824)
+00:48:14.250 --> 00:48:17.340
+No, I'm not doing anything with custom fields.
+
+321 "Ben Erickson" (1838977280)
+00:48:20.670 --> 00:48:26.100
+Yeah, we'll, we'll need to add that then.
+
+322 "Terry Moore" (2155789824)
+00:48:44.515 --> 00:48:46.345
+Oh, we shouldn't change that 1. we were in there.
+
+323 "Terry Moore" (2155789824)
+00:48:51.930 --> 00:48:55.800
+Changed it.
+
+324 "Terry Moore" (2155789824)
+00:48:55.800 --> 00:48:59.460
+Hello.
+
+325 "Ben Erickson" (1838977280)
+00:49:07.710 --> 00:49:13.320
+So, I don't I don't really check. So, what do we need to do on sales orders to only check.
+
+326 "Ben Erickson" (1838977280)
+00:49:14.610 --> 00:49:18.150
+Um, the ship too, I guess.
+
+327 "Ben Erickson" (1838977280)
+00:49:19.470 --> 00:49:24.540
+I think if you go into or not, cause most of our transactions are going to be sales order entry.
+
+328 "Terry Moore" (2155789824)
+00:49:24.540 --> 00:49:29.100
+Right. So we're not doubling up on the API calls. Well.
+
+329 "Terry Moore" (2155789824)
+00:49:29.100 --> 00:49:32.940
+I mean, the next time you go in, it's going to just say, valid address for both.
+
+330 "Terry Moore" (2155789824)
+00:49:32.940 --> 00:49:43.110
+And actually, if the to address is already correct in there, then you won't have to check the address because it'll pop up valid because it's in that other table.
+
+331 "Ben Erickson" (1838977280)
+00:49:44.370 --> 00:49:48.180
+Gotcha. Okay. Bye.
+
+332 "Ben Erickson" (1838977280)
+00:49:48.180 --> 00:49:59.460
+And again, this can be moved wherever you want it to on the.
+
+333 "Terry Moore" (2155789824)
+00:49:59.460 --> 00:50:05.070
+For the pain and by person, like, we'll get rid of that as soon as.
+
+334 "Terry Moore" (2155789824)
+00:50:09.810 --> 00:50:22.560
+I changed it backwards on this 1.
+
+335 "Ben Erickson" (1838977280)
+00:50:22.560 --> 00:50:33.570
+Thanks.
+
+336 "Terry Moore" (2155789824)
+00:50:33.570 --> 00:50:41.130
+Go back in there. Please. Oh, yeah. Here right?
+
+337 "Terry Moore" (2155789824)
+00:50:42.630 --> 00:50:48.930
+I do know, you can go find these and and if you have to edit them, you should never have to edit on.
+
+338 "Terry Moore" (2155789824)
+00:50:48.930 --> 00:50:52.500
+But if you do, you don't have to go through Cisco.
+
+339 "Terry Moore" (2155789824)
+00:50:52.500 --> 00:50:56.040
+It's probably just a little safer to do it that way.
+
+340 "Terry Moore" (2155789824)
+00:51:00.420 --> 00:51:04.980
+And just right click in the order. Header. Nope. Nope.
+
+341 "Terry Moore" (2155789824)
+00:51:04.980 --> 00:51:09.690
+Yep.
+
+342 "Terry Moore" (2155789824)
+00:51:11.790 --> 00:51:17.790
+And see the 1st, 97 and line 8, get rid of those 2.
+
+343 "Ben Erickson" (1838977280)
+00:52:09.000 --> 00:52:13.980
+You guys have just a couple of companies.
+
+344 "Ben Erickson" (1838977280)
+00:52:13.980 --> 00:52:19.770
+Are they all used? No um.
+
+345 "Ben Erickson" (1838977280)
+00:52:19.770 --> 00:52:23.250
+We did a consolidation when we went to 7.
+
+346 "Ben Erickson" (1838977280)
+00:52:23.250 --> 00:52:34.050
+Where you could do true branch cause in 6, you couldn't really do down to the income statement level. So, um, we combined, I think.
+
+347 "Ben Erickson" (1838977280)
+00:52:35.130 --> 00:52:40.350
+20 companies in the 1 and then we combine.
+
+348 "Ben Erickson" (1838977280)
+00:52:40.350 --> 00:52:47.880
+6 companies and didn't want to end do another 1. so we only have 2 active the rest. We just okay.
+
+349 "Ben Erickson" (1838977280)
+00:52:47.880 --> 00:52:51.150
+For historical.
+
+350 "Ben Erickson" (1838977280)
+00:52:59.280 --> 00:53:03.120
+Right.
+
+351 "Terry Moore" (2155789824)
+00:53:03.120 --> 00:53:13.740
+Just go down to the zip and put yourself and put this in.
+
+352 "Ben Erickson" (1838977280)
+00:53:18.420 --> 00:53:28.890
+I was wondering if that will pick up on.
+
+353 "Ben Erickson" (1838977280)
+00:53:33.330 --> 00:53:38.070
+See, how it filled it in now? Yeah.
+
+354 "Ben Erickson" (1838977280)
+00:53:41.040 --> 00:53:50.040
+Do it.
+
+355 "Terry Moore" (2155789824)
+00:54:08.695 --> 00:54:08.965
+Okay.
+
+356 "Terry Moore" (2155789824)
+00:54:11.670 --> 00:54:15.180
+Look at the billing address and let's make sure it didn't update that. 1.
+
+357 "Ben Erickson" (1838977280)
+00:54:17.160 --> 00:54:21.780
+Oh, no, I mean, under the sole too, in that pane, uh, it's blank.
+
+358 "Ben Erickson" (1838977280)
+00:54:25.830 --> 00:54:39.060
+It doesn't billing billing address.
+
+359 "Terry Moore" (2155789824)
+00:54:39.060 --> 00:54:42.060
+Check that make sure that it works.
+
+360 "Richard Bentley" (3047046400)
+00:54:45.060 --> 00:54:49.710
+Right.
+
+361 "Ben Erickson" (1838977280)
+00:55:30.510 --> 00:55:37.350
+Hello.
+
+362 "Ben Erickson" (1838977280)
+00:55:50.490 --> 00:56:00.330
+Hello.
+
+363 "Ben Erickson" (1838977280)
+00:56:04.500 --> 00:56:10.020
+Huh.
+
+364 "Ben Erickson" (1838977280)
+00:56:10.020 --> 00:56:14.550
+Oh, or is that already like that?
+
+365 "Terry Moore" (2155789824)
+00:56:16.590 --> 00:56:24.750
+That was already like that, cause that's just 3 Apple for growth and then we had 303.
+
+366 "Richard Bentley" (3047046400)
+00:56:45.300 --> 00:56:48.810
+Okay.
+
+367 "Terry Moore" (2155789824)
+00:57:39.625 --> 00:57:41.335
+I'll take a look at that in the script.
+
+368 "Ben Erickson" (1838977280)
+00:57:41.970 --> 00:57:45.000
+And I can just send you the script right then.
+
+369 "Terry Moore" (2155789824)
+00:57:45.000 --> 00:57:48.330
+Yeah, that's fine. Just slip it up.
+
+370 "Terry Moore" (2155789824)
+00:57:48.330 --> 00:57:52.350
+You take zip files or should I put it out on my FTP site and send you a link.
+
+371 "Terry Moore" (2155789824)
+00:57:52.350 --> 00:57:57.240
+Yeah, I think it's usually get blocked. Okay. Okay.
+
+372 "Terry Moore" (2155789824)
+00:58:14.760 --> 00:58:19.260
+It's probably because we don't have a a ship to address.
+
+373 "Terry Moore" (2155789824)
+00:58:23.490 --> 00:58:26.790
+You can go edit copy address I think.
+
+374 "Terry Moore" (2155789824)
+00:58:29.580 --> 00:58:32.670
+No function sherry.
+
+375 "Terry Moore" (2155789824)
+00:58:34.140 --> 00:58:45.270
+There you go. Oh.
+
+376 "Terry Moore" (2155789824)
+00:58:45.270 --> 00:58:52.590
+Oh, you have you have that on street address 2 instead of street address 1.
+
+377 "Ben Erickson" (1838977280)
+00:58:52.590 --> 00:59:00.780
+That's why we're getting the error when I tried to put it on 1.
+
+378 "Terry Moore" (2155789824)
+00:59:09.450 --> 00:59:16.380
+See, it looked at the city and state it didn't care, but it's still going to give us that air on the ship to.
+
+379 "Terry Moore" (2155789824)
+00:59:24.540 --> 00:59:33.390
+Yep, they're already out there. I'll look at that and see.
+
+380 "Terry Moore" (2155789824)
+00:59:58.440 --> 01:00:00.475
+Figure out all the different things you did,
+
+381 "Richard Bentley" (3047046400)
+01:00:15.445 --> 01:00:17.785
+you had to slow the recorder when you're watching.
+
+382 "Ben Erickson" (1838977280)
+01:00:18.330 --> 01:00:21.360
+Okay.
+
+383 "Ben Erickson" (1838977280)
+01:00:24.420 --> 01:00:38.970
+There's no sole address, so you can, you can say.
+
+384 "Terry Moore" (2155789824)
+01:00:38.970 --> 01:00:44.760
+Check the address, and it's only going to track the ship to address cause it doesn't have anything and that's the other one's all blank.
+
+385 "Ben Erickson" (1838977280)
+01:00:44.760 --> 01:00:48.030
+It's just going to ignore it. Oh, but it's not like.
+
+386 "Ben Erickson" (1838977280)
+01:00:48.030 --> 01:00:51.270
+The 1 is the account, we just did.
+
+387 "Ben Erickson" (1838977280)
+01:01:17.220 --> 01:01:27.720
+The update, it's not working, but change roads to road.
+
+388 "Terry Moore" (2155789824)
+01:01:30.630 --> 01:01:35.280
+Well, I found it, right? No, I know, but if we oh, wait.
+
+389 "Ben Erickson" (1838977280)
+01:01:35.280 --> 01:01:39.750
+But it will and then update Yep.
+
+390 "Terry Moore" (2155789824)
+01:02:04.620 --> 01:02:09.660
+I wonder are these backwards maybe this.
+
+391 "Ben Erickson" (1838977280)
+01:02:17.160 --> 01:02:21.780
+Is return data through.
+
+392 "Terry Moore" (2155789824)
+01:02:23.130 --> 01:02:26.940
+Oh, the state oh, state USA.
+
+393 "Terry Moore" (2155789824)
+01:02:28.800 --> 01:02:33.150
+I was wondering if this is mm. Hmm. Uh.
+
+394 "Ben Erickson" (1838977280)
+01:02:43.770 --> 01:02:53.550
+I guess I need to comment that 1 out just put a single quote in front of it.
+
+395 "Terry Moore" (2155789824)
+01:02:55.590 --> 01:02:58.860
+Uh, shouldn't be 1 1, right?
+
+396 "Terry Moore" (2155789824)
+01:02:58.860 --> 01:03:05.820
+Yeah, but they didn't do it that way. They just haven't dress and then they have address 2 and then they have address 3 is stupid.
+
+397 "Terry Moore" (2155789824)
+01:03:12.690 --> 01:03:19.860
+Oh, wait, hold on.
+
+398 "Terry Moore" (2155789824)
+01:03:33.000 --> 01:03:40.830
+Let me double check that 1 and then I'll, I'll do it. Let's put the AP 1 in because once we have a meant, it's gonna be easy to to change them.
+
+399 "Terry Moore" (2155789824)
+01:03:46.230 --> 01:03:51.780
+So, other than some things not working, is it what you were expecting?
+
+400 "Ben Erickson" (1838977280)
+01:03:54.450 --> 01:04:02.400
+Um, well, we definitely want to make sure we're updating the address type field.
+
+401 "Ben Erickson" (1838977280)
+01:04:02.400 --> 01:04:07.110
+Um, with the commercial residential, um.
+
+402 "Ben Erickson" (1838977280)
+01:04:07.110 --> 01:04:11.220
+So, we need to be sure to get that at it, but I guess I was expecting more.
+
+403 "Ben Erickson" (1838977280)
+01:04:14.580 --> 01:04:20.070
+Force, you know, I can't exit the order.
+
+404 "Ben Erickson" (1838977280)
+01:04:20.070 --> 01:04:24.330
+Unless I have validated all the, it address.
+
+405 "Ben Erickson" (1838977280)
+01:04:25.620 --> 01:04:32.310
+Cause it was optional they're not going to do. I mean, that's just the back to life is you can tell them to.
+
+406 "Ben Erickson" (1838977280)
+01:04:32.310 --> 01:04:45.840
+Ask them to, but I don't know if we can put a check when you end order or save a customer that.
+
+407 "Terry Moore" (2155789824)
+01:04:47.070 --> 01:04:53.550
+If it's there. Okay, I, I understand what you're saying. I put a note for that.
+
+408 "Ben Erickson" (1838977280)
+01:04:58.440 --> 01:05:05.280
+I guess we'd be checking to see is the address in the valid address list and if not. Yeah.
+
+409 "Terry Moore" (2155789824)
+01:05:05.280 --> 01:05:12.390
+Tell them. Hey, yeah, I have to I just have to figure out that macro.
+
+410 "Ben Erickson" (1838977280)
+01:05:12.390 --> 01:05:17.970
+Hmm.
+
+411 "Terry Moore" (2155789824)
+01:05:47.010 --> 01:05:54.150
+Did I miss 1? That's when it goes there.
+
+412 "Ben Erickson" (1838977280)
+01:05:54.150 --> 01:05:59.760
+I think I missed the script, though. It was all in 1.
+
+413 "Terry Moore" (2155789824)
+01:06:02.700 --> 01:06:05.245
+I just want the top part, right? Yup.
+
+414 "Terry Moore" (2155789824)
+01:06:16.465 --> 01:06:21.025
+And see, here, they're different too. Instead of address 1. it says address line 1.
+
+415 "Terry Moore" (2155789824)
+01:06:21.300 --> 01:06:25.320
+Instead of ship address, it says at.
+
+416 "Terry Moore" (2155789824)
+01:06:25.320 --> 01:06:30.900
+It's different people programmed.
+
+417 "Terry Moore" (2155789824)
+01:06:51.210 --> 01:06:58.650
+Oh, wait, you got something there. Why didn't have that? That doesn't make much sense.
+
+418 "Terry Moore" (2155789824)
+01:07:00.510 --> 01:07:08.400
+It's like my is just testing something. Um, we have to have the refresh is to refresh up above.
+
+419 "Terry Moore" (2155789824)
+01:07:08.400 --> 01:07:12.090
+Yeah.
+
+420 "Terry Moore" (2155789824)
+01:07:12.090 --> 01:07:16.860
+This is all for this 1. uh, so I put the wrong thing in the.
+
+421 "Terry Moore" (2155789824)
+01:07:17.215 --> 01:07:18.265
+Yeah, that's okay.
+
+422 "Terry Moore" (2155789824)
+01:07:18.295 --> 01:07:19.375
+I'll give you the right 1
+
+423 "Ben Erickson" (1838977280)
+01:07:35.305 --> 01:07:39.475
+so it would check it. It just won't it won't update it. Okay.
+
+424 "Terry Moore" (2155789824)
+01:07:43.950 --> 01:07:48.150
+Okay, thanks. Oh, we still got those message.
+
+425 "Ben Erickson" (1838977280)
+01:08:03.780 --> 01:08:10.260
+I don't think there's, I suppose contact management. Do you have that module?
+
+426 "Terry Moore" (2155789824)
+01:08:10.260 --> 01:08:17.790
+No, okay. Cause if we did, we could add it to that too. I mean.
+
+427 "Terry Moore" (2155789824)
+01:08:27.720 --> 01:08:32.370
+You know what we're doing here don't you.
+
+428 "Terry Moore" (2155789824)
+01:08:32.370 --> 01:08:40.470
+We're playing, you break the system.
+
+429 "Terry Moore" (2155789824)
+01:08:53.070 --> 01:09:01.890
+Yeah, there were no address, but we do have that in the database. We'll have to clean that 1 out of the date. We are links in the database.
+
+430 "Terry Moore" (2155789824)
+01:09:06.630 --> 01:09:15.930
+So, there's no reason to update this 1.
+
+431 "Terry Moore" (2155789824)
+01:09:15.930 --> 01:09:19.380
+Oh, no, yeah, you could because the state is different, isn't it? Yeah.
+
+432 "Ben Erickson" (1838977280)
+01:09:21.000 --> 01:09:25.170
+Well, that's where you could update it's not going to work on this 1. right? I don't know.
+
+433 "Ben Erickson" (1838977280)
+01:09:25.170 --> 01:09:31.830
+Because I had the wrong script, or we didn't have the oh, we didn't have the script. Yes. You're right. Okay.
+
+434 "Terry Moore" (2155789824)
+01:09:31.830 --> 01:09:35.130
+Um.
+
+435 "Ben Erickson" (1838977280)
+01:09:41.400 --> 01:09:45.180
+So, obviously we have a few tweaks and.
+
+436 "Terry Moore" (2155789824)
+01:09:45.180 --> 01:09:48.570
+Then we can try and forcing our go to address.
+
+437 "Terry Moore" (2155789824)
+01:09:48.570 --> 01:09:55.740
+I don't know if we had that in the original thing or not, but.
+
+438 "Terry Moore" (2155789824)
+01:09:55.740 --> 01:10:02.250
+I'll take a look and see, it's a, it's a good feature to have.
+
+439 "Terry Moore" (2155789824)
+01:10:03.300 --> 01:10:06.780
+Oh, yes, if I was doing this.
+
+440 "Terry Moore" (2155789824)
+01:10:08.520 --> 01:10:20.700
+You can actually delete all of them if you want, you have to do the edit or change. Yeah you have to do the edit. Yeah.
+
+441 "Terry Moore" (2155789824)
+01:10:20.700 --> 01:10:28.890
+I was just gonna wait so we have the blank address. That's where it's saying that blank is valid.
+
+442 "Richard Bentley" (3047046400)
+01:10:37.920 --> 01:10:42.780
+It's the, the same may pay 1 would go on the purchase order too, or.
+
+443 "Terry Moore" (2155789824)
+01:10:42.780 --> 01:10:48.630
+Purchase over Ooh, I didn't do purchase order entry. We could add it to that.
+
+444 "Terry Moore" (2155789824)
+01:10:48.630 --> 01:10:53.850
+I mean, if you think about it, Ben, you could probably add it to that all by yourself.
+
+445 "Terry Moore" (2155789824)
+01:10:53.850 --> 01:10:59.370
+Yeah, you just have to pick those right fields up. That's how I kind of wanted to design it that.
+
+446 "Terry Moore" (2155789824)
+01:10:59.370 --> 01:11:04.770
+If there was ever any other place you wanted it, um, do you guys do drop ships?
+
+447 "Terry Moore" (2155789824)
+01:11:04.770 --> 01:11:14.730
+Yeah, so you would have to make a PO that has the ship address being.
+
+448 "Terry Moore" (2155789824)
+01:11:14.730 --> 01:11:18.300
+Where the order was, right? Yeah.
+
+449 "Terry Moore" (2155789824)
+01:11:18.300 --> 01:11:23.340
+Okay, so yes, this would make sense to have in the purchasing in the field.
+
+450 "Terry Moore" (2155789824)
+01:11:23.340 --> 01:11:27.660
+You didn't think of.
+
+451 "Terry Moore" (2155789824)
+01:11:33.390 --> 01:11:40.830
+Give me a couple of days. Uh, okay.
+
+452 "Terry Moore" (2155789824)
+01:11:42.600 --> 01:11:47.970
+Maybe like Monday next week, do it um.
+
+453 "Terry Moore" (2155789824)
+01:11:47.970 --> 01:11:54.300
+Are you providing people? Do you have any questions? Do you have any.
+
+454 "Cather Cheese" (2382460672)
+01:11:56.190 --> 01:12:08.130
+Questions or anything about this our minds can't. Thank you as fast as being tabs. Okay. I was paying attention, but, um.
+
+455 "Cather Cheese" (2382460672)
+01:12:08.130 --> 01:12:15.270
+I don't really have any questions just kind of walking through. It doesn't really look a lot of user friendly.
+
+456 "Cather Cheese" (2382460672)
+01:12:15.270 --> 01:12:18.540
+On the validation piece, but, um.
+
+457 "Cather Cheese" (2382460672)
+01:12:18.540 --> 01:12:24.450
+I guess I was once we get it to run without the train debugging and stuff, maybe.
+
+458 "Terry Moore" (2155789824)
+01:12:24.450 --> 01:12:27.900
+Okay, yeah, and I think that.
+
+459 "Terry Moore" (2155789824)
+01:12:29.010 --> 01:12:33.180
+What would you if you look at it? It's kinda like, what would you change.
+
+460 "Richard Bentley" (3047046400)
+01:12:34.350 --> 01:12:42.330
+No, I don't know that, you know it now, but, yeah, I mean, I guess I wasn't expecting a custom form. I was just thinking that 1.
+
+461 "Richard Bentley" (3047046400)
+01:12:42.330 --> 01:12:46.140
+Be on that fit, you know, on the field where.
+
+462 "Richard Bentley" (3047046400)
+01:12:46.140 --> 01:12:50.370
+When they go to, you know, enter the dress.
+
+463 "Richard Bentley" (3047046400)
+01:12:50.370 --> 01:12:55.650
+I don't know, I just wouldn't think it would be a custom form like that.
+
+464 "Cather Cheese" (2382460672)
+01:12:58.110 --> 01:13:06.540
+But, yeah, I know the piece I know being you mentioned well, if there's no address.
+
+465 "Cather Cheese" (2382460672)
+01:13:06.540 --> 01:13:10.170
+You say, well, we're going to force them to do something.
+
+466 "Cather Cheese" (2382460672)
+01:13:10.170 --> 01:13:13.410
+So, if they blink out the address.
+
+467 "Cather Cheese" (2382460672)
+01:13:13.410 --> 01:13:17.250
+Is it required I mean, they update it because.
+
+468 "Cather Cheese" (2382460672)
+01:13:17.250 --> 01:13:23.010
+If the address is invalid, it can't validate it. Then it says it's got to.
+
+469 "Cather Cheese" (2382460672)
+01:13:23.010 --> 01:13:26.460
+Blank, so you're still kind of going to be.
+
+470 "Terry Moore" (2155789824)
+01:13:26.460 --> 01:13:30.510
+In the same situation, where you don't have a valid address.
+
+471 "Terry Moore" (2155789824)
+01:13:30.510 --> 01:13:35.790
+And that's the 1 thing that that would be how it would be hard to force validation because.
+
+472 "Terry Moore" (2155789824)
+01:13:35.790 --> 01:13:40.080
+If it's 1 of those cases where there is no address yet.
+
+473 "Terry Moore" (2155789824)
+01:13:42.120 --> 01:13:45.720
+And it's still it's still valid. We want that to go through.
+
+474 "Terry Moore" (2155789824)
+01:13:46.740 --> 01:13:54.180
+Maybe we could just put air messages out and make it so painful for them that they'll do it.
+
+475 "Terry Moore" (2155789824)
+01:13:54.180 --> 01:13:57.720
+And then they only have to go through the painful stuff. If the address.
+
+476 "Ben Erickson" (1838977280)
+01:13:57.720 --> 01:14:05.070
+On those few cases, why don't you think about that and see what you want to handle that?
+
+477 "Ben Erickson" (1838977280)
+01:14:05.070 --> 01:14:12.600
+All right.
+
+478 "Ben Erickson" (1838977280)
+01:14:12.600 --> 01:14:17.460
+We'll play around with this and think through it. Yeah.
+
+479 "Cather Cheese" (2382460672)
+01:14:17.460 --> 01:14:26.310
+And just 1 more thing sure. On the so how we found out about the, you know, the the code and the token.
+
+480 "Cather Cheese" (2382460672)
+01:14:26.310 --> 01:14:31.740
+Mm, hmm like, how often it changed because I know typically like, where is that store?
+
+481 "Terry Moore" (2155789824)
+01:14:31.740 --> 01:14:36.690
+There's a button on the screen that says to enter it.
+
+482 "Terry Moore" (2155789824)
+01:14:36.690 --> 01:14:47.280
+Until the license information, so if you click that button, a screen comes up, it shows what your old license information was, and it has 2 places you can type it in and then save it.
+
+483 "Cather Cheese" (2382460672)
+01:14:47.280 --> 01:14:58.080
+Well, when I send the license, I guess I'm when I think of 2 or code and the token that is the access to the API, which typically.
+
+484 "Cather Cheese" (2382460672)
+01:14:58.080 --> 01:15:09.240
+That changes often when you're running in a company's API. So, is that stored within the code that is passing in that token?
+
+485 "Terry Moore" (2155789824)
+01:15:09.240 --> 01:15:12.510
+It's starting in the database. Okay.
+
+486 "Terry Moore" (2155789824)
+01:15:14.760 --> 01:15:19.500
+Because just heard the reason you said that if it changes a lot, then.
+
+487 "Terry Moore" (2155789824)
+01:15:19.500 --> 01:15:25.110
+I don't want it hard coding it in the program didn't make sense. And also.
+
+488 "Terry Moore" (2155789824)
+01:15:25.110 --> 01:15:30.540
+Having it yeah. Difficult for you guys to key in didn't make sense either. So we just put it in.
+
+489 "Cather Cheese" (2382460672)
+01:15:30.540 --> 01:15:37.890
+Just put it there and, uh, yeah, table test if it's bad, it's gonna give you some goofy error message.
+
+490 "Cather Cheese" (2382460672)
+01:15:37.890 --> 01:15:41.610
+Yeah, yeah, uh, okay.
+
+491 "Ben Erickson" (1838977280)
+01:15:44.580 --> 01:15:52.140
+Yeah, it's definitely mentioned anywhere that it expires. So I'll ask them and say.
+
+492 "Terry Moore" (2155789824)
+01:15:52.675 --> 01:16:05.905
+Okay, yeah, I'll do the trapping the errors for the street address 1 in the zip code make sure that those 2 things are in there in the right place and if they're not all pop up box up and say, hey,
+
+493 "Terry Moore" (2155789824)
+01:16:05.905 --> 01:16:09.505
+you need to fix this and I won't even call Smarty cause it'll just give us an error.
+
+494 "Terry Moore" (2155789824)
+01:16:19.830 --> 01:16:30.960
+It's interesting. All right what else do we have for today?
+
+495 "Terry Moore" (2155789824)
+01:16:32.280 --> 01:16:35.880
+That's it. That's fine. That's great.
+
+496 "Terry Moore" (2155789824)
+01:16:35.880 --> 01:16:44.880
+Once we have it a little bit more though, right? I don't know. Do you think you need a user manual for this?
+
+497 "Terry Moore" (2155789824)
+01:16:48.450 --> 01:16:52.560
+Um, I think we can write something up. Yeah, it's not that.
+
+498 "Terry Moore" (2155789824)
+01:16:52.560 --> 01:17:04.410
+It's not that big a deal. I'll send you a note on the.
+
+499 "Ben Erickson" (1838977280)
+01:17:05.520 --> 01:17:10.020
+So, we got a custom form field for address type.
+
+500 "Ben Erickson" (1838977280)
+01:17:10.020 --> 01:17:16.050
+Mm, hmm um, on sales orders and.
+
+501 "Ben Erickson" (1838977280)
+01:17:17.520 --> 01:17:20.790
+Mm, hmm. So is it just sales orders.
+
+502 "Richard Bentley" (3047046400)
+01:17:20.790 --> 01:17:27.150
+It's just sales force isn't it should be yeah.
+
+503 "Ben Erickson" (1838977280)
+01:17:31.290 --> 01:17:35.850
+Or on the customer, I think we've got for the, um.
+
+504 "Ben Erickson" (1838977280)
+01:17:40.710 --> 01:17:45.360
+Shipping address, um, let me double check. It's, uh.
+
+505 "Terry Moore" (2155789824)
+01:17:47.490 --> 01:17:54.660
+Yeah, right you pass that when you do it you pass that field too. Smarty.
+
+506 "Terry Moore" (2155789824)
+01:17:54.660 --> 01:17:59.730
+So, it knows it's a personal address versus a.
+
+507 "Terry Moore" (2155789824)
+01:17:59.730 --> 01:18:03.180
+Commercial address, or does it come back.
+
+508 "Terry Moore" (2155789824)
+01:18:03.180 --> 01:18:12.660
+And tell you what it is, it comes back and tells you. Okay. I got it. I just have to look and see where that is. Yeah, if you send me a note and say what the form custom form fields are.
+
+509 "Terry Moore" (2155789824)
+01:18:12.660 --> 01:18:18.330
+Then I'll take a look at their.
+
+510 "Terry Moore" (2155789824)
+01:18:18.330 --> 01:18:32.460
+Residential, that was the word I was talking, they call it the residential indicator.
+
+511 "Terry Moore" (2155789824)
+01:18:32.460 --> 01:18:41.760
+Yeah, you wouldn't have a custom form pill for that under the, uh.
+
+512 "Ben Erickson" (1838977280)
+01:18:41.760 --> 01:18:48.120
+Supplier now we just have it on sales orders and customers.
+
+513 "Terry Moore" (2155789824)
+01:18:48.120 --> 01:18:51.630
+Yeah, is it.
+
+514 "Terry Moore" (2155789824)
+01:18:53.340 --> 01:18:57.600
+Is the custom form field on the screen so I can grab it through.
+
+515 "Terry Moore" (2155789824)
+01:18:57.600 --> 01:19:00.600
+Because I don't do any saving directly to the.
+
+516 "Terry Moore" (2155789824)
+01:19:00.600 --> 01:19:08.430
+Database or anything, except for my stuff, I put it on the screen so that you can save it if you want to or you can abandon whatever.
+
+517 "Terry Moore" (2155789824)
+01:19:08.430 --> 01:19:12.000
+Using streets.
+
+518 "Terry Moore" (2155789824)
+01:19:15.780 --> 01:19:20.340
+So, we're going to want that on the screen, and I just need to know where it is.
+
+519 "Ben Erickson" (1838977280)
+01:19:23.070 --> 01:19:26.160
+Yeah, so it is.
+
+520 "Terry Moore" (2155789824)
+01:19:28.200 --> 01:19:35.100
+Right here can you send me a screen print of that? 1 quick? Yeah.
+
+521 "Terry Moore" (2155789824)
+01:19:36.900 --> 01:19:47.130
+Is all I need to know really is address type that that's the name of it and that that is that the name name on the sales order? Yep. Okay.
+
+522 "Ben Erickson" (1838977280)
+01:19:59.040 --> 01:20:06.960
+I think, uh, I think Smarty just returns it as is a residential yes. Or no. So we would do.
+
+523 "Ben Erickson" (1838977280)
+01:20:06.960 --> 01:20:11.580
+Residential or commercial.
+
+524 "Terry Moore" (2155789824)
+01:20:15.600 --> 01:20:20.460
+Okay, yeah, send me that 1, too, because I need to know that too that that's what's.
+
+525 "Terry Moore" (2155789824)
+01:20:29.820 --> 01:20:35.520
+So, when you pick up, when you pick 1, it, it shows the whole word end to address type, right? Yeah.
+
+526 "Terry Moore" (2155789824)
+01:20:35.520 --> 01:20:38.940
+Yep. Okay.
+
+527 "Terry Moore" (2155789824)
+01:20:38.940 --> 01:20:51.630
+I suppose they have to spell it, right? Okay.
+
+528 "Terry Moore" (2155789824)
+01:20:52.860 --> 01:21:01.890
+Did you guys think of anything? Um, we've got my email if you don't it's Terry dot more at Cisco dot com.
+
+529 "Terry Moore" (2155789824)
+01:21:03.330 --> 01:21:07.380
+To shoot me a note, if you have any suggestions or anything else, because.
+
+530 "Ben Erickson" (1838977280)
+01:21:07.380 --> 01:21:11.040
+Okay, requiring leads 1 at all.
+
+531 "Terry Moore" (2155789824)
+01:21:11.040 --> 01:21:18.150
+You see the button for configure license.
+
+532 "Terry Moore" (2155789824)
+01:21:18.150 --> 01:21:24.270
+Down there. Mm. Hmm. That's where you would put the the, um.
+
+533 "Terry Moore" (2155789824)
+01:21:26.010 --> 01:21:30.660
+The ID in the token, okay when it changes.
+
+534 "Terry Moore" (2155789824)
+01:21:32.010 --> 01:21:37.320
+And after you put it in, you would want to verify it to make sure that it's good.
+
+535 "Terry Moore" (2155789824)
+01:21:37.320 --> 01:21:43.950
+And it will come back and say it's good or it'll give you an error and then you would say that you don't want to save the blanks right now.
+
+536 "Ben Erickson" (1838977280)
+01:21:43.950 --> 01:21:50.790
+Okay, I can generate generate a new 1 and give it a try.
+
+537 "Richard Bentley" (3047046400)
+01:21:50.790 --> 01:21:59.220
+Mm, hmm. Yeah, I was thinking we probably want to have that from the users or something. Yeah.
+
+538 "Terry Moore" (2155789824)
+01:22:20.700 --> 01:22:23.700
+Then you would just save it, not save it to the database.
+
+539 "Terry Moore" (2155789824)
+01:22:24.990 --> 01:22:27.990
+Oh, you changed.
+
+540 "Terry Moore" (2155789824)
+01:22:30.990 --> 01:22:37.320
+Now, if you went to the database and look, actually, if you just did it again, it would show you the new ones you had entered in.
+
+541 "Ben Erickson" (1838977280)
+01:22:52.800 --> 01:22:56.220
+Hmm.
+
+542 "Ben Erickson" (1838977280)
+01:23:00.240 --> 01:23:04.800
+It's not the 1 I entered in.
+
+543 "Terry Moore" (2155789824)
+01:23:10.260 --> 01:23:14.310
+It's not either 1 that what's in? What's in the database? That would be my question.
+
+544 "Terry Moore" (2155789824)
+01:23:14.310 --> 01:23:17.550
+Maybe it's not maybe it didn't save it. Right?
+
+545 "Terry Moore" (2155789824)
+01:23:29.070 --> 01:23:35.820
+Oh, that's the 1. your head, right? Oh, I got checked. I made a put a hard code in there instead of the other.
+
+546 "Terry Moore" (2155789824)
+01:23:38.820 --> 01:23:42.120
+Yeah.
+
+547 "Terry Moore" (2155789824)
+01:23:43.260 --> 01:23:51.060
+But it saved it correctly. That's that's yeah.
+
+548 "Terry Moore" (2155789824)
+01:23:56.010 --> 01:23:59.610
+2 things to do, not too bad.
+
+549 "Terry Moore" (2155789824)
+01:23:59.610 --> 01:24:04.050
+You hit it harder than I, you did a lot of things that I didn't even think about doing.
+
+550 "Terry Moore" (2155789824)
+01:24:07.590 --> 01:24:12.300
+Good start, which is good. That's that's what we do. I mean, that's why we.
+
+551 "Terry Moore" (2155789824)
+01:24:12.300 --> 01:24:18.120
+Why we do this.
+
+552 "Terry Moore" (2155789824)
+01:24:18.120 --> 01:24:21.870
+Thank you for your time I really appreciate it and, uh.
+
+553 "Ben Erickson" (1838977280)
+01:24:24.660 --> 01:24:30.390
+Work out well, I just sent you those screenshots. Okay great.
+
+554 "Terry Moore" (2155789824)
+01:24:32.220 --> 01:24:36.330
+All right have a good day. Alrighty yeah.
+
+555 "Terry Moore" (2155789824)
+01:24:36.330 --> 01:24:40.020
+Talk to you later. Bye. Bye. Bye. Bye. Bye.

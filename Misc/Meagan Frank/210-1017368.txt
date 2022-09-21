@@ -1,0 +1,4 @@
+SalesOrder,InvoiceNumber,BillOfLadingNumber,CarrierId,CADate,Description,ProNumber
+210-1017368          ,210-1030109          ,196654               ,TL        ,02-01-2022                     ,TRUCKLOAD                                          ,(none)
+210-1017368          ,210-1032546          ,196654               ,TL        ,02-01-2022                     ,TRUCKLOAD                                          ,(none)
+210-1017368          ,210-1032682          ,196654               ,TL        ,02-01-2022                     ,TRUCKLOAD                                          ,(none)

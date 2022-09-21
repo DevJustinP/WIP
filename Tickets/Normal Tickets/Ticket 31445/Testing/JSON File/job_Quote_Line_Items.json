@@ -1,0 +1,26 @@
+{
+  "job_module": "Quote Line Items",
+  "job": "Import",
+  "context": {
+	"source": {
+	  "database": "PRODUCT_INFO",
+	  "server": "Talend"
+	},
+    "fields": {
+      "quote_header_num_c": "QuoteDetail.EcatOrderNumber",
+      "name": "QuoteDetail.item_number",
+      "description": "QuoteDetail.description",
+      "quantity_c": "QuoteDetail.quantity",
+      "unit_price_c": "QuoteDetail.calculated_price",
+      "line_item_total_c": "QuoteDetail.extended_price",
+      "product_class_c": "calculated"
+    }
+  },
+  "options": {
+    "prevent_duplicates": "true",
+    "retries_allowed": "300",
+    "alert_on_failure": "true",
+    "alert_on_completion": "false",
+	"assigned_user_id":"<Meagans Sugar ID>"
+  }
+}

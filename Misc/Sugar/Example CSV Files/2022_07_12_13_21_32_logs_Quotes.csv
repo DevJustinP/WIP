@@ -1,0 +1,4 @@
+moment;pid;root_pid;father_pid;project;job;context;priority;type;origin;message;code
+2022-07-12 13:21:32;Vq2py0;habf6I;habf6I;LOCAL_PROJECT;Sugar_eCat_Quotes_v6_Prod;Default;4;tWarn;tWarn_1;The Quotes integration job started;0
+2022-07-12 13:21:32;Vq2py0;habf6I;habf6I;LOCAL_PROJECT;Sugar_eCat_Quotes_v6_Prod;Default;4;tWarn;tWarn_2;The Quotes integration job had no input and stopped!;0
+2022-07-12 13:22:09;Vq2py0;habf6I;habf6I;LOCAL_PROJECT;Sugar_eCat_Quotes_v6_Prod;Default;4;tWarn;tWarn_3;The Quotes integration job finished successfully!;0

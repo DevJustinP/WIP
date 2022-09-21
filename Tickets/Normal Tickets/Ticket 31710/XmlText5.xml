@@ -1,0 +1,83 @@
+﻿<policy>
+  <accessToken>fffdb6fb-788d-40c3-9092-db3386073d59</accessToken>
+  <status>NEW</status>
+  <reference>314-1000653</reference>
+  <premiumpaidcurrency>USD</premiumpaidcurrency>
+  <premiumpaid>0.00</premiumpaid>
+  <warrantycostpricecurrency>USD</warrantycostpricecurrency>
+  <warrantycostprice>0.00</warrantycostprice>
+  <salesman>KDI</salesman>
+  <storecode>314</storecode>
+  <retailerbrand>N/A</retailerbrand>
+  <consumer>
+    <reference>1253965</reference>
+    <firstname>EMILY</firstname>
+    <lastname>HJORT</lastname>
+    <addresses>
+      <address>
+        <type>HOME_ADDRESS</type>
+        <line1> </line1>
+        <line2> </line2>
+        <city>Unknown</city>
+        <state>Unknown</state>
+        <zip> </zip>
+      </address>
+    </addresses>
+    <contacts>
+      <contact>
+        <type>EMAIL</type>
+        <detail>EHJORT@COMCAST.NET</detail>
+      </contact>
+      <contact>
+        <type>PHONE</type>
+        <detail>706-346-4270</detail>
+      </contact>
+    </contacts>
+  </consumer>
+  <policyitems>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-07-30</dateordered>
+      <datedelivered>2022-09-10</datedelivered>
+      <itemtype>PRADO SWIVEL GLIDER CUSHION</itemtype>
+      <modeldescrption>PRADO SWIVEL GLIDER CUSHION</modeldescrption>
+      <modelname>J267470N</modelname>
+      <modelnumber>J267470N</modelnumber>
+      <characteristics>PRADO SWIVEL GLIDER CUSHION</characteristics>
+      <material>Cushions</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>249.00</retailvalue>
+      <numberofitems>2</numberofitems>
+    </policyitem>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-07-30</dateordered>
+      <datedelivered>2022-09-10</datedelivered>
+      <manufacturer>SANKOK - GUANGDONG QISHUN SILK</manufacturer>
+      <itemtype>Paxton Side Table</itemtype>
+      <modeldescrption>Paxton Side Table</modeldescrption>
+      <modelname>SCH-158030</modelname>
+      <modelnumber>SCH-158030</modelnumber>
+      <characteristics>Paxton Side Table</characteristics>
+      <material>Oak</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>453.00</retailvalue>
+      <numberofitems>2</numberofitems>
+    </policyitem>
+    <policyitem>
+      <status>NEW</status>
+      <dateordered>2022-07-30</dateordered>
+      <datedelivered>2022-09-10</datedelivered>
+      <manufacturer>HOMEGARD/ROYAL GARDEN</manufacturer>
+      <itemtype>PRADO SWIVEL GLIDER</itemtype>
+      <modeldescrption>PRADO SWIVEL GLIDER</modeldescrption>
+      <modelname>PJ-190290</modelname>
+      <modelnumber>PJ-190290</modelnumber>
+      <characteristics>PRADO SWIVEL GLIDER</characteristics>
+      <material>N-dura™ Resin Wicker</material>
+      <retailvaluecurrency>USD</retailvaluecurrency>
+      <retailvalue>799.00</retailvalue>
+      <numberofitems>2</numberofitems>
+    </policyitem>
+  </policyitems>
+</policy>
