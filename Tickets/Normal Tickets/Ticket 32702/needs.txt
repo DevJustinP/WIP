@@ -7,3 +7,7 @@ table usr_Profiles
 table usr_ProfilePeriodSeq
 table usr_DateFirstLastUse
 table usr_ProfileStatistics
+
+
+Data Load:
+all tables above
