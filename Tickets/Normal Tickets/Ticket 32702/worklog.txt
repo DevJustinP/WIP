@@ -1,0 +1,23 @@
+WORK LOG:
+
+
+usp_LoadHistory:
+	'out of the box':
+		run time: 1:16 minutes, 46 seconds, 39 seconds 9/23/2022
+		execution plan: usp_LoadHistory execution
+
+	modifications:
+	- delete query line 98
+	- values to constant table
+	- creating [usr_constants_LoadHistory]
+		run times: 34 seconds, 48 seconds, 55 seconds, 41 seconds 9/23/2022
+
+usp_loadpareto
+	'out of the box':
+	run time 1:06 minutes,  00:36 minutes, 00:33 minutes
+
+	modifications
+	- Added constant @MinDateVAlue
+	- Commented out queue at line 111
+
+	- using constant data load table
