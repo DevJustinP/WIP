@@ -35,9 +35,7 @@ select
 from [Transport].[INFORMATION_SCHEMA].[TABLES] as t
 where [TABLE_NAME] = 'Temp_LoadTender2_Record_Stage_Waybill'
 */
-
 select
 	*
 from [PRODUCT_INFO].[dbo].Procedures_JKP
 where [DataBase] = 'Transport'
-
