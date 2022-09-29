@@ -1,6 +1,6 @@
 declare @Mail_ID varchar(50) = 'PRODUCT_INFO.dbo.Uniters_ErrorEmail',
 		@Mail_SubCode varchar(50) = 'API Error Response',
-		@Mail_Type varchar(25) = 'Info',
+		@Mail_Type varchar(25) = 'Information',
 		@SendNotification bit = 1,
 		@ToEmailAddresses varchar(max) = 'StoreSupport@Summerclassics.com',
 		@BCCEmailAddresses varchar(max) = 'Softwaredeveloper@summerclassics.com';
@@ -43,10 +43,9 @@ table thead {
   </thead>
   <tbody></tbody>
 </table>',
-		@Mail_body_format varchar(20) = 'HTML ';
+		@Mail_body_format varchar(20) = 'HTML';
 insert into [Global].[Settings].EmailMessage([Mail_ID],[Mail_SubCode],[Mail_Type],[mail_subject],[mail_body],[mail_body_format])
 values(@Mail_id,@Mail_SubCode, @Mail_Type, @Mail_Subject, @Mail_body, @Mail_body_format)
-
 
 select * from [Global].[Settings].EmailHeader
 where Mail_ID = @Mail_ID and Mail_SubCode = @Mail_SubCode and Mail_Type = @Mail_Type
