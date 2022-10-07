@@ -30,7 +30,6 @@ try{
     # Load WinSCP .NET assembly
     Add-Type -Path "C:\Program Files (x86)\WinSCP\WinSCPnet.dll"
     
-    Write-host "Test 1"
     # Setup session options
     $sessionOptions = New-Object WinSCP.SessionOptions -Property @{
         Protocol = [WinSCP.Protocol]::Sftp
@@ -40,27 +39,21 @@ try{
         SshHostKeyFingerprint = $SshHostKeyFingerprint
 	}
 
-    Write-host "Test 2"
     $session = New-Object WinSCP.Session
 
-    Write-host "Test 3"
     try
     {
         # Connect
         $session.Open($sessionOptions)
-        Write-host "Test 4"
 
         # Upload files
         $transferOptions = New-Object WinSCP.TransferOptions
         $transferOptions.TransferMode = [WinSCP.TransferMode]::Binary
 
-        Write-host "Test 5"
         $transferResult = $session.PutFiles($Filepath, $RemoteLocation, $False, $transferOptions)
 		
-        Write-host "Test 6"
         # Throw on any error
         $transferResult.Check()
-        Write-host "Test 7"
         
         # Print results
         foreach ($transfer in $transferResult.Transfers)
@@ -69,7 +62,6 @@ try{
             Write-Host "Upload of $($transfer.FileName) succeeded"
         }
 
-        Write-host "Test 8"
     }
     finally
     {

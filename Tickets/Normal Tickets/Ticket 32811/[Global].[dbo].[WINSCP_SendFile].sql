@@ -48,13 +48,13 @@ begin
 	from [dbo].[WinSCP_SessionOptions]
 	where [Name] = @OptionsName
 
-	declare @SQLcmd varchar(1000) = N'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file "P:\PowerShell\WinSCPsendfile.ps1"'
+	declare @SQLcmd varchar(2000) = 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file "P:\PowerShell\WinSCPsendfile.ps1"'
 	set @SQLcmd = @SQLcmd + ' -Filepath "'+@FilePath+'"'
-	if @RemoteLocation <> '' set @SQLcmd = @SQLcmd + ' -RemoteLocation "'+@RemoteLocation 
-	if @ArchiveLocation <> '' set @SQLcmd = @SQLcmd + ' -ArchiveLocation "'+@ArchiveLocation 
-	set @SQLcmd = @SQLcmd + ' -ParmHostName '+@HostName
-	set @SQLcmd = @SQLcmd + ' -ParmUserName '+@UserName
-	set @SQLcmd = @SQLcmd + ' -ParmPassword '+@Password
+	if @RemoteLocation <> '' set @SQLcmd = @SQLcmd + ' -RemoteLocation "'+@RemoteLocation+'"'
+	if @ArchiveLocation <> '' set @SQLcmd = @SQLcmd + ' -ArchiveLocation "'+@ArchiveLocation+'"'
+	set @SQLcmd = @SQLcmd + ' -ParmHostName "'+@HostName+'"'
+	set @SQLcmd = @SQLcmd + ' -ParmUserName "'+@UserName+'"'
+	set @SQLcmd = @SQLcmd + ' -ParmPassword "'+@Password+'"'
 	set @SQLcmd = @SQLcmd + ' -SshHostKeyFingerprint "'+@SshHostKeyFingerprint+'"'
 
 	declare @FileFound int 
