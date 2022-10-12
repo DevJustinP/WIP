@@ -19,12 +19,14 @@ if(-not($ParmHostName)) {
 } elseif(-not($SshHostKeyFingerprint)){
     Write-host "Error: Empty Parameter SshHostKeyFingerprint for WinSCP Protocol"
 } else {
-    Write-host "Filepath: $Filepath | RemoteLocation: $RemoteLocation | ArchiveLocation: $ArchiveLocation | ParmHostName: $ParmHostName | ParmUserName: $ParmUserName | ParmPassword: $ParmPassword | SshHostKeyFingerprint: $SshHostKeyFingerprint"
+    Write-host "Filepath: $Filepath"
+    Write-host "Remote: $RemoteLocation" 
+    write-host "Archive: $ArchiveLocation" 
+    write-host "Host: $ParmHostName" 
+    write-host "User: $ParmUserName" 
+    write-host "Password: $ParmPassword" 
+    write-host "FingerPrint: $SshHostKeyFingerprint"
 }
-if(-not(Test-Path $Filepath)){
-    Write-Host "Error: File path does not exist $Filepath"
-    exit 0
-} 
 try{
 
     # Load WinSCP .NET assembly
@@ -45,12 +47,8 @@ try{
     {
         # Connect
         $session.Open($sessionOptions)
-
-        # Upload files
-        $transferOptions = New-Object WinSCP.TransferOptions
-        $transferOptions.TransferMode = [WinSCP.TransferMode]::Binary
-
-        $transferResult = $session.PutFiles($Filepath, $RemoteLocation, $False, $transferOptions)
+        
+        $transferResult = $session.PutFiles($Filepath, $RemoteLocation, $False)
 		
         # Throw on any error
         $transferResult.Check()
