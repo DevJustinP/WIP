@@ -31,9 +31,9 @@ return(
 								sum(isnull(ATD.NetSalesValue,0)) as [Value]
 							from SysproCompany100.dbo.ArTrnDetail as ATD
 								join SysproCompany100.dbo.SorMaster as SM on SM.SalesOrder = ATD.SalesOrder
+								join PRODUCT_INFO.dbo.QCommissions_Branches AS BR on ATD.Branch = BR.Branch collate Latin1_General_BIN
 							where ATD.TrnYear = YEAR(DATEADD(MONTH,-1,getdate()))
 								and ATD.TrnMonth = MONTH(DATEADD(MONTH, -1, getdate()))
-								and ATD.Branch in ('301','302','303','304','305','306','307','308','309','310','311','312','313','314')
 								and ATD.LineType in ('5','4')
 							group by ATD.Branch,
 									 ATD.Salesperson,

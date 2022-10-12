@@ -12,6 +12,17 @@ create table [dbo].[QCommissions_Constant](
 	[UnitersCommissionFile] [varchar](500), 
 	[WrittenSalesCommissionFile] [varchar](500)
 );
+go
 
 insert into [dbo].[QCommissions_Constant]([Directory],[ArchiveLocation],[WinSCP_Name],[ContractCommissionFile],[WholesaleCommissionFile],[SalesPerRepCommissionFile],[UnitersCommissionFile],[WrittenSalesCommissionFile])
-values('\\sql08\SSIS\Data\Live\QCommissions\','\\sql08\SSIS\Data\Live\QCommissions\Archive\','QCommissions','GW_Commissions_SCCS.csv', 'GW_Commissions_Wholesale-SCPL.csv', 'RetailCommission_InvoicedSalesbyRep-Monthly.csv', 'RetailCommission_UnitersPlanSales-BiWeekly.csv', 'RetailCommission_WrittenSales-BiWeekly.csv')
+values('\\sql08\SSIS\Data\Live\QCommissions\','\\sql08\SSIS\Data\Live\QCommissions\Archive\','QCommissions','GWCommissionsSCCS.csv', 'GWCommissionsWholesaleSCPL.csv', 'RetailCommissionInvoicedSalesbyRepMonthly.csv', 'RetailCommissionUnitersPlanSalesBiWeekly.csv', 'RetailCommissionWrittenSalesBiWeekly.csv');
+go
+
+create table [PRODUCT_INFO].[dbo].[QCommissions_Branches](
+	Branch varchar(6) Primary Key
+);
+go
+
+insert into [PRODUCT_INFO].[dbo].[QCommissions_Branches]
+VALUES ('301'),('302'),('303'),('304'),('305'),('306'),('307'),('308'),('309'),('310'),('311'),('312'),('313'),('314');
+go

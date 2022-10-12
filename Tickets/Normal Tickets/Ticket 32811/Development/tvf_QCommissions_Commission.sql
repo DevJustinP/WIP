@@ -81,4 +81,5 @@ return
 		ATD.ProductClass,
 		ATD.Area, 
 		SM.OrderDate
-	HAVING Sum(ATD.NetSalesValue) <> 0
+	HAVING Sum(ATD.NetSalesValue) <> 0;
+go

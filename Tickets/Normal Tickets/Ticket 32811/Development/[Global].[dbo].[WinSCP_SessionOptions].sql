@@ -24,4 +24,5 @@ create table [dbo].[WinSCP_SessionOptions](
 		[HostName] desc,
 		[UserName] desc
 	)
-)
+);
+go

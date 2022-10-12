@@ -55,7 +55,7 @@ BEGIN
 			set @cmd = REplace(@cmd, @replacetable_str, '##QCommissions_InvoicedSalesByRep')
 			print @cmd
 			EXECUTE master.sys.xp_cmdshell @cmd
-			execute [Global].[dbo].[WINSCP_SendFile] @filepath, @WinSCP_Settings, '/Retail/', @ArciveLocation
+			execute [Global].[dbo].[WINSCP_SendFile] @filepath, @WinSCP_Settings, 'Retail/', @ArciveLocation
 		END
 
 	DROP TABLE IF EXISTS ##QCommissions_InvoicedSalesByRep

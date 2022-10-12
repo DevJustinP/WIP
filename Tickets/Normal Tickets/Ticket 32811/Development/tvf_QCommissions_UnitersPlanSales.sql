@@ -13,8 +13,7 @@ GO
 select * from [dbo].[tvf_QCommissions_UnitersPlanSales]()
 =============================================
 */
-
-create function [dbo].[tvf_QCommissions_UnitersPlanSales]()
+alter function [dbo].[tvf_QCommissions_UnitersPlanSales]()
 returns @Sales table(
 	Rep varchar(20),
 	OrderCount int,
@@ -30,23 +29,12 @@ begin
 			@EndingDate AS DATETIME,
 			@StartDate DATETIME = '07/04/2022',
 			@EndDate DATETIME = '12/25/2022' 
-
-	DECLARE @Dates TABLE (CalendarDate DATETIME PRIMARY KEY) 
-
-	WHILE DATEDIFF(DAY,@StartDate,@EndDate) >= 0 
-	BEGIN 
-		INSERT INTO @Dates (CalendarDate) 
-		SELECT @StartDate
- 
-		SELECT @StartDate = DATEADD(DAY,14,@StartDate) 
-   
-	END
-
-	SET @EndingDate = (	SELECT 
-							MAX(CalendarDate)-1
-						FROM @Dates
-						Where CalendarDate < GETDATE())
-	SET @BeginningDate = @EndingDate - 13
+			
+	select
+		@BeginningDate = StartDate,
+		@EndingDate = EndDate
+	from [dbo].[tvf_WeekIntervals](@StartDate, @EndDate, 2)
+	where GETDATE() between StartDate and EndDate
 
 	DECLARE @Blank AS VARCHAR(1) = '';
 	DECLARE @OrderType AS VARCHAR(4)= 5;
@@ -62,24 +50,23 @@ begin
 																			 AND ATD.LineType = 5
 																			 AND ATD.ProductClass like '%SERVPLAN%'
 																			 AND ATD.[SalesOrderLine] = SD.[SalesOrderLine]
-						INNER JOIN SysproCompany100.dbo.SorMaster as SM ON SM.[SalesOrder] = SD.[SalesOrder]
-  
-						WHERE SM.Branch in ('301','302','303','304','305','306','307','308','309','310','311','312','313','314') 
-						  AND SM.[EntrySystemDate] BETWEEN @BeginningDate AND @EndingDate
+							INNER JOIN SysproCompany100.dbo.SorMaster as SM ON SM.[SalesOrder] = SD.[SalesOrder]
+							inner join [PRODUCT_INFO].[dbo].[QCommissions_Branches] as B on b.Branch = SM.Branch collate Latin1_General_BIN
+						WHERE SM.[EntrySystemDate] BETWEEN @BeginningDate AND @EndingDate
 						  AND SD.NMscProductCls like '%SERVPLAN%'
 						  AND SD.LineType = 5
 						  AND SM.OrderStatus <> '\'
 						GROUP BY NULLIF(SM.[Salesperson], @Blank) )
 	,SalesOrderValue AS (
 							SELECT
-								SorMaster.Salesperson,
+								SM.Salesperson,
 								SUM(ISNULL(CONVERT(DECIMAL(8,2), (([MOrderQty]*([MPrice]*(1-([MDiscPct1]/100))))-[MDiscValue]),2),0))	AS [OrderValue]
-							FROM SysproCompany100.dbo.SorMaster
-								INNER JOIN SysproCompany100.dbo.SorDetail ON SorMaster.SalesOrder = SorDetail.SalesOrder
-							WHERE [EntrySystemDate] >= @BeginningDate
-								AND [EntrySystemDate] <= @EndingDate
-								AND SorMaster.Branch in ('301','302','303','304','305','306','307','308','309','310','311','312','313','314')
-							GROUP BY SorMaster.Salesperson )
+							FROM SysproCompany100.dbo.SorMaster as SM
+								INNER JOIN SysproCompany100.dbo.SorDetail as SD ON SM.SalesOrder = SD.SalesOrder
+							inner join [PRODUCT_INFO].[dbo].[QCommissions_Branches] as B on b.Branch = SM.Branch collate Latin1_General_BIN
+							WHERE SM.[EntrySystemDate] >= @BeginningDate
+								AND SM.[EntrySystemDate] <= @EndingDate
+							GROUP BY SM.Salesperson )
 	Insert into @Sales	
 	SELECT 
 		u.[Salesperson] as Rep,
