@@ -1,0 +1,36 @@
+<!--  Copyright 1994-2012 SYSPRO Ltd. -->
+<!-- 
+     Schema for Custom Form Setup Business Object
+ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:element name="SetupCustomForm">
+        <xsd:annotation>
+            <xsd:documentation>This is the root element.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType mixed="false">
+            <xsd:sequence>
+                <xsd:element name="Parameters" minOccurs="0">
+                    <xsd:annotation>
+                        <xsd:documentation>This element contains the optional parameter elements.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType mixed="false">
+                        <xsd:all>
+                            <xsd:element name="ValidateOnly" default="Y" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>Specifies whether to only validate the contents of the document. (Y - only validate the document, N - validate and apply function).</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:whiteSpace value="preserve"/>
+                                        <xsd:enumeration value="Y"/>
+                                        <xsd:enumeration value="N"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:all>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

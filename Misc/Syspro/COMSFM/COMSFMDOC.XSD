@@ -1,0 +1,93 @@
+<!--  Copyright 1994-2012 SYSPRO Ltd. -->
+<!-- 
+     Schema for Custom Form Setup Business Object
+ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:element name="SetupCustomForm">
+        <xsd:annotation>
+            <xsd:documentation>This is the root element.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType mixed="false">
+            <xsd:sequence>
+                <xsd:element name="Item" maxOccurs="unbounded">
+                    <xsd:annotation>
+                        <xsd:documentation>This element contains information to maintain a custom form. NOTE: The information held within the key element is mandatory for all functions. Information held outside the key element is optional for Add/Update and is not required for Delete. </xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:complexType mixed="false">
+                        <xsd:sequence>
+                            <xsd:element name="Key">
+                                <xsd:annotation>
+                                    <xsd:documentation>This element contains the key information required to maintain a custom form.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:complexType mixed="false">
+                                    <xsd:all>
+                                        <xsd:element name="FormType">
+                                            <xsd:annotation>
+                                                <xsd:documentation>The form type for the custom form to be maintained. Valid options are all the custom form types as defined in standard SYSPRO which are listed in IMPCFM.IMP as well as any custom defined types. e.g. SUP - Supplier, CUS - Customer.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:whiteSpace value="preserve"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="KeyField">
+                                            <xsd:annotation>
+                                                <xsd:documentation>Enter the value of the key field for the custom form which you wish to maintain.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:whiteSpace value="preserve"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="FieldName">
+                                            <xsd:annotation>
+                                                <xsd:documentation>This is the name of the custom form field to be maintained.</xsd:documentation>
+                                            </xsd:annotation>
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:whiteSpace value="preserve"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:all>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="AlphaValue" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>This is the value of the alpha custom form field to be maintained.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:whiteSpace value="preserve"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="NumericValue" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>This is the value of the numeric custom form field to be maintained.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:whiteSpace value="preserve"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="DateValue" minOccurs="0">
+                                <xsd:annotation>
+                                    <xsd:documentation>This is the value of the date custom form field to be maintained.</xsd:documentation>
+                                </xsd:annotation>
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:whiteSpace value="preserve"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

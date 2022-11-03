@@ -1,0 +1,32 @@
+<!--  Copyright 1994-2012 SYSPRO Ltd. -->
+<!--  
+     This is an example XMLOut instance to demonstrate use of
+     the Parameters used in the Custom Form Setup Business Object
+ -->
+<SetupCustomForm Language="05" CssStyle="" DecFormat="1" DateFormat="01" Role="01" Version="6.0.000">
+    <item>
+        <key>
+            <formtype>SUP</formtype>
+            <keyfield>BIC002</keyfield>
+            <fieldname>Bank</fieldname>
+        </key>
+    </item>
+    <item>
+        <key>
+            <formtype>SUP</formtype>
+            <keyfield>BIC002</keyfield>
+            <fieldname>BrnCod</fieldname>
+        </key>
+    </item>
+    <item>
+        <key>
+            <formtype>SUP</formtype>
+            <keyfield>BIC002</keyfield>
+            <fieldname>TrnDat</fieldname>
+        </key>
+    </item>
+    <StatusOfItems>
+        <RecordsRead>3</RecordsRead>
+        <RecordsInvalid>0</RecordsInvalid>
+    </StatusOfItems>
+</SetupCustomForm>

@@ -1,0 +1,31 @@
+<!--  Copyright 1994-2012 SYSPRO Ltd. -->
+<!--  
+     This is an example XML instance to demonstrate
+     use of the Custom Form Setup Business Object
+ -->
+<SetupCustomForm xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="COMSFMDOC.XSD">
+<Item>
+<Key>
+<FormType>STK</FormType>
+<KeyField>A101</KeyField>
+<FieldName>Frame</FieldName>
+</Key>
+<AlphaValue>Y</AlphaValue>
+</Item>
+<Item>
+<Key>
+<FormType>STK</FormType>
+<KeyField>A101</KeyField>
+<FieldName>Metric</FieldName>
+</Key>
+<NumericValue>5</NumericValue>
+</Item>
+<Item>
+<Key>
+<FormType>STK</FormType>
+<KeyField>A101</KeyField>
+<FieldName>Stock</FieldName>
+</Key>
+<DateValue>2006-03-24</DateValue>
+</Item>
+</SetupCustomForm>
