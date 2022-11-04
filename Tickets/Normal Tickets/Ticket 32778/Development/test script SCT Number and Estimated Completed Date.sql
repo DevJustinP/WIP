@@ -27,8 +27,8 @@ from SysproCompany100.dbo.SorMaster as sm
 																  and md.SalesOrderLine = sd.SalesOrderLine
 					left join SysproCompany100.dbo.MdnMaster as mm on mm.DispatchNote = md.DispatchNote
 				where sm.InterWhSale = 'Y'
-					and SM.OrderStatus IN ('1','2','3','4','8','0','S')
-				GROUP BY SD.MCreditOrderNo, SD.MCreditOrderLine, sm.SalesOrder ) as SCT on SCT.MCreditOrderNo = sdC.SalesOrder
+					and sm.OrderStatus IN ('1','2','3','4','8','0','S')
+				GROUP BY sd.MCreditOrderNo, sd.MCreditOrderLine, sm.SalesOrder ) as SCT on SCT.MCreditOrderNo = sdC.SalesOrder
 																					   and SCT.MCreditOrderLine = sdC.SalesOrderLine
 	LEFT JOIN (	SELECT 
 					PD.MSalesOrder, 
