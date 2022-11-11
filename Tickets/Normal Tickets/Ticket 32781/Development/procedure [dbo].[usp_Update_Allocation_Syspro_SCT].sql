@@ -18,7 +18,7 @@ execute dbo.usp_Update_Allocation_Syspro_SCT;
 =============================================
 */
 
-create procedure [dbo].[usp_Update_Allocation_Syspro_SCT]
+alter procedure [dbo].[usp_Update_Allocation_Syspro_SCT]
 as
 set xact_abort on
 begin
@@ -38,10 +38,6 @@ begin
 			,[AllocationRefVal1]	varchar(50)
 			,[AllocationRefVal2]	varchar(50)
 			,[AllocationSupType]	varchar(15)
-			,PRIMARY KEY (
-				[SalesOrder]
-				,[SalesOrderInitLine]
-			)
 		);
 		/*
 			Pulling SCT information and relating it to the original order
@@ -49,38 +45,50 @@ begin
 		insert into @SCT_Allocation
 			SELECT SM.SalesOrder
 				   ,SD.SalesOrderInitLine
-				   ,SCT_CSDM.AllocationDate	as [AllocationDate]
-				   ,SCT_SM.SalesOrder		as [AllocationRef]
-				   ,SCT_SD.SalesOrderLine	as [AllocationVal1]
-				   ,SCT_CSDM.AllocationRef  as [AllocationRefVal2]
+				   ,SCT.AllocationDate	as [AllocationDate]
+				   ,SCT.SalesOrder		as [AllocationRef]
+				   ,SCT.SalesOrderLine	as [AllocationVal1]
+				   ,SCT.AllocationRef  as [AllocationRefVal2]
 				   ,CASE 
-						WHEN SCT_SD.MBackOrderQty >0			THEN 'Backordered'
-						WHEN SCT_SD.QtyReserved >0				THEN 'Reserved'
-						WHEN SCT_SD.MShipQty >0					THEN 'In Shipping'
+						WHEN SCT.MBackOrderQty >0				THEN 'Backordered'
+						WHEN SCT.QtyReserved >0					THEN 'Reserved'
+						WHEN SCT.MShipQty >0					THEN 'In Shipping'
 	  					WHEN SCT_MD.SalesOrderLine IS NOT NULL	THEN 'Dispatched'
 	  					WHEN SCT_GD.SalesOrderLine IS NOT NULL	THEN 'In Transit'
 	  					ELSE 'Unknown'
 					END						as [AllocationSupType]
 			FROM SysproCompany100.dbo.SorMaster SM
 				INNER JOIN SysproCompany100.dbo.SorDetail SD ON SM.SalesOrder = SD.SalesOrder AND SD.LineType = 1
-				INNER JOIN SysproCompany100.dbo.SorDetail SCT_SD on SCT_SD.MCreditOrderNo = SD.SalesOrder
-																and SCT_SD.MCreditOrderLine = SD.SalesOrderLine
-				INNER JOIN SysproCompany100.dbo.SorMaster SCT_SM on SCT_SM.SalesOrder = SCT_SD.SalesOrder
-																and SCT_SM.OrderStatus NOT IN ('*','\','/')
-				LEFT JOIN SysproCompany100.dbo.[CusSorDetailMerch+] SCT_CSDM on SCT_CSDM.SalesOrder = SCT_SD.SalesOrder
-																			and SCT_CSDM.SalesOrderInitLine = SCT_SD.SalesOrderInitLine
-				left join SysproCompany100.dbo.MdnMaster SCT_MM on SCT_MM.SalesOrder = SCT_SM.SalesOrder
-															   and SCT_MM.DispatchNoteStatus IN ('3','5','7')
+				cross apply (
+								select top 1
+									SCT_SM.SalesOrder,
+									SCT_SD.SalesOrderLine,
+									SCT_CSDM.AllocationDate,
+									SCT_CSDM.AllocationRef,
+									SCT_SD.MBackOrderQty,
+									SCT_SD.QtyReserved,
+									SCT_SD.MShipQty
+								from SysproCompany100.dbo.SorDetail SCT_SD 
+									INNER JOIN SysproCompany100.dbo.SorMaster SCT_SM on SCT_SM.SalesOrder = SCT_SD.SalesOrder
+																					and SCT_SM.OrderStatus NOT IN ('*','\','/')
+									LEFT JOIN SysproCompany100.dbo.[CusSorDetailMerch+] SCT_CSDM on SCT_CSDM.SalesOrder = SCT_SD.SalesOrder
+																								and SCT_CSDM.SalesOrderInitLine = SCT_SD.SalesOrderInitLine
+								where SCT_SD.MCreditOrderNo = SD.SalesOrder
+									and SCT_SD.MCreditOrderLine = SD.SalesOrderLine
+								order by isnull(SCT_CSDM.AllocationDate, @NullDate) desc
+								) SCT
+				left join SysproCompany100.dbo.MdnMaster SCT_MM on SCT_MM.SalesOrder = SCT.SalesOrder
+																and SCT_MM.DispatchNoteStatus IN ('3','5','7')
 				LEFT JOIN SysproCompany100.dbo.MdnDetail SCT_MD on SCT_MD.DispatchNote = SCT_MM.DispatchNote
-															   and SCT_MD.SalesOrder = SCT_SD.SalesOrder
-															   and SCT_MD.SalesOrderLine = SCT_SD.SalesOrderLine
-				LEFT JOIN SysproCompany100.dbo.GtrDetail SCT_GD on SCT_GD.SalesOrder = SCT_SD.SalesOrder
-															   and SCT_GD.SalesOrderLine = SCT_SD.SalesOrderLine
-															   and SCT_GD.TransferComplete <> 'Y'
+																and SCT_MD.SalesOrder = SCT.SalesOrder
+																and SCT_MD.SalesOrderLine = SCT.SalesOrderLine
+				LEFT JOIN SysproCompany100.dbo.GtrDetail SCT_GD on SCT_GD.SalesOrder = SCT.SalesOrder
+																and SCT_GD.SalesOrderLine = SCT.SalesOrderLine
+																and SCT_GD.TransferComplete <> 'Y'
 			WHERE SD.MBackOrderQty >0
 			  AND SM.OrderStatus IN ('1','2','3','4','S','8')
 			  AND SD.MReviewFlag = 'S';
-		
+
 		Begin Transaction;
 
 			update CSDM
