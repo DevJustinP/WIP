@@ -295,14 +295,6 @@
           <DataField>CustomBase</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ContrastInsideFab">
-          <DataField>ContrastInsideFab</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CushThreadColor">
-          <DataField>CushThreadColor</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -1645,33 +1637,47 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=IIF(Fields!Finish.Value = "(none)" OR Trim(Fields!Finish.Value) = "", "", "FINISH    :    " &amp; Fields!Finish.Value &amp; VbCrlf)
-
-&amp; IIF(Fields!Fabric_1.Value = "(none)" OR Trim(Fields!Fabric_1.Value) = "", "", "FABRIC    :    " &amp; Fields!Fabric_1.Value &amp; " - "  &amp; Fields!FabricDescription.Value &amp; " - " &amp; Fields!CutDirection.Value &amp; VbCrlf)
-
-&amp; IIF(trim(Fields!Welt.Value) = "" OR  trim(Fields!Welt.Value) = "(none)" , "", "WELT      :    " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value &amp; " - " &amp; Fields!CutDirection.Value &amp; VbCrlf)
-
-&amp; IIF(IsNothing(Fields!CushFabric.Value) OR trim(Fields!CushFabric.Value)  = "" OR Trim(Fields!CushFabric.Value) = "(none)"  , "", "CUSHION FABRIC  : " &amp;  Fields!CushFabric.Value &amp; " - "  &amp; Fields!FabricDescription.Value &amp; " - " &amp; Fields!CutDirection.Value &amp; VbCrlf)
-
-&amp; IIF(IsNothing(Fields!CushCustomCompont.Value) OR Fields!CushCustomCompont.Value = "", "", "CUSH CUSTOM COMP   :   " &amp; Fields!CushCustomCompont.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!CushionFillType.Value) OR Fields!CushionFillType.Value = "", "", "CUSH FILL TYPE   :   " &amp; Fields!CushionFillType.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!CushionConfig.Value) OR Fields!CushionConfig.Value = "", "", "CUSH CONFIG   :   " &amp; Fields!CushionConfig.Value &amp; VbCrlf)
-&amp; "CUSH WELT    :"&amp; VbCrlf 
-&amp; IIF(IsNothing(Fields!CushThreadColor.Value) OR Fields!CushThreadColor.Value = "", "", "CUSH THREAD COLOR   :   " &amp; Fields!CushThreadColor.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!NailheadFinish.Value) OR Fields!NailheadFinish.Value = "", "", "NAILHEAD FINISH   :   " &amp; Fields!NailheadFinish.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!NailheadPattern.Value) OR Fields!NailheadPattern.Value = "", "", "NAILHEAD PATTERN   :   " &amp; Fields!NailheadPattern.Value &amp; VbCrlf)
-&amp; "BASE TYPE   :" &amp; VbCrlf 
-&amp; IIF(IsNothing(Fields!DenimColor.Value) OR Fields!DenimColor.Value = "", "", "DENIM COLOR   : " &amp; Fields!DenimColor.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!ThreadColor.Value) OR Fields!ThreadColor.Value = "", "", "THREAD COLOR : " &amp; Fields!ThreadColor.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!SectionalNotches.Value) OR Fields!SectionalNotches.Value = "", "", "SECTIONAL CONNECTOR LOCATION : " &amp; Fields!SectionalNotches.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!SkirtTaping.Value) Or Fields!SkirtTaping.Value = "", "", "SKIRT TAPING : " &amp; Fields!SkirtTaping.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!PillowFabric.Value) Or Fields!PillowFabric.Value = "","", "PILLOW FABRIC : " &amp; Fields!PillowFabric.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!PillowTrim.Value) Or Fields!PillowTrim.Value = "","", "PILLOW TRIM : " &amp; Fields!PillowTrim.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!PillowTreatment.Value) Or Fields!PillowTreatment.Value = "","", "PILLOW TREATMENT : " &amp; Fields!PillowTreatment.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!CustomArm.Value) Or Fields!CustomArm.Value = "","", "CUSTOM ARM : " &amp; Fields!CustomArm.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!CustomBack.Value) Or Fields!CustomBack.Value = "","", "CUSTOM BACK : " &amp; Fields!CustomBack.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!CustomBase.Value) Or Fields!CustomBase.Value = "","", "CUSTOM BASE : " &amp; Fields!CustomBase.Value &amp; VbCrlf)
-&amp; IIF(IsNothing(Fields!ContrastInsideFab.Value) Or Fields!ContrastInsideFab.Value = "","", "Contrast Inside Fabric : " &amp; Fields!ContrastInsideFab.Value)</Value>
+                                      <Value>=IIF(Fields!Finish.Value = "(none)" OR Trim(Fields!Finish.Value) = "", " ", "FINISH    :    " &amp; Fields!Finish.Value) 
+&amp; VbCrlf &amp;
+IIF(Fields!Fabric_1.Value = "(none)" OR Trim(Fields!Fabric_1.Value) = "", " ", "FABRIC    :    " &amp; Fields!Fabric_1.Value &amp; " - "  &amp; Fields!FabricDescription.Value &amp; " - " &amp; Fields!CutDirection.Value)
+&amp; VbCrlf &amp;
+IIF(trim(Fields!Welt.Value) = "" OR  trim(Fields!Welt.Value) = "(none)" , "WELT      :    (none)", "WELT      :    " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value &amp; " - " &amp; Fields!CutDirection.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CushFabric.Value) OR trim(Fields!CushFabric.Value)  = "" OR Trim(Fields!CushFabric.Value) = "(none)"  , " ", "CUSHION FABRIC  : " &amp;  Fields!CushFabric.Value &amp; " - "  &amp; Fields!FabricDescription.Value &amp; " - " &amp; Fields!CutDirection.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CushCustomCompont.Value) OR Fields!CushCustomCompont.Value = "", " ", "CUSH CUSTOM COMP   :   " &amp; Fields!CushCustomCompont.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CushionFillType.Value) OR Fields!CushionFillType.Value = "", " ", "CUSH FILL TYPE   :   " &amp; Fields!CushionFillType.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CushionConfig.Value) OR Fields!CushionConfig.Value = "", " ", "CUSH CONFIG   :   " &amp; Fields!CushionConfig.Value)
+&amp; VbCrlf &amp;
+"CUSH WELT    :    "
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!NailheadFinish.Value) OR Fields!NailheadFinish.Value = "", " ", "NAILHEAD FINISH   :   " &amp; Fields!NailheadFinish.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!NailheadPattern.Value) OR Fields!NailheadPattern.Value = "", " ", "NAILHEAD PATTERN   :   " &amp; Fields!NailheadPattern.Value)
+&amp; VbCrlf &amp;
+"BASE TYPE   :"
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!DenimColor.Value) OR Fields!DenimColor.Value = "", " ", "DENIM COLOR   : " &amp; Fields!DenimColor.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!ThreadColor.Value) OR Fields!ThreadColor.Value = "", " ", "THREAD COLOR : " &amp; Fields!ThreadColor.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!SectionalNotches.Value) OR Fields!SectionalNotches.Value = "", " ", "SECTIONAL NOTCHES : " &amp; Fields!SectionalNotches.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!SkirtTaping.Value) Or Fields!SkirtTaping.Value = "", " ", "SKIRT TAPING : " &amp; Fields!SkirtTaping.Value )
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!PillowFabric.Value) Or Fields!PillowFabric.Value = ""," ", "PILLOW FABRIC : " &amp; Fields!PillowFabric.Value) 
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!PillowTrim.Value) Or Fields!PillowTrim.Value = ""," ", "PILLOW TRIM : " &amp; Fields!PillowTrim.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!PillowTreatment.Value) Or Fields!PillowTreatment.Value = ""," ", "PILLOW TREATMENT : " &amp; Fields!PillowTreatment.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CustomArm.Value) Or Fields!CustomArm.Value = ""," ", "CUSTOM ARM : " &amp; Fields!CustomArm.Value) 
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CustomBack.Value) Or Fields!CustomBack.Value = ""," ", "CUSTOM BACK : " &amp; Fields!CustomBack.Value)
+&amp; VbCrlf &amp;
+IIF(IsNothing(Fields!CustomBase.Value) Or Fields!CustomBase.Value = ""," ", "CUSTOM BASE : " &amp; Fields!CustomBase.Value)</Value>
                                       <Style>
                                         <FontSize>8pt</FontSize>
                                       </Style>
@@ -1766,8 +1772,8 @@
                                   </CustomData>
                                   <Top>0.06in</Top>
                                   <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -1798,11 +1804,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1812,11 +1816,73 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
+                                  <Top>0.07943in</Top>
                                   <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.7575in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU27">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.27325in</Top>
+                                  <Left>0.58103in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.7575in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU28">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.47265in</Top>
+                                  <Left>0.58103in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.7575in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1831,9 +1897,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1843,11 +1909,11 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
+                                  <Top>0.69528in</Top>
                                   <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3325in</Width>
+                                  <ZIndex>4</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1857,11 +1923,42 @@
                                     <PaddingBottom>1pt</PaddingBottom>
                                   </Style>
                                 </Textbox>
+                                <Textbox Name="SKU30">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.8623in</Top>
+                                  <Left>0.0125in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3325in</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>1.86017in</Top>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Top>1.8475in</Top>
+                              <Height>1.01647in</Height>
+                              <Width>2.4in</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -1876,11 +1973,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1890,16 +1985,16 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.035in</Top>
+                                  <Left>0.56986in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.82in</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
-                                    <PaddingLeft>1pt</PaddingLeft>
-                                    <PaddingRight>1pt</PaddingRight>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
                                   </Style>
                                 </Textbox>
                                 <CustomReportItem Name="NBarcode5">
@@ -1941,10 +2036,9 @@
                                       </DataRow>
                                     </DataRows>
                                   </CustomData>
-                                  <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Top>0.0475in</Top>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <ZIndex>1</ZIndex>
                                   <CustomProperties>
                                     <CustomProperty>
@@ -1970,15 +2064,15 @@
                                     </Border>
                                   </Style>
                                 </CustomReportItem>
-                                <Textbox Name="SKU24">
+                                <Textbox Name="SKU6">
                                   <KeepTogether>true</KeepTogether>
                                   <Paragraphs>
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>="SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -1988,11 +2082,104 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
+                                  <Top>0.22882in</Top>
+                                  <Left>0.56986in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.82in</Width>
                                   <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU23">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.42822in</Top>
+                                  <Left>0.56986in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.82in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU24">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.65148in</Top>
+                                  <Left>0.05in</Left>
+                                  <Height>0.154in</Height>
+                                  <Width>2.3075in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU25">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.806in</Top>
+                                  <Left>0.05in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3075in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2003,9 +2190,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>0.875in</Top>
+                              <Top>0.8375in</Top>
+                              <Left>0.00514in</Left>
                               <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Width>2.4in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <Border>
@@ -2055,9 +2243,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2088,11 +2275,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2102,11 +2287,104 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.06902in</Top>
+                                  <Left>0.56451in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.7325in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU8">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.26284in</Top>
+                                  <Left>0.56451in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.7325in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU31">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.46224in</Top>
+                                  <Left>0.56451in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.7325in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU32">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.82099in</Top>
+                                  <Left>0.04534in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.245in</Width>
+                                  <ZIndex>4</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2121,9 +2399,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2133,11 +2411,11 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.67897in</Top>
+                                  <Left>0.04534in</Left>
+                                  <Height>0.12917in</Height>
+                                  <Width>2.245in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2148,9 +2426,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>2.84534in</Top>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Top>2.8725in</Top>
+                              <Left>0.00514in</Left>
+                              <Height>0.97516in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>2</ZIndex>
                               <Style>
                                 <Border>
@@ -2200,9 +2479,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2233,11 +2511,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2248,10 +2524,72 @@
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
                                   <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.795in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU10">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.24688in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.795in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU34">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.44974in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.795in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2266,9 +2604,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2278,11 +2616,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.66536in</Top>
+                                  <Left>0.04486in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3075in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU36">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.84488in</Top>
+                                  <Left>0.04486in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3075in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2293,10 +2662,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>3.83051in</Top>
+                              <Top>3.85in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>1.01155in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>3</ZIndex>
                               <Style>
                                 <Border>
@@ -2345,10 +2714,9 @@
                                       </DataRow>
                                     </DataRows>
                                   </CustomData>
-                                  <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Top>0.085in</Top>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2379,11 +2747,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2393,11 +2759,73 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.085in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.77in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU12">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.27188in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.77in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU37">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.47474in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.77in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2412,9 +2840,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2424,11 +2852,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.69766in</Top>
+                                  <Left>0.02601in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3075in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU39">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.86468in</Top>
+                                  <Left>0.02601in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.3075in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2439,10 +2898,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>4.87818in</Top>
+                              <Top>4.82in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>1.11885in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>4</ZIndex>
                               <Style>
                                 <Border>
@@ -2492,9 +2951,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2525,11 +2983,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2540,10 +2996,72 @@
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
                                   <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.745in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU14">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.26112in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.745in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU40">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.46224in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.745in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2558,9 +3076,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2570,11 +3088,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.63758in</Top>
+                                  <Left>0.06986in</Left>
+                                  <Height>0.16667in</Height>
+                                  <Width>2.2325in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU42">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.8296in</Top>
+                                  <Left>0.06986in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.2325in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2585,10 +3134,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>5.86335in</Top>
+                              <Top>5.925in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>0.98377in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
@@ -2638,9 +3187,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2671,11 +3219,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2685,11 +3231,73 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.0725in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.72in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU16">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.27362in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.72in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU43">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.47474in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.72in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2704,9 +3312,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2716,11 +3324,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.63315in</Top>
+                                  <Left>0.03926in</Left>
+                                  <Height>0.17917in</Height>
+                                  <Width>2.245in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU45">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.83767in</Top>
+                                  <Left>0.03926in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.245in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2731,10 +3370,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>6.84852in</Top>
+                              <Top>6.892in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>0.99184in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>6</ZIndex>
                               <Style>
                                 <Border>
@@ -2784,9 +3423,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2817,11 +3455,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2831,11 +3467,73 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.04452in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.06in</Top>
+                                  <Left>0.58201in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.6825in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU18">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.26112in</Top>
+                                  <Left>0.58201in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.6825in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU46">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.46224in</Top>
+                                  <Left>0.58201in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.6825in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2850,9 +3548,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2862,11 +3560,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.64566in</Top>
+                                  <Left>0.04934in</Left>
+                                  <Height>0.16667in</Height>
+                                  <Width>2.2075in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU48">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="CUSH FILL TYPE: " &amp; Fields!CushionFillType.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.82518in</Top>
+                                  <Left>0.04934in</Left>
+                                  <Height>0.15417in</Height>
+                                  <Width>2.2075in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2877,10 +3606,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>7.83369in</Top>
+                              <Top>7.878in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>1.01684in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>7</ZIndex>
                               <Style>
                                 <Border>
@@ -2930,9 +3659,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -2963,11 +3691,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -2977,11 +3703,73 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.05029in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.7075in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU20">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.25141in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.7075in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU49">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.45253in</Top>
+                                  <Left>0.56063in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.7075in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -2996,9 +3784,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -3008,11 +3796,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.62545in</Top>
+                                  <Left>0.04513in</Left>
+                                  <Height>0.154in</Height>
+                                  <Width>2.2325in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU51">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.79247in</Top>
+                                  <Left>0.04513in</Left>
+                                  <Height>0.154in</Height>
+                                  <Width>2.2325in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -3023,10 +3842,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>8.81886in</Top>
+                              <Top>8.889in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>0.95in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>8</ZIndex>
                               <Style>
                                 <Border>
@@ -3076,9 +3895,8 @@
                                     </DataRows>
                                   </CustomData>
                                   <Top>0.06in</Top>
-                                  <Left>0.00514in</Left>
-                                  <Height>0.5in</Height>
-                                  <Width>0.5in</Width>
+                                  <Height>0.61266in</Height>
+                                  <Width>0.56812in</Width>
                                   <CustomProperties>
                                     <CustomProperty>
                                       <Name>BarcodeAreas.Count</Name>
@@ -3109,11 +3927,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=Left(Fields!SKU.Value, 25)
-&amp; VbCrlf &amp;
-"SCH: "&amp; Fields!ScheduleId_ScheduleLoad.Value &amp; VbCrlf &amp; Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Value>=Left(Fields!SKU.Value, 25)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -3123,11 +3939,73 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.06in</Top>
-                                  <Left>0.58103in</Left>
-                                  <Height>0.45in</Height>
-                                  <Width>1.75833in</Width>
+                                  <Top>0.03067in</Top>
+                                  <Left>0.57701in</Left>
+                                  <Height>0.18542in</Height>
+                                  <Width>1.6825in</Width>
                                   <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU22">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>="SCH: " &amp; Fields!ScheduleId_ScheduleLoad.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.21929in</Top>
+                                  <Left>0.57701in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.6825in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU52">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!SalesOrder.Value &amp; "-" &amp; Fields!SalesOrderLine.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.42041in</Top>
+                                  <Left>0.57701in</Left>
+                                  <Height>0.19792in</Height>
+                                  <Width>1.6825in</Width>
+                                  <ZIndex>3</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -3142,9 +4020,9 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value) &amp; VbCrlf &amp; Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Value>=IIF(Fields!Fabric_1.Value = "(none)", " ", "FABRIC    :  " &amp; Fields!Fabric_1.Value &amp; " - " &amp; Fields!FabricDescription.Value)</Value>
                                           <Style>
-                                            <FontSize>8pt</FontSize>
+                                            <FontSize>9pt</FontSize>
                                           </Style>
                                         </TextRun>
                                       </TextRuns>
@@ -3154,11 +4032,42 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>SKU1</rd:DefaultName>
-                                  <Top>0.51in</Top>
-                                  <Left>0.0125in</Left>
-                                  <Height>0.31614in</Height>
-                                  <Width>2.4in</Width>
-                                  <ZIndex>2</ZIndex>
+                                  <Top>0.63823in</Top>
+                                  <Left>0.03263in</Left>
+                                  <Height>0.154in</Height>
+                                  <Width>2.2325in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="SKU54">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!CushionFillType.Value &amp; " - " &amp; Fields!CushionConfig.Value</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>SKU1</rd:DefaultName>
+                                  <Top>0.78442in</Top>
+                                  <Left>0.03263in</Left>
+                                  <Height>0.154in</Height>
+                                  <Width>2.2325in</Width>
+                                  <ZIndex>5</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -3169,10 +4078,10 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>9.80403in</Top>
+                              <Top>9.875in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.98517in</Height>
-                              <Width>2.4125in</Width>
+                              <Height>0.93842in</Height>
+                              <Width>2.4in</Width>
                               <ZIndex>9</ZIndex>
                               <Style>
                                 <Border>
@@ -3209,9 +4118,6 @@
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
-                                    <BottomBorder>
-                                      <Style>None</Style>
-                                    </BottomBorder>
                                     <PaddingLeft>2pt</PaddingLeft>
                                     <PaddingRight>2pt</PaddingRight>
                                     <PaddingTop>2pt</PaddingTop>
@@ -3257,7 +4163,7 @@
                               <KeepTogether>true</KeepTogether>
                               <Top>0.23833in</Top>
                               <Left>0.00514in</Left>
-                              <Height>0.475in</Height>
+                              <Height>0.35in</Height>
                               <Width>2.44313in</Width>
                               <ZIndex>10</ZIndex>
                               <Style>
@@ -3343,7 +4249,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>11.04208in</Height>
+        <Height>10.85942in</Height>
         <Style>
           <Border>
             <Style>None</Style>
