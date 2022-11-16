@@ -18,17 +18,24 @@ Description:	Returns fincial dates
 	WeekStart		The Monday of the current week
 ==============================================
 Test:
-select * from [dbo].[tvf_GetFinicialsDates](GetDate())
+declare @Date as date = dateadd(d, (rand() * (1000 + 1)) - 500, getdat())
+select @Date
+select * from [dbo].[tvf_GetFinicialsDates](@Date)
 ==============================================
 */
-create function [dbo].[tvf_GetFinicialsDates](
+alter function [dbo].[tvf_GetFinicialsDates](
 	@Date date
 )
 returns @Dates table (
-	PeriodSeqNo		int,
-	WeekSeqNo		int,
-	QuarterSeqNo	int,
-	WeekStart		date	
+	PeriodSeqNo			int,
+	PeriodStartDate		date,
+	PeriodEndDate		date,
+	WeekSeqNo			int,
+	WeekStartDate		date,
+	WeekEndDate			date,
+	QuarterSeqNo		int,
+	QuarterStartDate	date,
+	QuarterEndDate		date
 	)
 as
 begin
@@ -37,10 +44,15 @@ begin
 
 	insert into @Dates
 		select 
-			datediff(month, @startingPoint, @Date) + 1 as [PeriodSeqNo], -- Starting Month starts at one
-			datediff(wk,dateadd(d, -1, @StartingPoint), dateadd(d, -1, @Date)) as [WeekSeqNo], --Weeks start on Monday, needed to subtrack 1 from the start and current date
-			(datediff(year, @StartingPoint, @Date) * 4) + datepart(quarter, @Date) as [QuarterSeqNo], --Quarter Seq = Years from start times 4 + current years quarter
-			dateadd(d, -(datepart(dw, dateadd(d, -1, @Date)) - 1), @Date) as [WeekStart] -- Weeks start on Monday and must subtract 1 from day of week part to get a modifier of 0-6
+			datediff(month, @startingPoint, @Date) + 1														as [PeriodSeqNo], -- Starting Month starts at one
+			DATEFROMPARTS(datepart(year, @Date), datepart(month,@date), 1)									as [PeriodStartDate], --First day of the month
+			dateadd(d, -1, dateadd(m, 1, DATEFROMPARTS(datepart(year, @Date), datepart(month,@date), 1)))	as [PeriodEndDate], --Last day of the month
+			datediff(wk,dateadd(d, -1, @StartingPoint), dateadd(d, -1, @Date))								as [WeekSeqNo], --Weeks start on Monday, needed to subtrack 1 from the start and current date
+			dateadd(d, -(datepart(dw, dateadd(d, -1, @Date)) - 1), @Date)									as [WeekStart], -- Weeks start on Monday and must subtract 1 from day of week part to get a modifier of 0-6
+			dateadd(d, 7 - (datepart(dw, dateadd(d, -1, @Date))), @Date)									as [WeekEnd], --From Date find next Sunday, 
+			(datediff(year, @StartingPoint, @Date) * 4) + datepart(quarter, @Date)							as [QuarterSeqNo], --Quarter Seq = Years from start times 4 + current years quarter
+			dateadd(quarter, datediff(quarter, 0, @Date), 0)												as [QuarterStartDate],
+			dateadd(quarter, datediff(quarter, 0, @Date) + 1, 0) - 1										as [QuarterEndDate]
 
 	return
 end
