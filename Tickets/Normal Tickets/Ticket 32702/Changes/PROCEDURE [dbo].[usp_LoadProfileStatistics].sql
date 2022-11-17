@@ -204,32 +204,32 @@ BEGIN
 										[UpdateDT]	
 									  )
 	select
-		StockCode, 
-		Warehouse, 
-		UnitType, 
-		ProfileType, 
-		MoveType, 
-		YearWindow, 
-		'' as 'YearStartDate', 
-		'' as 'ActualStartDate', 
-		'' as 'YearEndDate', 
-		'' as 'ActualEndDate', 
-		sum(Quantity) as 'TotalQuantity', 
-		0 as 'TotalQtyNoNeg', 
-		sum(Quantity) as 'TotalScrubQty'
-			, count(PeriodStartDate) as 'PeriodHits'
-			, sum(Hits) as 'TotalHits'
-			, 0 as 'ActivePeriods'
-			, 0 as 'MeanQty'
-			, 0 as 'MedianQty'
-			, 0 as 'MinimumValue'
-			, 0 as 'MaximumValue'
-			, 0 as 'StdDeviation'
-			, 0 as 'ScrubStdDeviation'
-			, 0 as 'LowerLimit'
-			, 0 as 'UpperLimit'
-			, 0 as 'NumberOutliers'
-			, getdate() as 'UpdateDT'
+		StockCode				as [StockCode], 
+		Warehouse				as [Warehouse], 
+		UnitType				as [UnitType], 
+		ProfileType				as [ProfileType], 
+		MoveType				as [MoveType], 
+		YearWindow				as [YearWindow], 
+		''						as [YearStartDate],
+		''						as [ActualStartDate], 
+		''						as [YearEndDate], 
+		''						as [ActualEndDate], 
+		sum(Quantity)			as [TotalQuantity], 
+		0						as [TotalQtyNoNeg], 
+		sum(Quantity)			as [ScrubQuantity], 
+		count(PeriodStartDate)	as [PeriodHits], 
+		sum(Hits)				as [TotalHits], 
+		0						as [AgePeriods],
+		0						as [MeanQty], 
+		0						as [MedianQty], 
+		0						as [MinimumValue], 
+		0						as [MaximumValue], 
+		0						as [StdDeviation], 
+		0						as [ScrubStdDeviation], 
+		0						as [NumberOutliers],  
+		0						as [LowerLimit],
+		0						as [UpperLimit],
+		getdate()				as [UpdateDT]	
 	from usr_Profiles as prof
 	group by StockCode, 
 			 Warehouse, 
@@ -600,16 +600,16 @@ BEGIN
 
 --	Update ScrubProfileRatio in usr_Profiles
 
-update usr_Profiles
-	set ScrubProfileRatio = iif(psta.MeanQty <= 0, 0, prof.ScrubQty / psta.MeanQty)
-from usr_ProfileStatistics as psta 
-	join usr_Profiles as prof on psta.StockCode = prof.StockCode
-							 and psta.Warehouse = prof.Warehouse
-							 and psta.UnitType = prof.UnitType
-							 and psta.ProfileType = prof.ProfileType
-							 and psta.MoveType = prof.MoveType
-							 and psta.YearWindow = prof.YearWindow
-where prof.Quantity > 0
+	update usr_Profiles
+		set ScrubProfileRatio = iif(psta.MeanQty <= 0, 0, prof.ScrubQty / psta.MeanQty)
+	from usr_ProfileStatistics as psta 
+		join usr_Profiles as prof on psta.StockCode = prof.StockCode
+								 and psta.Warehouse = prof.Warehouse
+								 and psta.UnitType = prof.UnitType
+								 and psta.ProfileType = prof.ProfileType
+								 and psta.MoveType = prof.MoveType
+								 and psta.YearWindow = prof.YearWindow
+	where prof.Quantity > 0
 
 --	Count the number of Outliers per Year Window and Profile Type
 
@@ -654,13 +654,13 @@ where prof.Quantity > 0
 
 --	Calculate the Average per Hit over each year
 
-update usr_ProfileStatistics 
-	set AvgPerHit = iif(TotalHits > 0, TotalQtyNoNeg / TotalHits, 0)
+	update usr_ProfileStatistics 
+		set AvgPerHit = iif(TotalHits > 0, TotalQtyNoNeg / TotalHits, 0)
 
 --	Calculate the Average per active period over each year
 
-update usr_ProfileStatistics 
-	set AvgPerActivePer = iif(AgePeriods > 0, TotalQtyNoNeg / AgePeriods, 0)
+	update usr_ProfileStatistics 
+		set AvgPerActivePer = iif(AgePeriods > 0, TotalQtyNoNeg / AgePeriods, 0)
 
 --	Calculate Standard Deviations using the standard STDEV function
 
@@ -713,9 +713,9 @@ update usr_ProfileStatistics
 
 --	Update Lower and Upper Limits
 
-update usr_ProfileStatistics
-	set UpperLimit = iif(StdDeviation <= 0, 0, StdDeviation * @StdDevUpperLimit),
-		LowerLimit = iif(StdDeviation <= 0, 0, StdDeviation * @StdDevLowerLimit)
+	update usr_ProfileStatistics
+		set UpperLimit = iif(StdDeviation <= 0, 0, StdDeviation * @StdDevUpperLimit),
+			LowerLimit = iif(StdDeviation <= 0, 0, StdDeviation * @StdDevLowerLimit)
 		
 --	Drop temporary tables
 
