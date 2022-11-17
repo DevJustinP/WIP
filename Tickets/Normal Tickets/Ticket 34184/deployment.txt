@@ -1,0 +1,6 @@
+Deployment:
+    1) execute the following script on SQL08
+        - MRP Job
+
+Roll Back:
+    1) de-activate the Load MRP job until procedures are fixed
