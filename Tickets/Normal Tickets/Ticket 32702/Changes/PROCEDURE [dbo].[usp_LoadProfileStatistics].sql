@@ -69,7 +69,7 @@ BEGIN
 		@CurrWeekNo = WeekSeqNo, 
 		@CurrPeriodNo = PeriodSeqNo, 
 		@CurrQuarterNo = QuarterSeqNo
-	from [dbo].[tvf_GetFinicialsDates](@DateToday)
+	from [dbo].[tvf_GetFinancialsDates](@DateToday)
 	
 --	Set up temporary tables
 --	Default collation is Latin1_General_Bin

@@ -8,7 +8,7 @@ GO
 ==============================================
 Created By:		Justin Pope
 Created Date:	2022-11-11
-Description:	Returns fincial dates
+Description:	Returns financial dates
 	Starting date 1/1/2019
 	Weeks starts on Monday
 	returns:
@@ -20,10 +20,10 @@ Description:	Returns fincial dates
 Test:
 declare @Date as date = dateadd(d, (rand() * (1000 + 1)) - 500, getdat())
 select @Date
-select * from [dbo].[tvf_GetFinicialsDates](@Date)
+select * from [dbo].[tvf_GetFinancialsDates](@Date)
 ==============================================
 */
-alter function [dbo].[tvf_GetFinicialsDates](
+alter function [dbo].[tvf_GetFinancialsDates](
 	@Date date
 )
 returns @Dates table (
