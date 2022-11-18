@@ -4,6 +4,26 @@ tvf_GetFinicialsDates
 	Notes:
 		This is to replace the table usr_DailyCalendar
 		This won't be outdated in 50 years
+		There are columns in the table that are unnessary atleat between the scripts that I am looking at.
+
+usp_LoadHistory
+
+	modifications
+	- condensed insert to IopSalesAdjust
+	- removed column from #FcWarehouse
+
+usp_LoadProfiles
+
+	modifications
+	- added uses of tvf_GetFinicialsDates
+	- removed some unused temp tables
+	- condensed usr_DateFirstLastUse refresh
+		- union for insert statement
+		- direct update instead of temp table then update
+		- issue with divid by zero when updating usr_DateFirstLastUse
+			changed the query to avoid divid by zero
+	- union used in #ProfileDates insert
+
 
 usp_loadpareto
 
@@ -13,21 +33,11 @@ usp_loadpareto
 		- no need for a loop as gotos are not a good development standard
 		- added Pareto_constants table to pare down static variables
 		- added RankType variables to use
+	- removed selects and prints that are not needed
 
-usp_LoadProfiles
 
-	modifications
-	- added usses of tvf_GetFinicialsDates
-	- removed some unused temp tables
-	- condensed usr_DateFirstLastUse refresh
-		- union for insert statement
-		- direct update instead of temp table then update
-		- issue with divid by zero when updating usr_DateFirstLastUse
-			changed the query to avoid divid by zero
-	- union used in #ProfileDates insert
-
-usp_LoadHistory
+usp_LoadProfileStatistics
 
 	modifications
-	- condensed insert to IopSalesAdjust
-	- removed column from #FcWarehouse
+	- added uses of tvf_GetFinicialsDates
+	- no modifications
