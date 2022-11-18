@@ -204,33 +204,52 @@ BEGIN
 										[UpdateDT]	
 									  )
 	select
-		StockCode				as [StockCode], 
-		Warehouse				as [Warehouse], 
-		UnitType				as [UnitType], 
-		ProfileType				as [ProfileType], 
-		MoveType				as [MoveType], 
-		YearWindow				as [YearWindow], 
-		''						as [YearStartDate],
-		''						as [ActualStartDate], 
-		''						as [YearEndDate], 
-		''						as [ActualEndDate], 
-		sum(Quantity)			as [TotalQuantity], 
-		0						as [TotalQtyNoNeg], 
-		sum(Quantity)			as [ScrubQuantity], 
-		count(PeriodStartDate)	as [PeriodHits], 
-		sum(Hits)				as [TotalHits], 
-		0						as [AgePeriods],
-		0						as [MeanQty], 
-		0						as [MedianQty], 
-		0						as [MinimumValue], 
-		0						as [MaximumValue], 
-		0						as [StdDeviation], 
-		0						as [ScrubStdDeviation], 
-		0						as [NumberOutliers],  
-		0						as [LowerLimit],
-		0						as [UpperLimit],
-		getdate()				as [UpdateDT]	
+		prof.StockCode				as [StockCode], 
+		prof.Warehouse				as [Warehouse], 
+		prof.UnitType				as [UnitType], 
+		prof.ProfileType			as [ProfileType], 
+		prof.MoveType				as [MoveType], 
+		prof.YearWindow				as [YearWindow], 
+		max(Dates.YearStartDate)	as [YearStartDate],
+		max(Dates.ActualStartDate)	as [ActualStartDate], 
+		max(Dates.YearEndDate)		as [YearEndDate], 
+		min(Dates.ActualEndDate)	as [ActualEndDate], 
+		sum(prof.Quantity)			as [TotalQuantity], 
+		0							as [TotalQtyNoNeg], 
+		sum(prof.Quantity)			as [ScrubQuantity], 
+		count(prof.PeriodStartDate)	as [PeriodHits], 
+		sum(prof.Hits)				as [TotalHits], 
+		0							as [AgePeriods],
+		0							as [MeanQty], 
+		0							as [MedianQty], 
+		0							as [MinimumValue], 
+		0							as [MaximumValue], 
+		0							as [StdDeviation], 
+		0							as [ScrubStdDeviation], 
+		0							as [NumberOutliers],  
+		0							as [LowerLimit],
+		0							as [UpperLimit],
+		getdate()					as [UpdateDT]	
 	from usr_Profiles as prof
+		outer apply (   select
+							pseq.PeriodStartDate										as [YearStartDate],
+							dateadd(day, -1, dateadd(month, 12, pseq.PeriodStartDate))	as [YearEndDate],
+							pseq.PeriodStartDate										as [ActualStartDate],
+							dateadd(day, -1, dateadd(month, 12, pseq.PeriodStartDate))	as [ActualEndDate]
+						from usr_ProfilePeriodSeq as pseq
+						where pseq.ProfileType = prof.ProfileType
+							and pseq.YearWindow = prof.YearWindow
+							and pseq.YearPerSeqNo = 1
+						union
+						select
+							''					as [YearStartDate],
+							''					as [YearEndDate],
+							dflu.DateFirstUse	as [ActualStartDAte],
+							dflu.DateLastUse	as [ActualEndDate]
+						from usr_DateFirstLastUse as dflu
+						where dflu.StockCode = prof.StockCode
+							and dflu.Warehouse = prof.Warehouse
+							and dflu.MoveType = prof.MoveType ) as [Dates]
 	group by StockCode, 
 			 Warehouse, 
 			 UnitType, 
@@ -238,31 +257,31 @@ BEGIN
 			 MoveType, 
 			 YearWindow
 
---	Update YearStartDate from usr_ProfilePeriodSeq
+----	Update YearStartDate from usr_ProfilePeriodSeq
 
-	update usr_ProfileStatistics 
-		set YearStartDate = pseq.PeriodStartDate
-	from usr_ProfilePeriodSeq as pseq 
-		join usr_ProfileStatistics as psta on pseq.ProfileType = psta.ProfileType
-										  and pseq.YearWindow = psta.YearWindow
-										  and pseq.YearPerSeqNo = 1
+--	update usr_ProfileStatistics 
+--		set YearStartDate = pseq.PeriodStartDate
+--	from usr_ProfilePeriodSeq as pseq 
+--		join usr_ProfileStatistics as psta on pseq.ProfileType = psta.ProfileType
+--										  and pseq.YearWindow = psta.YearWindow
+--										  and pseq.YearPerSeqNo = 1
 
---	Update ActualStartDate and ActualEndDate from YearStartDate
+----	Update ActualStartDate and ActualEndDate from YearStartDate
 
-	update usr_ProfileStatistics 
-		set ActualStartDate = YearStartDate, 
-		    YearEndDate = dateadd(day, -1, dateadd(month, 12, YearStartDate)), 
-			ActualEndDate = dateadd(day, -1, dateadd(month, 12, YearStartDate))
+--	update usr_ProfileStatistics 
+--		set ActualStartDate = YearStartDate, 
+--		    YearEndDate = dateadd(day, -1, dateadd(month, 12, YearStartDate)), 
+--			ActualEndDate = dateadd(day, -1, dateadd(month, 12, YearStartDate))
 
---	Update ActualStartDate and ActualEndDate from usr_DateFirstLastUse
+----	Update ActualStartDate and ActualEndDate from usr_DateFirstLastUse
 
-	update usr_ProfileStatistics 
-		set ActualStartDate = iif(duse.DateFirstUse > psta.ActualStartDate, duse.DateFirstUse, psta.ActualStartDate), 
-			ActualEndDate =	iif(duse.DateLastUse < psta.YearEndDate, duse.DateLastUse, psta.ActualEndDate)
-	from usr_DateFirstLastUse as duse
-		join usr_ProfileStatistics as psta on duse.StockCode = psta.StockCode
-										  and duse.Warehouse = psta.Warehouse
-										  and duse.MoveType = psta.MoveType
+--	update usr_ProfileStatistics 
+--		set ActualStartDate = iif(duse.DateFirstUse > psta.ActualStartDate, duse.DateFirstUse, psta.ActualStartDate), 
+--			ActualEndDate =	iif(duse.DateLastUse < psta.YearEndDate, duse.DateLastUse, psta.ActualEndDate)
+--	from usr_DateFirstLastUse as duse
+--		join usr_ProfileStatistics as psta on duse.StockCode = psta.StockCode
+--										  and duse.Warehouse = psta.Warehouse
+--										  and duse.MoveType = psta.MoveType
 	
 --	Calculate Minimum and Maximum quantities in a period and number of Hits
 
