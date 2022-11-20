@@ -1,0 +1,7 @@
+Deployment:
+    1) execute the following scripts on SQL08
+        - procedure [dbo].[Syspro_Maintenance_InvMultBin]
+        - Syspro Maintenance job
+
+Roll Back:
+    1) de-activate the Syspro Maintenance job until procedures are fixed
