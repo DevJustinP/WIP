@@ -1,7 +1,7 @@
 --SSRS report Runtime Max and Average.  The Max is converted into seconds
 
-DECLARE	@StartDate					AS DATETIME = '20220926'
-				,@EndDate						AS DATETIME = '20221003'
+DECLARE	@StartDate					AS DATETIME = '20221107'
+				,@EndDate						AS DATETIME = '20221113'
 				,@MaxAllowedRunTime	AS TIME = '00:16:40.0000000' -- 1000 seconds
 				,@ReportDevelopers	AS VARCHAR(1000) = 'SUMMERCLASSICS\LibbyM,SUMMERCLASSICS\David.Sowell,SUMMERCLASSICS\David.Smith,SUMMERCLASSICS\Doozer-U1,SUMMERCLASSICS\Doozer-U2'; -- Exclude report developers
 
