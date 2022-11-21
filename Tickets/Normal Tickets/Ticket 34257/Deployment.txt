@@ -1,0 +1,5 @@
+Deployment:
+    execute script in deployment folder ALTER function [dbo].[tvf_QCommissions_UnitersPlanSales]().sql
+
+Rollback
+    execute script in rollback folder ALTER function [dbo].[tvf_QCommissions_UnitersPlanSales]().sql
