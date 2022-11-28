@@ -16,7 +16,7 @@ go
 
 	with Uniters as (
 						select
-							Count(distinct SM.SalesOrder)		  as [SalesOrderCount],
+							Count(SM.SalesOrder)		  as [SalesOrderCount],
 							isnull(SM.Salesperson, @Blank)		  as [Salesperson],
 							Sum(ISNULL(SD.[NMscChargeCost], 0))   AS [ChargeCost],
 							Sum(ISNULL(SD.[NMscChargeValue], 0))  AS [ChargeValue]
