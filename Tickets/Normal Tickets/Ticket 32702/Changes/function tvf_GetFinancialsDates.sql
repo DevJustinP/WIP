@@ -23,7 +23,7 @@ select @Date
 select * from [dbo].[tvf_GetFinancialsDates](@Date)
 ==============================================
 */
-alter function [dbo].[tvf_GetFinancialsDates](
+create function [dbo].[tvf_GetFinancialsDates](
 	@Date date
 )
 returns @Dates table (
