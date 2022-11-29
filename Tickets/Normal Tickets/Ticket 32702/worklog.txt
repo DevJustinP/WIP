@@ -10,7 +10,11 @@ usp_LoadHistory
 
 	modifications
 	- condensed insert to IopSalesAdjust
+	- removed and imas.UserField3 not in ('8','9') -(Ben)
+	- added sdet.LineType = '1' - (Ben)
 	- removed column from #FcWarehouse
+	- modified the use of #FcWarehouse
+	- added constant @CONST_Active
 
 usp_LoadProfiles
 
@@ -18,13 +22,27 @@ usp_LoadProfiles
 	- added uses of tvf_GetFinicialsDates
 	- removed some unused temp tables
 	- condensed usr_DateFirstLastUse refresh
-		- union for insert statement
-		- direct update instead of temp table then update
+		- Insert into #LastQuantity then all updates
 		- issue with divid by zero when updating usr_DateFirstLastUse
 			changed the query to avoid divid by zero
+	- added SorDetail.LineType = '1' on insert into usr_Profiles - (Ben)
 	- union used in #ProfileDates insert
+	- added constant @CONST_Active
+	- added sm.InterWhSale <> 'Y' to exclude SCTs
 
+usp_LoadProfileStatistics
 
+	modifications
+	- added uses of tvf_GetFinicialsDates
+	- left join to usr_ProfilePeriodSeq and usr_DateFirstLastUse to get dates (YearStartDate, ActualStartDate, YearEndDate, ActualEndDate)
+	- condensed calculations into initial insert and a few updates to reduce the number of times we are querying usr_Profiles or usr_ProfileStatistics
+	- temp tables #hitscount and #totaluse are unnessary as they are override initial insert and there is no YearWindow of 'A'
+	- AvgPerActivePer and MeanQty are being calculated as the same
+		*MeanQty should just by avg(Quantity)
+	- ScrubQuantity is being calculated as sum(Quantity)
+		*should it be sum(ScrubQuantity)
+	- Updates to ProflieFlag are not set up correctly. Or statement needs to be in parentheses
+	
 usp_loadpareto
 
 	modifications
@@ -34,10 +52,3 @@ usp_loadpareto
 		- added Pareto_constants table to pare down static variables
 		- added RankType variables to use
 	- removed selects and prints that are not needed
-
-
-usp_LoadProfileStatistics
-
-	modifications
-	- added uses of tvf_GetFinicialsDates
-	- no modifications

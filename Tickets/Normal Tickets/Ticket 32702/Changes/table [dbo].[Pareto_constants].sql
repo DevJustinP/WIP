@@ -15,12 +15,13 @@ go
 
 insert into [dbo].[Pareto_constants]
 values ('InvMovements','MovementType','S'),
+	   ('InvMovements','MovementType','I'),
 	   ('InvMovements','TrnType',''),
+	   ('InvMovements','TrnType','I'),
 	   ('InvMovements','DocType','C'),
 	   ('InvMovements','DocType','I'),
 	   ('InvMovements','DocType','M'),
 	   ('InvMovements','DocType','N'),
-	   ('InvMaster','PartCategory','B'),
 	   ('InvMaster+','ProductCategory','AC'),
 	   ('InvMaster+','ProductCategory','AF'),
 	   ('InvMaster+','ProductCategory','AFC'),
