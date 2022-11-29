@@ -1,0 +1,6 @@
+TrnYear,TrnMonth,Invoice,Description,InvoiceDate,Branch,Salesperson,Salesperson_CRMEmail,Customer,CustomerPoNumber,MerchandiseValue,FreightValue,OtherValue,TaxValue,MerchandiseCost,DocumentType,SalesOrder,OrderType,Area,TermsCode,Operator,DepositType,Usr_CreatedDateTime,BillOfLadingNumber,CarrierId,CADate,ProNumber
+2020,9,200-1008646, ,2020-09-21 00:00:00.000,200,KF ,KevinF@summerclassics.com,1103609,RMA:200-1006986,-819.00,0.00,0.00,0.00,-472.63,C,200-8008556,BP,SD,CN,PATRI ,2020-09-21 20:06:08.307,(none),(none),NULL,(none)
+2020,9,200-1008647, ,2020-09-22 00:00:00.000,200,CWT,CoreyW@summerclassics.com,1102654,RMA:200-1006731,-400.00,-120.00,0.00,0.00,0.00,C,200-8008601,AW,SD+DISC,CN,CARLAD,2020-09-22 13:09:22.137,(none),(none),NULL,(none)
+2020,9,200-1008648, ,2020-09-22 00:00:00.000,200,CWT,CoreyW@summerclassics.com,1102654,FRT OVERCHARGES,0.00,-73.20 ,0.00,0.00,0.00,C,200-8008602, ,SD+DISC,CN,CARLAD,2020-09-22 13:19:46.880, ,(none),NULL, 
+2020,9,200-1008649, ,2020-09-22 00:00:00.000,200,TBT,TimB@summerclassics.com,1102687,RMA:200-1006787,-342.00,0.00,0.00,0.00,0.00,C,200-8008604,AW,SD,CN,CARLAD,2020-09-22 13:29:22.747,(none),(none),NULL,(none)
+2020,9,200-1008650, ,2020-09-22 00:00:00.000,200,TBT,TimB@summerclassics.com,1102687,RMA:200-1006552,-280.00,0.00,0.00,0.00,0.00,C,200-8008603,BP,SD,CN,CARLAD,2020-09-22 13:29:52.450,(none),(none),NULL,(none)

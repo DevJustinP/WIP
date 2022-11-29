@@ -1,0 +1,200 @@
+{
+    "jobs": [
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008646",
+                    "detailline": 2,
+                    "invoicedate": "2020-09-21",
+                    "branch": "200",
+                    "name": "438284",
+                    "productclass": "SCW",
+                    "qtyinvoiced": -1.000000,
+                    "netsalesvalue": -819.00,
+                    "taxvalue": 0.00,
+                    "costvalue": -472.63,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008556",
+                    "lookup_sales_order_line_number": 1,
+                    "customerponumber": "RMA:200-1006986"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008647",
+                    "detailline": 2,
+                    "invoicedate": "2020-09-22",
+                    "branch": "200",
+                    "name": "352731",
+                    "productclass": "SCW",
+                    "qtyinvoiced": 0.000000,
+                    "netsalesvalue": -400.00,
+                    "taxvalue": 0.00,
+                    "costvalue": 0.00,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008601",
+                    "lookup_sales_order_line_number": 1,
+                    "customerponumber": "RMA:200-1006731"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008647",
+                    "detailline": 3,
+                    "invoicedate": "2020-09-22",
+                    "branch": "200",
+                    "name": " ",
+                    "productclass": "_FRT",
+                    "qtyinvoiced": 0.000000,
+                    "netsalesvalue": -120.00,
+                    "taxvalue": 0.00,
+                    "costvalue": 0.00,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008601",
+                    "lookup_sales_order_line_number": 2,
+                    "customerponumber": "RMA:200-1006731"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008648",
+                    "detailline": 1,
+                    "invoicedate": "2020-09-22",
+                    "branch": "200",
+                    "name": " ",
+                    "productclass": "_FRT",
+                    "qtyinvoiced": 0.000000,
+                    "netsalesvalue": -73.20,
+                    "taxvalue": 0.00,
+                    "costvalue": 0.00,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008602",
+                    "lookup_sales_order_line_number": 1,
+                    "customerponumber": "FRT OVERCHARGES"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008649",
+                    "detailline": 2,
+                    "invoicedate": "2020-09-22",
+                    "branch": "200",
+                    "name": "C057P101N",
+                    "productclass": "SCW",
+                    "qtyinvoiced": 0.000000,
+                    "netsalesvalue": -171.00,
+                    "taxvalue": 0.00,
+                    "costvalue": 0.00,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008604",
+                    "lookup_sales_order_line_number": 1,
+                    "customerponumber": "RMA:200-1006787"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008649",
+                    "detailline": 4,
+                    "invoicedate": "2020-09-22",
+                    "branch": "200",
+                    "name": "C055P101N",
+                    "productclass": "SCW",
+                    "qtyinvoiced": 0.000000,
+                    "netsalesvalue": -171.00,
+                    "taxvalue": 0.00,
+                    "costvalue": 0.00,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008604",
+                    "lookup_sales_order_line_number": 2,
+                    "customerponumber": "RMA:200-1006787"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_InvoiceLineItems",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "lookup_invoice_number": "200-1008650",
+                    "detailline": 2,
+                    "invoicedate": "2020-09-22",
+                    "branch": "200",
+                    "name": "C791P1693W1714",
+                    "productclass": "SCW",
+                    "qtyinvoiced": 0.000000,
+                    "netsalesvalue": -280.00,
+                    "taxvalue": 0.00,
+                    "costvalue": 0.00,
+                    "discvalue": 0.00,
+                    "salesglintreqd": " ",
+                    "lookup_sales_order_number": "200-8008603",
+                    "lookup_sales_order_line_number": 1,
+                    "customerponumber": "RMA:200-1006552"
+                }
+            }
+        }
+    ],
+    "options": {
+        "prevent_duplicates": true,
+        "retries_allowed": 300,
+        "alert_on_failure": true,
+        "alert_on_completion": false,
+        "assigned_user_id": "ddc253a7-e166-4d4e-a1d4-dc8f76c6fcee"
+    }
+}
