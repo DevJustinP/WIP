@@ -1,0 +1,186 @@
+{
+    "jobs": [
+        {
+            "job_module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1090889",
+                    "description": "",
+                    "invoicedate": "2020-09-21",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "TimB@summerclassics.com",
+                    "lookup_account_number": "1102338",
+                    "customerponumber": "7635-090420-118",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "I",
+                    "lookup_order_number": "200-1065618",
+                    "ordertype": "PE",
+                    "termscode": "NN",
+                    "lookup_operator": "ELMIMS",
+                    "billofladingnumber": " ",
+                    "carrierid": "FDEG",
+                    "cadate": "2020-09-04",
+                    "pronumber": "500605510258962"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1090890",
+                    "description": "",
+                    "invoicedate": "2020-09-21",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "ChadF@summerclassics.com",
+                    "lookup_account_number": "1215160",
+                    "customerponumber": "59949-090420-69",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "I",
+                    "lookup_order_number": "200-1065616",
+                    "ordertype": "S ",
+                    "termscode": "NN",
+                    "lookup_operator": "ELMIMS",
+                    "billofladingnumber": " ",
+                    "carrierid": "FDEG",
+                    "cadate": "2020-09-04",
+                    "pronumber": "500605510258979"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1090891",
+                    "description": "",
+                    "invoicedate": "2020-09-21",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "JJensen@summerclassics.com",
+                    "lookup_account_number": "1214512",
+                    "customerponumber": "7635-090420-117",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "I",
+                    "lookup_order_number": "200-1065615",
+                    "ordertype": "C1",
+                    "termscode": "NN",
+                    "lookup_operator": "ELMIMS",
+                    "billofladingnumber": " ",
+                    "carrierid": "FDEG",
+                    "cadate": "2020-09-04",
+                    "pronumber": "500605510258986"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1090892",
+                    "description": "",
+                    "invoicedate": "2020-09-21",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "EdL@summerclassics.com",
+                    "lookup_account_number": "1102640",
+                    "customerponumber": "59949-090420-68",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "I",
+                    "lookup_order_number": "200-1065614",
+                    "ordertype": "S ",
+                    "termscode": "NN",
+                    "lookup_operator": "ELMIMS",
+                    "billofladingnumber": " ",
+                    "carrierid": "FDEG",
+                    "cadate": "2020-09-04",
+                    "pronumber": "500605510258993"
+                }
+            }
+        },
+        {
+            "job_module": "MGCIV_Invoice",
+            "job": "Import",
+            "context": {
+                "source": {
+                    "database": "PRODUCT_INFO",
+                    "server": "Talend"
+                },
+                "fields": {
+                    "trnyear_c": 2020,
+                    "trnmonth_c": 9,
+                    "name": "200-1090893",
+                    "description": "",
+                    "invoicedate": "2020-09-21",
+                    "branch": "200",
+                    "lookup_assigned_user_email": "Paul@summerclassics.com",
+                    "lookup_account_number": "1100004",
+                    "customerponumber": "7635-090420-116",
+                    "merchandisevalue": 0.00,
+                    "freightvalue": 0.00,
+                    "othervalue": 0.00,
+                    "taxvalue": 0.00,
+                    "merchandisecost": 0.00,
+                    "documenttype": "I",
+                    "lookup_order_number": "200-1065613",
+                    "ordertype": "S ",
+                    "termscode": "NN",
+                    "lookup_operator": "ELMIMS",
+                    "billofladingnumber": " ",
+                    "carrierid": "FDEG",
+                    "cadate": "2020-09-04",
+                    "pronumber": "500605510259006"
+                }
+            }
+        }
+    ],
+    "options": {
+        "prevent_duplicates": true,
+        "retries_allowed": 300,
+        "alert_on_failure": true,
+        "alert_on_completion": false,
+        "assigned_user_id": "ddc253a7-e166-4d4e-a1d4-dc8f76c6fcee"
+    }
+}

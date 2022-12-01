@@ -29,11 +29,10 @@ BEGIN
 			declare @MinInvoiceDate as datetime = DATEADD(year, -2, GETDATE());
 
 			with Invoices as (
-								select
+								select top 500
 									[at].[TrnMonth],
 									[at].[TrnYear],
 									[at].[Invoice],
-									[vSM].[Description],
 									[at].[InvoiceDate],
 									[at].[Branch],
 									[at].[Salesperson],
@@ -52,14 +51,8 @@ BEGIN
 									[at].[Area],
 									[at].[TermsCode],
 									[at].[DepositType],
-									[at].[Usr_CreatedDateTime],
-									[vSM].[BillOfLadingNumber],
-									[vSM].[CADate],
-									[vSM].[CarrierId],
-									[vSM].[ProNumber]
-								from [SysproCompany100].[dbo].[ArTrnSummary] as [at]
-									left join [SysproCompany100].[dbo].[vw_Optio_SorMaster] as [vSM] on [vSM].[InvoiceNumber] = [at].[Invoice]
-																									and [vSM].[SalesOrder] = [at].[SalesOrder]									
+									[at].[Usr_CreatedDateTime]
+								from [SysproCompany100].[dbo].[ArTrnSummary] as [at]								
 									outer apply (
 													SELECT DISTINCT [SalSalesperson+].CrmEmail							
 													FROM [SysproCompany100].[dbo].[SalSalesperson+]
@@ -73,8 +66,7 @@ BEGIN
 									and ( [atr].[Invoice] is null
 										or
 										(
-										   [vSM].[Description]			collate Latin1_General_BIN <> [atr].[Description]
-										or [at].[InvoiceDate]									   <> [atr].[InvoiceDate]
+										   [at].[InvoiceDate]									   <> [atr].[InvoiceDate]
 										or [at].[Branch]				collate Latin1_General_BIN <> [atr].[Branch]
 										or [at].[CustomerPoNumber]		collate Latin1_General_BIN <> [atr].[CustomerPoNumber]	
 										or [at].[MerchandiseValue]								   <> [atr].[MerchandiseValue]	
@@ -89,15 +81,46 @@ BEGIN
 										or [at].[TermsCode]				collate Latin1_General_BIN <> [atr].[TermsCode]			
 										or [at].[DepositType]			collate Latin1_General_BIN <> [atr].[DepositType]		
 										or [at].[Usr_CreatedDateTime]							   <> [atr].[Usr_CreatedDateTime]
-										or [vSM].[BillOfLadingNumber]	collate Latin1_General_BIN <> [atr].[BillOfLadingNumber]
-										or [vSM].[CADate]										   <> [atr].[CADate]			
-										or [vSM].[ProNumber]			collate Latin1_General_BIN <> [atr].[ProNumber]	
 										or isnull(SalSale.CrmEmail, '')	collate Latin1_General_BIN <> [atr].[Salesperson_CRMEmail]
-										)))
+										))),
+				InvoicesFinal as (
+									select
+										[at].[TrnMonth],
+										[at].[TrnYear],
+										[at].[Invoice],
+										[vSM].[Description],
+										[at].[InvoiceDate],
+										[at].[Branch],
+										[at].[Salesperson],
+										[at].[Salesperson_CrmEmail],
+										[at].[Customer],
+										[at].[Operator],
+										[at].[CustomerPoNumber],
+										[at].[MerchandiseValue],
+										[at].[FreightValue],
+										[at].[OtherValue],
+										[at].[TaxValue],
+										[at].[MerchandiseCost],
+										[at].[DocumentType],
+										[at].[SalesOrder],
+										[at].[OrderType],
+										[at].[Area],
+										[at].[TermsCode],
+										[at].[DepositType],
+										[at].[Usr_CreatedDateTime],
+										[vSM].[BillOfLadingNumber],
+										[vSM].[CADate],
+										[vSM].[CarrierId],
+										[vSM].[ProNumber]
+									from Invoices as [at]
+										left join [SysproCompany100].[dbo].[vw_Optio_SorMaster] as [vSM] on [vSM].[InvoiceNumber] = [at].[Invoice]
+																										and [vSM].[SalesOrder] = [at].[SalesOrder]	
+									)
+
 			merge [PRODUCT_INFO].[SugarCrm].[ArTrnSummary_Ref] as Target
-			using Invoices as Source on Source.[TrnMonth] = Target.[TrnMonth]
-									  and Source.[TrnYear]  = Target.[TrnYear]
-									  and Source.[Invoice]  = Target.[Invoice] collate Latin1_General_BIN
+			using InvoicesFinal as Source on Source.[TrnMonth] = Target.[TrnMonth]
+										 and Source.[TrnYear]  = Target.[TrnYear]
+										 and Source.[Invoice]  = Target.[Invoice] collate Latin1_General_BIN
 			when not matched by Target then
 				insert (
 							 [TrnYear]				

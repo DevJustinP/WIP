@@ -5,7 +5,7 @@ grant select on [vw_Optio_SorMaster] to [SQL_Talend];
 grant select on [ArTrnSummary] to [SQL_Talend];
 grant select on [ArTrnDetail] to [SQL_Talend];
 grant select on [vw_Optio_SorMaster] to [SQL_Talend];
-
+grant select on [InvMaster+] to [SQL_Talend];
 
 use [PRODUCT_INFO];
 go
