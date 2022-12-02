@@ -13,8 +13,7 @@ GO
  execute [SugarCrm].[FlagInvoiceLinesAsSubmitted]
  =============================================
 */
-
-CREATE   PROCEDURE [SugarCrm].[FlagInvoiceLinesAsSubmitted]
+CREATE or alter PROCEDURE [SugarCrm].[FlagInvoiceLinesAsSubmitted]
 AS
 BEGIN
 

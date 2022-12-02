@@ -14,7 +14,7 @@ GO
  =============================================
 */
 
-create FUNCTION [SugarCrm].[tvf_BuildInvoiceLineDataset]()
+create or alter FUNCTION [SugarCrm].[tvf_BuildInvoiceLineDataset]()
 RETURNS TABLE
 AS
 RETURN
@@ -42,4 +42,5 @@ RETURN
 		,[PimDepartment]		
 		,[PimCategory]		
 	from [SugarCrm].[ArTrnDetail_Ref]
-	where [LineSubmitted] = 0
+	where [LineSubmitted] = 0;
+go

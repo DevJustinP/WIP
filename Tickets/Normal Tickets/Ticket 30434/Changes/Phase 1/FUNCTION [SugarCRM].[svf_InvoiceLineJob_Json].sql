@@ -12,7 +12,7 @@ go
  select * from [SugarCrm].[tvf_BuildInvoiceLineDataset]()
  =============================================
 */
-alter function [SugarCRM].[svf_InvoiceLineJob_Json](
+create or alter function [SugarCRM].[svf_InvoiceLineJob_Json](
 	@ServerName as Varchar(50),
 	@Offset as int
 )

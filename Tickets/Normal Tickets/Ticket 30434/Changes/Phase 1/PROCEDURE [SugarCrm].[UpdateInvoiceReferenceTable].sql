@@ -13,7 +13,6 @@ GO
  execute [SugarCrm].[UpdateInvoiceReferenceTable]
  =============================================
 */
-
 create   PROCEDURE [SugarCrm].[UpdateInvoiceReferenceTable]
 AS
 BEGIN

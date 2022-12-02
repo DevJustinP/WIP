@@ -13,8 +13,7 @@ GO
  select * FROM [SugarCrm].[tvf_BuildInvoiceDataset]()
  =============================================
 */
-
-create FUNCTION [SugarCrm].[tvf_BuildInvoiceDataset]()
+create or alter FUNCTION [SugarCrm].[tvf_BuildInvoiceDataset]()
 RETURNS TABLE
 AS
 RETURN
