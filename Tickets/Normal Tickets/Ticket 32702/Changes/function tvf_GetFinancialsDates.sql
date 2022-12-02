@@ -44,8 +44,8 @@ begin
 
 	insert into @Dates
 		select 
-			datediff(month, @startingPoint, @Date) + 1														as [PeriodSeqNo], -- Starting Month starts at one
-			DATEFROMPARTS(datepart(year, @Date), datepart(month,@date), 1)									as [PeriodStartDate], --First day of the month
+			datediff(month, @StartingPoint, @Date) + 1														as [PeriodSeqNo], -- Starting Month starts at one
+			DATEFROMPARTS(datepart(year, @Date), datepart(month,@Date), 1)									as [PeriodStartDate], --First day of the month
 			dateadd(d, -1, dateadd(m, 1, DATEFROMPARTS(datepart(year, @Date), datepart(month,@date), 1)))	as [PeriodEndDate], --Last day of the month
 			datediff(wk,dateadd(d, -1, @StartingPoint), dateadd(d, -1, @Date))								as [WeekSeqNo], --Weeks start on Monday, needed to subtrack 1 from the start and current date
 			dateadd(d, -(datepart(dw, dateadd(d, -1, @Date)) - 1), @Date)									as [WeekStart], -- Weeks start on Monday and must subtract 1 from day of week part to get a modifier of 0-6

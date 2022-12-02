@@ -183,7 +183,7 @@ CREATE TABLE [dbo].[usr_ProfileStatistics](
 	[ActualEndDate] [date] NULL,
 	[TotalQuantity] [decimal](18, 6) NULL,
 	[TotalQtyNoNeg] [decimal](18, 6) NULL,
-	[ScrubQuantity] [decimal](18, 6) NULL,
+	[TotalScrubQuantity] [decimal](18, 6) NULL,
 	[PeriodHits] [decimal](10, 0) NULL,
 	[TotalHits] [decimal](10, 0) NULL,
 	[AvgPerHit] [decimal](18, 6) NULL,
