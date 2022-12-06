@@ -1,4 +1,4 @@
-use [Reports]
+use [SysproCompany100]
 go
 
 /*
