@@ -23,7 +23,7 @@ GO
 
  =============================================
 */
-create function [SugarCrm].[svf_PrimaryQuote](
+create or alter function [SugarCrm].[svf_PrimaryQuote](
 	@Quote varchar(20)
 ) 
 returns varchar(20)
@@ -31,7 +31,7 @@ as
 begin
 	declare @Rtn as varchar(20) = ''
 
-	if charindex('-', @Quote, 1 + charindex('-', @Quote, 1 + charindex('-', @Quote))) > 0
+	if (select len(@Quote) - len(replace(@Quote, '-', ''))) = 3
 		begin
 			select @Rtn =  substring(@Quote, 0, len(@Quote) + (charindex('-', @Quote, 1 + charindex('-', @Quote, 1 + charindex('-', @Quote))) - len(@Quote)))
 		end

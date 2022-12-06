@@ -3,18 +3,27 @@ go
 
 /*
 ==========================================================
+creator		:	Justin Pope 
+contributor	:	Ben Erickson
+create date :	2022 / 12 / 06
+description :	View is used to get dimensions for stock
+				codes
 ==========================================================
 TEST:
-	declare @StockCode as varchar(
-	select 
-		* 
-	from [Reports].[dbo].[vw_StockCode_ProductDimensions]
+declare @StockCode as varchar(100) = (select TOP 1
+										StockCode 
+									  from SysproCompany100.dbo.InvMaster 
+									  order by newid())
+select 
+	* 
+from [Reports].[dbo].[vw_StockCode_ProductDimensions]
+where StockCode = @StockCode
 ==========================================================
 */
 create or alter view [dbo].[vw_StockCode_ProductDimensions]
 as
 
-	Select s
+	Select
 		INV.StockCode, 
 		CartonFinal.Width, 
 		CartonFinal.Depth, 
