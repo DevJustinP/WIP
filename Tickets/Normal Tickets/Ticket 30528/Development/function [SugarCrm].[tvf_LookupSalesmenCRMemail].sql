@@ -19,7 +19,7 @@ GO
 	order by newid()
  =============================================
 */
-create function [SugarCrm].[tvf_LookupSalesmenCRMemail](
+create or alter function [SugarCrm].[tvf_LookupSalesmenCRMemail](
 	@Branch varchar(10),
 	@Salesperson varchar(20)
 )
