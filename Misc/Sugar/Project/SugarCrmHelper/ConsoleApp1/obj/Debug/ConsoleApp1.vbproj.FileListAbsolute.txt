@@ -1,0 +1,14 @@
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\ConsoleApp1.xml
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.AssemblyReference.cache
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.Resources.resources
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.GenerateResource.cache
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.CoreCompileInputs.cache
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.xml
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.CopyComplete
