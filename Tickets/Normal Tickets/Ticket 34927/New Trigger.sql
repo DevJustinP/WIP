@@ -23,7 +23,7 @@ GO
 =============================================================
 Test
 declare @SalesOrder as varchar(20) = ''
-execute [Sysprodb7].[dbo].[usp_UPdate_SorDetail_MWarehouse_RMA_error] @SalesOrder
+execute [Sysprodb7].[dbo].[usp_Update_SorDetail_MWarehouse_RMA_error] @SalesOrder
 =============================================================
 */
 Create or Alter Procedure [dbo].[usp_Update_SorDetail_MWarehouse_RMA_error](
@@ -34,31 +34,15 @@ begin
 	
 	UPDATE SDC
 		SET MWarehouse = SDP.MWarehouse
-	FROM SysproCompany100.dbo.SorDetail SDC
-		INNER JOIN (
-						SELECT 
-							SalesOrder, 
-							SalesOrderLine AS ComponentLine,
-							CASE 
-								WHEN MBomFlag = 'C' THEN
-									(
-										SELECT 
-											MAX(CAST(SalesOrderLine as INT)) 
-										FROM [SysproCompany100].[dbo].[SorDetail] SD2 
-										WHERE SD.SalesOrder = SD2.SalesOrder 
-											AND SD.SalesOrderLine > SD2.SalesOrderLine 
-											AND MBomFlag = 'P' 
-											AND MParentKitType = 'S' )
-								ELSE SalesOrderLine 
-							END as ParentLine
-				FROM [SysproCompany100].[dbo].[SorDetail] SD
-				WHERE SD.LineType = '1' 
-					AND SD.MBomFlag ='C' 
-					AND SD.MWarehouse = ''  
-					AND MParentKitType = 'S') XREF ON XREF.SalesOrder = SDC.SalesOrder 
-												  AND XREF.ComponentLine = SDC.SalesOrderLine
-		INNER JOIN SysproCompany100.dbo.SorDetail SDP ON XREF.SalesOrder = SDP.SalesOrder 
-													 AND XREF.ParentLine = SDP.SalesOrderLine
+	FROM [SysproCompany100].[dbo].[SorDetail] as SDC
+		Cross apply (
+						select top 1
+							P.MWarehouse
+						from [SysproCompany100].[dbo].[SorDetail] as P
+						where P.SalesOrder = SDC.SalesOrder
+							and P.SalesOrderLine < SDC.SalesOrderLine
+							and P.MBomFlag = 'P'
+						order by P.SalesOrderLine desc ) as SDP
 	where SDC.SalesOrder = @SalesOrder;
 end
 go
