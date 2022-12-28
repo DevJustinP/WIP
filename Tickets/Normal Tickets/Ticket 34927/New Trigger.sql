@@ -62,7 +62,7 @@ BEGIN
 
 	declare @SalesOrder as varchar(11) = substring(@Subject, 10, 11)
 
-	if exists(Select 1 from [SysproCompany100].[dbo].[SorMaster])
+	if exists(Select 1 from [SysproCompany100].[dbo].[SorMaster] Where SalesOrder = @SalesOrder)
 		begin
 			execute [dbo].[usp_Update_SorDetail_MWarehouse_RMA_error] @SalesOrder
 		end
