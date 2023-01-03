@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GWC
+</name>
+</assembly>
+<members>
+<member name="T:GWC.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:GWC.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:GWC.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:GWC.Impersonation.Impersonator.#ctor(System.String,System.String,System.String)">
+ <summary>
+ Impersonates a user
+ </summary>
+ <param name="userName"></param>
+ <param name="domainName"></param>
+ <param name="password"></param>
+ <remarks>Created for use in a 'Using' statment. Impersonation starts on creation and ends on dispose which is automatically handled in a 'Using' statement</remarks>
+</member>
+<member name="M:GWC.Mail.Message.#ctor(System.String)">
+ <summary>
+ Used to add messages to the Notification Service's queue for future processing
+ </summary>
+ <param name="conn">The connection string the Message object will use to communicate with SQL</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

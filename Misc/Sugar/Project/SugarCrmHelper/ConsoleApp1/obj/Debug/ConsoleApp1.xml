@@ -22,5 +22,10 @@ ConsoleApp1
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:ConsoleApp1.My.Resources.Resources.ConnectionString">
+<summary>
+  Looks up a localized string similar to Integrated Security=false;Persist Security Info=False;Data Source=Sql08;Initial Catalog=SysproDocument;User Id=SysproDocumentUser;Password=&amp;miss.SLOW.done&amp;;.
+</summary>
+</member>
 </members>
 </doc>

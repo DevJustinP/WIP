@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{03B34F02-0721-43CA-9791-DEB809C93564}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>ConsoleApp1.Module1</StartupObject>
+    <StartupObject>ConsoleApp1.modMain</StartupObject>
     <RootNamespace>ConsoleApp1</RootNamespace>
     <AssemblyName>ConsoleApp1</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GWC">
+      <HintPath>..\..\..\..\..\..\..\AzureDevOps\GWC-Apps\GWC-DLL\GWC\bin\Debug\GWC.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -72,7 +75,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Windows\BaseWindow.vb" />
+    <Compile Include="Windows\MainWindow.vb" />
+    <Compile Include="modDatacontext.vb" />
     <Compile Include="modJSONObjects.vb" />
+    <Compile Include="modMain.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -111,5 +118,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

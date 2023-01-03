@@ -12,3 +12,8 @@ C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp
 C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
 C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
 C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.CopyComplete
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\GWC.dll
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\SYSPROWCFServicesClientLibrary40.dll
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\GWC.pdb
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\bin\Debug\GWC.xml
+C:\GitHub\WIP\Misc\Sugar\Project\SugarCrmHelper\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config
