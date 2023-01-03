@@ -7,13 +7,15 @@ Module Module1
     Dim strXLS_filepath As String = "C:\GitHub\WIP\Tickets\issue\SugarCrm export issue\SalesOrdersMissingSugarCRM.csv"
     Dim strLogLocation As String = "\\talend\c$\TalendLogs\Main_SugarExport\Logs"
 
-    Dim dteStart As DateTime = "2022/12/08 09:30:00"
+    Dim dteStart As DateTime = "2022/12/22 08:00:00"
 
     Const const_xls_SalesOrder_col As String = "SalesOrder"
     Const const_FilePath_col As String = "filepath"
     Const const_CustomQueueID As String = "CustomQueueID"
     Const const_QueueStatus As String = "Queue Status"
     Const const_TimeStamp As String = "Time Stamp"
+    Const const_SugarCrm_Link_col As String = "CRM link"
+    Const const_SugarCrm_Link As String = "https://summerclassics.sugarondemand.com/#upsert_CustomQueue"
     Const const_SalesOrder_fileSearch_input As String = "Orders_createjobs_input"
 
     Dim dtSalesOrders As DataTable
@@ -50,6 +52,7 @@ Module Module1
         dtSalesOrdersReturn.Columns.Add(const_TimeStamp)
         dtSalesOrdersReturn.Columns.Add(const_CustomQueueID)
         dtSalesOrdersReturn.Columns.Add(const_QueueStatus)
+        dtSalesOrdersReturn.Columns.Add(const_SugarCrm_Link_col)
 
         Dim oCSVFile As New TextFieldParser(strXLS_filepath)
         oCSVFile.Delimiters = {","}
@@ -108,6 +111,9 @@ Module Module1
                             drEntry(const_TimeStamp) = dteFile.ToShortDateString + " " + dteFile.ToShortTimeString
                             drEntry(const_CustomQueueID) = oJob.context.fields.CustomQueueID
                             drEntry(const_QueueStatus) = oJob.context.fields.QueueStatus
+                            If Not String.IsNullOrEmpty(oJob.context.fields.CustomQueueID) Then
+                                drEntry(const_SugarCrm_Link_col) = const_SugarCrm_Link + "\" + oJob.context.fields.CustomQueueID
+                            End If
                             dtSalesOrdersReturn.Rows.Add(drEntry)
                         End If
                     Next

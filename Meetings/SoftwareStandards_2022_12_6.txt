@@ -1,0 +1,11 @@
+Cather is going to give me a ticket for standardize FTP process
+
+DevOps development
+    Process:
+        1) Dev
+        2) Test
+        3) Prod
+        4) Master
+
+
+    
