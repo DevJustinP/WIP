@@ -1,0 +1,3167 @@
+WEBVTT
+
+3690ad8a-932b-46f2-86ea-7a259ae75edf-0
+00:00:02.340 --> 00:00:03.550
+Hello everyone.
+
+3b8fef9e-e14c-4cc2-ad09-3c3152951b3a-0
+00:00:05.180 --> 00:00:05.850
+Hi.
+
+fda0ef40-0010-4c09-92c1-ba01401fd1b9-0
+00:00:13.740 --> 00:00:16.210
+Think we are missing?
+
+61a7bb99-d2ca-458a-8713-8555baa36f99-0
+00:00:17.520 --> 00:00:19.820
+Maybe two or three people. I'll
+give him just a minute.
+
+cb257c6d-39a0-462a-aaee-3f9fdb2da328-0
+00:00:21.060 --> 00:00:25.290
+It is a Friday after a short
+week.
+
+54c966a3-becd-4518-883c-c13f147dad42-0
+00:00:26.680 --> 00:00:27.200
+So.
+
+dd991c06-5a7a-40df-8ea3-7178130d2a13-0
+00:00:27.900 --> 00:00:30.340
+It may take them just a moment
+to get on.
+
+d15c1458-0096-41a3-be49-1470326fde92-0
+00:00:50.230 --> 00:00:50.380
+
+
+a21c9e66-a8c2-4450-b407-9711f8b58013-0
+00:00:56.020 --> 00:01:10.380
+
+
+285c55e5-5ea1-43b2-a573-08086771d934-0
+00:01:23.940 --> 00:01:28.350
+Alright, it is 2 after. We'll go
+ahead and get started and others
+
+285c55e5-5ea1-43b2-a573-08086771d934-1
+00:01:28.350 --> 00:01:32.694
+can can join in as we get going.
+So I believe I may have been on
+
+285c55e5-5ea1-43b2-a573-08086771d934-2
+00:01:32.694 --> 00:01:36.771
+meetings with the handful of
+you, but not everybody. My name
+
+285c55e5-5ea1-43b2-a573-08086771d934-3
+00:01:36.771 --> 00:01:39.110
+is Stephanie Hawkins, I am new
+to.
+
+c1aa382b-f968-415e-8fe4-4f1988ceb858-0
+00:01:40.100 --> 00:01:44.426
+I was I get summer classes and
+then I want to say, yeah, you at
+
+c1aa382b-f968-415e-8fe4-4f1988ceb858-1
+00:01:44.426 --> 00:01:48.010
+the same time. I am new. I am a
+BA. I work with Ben.
+
+1b80477d-9ea8-4bab-a9c2-c9f26268ecca-0
+00:01:48.780 --> 00:01:49.250
+And.
+
+1e27761b-04ec-4479-ae1f-bf08bd9fa98e-0
+00:01:50.240 --> 00:01:54.470
+I essentially am here to now
+start gathering requirements.
+
+205b7ab1-b5f1-4cb0-83ee-c76bc7c77748-0
+00:01:55.070 --> 00:02:00.526
+4 enhancements, new products,
+projects, etcetera that need to
+
+205b7ab1-b5f1-4cb0-83ee-c76bc7c77748-1
+00:02:00.526 --> 00:02:03.870
+take place within Southern,
+Southern.
+
+59d5b445-4203-4329-8a1e-04df24c5e7d2-0
+00:02:04.450 --> 00:02:06.190
+Summer classics and Gabby.
+
+789075ae-78e7-45fb-9c8a-04c066237556-0
+00:02:06.830 --> 00:02:10.935
+So essentially what will happen
+is this meeting is really
+
+789075ae-78e7-45fb-9c8a-04c066237556-1
+00:02:10.935 --> 00:02:15.181
+introductory. It's for me to
+kind of get background on this
+
+789075ae-78e7-45fb-9c8a-04c066237556-2
+00:02:15.181 --> 00:02:19.853
+particular rock. Essentially all
+that I've been given is what was
+
+789075ae-78e7-45fb-9c8a-04c066237556-3
+00:02:19.853 --> 00:02:23.958
+included in the meeting meeting
+notice. So kind of gather
+
+789075ae-78e7-45fb-9c8a-04c066237556-4
+00:02:23.958 --> 00:02:28.417
+everybody here so I can get a
+general scope, a general idea of
+
+789075ae-78e7-45fb-9c8a-04c066237556-5
+00:02:28.417 --> 00:02:32.380
+of the current issues and
+current desired solutions and
+
+789075ae-78e7-45fb-9c8a-04c066237556-6
+00:02:32.380 --> 00:02:36.839
+then I go back and I write it up
+into a requirements document.
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-0
+00:02:36.970 --> 00:02:40.884
+You guys review it and kind of
+tell me if I'm on the right
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-1
+00:02:40.884 --> 00:02:44.731
+track, anything that I'm
+missing, anything that's come up
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-2
+00:02:44.731 --> 00:02:49.043
+that needs to be added and then
+once we can all agree, we'll get
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-3
+00:02:49.043 --> 00:02:53.090
+approval and then it will get
+passed over to IT development,
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-4
+00:02:53.090 --> 00:02:57.269
+dondy, kather, etcetera for to
+be scheduled within their world
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-5
+00:02:57.269 --> 00:03:01.183
+to actually have it developed,
+coded and put out there for
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-6
+00:03:01.183 --> 00:03:05.363
+testing and implementation. So
+that's kind of what I do on a a
+
+3d637c3b-1bbf-4cf9-b9ea-1b08e10b04ee-7
+00:03:05.363 --> 00:03:06.690
+quick little bundle.
+
+dfa581b8-1f8a-4329-ae1f-7584131af803-0
+00:03:07.900 --> 00:03:10.816
+I did see Carlos that her
+meeting was running over, so she
+
+dfa581b8-1f8a-4329-ae1f-7584131af803-1
+00:03:10.816 --> 00:03:13.930
+will be over just shortly, but
+we'll go ahead and get started.
+
+6913e2d6-1118-4690-805e-0bf1c35f73c0-0
+00:03:15.860 --> 00:03:19.509
+For me, the only thing that I
+have is that being basically
+
+6913e2d6-1118-4690-805e-0bf1c35f73c0-1
+00:03:19.509 --> 00:03:22.973
+said that we should be
+automating the invoicing process
+
+6913e2d6-1118-4690-805e-0bf1c35f73c0-2
+00:03:22.973 --> 00:03:23.839
+for wholesale.
+
+cb592883-1ef1-4c2c-a445-810c149d453f-0
+00:03:24.520 --> 00:03:28.510
+Um, he wanted to get an idea of
+what happens when applying
+
+cb592883-1ef1-4c2c-a445-810c149d453f-1
+00:03:28.510 --> 00:03:32.906
+deposits for different types of
+invoices, for instance, prepaid,
+
+cb592883-1ef1-4c2c-a445-810c149d453f-2
+00:03:32.906 --> 00:03:36.761
+as well as ensuring that the
+branding and formatting are
+
+cb592883-1ef1-4c2c-a445-810c149d453f-3
+00:03:36.761 --> 00:03:40.481
+correct, wanted to streamline
+the number of emails and
+
+cb592883-1ef1-4c2c-a445-810c149d453f-4
+00:03:40.481 --> 00:03:44.472
+invoices that are sent and
+received and make sure that the
+
+cb592883-1ef1-4c2c-a445-810c149d453f-5
+00:03:44.472 --> 00:03:48.259
+brand identity and inclusion is
+up to date and correct.
+
+4f9e52b7-9f1f-4713-b510-bdb8600387b5-0
+00:03:48.980 --> 00:03:54.098
+So I must apologize I don't know
+exactly who is in each one of
+
+4f9e52b7-9f1f-4713-b510-bdb8600387b5-1
+00:03:54.098 --> 00:03:58.322
+these two areas, but I would
+like to start with the
+
+4f9e52b7-9f1f-4713-b510-bdb8600387b5-2
+00:03:58.322 --> 00:04:03.603
+automation of invoicing process
+for wholesale account of want to
+
+4f9e52b7-9f1f-4713-b510-bdb8600387b5-3
+00:04:03.603 --> 00:04:08.559
+get a background on what is
+currently done in a nutshell and
+
+4f9e52b7-9f1f-4713-b510-bdb8600387b5-4
+00:04:08.559 --> 00:04:11.890
+then kind of what is desired to
+be done.
+
+b6ce4133-c94b-4d98-80d9-2f4dcf37e899-0
+00:04:14.720 --> 00:04:17.980
+Well, I do the invoicing and
+Trish.
+
+17465de6-c717-4a4e-89ce-84a0cbeed381-0
+00:04:19.490 --> 00:04:20.810
+Backs me up.
+
+fbdb852d-755f-4d94-8f71-3085c3a57c93-0
+00:04:22.090 --> 00:04:23.030
+And.
+
+14ca5b64-496f-4b42-853f-35296c98e91c-0
+00:04:25.390 --> 00:04:27.170
+What happens he is.
+
+6d5f4bed-66e2-4e51-93f7-e6719658a115-0
+00:04:27.900 --> 00:04:30.490
+The, the. The.
+
+43d9156f-719c-48f0-823d-90f2ec430f04-0
+00:04:31.520 --> 00:04:34.350
+All the orders are in the
+dispatch notes.
+
+ba50cad9-50ce-4883-b0d7-82fa6e2afbfc-0
+00:04:35.120 --> 00:04:38.430
+And I invoice from dispatch
+notes.
+
+ac08f79c-39be-4d2f-9308-7f51d472bc83-0
+00:04:40.380 --> 00:04:43.210
+I just go in and I click on it
+and.
+
+7b4692d4-b85d-421b-9f98-15c3cab80204-0
+00:04:44.040 --> 00:04:47.340
+If there's money on the order, I
+take the payment.
+
+6f26e593-b812-4909-9ce6-fe05f1663122-0
+00:04:48.060 --> 00:04:50.310
+There's not you just invoice
+that I.
+
+319ac165-df1f-4a58-9cf0-8fd373f1710e-0
+00:04:53.680 --> 00:04:54.990
+OK. And so.
+
+7bca0ac1-7f44-4f34-ab8a-303b3c61bb35-0
+00:04:55.690 --> 00:04:56.730
+Go ahead. Go ahead.
+
+934346dd-bc67-4153-b4b1-7596d93a806c-0
+00:04:58.040 --> 00:04:59.910
+That that's I mean.
+
+130531c3-1976-44a1-b336-da3bfe2ec839-0
+00:05:01.180 --> 00:05:02.470
+There's different.
+
+0100b91e-99fa-4e7b-a884-19a870823c25-0
+00:05:04.840 --> 00:05:09.577
+Like I get a lot of marketing
+invoices that I just invoice.
+
+0100b91e-99fa-4e7b-a884-19a870823c25-1
+00:05:09.577 --> 00:05:14.789
+They're not from dispatch notes.
+I just invoice those what I call
+
+0100b91e-99fa-4e7b-a884-19a870823c25-2
+00:05:14.789 --> 00:05:18.579
+the old way before we went to
+this patch notes.
+
+0c4ecadb-487c-4c38-af6f-137fe9d1b619-0
+00:05:19.250 --> 00:05:23.450
+What do you mean by you get a
+lot of marketing invoices? I'm
+
+0c4ecadb-487c-4c38-af6f-137fe9d1b619-1
+00:05:23.450 --> 00:05:26.550
+on the marketing team by the
+way. Ohh goyen.
+
+2cbd7547-17e5-4ee0-a8ef-20a59fcea830-0
+00:05:27.880 --> 00:05:28.710
+Going in.
+
+221b2d74-4e3d-480f-aa32-b597c5f38d9c-0
+00:05:29.720 --> 00:05:33.576
+Every time she ships out, I get
+an invoice for it. Most of it's
+
+221b2d74-4e3d-480f-aa32-b597c5f38d9c-1
+00:05:33.576 --> 00:05:36.830
+no charge, but every one of them
+have to be invoiced.
+
+46c88825-5769-4dc1-aa43-aeb306192422-0
+00:05:37.750 --> 00:05:41.340
+And those things like marketing
+swatches and memos, yes.
+
+e18318cc-59ed-4bb3-b03f-ea1f42501880-0
+00:05:42.610 --> 00:05:46.186
+All right. And if we could
+somehow get those put into
+
+e18318cc-59ed-4bb3-b03f-ea1f42501880-1
+00:05:46.186 --> 00:05:50.227
+dispatch new nutrish, we can't
+hear you at all. I don't know
+
+e18318cc-59ed-4bb3-b03f-ea1f42501880-2
+00:05:50.227 --> 00:05:51.420
+what's wrong, but.
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-0
+00:05:52.990 --> 00:05:57.155
+We couldn't hear you in the
+level 10 yesterday. Can you hear
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-1
+00:05:57.155 --> 00:06:01.456
+me now? Yeah, OK. I thought I
+switched it off. Sometimes these
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-2
+00:06:01.456 --> 00:06:05.690
+work better for me. So if we
+could get those marketing orders
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-3
+00:06:05.690 --> 00:06:09.581
+like that put into dispatch
+notes, I think it'd be a lot
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-4
+00:06:09.581 --> 00:06:14.088
+easier because that's a lot more
+manual for Miss Ellen to do that
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-5
+00:06:14.088 --> 00:06:18.185
+and and there's a lot of them
+every day. Yeah. Can we level
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-6
+00:06:18.185 --> 00:06:22.282
+set on what you mean by so,
+meaning if a wholesale customer
+
+1bdbe853-a338-4fd0-b5c1-95b410bc5395-7
+00:06:22.282 --> 00:06:22.759
+places?
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-0
+00:06:22.830 --> 00:06:26.207
+In order for Swatch samples or
+anything out of marketing
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-1
+00:06:26.207 --> 00:06:29.407
+fulfillment, it's an invoice
+that we create for those
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-2
+00:06:29.407 --> 00:06:32.844
+materials there. I realize
+they're often 0 charge, but we
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-3
+00:06:32.844 --> 00:06:36.518
+still have to create an invoice
+because that product is going
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-4
+00:06:36.518 --> 00:06:40.251
+out of her warehouse and going
+to a customer, correct. Is that
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-5
+00:06:40.251 --> 00:06:43.570
+right? Yeah. And it's just
+invoice from the peak ticket
+
+e34166ab-1ec0-443d-b4ac-4277f0906083-6
+00:06:43.570 --> 00:06:45.170
+that's I get a peak ticket.
+
+2b0dd4c2-dfe7-4a63-8b76-8d0b2b6aaeb2-0
+00:06:46.090 --> 00:06:49.553
+And our invoice from that, yeah,
+I think part of the problem is
+
+2b0dd4c2-dfe7-4a63-8b76-8d0b2b6aaeb2-1
+00:06:49.553 --> 00:06:52.638
+hers are difference because
+she's not on the same syspro
+
+2b0dd4c2-dfe7-4a63-8b76-8d0b2b6aaeb2-2
+00:06:52.638 --> 00:06:55.993
+system as everybody. So there's
+a lot of I've elevated it now
+
+2b0dd4c2-dfe7-4a63-8b76-8d0b2b6aaeb2-3
+00:06:55.993 --> 00:06:59.241
+and it's kind of moved to the
+top of the list. She's not in
+
+2b0dd4c2-dfe7-4a63-8b76-8d0b2b6aaeb2-4
+00:06:59.241 --> 00:07:02.650
+the same warehouse and says bro
+as everybody and it's a really
+
+2b0dd4c2-dfe7-4a63-8b76-8d0b2b6aaeb2-5
+00:07:02.650 --> 00:07:03.300
+big problem.
+
+238356cf-8ccd-473c-8d6b-115ae6d1efe0-0
+00:07:05.760 --> 00:07:10.380
+And she is that Gwen or Ellen?
+Gwen. Gwen. OK.
+
+83118a23-6d66-4925-b924-e5b0b0054d83-0
+00:07:15.430 --> 00:07:19.260
+So when she was when is on
+Stacey's team, for what it's
+
+83118a23-6d66-4925-b924-e5b0b0054d83-1
+00:07:19.260 --> 00:07:23.295
+worth. Yeah. OK, thank you. So
+then if she was in the same
+
+83118a23-6d66-4925-b924-e5b0b0054d83-2
+00:07:23.295 --> 00:07:27.741
+warehouse, would that eliminate
+the issue or would we still need
+
+83118a23-6d66-4925-b924-e5b0b0054d83-3
+00:07:27.741 --> 00:07:31.640
+to have it placed in dispatch
+notes for Ellen and Trish?
+
+5ee9d357-d229-482d-a693-353ec2ef9789-0
+00:07:33.750 --> 00:07:37.551
+I am confused by that, that
+she's not in the same warehouse.
+
+5ee9d357-d229-482d-a693-353ec2ef9789-1
+00:07:37.551 --> 00:07:41.664
+What does that mean exactly? I I
+don't know if this is related. I
+
+5ee9d357-d229-482d-a693-353ec2ef9789-2
+00:07:41.664 --> 00:07:44.593
+just know that she's on
+different systems than
+
+5ee9d357-d229-482d-a693-353ec2ef9789-3
+00:07:44.593 --> 00:07:48.145
+everybody. Like a marketing
+warehouse. Yeah, it's it's a
+
+5ee9d357-d229-482d-a693-353ec2ef9789-4
+00:07:48.145 --> 00:07:51.448
+marketing warehouse that's
+different from what? Like
+
+5ee9d357-d229-482d-a693-353ec2ef9789-5
+00:07:51.448 --> 00:07:54.190
+operations is in like her
+inventory is not.
+
+64c7721b-25ac-4f9c-9f91-64f0f56ca814-0
+00:07:54.930 --> 00:07:58.225
+Trackable, like everybody else,
+is connected like everything
+
+64c7721b-25ac-4f9c-9f91-64f0f56ca814-1
+00:07:58.225 --> 00:08:01.629
+else. So a lot of what she does
+is manual. Everything she does
+
+64c7721b-25ac-4f9c-9f91-64f0f56ca814-2
+00:08:01.629 --> 00:08:02.170
+is manual.
+
+c180679c-2be6-4580-a96b-420066bbb360-0
+00:08:03.090 --> 00:08:08.219
+OK, so I will say that I am
+working with her, actually just
+
+c180679c-2be6-4580-a96b-420066bbb360-1
+00:08:08.219 --> 00:08:13.092
+got off a call with her to try
+to do some automation for
+
+c180679c-2be6-4580-a96b-420066bbb360-2
+00:08:13.092 --> 00:08:18.308
+marketing Swatch fulfillment to
+try to make it match more of
+
+c180679c-2be6-4580-a96b-420066bbb360-3
+00:08:18.308 --> 00:08:20.360
+what is done for distro.
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-0
+00:08:21.680 --> 00:08:25.887
+But where uh, we have, she was
+telling me a lot of this. She
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-1
+00:08:25.887 --> 00:08:30.302
+takes paper down to you, Ellen,
+a stats of paper and that you I
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-2
+00:08:30.302 --> 00:08:34.303
+think that's what you're
+describing now. So we're looking
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-3
+00:08:34.303 --> 00:08:38.717
+to figure out how to eliminate
+that scanning of barcodes on the
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-4
+00:08:38.717 --> 00:08:42.718
+pit tickets, Umm, and the
+automatic creation of labels in
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-5
+00:08:42.718 --> 00:08:46.857
+two ship, would any of that
+affect what we're talking about
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-6
+00:08:46.857 --> 00:08:50.651
+here? Would that be helpful or
+not helpful? Completely
+
+0b0df0d4-ec13-4539-93c5-937c0dd37af8-7
+00:08:50.651 --> 00:08:52.100
+different wheelhouse.
+
+bda39393-eb98-49f8-af9f-cb292414aabd-0
+00:08:55.590 --> 00:09:00.668
+Ohh, not certain. Not certain. I
+don't know. Yeah. I mean, I
+
+bda39393-eb98-49f8-af9f-cb292414aabd-1
+00:09:00.668 --> 00:09:05.830
+would think if it was, if it was
+in dispatch notes, it would.
+
+379d710e-c409-40c9-9a76-ee7362d57955-0
+00:09:07.360 --> 00:09:09.340
+From every day, you know, just.
+
+fdd6b24a-d817-4c42-9fb0-7e64dfbe458a-0
+00:09:10.550 --> 00:09:14.221
+As they're entered like a
+regular order instead of her
+
+fdd6b24a-d817-4c42-9fb0-7e64dfbe458a-1
+00:09:14.221 --> 00:09:18.226
+brain stacks of paperwork and
+then and then she has to like
+
+fdd6b24a-d817-4c42-9fb0-7e64dfbe458a-2
+00:09:18.226 --> 00:09:21.230
+manually type in the tracking
+and stuff. So.
+
+6ed17f06-3d2c-4ad9-9097-7bc94fc18cd9-0
+00:09:22.700 --> 00:09:24.760
+For correct, yes.
+
+aac9ef7d-afb7-4194-b6c3-5aab58aecdef-0
+00:09:28.260 --> 00:09:31.957
+OK. And so it is. So then the
+current issue is that because
+
+aac9ef7d-afb7-4194-b6c3-5aab58aecdef-1
+00:09:31.957 --> 00:09:36.024
+her invoices are not in dispatch
+notes, it would creates a lot of
+
+aac9ef7d-afb7-4194-b6c3-5aab58aecdef-2
+00:09:36.024 --> 00:09:39.290
+manual work for Ellen and
+Patricia. Is that correct?
+
+7754dc72-af57-45c7-99d7-ec3c17342343-0
+00:09:40.410 --> 00:09:44.771
+Which takes a lot of a lot of
+extra time, slows productivity,
+
+7754dc72-af57-45c7-99d7-ec3c17342343-1
+00:09:44.771 --> 00:09:48.360
+doesn't affect anyone else
+besides the two of you.
+
+5cf59bf1-4279-481d-9460-c176ee5c50af-0
+00:09:50.200 --> 00:09:54.236
+I guess mostly me Trish don't
+really do the marketing
+
+5cf59bf1-4279-481d-9460-c176ee5c50af-1
+00:09:54.236 --> 00:09:59.020
+invoices. I only I only work on
+those. If Miss Allen is out for
+
+5cf59bf1-4279-481d-9460-c176ee5c50af-2
+00:09:59.020 --> 00:10:02.160
+like a week on vacation or
+something, OK.
+
+2c2822e7-b219-4c21-9eb1-bd6ade1bbaf2-0
+00:10:02.950 --> 00:10:06.679
+All right. So if we can get
+those invoices fed into dispatch
+
+2c2822e7-b219-4c21-9eb1-bd6ade1bbaf2-1
+00:10:06.679 --> 00:10:09.430
+notes and that eliminate the
+need for paper.
+
+a7bfae0c-ce1d-4e72-9f3d-85ced77497fc-0
+00:10:10.250 --> 00:10:14.257
+For her physically bringing for
+them, yes. And we understand
+
+a7bfae0c-ce1d-4e72-9f3d-85ced77497fc-1
+00:10:14.257 --> 00:10:18.528
+that a lot of the issues because
+Ellen currently has a marketing
+
+a7bfae0c-ce1d-4e72-9f3d-85ced77497fc-2
+00:10:18.528 --> 00:10:22.273
+warehouse as opposed to what
+everybody else is doing. So
+
+a7bfae0c-ce1d-4e72-9f3d-85ced77497fc-3
+00:10:22.273 --> 00:10:26.281
+that's creating some issues in
+the on the back end before it
+
+a7bfae0c-ce1d-4e72-9f3d-85ced77497fc-4
+00:10:26.281 --> 00:10:29.830
+ever gets to to Ellen for what
+she needs to do, yeah.
+
+e5903950-40f5-4b8d-81b8-0d36736d7649-0
+00:10:31.350 --> 00:10:35.151
+So that is that essentially is
+the solution there. Is there
+
+e5903950-40f5-4b8d-81b8-0d36736d7649-1
+00:10:35.151 --> 00:10:38.953
+anything else that needs to be
+done in terms of getting the
+
+e5903950-40f5-4b8d-81b8-0d36736d7649-2
+00:10:38.953 --> 00:10:43.071
+invoices into dispatch notes? Is
+it just simply having them into
+
+e5903950-40f5-4b8d-81b8-0d36736d7649-3
+00:10:43.071 --> 00:10:46.809
+dispatch notes as you receive
+all the other invoices? Yes.
+
+a593d6ea-17a8-4f69-88b8-abbc98cf9083-0
+00:10:48.100 --> 00:10:48.410
+OK.
+
+dca03e11-3e93-4be4-bf52-6be55186150c-0
+00:10:50.340 --> 00:10:52.960
+No additional changes would need
+to be done for those.
+
+5b48d566-2875-471e-9d31-8c3fa6027d61-0
+00:10:53.930 --> 00:10:58.159
+Well, I mean whatever the
+process is for entering the
+
+5b48d566-2875-471e-9d31-8c3fa6027d61-1
+00:10:58.159 --> 00:11:03.094
+shipping information, you know
+like the FedEx number, tracking
+
+5b48d566-2875-471e-9d31-8c3fa6027d61-2
+00:11:03.094 --> 00:11:07.871
+number and that would have to
+happen also, but I assume that
+
+5b48d566-2875-471e-9d31-8c3fa6027d61-3
+00:11:07.871 --> 00:11:10.300
+goes along with the process of.
+
+81dca4fc-5161-42f7-9f1d-24d2838c9517-0
+00:11:12.210 --> 00:11:14.510
+You know, getting them to
+dispatch notes.
+
+efaa3e84-3ad7-4cd5-a2a7-0fccf5a1fae6-0
+00:11:20.010 --> 00:11:22.650
+Is that information that you
+would need in dispatch notes?
+
+9bb0e1f7-c3e7-443a-a036-70d0e0386673-0
+00:11:24.410 --> 00:11:29.397
+Like yes, yes, but it's on all
+the other invoices, so I would
+
+9bb0e1f7-c3e7-443a-a036-70d0e0386673-1
+00:11:29.397 --> 00:11:33.580
+think that it would this would
+be the same process.
+
+1e3b3343-888a-43e6-85b9-e4be9635cab8-0
+00:11:37.590 --> 00:11:42.532
+OK. So now how does that go
+along with bins? I'm request to
+
+1e3b3343-888a-43e6-85b9-e4be9635cab8-1
+00:11:42.532 --> 00:11:47.969
+make sure that we discuss all of
+the, like the types of invoices,
+
+1e3b3343-888a-43e6-85b9-e4be9635cab8-2
+00:11:47.969 --> 00:11:53.076
+what happens if it's prepaid,
+Umm, if there's a deposit, how,
+
+1e3b3343-888a-43e6-85b9-e4be9635cab8-3
+00:11:53.076 --> 00:11:55.630
+how does all of that correlate?
+
+21836811-1267-43d8-a31c-abe31b614974-0
+00:11:57.010 --> 00:11:59.530
+So where the automation we have
+a lot of different.
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-0
+00:12:00.680 --> 00:12:05.078
+AR terms, OK. So if there's no
+money on the order, say if it is
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-1
+00:12:05.078 --> 00:12:09.545
+a factored customer who factors
+with one of our factor banks and
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-2
+00:12:09.545 --> 00:12:14.013
+they have net 30 times, then you
+just invoice it. You just click
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-3
+00:12:14.013 --> 00:12:18.274
+invoice once you're in there and
+and print it. That's all you
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-4
+00:12:18.274 --> 00:12:22.672
+have to do. Or if it's a A house
+account with net 30 terms, you
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-5
+00:12:22.672 --> 00:12:26.864
+just print it. You don't have to
+apply any money, there's no
+
+c2cb633b-78f5-4c5d-9876-63a70d3b2382-6
+00:12:26.864 --> 00:12:30.370
+money there. But then with all
+of our other terms.
+
+bfc854bc-5818-4628-84cb-4f7e66fb1dea-0
+00:12:30.480 --> 00:12:34.407
+If it's marked paid, um, and if
+there's money on there, then you
+
+bfc854bc-5818-4628-84cb-4f7e66fb1dea-1
+00:12:34.407 --> 00:12:37.912
+have to actually click take
+payment and you have to apply
+
+bfc854bc-5818-4628-84cb-4f7e66fb1dea-2
+00:12:37.912 --> 00:12:41.840
+the money. And I know one of his
+questions he was saying is, you
+
+bfc854bc-5818-4628-84cb-4f7e66fb1dea-3
+00:12:41.840 --> 00:12:43.110
+know what happens if?
+
+937fff4c-63ce-4021-8fb9-d5034e9ea878-0
+00:12:44.410 --> 00:12:47.994
+If it's a little over or a
+little under. So if if we're
+
+937fff4c-63ce-4021-8fb9-d5034e9ea878-1
+00:12:47.994 --> 00:12:51.963
+split shipping their order and
+it's a $10,000 order and we're
+
+937fff4c-63ce-4021-8fb9-d5034e9ea878-2
+00:12:51.963 --> 00:12:55.804
+only shipping 5000, but that's
+just for say they've paid in
+
+937fff4c-63ce-4021-8fb9-d5034e9ea878-3
+00:12:55.804 --> 00:12:59.836
+full 10,000. We're only going to
+invoice the amount that we're
+
+937fff4c-63ce-4021-8fb9-d5034e9ea878-4
+00:12:59.836 --> 00:13:03.869
+shipping which is the 5000 and
+the remaining 5000 stays on the
+
+937fff4c-63ce-4021-8fb9-d5034e9ea878-5
+00:13:03.869 --> 00:13:06.430
+order as a deposit until we ship
+again.
+
+2b8625a0-4e40-496f-89a1-76b51a5d2aaa-0
+00:13:10.100 --> 00:13:12.150
+And explain to me what is a
+factor.
+
+bb44a25c-3981-4046-9b43-c4e5945d11cb-0
+00:13:13.000 --> 00:13:17.021
+It's, it's to me I just think of
+it as like a a financial
+
+bb44a25c-3981-4046-9b43-c4e5945d11cb-1
+00:13:17.021 --> 00:13:21.181
+institution. It's it's it's a
+bank they and they handle the
+
+bb44a25c-3981-4046-9b43-c4e5945d11cb-2
+00:13:21.181 --> 00:13:25.550
+account and like if the customer
+is slow to pay or doesn't pay
+
+bb44a25c-3981-4046-9b43-c4e5945d11cb-3
+00:13:25.550 --> 00:13:29.294
+then they they do the
+collections and stuff. It's not
+
+bb44a25c-3981-4046-9b43-c4e5945d11cb-4
+00:13:29.294 --> 00:13:31.859
+it's not our liability it's on
+them.
+
+0be3afde-6a66-45ed-ab50-3d6e7375351c-0
+00:13:32.800 --> 00:13:33.150
+Like.
+
+da513e35-9fdd-415c-9d9e-46ae5be685fd-0
+00:13:34.600 --> 00:13:36.650
+I'm sure we paid them for the
+customer.
+
+725d4dd4-ac1f-4687-a980-d90b2debdc7e-0
+00:13:38.140 --> 00:13:41.864
+It's Carla. Sorry I'm really
+late on this meeting, but it's a
+
+725d4dd4-ac1f-4687-a980-d90b2debdc7e-1
+00:13:41.864 --> 00:13:45.227
+credit line for the customer.
+It's it's we have CIT and
+
+725d4dd4-ac1f-4687-a980-d90b2debdc7e-2
+00:13:45.227 --> 00:13:47.090
+Rosenthal or the two wholesale.
+
+ae7791b5-0b3a-4c3e-be10-6e8caa078f3c-0
+00:13:48.850 --> 00:13:52.349
+Factor banks that we use factor
+banks just what they're called,
+
+ae7791b5-0b3a-4c3e-be10-6e8caa078f3c-1
+00:13:52.349 --> 00:13:55.411
+but anyways where we have
+agreement they usually extend
+
+ae7791b5-0b3a-4c3e-be10-6e8caa078f3c-2
+00:13:55.411 --> 00:13:58.910
+the net 30 terms to customer for
+them to pay later versus a pre
+
+ae7791b5-0b3a-4c3e-be10-6e8caa078f3c-3
+00:13:58.910 --> 00:14:00.769
+pay situation on other
+customers.
+
+00d846aa-8fec-42a1-b01e-039920668158-0
+00:14:01.690 --> 00:14:05.180
+That's the two, you either get
+the terms or the factor banks
+
+00d846aa-8fec-42a1-b01e-039920668158-1
+00:14:05.180 --> 00:14:08.556
+where you've got your prepaid
+customers, those two payment
+
+00d846aa-8fec-42a1-b01e-039920668158-2
+00:14:08.556 --> 00:14:08.900
+types.
+
+6478f64d-577b-4c06-b921-552abc5c3bd4-0
+00:14:09.830 --> 00:14:10.240
+OK.
+
+dd06208b-039b-44d5-a10a-22e860bfedc5-0
+00:14:13.980 --> 00:14:16.760
+OK. So then in terms of.
+
+caa525ac-544c-4219-ac0a-349bd1891ee9-0
+00:14:17.930 --> 00:14:22.216
+The automation from from that
+side, is there anything else
+
+caa525ac-544c-4219-ac0a-349bd1891ee9-1
+00:14:22.216 --> 00:14:23.670
+that we are missing?
+
+3d8bb60b-80aa-4280-928e-63509e34ac24-0
+00:14:24.490 --> 00:14:26.630
+Because it seemed as though.
+
+a64dd7a3-2ad5-418d-b2ae-d64943a6172c-0
+00:14:28.190 --> 00:14:32.482
+He was really looking for it
+seemed like it would be much
+
+a64dd7a3-2ad5-418d-b2ae-d64943a6172c-1
+00:14:32.482 --> 00:14:36.552
+more than just adding the
+automation into the dispatch
+
+a64dd7a3-2ad5-418d-b2ae-d64943a6172c-2
+00:14:36.552 --> 00:14:40.770
+notes. Does that take care of
+deposit out everything for
+
+a64dd7a3-2ad5-418d-b2ae-d64943a6172c-3
+00:14:40.770 --> 00:14:42.250
+deposit application?
+
+37817643-4001-4980-8619-1fd77e37fdf4-0
+00:14:44.210 --> 00:14:45.590
+And invoice formatting.
+
+bc9bad5a-4436-4b4e-ab18-b81d774e3465-0
+00:14:48.360 --> 00:14:53.222
+Well, by deposit application you
+remember, I mean do you mean
+
+bc9bad5a-4436-4b4e-ab18-b81d774e3465-1
+00:14:53.222 --> 00:14:58.084
+when we actually received the
+money, how that process is done
+
+bc9bad5a-4436-4b4e-ab18-b81d774e3465-2
+00:14:58.084 --> 00:15:03.025
+I am assuming so unfortunately
+he didn't elaborate for me, but
+
+bc9bad5a-4436-4b4e-ab18-b81d774e3465-3
+00:15:03.025 --> 00:15:08.045
+I can definitely ask and ensure.
+I was just gonna say it's just
+
+bc9bad5a-4436-4b4e-ab18-b81d774e3465-4
+00:15:08.045 --> 00:15:10.790
+we received checks we received
+we.
+
+6872c5e0-551d-49e4-8615-107840d04b18-0
+00:15:11.490 --> 00:15:13.170
+A lot of credit cards.
+
+c76b0486-a8e1-4785-9bcd-09ce29d8a983-0
+00:15:14.470 --> 00:15:15.580
+And.
+
+afca3d26-d256-4987-9898-0f75334af207-0
+00:15:16.270 --> 00:15:20.323
+You know their the payments are
+entered, however we receive
+
+afca3d26-d256-4987-9898-0f75334af207-1
+00:15:20.323 --> 00:15:24.377
+them. You know, if we get a a
+credit card payment, then you
+
+afca3d26-d256-4987-9898-0f75334af207-2
+00:15:24.377 --> 00:15:27.619
+know that's centered on the
+order we enter the.
+
+5b43cf29-abac-4823-b36f-712a9567bba4-0
+00:15:28.970 --> 00:15:33.164
+The payments on the order. If I
+get a check then I enter that
+
+5b43cf29-abac-4823-b36f-712a9567bba4-1
+00:15:33.164 --> 00:15:34.450
+check on the order.
+
+2c11146b-0b03-45a8-bd3c-986da6a958c0-0
+00:15:36.050 --> 00:15:38.990
+And then it stays on that order
+until.
+
+08705f0e-9dbc-4dc7-983e-9992a94b71b4-0
+00:15:39.810 --> 00:15:42.440
+Ohh we ship, we ship it.
+
+3a34bcfb-7ed0-4959-ab9c-065796ea7773-0
+00:15:43.500 --> 00:15:47.229
+Yeah, it's entered as a deposit
+and it doesn't actually get
+
+3a34bcfb-7ed0-4959-ab9c-065796ea7773-1
+00:15:47.229 --> 00:15:48.970
+applied until the invoicing.
+
+7ff1f615-630f-475e-a059-71006c2745ea-0
+00:15:50.750 --> 00:15:54.107
+So when when she invoices an
+order, whatever was shipping,
+
+7ff1f615-630f-475e-a059-71006c2745ea-1
+00:15:54.107 --> 00:15:57.180
+that's how much of the deposit
+we apply to the order.
+
+e978484f-979c-4b41-853f-cae8156e234f-0
+00:15:57.980 --> 00:15:58.400
+OK.
+
+7331db26-1b3e-4c7a-832e-4dce58cf3a67-0
+00:15:59.570 --> 00:16:02.130
+And then Carla can probably
+speak for.
+
+121ae8a1-864e-422d-ab09-de60e7b733b9-0
+00:16:03.140 --> 00:16:07.750
+The factoring part, because she
+handles that end of.
+
+cf7c9883-a87b-46cc-8919-c844269bb6bf-0
+00:16:09.640 --> 00:16:10.200
+Ohh.
+
+696b4a47-b890-4f9a-8bb4-201d0a5eb902-0
+00:16:11.150 --> 00:16:14.022
+You know how there's already
+automation set up in the
+
+696b4a47-b890-4f9a-8bb4-201d0a5eb902-1
+00:16:14.022 --> 00:16:17.161
+beginning when we receive an
+order for a customer that has
+
+696b4a47-b890-4f9a-8bb4-201d0a5eb902-2
+00:16:17.161 --> 00:16:17.640
+approved?
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-0
+00:16:18.350 --> 00:16:22.086
+Credit line through one of the
+factor banks, the orders, Chris
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-1
+00:16:22.086 --> 00:16:25.525
+Nelson and Nazi helped me set
+that up years ago where the
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-2
+00:16:25.525 --> 00:16:29.024
+order will come in it like I
+think it's four times or it's
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-3
+00:16:29.024 --> 00:16:32.819
+it's upon every hour that orders
+are submitted out kind of like
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-4
+00:16:32.819 --> 00:16:36.496
+an EDI process to the factor
+banks and their portal where the
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-5
+00:16:36.496 --> 00:16:39.876
+water goes against that credit
+line and they either gets
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-6
+00:16:39.876 --> 00:16:43.553
+approved or denied. If like the
+credit lines full or they are
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-7
+00:16:43.553 --> 00:16:46.756
+past due, they'll deny or
+decline the order for terms
+
+cbdb651c-5c9b-4529-b103-1231e96c53bc-8
+00:16:46.756 --> 00:16:48.120
+until that's satisfied.
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-0
+00:16:48.270 --> 00:16:51.593
+Otherwise it comes right back in
+within seconds or within the
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-1
+00:16:51.593 --> 00:16:54.756
+hour. Just going to help you
+know because there's a timing
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-2
+00:16:54.756 --> 00:16:58.080
+issue in the system and it'll
+credit approve it automatically
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-3
+00:16:58.080 --> 00:17:01.082
+in our system. So the order just
+flows straight through
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-4
+00:17:01.082 --> 00:17:04.459
+accounting, it's approved, it
+goes straight into production or
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-5
+00:17:04.459 --> 00:17:07.836
+allocation. So there's that on
+the front end. As far as the as
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-6
+00:17:07.836 --> 00:17:11.106
+you're saying as far as the
+invoicing and all and the reason
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-7
+00:17:11.106 --> 00:17:14.430
+I think maybe Stacy and Eric is
+with us from that perspective
+
+ec546897-0542-4d42-a2b7-c56fb6e1d2e0-8
+00:17:14.430 --> 00:17:15.020
+and Jackie?
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-0
+00:17:15.810 --> 00:17:20.309
+Are we talking about wanting to
+get some kind of the look of the
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-1
+00:17:20.309 --> 00:17:24.671
+invoices be approved by Jackie's
+department as far as how they
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-2
+00:17:24.671 --> 00:17:28.894
+look when they go out to the
+customer because on the IT side
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-3
+00:17:28.894 --> 00:17:32.978
+I'm not sure how that works
+especially with oh, what's his
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-4
+00:17:32.978 --> 00:17:37.132
+name that just left us with
+syspro. Your your contact Ellen
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-5
+00:17:37.132 --> 00:17:41.078
+that knew everything about
+Syspro and helped you all the
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-6
+00:17:41.078 --> 00:17:45.301
+time. David Lang. David Lang I
+think was the one who was got
+
+c126699c-efe6-4d4e-a95c-12dae52c4a5f-7
+00:17:45.301 --> 00:17:46.340
+with a 30 yard.
+
+5deb8b38-6949-441a-89a6-59353c117220-0
+00:17:46.420 --> 00:17:49.565
+This I know enough to be
+dangerous with this, but got
+
+5deb8b38-6949-441a-89a6-59353c117220-1
+00:17:49.565 --> 00:17:53.117
+with a third party to add say
+our logo on to the invoices or
+
+5deb8b38-6949-441a-89a6-59353c117220-2
+00:17:53.117 --> 00:17:56.496
+the look of the invoices. I
+think it was a third party we
+
+5deb8b38-6949-441a-89a6-59353c117220-3
+00:17:56.496 --> 00:17:59.990
+used Laurie, do you know that
+portion of it what exactly we
+
+5deb8b38-6949-441a-89a6-59353c117220-4
+00:17:59.990 --> 00:18:03.718
+use for the look of our invoices
+because right now they're very
+
+5deb8b38-6949-441a-89a6-59353c117220-5
+00:18:03.718 --> 00:18:07.329
+inconsistent. I can tell you
+that even on the licensees we've
+
+5deb8b38-6949-441a-89a6-59353c117220-6
+00:18:07.329 --> 00:18:10.998
+got Gabby logo and unfortunately
+it's all skewed, kind of wide
+
+5deb8b38-6949-441a-89a6-59353c117220-7
+00:18:10.998 --> 00:18:14.726
+looking and looks very odd and
+not very professional looking in
+
+5deb8b38-6949-441a-89a6-59353c117220-8
+00:18:14.726 --> 00:18:16.590
+my opinion, but if we could get.
+
+efa01ab0-12a4-44a8-9c27-b50660e7019c-0
+00:18:16.660 --> 00:18:20.200
+Especially for going with the
+new logo and branding, we're
+
+efa01ab0-12a4-44a8-9c27-b50660e7019c-1
+00:18:20.200 --> 00:18:23.740
+just gonna need to make sure
+that that's consistent across
+
+efa01ab0-12a4-44a8-9c27-b50660e7019c-2
+00:18:23.740 --> 00:18:27.400
+the board for all the invoices
+and my wrong on that, Stacey.
+
+efa01ab0-12a4-44a8-9c27-b50660e7019c-3
+00:18:27.400 --> 00:18:31.060
+Erica, as far as maybe that's
+why you guys are involved or I
+
+efa01ab0-12a4-44a8-9c27-b50660e7019c-4
+00:18:31.060 --> 00:18:34.840
+was just texting Erica and ask,
+OK, what exactly we're on here
+
+efa01ab0-12a4-44a8-9c27-b50660e7019c-5
+00:18:34.840 --> 00:18:35.080
+for?
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-0
+00:18:37.630 --> 00:18:41.086
+OK. Apparently so because, you
+know, we're all about, we're
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-1
+00:18:41.086 --> 00:18:44.772
+about to change all the branding
+anyway. Yeah. So yeah, this is
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-2
+00:18:44.772 --> 00:18:48.171
+the time to do it. And my
+question for this is do you have
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-3
+00:18:48.171 --> 00:18:51.224
+separate Gabby invoices and
+separate summer classics
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-4
+00:18:51.224 --> 00:18:54.507
+invoices? Are there invoices
+that combine them both to a
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-5
+00:18:54.507 --> 00:18:57.906
+customer? We currently have
+separate because we have those
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-6
+00:18:57.906 --> 00:19:01.362
+separated. However, it's my
+understanding by the end of the
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-7
+00:19:01.362 --> 00:19:04.703
+year, 1st of next year, we're
+going to the one branch for
+
+bd8dad77-0498-4a57-8b00-88ac1864b643-8
+00:19:04.703 --> 00:19:06.720
+2:05, I think is the last I
+heard.
+
+550fb94f-9ac5-4fad-8958-164ff51e5040-0
+00:19:06.850 --> 00:19:10.245
+Was 270 at one point, but I
+think it's 205. So we'll stick
+
+550fb94f-9ac5-4fad-8958-164ff51e5040-1
+00:19:10.245 --> 00:19:13.698
+with that. And so then I guess
+it will be whatever logo has
+
+550fb94f-9ac5-4fad-8958-164ff51e5040-2
+00:19:13.698 --> 00:19:17.209
+been approved for that branding
+that we'll need to make sure
+
+550fb94f-9ac5-4fad-8958-164ff51e5040-3
+00:19:17.209 --> 00:19:17.670
+it's on.
+
+ce3b39af-8b01-4990-b5b3-89c9029bd1ce-0
+00:19:18.910 --> 00:19:22.864
+All the invoices for you know,
+wherever however that looks and
+
+ce3b39af-8b01-4990-b5b3-89c9029bd1ce-1
+00:19:22.864 --> 00:19:26.630
+that it's, yeah, professional
+looking there we go that way.
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-0
+00:19:28.090 --> 00:19:32.080
+Understanding because also
+additionally, I understood that
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-1
+00:19:32.080 --> 00:19:35.598
+perhaps if somebody, some
+customers may actually be
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-2
+00:19:35.598 --> 00:19:39.724
+getting multiple invoices and
+emails a day. So we're looking
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-3
+00:19:39.724 --> 00:19:43.714
+to streamline that too. So
+therefore we wouldn't want them
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-4
+00:19:43.714 --> 00:19:47.841
+to get 12 invoices here, here's
+your invoice and then here's
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-5
+00:19:47.841 --> 00:19:51.899
+your invoice and then here's
+your invoice. So instead of it
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-6
+00:19:51.899 --> 00:19:56.025
+being multiple, being all one
+package, but ensuring that the
+
+90dc0ffa-a4ba-473c-bca2-e22ccd31af0d-7
+00:19:56.025 --> 00:19:58.190
+branding is the most up to date.
+
+c0da8ff0-4617-498b-bb03-e8746be34bac-0
+00:19:58.260 --> 00:20:02.847
+And current so I do not know if
+marketing has a brand template
+
+c0da8ff0-4617-498b-bb03-e8746be34bac-1
+00:20:02.847 --> 00:20:07.070
+that is used for emails or is
+developing one, but that is
+
+c0da8ff0-4617-498b-bb03-e8746be34bac-2
+00:20:07.070 --> 00:20:11.657
+something that I would need or
+need access to to include or or
+
+c0da8ff0-4617-498b-bb03-e8746be34bac-3
+00:20:11.657 --> 00:20:14.570
+somehow denote within the
+requirements.
+
+4cd789e6-bd78-472d-b6be-8cbcdb17d17c-0
+00:20:15.520 --> 00:20:18.814
+Yeah. So we have all new brand
+guidelines. Um, they're both for
+
+4cd789e6-bd78-472d-b6be-8cbcdb17d17c-1
+00:20:18.814 --> 00:20:22.005
+Gabby and some are classics. I
+guess we need to figure out if
+
+4cd789e6-bd78-472d-b6be-8cbcdb17d17c-2
+00:20:22.005 --> 00:20:25.299
+we're changing starting January
+where they get one invoice from
+
+4cd789e6-bd78-472d-b6be-8cbcdb17d17c-3
+00:20:25.299 --> 00:20:28.181
+both brands and then it'll
+doesn't need to be Gabriella
+
+4cd789e6-bd78-472d-b6be-8cbcdb17d17c-4
+00:20:28.181 --> 00:20:31.321
+White or does it need to have
+both summer classics and Gabby
+
+4cd789e6-bd78-472d-b6be-8cbcdb17d17c-5
+00:20:31.321 --> 00:20:31.630
+on it?
+
+1bbb3b6b-8cd3-4d7c-b675-c9ff0f536103-0
+00:20:32.500 --> 00:20:33.720
+What about contract?
+
+ffe2a131-2be7-4590-86aa-d40c23e193c0-0
+00:20:34.840 --> 00:20:38.555
+Contract just goes to market as
+summer classics and Gabby going
+
+ffe2a131-2be7-4590-86aa-d40c23e193c0-1
+00:20:38.555 --> 00:20:39.020
+forward.
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-0
+00:20:42.310 --> 00:20:45.569
+But they, they're their
+customers are contracts. So, um,
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-1
+00:20:45.569 --> 00:20:49.001
+you know it, there's up for
+discussion on whether Gabriella
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-2
+00:20:49.001 --> 00:20:52.432
+White just stays internal or
+does everything switch that's,
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-3
+00:20:52.432 --> 00:20:55.692
+you know, accounting. HR is
+going to switch to Gabriella
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-4
+00:20:55.692 --> 00:20:59.238
+White. So when you say where do
+you work, you go to LinkedIn,
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-5
+00:20:59.238 --> 00:21:02.841
+it's supposed to be Gabriella
+White, but nobody knows who that
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-6
+00:21:02.841 --> 00:21:06.329
+is. So it's kind of something we
+need to figure out and talk
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-7
+00:21:06.329 --> 00:21:09.589
+through about invoicing and
+accounting and all that. But
+
+a9db055e-4e30-4b97-8481-48b94949a5f9-8
+00:21:09.589 --> 00:21:11.820
+yes, we do have e-mail templates
+that.
+
+19a927ce-3ecb-40cf-98a3-653db0ae0ede-0
+00:21:11.890 --> 00:21:13.150
+Can be used for this.
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-0
+00:21:13.880 --> 00:21:17.373
+That's perfect. Well, and the
+thing that, Stephanie, I guess
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-1
+00:21:17.373 --> 00:21:21.152
+that needs to be noted somewhere
+is that while it seems like it's
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-2
+00:21:21.152 --> 00:21:24.588
+all quiet, I just recently
+learned that our licensees, they
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-3
+00:21:24.588 --> 00:21:28.081
+know when they have issues of
+not receiving emails because I
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-4
+00:21:28.081 --> 00:21:31.631
+mean excuse me, invoices because
+they're receiving the e-mail
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-5
+00:21:31.631 --> 00:21:35.182
+that something is shipped, but
+then the invoice is not coming
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-6
+00:21:35.182 --> 00:21:38.732
+behind it. So it's almost like
+a, it's a good thing sometimes
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-7
+00:21:38.732 --> 00:21:42.283
+because they're receiving both
+even though it seems excessive
+
+206d4b22-92ab-4e16-9003-d9e247ec48af-8
+00:21:42.283 --> 00:21:44.230
+because it's almost like a
+check.
+
+5b5bf12e-e887-4aae-930e-254171d8ac53-0
+00:21:44.350 --> 00:21:47.631
+Hey I'm expecting an invoice
+mail and oh here it is or oh I
+
+5b5bf12e-e887-4aae-930e-254171d8ac53-1
+00:21:47.631 --> 00:21:51.021
+never received it so that they
+can give us a heads up. I know
+
+5b5bf12e-e887-4aae-930e-254171d8ac53-2
+00:21:51.021 --> 00:21:54.357
+that's happened a couple of
+times with the licensees. That's
+
+5b5bf12e-e887-4aae-930e-254171d8ac53-3
+00:21:54.357 --> 00:21:57.748
+the only examples I have because
+they're the ones that's been
+
+5b5bf12e-e887-4aae-930e-254171d8ac53-4
+00:21:57.748 --> 00:22:01.139
+vocal about it to say hey you
+have. I know I'm supposed to be
+
+5b5bf12e-e887-4aae-930e-254171d8ac53-5
+00:22:01.139 --> 00:22:02.780
+casual is the the main one he.
+
+b0d37c1f-388f-4818-a7a9-c46b3542db6b-0
+00:22:05.920 --> 00:22:07.490
+No, what's his name? Ericsson.
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-0
+00:22:08.350 --> 00:22:11.802
+Ben is his name Bill. No, Bruce
+Bruce Erickson. That's always
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-1
+00:22:11.802 --> 00:22:15.309
+get their names though. Yeah,
+Bruce. Bruce there. He will give
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-2
+00:22:15.309 --> 00:22:18.595
+us a heads up and say, hey, I
+did receive an e-mail, but I
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-3
+00:22:18.595 --> 00:22:22.214
+didn't get the invoice that came
+behind it. So there's I guess a
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-4
+00:22:22.214 --> 00:22:25.666
+fine line. It's it could be a
+great check and balance, but at
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-5
+00:22:25.666 --> 00:22:28.673
+the same time it may be
+excessive for someone to say,
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-6
+00:22:28.673 --> 00:22:32.125
+hey, I'm just getting e-mail
+after e-mail after e-mail and to
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-7
+00:22:32.125 --> 00:22:35.354
+the point where they're not
+reading them and then they're
+
+6d2a98ec-4b22-4265-87bb-c0b454f45b4e-8
+00:22:35.354 --> 00:22:38.249
+missing important information.
+So I guess we could.
+
+5557eb18-52cb-440b-8e0f-5478b6c2e035-0
+00:22:38.330 --> 00:22:40.470
+Review that come separately.
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-0
+00:22:41.890 --> 00:22:45.784
+And then an invoice comes, does
+it come? That's what Ben told me
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-1
+00:22:45.784 --> 00:22:49.619
+and that's been recent that they
+give a heads up that hey, your
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-2
+00:22:49.619 --> 00:22:53.095
+order is shipped and it gives
+some information about that
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-3
+00:22:53.095 --> 00:22:56.750
+shipment and that's an e-mail
+that goes out automatically to
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-4
+00:22:56.750 --> 00:23:00.584
+the customer and then of course
+they received their invoice and
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-5
+00:23:00.584 --> 00:23:04.240
+that could be two different
+e-mail addresses as well. By the
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-6
+00:23:04.240 --> 00:23:08.074
+way, maybe accounting receives
+the invoice whereas I don't know
+
+08edff27-27be-474b-a098-b6bb5ed7bf1f-7
+00:23:08.074 --> 00:23:11.789
+purchaser or someone receives
+the your order has shipped and.
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-0
+00:23:11.910 --> 00:23:15.105
+It's on its way, but sometimes
+they have both of those e-mail
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-1
+00:23:15.105 --> 00:23:17.631
+addresses the same in the
+system. So it could be
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-2
+00:23:17.631 --> 00:23:20.723
+excessive. We're not going to
+fix everything for everybody,
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-3
+00:23:20.723 --> 00:23:23.919
+but it would be something to
+look at and say do we think it's
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-4
+00:23:23.919 --> 00:23:26.960
+excessive? Where could we cut
+back some of the e-mail? You
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-5
+00:23:26.960 --> 00:23:30.001
+know, just so we know that
+what's going to the customer is
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-6
+00:23:30.001 --> 00:23:33.094
+the most important thing and
+what they really need to know,
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-7
+00:23:33.094 --> 00:23:36.444
+so they don't ignore it. But at
+the same time that it could be a
+
+0080d498-6917-4186-882c-7cea6e9f2fb0-8
+00:23:36.444 --> 00:23:38.300
+good check and balance as well,
+so.
+
+a55a173f-8269-4a1f-9561-5ca84f4bba38-0
+00:23:39.710 --> 00:23:40.380
+Both sides.
+
+7f26a803-3afd-4ea5-8da0-2276abdf9c73-0
+00:23:41.040 --> 00:23:45.094
+My question is, are they
+duplicate emails and invoices or
+
+7f26a803-3afd-4ea5-8da0-2276abdf9c73-1
+00:23:45.094 --> 00:23:48.939
+is it just because some
+customers place so many orders
+
+7f26a803-3afd-4ea5-8da0-2276abdf9c73-2
+00:23:48.939 --> 00:23:53.273
+and then each time we invoice,
+that invoice is emailed out so
+
+7f26a803-3afd-4ea5-8da0-2276abdf9c73-3
+00:23:53.273 --> 00:23:55.930
+they're getting 12 different
+invoice?
+
+5ad1c517-f67d-461a-ac6c-d9e21b60780c-0
+00:23:57.060 --> 00:24:01.044
+E-mail today, but they're not
+duplicates. So like if we could
+
+5ad1c517-f67d-461a-ac6c-d9e21b60780c-1
+00:24:01.044 --> 00:24:05.222
+wait and the system say, oh, all
+twelve of these, go to this one
+
+5ad1c517-f67d-461a-ac6c-d9e21b60780c-2
+00:24:05.222 --> 00:24:09.143
+e-mail and then shoot them in
+one e-mail, is that what we're
+
+5ad1c517-f67d-461a-ac6c-d9e21b60780c-3
+00:24:09.143 --> 00:24:10.300
+talking about? OK.
+
+6d02c2e2-308d-4313-b76a-0bcd5a8ea8a9-0
+00:24:12.230 --> 00:24:16.567
+That that that is what he, in
+his initial estimate would
+
+6d02c2e2-308d-4313-b76a-0bcd5a8ea8a9-1
+00:24:16.567 --> 00:24:21.285
+prefer. For instance, if someone
+has ordered has 12 invoices,
+
+6d02c2e2-308d-4313-b76a-0bcd5a8ea8a9-2
+00:24:21.285 --> 00:24:25.622
+then instead of them receiving
+12 invoices, they get one
+
+6d02c2e2-308d-4313-b76a-0bcd5a8ea8a9-3
+00:24:25.622 --> 00:24:29.959
+invoice with all 12 of the
+actual PDF, etcetera attached
+
+6d02c2e2-308d-4313-b76a-0bcd5a8ea8a9-4
+00:24:29.959 --> 00:24:33.459
+OK, one e-mail with all invoices
+attached OK.
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-0
+00:24:34.860 --> 00:24:38.789
+The separate your order has
+shipped, that's new to me, so
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-1
+00:24:38.789 --> 00:24:43.057
+I'll make a note of that because
+then I need to to discuss and
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-2
+00:24:43.057 --> 00:24:47.326
+determine if that is something
+that we would want to just have
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-3
+00:24:47.326 --> 00:24:51.323
+the following orders have
+shipped, if it's multiple to the
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-4
+00:24:51.323 --> 00:24:55.388
+same and then the e-mail or
+exactly how that would go. Does
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-5
+00:24:55.388 --> 00:24:59.046
+anybody have any thoughts on
+that? For instance if an
+
+9ca6dff0-dc67-4fc3-a0c2-b4e8c86c3e71-6
+00:24:59.046 --> 00:25:02.570
+individual just received the
+instead of getting 12?
+
+c2f47dc1-732c-42d3-9ac5-136e00b1f3b6-0
+00:25:03.560 --> 00:25:08.045
+Your order has shipped emails.
+Would it be per uh? Would it be
+
+c2f47dc1-732c-42d3-9ac5-136e00b1f3b6-1
+00:25:08.045 --> 00:25:11.890
+better to get one e-mail that
+has all twelve of those
+
+c2f47dc1-732c-42d3-9ac5-136e00b1f3b6-2
+00:25:11.890 --> 00:25:16.375
+particular shipped orders and
+that information in one and then
+
+c2f47dc1-732c-42d3-9ac5-136e00b1f3b6-3
+00:25:16.375 --> 00:25:20.647
+the separate one that includes
+the 12 invoices for instance
+
+c2f47dc1-732c-42d3-9ac5-136e00b1f3b6-4
+00:25:20.647 --> 00:25:25.275
+attached? I believe that is the
+the the way that Ben is thinking
+
+c2f47dc1-732c-42d3-9ac5-136e00b1f3b6-5
+00:25:25.275 --> 00:25:26.130
+about going.
+
+a092bd08-29b6-4e0b-820d-7b724e79c78f-0
+00:25:27.260 --> 00:25:31.693
+One versus 12 for most people I
+think would be better. I mean,
+
+a092bd08-29b6-4e0b-820d-7b724e79c78f-1
+00:25:31.693 --> 00:25:35.915
+because everybody's inundated
+with emails anyway, you know,
+
+a092bd08-29b6-4e0b-820d-7b724e79c78f-2
+00:25:35.915 --> 00:25:40.490
+all day long. As a consumer, I'd
+rather want e-mail saying, hey,
+
+a092bd08-29b6-4e0b-820d-7b724e79c78f-3
+00:25:40.490 --> 00:25:44.431
+these 12 orders shipped, and
+then I e-mail saying, hey,
+
+a092bd08-29b6-4e0b-820d-7b724e79c78f-4
+00:25:44.431 --> 00:25:48.935
+here's your 12 invoices instead
+of 12 different emails with one
+
+a092bd08-29b6-4e0b-820d-7b724e79c78f-5
+00:25:48.935 --> 00:25:49.850
+invoice each.
+
+f5c90dbd-1c74-47ce-81a0-aea1c5934256-0
+00:25:51.550 --> 00:25:52.020
+OK.
+
+fdf57fc6-e10b-46bf-b350-85e1bfb4d70d-0
+00:25:52.820 --> 00:25:57.288
+Well, also let me throw out
+there while we're talking about
+
+fdf57fc6-e10b-46bf-b350-85e1bfb4d70d-1
+00:25:57.288 --> 00:26:02.203
+the invoice, the way our invoice
+looks, you would not believe the
+
+fdf57fc6-e10b-46bf-b350-85e1bfb4d70d-2
+00:26:02.203 --> 00:26:06.821
+number of people that pay it
+twice or three times, or I don't
+
+fdf57fc6-e10b-46bf-b350-85e1bfb4d70d-3
+00:26:06.821 --> 00:26:10.992
+know how many times I have
+already, because at the very
+
+fdf57fc6-e10b-46bf-b350-85e1bfb4d70d-4
+00:26:10.992 --> 00:26:14.120
+bottom of the invoice it's got
+the total.
+
+10721ea6-2799-4865-bf35-08321004dbdd-0
+00:26:14.760 --> 00:26:18.940
+Well, you know a lot of usually
+when you receive an invoice, if
+
+10721ea6-2799-4865-bf35-08321004dbdd-1
+00:26:18.940 --> 00:26:22.990
+you don't know anything it shows
+zero at the bottom. But this
+
+10721ea6-2799-4865-bf35-08321004dbdd-2
+00:26:22.990 --> 00:26:26.975
+ours does not. Therefore when
+they get our invoice, they pay
+
+10721ea6-2799-4865-bf35-08321004dbdd-3
+00:26:26.975 --> 00:26:30.894
+it again, but they probably
+already sent us a check they've
+
+10721ea6-2799-4865-bf35-08321004dbdd-4
+00:26:30.894 --> 00:26:32.920
+already paid it on credit card.
+
+51fb1e39-06a4-4b0e-9b10-3f0b43ff0d4f-0
+00:26:33.680 --> 00:26:39.187
+I mean, these customers,
+evidently they they're not good
+
+51fb1e39-06a4-4b0e-9b10-3f0b43ff0d4f-1
+00:26:39.187 --> 00:26:45.177
+bookkeepers. They don't mind
+paying $12,000 invoices 2 times.
+
+51fb1e39-06a4-4b0e-9b10-3f0b43ff0d4f-2
+00:26:45.177 --> 00:26:45.950
+They do.
+
+cb622929-7be9-48c8-abba-882fec864e3f-0
+00:26:47.330 --> 00:26:51.100
+Part of that you have the ones
+who prepaid by credit card and
+
+cb622929-7be9-48c8-abba-882fec864e3f-1
+00:26:51.100 --> 00:26:54.689
+then they're calling you saying,
+hey, we already paid this
+
+cb622929-7be9-48c8-abba-882fec864e3f-2
+00:26:54.689 --> 00:26:58.399
+invoice. Yes, you did. You don't
+know it. It's just what I'm
+
+cb622929-7be9-48c8-abba-882fec864e3f-3
+00:26:58.399 --> 00:27:01.805
+saying is that Daddy is a
+problem. But, you know, we've
+
+cb622929-7be9-48c8-abba-882fec864e3f-4
+00:27:01.805 --> 00:27:05.576
+just been told in the past that
+they'll just have to and, you
+
+cb622929-7be9-48c8-abba-882fec864e3f-5
+00:27:05.576 --> 00:27:09.529
+know, learn to live with it. And
+if if they do, that's fine. But
+
+cb622929-7be9-48c8-abba-882fec864e3f-6
+00:27:09.529 --> 00:27:13.117
+I'm just throwing it out there
+because we're talking about
+
+cb622929-7be9-48c8-abba-882fec864e3f-7
+00:27:13.117 --> 00:27:15.489
+changing things about the
+invoice, so.
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-0
+00:27:16.910 --> 00:27:20.242
+We need to revisit because what
+I was told in the past, the
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-1
+00:27:20.242 --> 00:27:23.574
+reason we couldn't do that was
+because of all the different
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-2
+00:27:23.574 --> 00:27:26.907
+payment types we take that it
+would be correct for some but
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-3
+00:27:26.907 --> 00:27:30.183
+not correct for others. For
+instance, the ones who receive
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-4
+00:27:30.183 --> 00:27:33.738
+terms, there's a payoff that we
+do in the system to take it off
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-5
+00:27:33.738 --> 00:27:37.126
+our books and put it on the
+banks books. And if we're paying
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-6
+00:27:37.126 --> 00:27:40.347
+off that but then sending
+invoice that shows that you owe
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-7
+00:27:40.347 --> 00:27:43.790
+$0.00 amount, they're not going
+to pay it. So they still owe,
+
+15e5b6c0-a88b-4386-89ca-a97e376c2c8b-8
+00:27:43.790 --> 00:27:46.789
+they just don't know us. They
+owe the bank the money.
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-0
+00:27:46.930 --> 00:27:50.908
+It's it's kind of complicated,
+but it's still something we need
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-1
+00:27:50.908 --> 00:27:54.886
+to revisit because I don't know
+that that's 100%. I I feel like
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-2
+00:27:54.886 --> 00:27:58.616
+there's a process somewhere or
+the timing of things that we
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-3
+00:27:58.616 --> 00:28:02.159
+could skirt around that and
+satisfy the prepaids to show
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-4
+00:28:02.159 --> 00:28:06.013
+that they've paid somehow. But
+also I think Syspro 8 upgrade,
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-5
+00:28:06.013 --> 00:28:10.053
+we were going to revisit that to
+see if we gain any of that type
+
+62b0b864-85fb-4b43-a87c-ba7027b6c795-6
+00:28:10.053 --> 00:28:10.240
+of.
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-0
+00:28:11.310 --> 00:28:14.943
+Love. Yeah be able to do it with
+his probate. Is there any
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-1
+00:28:14.943 --> 00:28:18.824
+changes coming with his probate
+that would allow us to do that
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-2
+00:28:18.824 --> 00:28:22.334
+as well and or something that
+they've built in. So we're
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-3
+00:28:22.334 --> 00:28:26.153
+definitely it's still on the
+radar I think. But yes with this
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-4
+00:28:26.153 --> 00:28:29.787
+we would want to relook at I
+guess invoices in general how
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-5
+00:28:29.787 --> 00:28:33.606
+they're generating out the look
+of them making sure we've got
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-6
+00:28:33.606 --> 00:28:37.424
+the right logo on it and that
+that looks professional all the
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-7
+00:28:37.424 --> 00:28:40.935
+above so we could look at
+everything and Stephanie I can
+
+449b38cc-67dc-4b13-b7ab-4af7b9d393b8-8
+00:28:40.935 --> 00:28:41.490
+send you.
+
+11bbdd34-cdb1-43a3-a636-702f8825f22e-0
+00:28:41.570 --> 00:28:45.631
+Some examples of what we're
+talking about because it'd be
+
+11bbdd34-cdb1-43a3-a636-702f8825f22e-1
+00:28:45.631 --> 00:28:49.903
+easier to see than us just say,
+hey, it looks crazy, This is
+
+11bbdd34-cdb1-43a3-a636-702f8825f22e-2
+00:28:49.903 --> 00:28:54.175
+why, and this is what we're
+talking about. So, so Stacey and
+
+11bbdd34-cdb1-43a3-a636-702f8825f22e-3
+00:28:54.175 --> 00:28:58.097
+Erica, when will the new
+marketing guidelines come out?
+
+11bbdd34-cdb1-43a3-a636-702f8825f22e-4
+00:28:58.097 --> 00:29:02.159
+So I have the new guidelines
+already. The internal launch
+
+11bbdd34-cdb1-43a3-a636-702f8825f22e-5
+00:29:02.159 --> 00:29:03.630
+will be November 1st.
+
+18d0dcf5-719e-4a19-9db0-d2893face303-0
+00:29:05.070 --> 00:29:10.825
+Alright, cool. OK. All right. So
+then just want to be sure. So in
+
+18d0dcf5-719e-4a19-9db0-d2893face303-1
+00:29:10.825 --> 00:29:11.610
+terms of.
+
+72a870cc-461f-4565-846f-b2ec1621cade-0
+00:29:12.390 --> 00:29:16.313
+Automation for invoices for
+wholesale. What needs to be done
+
+72a870cc-461f-4565-846f-b2ec1621cade-1
+00:29:16.313 --> 00:29:19.530
+is that it needs to be added
+into dispatch notes.
+
+6e6bbd7c-1dcf-4d91-8844-652a6089253d-0
+00:29:20.270 --> 00:29:24.164
+Is that correct? That's the
+solution to the issue that we
+
+6e6bbd7c-1dcf-4d91-8844-652a6089253d-1
+00:29:24.164 --> 00:29:28.193
+have for invoicing of automation
+for wholesale. So anything
+
+6e6bbd7c-1dcf-4d91-8844-652a6089253d-2
+00:29:28.193 --> 00:29:32.020
+that's just marketing, that's
+just for marketing because
+
+6e6bbd7c-1dcf-4d91-8844-652a6089253d-3
+00:29:32.020 --> 00:29:36.452
+they're the only ones that don't
+get entered into dispatch notes,
+
+6e6bbd7c-1dcf-4d91-8844-652a6089253d-4
+00:29:36.452 --> 00:29:40.280
+right, and that's because of the
+warehouse issue, right?
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-0
+00:29:41.730 --> 00:29:45.900
+Is there any automation for
+invoices for wholesale? Because
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-1
+00:29:45.900 --> 00:29:50.488
+wholesale is what he told me and
+not marketing. Is he considering
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-2
+00:29:50.488 --> 00:29:54.937
+it just means it's a warehouse,
+it's a warehouse. So we invoice
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-3
+00:29:54.937 --> 00:29:59.525
+out of a main warehouse or an MV
+warehouse or marketing warehouse
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-4
+00:29:59.525 --> 00:30:03.904
+to the warehouse determines not
+the it's not wholesale per se.
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-5
+00:30:03.904 --> 00:30:07.658
+We're invoicing out of
+wholesale. It depends on where
+
+eb46d93c-e782-40d3-a06c-f735c1d8d9ed-6
+00:30:07.658 --> 00:30:11.689
+the good is coming from if it's
+in a marketing warehouse.
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-0
+00:30:11.760 --> 00:30:16.226
+That doesn't have the automation
+associated with it to be able to
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-1
+00:30:16.226 --> 00:30:20.220
+invoice the way we do in a
+dispatch node. So it's probably
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-2
+00:30:20.220 --> 00:30:24.348
+an integration or coding issue
+for that marketing warehouse.
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-3
+00:30:24.348 --> 00:30:28.477
+OK, all right. It's just the
+fact that he said wholesale. So
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-4
+00:30:28.477 --> 00:30:32.943
+I want to make sure that because
+we were talking about marketing,
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-5
+00:30:32.943 --> 00:30:37.410
+alright. And then in addition to
+that the marketing guidelines go
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-6
+00:30:37.410 --> 00:30:41.539
+they are November 1st is the is
+the date for those internal,
+
+99b7f73d-88ba-4f98-a8ae-5e4e11bd25a3-7
+00:30:41.539 --> 00:30:41.810
+yes.
+
+2f82ce33-c407-423c-95d6-20c06af04cc2-0
+00:30:42.140 --> 00:30:46.463
+OK. And then external sense, we
+are talking about emails and the
+
+2f82ce33-c407-423c-95d6-20c06af04cc2-1
+00:30:46.463 --> 00:30:50.254
+site, so we'll be going to
+consumers. What is the launch
+
+2f82ce33-c407-423c-95d6-20c06af04cc2-2
+00:30:50.254 --> 00:30:54.445
+date for that? We're combining
+it with contracts, biggest show
+
+2f82ce33-c407-423c-95d6-20c06af04cc2-3
+00:30:54.445 --> 00:30:56.839
+of the year which is November
+12th.
+
+abeba2aa-d832-453f-89db-bc7c491abafd-0
+00:30:58.380 --> 00:31:02.509
+Could be. And then in January,
+we'll be out to all the
+
+abeba2aa-d832-453f-89db-bc7c491abafd-1
+00:31:02.509 --> 00:31:07.014
+consumers on the retail side,
+OK. So I would assume that it
+
+abeba2aa-d832-453f-89db-bc7c491abafd-2
+00:31:07.014 --> 00:31:07.690
+would be.
+
+ea81f5e7-3f5c-4b22-8590-cd529cfdd648-0
+00:31:09.060 --> 00:31:12.780
+Would we need to differentiate
+between?
+
+676370e5-5257-40cb-b58c-bdfdaee6f73c-0
+00:31:13.770 --> 00:31:18.789
+In other words, do we need a a
+launch of when we redesign this
+
+676370e5-5257-40cb-b58c-bdfdaee6f73c-1
+00:31:18.789 --> 00:31:23.808
+to go out November 12th and then
+again January 1 to all of the
+
+676370e5-5257-40cb-b58c-bdfdaee6f73c-2
+00:31:23.808 --> 00:31:28.430
+customers that are not BB? Is
+that what would be desired?
+
+43a3943d-aba4-49fe-ac30-56247a6d1e58-0
+00:31:29.360 --> 00:31:33.655
+That the redesign emails for a
+specific customer like how would
+
+43a3943d-aba4-49fe-ac30-56247a6d1e58-1
+00:31:33.655 --> 00:31:37.750
+you want to handle that? Would
+you just rather everything go
+
+43a3943d-aba4-49fe-ac30-56247a6d1e58-2
+00:31:37.750 --> 00:31:41.777
+January one? Well, if you're
+doing well, we're only talking
+
+43a3943d-aba4-49fe-ac30-56247a6d1e58-3
+00:31:41.777 --> 00:31:44.060
+about wholesale right now,
+right?
+
+2f35b98d-c40f-4e13-8145-a6d05920378e-0
+00:31:46.300 --> 00:31:48.420
+Because like does the retail
+side.
+
+07688dcb-828e-443a-b1dc-69fbaf18715c-0
+00:31:49.210 --> 00:31:53.598
+I I don't know anything about
+the accounting invoices and all
+
+07688dcb-828e-443a-b1dc-69fbaf18715c-1
+00:31:53.598 --> 00:31:57.775
+of that. That's your realm. So
+I, I, I don't know how that
+
+07688dcb-828e-443a-b1dc-69fbaf18715c-2
+00:31:57.775 --> 00:32:00.890
+looks on the retail side like do
+they have?
+
+a92ca611-639f-4c21-9de3-14dbe6c60599-0
+00:32:01.610 --> 00:32:04.320
+They just do their own
+invoicing, right?
+
+12e1d600-0d32-4be7-9b1d-b0c97a907bf9-0
+00:32:06.120 --> 00:32:09.110
+You know the look of their
+invoices or anything honestly,
+
+12e1d600-0d32-4be7-9b1d-b0c97a907bf9-1
+00:32:09.110 --> 00:32:09.420
+right?
+
+68e5a2e0-cf18-4c53-a05a-19305d28bf89-0
+00:32:10.970 --> 00:32:13.988
+Similar things. Have you ever
+even seen the invoices? Like I
+
+68e5a2e0-cf18-4c53-a05a-19305d28bf89-1
+00:32:13.988 --> 00:32:17.057
+don't think we know what the
+invoices look like today. I have
+
+68e5a2e0-cf18-4c53-a05a-19305d28bf89-2
+00:32:17.057 --> 00:32:18.740
+no idea what anything looks
+like.
+
+b177d630-cb94-4d05-829b-56f84b02f6c7-0
+00:32:19.550 --> 00:32:24.268
+Yeah, I can send you copies, uh
+and I'll, I'll copy you Eric and
+
+b177d630-cb94-4d05-829b-56f84b02f6c7-1
+00:32:24.268 --> 00:32:28.405
+Stacy when I send Stephanie as
+far as what our wholesale
+
+b177d630-cb94-4d05-829b-56f84b02f6c7-2
+00:32:28.405 --> 00:32:30.220
+invoices look like today.
+
+8e019e30-5871-42af-9b6e-aa7fadcadb2a-0
+00:32:31.660 --> 00:32:34.864
+And the uh and like I said,
+Gabby's got their own essays,
+
+8e019e30-5871-42af-9b6e-aa7fadcadb2a-1
+00:32:34.864 --> 00:32:38.345
+got their own, but then we've
+got the 25260 branches, which is
+
+8e019e30-5871-42af-9b6e-aa7fadcadb2a-2
+00:32:38.345 --> 00:32:41.605
+licensees and ecom and those
+have a different look to them
+
+8e019e30-5871-42af-9b6e-aa7fadcadb2a-3
+00:32:41.605 --> 00:32:44.975
+and those I'm not too happy
+with. I would love your feedback
+
+8e019e30-5871-42af-9b6e-aa7fadcadb2a-4
+00:32:44.975 --> 00:32:47.130
+on those as far as what we need
+to do.
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-0
+00:32:48.500 --> 00:32:52.428
+With the feather, no. They have
+the Gabby logo, but it's
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-1
+00:32:52.428 --> 00:32:56.839
+outstretched wide and it's all
+kind of crazy. Heart just broke.
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-2
+00:32:56.839 --> 00:33:00.905
+Yeah, I know. It is not proper
+portions at all. Everything
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-3
+00:33:00.905 --> 00:33:05.178
+we've talked about today will be
+that November date, November
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-4
+00:33:05.178 --> 00:33:09.313
+12th. Yeah. All of this is
+business to business. Wholesale,
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-5
+00:33:09.313 --> 00:33:13.379
+contract like all of that
+licensees can, they can, they're
+
+bcaa2dbd-5979-44bd-a370-88cec3422507-6
+00:33:13.379 --> 00:33:15.239
+fine. Just let them switch.
+
+da28bcc1-6a75-4d5f-9480-ac92106c2251-0
+00:33:16.500 --> 00:33:21.710
+Yeah, yeah. They'll be informed
+as a B2B customer. OK, perfect.
+
+2230b98f-d492-48ad-8696-7789d551d030-0
+00:33:22.370 --> 00:33:25.877
+Alright, So what I will do, and
+I think you guys were about four
+
+2230b98f-d492-48ad-8696-7789d551d030-1
+00:33:25.877 --> 00:33:29.223
+minutes over in one respect your
+time, especially on a Friday
+
+2230b98f-d492-48ad-8696-7789d551d030-2
+00:33:29.223 --> 00:33:32.623
+afternoon. What I'll do next is
+I'm gonna write all of this up
+
+2230b98f-d492-48ad-8696-7789d551d030-3
+00:33:32.623 --> 00:33:35.860
+into a requirements document and
+then I will send it out to
+
+2230b98f-d492-48ad-8696-7789d551d030-4
+00:33:35.860 --> 00:33:39.044
+everybody that was invited to
+the call. You guys will have
+
+2230b98f-d492-48ad-8696-7789d551d030-5
+00:33:39.044 --> 00:33:42.498
+edit access. I asked that you go
+through it, make sure, keep me
+
+2230b98f-d492-48ad-8696-7789d551d030-6
+00:33:42.498 --> 00:33:46.006
+honest, make sure that I notated
+everything that we've discussed
+
+2230b98f-d492-48ad-8696-7789d551d030-7
+00:33:46.006 --> 00:33:49.082
+and I have it written down
+correctly and then we we will
+
+2230b98f-d492-48ad-8696-7789d551d030-8
+00:33:49.082 --> 00:33:52.320
+reconvene after everybody had
+the opportunity to put their.
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-0
+00:33:52.390 --> 00:33:56.896
+And put into that document and
+sure it up, make sure it looks
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-1
+00:33:56.896 --> 00:34:01.621
+good and everything is good and
+then once everybody approves and
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-2
+00:34:01.621 --> 00:34:05.982
+signs off, then we'll send it
+over to IT development for an
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-3
+00:34:05.982 --> 00:34:10.489
+assignment to a developer at
+that point. So does anybody have
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-4
+00:34:10.489 --> 00:34:14.778
+any questions, Umm, anything
+that I have missed? So if you
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-5
+00:34:14.778 --> 00:34:19.284
+think of it now or at a later
+date, please feel free to reach
+
+e0c47606-1b51-4ad8-8ad7-956261ba2994-6
+00:34:19.284 --> 00:34:23.210
+out to me. e-mail, Umm, call I
+am, it doesn't matter.
+
+a7b9020f-8a18-4a41-b746-f0940c8ccc85-0
+00:34:23.990 --> 00:34:27.538
+And I hope to be able to get
+this document out by next week,
+
+a7b9020f-8a18-4a41-b746-f0940c8ccc85-1
+00:34:27.538 --> 00:34:31.144
+but I'm having a lot of these
+back-to-back meetings. So I may
+
+a7b9020f-8a18-4a41-b746-f0940c8ccc85-2
+00:34:31.144 --> 00:34:34.925
+get delayed in getting out, but
+that's my hope to have this base
+
+a7b9020f-8a18-4a41-b746-f0940c8ccc85-3
+00:34:34.925 --> 00:34:38.415
+document out to everybody for
+review units. Wait, does that
+
+a7b9020f-8a18-4a41-b746-f0940c8ccc85-4
+00:34:38.415 --> 00:34:40.510
+sound good? Anything that I
+missed?
+
+dadd5c49-d811-4454-87ef-542881e13e8e-0
+00:34:41.190 --> 00:34:42.800
+Anything that anybody remembers?
+
+c97553d8-e109-408c-b97b-7bbd294a9472-0
+00:34:44.120 --> 00:34:44.520
+No.
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-0
+00:34:45.340 --> 00:34:48.944
+Alright. Well, thank you
+everybody so much for joining me
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-1
+00:34:48.944 --> 00:34:52.983
+this late in the day. Stephanie,
+can I ask you a quick question?
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-2
+00:34:52.983 --> 00:34:57.021
+So I didn't hear any talk about
+like exception reporting. So I'm
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-3
+00:34:57.021 --> 00:35:00.563
+assuming that once we get the
+automation for the invoice
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-4
+00:35:00.563 --> 00:35:03.919
+automation up and running,
+there'll be some exception
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-5
+00:35:03.919 --> 00:35:08.020
+reporting that we get so that we
+know if there are any exceptions
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-6
+00:35:08.020 --> 00:35:11.500
+that we need to work. In other
+words, it didn't process
+
+b62c1cc6-7c4f-4862-a039-92cd712a6c1a-7
+00:35:11.500 --> 00:35:14.110
+correctly in the system. Is that
+correct?
+
+aaf2f9da-163d-4b39-9ffc-e65af0730794-0
+00:35:15.280 --> 00:35:16.430
+Do you see those now?
+
+5a97e305-3448-4a26-a72b-5917f23516f3-0
+00:35:17.610 --> 00:35:20.904
+Well, we do it manually now, so
+we know at the time we're
+
+5a97e305-3448-4a26-a72b-5917f23516f3-1
+00:35:20.904 --> 00:35:24.597
+invoicing whether right, we know
+whether it goes through or not.
+
+5a97e305-3448-4a26-a72b-5917f23516f3-2
+00:35:24.597 --> 00:35:28.062
+If there's an error that we
+because we do it manually, we we
+
+5a97e305-3448-4a26-a72b-5917f23516f3-3
+00:35:28.062 --> 00:35:31.187
+know that there's an issue at
+the time we're trying to
+
+5a97e305-3448-4a26-a72b-5917f23516f3-4
+00:35:31.187 --> 00:35:32.380
+generate the invoice.
+
+8f97c114-b9d6-48cc-b7e7-6f0c83bce926-0
+00:35:33.030 --> 00:35:36.279
+But the question would be if
+this is automated, we we need to
+
+8f97c114-b9d6-48cc-b7e7-6f0c83bce926-1
+00:35:36.279 --> 00:35:39.267
+have some way to know if
+something errors out and we can
+
+8f97c114-b9d6-48cc-b7e7-6f0c83bce926-2
+00:35:39.267 --> 00:35:40.840
+go in and work that exception.
+
+29cb8ff5-3c4c-4489-9c45-7bce2b997454-0
+00:35:42.000 --> 00:35:45.050
+OK. I would have to assume that
+would be part of it, but.
+
+13034d33-f6f1-4cbf-9014-52367192e06c-0
+00:35:46.390 --> 00:35:49.957
+I'll make it a note in the
+requirement so that it will be a
+
+13034d33-f6f1-4cbf-9014-52367192e06c-1
+00:35:49.957 --> 00:35:53.524
+part of it. There any specific
+types of exceptions that you
+
+13034d33-f6f1-4cbf-9014-52367192e06c-2
+00:35:53.524 --> 00:35:57.330
+would want to receive? Um, let
+me know. Or is it that you just?
+
+4dde88dc-6d88-41c4-a54d-71b08d72dc67-0
+00:35:59.260 --> 00:36:03.192
+All exceptions, anything where
+it doesn't invoice out because
+
+4dde88dc-6d88-41c4-a54d-71b08d72dc67-1
+00:36:03.192 --> 00:36:07.314
+this is the stage, you know, an
+invoice is where we generate the
+
+4dde88dc-6d88-41c4-a54d-71b08d72dc67-2
+00:36:07.314 --> 00:36:11.437
+revenue. So we're going to want
+to know if they're issues in one
+
+4dde88dc-6d88-41c4-a54d-71b08d72dc67-3
+00:36:11.437 --> 00:36:13.150
+report or separate reports.
+
+a4f36303-8a55-4205-8b90-fbc786feb249-0
+00:36:15.120 --> 00:36:19.159
+I don't know why it would need
+to be a separate report, I would
+
+a4f36303-8a55-4205-8b90-fbc786feb249-1
+00:36:19.159 --> 00:36:20.990
+just say an exception report.
+
+496d86ec-87d6-4ade-9c04-b2d4f3bb8b3e-0
+00:36:23.270 --> 00:36:27.561
+And obviously we would want to
+try to pinpoint what's creating
+
+496d86ec-87d6-4ade-9c04-b2d4f3bb8b3e-1
+00:36:27.561 --> 00:36:32.057
+the exception. So I, you know, I
+don't know what that looks like,
+
+496d86ec-87d6-4ade-9c04-b2d4f3bb8b3e-2
+00:36:32.057 --> 00:36:32.329
+but.
+
+95463077-459e-4753-8a6c-31c3766afe70-0
+00:36:35.130 --> 00:36:38.280
+Maybe there's not enough money
+on the, you know, the.
+
+44048c2d-9626-432d-bb5c-7d30b925b838-0
+00:36:39.570 --> 00:36:43.867
+On the order at the end of the
+day to invoice out whatever that
+
+44048c2d-9626-432d-bb5c-7d30b925b838-1
+00:36:43.867 --> 00:36:47.762
+looks like. And since she said
+that when we're applying a
+
+44048c2d-9626-432d-bb5c-7d30b925b838-2
+00:36:47.762 --> 00:36:52.060
+deposit, if we're shipping out
+an invoicing out more money more
+
+44048c2d-9626-432d-bb5c-7d30b925b838-3
+00:36:52.060 --> 00:36:56.492
+than what we have on deposit, we
+have to apply the deposit amount
+
+44048c2d-9626-432d-bb5c-7d30b925b838-4
+00:36:56.492 --> 00:37:00.589
+that we do have and then the
+excess we put it on the account
+
+44048c2d-9626-432d-bb5c-7d30b925b838-5
+00:37:00.589 --> 00:37:04.954
+as a balance due. So automation
+would need to know that that has
+
+44048c2d-9626-432d-bb5c-7d30b925b838-6
+00:37:04.954 --> 00:37:06.230
+to be done as well.
+
+5ac0de16-5585-418d-aff8-9d8bff6112dc-0
+00:37:07.030 --> 00:37:09.940
+Right, otherwise it would create
+an exception.
+
+daf4980a-c4f9-4ddd-a5c2-17e9b77b1723-0
+00:37:10.900 --> 00:37:14.960
+Um, if there's more money on the
+order than what we invoice out.
+
+78c0ae6b-5259-4f1b-bbed-0d906ca13d65-0
+00:37:15.710 --> 00:37:18.050
+No, no. If there's not enough,
+not enough.
+
+cbcaf39b-4e8d-458a-aabc-ea2e01e31dde-0
+00:37:20.240 --> 00:37:24.091
+Yeah. Yeah. The question would
+be, would it let us invoice out
+
+cbcaf39b-4e8d-458a-aabc-ea2e01e31dde-1
+00:37:24.091 --> 00:37:27.819
+and apply what we have and just
+leave an open balance on the
+
+cbcaf39b-4e8d-458a-aabc-ea2e01e31dde-2
+00:37:27.819 --> 00:37:28.370
+customer.
+
+7121fee8-cea1-4198-81a7-767d2c0d8d3b-0
+00:37:30.020 --> 00:37:30.300
+Yeah.
+
+0c91e111-49e6-4238-8ca4-4895a830c396-0
+00:37:31.850 --> 00:37:34.873
+So basically I would invoice it
+out and it should invoice it
+
+0c91e111-49e6-4238-8ca4-4895a830c396-1
+00:37:34.873 --> 00:37:37.600
+out. I would think apply
+whatever monies are there and
+
+0c91e111-49e6-4238-8ca4-4895a830c396-2
+00:37:37.600 --> 00:37:40.673
+then it leaves an open balance
+on the customer. I wouldn't, I
+
+0c91e111-49e6-4238-8ca4-4895a830c396-3
+00:37:40.673 --> 00:37:43.845
+wouldn't think that would error
+out. We would just have to work
+
+0c91e111-49e6-4238-8ca4-4895a830c396-4
+00:37:43.845 --> 00:37:46.820
+our AR trial balance and make
+sure we keep that cleaned up.
+
+70ab1ed3-54c9-48a3-890d-362b00ec1cbf-0
+00:37:48.960 --> 00:37:52.967
+Right, but and but now when
+we're invoicing, if we're
+
+70ab1ed3-54c9-48a3-890d-362b00ec1cbf-1
+00:37:52.967 --> 00:37:57.643
+invoicing with $1000 and they
+only have 500 on the account, we
+
+70ab1ed3-54c9-48a3-890d-362b00ec1cbf-2
+00:37:57.643 --> 00:38:01.947
+apply the 500, close out of that
+screen go and to put the
+
+70ab1ed3-54c9-48a3-890d-362b00ec1cbf-3
+00:38:01.947 --> 00:38:04.100
+remaining 500 on the account.
+
+d10fac5b-a4ab-4f92-8670-b02c88ee6677-0
+00:38:05.870 --> 00:38:11.255
+As a balance due and then we
+work the aging, but yeah, so I
+
+d10fac5b-a4ab-4f92-8670-b02c88ee6677-1
+00:38:11.255 --> 00:38:13.230
+guess with automation.
+
+fabba1bf-e3e2-4e47-b9d1-22efa932a16c-0
+00:38:15.160 --> 00:38:17.000
+It would need to do that also.
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-0
+00:38:19.160 --> 00:38:22.982
+I guess I'm just assuming it's a
+seamless process. I go into
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-1
+00:38:22.982 --> 00:38:26.929
+invoice, I've got $1000 order
+that I need to invoice out. I've
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-2
+00:38:26.929 --> 00:38:30.626
+got $500.00 on deposit. I
+invoice it out, take the $500.00
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-3
+00:38:30.626 --> 00:38:34.511
+deposit, and then the balance as
+part of that process is just
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-4
+00:38:34.511 --> 00:38:38.020
+kind of a seamless process. It
+just puts $500.00 on the
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-5
+00:38:38.020 --> 00:38:42.156
+customer account, but it's still
+invoices a customer out and then
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-6
+00:38:42.156 --> 00:38:45.978
+we have to go back and collect
+those funds. I hope we're not
+
+86b028f5-b34d-4eaf-8873-dcd70d8e6994-7
+00:38:45.978 --> 00:38:49.549
+doing a lot of that, but I guess
+that's always possible.
+
+10543f0d-99fa-490e-84b3-89702a357245-0
+00:38:49.760 --> 00:38:52.969
+Maybe something got changed and
+we didn't know and they didn't
+
+10543f0d-99fa-490e-84b3-89702a357245-1
+00:38:52.969 --> 00:38:56.229
+know. We didn't know to go get
+the additional deposit, whatever
+
+10543f0d-99fa-490e-84b3-89702a357245-2
+00:38:56.229 --> 00:38:59.183
+it may be, but I wouldn't,
+Carla, do you know, I wouldn't
+
+10543f0d-99fa-490e-84b3-89702a357245-3
+00:38:59.183 --> 00:39:00.610
+think that would air it out.
+
+8821ffc9-649f-4ad1-8b51-55efbbabe8db-0
+00:39:02.620 --> 00:39:06.626
+No, I wouldn't think. I wouldn't
+think it would keep it from
+
+8821ffc9-649f-4ad1-8b51-55efbbabe8db-1
+00:39:06.626 --> 00:39:10.304
+being invoiced. No, it would
+just, I hear what Trish is
+
+8821ffc9-649f-4ad1-8b51-55efbbabe8db-2
+00:39:10.304 --> 00:39:14.376
+saying. It just needs to know
+the system or whatever needs to
+
+8821ffc9-649f-4ad1-8b51-55efbbabe8db-3
+00:39:14.376 --> 00:39:15.689
+know that. Yeah, it.
+
+96c59808-1a64-43bf-b4e0-653498214f04-0
+00:39:16.650 --> 00:39:20.003
+There's still a balance to be
+collected and that goes on the
+
+96c59808-1a64-43bf-b4e0-653498214f04-1
+00:39:20.003 --> 00:39:23.082
+account, but we do run those
+balance with invoices with
+
+96c59808-1a64-43bf-b4e0-653498214f04-2
+00:39:23.082 --> 00:39:26.546
+balance due report that catches
+those. And if we're doing that
+
+96c59808-1a64-43bf-b4e0-653498214f04-3
+00:39:26.546 --> 00:39:30.065
+timely, we should be able to in
+the moment go in and charge the
+
+96c59808-1a64-43bf-b4e0-653498214f04-4
+00:39:30.065 --> 00:39:33.364
+customer and all as well. So
+it's just an additional charge
+
+96c59808-1a64-43bf-b4e0-653498214f04-5
+00:39:33.364 --> 00:39:36.663
+like it would have been had we
+caught it before. Your point
+
+96c59808-1a64-43bf-b4e0-653498214f04-6
+00:39:36.663 --> 00:39:39.907
+though, Trish, I think it you I
+think you're exactly right
+
+96c59808-1a64-43bf-b4e0-653498214f04-7
+00:39:39.907 --> 00:39:43.041
+though we probably want it to
+flag it so we can pinpoint
+
+96c59808-1a64-43bf-b4e0-653498214f04-8
+00:39:43.041 --> 00:39:46.450
+immediately where we need to go
+in and collect the additional
+
+96c59808-1a64-43bf-b4e0-653498214f04-9
+00:39:46.450 --> 00:39:46.780
+funds.
+
+3894a5ee-e8c5-4660-83d5-c2a5ecf71ff4-0
+00:39:47.870 --> 00:39:51.920
+So it I I think you're I think
+you're exactly right it's.
+
+79dcd1d0-362b-467d-b76c-1eef3353cd8e-0
+00:39:52.740 --> 00:39:56.595
+It shouldn't air out but it it
+probably is something that we
+
+79dcd1d0-362b-467d-b76c-1eef3353cd8e-1
+00:39:56.595 --> 00:40:00.387
+need to be aware of so we can
+pinpoint it and go in and get
+
+79dcd1d0-362b-467d-b76c-1eef3353cd8e-2
+00:40:00.387 --> 00:40:04.433
+the additional funds. We should
+be able to run that balance due
+
+79dcd1d0-362b-467d-b76c-1eef3353cd8e-3
+00:40:04.433 --> 00:40:08.541
+report and then it have today's
+like all of 97 you know this was
+
+79dcd1d0-362b-467d-b76c-1eef3353cd8e-4
+00:40:08.541 --> 00:40:12.586
+what came through or like yeah
+either way we can add that in to
+
+79dcd1d0-362b-467d-b76c-1eef3353cd8e-5
+00:40:12.586 --> 00:40:15.810
+the to the report. So an
+exception Yep definitely.
+
+44f6504b-a916-484d-a30c-2335cb508e7f-0
+00:40:17.210 --> 00:40:19.994
+So something like that would be
+would need to be added to the
+
+44f6504b-a916-484d-a30c-2335cb508e7f-1
+00:40:19.994 --> 00:40:21.880
+balance to report which you
+already have.
+
+53658238-6f74-4660-be1a-0335044fab9a-0
+00:40:23.920 --> 00:40:27.122
+It's already there. We have, we
+have it. No, not balance due.
+
+53658238-6f74-4660-be1a-0335044fab9a-1
+00:40:27.122 --> 00:40:30.170
+It's a different report. We
+haven't discussed that one you
+
+53658238-6f74-4660-be1a-0335044fab9a-2
+00:40:30.170 --> 00:40:33.011
+and I before. It's a different
+report. That is another
+
+53658238-6f74-4660-be1a-0335044fab9a-3
+00:40:33.011 --> 00:40:36.265
+exception report we run daily
+that just shows us invoices with
+
+53658238-6f74-4660-be1a-0335044fab9a-4
+00:40:36.265 --> 00:40:39.158
+balances have either credit
+balances or balances due on
+
+53658238-6f74-4660-be1a-0335044fab9a-5
+00:40:39.158 --> 00:40:42.309
+them. But that's it's usually
+orders that have terms that is
+
+53658238-6f74-4660-be1a-0335044fab9a-6
+00:40:42.309 --> 00:40:45.253
+an exception report. It
+shouldn't have gone out the door
+
+53658238-6f74-4660-be1a-0335044fab9a-7
+00:40:45.253 --> 00:40:48.352
+without the money, but for some
+reason it did. And so we're
+
+53658238-6f74-4660-be1a-0335044fab9a-8
+00:40:48.352 --> 00:40:51.607
+working that to make sure we're
+collecting that money where we
+
+53658238-6f74-4660-be1a-0335044fab9a-9
+00:40:51.607 --> 00:40:53.880
+failed to do so. Sometimes it's
+just stuff.
+
+ccf99d52-a9da-4643-a722-d29a4079e5ab-0
+00:40:53.950 --> 00:40:56.773
+Added to the order Freight's
+been added. Another line item
+
+ccf99d52-a9da-4643-a722-d29a4079e5ab-1
+00:40:56.773 --> 00:40:59.645
+was added after we had paid it
+in full, and we just weren't
+
+ccf99d52-a9da-4643-a722-d29a4079e5ab-2
+00:40:59.645 --> 00:41:02.612
+aware in accounting that that
+was the case and so it went out
+
+ccf99d52-a9da-4643-a722-d29a4079e5ab-3
+00:41:02.612 --> 00:41:04.670
+the door without that money
+collected, so.
+
+85cd5546-f429-4f7b-9652-1d2c4b77f19f-0
+00:41:05.560 --> 00:41:06.110
+OK.
+
+220acaf8-7a94-457e-8c23-75bd2359c703-0
+00:41:07.270 --> 00:41:07.810
+Alright.
+
+26af8d55-372c-4abc-9774-e000f816be54-0
+00:41:08.570 --> 00:41:11.963
+Well, I think I have everything
+I need to get the base
+
+26af8d55-372c-4abc-9774-e000f816be54-1
+00:41:11.963 --> 00:41:15.418
+requirements document put
+together and then I'll get it
+
+26af8d55-372c-4abc-9774-e000f816be54-2
+00:41:15.418 --> 00:41:18.379
+sent out to you guys and we will
+go from there.
+
+ba4e94af-be51-4a8f-b2ac-126b48dbd517-0
+00:41:19.480 --> 00:41:23.361
+OK. Do you have anything else?
+Feel free to reach out to me.
+
+ba4e94af-be51-4a8f-b2ac-126b48dbd517-1
+00:41:23.361 --> 00:41:27.307
+Thank you so much for your time.
+Have a good afternoon. Thank
+
+ba4e94af-be51-4a8f-b2ac-126b48dbd517-2
+00:41:27.307 --> 00:41:29.280
+you. Thank you. Thank you. Bye.
