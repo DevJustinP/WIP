@@ -1,0 +1,30 @@
+- Scope of project
+    - Fabric Sample Orders / Marketing orders
+        - SQL report > Operations > Open Order review
+            - Warehouse - MKT
+        - ArTerms = NM specific
+        - Fabric Sample Orders are not being created dispatch
+            - Because the disptach note is not created, Orders go straight to invoice
+                - status 4 on marketing orders
+            - Some information and carrier information
+                - Carrier information
+                - Fedex tracking number - goes to the invoice
+
+    - We can Invoice without a deposit
+    - SCT are not going to be invoiced
+        - What is the program that invoices SCTs?
+        - Document Print
+    - OPTIO SYSPRO
+        - Saves to M-Files
+        - Invoice Copy to Customer
+    - Notifications
+        - invoices
+        - shipping notification
+
+- Demo How an invoice is created
+    - Dispatch notes module in syspro
+        - west coast dc order
+        - Status 5 do not invoice 
+    - Dispatch note status 7
+    - Invoice Terms = 'P' paid
+    -

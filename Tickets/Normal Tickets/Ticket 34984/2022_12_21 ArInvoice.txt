@@ -1,4 +1,15 @@
 Invoice Automation:
     Scope 
         Invoicing:
-            - 
+            from a dispatch note which are in status 7
+            SORTNC
+            SORDEP
+            *object to adjust payment on an invoice
+        
+        Send through SendGrid
+            yakchat
+
+            NotifyEvent Database
+
+            options
+            - NFY (Notify Events)
