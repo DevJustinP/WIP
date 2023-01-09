@@ -1,0 +1,131 @@
+<SalesOrders><!--eCat Site Name: Gabby--><!--eCat Order Number: 37375-111122-2205--><!--SYSPRO Branch: 220--><!--Order Staged Row Id: 323960-->
+    <TransmissionHeader>
+        <TransmissionReference>1122-12932417</TransmissionReference>
+        <DatePrepared>2022-11-11</DatePrepared>
+        <TimePrepared>12:09:32</TimePrepared>
+    </TransmissionHeader>
+    <Orders>
+        <OrderHeader>
+            <CustomerPoNumber>291060</CustomerPoNumber>
+            <Branch>220</Branch>
+            <OrderDate>2022-11-11</OrderDate>
+            <Customer>1247144</Customer>
+            <CustomerName>DESIGN AVENUE HOME FURNISHINGS</CustomerName>
+            <TaxExemptNumber>600665824</TaxExemptNumber>
+            <ShipAddress1>AIRPORT DESIGN CENTER</ShipAddress1>
+            <ShipAddress2>SUITE 101</ShipAddress2>
+            <ShipAddress3Locality />
+            <ShipAddress3>FLETCHER, NC</ShipAddress3>
+            <ShipAddress4 />
+            <ShipAddress5 />
+            <ShipPostalCode>28732</ShipPostalCode>
+            <ShipGpsLat>0</ShipGpsLat>
+            <ShipGpsLong>0</ShipGpsLong>
+            <Email></Email>
+            <Salesperson>MA-DAVIDS</Salesperson>
+            <RequestedShipDate>2022-12-23</RequestedShipDate>
+            <ShippingInstrsCode>PA</ShippingInstrsCode>
+            <OrderActionType>A</OrderActionType>
+            <OrderType>S</OrderType>
+        </OrderHeader>
+        <OrderDetails>
+            <CommentLine>
+                <CustomerPoLine>1</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>&gt;&gt;NOTE CHANGED BILL-TO ADDRESS&lt;&lt; &gt;&gt;NOTE CHANGED SHIP-TO
+                    ADDRESS&lt;&lt;</Comment>
+                <AttachedLineNumber>1</AttachedLineNumber>
+            </CommentLine>
+            <StockLine>
+                <CustomerPoLine>2</CustomerPoLine>
+                <StockCode>SCH-151449-100135</StockCode>
+                <StockDescription>LAINE CHAIR 1/2</StockDescription>
+                <OrderQty>2</OrderQty>
+                <Price>1758.00</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>CL-MN</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>
+            </StockLine>
+            <CommentLine>
+                <CustomerPoLine>3</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>PRIMARY FABRIC: 3880 - GR 3 - HEPBURN MINK</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>4</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>CUSHION FILL: SPRING DOWN UPGRADE</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>5</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>BODY WELT: SAME AS OUTSIDE</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>6</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>PILLOW FABRIC: COM - CUSTOMER OWNED MATERIAL</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>7</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>TRIM COLOR:TBD</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>8</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>TRIMNUMBER:TBD</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>9</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>TRIM MILL:TBD</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>10</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>- TRIM COLOR (COLOR): TBD</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>11</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>- TRIM NUMBER (NUMBER): TBD</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>12</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>- TRIM MILL (MILL): TBD</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+            <CommentLine>
+                <CustomerPoLine>13</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>PILLOW WELT: NO WELT</Comment>
+                <AttachedLineNumber>2</AttachedLineNumber>
+            </CommentLine>
+        </OrderDetails>
+    </Orders>
+</SalesOrders>

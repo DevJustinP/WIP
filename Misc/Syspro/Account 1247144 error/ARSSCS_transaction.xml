@@ -1,0 +1,12 @@
+<SetupArCustomer>
+    <Item>
+        <Key>
+            <Customer>1247144</Customer>
+        </Key>
+        <SoldToAddr1></SoldToAddr1>
+        <SoldToAddr2></SoldToAddr2>
+        <SoldToAddr3>,</SoldToAddr3>
+        <SoldToAddr5></SoldToAddr5>
+        <SoldPostalCode></SoldPostalCode>
+    </Item>
+</SetupArCustomer> 
