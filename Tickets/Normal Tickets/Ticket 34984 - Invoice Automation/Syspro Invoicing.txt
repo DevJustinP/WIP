@@ -1,0 +1,4 @@
+SysproV8
+    Invoicing objects:
+        - SORTIC - Invoice Calculation from Sales Order
+        - SORTNC - Invoice Calculation from Dispatch Note
