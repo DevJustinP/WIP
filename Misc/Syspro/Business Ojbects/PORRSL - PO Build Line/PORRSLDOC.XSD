@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2012 SYSPRO Ltd.-->
+<!-- 
+     Schema for the Purchase Order Transaction Posting Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="ApplyDueDateToLines" default="N">
+		<xsd:annotation>
+			<xsd:documentation>Indicates that when changing the Due date for the p/order header - the new Due date for the order header will be applied to all stocked and non-stocked detail lines for the order. Possible values  A - apply order header due date to all detail lines or L - apply order due date to all detail lines except lines that are confirmed in a LCT shipment or N - do not apply header due date to order lines. Default N.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="AttachedToStkLineNumber">
+		<xsd:annotation>
+			<xsd:documentation>Enter a line number in this element to attach the comment line to an order line. Comment lines may only be attached to stocked and non-stocked lines. This is a 4 character integer field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="AttachOrderToBPO">
+		<xsd:annotation>
+			<xsd:documentation>Only applies if purchase order line is being added, and a Blanket PO Contract number has been supplied. For a new order, an entry of 'Y' means the purchase order will be attached to the contract, and BPO history added. Only one contract number can be supplied within a new order.
+
+When adding lines to an existing order, the order must already be attached to a contract, and the order contract must match the contract given on the line.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="BlanketPurchaseOrder">
+		<xsd:annotation>
+			<xsd:documentation>This element is used  to supply the Blanket Purchase Order to be checked and used as the basis for the line. The contract must not be a fixed one, the supplier, stock code and warehouse must match on one of the contract detail lines, the contract must be current, there must be a valid remaining quantity, and the SYSPRO setup must allow manual addition to this type of contract. 
+
+If the contract is valid then the details of the contract will be used to set up the purchase order line. Any of the relevant details may be overridden by elements passed.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Buyer">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the buyer responsible for purchasing the goods on the purchase order. Buyer will be validated according to the set-up options for buyer in the purchase order set-up - Options tab. If Mandatory - Buyer must be supplied and on file. If Entered - the supplied Buyer must be on file, if not entered, and not mandatory, there is no validation. This is a 3 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ChgPOStatToReadyToPrint">
+		<xsd:annotation>
+			<xsd:documentation>If you selected the option: Set order status to ready to print after maintenance (Purchase Order Set-up), after maintaining an order (in status 4), the status will be reset to 1 if this element is set to Y (Yes). Only applicable when changing a P/order (action type = C). Default N (No). Possible values Y, N or spaces.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Comment">
+		<xsd:annotation>
+			<xsd:documentation>Comment can contain up to 990 characters, which equals 22 lines of 45 characters. The comment will be spilt into separate lines of 45 characters for you in order to save them on the P/order detail table. Please note when changing a P/order comment the whole comment will be deleted and overwritten by the new comment supplied - in other words you will not be able to change only one comment line of 45 characters alone. (Therefore when changing supply the complete new comment). Please note that  when changing the comment lines you will not be allowed to add more comment lines than the original comment had unless the comment is the last line for the P/order.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="CommentLine">
+		<xsd:annotation>
+			<xsd:documentation>The element CommentLine must be used to identify the start and end of the import information for the comment order line section.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="PurchaseOrderLine" minOccurs="0"/>
+				<xsd:element ref="LineActionType" minOccurs="0"/>
+				<xsd:element ref="Comment" minOccurs="0"/>
+				<xsd:element ref="AttachedToStkLineNumber" minOccurs="0"/>
+				<xsd:element ref="DeleteAttachedCommentLines" minOccurs="0"/>
+				<xsd:element ref="ChangeSingleCommentLine" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Customer">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the customer code if the purchase order is to be processed for a customer. This is a 7 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="CustomerPoNumber">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the customer purchase order number to be used for cross-referencing purposes. This is a 30 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeleteAttachedCommentLines" default="N">
+		<xsd:annotation>
+			<xsd:documentation>This element will indicate if only this specific comment line should be deleted or the complete comment (if the comment spans over more than one line). Default N (No). (Y- yes will delete the entire comment - all the lines, N - No will only delete the specific comment line supplied).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddr1">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the first line of the Delivery address for the P/order. If delivery Name and Address has not been supplied - will use the default Delivery address against the delivery address code supplied in the parameter Default delivery address. If the purchase order set-up option to Restrict order to single warehouse and use for delivery address has been selected ( P/order set-up - Option tab) - the warehouse address will be used instead. This is a 40 character, alpha-numeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddr2">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the second line of the Delivery address for the P/order. This is a 40 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddr3">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the third line of the Delivery address for the P/order. This is a 40 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddrLoc">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the Location in the Delivery address for the P/order. This is a 40 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddr4">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the fourth line of the Delivery address for the P/order. This is a 40 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddr5">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the fifth line of the Delivery address for the P/order. This is a 40 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryGpsLat">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the GPS Latitude of the Delivery address for the P/order. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryGpsLon">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the GPS Longitude of the Delivery address for the P/order. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryName">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the name of the Delivery address for the P/order. If delivery Name and Address has not been supplied - will use the default Delivery address against the delivery address code supplied in the parameter Default delivery address. If the purchase order set-up option to Restrict order to single warehouse and use for delivery address has been selected ( P/order set-up - Option tab) - the warehouse address will be used instead. This is a 30 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DiscPercent1">
+		<xsd:annotation>
+			<xsd:documentation>You use the Order Discount elements to enter/change the discount percentages to be applied to the order. This element indicates the first discount percentage. This is a signed 3 integer, 2 decimal field. If this element is not supplied, or is zero, then the elements DiscPercent2 and DiscPercent3 cannot contain a value.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DiscPercent2">
+		<xsd:annotation>
+			<xsd:documentation>You use the Order Discount elements to enter/change the discount percentages to be applied to the order. This element indicates the second discount percentage. This is a signed 2 integer, 2 decimal field. If this element is not supplied, or is zero, then the element DiscPercent3 cannot contain a value.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DiscPercent3">
+		<xsd:annotation>
+			<xsd:documentation>You use the Order Discount elements to enter/change the discount percentages to be applied to the order. This element indicates the third discount percentage. This is a signed 2 integer, 2 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DiscountLessPlus" default="L">
+		<xsd:annotation>
+			<xsd:documentation>You use the Order Discount elements to enter/change the discount percentages to be applied to the order. This element indicates if the discount should be added or subtracted from the order value. Possible values: L - less or P - Plus. Default - L.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DueDate">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the Due date for the purchase order. The due date defaults to the current system date, if not supplied. This can be printed on the purchase order and used for selection purposes within the Purchase orders by order number report. The order due date will also be used in the Requirements calculation program (Requirements Planning module). Must be supplied in a CCYY-MM-DD format.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="eSignature">
+		<xsd:annotation>
+			<xsd:documentation>If required, this element must contain a GUID, for the eSignature system to accept the transaction as having been authenticated. The GUID format is in the format {36303032-3330-3031-3038-323434363433}, where the numbers can be replaced with any character. It is up to the developer to have requested a password to protect the transaction. An example is that a GUID associated with the act of entering a valid password could be obtained and presented.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ExchRateFixed" default="N">
+		<xsd:annotation>
+			<xsd:documentation>This element will only be relevant if processing an order for a foreign currency supplier and you selected the Allow entry/maintenance of exchange rate option (Purchase Orders Set-up) and the currency has not been flagged as Fixed on the currency conversion table (Accounts payable - Currency Setup).This element will indicate if the default fixed exchange rate is to be used when a foreign supplier is entered during order entry.  All foreign prices entered will be converted to local currency values using this fixed exchange rate. Possible value - Y (Yes) or N (No). Default N.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ExchangeRate">
+		<xsd:annotation>
+			<xsd:documentation>If processing an order for a foreign currency supplier and the currency has been flagged as fixed - an exchange rate to be applied to this order can be supplied instead of using the default fixed exchange rate. This is a 6 integer, 6 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="FreightFLoc">
+		<xsd:annotation>
+			<xsd:documentation>This element is only used if processing freight charges for a foreign currency supplier. This enables you to indicate the currency in which the charge is being entered. If not supplied and a P/order is added for a foreign currency supplier it  will default according to the Purchase order set-up for Freight charges (Details tab). This is a 1 character, alphanumeric field. Possible values L (local) or F (foreign).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="FreightLine">
+		<xsd:annotation>
+			<xsd:documentation>The element FreightLine must be used to identify the start and end of the import information for the freight order line section.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="PurchaseOrderLine" minOccurs="0"/>
+				<xsd:element ref="LineActionType" minOccurs="0"/>
+				<xsd:element ref="FreightValue" minOccurs="0"/>
+				<xsd:element ref="FreightTaxCode" minOccurs="0"/>
+				<xsd:element ref="FreightTaxable" minOccurs="0"/>
+				<xsd:element ref="FreightFLoc" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="FreightTaxCode">
+		<xsd:annotation>
+			<xsd:documentation>You use this field to indicate the tax code that you want to assign to the freight order line. May not be blank when adding a freight line - or changing the tax status of the line from no to yes - and the taxable status of the line is Yes.This is a 1 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="FreightTaxable">
+		<xsd:annotation>
+			<xsd:documentation>You use this option to indicate whether the order line is taxable. If not supplied or contains spaces will default to the tax status of the P/order header. Possible value Y (Yes), N (No) or spaces.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="replace"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="FreightValue">
+		<xsd:annotation>
+			<xsd:documentation>Used to enter freight charges that you want to assign to the order. This is a signed 12 integer, 2 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="HierHead">
+		<xsd:annotation>
+			<xsd:documentation>This element is required when adding a purchase order line for a job that is heirarchical, and must be valid against the job. When changing the job on a line, this elemtn is required if the new job  is heirarchical, and must be valid against the job.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="InspectionReqd" default="N">
+		<xsd:annotation>
+			<xsd:documentation>Only for non-stocked items. Possible value - Y (Yes) or N (No). Default - N.
+Select this option if you want to receive the non-stocked order line into inspection and perform two-tier receipting of the item using the Purchase Receipts and Inspections program. Once in inspection, you can count the non-stocked quantity, scrap quantities, reject quantities, return quantities, and receive the non-stocked item into stock. Any linked sales orders or jobs are updated and the ledger codes entered against the purchase order line are used for distribution.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="InvoiceTerms">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the invoice terms for the purchase order. Will default to the supplier master invoice terms if not supplied when adding an order. This is a 2 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Job">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the job number that you want to associate with this purchase order line. If the Work in Progress module is installed, then the job is validated. This number will become the default job number when performing a purchase order receipt. This is an 8 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LatestDueDate">
+		<xsd:annotation>
+			<xsd:documentation>You use this field to enter the due date of the line. Must be in a CCYY-MM-DD format. If you have the parameter Calc due date (based on lead time) selected (set to Y), the P/order header Due date and the inventory master lead time will be used to calculate a due date for the line. If a Due date was not supplied for the header the current system date would have been used.  If a supersession date has been entered against the stock code  the due date will be checked against the supersession date. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LedgerCode">
+		<xsd:annotation>
+			<xsd:documentation>You use this field to indicate the ledger code that must be debited when processing a purchase order receipt. For stock codes the inventory warehouse ledger code will be used. For non-stocked lines the default WIP ledger code will be used only if a job number has been supplied and WIP integrated to G/L or the Ledger code supplied against the Job. The Ledger code supplied will only be used for a non-stocked item when there is no Job number against the P/order line.  In this case the Ledger code is mandatory depending on the P/order parameter  Allow blank ledger code (for non-stocked).This is a 15 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineActionType" default="A">
+		<xsd:annotation>
+			<xsd:documentation>Indicates if the line should be added, changed or deleted. Possible values A (add), C (change) or D (delete). Default A. If adding a purchase order,then all detail lines must have an A for LineActionType (will automatically be set to A)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="D"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineDiscLessPlus" default="L">
+		<xsd:annotation>
+			<xsd:documentation>You use the Line Discount elements to enter/change the discount percentages to be applied to the line. This element indicates if the discount should be added or subtracted from the line value. Possible values: L - less or P - Plus. Default - L.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineDiscPercent1">
+		<xsd:annotation>
+			<xsd:documentation>You use the Line Discount elements to enter/change the discount percentages to be applied to the order line. This element indicates the first discount percentage. This is a signed 3 integer, 2 decimal field. If this element is not supplied, or is zero, then the elements LineDiscPercent2 and LineDiscPercent3 cannot contain a value.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineDiscPercent2">
+		<xsd:annotation>
+			<xsd:documentation>You use the Line Discount elements to enter/change the discount percentages to be applied to the order line. This element indicates the second discount percentage. This is a signed 2 integer, 2 decimal field. If this element is not supplied, or is zero, then the element DiscPercent3 cannot contain a value.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineDiscPercent3">
+		<xsd:annotation>
+			<xsd:documentation>You use the Line Discount elements to enter/change the discount percentages to be applied to the order line. This element indicates the third discount percentage. This is a signed 2 integer, 2 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineDiscType" default="P">
+		<xsd:annotation>
+			<xsd:documentation>Indicates if the line discount has been entered as a value or percentages. Possible values - P (percentage) or V (value). Default P.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="P"/>
+				<xsd:enumeration value="V"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="LineDiscValue">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the line discount value to be applied to the order line. This is a signed 12 integer, 2 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MemoCode">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the memo code to be applied to the order header. This memo code can be used as a means of identifying who raised the purchase order.  The default Memo code will be used for all new orders where a memo code has not been supplied in the Order Header. This is a 1 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MemoDate">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the memo date to be applied to the order header. Must be entered in a CCYY-MM-DD format. The memo date defaults from the order date plus the  default memo days supplied in the parameter Default Memo Days if the memo date has not been supplied when adding an order. The memo date can be set to a few days before the order due date, and when running the Purchase orders by order number report you will be able to check all the orders which are coming in on a specific date.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MiscChargeLine">
+		<xsd:annotation>
+			<xsd:documentation>The element MiscChargeLine must be used to identify the start and end of the import information for the other/miscellaneous charge order line section.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="PurchaseOrderLine" minOccurs="0"/>
+				<xsd:element ref="LineActionType" minOccurs="0"/>
+				<xsd:element ref="MiscChargeValue" minOccurs="0"/>
+				<xsd:element ref="MiscChargeTax" minOccurs="0"/>
+				<xsd:element ref="MiscTaxable" minOccurs="0"/>
+				<xsd:element ref="MiscChargeFLoc" minOccurs="0"/>
+				<xsd:element ref="MiscDescription" minOccurs="0"/>
+				<xsd:element ref="MiscCommentCode" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="MiscChargeFLoc">
+		<xsd:annotation>
+			<xsd:documentation>This element is only used if processing miscellaneous charges for a foreign currency supplier. This enables you to indicate the currency in which the charge is being entered.
+If not supplied and a P/order is added for a foreign currency supplier  it will default according to the Purchase order set-up for Misc charges (Details tab).
+Possible values L (local) or F (foreign).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MiscChargeTax">
+		<xsd:annotation>
+			<xsd:documentation>You use this option to indicate the tax code to be used for the miscellaneous order line.  This is a 1 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MiscChargeValue">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the miscellaneous charges to be applied to an order.  This is a signed 12 integer, 2 decimal field.
+</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MiscCommentCode">
+		<xsd:annotation>
+			<xsd:documentation>If standard comments have been created you can enter the comment code instead of a description for the miscellaneous order line. This is a 3 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MiscDescription">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the description for the miscellaneous charge line. This is a 45 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="MiscTaxable">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether the miscellaneous order line is taxable. If not supplied or contains spaces will default to the tax status of the P/order header. Possible values Y (Yes) or N (No).
+</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="NonStockedLine">
+		<xsd:annotation>
+			<xsd:documentation>This element is used in conjuction with the parameter 'AllowNonStockedItems'. When the parameter is set to 'S' (specify), then this element is used to determine if a line is for a non-stocked item. Valid entries are 'Y' (yes, a non-stocked line), or blank, the default. This element is  only relevant for line action type 'A' - add, and will be ignored for other actions.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value=""/>
+				<xsd:enumeration value="Y"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="NonsUnitMass">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the unit mass for a non-stocked item. This is a signed 6 integer, 6 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="NonsUnitVol">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the unit volume for a non-stocked item. This is a signed 6 integer, 6 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="OrderActionType" default="A">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the action to be performed for this order header (A - Add a purchase order, C - Change an existing purchase order, D - Cancel the purchase order). Order Action Type will default to A (Add) if not supplied. If adding a sales order header, all detail lines must have an A for LineActionType. If changing an order, the individual order lines may be added, changed or cancelled. If cancelling an order the P/order status will be set to cancelled (*) and the P/order will be flagged as cancelled and not active.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="A"/>
+				<xsd:enumeration value="C"/>
+				<xsd:enumeration value="D"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="OrderDate">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the order date to be applied for the purchase order. Must be in a CCYY-MM-DD format. Will default to current date if not supplied when adding an order.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="OrderDetails">
+		<xsd:annotation>
+			<xsd:documentation>The element Order Details must be used to identify the start and end of the import information for all the order lines for an order. This includes stocked lines, freight lines, miscellaneous lines and comment line.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="StockLine" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="CommentLine" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="MiscChargeLine" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="FreightLine" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OrderHeader">
+		<xsd:annotation>
+			<xsd:documentation>The element Order Header must be used to identify the start and end of the import information for the order header.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="OrderActionType" minOccurs="0"/>
+				<xsd:element ref="Supplier" minOccurs="0"/>
+				<xsd:element ref="ExchRateFixed" minOccurs="0"/>
+				<xsd:element ref="ExchangeRate" minOccurs="0"/>
+				<xsd:element ref="OrderType" minOccurs="0"/>
+				<xsd:element ref="Customer" minOccurs="0"/>
+				<xsd:element ref="TaxStatus" minOccurs="0"/>
+				<xsd:element ref="PaymentTerms" minOccurs="0"/>
+				<xsd:element ref="InvoiceTerms" minOccurs="0"/>
+				<xsd:element ref="CustomerPoNumber" minOccurs="0"/>
+				<xsd:element ref="ShippingInstrs" minOccurs="0"/>
+				<xsd:element ref="OrderDate" minOccurs="0"/>
+				<xsd:element ref="DueDate" minOccurs="0"/>
+				<xsd:element ref="MemoDate" minOccurs="0"/>
+				<xsd:element ref="ApplyDueDateToLines" minOccurs="0"/>
+				<xsd:element ref="MemoCode" minOccurs="0"/>
+				<xsd:element ref="Buyer" minOccurs="0"/>
+				<xsd:element ref="DeliveryName" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddr1" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddr2" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddr3" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddrLoc" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddr4" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddr5" minOccurs="0"/>
+				<xsd:element ref="DeliveryGpsLat" minOccurs="0"/>
+				<xsd:element ref="DeliveryGpsLon" minOccurs="0"/>
+				<xsd:element ref="PostalCode" minOccurs="0"/>
+				<xsd:element ref="Warehouse" minOccurs="0"/>
+				<xsd:element ref="DiscountLessPlus" minOccurs="0"/>
+				<xsd:element ref="DiscPercent1" minOccurs="0"/>
+				<xsd:element ref="DiscPercent2" minOccurs="0"/>
+				<xsd:element ref="DiscPercent3" minOccurs="0"/>
+				<xsd:element ref="PurchaseOrder" minOccurs="0"/>
+				<xsd:element ref="ChgPOStatToReadyToPrint" minOccurs="0"/>
+				<xsd:element ref="eSignature" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OrderQty">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the order quantity for the stocked/non-stocked line.  At least one of the qty fields must be supplied either OrderQty or Units and Pieces.
+If stock item requires Unit quantity processing but quantity is supplied it will be used rather than the units and pieces. Else the units and pieces will be used.
+If a decimal quantity is supplied for an item that uses unit quantity processing the quantity must convert to a valid number of units and pieces.
+If item does not require unit quantity processing, units/pieces are invalid.
+This is a signed 7 integer, 3 decimal field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="OrderType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the Purchase order type. Possible values L (Local), I (Import) or O(Other). The default value for Order type  is determined by the currency code of the supplier and the local currency code defined within the Company options. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="L"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="OrderUom">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the unit of measure for the order quantity. If not supplied - will default to the inventory master stocking unit of measure. For non-stocked the default Unit of measure will be used - Inventory set-up - Option tab. This is a 3 character, aplha-numeric field. The Order unit of measure may be either the stocking unit of measure or the alternate unit of measure when the purchase order set-up option (General tab) to Use alternate unit of measure for order quantity has been selected (enabling you to use as the order quantity either the stocking or alternate unit of measure). You will not be able to change the order unit of measure for a stock code that requires Unit quantity processing. The inventory master stocking unit of measure will always be used for a stock code that requires Unit quantity processing. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Orders">
+		<xsd:annotation>
+			<xsd:documentation>The element Orders must be used to identify the start and end of the import information for an order - this includes the order header and all the order detail lines.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="OrderHeader"/>
+				<xsd:element ref="OrderDetails" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OriginalDueDate">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the original due date of the order line if changes were made to the due date. Will only be used if the line action type is C (Change). Must be  entered in a CCYY-MM-DD format. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PasswordForLedgerCode">
+		<xsd:annotation>
+			<xsd:documentation>If the Ledger code supplied for the Non-stock P/order line is password protected a valid  password must be supplied. This is a 4 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PaymentTerms">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the payment terms for the order e.g. COD. This is a 3 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Pieces">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the pieces for the order line if the stock code makes use of unit quantity processing. This is a 3 integer field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="BuildPurchaseOrderLines">
+		<xsd:annotation>
+			<xsd:documentation>This is the root element.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="Orders" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PostalCode">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the postal code for the delivery address for the purchase order header. This is a 9 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Price">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the unit price to be applied for the order line. This is a 10 integer, 5 decimal field.If the purchase order is for a local currency and no price method or price has been supplied then the price will default based on the P/order set-up default pricing method. If default pricing method is Current inventory cost price: If you have not supplied a Price then the warehouse cost will be used for the Price.If default pricing method is Purchasing price: If you have not supplied a Price then the inventory selling price will be used for the Price.If default Last price paid: If a catalogue exists then the last price paid will be used from the P/o Supplier/Stock code information table. If  you have selected Supplier Prices as a Pricing method and you supply the supplier contract the program will extract the Price from the P/o Supplier/stock code contract price file. The pricing method F (Foreign price) may only be selected if the supplier is a foreign supplier and a Foreign Purchase Price exists on file for the stock code. (Inventory set-up Foreign Purchasing Price). Will pick up the Foreign price from the Foreign Purchase Price file. If a valid job number and subcontract number has been supplied for a non-stocked P/order line. The List price will default to the subcontract operation unit cost.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PriceMethod">
+		<xsd:annotation>
+			<xsd:documentation>The purpose of the price method is to allow the user to select where the unit price for the P/order line should default from during order entry. Therefore a price does not have to be supplied. If neither a price nor a price method has been supplied for the line - Price method will default according to P/order setup General tab. PriceMethod may only contain "M" (Manual), "CC" (Current cost),  "LC" (Last cost),  "LP" (List price) , "LPP" (Last price paid), S (Supplier price) or F (Foreign Price). For non-stocked items always Manual - M.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="M"/>
+				<xsd:enumeration value="CC"/>
+				<xsd:enumeration value="LC"/>
+				<xsd:enumeration value="LP"/>
+				<xsd:enumeration value="LPP"/>
+				<xsd:enumeration value="S"/>
+				<xsd:enumeration value="F"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PriceUom">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the price unit of measure for the order line. If not supplied and there is no default Pricing method - will default to the inventory master stocking unit of measure. For non-stocked if a stock unit of measure has been supplied the price Unit of measure will default to the Stock unit of measure or else the default Unit of measure will be used - Inventory set-up - Option tab. This is a 3 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ProductClass">
+		<xsd:annotation>
+			<xsd:documentation>Product class must be provided for a non-stocked P/order line. This is a 4 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PurchaseOrder">
+		<xsd:annotation>
+			<xsd:documentation>The Purchase order number must be supplied if changing or cancelling the order, or when adding a new P/order and the Purchase order numbering is Manual. Please note that the P/order number must be supplied even if you are only making changes to some of the P/order lines or adding a new P/order line to an existing P/order. This is a 6 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PurchaseOrderLine">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the Purchase order line to be changed or deleted. Must be supplied when changing or deleting a line.  When changing or deleting line the P/order line supplied must be on file. When adding a new P/order line - the line number will be generated automatically using the next line number field from the P/order header. This is a 4 integer field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Release">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the release number for the stock code if ECC is in use and the order line is for an ECC controlled item. This is a 3 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="RescheduleDueDate">
+		<xsd:annotation>
+			<xsd:documentation> Allow MRP to reschedule due date may only contain Y or N. You use this option to indicate whether MRP can reschedule the due date of the order. When a Requirements Calculation is performed and this option is enabled, you can change the due date of the order to fall in line with the production schedule. 
+ If adding a P/order line for a non-stocked item and a job number has been supplied and the line has been flagged as a subcontract operation (a subcontract operation number supplied) the Reschedule for MRP flag will default to N (No) if not supplied. When adding a stocked line the Reschedule for MRP flag will default to Y (Yes) - if not supplied
+</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Section1">
+		<xsd:annotation>
+			<xsd:documentation>This element is used together with the Section2, Section3 and Section4 elements to build a full hierarchy for validating against a hierarchical job. It is only required if the element HierHead has been entered</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Section2">
+		<xsd:annotation>
+			<xsd:documentation>This element is used together with the Section1, Section3 and Section4 elements to build a full hierarchy for validating against a hierarchical job. It is only required if the elements HierHead  and Section1 have been entered</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Section3">
+		<xsd:annotation>
+			<xsd:documentation>This element is used together with the Section1, Section2 and Section4 elements to build a full hierarchy for validating against a hierarchical job. It is only required if the elements HierHead ,Section1 and Section2 have been entered</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Section4">
+		<xsd:annotation>
+			<xsd:documentation>This element is used together with the Section1, Section2 and Section3 elements to build a full hierarchy for validating against a hierarchical job. It is only required if the elements HierHead ,Section1, Section2 and Section3 have been entered</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ShippingInstrs">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the shipping instructions to be applied to the P/order. The shipping instructions for the order will default from the Purchase Order Setup. This is a 30 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="StockCode">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the stock item for the P/order line. If the stock code supplied does not exist on the inventory master and the parameter AllowNonStockItems is set to Y (Yes) then the detail line will be added as a non-stocked line. This is a 30 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="StockDescription">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the stock description for the stock/non-stocked code for a P/order line. Will default to the Inventory master stock description but can be changed against the P/order by supplying a stock description. This is a 30 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="StockLine">
+		<xsd:annotation>
+			<xsd:documentation>The element Stock Line must be used to identify the start and end of the import information for the order stocked/non-stocked line.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element ref="PurchaseOrderLine" minOccurs="0"/>
+				<xsd:element ref="LineActionType" minOccurs="0"/>
+				<xsd:element ref="StockCode" minOccurs="0"/>
+				<xsd:element ref="StockDescription" minOccurs="0"/>
+				<xsd:element ref="Warehouse" minOccurs="0"/>
+				<xsd:element ref="SupCatalogue" minOccurs="0"/>
+				<xsd:element ref="OrderQty" minOccurs="0"/>
+				<xsd:element ref="OrderUom" minOccurs="0"/>
+				<xsd:element ref="Units" minOccurs="0"/>
+				<xsd:element ref="Pieces" minOccurs="0"/>
+				<xsd:element ref="PriceMethod" minOccurs="0"/>
+				<xsd:element ref="SupplierContract" minOccurs="0"/>
+				<xsd:element ref="SupplierContractReference" minOccurs="0"/>
+				<xsd:element ref="Price" minOccurs="0"/>
+				<xsd:element ref="PriceUom" minOccurs="0"/>
+				<xsd:element ref="LineDiscType" minOccurs="0"/>
+				<xsd:element ref="LineDiscLessPlus" minOccurs="0"/>
+				<xsd:element ref="LineDiscPercent1" minOccurs="0"/>
+				<xsd:element ref="LineDiscPercent2" minOccurs="0"/>
+				<xsd:element ref="LineDiscPercent3" minOccurs="0"/>
+				<xsd:element ref="LineDiscValue" minOccurs="0"/>
+				<xsd:element ref="Taxable" minOccurs="0"/>
+				<xsd:element ref="TaxCode" minOccurs="0"/>
+				<xsd:element ref="Job" minOccurs="0"/>
+				<xsd:element ref="HierHead" minOccurs="0"/>
+				<xsd:element ref="Section1" minOccurs="0"/>
+				<xsd:element ref="Section2" minOccurs="0"/>
+				<xsd:element ref="Section3" minOccurs="0"/>
+				<xsd:element ref="Section4" minOccurs="0"/>
+				<xsd:element ref="Version" minOccurs="0"/>
+				<xsd:element ref="Release" minOccurs="0"/>
+				<xsd:element ref="LatestDueDate" minOccurs="0"/>
+				<xsd:element ref="OriginalDueDate" minOccurs="0"/>
+				<xsd:element ref="RescheduleDueDate" minOccurs="0"/>
+				<xsd:element ref="LedgerCode" minOccurs="0"/>
+				<xsd:element ref="PasswordForLedgerCode" minOccurs="0"/>
+				<xsd:element ref="SubcontractOp" minOccurs="0"/>
+				<xsd:element ref="InspectionReqd" minOccurs="0"/>
+				<xsd:element ref="ProductClass" minOccurs="0"/>
+				<xsd:element ref="NonsUnitMass" minOccurs="0"/>
+				<xsd:element ref="NonsUnitVol" minOccurs="0"/>
+				<xsd:element ref="BlanketPurchaseOrder" minOccurs="0"/>
+				<xsd:element ref="AttachOrderToBPO" minOccurs="0"/>
+				<xsd:element ref="NonStockedLine" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SubcontractOp">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the sub-contract operation code to be applied to the P/order line. This element will only be used if the P/order line is a non-stocked line and a job number has been supplied. If a valid job number and subcontract number has been supplied for a non-stocked P/order line the List price will default to the subcontract operation unit cost when adding a new line.
+This is a 4 integer field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="SupCatalogue">
+		<xsd:annotation>
+			<xsd:documentation>The supplier's catalogue number can be supplied instead of the SYSPRO stock code. The Supplier/stock code interchange system required option must be selected in the Inventory set-up (option tab) and the stock code must be linked to a supplier catalogue number. If the stock code has not been supplied or contains spaces and supplier/stock code interchange system is required - the suppliers catalogue will be used to retrieve the SYSPRO stock code. The suppliers catalogue will only be validated if the stock code was not supplied. This is a 30 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Supplier">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the supplier for the purchase order.  The supplier for the P/order must be supplied when adding a new P/order and can not be changed when maintaining the order. This is a 7 character, alphanumeric field. The operator must have access to the Accounts Payable branch against the supplier. The supplier must allow P/orders (supplier set-up - Purchasing tab).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="SupplierContract">
+		<xsd:annotation>
+			<xsd:documentation>When using the supplier's price method - the supplier's contract number must be supplied in order to retrieve the correct default list price. This is a 6 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="SupplierContractReference">
+		<xsd:annotation>
+			<xsd:documentation>When using the supplier's price method - the supplier's contract number must be supplied in order to retrieve the correct default list price. The supplier contract reference can additoinally be supplied to differentiate between more than one entry with the same contract number. This is a 10 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="TaxCode">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the tax code to be used for the stocked/non-stocked order line if taxable. This is a 1 character, alphanumeric field. The tax code will default from the inventory master for a stocked item if not supplied and line is taxable.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="TaxStatus">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the tax status of the P/order. Possible values E (Exempt) or N (Not exempt- taxable). If no value has been supplied - will default to the default tax status in the Purchase order set-up - Option tab. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="E"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Taxable">
+		<xsd:annotation>
+			<xsd:documentation>Indicates if the line is taxable - only used if the order header is taxable. Possible values Y (Yes) or N (No). If the taxable status has not been supplied for the line, the line will default to Taxable.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Units">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the units for the order line if the stock code makes use of unit quantity processing. This is a 7 integer field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Version">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the version number for the stock code if ECC is in use and the order line is for an ECC controlled item. This is a 3 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Warehouse">
+		<xsd:annotation>
+			<xsd:documentation>If the purchase order set-up option to Restrict order to single warehouse and use for delivery address has been selected (P/order set-up - Option tab) - then the warehouse supplied in the OrderHeader will be used for the entire order and you will not be allowed to enter/change the warehouse per P/order line. A warehouse can be supplied per P/order line if the set-up option has not been selected. You will not be allowed to change the warehouse for the entire order by supplying the new warehouse code in the OrderHeader when maintaining the order if the option to Restrict order to single warehouse has been selected.This is a 2 character, alphanumeric field. If the option to Restrict order to single warehouse has been selected then the delivery address against the warehouse will be used for the delivery address of the new P/order.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ChangeSingleCommentLine">
+		<xsd:annotation>
+			<xsd:documentation>Only used if the comment is to be changed. Possible values Y (Yes) or N (No). The default is N(No). If the element is set  to 'Y', then only the comment line selected will be changed. In addition, the length of the element Comment cannot be more than 45. If set to 'N' then the comment lines from this line to the next non-comment line will be replaced by the contents of the element Comment.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+</xsd:schema>

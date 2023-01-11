@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Purchase Order Transaction Posting Business Object
+-->
+<PostPurchaseOrders xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="PORTOI.XSD">
+  <Parameters>
+    <ValidateOnly>N</ValidateOnly>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <AllowNonStockItems>N</AllowNonStockItems>
+    <AllowZeroPrice>N</AllowZeroPrice>
+    <ValidateWorkingDays>N</ValidateWorkingDays>
+    <AllowPoWhenBlanketPo>N</AllowPoWhenBlanketPo>
+    <DefaultMemoCode>S</DefaultMemoCode>
+    <FixedExchangeRate>N</FixedExchangeRate>
+    <DefaultMemoDays>12</DefaultMemoDays>
+    <AllowBlankLedgerCode>Y</AllowBlankLedgerCode>
+    <DefaultDeliveryAddress/>
+    <CalcDueDate>N</CalcDueDate>
+    <InsertDangerousGoodsText>N</InsertDangerousGoodsText>
+    <InsertAdditionalPOText>N</InsertAdditionalPOText>
+    <OutputItemforDetailLines>N</OutputItemforDetailLines>
+    <Status>1</Status>
+    <StatusInProcess/>
+  </Parameters>
+</PostPurchaseOrders>

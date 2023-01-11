@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut schema to demonstrate
+     use of the Retrieve Sales Order Header Business Object
+-->
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="PoLine">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="StockCode" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Description" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DueDate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OsQty" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Uom" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="StockAndAltUm" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="AlternateUom" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OtherUom" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="PriceUom" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="StockingUom" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Warehouse" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="WarehouseDesc" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="CostMethod" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="CostMethodDesc" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="UnitPrice" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="PoOrderQty" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="RecdQty" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OrgDue" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="RecDate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Tax" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="ProductClass" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="LineTotal" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Line" type="xsd:string" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

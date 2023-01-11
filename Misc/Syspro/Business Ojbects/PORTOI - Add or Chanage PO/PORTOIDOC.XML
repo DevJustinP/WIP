@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Purchase Order Transaction Posting Business Object
+-->
+<PostPurchaseOrders xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="PORTOIDOC.XSD">
+  <Orders>
+    <OrderHeader>
+      <OrderActionType>A</OrderActionType>
+      <Supplier>0000001</Supplier>
+      <ExchRateFixed/>
+      <ExchangeRate/>
+      <OrderType>L</OrderType>
+      <Customer>000010</Customer>
+      <TaxStatus>N</TaxStatus>
+      <PaymentTerms/>
+      <InvoiceTerms>1</InvoiceTerms>
+      <CustomerPoNumber>C1000</CustomerPoNumber>
+      <ShippingInstrs>Ship via Hong Kong</ShippingInstrs>
+      <OrderDate>2006-11-30</OrderDate>
+      <DueDate>2006-12-14</DueDate>
+      <MemoDate>2006-12-04</MemoDate>
+      <ApplyDueDateToLines>A</ApplyDueDateToLines>
+      <MemoCode/>
+      <Buyer/>
+      <DeliveryName>The SYSPRO Outdoors Company</DeliveryName>
+      <DeliveryAddr1>This is the delivery address 1</DeliveryAddr1>
+      <DeliveryAddr2>This is the delivery address 2</DeliveryAddr2>
+      <DeliveryAddr3>This is the delivery address 3</DeliveryAddr3>
+      <DeliveryAddrLoc>This is the delivery address location</DeliveryAddrLoc>
+      <DeliveryAddr4>This is the delivery address 4</DeliveryAddr4>
+      <DeliveryAddr5>This is the delivery address 5</DeliveryAddr5>
+      <DeliveryGpsLat>00.000000</DeliveryGpsLat>
+      <DeliveryGpsLon>000.000000</DeliveryGpsLon>
+      <PostalCode>90210</PostalCode>
+      <AutoVoucher></AutoVoucher>
+      <LanguageCode></LanguageCode>
+      <Warehouse/>
+      <DiscountLessPlus/>
+      <DiscPercent1>2.50</DiscPercent1>
+      <DiscPercent2>1.50</DiscPercent2>
+      <DiscPercent3>1.00</DiscPercent3>
+      <PurchaseOrder>221124</PurchaseOrder>
+      <ChgPOStatToReadyToPrint/>
+      <eSignature/>
+    </OrderHeader>
+    <OrderDetails>
+      <StockLine>
+        <PurchaseOrderLine>1</PurchaseOrderLine>
+        <LineActionType>A</LineActionType>
+        <StockCode>B100</StockCode>
+        <StockDescription>Bicyle</StockDescription>
+        <Warehouse>E</Warehouse>
+        <SupCatalogue>FF334221</SupCatalogue>
+        <OrderQty>5</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <Units/>
+        <Pieces/>
+        <PriceMethod>M</PriceMethod>
+        <SupplierContract/>
+        <SupplierContractReference/>
+        <Price>400</Price>
+        <PriceUom>EA</PriceUom>
+        <LineDiscType>P</LineDiscType>
+        <LineDiscLessPlus>L</LineDiscLessPlus>
+        <LineDiscPercent1>0.5</LineDiscPercent1>
+        <LineDiscPercent2>0</LineDiscPercent2>
+        <LineDiscPercent3>0</LineDiscPercent3>
+        <LineDiscValue>0</LineDiscValue>
+        <Taxable>Y</Taxable>
+        <TaxCode/>
+        <Job/>
+        <HierHead/>
+        <Section1/>
+        <Section2/>
+        <Section3/>
+        <Section4/>
+        <Version/>
+        <Release/>
+        <LatestDueDate/>
+        <OriginalDueDate/>
+        <RescheduleDueDate/>
+        <LedgerCode/>
+        <PasswordForLedgerCode/>
+        <SubcontractOp/>
+        <InspectionReqd/>
+        <ProductClass/>
+        <NonsUnitMass/>
+        <NonsUnitVol/>
+        <BlanketPurchaseOrder/>
+        <AttachOrderToBPO/>
+        <NonStockedLine/>
+      </StockLine>
+      <CommentLine>
+        <PurchaseOrderLine>2</PurchaseOrderLine>
+        <LineActionType>A</LineActionType>
+        <Comment>Ensure saddle is color coded</Comment>
+        <AttachedToStkLineNumber>1</AttachedToStkLineNumber>
+        <DeleteAttachedCommentLines/>
+        <ChangeSingleCommentLine/>
+      </CommentLine>
+      <MiscChargeLine>
+        <PurchaseOrderLine>3</PurchaseOrderLine>
+        <LineActionType>A</LineActionType>
+        <MiscChargeValue>78.56</MiscChargeValue>
+        <MiscChargeTax>A</MiscChargeTax>
+        <MiscTaxable>Y</MiscTaxable>
+        <MiscChargeFLoc>L</MiscChargeFLoc>
+        <MiscDescription>Sundry Items</MiscDescription>
+        <MiscCommentCode/>
+      </MiscChargeLine>
+      <FreightLine>
+        <PurchaseOrderLine>4</PurchaseOrderLine>
+        <LineActionType>A</LineActionType>
+        <FreightValue>19.00</FreightValue>
+        <FreightTaxCode>A</FreightTaxCode>
+        <FreightTaxable>Y</FreightTaxable>
+        <FreightFLoc>L</FreightFLoc>
+      </FreightLine>
+    </OrderDetails>
+  </Orders>
+</PostPurchaseOrders>

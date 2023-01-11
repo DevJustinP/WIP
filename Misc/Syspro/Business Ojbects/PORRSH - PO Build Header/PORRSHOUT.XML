@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Retrieve Purchase Order Header Business Object
+-->
+<PoHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="PORRSHOUT.xsd">
+<Supplier>0000001</Supplier>
+<SupplierName/>
+<Buyer/>
+<BuyerName/>
+<Currency/>
+<Description/>
+<ExchangeRateFixedFlag/>
+<ExchangeRateForConversion/>
+<PoExchangeRate/>
+<ExchangeRate/>
+<OrderType/>
+<OrderTypeDesc/>
+<OrderStatus/>
+<OrderStatusDescription/>
+<TaxStatus/>
+<TaxStatusDesc/>
+<PaymentTerms/>
+<InvoiceTerms/>
+<InvoiceTermsDescription/>
+<ShippingInstrs/>
+<OrderDate/>
+<DueDate/>
+<MemoDate/>
+<MemoCode/>
+<DeliveryName/>
+<DeliveryAddr1/>
+<DeliveryAddr2/>
+<DeliveryAddr3/>
+<DeliveryAddr3Locality/>
+<DeliveryAddr4/>
+<DeliveryAddr5/>
+<DeliveryGpsLat/>
+<DeliveryGpsLon/>
+<PostalCode/>
+<SupplierAddress/>
+<SupplierAddr1/>
+<SupplierAddr2/>
+<SupplierAddr3/>
+<SupplierAddr3Locality/>
+<SupplierAddr4/>
+<SupplierAddr5/>
+<SupplierGpsLat/>
+<SupplierGpsLon/>
+<SupplierPostalCode/>
+<Warehouse/>
+<WarehouseDesc/>
+<DiscountLessPlus/>
+<DiscPercent1/>
+<DiscPercent2/>
+<DiscPercent3/>
+</PoHeader>
+ 

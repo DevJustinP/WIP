@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Sales Order Transaction Posting Business Object
+-->
+<PostSCTMaintenance xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTTMDOC.XSD">
+  <Orders>
+    <OrderHeader>
+      <OrderActionType>C</OrderActionType>
+      <SalesOrder>221124</SalesOrder>
+      <CancelReasonCode/>
+      <CustomerPoNumber>SCT1000</CustomerPoNumber>
+      <OrderDate>2007-03-04</OrderDate>
+      <RequestedShipDate>2007-03-04</RequestedShipDate>
+      <ShippingInstrs>Road transport</ShippingInstrs>
+      <ShippingInstrsCode>R</ShippingInstrsCode>
+      <WarehouseName>Warehouse delivery name</WarehouseName>
+      <ShipAddress1>This is the alternate delivery address 1</ShipAddress1>
+      <ShipAddress2>This is the alternate delivery address 2</ShipAddress2>
+      <ShipAddress3>This is the alternate delivery address 3</ShipAddress3>
+      <ShipAddress3Locality>This is the alt delivery add 3 locality</ShipAddress3Locality>
+      <ShipAddress4>This is the alternate delivery address 4</ShipAddress4>
+      <ShipAddress5>This is the alternate delivery address 5</ShipAddress5>
+      <ShipPostalCode>90210</ShipPostalCode>
+      <ShipGPSLat>12.123456</ShipGPSLat>
+      <ShipGPSLong>123.123456</ShipGPSLong>
+      <LanguageCode></LanguageCode>
+      <Email>Sender001@Sender001.com</Email>
+      <SpecialInstrs>Handle with care</SpecialInstrs>
+      <OrderComments/>
+      <DocumentFormat/>
+      <AlternateReference/>
+      <DeliveryRouteAction>N</DeliveryRouteAction>
+      <DeliveryRoute></DeliveryRoute>
+      <eSignature/>
+    </OrderHeader>
+    <OrderDetails>
+      <StockLine>
+        <LineActionType>A</LineActionType>
+        <SalesOrderLine>1</SalesOrderLine>
+        <LineCancelCode/>
+        <StockCode>B100</StockCode>
+        <StockDescription>Bicycle</StockDescription>
+        <OrderQty>5</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <Units/>
+        <Pieces/>
+        <LineShipDate>2007-03-04</LineShipDate>
+        <LineReceiptDate>2007-03-08</LineReceiptDate>
+        <UserDefined>USER</UserDefined>
+        <ProductClass/>
+        <UnitMass/>
+        <UnitVolume/>
+        <Requisition/>
+        <RequisitionLine/>
+        <RequisitionSelUser/>
+        <ReserveStock/>
+        <ReserveStockRequestAllocs/>
+        <DeliveryLoad>
+			 <DeliveryRouteCode></DeliveryRouteCode>
+			 <DeliveryDate></DeliveryDate>
+			 <DeliverySequence></DeliverySequence>
+        </DeliveryLoad>
+      </StockLine>
+      <CommentLine>
+        <LineActionType>A</LineActionType>
+        <SalesOrderLine>1</SalesOrderLine>
+        <Comment>Deliver on time</Comment>
+        <AttachedLineNumber/>
+        <CommentType/>
+      </CommentLine>
+    </OrderDetails>
+  </Orders>
+</PostSCTMaintenance>

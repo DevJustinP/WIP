@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Sales Order Transaction Posting Business Object
+-->
+<PostSCTMaintenance xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTTM.XSD">
+  <Parameters>
+    <ShipFromDefaultBin>N</ShipFromDefaultBin>
+    <AddStockSalesOrderText>N</AddStockSalesOrderText>
+    <AddDangerousGoodsText>N</AddDangerousGoodsText>
+    <AllocationAction/>
+    <ApplyIfEntireDocumentValid>N</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <ReserveStock></ReserveStock>
+    <ReserveStockRequestAllocs></ReserveStockRequestAllocs>
+    <PutEntireQuantityOnNewLoadWhenChanged>N</PutEntireQuantityOnNewLoadWhenChanged>
+  </Parameters>
+</PostSCTMaintenance>

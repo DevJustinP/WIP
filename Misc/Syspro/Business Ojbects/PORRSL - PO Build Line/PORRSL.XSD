@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2012 SYSPRO Ltd.-->
+<!-- 
+     Schema for the Retrieve Sales Order Header Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Build">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Parameters"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Supplier">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the supplier for the purchase order.  The supplier for the P/order must be supplied when adding a new P/order and can not be changed when maintaining the order. This is a 7 character, alphanumeric field. The operator must have access to the Accounts Payable branch against the supplier. The supplier must allow P/orders (supplier set-up - Purchasing tab).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PurchaseOrder">
+		<xsd:annotation>
+			<xsd:documentation>The Purchase order number must be supplied if changing or cancelling the order, or when adding a new P/order and the Purchase order numbering is Manual. Please note that the P/order number must be supplied even if you are only making changes to some of the P/order lines or adding a new P/order line to an existing P/order. This is a 6 character, alphanumeric field.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value=""/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Warehouse" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>If the purchase order set-up option to Restrict order to single warehouse and use for delivery address has been selected (P/order set-up - Option tab) - then the warehouse supplied in the OrderHeader will be used for the entire order and you will not be allowed to enter/change the warehouse per P/order line. A warehouse can be supplied per P/order line if the set-up option has not been selected. You will not be allowed to change the warehouse for the entire order by supplying the new warehouse code in the OrderHeader when maintaining the order if the option to Restrict order to single warehouse has been selected.This is a 2 character, alphanumeric field. If the option to Restrict order to single warehouse has been selected then the delivery address against the warehouse will be used for the delivery address of the new P/order.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="UseWarehouseAddress" default="N">
+		<xsd:annotation>
+			<xsd:documentation>If set to "Y", the warehouse delivery address will be used</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Parameters">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Supplier"/>
+				<xsd:element ref="PurchaseOrder" minOccurs="0"/>
+				<xsd:element name="PriceMethod" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The purpose of the price method is to allow the user to select where the unit price for the P/order line should default from during order entry. Therefore a price does not have to be supplied. If neither a price nor a price method has been supplied for the line - Price method will default according to P/order setup General tab. PriceMethod may only contain "M" (Manual), "CC" (Current cost),  "LC" (Last cost),  "LP" (List price) , "LPP" (Last price paid), S (Supplier price) or F (Foreign Price). For non-stocked items always Manual - M.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:whiteSpace value="collapse"/>
+							<xsd:enumeration value="M"/>
+							<xsd:enumeration value="CC"/>
+							<xsd:enumeration value="LC"/>
+							<xsd:enumeration value="LP"/>
+							<xsd:enumeration value="LPP"/>
+							<xsd:enumeration value="S"/>
+							<xsd:enumeration value="F"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element name="SupplierContract" type="xsd:string" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>When using the supplier's price method - the supplier's contract number must be supplied in order to retrieve the correct default list price. This is a 6 character, alphanumeric field.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="SupplierContractReference" type="xsd:string" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>When using the supplier's price method - the supplier's contract number must be supplied in order to retrieve the correct default list price. The supplier contract reference can additoinally be supplied to differentiate between more than one entry with the same contract number. This is a 10 character, alphanumeric field.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="StockLine" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The element Stock Line must be used to identify the start and end of the import information for the order stocked/non-stocked line.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="StockCode" type="xsd:string">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the stock item for the P/order line. If the stock code supplied does not exist on the inventory master and the parameter AllowNonStockItems is set to Y (Yes) then the detail line will be added as a non-stocked line. This is a 30 character, alphanumeric field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element ref="Warehouse"/>
+							<xsd:element name="OrderQty" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the order quantity for the stocked/non-stocked line.  At least one of the qty fields must be supplied either OrderQty or Units and Pieces.
+If stock item requires Unit quantity processing but quantity is supplied it will be used rather than the units and pieces. Else the units and pieces will be used.
+If a decimal quantity is supplied for an item that uses unit quantity processing the quantity must convert to a valid number of units and pieces.
+If item does not require unit quantity processing, units/pieces are invalid.
+This is a signed 7 integer, 3 decimal field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Price" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the unit price to be applied for the order line. This is a 10 integer, 5 decimal field.If the purchase order is for a local currency and no price method or price has been supplied then the price will default based on the P/order set-up default pricing method. If default pricing method is Current inventory cost price: If you have not supplied a Price then the warehouse cost will be used for the Price.If default pricing method is Purchasing price: If you have not supplied a Price then the inventory selling price will be used for the Price.If default Last price paid: If a catalogue exists then the last price paid will be used from the P/o Supplier/Stock code information table. If  you have selected Supplier Prices as a Pricing method and you supply the supplier contract the program will extract the Price from the P/o Supplier/stock code contract price file. The pricing method F (Foreign price) may only be selected if the supplier is a foreign supplier and a Foreign Purchase Price exists on file for the </xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="NonStockedLine" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>This element is used in conjuction with the parameter 'AllowNonStockedItems'. When the parameter is set to 'S' (specify), then this element is used to determine if a line is for a non-stocked item. Valid entries are 'Y' (yes, a non-stocked line), or blank, the default. This element is  only relevant for line action type 'A' - add, and will be ignored for other actions.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="NonStockedCode" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>This indicates the stock code of a non stocked item</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="OrderQty" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the order quantity for the stocked/non-stocked line.  At least one of the qty fields must be supplied either OrderQty or Units and Pieces.
+If stock item requires Unit quantity processing but quantity is supplied it will be used rather than the units and pieces. Else the units and pieces will be used.
+If a decimal quantity is supplied for an item that uses unit quantity processing the quantity must convert to a valid number of units and pieces.
+If item does not require unit quantity processing, units/pieces are invalid.
+This is a signed 7 integer, 3 decimal field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Price" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the unit price to be applied for the order line. This is a 10 integer, 5 decimal field.If the purchase order is for a local currency and no price method or price has been supplied then the price will default based on the P/order set-up default pricing method. If default pricing method is Current inventory cost price: If you have not supplied a Price then the warehouse cost will be used for the Price.If default pricing method is Purchasing price: If you have not supplied a Price then the inventory selling price will be used for the Price.If default Last price paid: If a catalogue exists then the last price paid will be used from the P/o Supplier/Stock code information table. If  you have selected Supplier Prices as a Pricing method and you supply the supplier contract the program will extract the Price from the P/o Supplier/stock code contract price file. The pricing method F (Foreign price) may only be selected if the supplier is a foreign supplier and a Foreign Purchase Price exists on file for the </xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="ProductClass" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Product class must be provided for a non-stocked P/order line. This is a 4 character, alphanumeric field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="CommentLine" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The element CommentLine must be used to identify the start and end of the import information for the comment order line section.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Comment" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Comment can contain up to 990 characters, which equals 22 lines of 45 characters. The comment will be spilt into separate lines of 45 characters for you in order to save them on the P/order detail table. Please note when changing a P/order comment the whole comment will be deleted and overwritten by the new comment supplied - in other words you will not be able to change only one comment line of 45 characters alone. (Therefore when changing supply the complete new comment). Please note that  when changing the comment lines you will not be allowed to add more comment lines than the original comment had unless the comment is the last line for the P/order.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="AttachedToStkLineNumber" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Enter a line number in this element to attach the comment line to an order line. Comment lines may only be attached to stocked and non-stocked lines. This is a 4 character integer field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="MiscChargeLine" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The element MiscChargeLine must be used to identify the start and end of the import information for the other/miscellaneous charge order line section.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="MiscChargeValue" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the miscellaneous charges to be applied to an order.  This is a signed 12 integer, 2 decimal field.
+</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="MiscDescription" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indicates the description for the miscellaneous charge line. This is a 45 character, alphanumeric field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="MiscCommentCode" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>If standard comments have been created you can enter the comment code instead of a description for the miscellaneous order line. This is a 3 character, alphanumeric field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="FreightLine" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The element FreightLine must be used to identify the start and end of the import information for the freight order line section.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="FreightValue" type="xsd:string" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Used to enter freight charges that you want to assign to the order. This is a signed 12 integer, 2 decimal field.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
