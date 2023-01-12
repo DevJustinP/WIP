@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut schema to demonstrate
+     use of the Retrieve Sales Order Header Business Object
+-->
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="PoHeader">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Supplier"/>
+				<xsd:element name="SupplierName" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Buyer" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="BuyerName" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Currency" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Description" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="ExchangeRateFixedFlag" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="ExchangeRateForConversion" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="PoExchangeRate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="ExchangeRate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OrderType" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OrderTypeDesc" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OrderStatus" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OrderStatusDescription" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="TaxStatus" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="TaxStatusDesc" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="PaymentTerms" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="InvoiceTerms" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="InvoiceTermsDescription" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="ShippingInstrs" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="OrderDate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DueDate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="MemoDate" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="MemoCode" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryName" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryAddr1" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryAddr2" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryAddr3" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryAddr3Locality" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryAddr4" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryAddr5" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryGpsLat" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DeliveryGpsLon" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="PostalCode" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddress" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddr1" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddr2" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddr3" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddr3Locality" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddr4" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierAddr5" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierGpsLat" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierGpsLon" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="SupplierPostalCode" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="Warehouse" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="WarehouseDesc" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DiscountLessPlus" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DiscPercent1" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DiscPercent2" type="xsd:string" minOccurs="0"/>
+				<xsd:element name="DiscPercent3" type="xsd:string" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

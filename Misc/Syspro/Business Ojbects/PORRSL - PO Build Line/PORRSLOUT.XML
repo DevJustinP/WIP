@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Purchase Order Transaction Build Business Object
+--> 
+<PoLine xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="PORRSLOUT.xsd">
+<StockCode/>
+<Description/>
+<DueDate/>
+<OsQty/>
+<Uom/>
+<StockAndAltUm/>
+<AlternateUom/>
+<OtherUom/>
+<PriceUom/>
+<StockingUom/>
+<Warehouse/>
+<WarehouseDesc/>
+<CostMethod/>
+<CostMethodDesc/>
+<UnitPrice/>
+<PoOrderQty/>
+<RecdQty/>
+<OrgDue/>
+<RecDate/>
+<Tax/>
+<ProductClass/> 
+<LineTotal/>
+<Line/>
+</PoLine>	

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Purchase Order Transaction Build Business Object
+-->
+<Build xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="PORRSL.XSD">
+  <Parameters>
+   <Supplier>0000001</Supplier>
+   <PurchaseOrder/>
+   <PriceMethod>CC</PriceMethod>
+   <SupplierContract/>
+   <SupplierContractReference/>
+   <StockLine>
+        <StockCode>A100</StockCode>
+        <Warehouse>E</Warehouse>
+        <OrderQty>5</OrderQty>
+        <Price>10.00</Price>
+   </StockLine>
+   <NonStockedLine>
+        <NonStockedCode>A</NonStockedCode>
+        <OrderQty>5</OrderQty>
+        <Price>10.00</Price>
+	    <ProductClass>BA</ProductClass>
+   </NonStockedLine>
+   <CommentLine>
+        <Comment>Ensure saddle is color coded</Comment>
+        <AttachedToStkLineNumber>1</AttachedToStkLineNumber>
+   </CommentLine>
+   <MiscChargeLine>
+        <MiscChargeValue>78.56</MiscChargeValue>
+        <MiscDescription>Sundry Items</MiscDescription>
+        <MiscCommentCode/>
+   </MiscChargeLine>
+   <FreightLine>
+        <FreightValue>19.00</FreightValue>
+   </FreightLine>
+ </Parameters>
+</Build>

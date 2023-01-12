@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Retrieve Purchase Order Header Business Object
+-->
+<Build xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="PORRSH.XSD">
+  <Parameters>
+    <Supplier>1</Supplier>
+    <Buyer/>
+    <AllowSupplierOnHold>N</AllowSupplierOnHold>
+    <Warehouse>N</Warehouse>
+    <UseWarehouseAddress>Y</UseWarehouseAddress>
+  </Parameters>
+</Build>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2012 SYSPRO Ltd.-->
+<!-- 
+     Schema for the Sales Order Transaction Posting Business Object
+-->
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="PostSalesOrdersSCT">
+    <xsd:annotation>
+      <xsd:documentation>This is the root element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Parameters">
+          <xsd:annotation>
+            <xsd:documentation>This contains parameters</xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="SourceWarehouse" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>If entered, this must be a valid SYSPRO warehouse. </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="TargetWarehouse" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>If entered, this must be a valid SYSPRO warehouse. </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ShipFromDefaultBin" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies whether stocked lines are to be shipped from the default bin (Y - Yes, N - No). This parameter is only relevant if multiple bins are in use, and the warehouse on the sales order line required multiple bins. If not set and multiple bins are in use, and the warehouse on the sales order line requires multiple bins , then stocked lines will be placed on back order.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AddStockSalesOrderText" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies if standard sales order text associated with any stock item is to be added to the sales order with the appropriate merchandise line. The default is N (no text to be added).</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AddDangerousGoodsText" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies if dangerous goods text associated with any stock item is to be added to the sales order with the appropriate merchandise line. The default is N (no text to be added).</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AllocationAction" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies whether merchandise lines are to be allocated or placed on back order. Valid entries are 'F'  - allocate only if full order quantity is available, 'B' -  place whole line on back order, 'A' - allocate available quantity if less than order quantity, and place the remainder on back order. If blank or not entered, 'F' is assumed. If set to 'B' (Back order), then the parameter 'ShipFromDefaultBin' is ignored. Note that any items which are kit items,  lot traceable or serialised will still be placed on back order.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="F"/>
+                    <xsd:enumeration value="B"/>
+                    <xsd:enumeration value="A"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ApplyIfEntireDocumentValid" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies whether the entire document must be validated first before applying the function (N - apply function for each valid item, Y - all items must be valid before function is applied).</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ValidateOnly" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies whether to only validate the contents of the document. (N - validate and apply function, Y - only validate the document).</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="IgnoreWarnings" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Specifies if warnings are to be ignored (Y - if the warnings are to be ignored, N - warnings will be returned as errors in the XML returned, W - warnings will be returned as warnings in the XML returned).</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value="W"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ReserveStock" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is only relevant if the SO Option to allow reserving of stock is selected. If set to 'Y', then any attempt to allocate stock for a line will result in it being reserved, and not shipped. If set to 'N', then any attempt to allocate stock will result in it being shipped. If the element is not supplied, then the SYSPRO company setting will be used.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ReserveStockRequestAllocs" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is only relevant if the SO Option to allow reserving of stock is selected, and stock is being reserved not shipped. If set to 'Y', then any lot bin or serial item can only be reserved using the ship rules.  If set to 'N', then a lot , serial or bin item can be reserved as detail allocations are not required. If the element is not supplied, then the SYSPRO company setting will be used.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

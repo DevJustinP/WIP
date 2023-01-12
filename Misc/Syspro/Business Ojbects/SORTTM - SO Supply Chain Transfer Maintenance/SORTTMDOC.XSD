@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2017 SYSPRO Ltd.-->
+<!-- 
+     Schema for the Sales Order Transaction Posting Business Object
+-->
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="PostSCTMaintenance">
+		<xsd:annotation>
+			<xsd:documentation>This is the root element.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Orders" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>This element can contain one or more SCT orders.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="OrderHeader">
+								<xsd:annotation>
+									<xsd:documentation>This element contains the elements that make up the order header information for an SCT order.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="OrderActionType" default="C">
+											<xsd:annotation>
+												<xsd:documentation>The action to be performed for this order header. The action can be C - Change an existing SCT, D - Cancel the SCT. If changing an order, the individual order lines may be added, changed or cancelled. If Cancelling an order, all detail lines will be cancelled. </xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="C"/>
+													<xsd:enumeration value="D"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="SalesOrder">
+											<xsd:annotation>
+												<xsd:documentation>The sales order number to maintain. It is mandatory. The format is either numeric or alphanumeric, depending on the configuration option within SYSPRO.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="CancelReasonCode" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This element is only required if the SCT has an OrderActionType of 'D' - delete. If the SYSPRO setup option to retain analysis details for cancelled order lines is selected, then the contents of this element must be a valid Cancel Reason code within SYSPRO. It can contain 1 to 6 alphanumeric characters.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string"/>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="CustomerPoNumber" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This element is not validated, and serves as a reference number for the SCT.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="OrderDate" type="xsd:date" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the date the SCT order was placed. The format is CCYY-MM-DD.</xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+										<xsd:element name="RequestedShipDate" type="xsd:date" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the date that the customer has requested shipment of the whole order. The format is CCYY-MM-DD.</xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+										<xsd:element name="ShippingInstrs" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This contains any shipping instructions that are to be placed against the order.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShippingInstrsCode" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation> If the SYSPRO option to use coded shipping instructions is in use, then the table of Shipping Instructions in SYSPRO is read, and the description if found is added to the code. It may be blank </xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+										<xsd:element name="WarehouseName" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the delivery (target) warehouse name to appear against the SCT order.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShipAddress1" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the first line of the delivery address to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 40 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShipAddress2" type="xsd:string" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the second line of the delivery address to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 40 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+										<xsd:element name="ShipAddress3" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the third line of the delivery address to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 40 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShipAddress3Locality" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the line of the delivery address representing locality, to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 40 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+										<xsd:element name="ShipAddress4" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the fourth line of the delivery address to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 40 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShipAddress5" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the fifth line of the delivery address to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 40 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShipPostalCode" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the postal code of the delivery address to appear against the SCT order. To remove this line from an existing address when changing an SCT, use the text {blank} or {BLANK}.The format is 10 characters, alphanumeric.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="ShipGPSLat" minOccurs="0"/>
+										<xsd:element name="ShipGPSLong" minOccurs="0"/>
+										<xsd:element name="LanguageCode" minOccurs="0"/>
+										<xsd:element name="Email" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the e-mail address to be stored against the SCT order.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="SpecialInstrs" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This contains any special instructions that are to be placed against the order.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="OrderComments" minOccurs="0" maxOccurs="unbounded">
+											<xsd:annotation>
+												<xsd:documentation>Order comments can be added as one or more strings.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:complexType/>
+										</xsd:element>
+										<xsd:element name="DocumentFormat" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is the document format number to be used when printing the document in SYSPRO. If entered, it must be in the range 0 to 9, A - Z. </xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="AlternateReference" type="xsd:string" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>Enter the Alternate reference for the SCT. </xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+										<xsd:element name="DeliveryRouteAction" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This is only relevant if load planning is in use. 'N', the default - No delivery route required, 'E', use delivery route entered in element 'DeliveryRoute', 'W', use delivery route from target warehouse.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:enumeration value="N"/>
+													<xsd:enumeration value="E"/>
+													<xsd:enumeration value="W"/>
+													<xsd:enumeration value=""/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="DeliveryRoute" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>Only relevant if load planning is in use. It is used in conjunction with the element 'DeliveryRouteAction'.  If entered, and DeliveryRouteAction is 'E', then it must be a valid delivery route code. </xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+										<xsd:element name="eSignature" minOccurs="0">
+											<xsd:annotation>
+												<xsd:documentation>This contains the GUID of the current process which is required to authenticate the transaction when Electronic Signatures are in use.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:simpleType>
+												<xsd:restriction base="xsd:string">
+													<xsd:whiteSpace value="preserve"/>
+												</xsd:restriction>
+											</xsd:simpleType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="OrderDetails">
+								<xsd:annotation>
+									<xsd:documentation>This element contains the elements that make up the order detail line information. It can contain StockLine (for stocked lines), and CommentLine (for comment lines).</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="StockLine" minOccurs="0" maxOccurs="unbounded">
+											<xsd:annotation>
+												<xsd:documentation>This element specifies that the sub-elements make up a detail sales order line for a stocked item.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LineActionType" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>The action to be performed for this SCT line. The action can be:  A - Add an SCT line, C - Change an existing SCT line, D - Cancel the SCT line.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:enumeration value="A"/>
+																<xsd:enumeration value="C"/>
+																<xsd:enumeration value="D"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="SalesOrderLine" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If the LineActionType is C or D (change or cancel) this entry is mandatory, and refers to the actual line number on the order. This can be from 1 to 9999.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string"/>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="LineCancelCode" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This element is only required if the detail line has a LineActionType of 'D' - delete. If the SYSPRO setup option to retain analysis details for cancelled order lines is selected, then the contents of this element must be a valid Cancel Reason code within SYSPRO, or the element 'CancelReasoncode' within the order header must contain a valid Cancel Reason code. It can contain 1 to 6 alphanumeric characters.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string"/>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="StockCode" type="xsd:hexBinary" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>When adding a line, this must be a valid SYSPRO stock code. The stock item must not be on hold, and cannot be a kit part, a co-product, a notional or phantom part. The format is alphanumeric or numeric depending on the configuration option within SYSPRO.</xsd:documentation>
+														</xsd:annotation>
+													</xsd:element>
+													<xsd:element name="StockDescription" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the description for the stock line. If blank, or not given, the description of the stock item from SYSPRO is used.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="OrderQty" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>The quantity of the item that is to  be transferred, in the unit of measure entered in OrderUom. A quantity must be provided using either this element, or the units/pieces elements. If Multiple Bins are installed, the stock item is serialized, the stock item is lot traceable or if there is insufficient stock, the quantity ordered will automatically be placed in back order.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="OrderUom" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>The unit of measure for OrderQty for the item. This must be a valid unit of measure for the stock code within SYSPRO. If not given, the stock code stocking unit of measure will be used.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="Units" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If the stock code is a unit-qty type stock code and the OrderQty element is not supplied, the quantity of the detail line must be supplied as units and pieces. At least one of these elements must be supplied. </xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="Pieces" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If the stock code is a unit-qty type stock code and the OrderQty element is not supplied, the quantity of the detail line must be supplied as units and pieces. At least one of these elements must be supplied. </xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="LineShipDate" type="xsd:date" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the expected ship date of this detail line. The format is CCYY-MM-DD. If no date is supplied then the current date is used.</xsd:documentation>
+														</xsd:annotation>
+													</xsd:element>
+													<xsd:element name="LineReceiptDate" type="xsd:date" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the expected receipt date of this detail line. The format is CCYY-MM-DD. If no date is supplied then the ship date is incremented by the expected transfer time of the item</xsd:documentation>
+														</xsd:annotation>
+													</xsd:element>
+													<xsd:element name="UserDefined" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is for use by the user, and is not validated.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="ProductClass" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the product class for this sales order line. If supplied it must be valid. If not supplied the product class is picked up from the stock item. </xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="UnitMass" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the unit mass of the merchandise item. If this is not given for a stocked line, the unit mass of the inventory item is used.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="UnitVolume" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the unit volume of the merchandise item. If this is not given for a stocked line, the unit volume of the inventory item is used.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="Requisition" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If this element is used, it must contain a valid requisition number. Together with the requisition line number, it is used to obtain all the the information required to crerate the line. Any other information entered will be ignored.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="RequisitionLine" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If this element is used, it must contain a valid requisition line number. Together with the requisition number, it is used to obtain all the the information required to create the line. Any other information entered will be ignored.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="RequisitionSelUser" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>Requisition User requesting the transfer</xsd:documentation>
+														</xsd:annotation>
+													</xsd:element>
+													<xsd:element name="ReserveStock" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This element is only relevant if the SO Option to allow reserving of stock is selected. If set to 'Y', then any attempt to allocate stock for a line will result in it being reserved, and not shipped. If set to 'N', then any attempt to allocate stock will result in it being shipped. If the element is not supplied, then the parameter ReserveStock will be used, or the SYSPRO company setting will be used.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+																<xsd:enumeration value="N"/>
+																<xsd:enumeration value="Y"/>
+																<xsd:enumeration value=""/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="ReserveStockRequestAllocs" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This element is only relevant if the SO Option to allow reserving of stock is selected, and stock is being reserved not shipped. If set to 'Y', then any lot bin or serial item can only be reserved using the ship rules.  If set to 'N', then a lot , serial or bin item can be reserved as detail allocations are not required.  If the element is not supplied, then the parameter ReserveStock will be used, or the SYSPRO company setting will be used.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+																<xsd:enumeration value="N"/>
+																<xsd:enumeration value="Y"/>
+																<xsd:enumeration value=""/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="DeliveryLoad" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This element specifies the sub elements that make up the delivery load for the detail line.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:complexType>
+															<xsd:sequence>
+																<xsd:element name="DeliveryRouteCode" minOccurs="0">
+																	<xsd:annotation>
+																		<xsd:documentation>Only relevant if load planning is in use. It is the Delivery Route Code for the delivery load of the detail line. If used it must be a valid delivery route code. </xsd:documentation>
+																	</xsd:annotation>
+																	<xsd:simpleType>
+																		<xsd:restriction base="xsd:string">
+																			<xsd:whiteSpace value="preserve"/>
+																		</xsd:restriction>
+																	</xsd:simpleType>
+																</xsd:element>
+																<xsd:element name="DeliveryDate" type="xsd:string" minOccurs="0">
+																	<xsd:annotation>
+																		<xsd:documentation>This is the delivery date for the delivery load.  Valid only when Load Planning is in use.</xsd:documentation>
+																	</xsd:annotation>
+																</xsd:element>
+																<xsd:element name="DeliverySequence" type="xsd:string" minOccurs="0">
+																	<xsd:annotation>
+																		<xsd:documentation>Only relevant if load planning is in use. It is the Delivery Sequence for the delivery load of the detail line.</xsd:documentation>
+																	</xsd:annotation>
+																</xsd:element>
+															</xsd:sequence>
+														</xsd:complexType>
+													</xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element name="CommentLine" minOccurs="0" maxOccurs="unbounded">
+											<xsd:annotation>
+												<xsd:documentation>This element specifies that the sub-elements make up a detail sales order line for a comment line.</xsd:documentation>
+											</xsd:annotation>
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="LineActionType" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>The action to be performed for this SCT line. The action can be:  A - Add an SCT line, C - Change an existing SCT line, D - Cancel the SCT line.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:enumeration value="A"/>
+																<xsd:enumeration value="C"/>
+																<xsd:enumeration value="D"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="SalesOrderLine" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If the LineActionType is C or D (change or cancel) this entry is mandatory, and refers to the actual line number on the order. This can be from 1 to 9999.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string"/>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="Comment" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>This is the comment.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="AttachedLineNumber" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>If a line number supplied, the comment line will be attached to this line number.</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+													<xsd:element name="CommentType" minOccurs="0">
+														<xsd:annotation>
+															<xsd:documentation>The comment type specifies whether the comment is for the order only, or for both order and invoice. The valid entries are 'O' (Order only), and 'I' (Invoice and Order) and blank. The default is 'I' .</xsd:documentation>
+														</xsd:annotation>
+														<xsd:simpleType>
+															<xsd:restriction base="xsd:string">
+																<xsd:whiteSpace value="preserve"/>
+																<xsd:enumeration value="O"/>
+																<xsd:enumeration value="I"/>
+																<xsd:enumeration value=""/>
+															</xsd:restriction>
+														</xsd:simpleType>
+													</xsd:element>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2012 SYSPRO Ltd.-->
+<!-- 
+     Schema for the Retrieve Sales Order Header Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Build">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Parameters"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Supplier">
+		<xsd:annotation>
+			<xsd:documentation>Enter the supplier code to be used to retrieve the required data</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="AllowSupplierOnHold" default="N">
+		<xsd:annotation>
+			<xsd:documentation>If set to 'Y', the allows Suppliers on hold to be retrieved</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Warehouse" type="xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Enter the warehouse to be used to retrieve the required data</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="UseWarehouseAddress" default="N">
+		<xsd:annotation>
+			<xsd:documentation>If set to "Y", the warehouse delivery address will be used</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:whiteSpace value="preserve"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Parameters">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Supplier"/>
+				<xsd:element name="Buyer" minOccurs="0">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string"/>
+					</xsd:simpleType>
+				</xsd:element>
+				<xsd:element ref="AllowSupplierOnHold" minOccurs="0"/>
+				<xsd:element ref="Warehouse" minOccurs="0"/>
+				<xsd:element ref="UseWarehouseAddress" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

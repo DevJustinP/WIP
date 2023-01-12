@@ -85,7 +85,8 @@ begin
 		@ReturnValue				 AS VARCHAR(6),
 		@CustomStockCode			 AS BIT,
 		@const_SummerClassicsCushion AS VARCHAR(50) = 'Summer Classics Cushion',
-		@const_FabricYardage		 AS VARCHAR(50) = 'Fabric Yardage';
+		@const_FabricYardage		 AS VARCHAR(50) = 'Fabric Yardage',
+		@ERROR						 AS INT;
 
 	WITH Record AS (
 					SELECT 
@@ -139,9 +140,47 @@ begin
 
 			With [Options] as (
 								select
-									*
-								from @Options.nodes('/Option'
+									adm.ColumnName		as [ColumnName],
+									map.SysproCff		as [SysproCffName],
+									opt.SysproCffValue	as [Value]
+								from @Options.nodes('/Options/Option') as cff(cff)
+									inner join [PRODUCT_INFO].[ProdSpec].[OptionSetCffMapping] map on map.OptionSet = REPLACE(cff.value('(OptionTypeCode/text())[1]','VARCHAR(50)'),'OptionSet','')
+																								  and UPPER(map.BuildStockCodeType) = upper(@BuildStockCodeType)
+									inner join [PRODUCT_INFO].[ProdSpec].[Options] opt on opt.OptionCode = cff.value('(OptionCode/text())[1]','VARCHAR(50)')
+									inner join [SysproCompany100].[dbo].[AdmFormControl] adm on map.SysproCff = adm.FieldName collate SQL_Latin1_General_CP1_CI_AS
+								union all
+								select
+									as [ColumnName],
+									as [SysproCffName],
+									as [Value]
+								from @Options.nodes('/Options/Option') as Options(Opt)
+									Cross Apply Opt.nodes('FormData/Form') as Form(Frm)
+									Cross Apply Frm.nodes('FormFieldsCff/FormFieldsCff') as CustomFormField(Cff)
+									inner join [SysproCompany100].[dbo].[AdmFormControl] adm on Frm.value('(FormType/text())[1]','VARCHAR(30)') = adm.FieldName
 								)
+			insert into @StockCodeCheck
+			select
+				[ColumnName],
+				[SysproCffName],
+				[Value]
+			from Options;
+
+			if (Select count(*) from @StockCodeCheck) = 0
+			begin;
+				set @ERROR = [dbo].[svf_ThrowError]('INVALID BUILD STOCK CODE TYPE');
+			end;
+
+			create table #TEMP_InvMaster
+			as select
+				*
+			from SysproCompany100.dbo.[InvMaster+]
+			where StockCode like @BaseItem + '-[0-9][0-9][0-9][0-9][0-9][0-9]' or StockCode = @BaseItem
+
+			Create table #TEMP_InvMaster_New
+			as select
+				*
+			from #TEMP_InvMaster
+			where StockCode = @BaseItem
 
 		end;
 
