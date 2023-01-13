@@ -1,0 +1,30 @@
+﻿<SalesOrders>
+  <Orders>
+    <OrderHeader>
+      <OrderActionType>C</OrderActionType>
+      <SalesOrder>200-1105199</SalesOrder>
+    </OrderHeader>
+    <OrderDetails>
+      <MiscChargeLine>
+        <CustomerPoLine>11</CustomerPoLine>
+        <LineActionType>C</LineActionType>
+        <MiscChargeValue>198.60</MiscChargeValue>
+      </MiscChargeLine>
+      <FreightLine>
+        <CustomerPoLine>12</CustomerPoLine>
+        <LineActionType>C</LineActionType>
+        <FreightValue>377.34</FreightValue>
+      </FreightLine>
+      <MiscChargeLine>
+        <CustomerPoLine>13</CustomerPoLine>
+        <LineActionType>C</LineActionType>
+        <MiscChargeValue>397.20</MiscChargeValue>
+      </MiscChargeLine>
+      <FreightLine>
+        <CustomerPoLine>14</CustomerPoLine>
+        <LineActionType>C</LineActionType>
+        <FreightValue>754.66</FreightValue>
+      </FreightLine>
+    </OrderDetails>
+  </Orders>
+</SalesOrders>
