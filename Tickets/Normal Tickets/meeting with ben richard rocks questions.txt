@@ -1,0 +1,20 @@
+SCT / PO Automation:
+- Confirm that shipment type comes from eCat
+   - No not off the top of the head, maybe off of the field in eCat shipping intstruction code
+      - PA : Customer Address
+      - D : warehouse
+      - pu : 
+      - Question on the 3pl shipping, not specifically for 3pl, but shipping method does come over
+- Verify the condition for newly created SKU’s
+   - Non stocked item or stocked line 
+     - 
+- Stock for SCT
+
+Invoice Automation:
+- Accounting must invoice Marketing Fabric Swatches Orders from the Sales Order, does DataScope not create a Dispatch Note for these Orders?
+- Accounting talked about the module Document Print, do we have access to what it is doing?
+Invoice document:
+- Accounting showed that they used the printer OPTIO Syspro during the invoice creation
+- Does the Invoice document formats need to be verified?
+Shipping Notifications:
+- Where are these being sent from?
