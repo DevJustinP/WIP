@@ -1,0 +1,16 @@
+Process:
+
+    Documentation
+        Requirements
+        Technical Documentation
+
+    Development
+
+    Unit Testing
+
+    UAT Testing
+
+    Data Correction
+
+    Implementation
+        Plan out Deployment
