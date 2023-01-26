@@ -1,7 +1,7 @@
 {
     "gwc_split_order": "false",
     "additional_fields": {
-        "promocode": "NONE",
+        "promocode": "NONE",d
         "promo_code": null,
         "billto_deliverytype": "White Glove",
         "shippingterms": "Customer Pick Up",

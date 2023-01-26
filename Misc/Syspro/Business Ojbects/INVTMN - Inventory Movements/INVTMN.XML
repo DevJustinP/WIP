@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Inventory GIT Warehouse Transfer IN Business Object
+-->
+<PostInvGitWhTransferIn xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMN.XSD">
+  <Parameters>
+    <TransactionDate>2006-11-06</TransactionDate>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <UpdateOriginatingOrder>N</UpdateOriginatingOrder>
+    <UseDefaultWarehouseBin>Y</UseDefaultWarehouseBin>
+    <DefaultBinToUse/>
+    <CreateBinLocation>Y</CreateBinLocation>
+    <ApplyIfEntireDocumentValid>Y</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+  </Parameters>
+</PostInvGitWhTransferIn>

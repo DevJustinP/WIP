@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Inventory GIT Warehouse Transfer IN Business Object
+-->
+<PostInvGitWhTransferIn xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMNDOC.XSD">
+  <Item>
+    <Journal/>
+    <Key>
+      <GtrReference>E00000001</GtrReference>
+      <SourceWarehouse>E</SourceWarehouse>
+      <TargetWarehouse>S</TargetWarehouse>
+      <LineNumber>1</LineNumber>
+    </Key>
+    <Quantity>3.000</Quantity>
+    <Units/>
+    <Pieces/>
+    <ActionBackToSource>A</ActionBackToSource>
+    <TargetBin/>
+    <ExpenseLedgerCode>00-1540</ExpenseLedgerCode>
+    <PasswordForLedgerCode/>
+    <Lot>
+      <LotNumber>21</LotNumber>
+      <LotBin>E1</LotBin>
+    </Lot>
+    <Serials>
+      <SerialNumber>0205</SerialNumber>
+      <SerialQuantity>10</SerialQuantity>
+      <SerialUnits/>
+      <SerialPieces/>
+      <SerialBin/>  
+    </Serials>
+    <Serials>
+      <SerialNumber>0206</SerialNumber>
+      <SerialQuantity>2</SerialQuantity>
+      <SerialUnits/>
+      <SerialPieces/>
+      <SerialBin/>  
+    </Serials>
+    <SourceBins>
+      <BinLocation>E1</BinLocation>
+      <BinQuantity>5.000</BinQuantity>
+      <BinUnits/>
+      <BinPieces/>
+    </SourceBins>
+    <SourceBins>
+      <BinLocation>E2</BinLocation>
+      <BinQuantity>2.000</BinQuantity>
+      <BinUnits/>
+      <BinPieces/>
+    </SourceBins>
+    <ApplyCostMultiplier>Y</ApplyCostMultiplier>
+    <CostMultiplier/>
+    <NonMerchandiseCost>150.00</NonMerchandiseCost>
+    <NonMerchandiseDistribution>
+      <NmReference>Cost Ref</NmReference>
+      <NmLedgerCode>30-6200</NmLedgerCode>
+      <NmAmount>150.00</NmAmount>
+    </NonMerchandiseDistribution>
+    <Notation>GIT Xfer IN note</Notation>
+    <eSignature/>
+  </Item>
+</PostInvGitWhTransferIn>
