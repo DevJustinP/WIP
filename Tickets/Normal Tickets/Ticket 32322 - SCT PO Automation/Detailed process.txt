@@ -1,0 +1,53 @@
+Automation process should be able to do the following:
+(1)	Process Orders with items that are in Backordered
+(a)	Conditions for items to be processed and the SQL nomenclature:
+(i)	Retail orders 
+1.	SorMaster.Branch = a 300 branch
+(ii)	The order has been released
+1.	SorMaster.Status in 1,2,3
+(iii)	Item in backorder
+1.	SorDetail.MQtyOnBackOrder > 0
+(iv)	Item has not already been processed
+1.	SorDetail.MReviewFlag = ‘’ (empty string)
+(v)	New CusSorDetailMerch+ field for option Stock or Special Order to determine if the item will be taken out of store stock or Special ordered.
+1.	Field to be determined 
+(vi)	 Order has at least 50% deposit
+(2)	For items in backorder, the process should be able to determine the following and create the corresponding item:
+(a)	Item needs to be acquired by SCT
+(i)	Condition for SCT
+1.	InvWarehouse.TrfSuppliedItem = ‘Y’
+(ii)	For the item, the following column will be used for the source warehouse
+1.	InvWarehouse.DefaultSourceWh
+(b)	Item needs to be acquired by PO
+(i)	Condition for PO
+1.	InvWarehouse.TrfSuppliedItem <> ‘Y’
+(3)	Details when creating a SCT or PO
+(a)	When creating either
+(i)	The shipping address to use depends on the address type that is designated for the order
+1.	Local 3pl
+2.	National 3pl
+3.	Customer 
+(b)	When creating a SCT
+(i)	The requested ship date to use on the SCT should be 42 days from current date.
+(c)	When creating a PO
+(i)	The due date to use is the current date plus the InvMaster.LeadTime set for the item.
+(4)	SCT or PO should not be created if all items can not be placed on an order. 
+(a)	The conditions that could make this happen:
+(i)	If an item has been newly created and warehouse records have not been created yet.
+(ii)	If an item that has been selected to be placed on a purchase order and there is no purchase price or multiple purchase prices.   
+(5)	After the SCT or PO is created, the following updates will be required
+(a)	For SCTs that are created, the items need to be updated with the sales order and line number from the original order. The original order item needs to be marked that it was added to a SCT. The following updates will be done in SQL:
+(i)	The SCT Order
+1.	SorDetail.MCreditOrderNo = original order number
+2.	SorDetai.MCreditOrderLine = original line number
+(ii)	The Original Order items
+1.	SorDetail.MreviewFlag = ‘S’
+(b)	For POs that are created, the PO line will be updated with the sales order and line number from the original Sales Order. The original order item needs to be marked that it was added to a PO. The following updates will be done in SQL:
+(i)	The PO
+1.	PorMasterDetail.MSalesOrder = original order number
+2.	PorMasterDetail.MSalesOrderLine = original order line number
+(ii)	The Original Order items
+1.	SorDetail.MReviewFlag = ‘P’ 
+(c)	Comment lines associated with the item should be copied to the SCT or PO
+
+Software
