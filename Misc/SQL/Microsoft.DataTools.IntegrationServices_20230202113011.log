@@ -1,0 +1,1316 @@
+[31B8:3520][2023-02-02T11:30:11]i001: Burn v3.7.1224.0, Windows v6.2 (Build 9200: Service Pack 0), path: C:\Users\adm_justinp\Downloads\Microsoft.DataTools.IntegrationServices.exe, cmdline: ''
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'ProductVersionVar' to value '16.0.5035.3'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'ReleaseVersion' to value '4.4'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'LicenseTermsUrl' to value 'https://go.microsoft.com/fwlink/?LinkID=853828&clcid='
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'PreviewStatementUrl' to value 'https://go.microsoft.com/fwlink/?LinkID=824140&clcid='
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'TelemetryDocumentationUrl' to value 'https://go.microsoft.com/fwlink/?LinkID=853829&clcid='
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'CLCID' to value ''
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'LCID' to value ''
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing numeric variable 'SingletonsRequired' to value '0'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing numeric variable 'VsixRequired' to value '0'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing numeric variable 'VsixInstalled' to value '0'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing string variable 'InstanceIds' to value ''
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing numeric variable 'InstallToVS2017' to value '0'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing numeric variable 'InstallToVS2019' to value '0'
+[31B8:3520][2023-02-02T11:30:11]i000: Initializing numeric variable 'InstallToVS2022' to value '0'
+[31B8:3520][2023-02-02T11:30:11]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011.log'
+[31B8:3520][2023-02-02T11:30:11]i000: Setting string variable 'WixBundleOriginalSource' to value 'C:\Users\adm_justinp\Downloads\Microsoft.DataTools.IntegrationServices.exe'
+[31B8:3520][2023-02-02T11:30:11]i000: Setting string variable 'WixBundleName' to value 'Microsoft SQL Server Integration Services Projects'
+[31B8:3520][2023-02-02T11:30:11]i000: Loading managed bootstrapper application.
+[31B8:3520][2023-02-02T11:30:11]i000: Creating BA thread to run asynchronously.
+[31B8:3588][2023-02-02T11:30:12]i000: Get Variable CLCID=
+[31B8:3588][2023-02-02T11:30:14]i000: Setting string variable 'CLCID' to value '0x409'
+[31B8:3588][2023-02-02T11:30:14]i000: Setting string variable 'LCID' to value '1033'
+[31B8:3588][2023-02-02T11:30:14]i000: ManagedBootstrapperApp.Run: Launcing the managed bootstrapper application.
+[31B8:3588][2023-02-02T11:30:14]i000: BootstrapperMetadataModel.Initialize: Start loading the bootstrapper app data xml file
+[31B8:3588][2023-02-02T11:30:14]i000: BootstrapperMetadataModel.Initialize: Completed loading the bootstrapper app data xml file content: <BootstrapperApplicationData xmlns="http://schemas.microsoft.com/wix/2010/BootstrapperApplicationData">
+  <WixBundleProperties DisplayName="Microsoft SQL Server Integration Services Projects" LogPathVariable="WixBundleLog" Compressed="no" Id="{8f80ddbd-d244-487b-ad2e-b0782599741a}" UpgradeCode="{5CE58FCE-78C7-4B61-9F1D-AA6C244A6C2D}" PerMachine="yes" />
+  <WixMbaPrereqInformation PackageId="Netfx4Full" LicenseUrl="NetfxLicense.rtf" />
+  <WixPackageProperties Package="ISVsixPreInstall" Vital="yes" DisplayName="Microsoft SQL Server" Description=" " DownloadSize="0" PackageSize="0" InstalledSize="0" PackageType="Exe" Permanent="no" LogPathVariable="WixBundleLog_ISVsixPreInstall" RollbackLogPathVariable="WixBundleRollbackLog_ISVsixPreInstall" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="ISVsix" Vital="yes" DisplayName="Microsoft Visual Studio" Description="Microsoft VSIX Bootstrapper" DownloadSize="0" PackageSize="0" InstalledSize="0" PackageType="Exe" Permanent="no" LogPathVariable="WixBundleLog_ISVsix" RollbackLogPathVariable="WixBundleRollbackLog_ISVsix" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="ISVsixPostInstall" Vital="yes" DisplayName="Microsoft SQL Server" Description=" " DownloadSize="0" PackageSize="0" InstalledSize="0" PackageType="Exe" Permanent="no" LogPathVariable="WixBundleLog_ISVsixPostInstall" RollbackLogPathVariable="WixBundleRollbackLog_ISVsixPostInstall" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="VCRedist2010" Vital="yes" DisplayName="Microsoft Visual C++ 2010  x86 Redistributable" Description="Microsoft Visual C++ 2010  x86 Redistributable Setup" DownloadSize="0" PackageSize="0" InstalledSize="0" PackageType="Exe" Permanent="yes" LogPathVariable="WixBundleLog_VCRedist2010" RollbackLogPathVariable="WixBundleRollbackLog_VCRedist2010" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="VSTA2019" Vital="yes" DisplayName="Microsoft Visual Studio Tools for Applications 2019" Description="Microsoft Visual Studio Tools for Applications 2019" DownloadSize="0" PackageSize="0" InstalledSize="0" PackageType="Exe" Permanent="yes" LogPathVariable="WixBundleLog_VSTA2019" RollbackLogPathVariable="WixBundleRollbackLog_VSTA2019" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012" Vital="yes" DisplayName="SQL Server Integration Services 2012" DownloadSize="0" PackageSize="0" InstalledSize="81367045" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1028" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="19404011" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1028" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1028" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1031" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21299363" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1031" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1031" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1036" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21383873" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1036" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1036" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1040" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21229333" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1040" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1040" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1041" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="20228679" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1041" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1041" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1042" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="20008042" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1042" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1042" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1046" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21088876" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1046" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1046" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_1049" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21754526" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_1049" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_1049" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_2052" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="19346582" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_2052" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_2052" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2012_3082" Vital="yes" DisplayName="SQL Server Integration Services 2012 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21244718" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2012_3082" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2012_3082" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014" Vital="yes" DisplayName="SQL Server Integration Services 2014" DownloadSize="0" PackageSize="0" InstalledSize="82627694" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1028" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="19747596" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1028" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1028" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1031" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21645922" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1031" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1031" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1036" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21744818" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1036" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1036" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1040" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21576620" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1040" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1040" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1041" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="20578866" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1041" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1041" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1042" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="20351353" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1042" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1042" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1046" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21418141" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1046" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1046" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_1049" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="22127089" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_1049" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_1049" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_2052" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="19687619" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_2052" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_2052" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2014_3082" Vital="yes" DisplayName="SQL Server Integration Services 2014 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21596811" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2014_3082" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2014_3082" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016" Vital="yes" DisplayName="SQL Server Integration Services 2016" DownloadSize="0" PackageSize="0" InstalledSize="132870434" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1028" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="19879472" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1028" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1028" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1031" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="22101368" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1031" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1031" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1036" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="22171710" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1036" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1036" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1040" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="22064100" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1040" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1040" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1041" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="20697205" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1041" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1041" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1042" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="20546367" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1042" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1042" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1046" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="21859215" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1046" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1046" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_1049" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="22342607" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_1049" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_1049" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_2052" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="19842700" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_2052" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_2052" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSISOneDesigner2016_3082" Vital="yes" DisplayName="SQL Server Integration Services 2016 Language Pack" DownloadSize="0" PackageSize="0" InstalledSize="22033083" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSISOneDesigner2016_3082" RollbackLogPathVariable="WixBundleRollbackLog_SSISOneDesigner2016_3082" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSAS_AMO2012" Vital="yes" DisplayName="Microsoft SQL Server 2012 Analysis Management Objects " DownloadSize="0" PackageSize="0" InstalledSize="10705800" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSAS_AMO2012" RollbackLogPathVariable="WixBundleRollbackLog_SSAS_AMO2012" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSAS_AMO2014" Vital="yes" DisplayName="Microsoft SQL Server 2014 Analysis Management Objects " DownloadSize="0" PackageSize="0" InstalledSize="11227296" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSAS_AMO2014" RollbackLogPathVariable="WixBundleRollbackLog_SSAS_AMO2014" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSAS_AMO2016" Vital="yes" DisplayName="Microsoft SQL Server 2016 Analysis Management Objects " DownloadSize="0" PackageSize="0" InstalledSize="21340213" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSAS_AMO2016" RollbackLogPathVariable="WixBundleRollbackLog_SSAS_AMO2016" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSAS_OLEDB2016" Vital="yes" DisplayName="Microsoft AS OLE DB Provider for SQL Server 2016" DownloadSize="0" PackageSize="0" InstalledSize="207155378" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSAS_OLEDB2016" RollbackLogPathVariable="WixBundleRollbackLog_SSAS_OLEDB2016" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSDTISSingleton140" Vital="yes" DisplayName="SQL Server Integration Services Singleton" DownloadSize="0" PackageSize="0" InstalledSize="233848" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSDTISSingleton140" RollbackLogPathVariable="WixBundleRollbackLog_SSDTISSingleton140" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSDTISSingleton150" Vital="yes" DisplayName="SQL Server Integration Services Singleton" DownloadSize="0" PackageSize="0" InstalledSize="311144" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSDTISSingleton150" RollbackLogPathVariable="WixBundleRollbackLog_SSDTISSingleton150" Compressed="yes" DisplayInternalUI="no" />
+  <WixPackageProperties Package="SSDTISSingleton" Vital="yes" DisplayName="SQL Server Integration Services Singleton" DownloadSize="0" PackageSize="0" InstalledSize="347976" PackageType="Msi" Permanent="no" LogPathVariable="WixBundleLog_SSDTISSingleton" RollbackLogPathVariable="WixBundleRollbackLog_SSDTISSingleton" Compressed="yes" DisplayInternalUI="no" />
+  <WixPayloadProperties Payload="ISVsixPreInstall" Package="ISVsixPreInstall" Container="WixAttachedContainer" Name="ISVsixPreInstall.exe" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="ISVsix" Package="ISVsix" Container="WixAttachedContainer" Name="VSIXBootstrapper.exe" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="pay0DB9D3F8C4762D5A13615B74CDBE6E89" Package="ISVsix" Container="WixAttachedContainer" Name="VSIXBootstrapper.exe" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="payB4EC95FB1CC7BBF1FF7A840378BD6A59" Package="ISVsix" Container="WixAttachedContainer" Name="payload\Microsoft.DataTools.IntegrationServices.VSIX" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="ISVsixPostInstall" Package="ISVsixPostInstall" Container="WixAttachedContainer" Name="ISVsixPostInstall.exe" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="VCRedist2010" Package="VCRedist2010" Container="WixAttachedContainer" Name="payload\vcredist_x86.exe" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="VSTA2019" Package="VSTA2019" Container="WixAttachedContainer" Name="payload\vsta_setup_2019.exe" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012" Package="SSISOneDesigner2012" Container="WixAttachedContainer" Name="payload\SSISOneDesigner2012.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1028" Package="SSISOneDesigner2012_1028" Container="WixAttachedContainer" Name="payload\1028\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1031" Package="SSISOneDesigner2012_1031" Container="WixAttachedContainer" Name="payload\1031\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1036" Package="SSISOneDesigner2012_1036" Container="WixAttachedContainer" Name="payload\1036\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1040" Package="SSISOneDesigner2012_1040" Container="WixAttachedContainer" Name="payload\1040\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1041" Package="SSISOneDesigner2012_1041" Container="WixAttachedContainer" Name="payload\1041\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1042" Package="SSISOneDesigner2012_1042" Container="WixAttachedContainer" Name="payload\1042\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1046" Package="SSISOneDesigner2012_1046" Container="WixAttachedContainer" Name="payload\1046\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_1049" Package="SSISOneDesigner2012_1049" Container="WixAttachedContainer" Name="payload\1049\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_2052" Package="SSISOneDesigner2012_2052" Container="WixAttachedContainer" Name="payload\2052\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2012_3082" Package="SSISOneDesigner2012_3082" Container="WixAttachedContainer" Name="payload\3082\SSISOneDesigner2012.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014" Package="SSISOneDesigner2014" Container="WixAttachedContainer" Name="payload\SSISOneDesigner2014.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1028" Package="SSISOneDesigner2014_1028" Container="WixAttachedContainer" Name="payload\1028\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1031" Package="SSISOneDesigner2014_1031" Container="WixAttachedContainer" Name="payload\1031\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1036" Package="SSISOneDesigner2014_1036" Container="WixAttachedContainer" Name="payload\1036\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1040" Package="SSISOneDesigner2014_1040" Container="WixAttachedContainer" Name="payload\1040\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1041" Package="SSISOneDesigner2014_1041" Container="WixAttachedContainer" Name="payload\1041\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1042" Package="SSISOneDesigner2014_1042" Container="WixAttachedContainer" Name="payload\1042\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1046" Package="SSISOneDesigner2014_1046" Container="WixAttachedContainer" Name="payload\1046\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_1049" Package="SSISOneDesigner2014_1049" Container="WixAttachedContainer" Name="payload\1049\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_2052" Package="SSISOneDesigner2014_2052" Container="WixAttachedContainer" Name="payload\2052\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2014_3082" Package="SSISOneDesigner2014_3082" Container="WixAttachedContainer" Name="payload\3082\SSISOneDesigner2014.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016" Package="SSISOneDesigner2016" Container="WixAttachedContainer" Name="payload\SSISOneDesigner2016.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1028" Package="SSISOneDesigner2016_1028" Container="WixAttachedContainer" Name="payload\1028\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1031" Package="SSISOneDesigner2016_1031" Container="WixAttachedContainer" Name="payload\1031\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1036" Package="SSISOneDesigner2016_1036" Container="WixAttachedContainer" Name="payload\1036\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1040" Package="SSISOneDesigner2016_1040" Container="WixAttachedContainer" Name="payload\1040\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1041" Package="SSISOneDesigner2016_1041" Container="WixAttachedContainer" Name="payload\1041\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1042" Package="SSISOneDesigner2016_1042" Container="WixAttachedContainer" Name="payload\1042\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1046" Package="SSISOneDesigner2016_1046" Container="WixAttachedContainer" Name="payload\1046\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_1049" Package="SSISOneDesigner2016_1049" Container="WixAttachedContainer" Name="payload\1049\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_2052" Package="SSISOneDesigner2016_2052" Container="WixAttachedContainer" Name="payload\2052\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSISOneDesigner2016_3082" Package="SSISOneDesigner2016_3082" Container="WixAttachedContainer" Name="payload\3082\SSISOneDesigner2016.Loc.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSAS_AMO2012" Package="SSAS_AMO2012" Container="WixAttachedContainer" Name="payload\SQL_AS_AMO2012.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSAS_AMO2014" Package="SSAS_AMO2014" Container="WixAttachedContainer" Name="payload\SQL_AS_AMO2014.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSAS_AMO2016" Package="SSAS_AMO2016" Container="WixAttachedContainer" Name="payload\SQL_AS_AMO2016.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSAS_OLEDB2016" Package="SSAS_OLEDB2016" Container="WixAttachedContainer" Name="payload\SQL_AS_OLEDB2016.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSDTISSingleton140" Package="SSDTISSingleton140" Container="WixAttachedContainer" Name="payload\SSDTISSingleton140.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSDTISSingleton150" Package="SSDTISSingleton150" Container="WixAttachedContainer" Name="payload\SSDTISSingleton150.msi" Size="0" LayoutOnly="no" />
+  <WixPayloadProperties Payload="SSDTISSingleton" Package="SSDTISSingleton" Container="WixAttachedContainer" Name="payload\SSDTISSingleton.msi" Size="0" LayoutOnly="no" />
+</BootstrapperApplicationData>
+[31B8:3520][2023-02-02T11:30:14]i100: Detect begin, 45 packages
+[31B8:3520][2023-02-02T11:30:14]i000: Setting string variable 'VCRedist2010Key' to value '1'
+[31B8:3520][2023-02-02T11:30:14]i052: Condition 'VsixInstalled = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:30:14]i052: Condition 'VsixInstalled = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: ISVsixPostInstall, invalid payload: ISVsixPostInstall, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]i052: Condition 'VsixInstalled = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:30:14]i052: Condition 'VCRedist2010Key = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: VSTA2019, invalid payload: VSTA2019, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSISOneDesigner2012, invalid payload: SSISOneDesigner2012, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSISOneDesigner2014, invalid payload: SSISOneDesigner2014, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSISOneDesigner2016, invalid payload: SSISOneDesigner2016, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSAS_AMO2012, invalid payload: SSAS_AMO2012, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSAS_AMO2014, invalid payload: SSAS_AMO2014, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSAS_AMO2016, invalid payload: SSAS_AMO2016, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSAS_OLEDB2016, invalid payload: SSAS_OLEDB2016, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSDTISSingleton140, invalid payload: SSDTISSingleton140, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSDTISSingleton150, invalid payload: SSDTISSingleton150, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]w120: Detected partially cached package: SSDTISSingleton, invalid payload: SSDTISSingleton, reason: 0x80070570
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: ISVsixPreInstall, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: ISVsix, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: ISVsixPostInstall, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: VCRedist2010, state: Present, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: VSTA2019, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1028, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1031, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1036, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1040, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1041, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1042, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1046, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_1049, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_2052, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2012_3082, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1028, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1031, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1036, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1040, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1041, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1042, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1046, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_1049, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_2052, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2014_3082, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1028, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1031, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1036, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1040, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1041, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1042, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1046, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_1049, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_2052, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSISOneDesigner2016_3082, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSAS_AMO2012, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSAS_AMO2014, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSAS_AMO2016, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSAS_OLEDB2016, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSDTISSingleton140, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSDTISSingleton150, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i101: Detected package: SSDTISSingleton, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:30:14]i052: Condition 'RebootPending = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:30:14]i199: Detect complete, result: 0x0
+[31B8:150C][2023-02-02T11:30:14]i000: ManagedBootstrapperApp.LogUserEnvironmentInfoInBackground: OS: Microsoft Windows 11 Pro (10.0.22000)
+[31B8:150C][2023-02-02T11:30:14]i000: ManagedBootstrapperApp.LogUserEnvironmentInfoInBackground: Couldn't evaluate the OS info for query: SELECT Caption,Version FROM Win32_OperatingSystem
+[31B8:3588][2023-02-02T11:30:17]i000: MainViewModel.Next: Install action clicked
+[31B8:2460][2023-02-02T11:30:19]i000: ManagedBootstrapperApp.LogUserEnvironmentInfoInBackground: Net: Microsoft .NET Framework 4.5.1 Multi-Targeting Pack (4.5.50932)
+[31B8:3588][2023-02-02T11:31:16]i000: Setting string variable 'SingletonsRequired' to value '1'
+[31B8:3588][2023-02-02T11:31:16]i000: Setting string variable 'InstanceIds' to value 'f0ff8758'
+[31B8:3588][2023-02-02T11:31:16]i000: SetStringVariablesForInstall: InstallerAction: Install
+[31B8:3588][2023-02-02T11:31:16]i000: SetStringVariablesForInstall: ModifyAction: None
+[31B8:3588][2023-02-02T11:31:16]i000: Setting string variable 'InstallToVS2019' to value '1'
+[31B8:3588][2023-02-02T11:31:16]i000: Setting string variable 'VsixRequired' to value '1'
+[31B8:3588][2023-02-02T11:31:16]i000: Setting string variable 'VsixInstalled' to value '0'
+[31B8:3588][2023-02-02T11:31:16]i000: MainViewModel.Install: Install action clicked
+[31B8:3520][2023-02-02T11:31:16]i100: Detect begin, 45 packages
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'VCRedist2010Key' to value '1'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VsixInstalled = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VsixInstalled = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: ISVsixPostInstall, invalid payload: ISVsixPostInstall, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VsixInstalled = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VCRedist2010Key = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: VSTA2019, invalid payload: VSTA2019, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSISOneDesigner2012, invalid payload: SSISOneDesigner2012, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSISOneDesigner2014, invalid payload: SSISOneDesigner2014, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSISOneDesigner2016, invalid payload: SSISOneDesigner2016, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSAS_AMO2012, invalid payload: SSAS_AMO2012, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSAS_AMO2014, invalid payload: SSAS_AMO2014, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSAS_AMO2016, invalid payload: SSAS_AMO2016, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSAS_OLEDB2016, invalid payload: SSAS_OLEDB2016, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSDTISSingleton140, invalid payload: SSDTISSingleton140, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSDTISSingleton150, invalid payload: SSDTISSingleton150, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]w120: Detected partially cached package: SSDTISSingleton, invalid payload: SSDTISSingleton, reason: 0x80070570
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: ISVsixPreInstall, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: ISVsix, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: ISVsixPostInstall, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: VCRedist2010, state: Present, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: VSTA2019, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1028, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1031, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1036, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1040, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1041, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1042, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1046, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_1049, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_2052, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2012_3082, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1028, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1031, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1036, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1040, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1041, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1042, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1046, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_1049, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_2052, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2014_3082, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1028, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1031, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1036, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1040, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1041, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1042, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1046, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_1049, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_2052, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSISOneDesigner2016_3082, state: Absent, cached: None
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSAS_AMO2012, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSAS_AMO2014, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSAS_AMO2016, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSAS_OLEDB2016, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSDTISSingleton140, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSDTISSingleton150, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i101: Detected package: SSDTISSingleton, state: Absent, cached: Partial
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'RebootPending = 1' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i199: Detect complete, result: 0x0
+[31B8:3520][2023-02-02T11:31:16]i200: Plan begin, 45 packages, action: Install
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VsixRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_ISVsixPreInstall' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_0_ISVsixPreInstall.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_ISVsixPreInstall' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_0_ISVsixPreInstall_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VsixRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_ISVsix' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_1_ISVsix.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_ISVsix' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_1_ISVsix_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'VsixRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_ISVsixPostInstall' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_2_ISVsixPostInstall.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_ISVsixPostInstall' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_2_ISVsixPostInstall_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]w321: Skipping dependency registration on package with no dependency providers: VCRedist2010
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND InstallToVS2019 = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]w321: Skipping dependency registration on package with no dependency providers: VSTA2019
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_VSTA2019' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_3_VSTA2019.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSISOneDesigner2012' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_4_SSISOneDesigner2012_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSISOneDesigner2012' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_4_SSISOneDesigner2012.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1028' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1031' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1036' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1040' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1041' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1042' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1046' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1049' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 2052' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 3082' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSISOneDesigner2014' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_5_SSISOneDesigner2014_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSISOneDesigner2014' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_5_SSISOneDesigner2014.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1028' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1031' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1036' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1040' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1041' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1042' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1046' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1049' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 2052' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 3082' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSISOneDesigner2016' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_6_SSISOneDesigner2016_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSISOneDesigner2016' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_6_SSISOneDesigner2016.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1028' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1031' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1036' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1040' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1041' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1042' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1046' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 1049' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 2052' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1 AND LCID = 3082' evaluates to false.
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSAS_AMO2012' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_7_SSAS_AMO2012_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSAS_AMO2012' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_7_SSAS_AMO2012.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSAS_AMO2014' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_8_SSAS_AMO2014_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSAS_AMO2014' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_8_SSAS_AMO2014.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSAS_AMO2016' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_9_SSAS_AMO2016_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSAS_AMO2016' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_9_SSAS_AMO2016.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSAS_OLEDB2016' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_10_SSAS_OLEDB2016_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSAS_OLEDB2016' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_10_SSAS_OLEDB2016.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSDTISSingleton140' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_11_SSDTISSingleton140_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSDTISSingleton140' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_11_SSDTISSingleton140.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSDTISSingleton150' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_12_SSDTISSingleton150_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSDTISSingleton150' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_12_SSDTISSingleton150.log'
+[31B8:3520][2023-02-02T11:31:16]i052: Condition 'SingletonsRequired = 1' evaluates to true.
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleRollbackLog_SSDTISSingleton' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_13_SSDTISSingleton_rollback.log'
+[31B8:3520][2023-02-02T11:31:16]i000: Setting string variable 'WixBundleLog_SSDTISSingleton' to value 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_13_SSDTISSingleton.log'
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: ISVsixPreInstall, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: ISVsix, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: ISVsixPostInstall, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: VCRedist2010, state: Present, default requested: Present, ba requested: Present, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: VSTA2019, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: None, cache: Yes, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1028, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1031, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1036, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1040, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1041, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1042, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1046, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_1049, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_2052, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2012_3082, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1028, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1031, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1036, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1040, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1041, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1042, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1046, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_1049, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_2052, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2014_3082, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1028, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1031, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1036, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1040, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1041, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1042, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1046, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_1049, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_2052, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSISOneDesigner2016_3082, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSAS_AMO2012, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSAS_AMO2014, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSAS_AMO2016, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSAS_OLEDB2016, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSDTISSingleton140, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSDTISSingleton150, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i201: Planned package: SSDTISSingleton, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[31B8:3520][2023-02-02T11:31:16]i299: Plan complete, result: 0x0
+[31B8:3520][2023-02-02T11:31:16]i300: Apply begin
+[31B8:3520][2023-02-02T11:31:16]i000: MainViewModel.OnBundleAction: Bundle action started
+[444C:17C0][2023-02-02T11:31:19]i360: Creating a system restore point.
+[444C:17C0][2023-02-02T11:31:19]w363: Could not create system restore point, error: 0x80070422. Continuing...
+[444C:17C0][2023-02-02T11:31:19]i000: Caching bundle from: 'C:\Users\ADM_JU~1\AppData\Local\Temp\{8f80ddbd-d244-487b-ad2e-b0782599741a}\.be\Microsoft.DataTools.IntegrationServices.exe' to: 'C:\ProgramData\Package Cache\{8f80ddbd-d244-487b-ad2e-b0782599741a}\Microsoft.DataTools.IntegrationServices.exe'
+[444C:17C0][2023-02-02T11:31:19]i320: Registering bundle dependency provider: {8f80ddbd-d244-487b-ad2e-b0782599741a}, version: 16.0.5035.3
+[31B8:400C][2023-02-02T11:31:19]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services Projects Pre Install (id: ISVsixPreInstall)
+[444C:3EF4][2023-02-02T11:31:25]i305: Verified acquired payload: ISVsixPreInstall at path: C:\ProgramData\Package Cache\.unverified\ISVsixPreInstall, moving to: C:\ProgramData\Package Cache\0C77F9778351E5B681122E35604CF7F170ACBF7E\ISVsixPreInstall.exe.
+[31B8:400C][2023-02-02T11:31:25]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services Projects Pre Install (id: ISVsixPreInstall)
+[31B8:400C][2023-02-02T11:31:25]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services Projects (id: ISVsix)
+[444C:3EF4][2023-02-02T11:31:25]i305: Verified acquired payload: ISVsix at path: C:\ProgramData\Package Cache\.unverified\ISVsix, moving to: C:\ProgramData\Package Cache\7C9622AB3637420392249710295712E674972F03\VSIXBootstrapper.exe.
+[444C:3EF4][2023-02-02T11:31:25]i304: Verified existing payload: pay0DB9D3F8C4762D5A13615B74CDBE6E89 at path: C:\ProgramData\Package Cache\7C9622AB3637420392249710295712E674972F03\VSIXBootstrapper.exe.
+[444C:3EF4][2023-02-02T11:31:27]i305: Verified acquired payload: payB4EC95FB1CC7BBF1FF7A840378BD6A59 at path: C:\ProgramData\Package Cache\.unverified\payB4EC95FB1CC7BBF1FF7A840378BD6A59, moving to: C:\ProgramData\Package Cache\7C9622AB3637420392249710295712E674972F03\payload\Microsoft.DataTools.IntegrationServices.VSIX.
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services Projects (id: ISVsix)
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services Projects Post Install (id: ISVsixPostInstall)
+[444C:3EF4][2023-02-02T11:31:27]i304: Verified existing payload: ISVsixPostInstall at path: C:\ProgramData\Package Cache\C6C43F1446E5C1B3CC0964E3D9A5CA8808E63DE2\ISVsixPostInstall.exe.
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services Projects Post Install (id: ISVsixPostInstall)
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft Visual Studio Tools for Applications 2019 (id: VSTA2019)
+[444C:3EF4][2023-02-02T11:31:27]i304: Verified existing payload: VSTA2019 at path: C:\ProgramData\Package Cache\C4B0316817DE74045F5B877D13FED5CEC12C9275\payload\vsta_setup_2019.exe.
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft Visual Studio Tools for Applications 2019 (id: VSTA2019)
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services 2012 (id: SSISOneDesigner2012)
+[444C:3EF4][2023-02-02T11:31:27]i304: Verified existing payload: SSISOneDesigner2012 at path: C:\ProgramData\Package Cache\{DB97C76B-9116-42C5-8814-0041856EB9E6}v11.4.7001.0\payload\SSISOneDesigner2012.msi.
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services 2012 (id: SSISOneDesigner2012)
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services 2014 (id: SSISOneDesigner2014)
+[444C:3EF4][2023-02-02T11:31:27]i304: Verified existing payload: SSISOneDesigner2014 at path: C:\ProgramData\Package Cache\{07001141-C74D-47ED-B03D-892C7EF00E3D}v12.2.5626.31\payload\SSISOneDesigner2014.msi.
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services 2014 (id: SSISOneDesigner2014)
+[31B8:400C][2023-02-02T11:31:27]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services 2016 (id: SSISOneDesigner2016)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSISOneDesigner2016 at path: C:\ProgramData\Package Cache\{1F86F7A6-BCC6-49C4-8033-785993FA6331}v13.1.4561.14\payload\SSISOneDesigner2016.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services 2016 (id: SSISOneDesigner2016)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server 2012 Analysis Management Objects (id: SSAS_AMO2012)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSAS_AMO2012 at path: C:\ProgramData\Package Cache\{53086A62-13F3-4FC5-AA41-211FD74340B3}v11.4.7001.0\payload\SQL_AS_AMO2012.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server 2012 Analysis Management Objects (id: SSAS_AMO2012)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server 2014 Analysis Management Objects (id: SSAS_AMO2014)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSAS_AMO2014 at path: C:\ProgramData\Package Cache\{76CBDC35-0752-4B5A-83E8-49A741BD42BC}v12.2.5626.31\payload\SQL_AS_AMO2014.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server 2014 Analysis Management Objects (id: SSAS_AMO2014)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server 2016 Analysis Management Objects (id: SSAS_AMO2016)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSAS_AMO2016 at path: C:\ProgramData\Package Cache\{97A881AD-5134-4CD2-A6A8-371C83E5622B}v13.1.4561.14\payload\SQL_AS_AMO2016.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server 2016 Analysis Management Objects (id: SSAS_AMO2016)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft AS OLE DB Provider for SQL Server 2016 (id: SSAS_OLEDB2016)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSAS_OLEDB2016 at path: C:\ProgramData\Package Cache\{C49E181B-C19F-4A1F-BE76-D463E7E3B2B5}v13.1.4561.14\payload\SQL_AS_OLEDB2016.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft AS OLE DB Provider for SQL Server 2016 (id: SSAS_OLEDB2016)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services Singleton (id: SSDTISSingleton140)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSDTISSingleton140 at path: C:\ProgramData\Package Cache\{B71248CA-24E6-419C-95DD-8B93C263966B}v14.0.3002.1926\payload\SSDTISSingleton140.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services Singleton (id: SSDTISSingleton140)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services Singleton (id: SSDTISSingleton150)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSDTISSingleton150 at path: C:\ProgramData\Package Cache\{16FFDF31-23C5-41F1-A9F4-77129B8CBE9C}v15.0.2000.261\payload\SSDTISSingleton150.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services Singleton (id: SSDTISSingleton150)
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install StartedDownload for package Microsoft SQL Server Integration Services Singleton (id: SSDTISSingleton)
+[444C:3EF4][2023-02-02T11:31:28]i304: Verified existing payload: SSDTISSingleton at path: C:\ProgramData\Package Cache\{57F0329E-2210-4AAA-A432-A919D8F2D0AB}v16.0.5035.3\payload\SSDTISSingleton.msi.
+[31B8:400C][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install CompletedDownload for package Microsoft SQL Server Integration Services Singleton (id: SSDTISSingleton)
+[444C:17C0][2023-02-02T11:31:28]i323: Registering package dependency provider: ISVsixPreInstall, version: 1.0.0.0, package: ISVsixPreInstall
+[31B8:3520][2023-02-02T11:31:28]i000: MainViewModel.OnPackageAction: Install Started for package Microsoft SQL Server Integration Services Projects Pre Install (id: ISVsixPreInstall)
+[444C:17C0][2023-02-02T11:31:28]i301: Applying execute package: ISVsixPreInstall, action: Install, path: C:\ProgramData\Package Cache\0C77F9778351E5B681122E35604CF7F170ACBF7E\ISVsixPreInstall.exe, arguments: '"C:\ProgramData\Package Cache\0C77F9778351E5B681122E35604CF7F170ACBF7E\ISVsixPreInstall.exe" /instanceIds:"f0ff8758" /log:"C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_0_ISVsixPreInstall.log"'
+[31B8:3520][2023-02-02T11:31:28]i000: MainViewModel.OnPackageActionProgress: Percent completed: 50, Overall progress: 3
+[31B8:3520][2023-02-02T11:31:29]i000: MainViewModel.OnPackageActionProgress: Percent completed: 100, Overall progress: 7
+[31B8:3520][2023-02-02T11:31:29]i000: MainViewModel.OnPackageAction: Install Completed for package Microsoft SQL Server Integration Services Projects Pre Install (id: ISVsixPreInstall)
+[31B8:3520][2023-02-02T11:31:29]i319: Applied execute package: ISVsixPreInstall, result: 0x0, restart: None
+[444C:17C0][2023-02-02T11:31:29]i325: Registering dependency: {8f80ddbd-d244-487b-ad2e-b0782599741a} on package provider: ISVsixPreInstall, package: ISVsixPreInstall
+[444C:17C0][2023-02-02T11:31:29]i323: Registering package dependency provider: ISVsix, version: 1.0.0.0, package: ISVsix
+[31B8:3520][2023-02-02T11:31:29]i000: MainViewModel.OnPackageAction: Install Started for package Microsoft SQL Server Integration Services Projects (id: ISVsix)
+[444C:17C0][2023-02-02T11:31:29]i301: Applying execute package: ISVsix, action: Install, path: C:\ProgramData\Package Cache\7C9622AB3637420392249710295712E674972F03\VSIXBootstrapper.exe, arguments: '"C:\ProgramData\Package Cache\7C9622AB3637420392249710295712E674972F03\VSIXBootstrapper.exe" /q /admin /instanceIds:"f0ff8758" /logFile:"C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_1_ISVsix.log" "payload\Microsoft.DataTools.IntegrationServices.vsix"'
+[31B8:3520][2023-02-02T11:31:29]i000: MainViewModel.OnPackageActionProgress: Percent completed: 50, Overall progress: 10
+[444C:17C0][2023-02-02T11:32:12]e000: Error 0x80131500: Process returned error: 0x80131500
+[444C:17C0][2023-02-02T11:32:12]e000: Error 0x80131500: Failed to execute EXE package.
+[31B8:3520][2023-02-02T11:32:12]e000: Error 0x80131500: Failed to configure per-machine EXE package.
+[31B8:3520][2023-02-02T11:32:12]i000: MainViewModel.OnPackageAction: Install Completed for package Microsoft SQL Server Integration Services Projects (id: ISVsix)
+[31B8:3520][2023-02-02T11:32:12]i319: Applied execute package: ISVsix, result: 0x80131500, restart: None
+[31B8:3520][2023-02-02T11:32:12]e000: Error 0x80131500: Failed to execute EXE package.
+[444C:17C0][2023-02-02T11:32:12]i329: Removed package dependency provider: ISVsix, package: ISVsix
+[444C:17C0][2023-02-02T11:32:12]i351: Removing cached package: ISVsix, from path: C:\ProgramData\Package Cache\7C9622AB3637420392249710295712E674972F03\
+[444C:17C0][2023-02-02T11:32:12]i326: Removed dependency: {8f80ddbd-d244-487b-ad2e-b0782599741a} on package provider: ISVsixPreInstall, package ISVsixPreInstall
+[31B8:3520][2023-02-02T11:32:12]i000: MainViewModel.OnPackageAction: Install Started for package Microsoft SQL Server Integration Services Projects Pre Install (id: ISVsixPreInstall)
+[31B8:3520][2023-02-02T11:32:12]i000: MainViewModel.OnPackageActionProgress: Percent completed: 100, Overall progress: 14
+[444C:17C0][2023-02-02T11:32:12]i301: Applying rollback package: ISVsixPreInstall, action: Uninstall, path: C:\ProgramData\Package Cache\0C77F9778351E5B681122E35604CF7F170ACBF7E\ISVsixPreInstall.exe, arguments: '"C:\ProgramData\Package Cache\0C77F9778351E5B681122E35604CF7F170ACBF7E\ISVsixPreInstall.exe" /instanceIds:"f0ff8758" /log:"C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_0_ISVsixPreInstall.log" /u'
+[31B8:3520][2023-02-02T11:32:13]i000: MainViewModel.OnPackageAction: Install Completed for package Microsoft SQL Server Integration Services Projects Pre Install (id: ISVsixPreInstall)
+[31B8:3520][2023-02-02T11:32:13]i319: Applied rollback package: ISVsixPreInstall, result: 0x0, restart: None
+[444C:17C0][2023-02-02T11:32:13]i329: Removed package dependency provider: ISVsixPreInstall, package: ISVsixPreInstall
+[444C:17C0][2023-02-02T11:32:13]i351: Removing cached package: ISVsixPreInstall, from path: C:\ProgramData\Package Cache\0C77F9778351E5B681122E35604CF7F170ACBF7E\
+[31B8:3520][2023-02-02T11:32:13]i000: MainViewModel.OnPackageActionProgress: Percent completed: 100, Overall progress: 100
+[444C:17C0][2023-02-02T11:32:13]i330: Removed bundle dependency provider: {8f80ddbd-d244-487b-ad2e-b0782599741a}
+[444C:17C0][2023-02-02T11:32:13]i352: Removing cached bundle: {8f80ddbd-d244-487b-ad2e-b0782599741a}, from path: C:\ProgramData\Package Cache\{8f80ddbd-d244-487b-ad2e-b0782599741a}\
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Processing C:\Users\adm_justinp\AppData\Local\Temp\dd_VSIXInstaller_20230202111910_31b8.log ...
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog:   processing line: 2/2/2023 11:19:10 AM - C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\VSIXInstaller.exe,/q,/admin,/instanceIds:f0ff8758,/logFile:C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202111707_1_ISVsix.log,payload\Microsoft.DataTools.IntegrationServices.vsix
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either 'C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202111707_1_ISVsix.log' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Processing C:\Users\adm_justinp\AppData\Local\Temp\dd_VSIXInstaller_20230202113129_0690.log ...
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Either '' is empty or already exists. Skip copying.
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog:   processing line: 2/2/2023 11:31:29 AM - C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\VSIXInstaller.exe,/q,/admin,/instanceIds:f0ff8758,/logFile:C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_1_ISVsix.log,payload\Microsoft.DataTools.IntegrationServices.vsix
+[31B8:3520][2023-02-02T11:32:13]i000: TryCheckAndCopyVsixInstallerLog: Copy C:\Users\adm_justinp\AppData\Local\Temp\dd_VSIXInstaller_20230202113129_0690.log to C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011_1_ISVsix.log
+[31B8:3520][2023-02-02T11:32:13]e000: MainViewModel.OnBundleAction: Bundle action failed: Unknown error (0x80131500) (0x80131500)
+[31B8:3520][2023-02-02T11:32:13]i399: Apply complete, result: 0x80131500, restart: None, ba requested restart:  No
+[31B8:3588][2023-02-02T11:32:26]i000: MainViewModel.OpenUrl: Opening url: C:\Users\ADM_JU~1\AppData\Local\Temp\SsdtisSetup\Microsoft.DataTools.IntegrationServices_20230202113011.log
