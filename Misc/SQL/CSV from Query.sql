@@ -17,7 +17,7 @@ group by sm.ShippingInstrs,
 order by ShippingInstrsCod
 
 
-	set @cmd = REplace(REPLACE(@const_command, @replacefilepath_str, @Filename), @replacequery, @sql_query)
+	set @cmd = REplace(REPLACE(@const_command, @replacefilepath_str, @Filename), @replacetable_str, @Table1)
 	print @cmd
 	EXECUTE master.sys.xp_cmdshell @cmd
 
