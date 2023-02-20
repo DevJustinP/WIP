@@ -1,0 +1,13 @@
+Notes:
+
+1) Order Entry to Invoice process for Fabric Sample orders
+    - MKT warehouse
+    - the whole warehouse is not on the Syspro and Datascope system
+    - Warehouse is shared with Marketing ops
+    - Scan into inventory
+
+2) Invoice Document requirements
+    - 
+
+3) Notifications for the invoice
+    - 

@@ -1,161 +1,161 @@
-SQL Job,User
-CommandLog Cleanup,sa
-DBA - ElevatedPermissionsCleanup,sa
-DBAdminPerformanceLogMon,sa
-DatabaseBackup - USER_DATABASES - FULL,sa
-Update WipMaster JobDeliveryDate,sa
-Backup Databases MIRROR,sa
-DatabaseIntegrityCheck - All Databases,sa
-sp_purge_jobhistory,sa
-Update InvWhControl NextNumber for Company 100,sa
-Backup Databases FULL (daily),sa
-Backup Databases LOG,sa
-Maintenance - Cycle Error Log,sa
-sp_delete_backuphistory,sa
-syspolicy_purge_history,sa
-Backup Databases MIRROR (monthly),sa
-Output File Cleanup,sa
-DatabaseIntegrityCheck - USER_DATABASES,sa
-DatabaseBackup - USER_DATABASES - LOG,sa
-Update SYSPRO ISAM Reference,SUMMERCLASSICS\SqlAgentUser
-Syspro Maintenance,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Contract (Customers),SUMMERCLASSICS\SqlAgentUser
-Datascope Create Track IDs,SUMMERCLASSICS\SqlAgentUser
-eCat Download - Summer Classics Wholesale (User),SUMMERCLASSICS\SqlAgentUser
-eCat PreUpload Updating Fabric Image,SUMMERCLASSICS\SqlAgentUser
-Update Container Tracking,SUMMERCLASSICS\SqlAgentUser
-Check for Large Transaction Logs,SUMMERCLASSICS\SqlAgentUser
-IndexOptimize - USER_DATABASES,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Casaza - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-Notify Shipping Exceptions,SUMMERCLASSICS\SqlAgentUser
-Syspro Maintenance Constant,SUMMERCLASSICS\SqlAgentUser
-Audit Logging - SysproCompany100 (05 Minute),SUMMERCLASSICS\SqlAgentUser
-B2C Website - Tracking,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Website - Gabby - Inventory - SFTP,SUMMERCLASSICS\SqlAgentUser
-eCat Download - All Sites (Order),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Retail (Customers),SUMMERCLASSICS\SqlAgentUser
-Update Available / Order Allocation and eCat Invoice / Order / Sentinel (1230),SUMMERCLASSICS\SqlAgentUser
-Datafeed - Transport - Mode - All (Load Tender) 15 Minutes,SUMMERCLASSICS\SqlAgentUser
-Datafeed - Accounting - All Factors - Invoice (Production),SUMMERCLASSICS\SqlAgentUser
-OutboundVolume Job for NULLS,SUMMERCLASSICS\SqlAgentUser
-Audit Logging - Purge Archive,SUMMERCLASSICS\SqlAgentUser
-Orders Stuck in Mode,SUMMERCLASSICS\SqlAgentUser
-IndexOptimize - Daily,SUMMERCLASSICS\SqlAgentUser
+SQL Job,User,,,,,
+CommandLog Cleanup,sa,,,,,
+DBA - ElevatedPermissionsCleanup,sa,,,,,
+DBAdminPerformanceLogMon,sa,,,,,
+DatabaseBackup - USER_DATABASES - FULL,sa,,,,,
+Update WipMaster JobDeliveryDate,sa,,,,,
+Backup Databases MIRROR,sa,,,,,
+DatabaseIntegrityCheck - All Databases,sa,,,,,
+sp_purge_jobhistory,sa,,,,,
+Update InvWhControl NextNumber for Company 100,sa,,,,,
+Backup Databases FULL (daily),sa,,,,,
+Backup Databases LOG,sa,,,,,
+Maintenance - Cycle Error Log,sa,,,,,
+sp_delete_backuphistory,sa,,,,,
+syspolicy_purge_history,sa,,,,,
+Backup Databases MIRROR (monthly),sa,,,,,
+Output File Cleanup,sa,,,,,
+DatabaseIntegrityCheck - USER_DATABASES,sa,,,,,
+DatabaseBackup - USER_DATABASES - LOG,sa,,,,,
+Update SYSPRO ISAM Reference,SUMMERCLASSICS\SqlAgentUser,,,,,
+Syspro Maintenance,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Contract (Customers),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datascope Create Track IDs,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Summer Classics Wholesale (User),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat PreUpload Updating Fabric Image,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Container Tracking,SUMMERCLASSICS\SqlAgentUser,,,,,
+Check for Large Transaction Logs,SUMMERCLASSICS\SqlAgentUser,,,,,
+IndexOptimize - USER_DATABASES,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Casaza - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Notify Shipping Exceptions,SUMMERCLASSICS\SqlAgentUser,,,,,
+Syspro Maintenance Constant,SUMMERCLASSICS\SqlAgentUser,,,,,
+Audit Logging - SysproCompany100 (05 Minute),SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C Website - Tracking,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Website - Gabby - Inventory - SFTP,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - All Sites (Order),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Retail (Customers),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Available / Order Allocation and eCat Invoice / Order / Sentinel (1230),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Transport - Mode - All (Load Tender) 15 Minutes,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Accounting - All Factors - Invoice (Production),SUMMERCLASSICS\SqlAgentUser,,,,,
+OutboundVolume Job for NULLS,SUMMERCLASSICS\SqlAgentUser,,,,,
+Audit Logging - Purge Archive,SUMMERCLASSICS\SqlAgentUser,,,,,
+Orders Stuck in Mode,SUMMERCLASSICS\SqlAgentUser,,,,,
+IndexOptimize - Daily,SUMMERCLASSICS\SqlAgentUser,,,,,
 eCat Upload - Summer Classics Wholesale (Options, Option Groups, Products, Matrix Options,Stories, Kit Items),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Gabby (Territories),SUMMERCLASSICS\SqlAgentUser
-Check for Database Backup Setting,SUMMERCLASSICS\SqlAgentUser
-B2C Website - Order Import,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Meridien - GWC - Inventory,SUMMERCLASSICS\SqlAgentUser
-Expired subscription clean up,SUMMERCLASSICS\SqlAgentUser
-Update Customer Service Rep Reference,SUMMERCLASSICS\SqlAgentUser
-Update Available Inventory for Company 100,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Website - SCS - Inventory - SFTP,SUMMERCLASSICS\SqlAgentUser
-Datafeed - Transport - Mode - All (Load Plan Mode Picking Slip) 5 minutes,SUMMERCLASSICS\SqlAgentUser
-EnterWorks PIM Import Daily,SUMMERCLASSICS\SqlAgentUser
-Restart SYSPRO WCF Service,SUMMERCLASSICS\SqlAgentUser
-eCat Download - Summer Classics Contract (Order),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Contract (Territories),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Gabby (Customers),SUMMERCLASSICS\SqlAgentUser
-ETD-MS Eraser and CushionStatusUpdate,SUMMERCLASSICS\SqlAgentUser
-TEST JOB,SUMMERCLASSICS\SqlAgentUser
-SYSPRO Barcom Import,SUMMERCLASSICS\SqlAgentUser
-B2C Website - Inventory Data Feeds,SUMMERCLASSICS\SqlAgentUser
-Update Stock Code Combined Table,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Contract (Inventory),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Contract (Options, Option Groups, Products, Matrix Options,Stories, Kit Items),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Wholesale (Territories),SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Bellacor - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Wayfair - SCW - Inventory Frame Cush Combined,SUMMERCLASSICS\SqlAgentUser
-Integration - 2Ship - Archive,SUMMERCLASSICS\SqlAgentUser
-Purge Log - SysproDocument,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Retail (Images),SUMMERCLASSICS\SqlAgentUser
-SD - Archive Stage Records,SUMMERCLASSICS\SqlAgentUser
-Gnosis,SUMMERCLASSICS\SqlAgentUser
-eCat Update Matrix Options,SUMMERCLASSICS\SqlAgentUser
-eCat Download - All Sites (User),SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - LuxeDecor - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Gabby (Contract Prices),SUMMERCLASSICS\SqlAgentUser
-Flag Orders Ready to create Pickslips,SUMMERCLASSICS\SqlAgentUser
-QCommissions_Monthly,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Gabby (Options, Option Groups, Products, Matrix Option, Stories, Kit Items),SUMMERCLASSICS\SqlAgentUser
-Notify Event - Shipment Notification,SUMMERCLASSICS\SqlAgentUser
-B2C Website - Product Data Feed,SUMMERCLASSICS\SqlAgentUser
-Update Retail Cushion Prices,SUMMERCLASSICS\SqlAgentUser
-Update Notify Event Dispatch Note Created,SUMMERCLASSICS\SqlAgentUser
-Sugar CRM Export,SUMMERCLASSICS\SqlAgentUser
-Purge Log - LogiSolutions,SUMMERCLASSICS\SqlAgentUser
-Load MRP,SUMMERCLASSICS\SqlAgentUser
-QCommissions_Weekly,SUMMERCLASSICS\SqlAgentUser
-3PL Freight Providers - Fidelitone File,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Wayfair - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser
-Update Available Inventory for Stores,SUMMERCLASSICS\SqlAgentUser
-B2C Website - Inventory Data Feeds_OLD,SUMMERCLASSICS\SqlAgentUser
-Update InvMaster and Pricing,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Houzz - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-Uniters,SUMMERCLASSICS\SqlAgentUser
-MaintenancePlan_Delete_BackupHistory.Subplan_1,SUMMERCLASSICS\SqlAgentUser
-Refresh AD User,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Houzz - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser
-Datafeed - Accounting - All Factors - Credit Request (Production),SUMMERCLASSICS\SqlAgentUser
-Update UserField3 for Company 100,SUMMERCLASSICS\SqlAgentUser
-B2C - Sales Order Report FTP Transfer,SUMMERCLASSICS\SqlAgentUser
-QCommission FTP,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Retail (Options, Option Groups, Products, Matrix Options,Stories, Kit Items),SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - SPS - Incoming (Production),SUMMERCLASSICS\SqlAgentUser
-Update Available / Order Allocation and eCat Invoice / Order / Sentinel (0600),SUMMERCLASSICS\SqlAgentUser
-Update SYSPRO Search Data,SUMMERCLASSICS\SqlAgentUser
-Purge Log - SYSPRO AdmSignatureLog,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Wholesale (Contract Prices),SUMMERCLASSICS\SqlAgentUser
-Datafeed - Accounting - Wells Fargo - Positive Pay (Production),SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Retail (Inventory),SUMMERCLASSICS\SqlAgentUser
-High Point Split Order,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Wholesale (Inventory),SUMMERCLASSICS\SqlAgentUser
-eCat Download - Summer Classics Retail (User),SUMMERCLASSICS\SqlAgentUser
-Update SorDetail LineShipDate and CustRequestDat,SUMMERCLASSICS\SqlAgentUser
-Audit Logging - PRODUCT_INFO (05 Minute),SUMMERCLASSICS\SqlAgentUser
-QCommissions_Daily,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Gabby (Inventory),SUMMERCLASSICS\SqlAgentUser
-RunSSISPackage,SUMMERCLASSICS\SqlAgentUser
-eCat Download - Summer Classics Wholesale (Order),SUMMERCLASSICS\SqlAgentUser
-Audit Logging - SysproCompany100 (60 Minute),SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Wayfair - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-Update Active Directory Users,SUMMERCLASSICS\SqlAgentUser
-Check for Failed Jobs,SUMMERCLASSICS\SqlAgentUser
-B2C Website - Update Unit Sold by Stock Code,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Bellacor - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-eCat Upload - Summer Classics Wholesale (Customers),SUMMERCLASSICS\SqlAgentUser
-eCat Download - Gabby (User),SUMMERCLASSICS\SqlAgentUser
-Update M-Files Reference Data (Full Refresh),SUMMERCLASSICS\SqlAgentUser
-Integration - Accounting - Wells Fargo - Cash Book Transaction,SUMMERCLASSICS\SqlAgentUser
-eCat Download - Summer Classics Contract (User),SUMMERCLASSICS\SqlAgentUser
-Update SchCompDate,SUMMERCLASSICS\SqlAgentUser
-Purge Log - SSIS Execution History,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Bellacor - Gabby - Inventory - New,SUMMERCLASSICS\SqlAgentUser
-Collect Table Usage Stats,SUMMERCLASSICS\SqlAgentUser
-Capture History Data,SUMMERCLASSICS\SqlAgentUser
-Update M-Files Reference Data (Daily ArInvoice_ArTrnSummary),SUMMERCLASSICS\SqlAgentUser
-Backup Databases FULL (monthly),SUMMERCLASSICS\SqlAgentUser
-Chairish,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Kathy Kuo Home - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-Integration - 2Ship - GetChanges and ShipHold,SUMMERCLASSICS\SqlAgentUser
-Datafeed - Accounting - Wells Fargo - ACH (Production),SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Design Trade Service - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-eCat Download - Summer Classics Retail (Order),SUMMERCLASSICS\SqlAgentUser
-SQL Sentry 2.0 Alert Trap,SUMMERCLASSICS\SqlAgentUser
-Datafeed - Accounting - All Factors - Credit Confirmation (Production),SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Scout and Nimble - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-Notify Event - Ship Date Notification,SUMMERCLASSICS\SqlAgentUser
-Update Data Warehouse for Company 100,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - Renegade - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser
-Shrink Logs,SUMMERCLASSICS\SqlAgentUser
-eCat Download - Gabby (Order),SUMMERCLASSICS\SqlAgentUser
-KILL SPIDS,SUMMERCLASSICS\SqlAgentUser
-Check for Long Running Jobs,SUMMERCLASSICS\SqlAgentUser
-Update SorMaster OrderDate and ReqShipDate,SUMMERCLASSICS\SqlAgentUser
-Datafeed - eCommerce - PatioLiving - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser
-Purge Log - SQL Job History,SUMMERCLASSICS\SqlAgentUser
-SSIS Server Maintenance Job,##MS_SSISServerCleanupJobLogin##
-lsi_Automated Wip Process - Kit Issue,Datascope
-lsi_Automated Wip Process - Job Closure,Datascope
-Isi_Automated Transfers In to X and Donation Warehouses,Datascope
-Isi_Automated Inventory Internal SCT Process,Datascope
+eCat Upload - Gabby (Territories),SUMMERCLASSICS\SqlAgentUser,,,,,
+Check for Database Backup Setting,SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C Website - Order Import,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Meridien - GWC - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Expired subscription clean up,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Customer Service Rep Reference,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Available Inventory for Company 100,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Website - SCS - Inventory - SFTP,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Transport - Mode - All (Load Plan Mode Picking Slip) 5 minutes,SUMMERCLASSICS\SqlAgentUser,,,,,
+EnterWorks PIM Import Daily,SUMMERCLASSICS\SqlAgentUser,,,,,
+Restart SYSPRO WCF Service,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Summer Classics Contract (Order),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Contract (Territories),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Gabby (Customers),SUMMERCLASSICS\SqlAgentUser,,,,,
+ETD-MS Eraser and CushionStatusUpdate,SUMMERCLASSICS\SqlAgentUser,,,,,
+TEST JOB,SUMMERCLASSICS\SqlAgentUser,,,,,
+SYSPRO Barcom Import,SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C Website - Inventory Data Feeds,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Stock Code Combined Table,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Contract (Inventory),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Contract (Options Option Groups Products Matrix Options Stories Kit Items),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Wholesale (Territories),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Bellacor - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Wayfair - SCW - Inventory Frame Cush Combined,SUMMERCLASSICS\SqlAgentUser,,,,,
+Integration - 2Ship - Archive,SUMMERCLASSICS\SqlAgentUser,,,,,
+Purge Log - SysproDocument,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Retail (Images),SUMMERCLASSICS\SqlAgentUser,,,,,
+SD - Archive Stage Records,SUMMERCLASSICS\SqlAgentUser,,,,,
+Gnosis,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Update Matrix Options,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - All Sites (User),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - LuxeDecor - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Gabby (Contract Prices),SUMMERCLASSICS\SqlAgentUser,,,,,
+Flag Orders Ready to create Pickslips,SUMMERCLASSICS\SqlAgentUser,,,,,
+QCommissions_Monthly,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Gabby  (Options Option Groups Products Matrix Options Stories Kit Items),SUMMERCLASSICS\SqlAgentUser,,,,,
+Notify Event - Shipment Notification,SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C Website - Product Data Feed,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Retail Cushion Prices,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Notify Event Dispatch Note Created,SUMMERCLASSICS\SqlAgentUser,,,,,
+Sugar CRM Export,SUMMERCLASSICS\SqlAgentUser,,,,,
+Purge Log - LogiSolutions,SUMMERCLASSICS\SqlAgentUser,,,,,
+Load MRP,SUMMERCLASSICS\SqlAgentUser,,,,,
+QCommissions_Weekly,SUMMERCLASSICS\SqlAgentUser,,,,,
+3PL Freight Providers - Fidelitone File,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Wayfair - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Available Inventory for Stores,SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C Website - Inventory Data Feeds_OLD,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update InvMaster and Pricing,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Houzz - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Uniters,SUMMERCLASSICS\SqlAgentUser,,,,,
+MaintenancePlan_Delete_BackupHistory.Subplan_1,SUMMERCLASSICS\SqlAgentUser,,,,,
+Refresh AD User,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Houzz - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Accounting - All Factors - Credit Request (Production),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update UserField3 for Company 100,SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C - Sales Order Report FTP Transfer,SUMMERCLASSICS\SqlAgentUser,,,,,
+QCommission FTP,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Retail (Options Option Groups Products Matrix Options Stories Kit Items),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - SPS - Incoming (Production),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Available / Order Allocation and eCat Invoice / Order / Sentinel (0600),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update SYSPRO Search Data,SUMMERCLASSICS\SqlAgentUser,,,,,
+Purge Log - SYSPRO AdmSignatureLog,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Wholesale (Contract Prices),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Accounting - Wells Fargo - Positive Pay (Production),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Retail (Inventory),SUMMERCLASSICS\SqlAgentUser,,,,,
+High Point Split Order,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Wholesale (Inventory),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Summer Classics Retail (User),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update SorDetail LineShipDate and CustRequestDat,SUMMERCLASSICS\SqlAgentUser,,,,,
+Audit Logging - PRODUCT_INFO (05 Minute),SUMMERCLASSICS\SqlAgentUser,,,,,
+QCommissions_Daily,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Gabby (Inventory),SUMMERCLASSICS\SqlAgentUser,,,,,
+RunSSISPackage,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Summer Classics Wholesale (Order),SUMMERCLASSICS\SqlAgentUser,,,,,
+Audit Logging - SysproCompany100 (60 Minute),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Wayfair - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Active Directory Users,SUMMERCLASSICS\SqlAgentUser,,,,,
+Check for Failed Jobs,SUMMERCLASSICS\SqlAgentUser,,,,,
+B2C Website - Update Unit Sold by Stock Code,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Bellacor - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Upload - Summer Classics Wholesale (Customers),SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Gabby (User),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update M-Files Reference Data (Full Refresh),SUMMERCLASSICS\SqlAgentUser,,,,,
+Integration - Accounting - Wells Fargo - Cash Book Transaction,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Summer Classics Contract (User),SUMMERCLASSICS\SqlAgentUser,,,,,
+Update SchCompDate,SUMMERCLASSICS\SqlAgentUser,,,,,
+Purge Log - SSIS Execution History,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Bellacor - Gabby - Inventory - New,SUMMERCLASSICS\SqlAgentUser,,,,,
+Collect Table Usage Stats,SUMMERCLASSICS\SqlAgentUser,,,,,
+Capture History Data,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update M-Files Reference Data (Daily ArInvoice_ArTrnSummary),SUMMERCLASSICS\SqlAgentUser,,,,,
+Backup Databases FULL (monthly),SUMMERCLASSICS\SqlAgentUser,,,,,
+Chairish,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Kathy Kuo Home - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Integration - 2Ship - GetChanges and ShipHold,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Accounting - Wells Fargo - ACH (Production),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Design Trade Service - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Summer Classics Retail (Order),SUMMERCLASSICS\SqlAgentUser,,,,,
+SQL Sentry 2.0 Alert Trap,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - Accounting - All Factors - Credit Confirmation (Production),SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Scout and Nimble - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Notify Event - Ship Date Notification,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update Data Warehouse for Company 100,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - Renegade - Gabby - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Shrink Logs,SUMMERCLASSICS\SqlAgentUser,,,,,
+eCat Download - Gabby (Order),SUMMERCLASSICS\SqlAgentUser,,,,,
+KILL SPIDS,SUMMERCLASSICS\SqlAgentUser,,,,,
+Check for Long Running Jobs,SUMMERCLASSICS\SqlAgentUser,,,,,
+Update SorMaster OrderDate and ReqShipDate,SUMMERCLASSICS\SqlAgentUser,,,,,
+Datafeed - eCommerce - PatioLiving - SCW - Inventory,SUMMERCLASSICS\SqlAgentUser,,,,,
+Purge Log - SQL Job History,SUMMERCLASSICS\SqlAgentUser,,,,,
+SSIS Server Maintenance Job,##MS_SSISServerCleanupJobLogin##,,,,,
+lsi_Automated Wip Process - Kit Issue,Datascope,,,,,
+lsi_Automated Wip Process - Job Closure,Datascope,,,,,
+Isi_Automated Transfers In to X and Donation Warehouses,Datascope,,,,,
+Isi_Automated Inventory Internal SCT Process,Datascope,,,,,
