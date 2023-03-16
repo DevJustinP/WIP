@@ -45,9 +45,9 @@ When adding lines to an existing order, the order must already be attached to a 
 	</xsd:element>
 	<xsd:element name="BlanketPurchaseOrder">
 		<xsd:annotation>
-			<xsd:documentation>This element is used  to supply the Blanket Purchase Order to be checked and used as the basis for the line. The contract must not be a fixed one, the supplier, stock code and warehouse must match on one of the contract detail lines, the contract must be current, there must be a valid remaining quantity, and the SYSPRO setup must allow manual addition to this type of contract. 
+			<xsd:documentation>This element is used  to supply the Blanket Purchase Order to be checked and used as the basis for the line. The contract must not be a fixed one, the supplier, stock code and  must match on one of the contract detail lines, the contract must be current, there must be a valid remaining quantity, and the SYSPRO setup must allow manual addition to this type of contract. 
 
-If the contract is valid then the details of the contract will be used to set up the purchase order line. Any of the relevant details may be overridden by elements passed.</xsd:documentation>
+If the contract is valid then the details of the contract will be used to set up the purchase order line. Any of the relevant detailwarehouses may be overridden by elements passed.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleType>
 			<xsd:restriction base="xsd:string">
