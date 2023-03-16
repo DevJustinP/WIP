@@ -1,10 +1,14 @@
 use [SysproDocument]
 go
 
+drop table if exists [soh].[Order_processes]
+go
+
 create table [SOH].[Order_Processes] (
 	[ProcessType] int,
 	[ProcessDescription] varchar(50),
-	[Enabled] bit
+	[Enabled] bit,
+	primary key ([ProcessType])
 )
 go
 
