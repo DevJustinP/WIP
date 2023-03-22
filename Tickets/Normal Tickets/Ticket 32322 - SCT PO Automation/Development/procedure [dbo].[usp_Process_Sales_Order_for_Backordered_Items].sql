@@ -38,14 +38,19 @@ with BackOrder as (
 												(sd.MBackOrderQty + sd.MShipQty + sd.QtyReserved) * 
 												ROUND(((sd.[MOrderQty] * sd.[MPrice]) - sd.[MDiscValue])/sd.MOrderQty,2)
 											ELSE 
-												(sd.MBackOrderQty + sd.MShipQty + sd.QtyReserved + sd.MOrderQty) * 
+												(sd.MBackOrderQty + sd.MShipQty + sd.QtyReserved) * 
 												ROUND((sd.[MPrice] * (1 - sd.[MDiscPct1] / 100) * (1 - sd.[MDiscPct2] / 100) * (1 - sd.[MDiscPct3] / 100)),2)
 										END) as Price
 								from [SysproCompany100].[dbo].[SorDetail] as sd
 								where sd.SalesOrder = sm.SalesOrder 
 									and sd.LineType in ('1','7') ) as Total
 						inner join [SysproCompany100].[dbo].[PosDeposit] as pd on pd.SalesOrder = sm.SalesOrder
-																			and cast((pd.DepositValue/Total.Price) as decimal(6,4)) > .5
+														                      and pd.DepositValue >= (.5 * Total.Price)
+						left join (     select
+											sm.SalesOrder
+										from [SysproCompany100].[dbo].[SorMaster] as sm
+											inner join [SysproCompany100].[dbo].[SorDetail] as sd on sd.SalesOrder = sm.SalesOrder
+										WHERE (sd.LineType = '7' OR (sd.LineType = '1' AND sd.MStockCode IN ('FILLIN')))) as NotReady on NotReady.SalesOrder = sm.SalesOrder
 						cross apply (	select top 1
 											sd.SalesOrderLine
 										from [SysproCompany100].[dbo].[SorDetail] as sd
@@ -69,6 +74,7 @@ with BackOrder as (
 						and sm.OrderStatus in ('1','2','3')
 						and sm.InterWhSale <> 'Y'
 						and sm.Branch like '3%'
+						and NotReady.SalesOrder is null
 						and sm.SalesOrder = @SalesOrder )
 
 	merge [SysproDocument].[SOH].[SorMaster_Process_Staged] as Target
