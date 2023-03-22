@@ -79,7 +79,7 @@ begin
 											for xml path('Parameters'), root('PostSalesOrdersSCT') )
 	declare @SORTTRDoc as xml = (
 									select
-										sm.CustomerPoNumber							[OrderHeader/CustomerPoNumber],
+										sm.CustomerName +' '+ sm.SalesOrder			[OrderHeader/CustomerPoNumber],
 										warehouse.SourceWarehouse					[OrderHeader/SourceWarehouse],
 										warehouse.TargetWarehouse					[OrderHeader/TargetWarehouse],
 										convert(varchar(10), sm.OrderDate, 120)		[OrderHeader/OrderDate],
@@ -93,7 +93,6 @@ begin
 										addr.ShippingPostalCode						[OrderHeader/ShipPostalCode],
 										sm.Email									[OrderHeader/Email],
 										sm.SpecialInstrs							[OrderHeader/SpecialInstrs],
-										sm.SalesOrder								[OrderHeader/SalesOrder],
 										sm.StandardComment							[OrderHeader/OrderComments],
 										(
 											select

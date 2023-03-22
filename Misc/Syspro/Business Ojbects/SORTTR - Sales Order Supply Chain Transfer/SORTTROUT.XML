@@ -5,18 +5,18 @@
      use of the Sales Order Transaction Posting Business Object
 -->
 <postsalesorderssct Language='05' CssStyle='' DecFormat='2' DateFormat='01' Role='01' Version='6.0.000'>
-<Item>
-<Key>
-<SalesOrder>002613</SalesOrder>
-<SourceWarehouse>E</SourceWarehouse>
-<TargetWarehouse>S</TargetWarehouse>
-<CustomerPoNumber>SCT1000</CustomerPoNumber>
-</Key>
-<ItemNumber>1</ItemNumber>
-</Item>
-<StatusOfItems>
-<ItemsProcessed>000001</ItemsProcessed>
-<ItemsInvalid>000000</ItemsInvalid>
-</StatusOfItems>
+     <Item>
+          <Key>
+               <SalesOrder>002613</SalesOrder>
+               <SourceWarehouse>E</SourceWarehouse>
+               <TargetWarehouse>S</TargetWarehouse>
+               <CustomerPoNumber>SCT1000</CustomerPoNumber>
+          </Key>
+          <ItemNumber>1</ItemNumber>
+     </Item>
+     <StatusOfItems>
+          <ItemsProcessed>000001</ItemsProcessed>
+          <ItemsInvalid>000000</ItemsInvalid>
+     </StatusOfItems>
 </postsalesorderssct>
  
