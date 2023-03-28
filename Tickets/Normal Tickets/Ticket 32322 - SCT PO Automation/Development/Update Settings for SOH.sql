@@ -25,7 +25,7 @@ SELECT @SettingDocument = '
       <PersistSecurityInfo>true</PersistSecurityInfo>
     </SQLConnection>
   </SQLConnections>
-  <SysproLogon>
+<SysproLogon>
     <UserName>@SOH</UserName>
     <Password>Temp12345678!</Password>
     <Company>100</Company>
@@ -34,6 +34,10 @@ SELECT @SettingDocument = '
     <LogLevel>0</LogLevel>
     <Instance>0</Instance>
     <XmlIn>__Blank</XmlIn>
+	<Developer>
+	  <UserName>justinp</UserName>
+	  <Password>@!32Bqdqmg4</Password>
+	</Developer>
   </SysproLogon>
   <Message>
     <Success>
@@ -104,6 +108,11 @@ SELECT @SettingDocument = '
 	<count>10</count>
 	<WaitHours>24.00</WaitHours>
   </StageReprocesses>
+  <FileLocations>
+	<AckDocs>
+	  P:\Services\GWC Service - SOH - SalesOrderHandler\Application\Archive
+	</AckDocs>
+  </FileLocations>
 </Setting>
 ';
 

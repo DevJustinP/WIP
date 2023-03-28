@@ -13,6 +13,6 @@ create table [SOH].[Order_Processes] (
 go
 
 insert into [SOH].[Order_Processes]
-values (0, 'Dispatch', 1), (1, 'BackOrder', 0)
+values (0, 'Dispatch', 1), (1, 'BackOrder', 1)
 
 select * from [SOH].[Order_Processes]

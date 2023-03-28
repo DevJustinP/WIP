@@ -89,6 +89,10 @@ begin
 							  and pxp.MinimumQty <= sd.MBackOrderQty
 							  and pxp.PriceExpiryDate > GetDate()
 							order by MinimumQty desc ) as [Contract]
+			left join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
+																			and csd.SalesOrderInitLine = sd.SalesOrderInitLine
+																			and csd.InvoiceNumber = ''
+																			--and csd.SpecialOrder = 'Y'
 		where s.ProcessNumber = @ProcessNumber
 
 	declare @LinestoPO_count as int = (select count(*) from @LinestoPO)

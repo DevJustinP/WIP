@@ -1,4 +1,4 @@
-use [SysproCompany100]
+use [SysproDocument]
 go
 
 /*
@@ -11,13 +11,12 @@ go
 					processing.
 ======================================================
 Test:
-declare @SalesOrder varchar(20) = '301-1012310'
-execute [dbo].[usp_Process_Sales_Order_for_Backordered_Items] @SalesOrder
+execute [SysproDocument].[SOH].[usp_Process_Sales_Order_for_Backordered_Items]
+select * from [SysproDocument].[SOH].[SorMaster_Process_Staged]
+where ProcessType = 1
 ======================================================
 */
-create or alter procedure [dbo].[usp_Process_Sales_Order_for_Backordered_Items](
-	@SalesOrder varchar(20)
-)
+Create or Alter procedure [SOH].[usp_Process_Sales_Order_for_Backordered_Items]
 as
 begin
 
@@ -67,15 +66,14 @@ with BackOrder as (
 											and sd.MReviewFlag = ''
 											and sd.LineType = '1'
 											and sd.MStockCode <> 'FILLIN'
-											--and csd.SpecialOrder = 'Y'
+											and csd.SpecialOrder = 'Y'
 											and sdsct.SalesOrder is null
 											and pmd.PurchaseOrder is null ) as BackOrderItem
 					where sm.DocumentType = 'O'
 						and sm.OrderStatus in ('1','2','3')
 						and sm.InterWhSale <> 'Y'
 						and sm.Branch like '3%'
-						and NotReady.SalesOrder is null
-						and sm.SalesOrder = @SalesOrder )
+						and NotReady.SalesOrder is null )
 
 	merge [SysproDocument].[SOH].[SorMaster_Process_Staged] as Target
 		using BackOrder as Source on Target.SalesOrder = Source.SalesOrder collate Latin1_General_BIN

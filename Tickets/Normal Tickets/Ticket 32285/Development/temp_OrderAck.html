@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 20px;
+}
+
+.center{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ColumnLeft{
+	float: left;
+    width: 50%;
+}
+
+.ColumnRight{
+	float: right;
+    width: 50%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	<div class="row">
+		<div class="column">
+    		<p>{Address1}</p>
+        	<p>{Address2}</p>
+        	<p>{Address3}</p>
+		</div>
+        <div class="column">
+        	<div class="center">
+    			<image src="{ImageSouce.jpg}">
+            </div>        	
+        </div>
+    	<div class="column">
+    		<p><b>{DocType}</b></p>
+            <div class="row">
+        	<div class="ColumnLeft">
+        		<p>Order Number:</p>
+            	<p>Printed Date:</p>
+        	</div>
+        	<div class="ColumnRight">
+        		<p>{OrderNumber}</p>
+            	<p>{PrintDate}</p>        
+        	</div>
+            </div>
+    	</div>
+    </div>
+</div>
+
+</body>
+</html>

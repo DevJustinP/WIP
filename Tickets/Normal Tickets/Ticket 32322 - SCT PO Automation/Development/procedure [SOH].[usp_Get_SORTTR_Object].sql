@@ -62,6 +62,10 @@ begin
 			inner join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 																   and iw.Warehouse = sd.MWarehouse
 																   and iw.TrfSuppliedItem = 'Y'
+			left join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
+																			and csd.SalesOrderInitLine = sd.SalesOrderInitLine
+																			and csd.InvoiceNumber = ''
+																			--and csd.SpecialOrder = 'Y'
 		where s.ProcessNumber = @ProcessNumber
 
 	declare @LinestoSCT_count as int = (select count(*) from @LinestoSCT)
@@ -113,8 +117,7 @@ begin
 												 (
 													select
 														sdc.NComment		[Comment],
-														l.NewLineNumber		[AttachedLineNumber],
-														sdc.NCommentType	[CommentType]
+														l.NewLineNumber		[AttachedLineNumber]
 													from @LinestoSCT as l
 														inner join [SysproCompany100].[dbo].[SorDetail] as sdc on sdc.SalesOrder = l.SalesOrder collate Latin1_General_BIN
 																											  and sdc.LineType = '6'

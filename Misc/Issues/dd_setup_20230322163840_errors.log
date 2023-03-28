@@ -1,0 +1,83 @@
+Something went wrong with the install.
+
+You can troubleshoot the package failures by:
+
+    1. Search for solutions using the search URL below for each package failure
+    2. Modify your selections for the affected workloads or components and then retry the installation
+    3. Remove the product from your machine and then install again
+
+If the issue has already been reported on the Developer Community, you can find solutions or workarounds there. If the issue has not been reported, we encourage you to create a new issue so that other developers will be able to find solutions or workarounds. You can create a new issue from within the Visual Studio Installer in the upper-right hand corner using the "Provide feedback" button.
+
+================================================================================
+
+Package 'Microsoft.VisualStudio.MinShell.Msi,version=16.11.33130.273' failed to install.
+    Search URL
+        https://aka.ms/VSSetupErrorReports?q=PackageId=Microsoft.VisualStudio.MinShell.Msi;PackageAction=Install;ReturnCode=1625
+    Details
+        MSI: C:\ProgramData\Microsoft\VisualStudio\Packages\Microsoft.VisualStudio.MinShell.Msi,version=16.11.33130.273\Microsoft.VisualStudio.MinShell.Msi.msi, Properties:  REBOOT=ReallySuppress ARPSYSTEMCOMPONENT=1  MSIFASTINSTALL="7"  VSEXTUI="1"  VS7.3643236F_FC70_11D3_A536_0090278A1BB8="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" 
+        Return code: 1625
+        Return code details: This installation is forbidden by system policy. Contact your system administrator.
+    Log
+        C:\Users\adm_justinp\AppData\Local\Temp\dd_setup_20230322163840_001_Microsoft.VisualStudio.MinShell.Msi.log
+    Impacted workloads
+        .NET cross-platform development (out of support) (Microsoft.VisualStudio.Workload.NetCoreTools,version=16.11.33214.272)
+        .NET desktop development (Microsoft.VisualStudio.Workload.ManagedDesktop,version=16.11.33214.272)
+        ASP.NET and web development (Microsoft.VisualStudio.Workload.NetWeb,version=16.11.33214.272)
+        Azure development (Microsoft.VisualStudio.Workload.Azure,version=16.11.33214.272)
+        Data storage and processing (Microsoft.VisualStudio.Workload.Data,version=16.0.28720.110)
+        Mobile development with .NET (out of support) (Microsoft.VisualStudio.Workload.NetCrossPlat,version=16.11.33214.272)
+        Universal Windows Platform development (Microsoft.VisualStudio.Workload.Universal,version=16.11.33214.272)
+        Visual Studio core editor (Microsoft.VisualStudio.Workload.CoreEditor,version=16.10.31205.180)
+    Impacted components
+        .NET desktop development tools (Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites,version=16.11.33214.272)
+        .NET development tools (Microsoft.NetCore.Component.DevelopmentTools,version=16.11.33214.272)
+        .NET development tools (Microsoft.NetCore.Component.Web,version=16.11.33214.272)
+        .NET Framework 4.7.2 development tools (Microsoft.Net.ComponentGroup.DevelopmentPrerequisites,version=16.3.29207.166)
+        .NET Native (Microsoft.Component.NetFX.Native,version=16.5.29515.121)
+        .NET Native and .NET Standard (Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard,version=16.11.33214.272)
+        .NET profiling tools (Microsoft.VisualStudio.Component.DiagnosticTools,version=16.10.31205.252)
+        ASP.NET and web development (Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions,version=16.11.32413.511)
+        ASP.NET and web development tools (Microsoft.VisualStudio.Component.Web,version=16.10.31205.252)
+        ASP.NET and web development tools (Microsoft.VisualStudio.ComponentGroup.Web.Client,version=16.10.31205.180)
+        ASP.NET and web development tools prerequisites (Microsoft.VisualStudio.ComponentGroup.Web,version=16.10.31205.180)
+        Azure Cloud Services core tools (Microsoft.VisualStudio.Component.Azure.Waverton,version=16.10.31205.252)
+        Azure Cloud Services tools (Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices,version=16.10.31205.180)
+        Azure Data Lake and Stream Analytics Tools (Microsoft.Component.Azure.DataLake.Tools,version=16.10.31205.252)
+        Azure development prerequisites (Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites,version=16.10.31303.231)
+        Azure Resource Manager core tools (Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools,version=16.4.29409.204)
+        Azure Resource Manager tools (Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools,version=16.0.28528.71)
+        Azure WebJobs Tools (Component.Microsoft.VisualStudio.Web.AzureFunctions,version=16.10.31205.252)
+        Azure WebJobs Tools (Microsoft.VisualStudio.ComponentGroup.AzureFunctions,version=16.10.31205.180)
+        Blend for Visual Studio (Microsoft.ComponentGroup.Blend,version=16.0.28315.86)
+        C# and Visual Basic (Microsoft.VisualStudio.Component.Roslyn.LanguageServices,version=16.10.31205.252)
+        Cloud Explorer (Microsoft.VisualStudio.Component.CloudExplorer,version=16.0.28625.61)
+        Cloud tools for web development (Microsoft.VisualStudio.ComponentGroup.Web.CloudTools,version=16.10.31205.180)
+        Connectivity and publishing tools (Microsoft.VisualStudio.Component.Common.Azure.Tools,version=16.4.29409.204)
+        Container development tools (Microsoft.VisualStudio.Component.DockerTools,version=16.11.33214.272)
+        Data sources for SQL Server support (Microsoft.VisualStudio.Component.SQL.DataSources,version=16.0.28315.86)
+        Developer Analytics tools (Microsoft.VisualStudio.Component.AppInsights.Tools,version=16.5.29515.121)
+        Entity Framework 6 tools (Microsoft.VisualStudio.Component.EntityFramework,version=16.0.28315.86)
+        F# language support (Microsoft.VisualStudio.Component.FSharp,version=16.0.28315.86)
+        F# language support for web projects (Microsoft.VisualStudio.Component.FSharp.WebTemplates,version=16.3.29207.166)
+        IIS Express  (Microsoft.VisualStudio.Component.IISExpress,version=16.0.28315.86)
+        Image and 3D model editors (Microsoft.VisualStudio.Component.Graphics,version=16.10.31205.252)
+        IntelliTrace (Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd,version=16.5.29515.121)
+        JavaScript and TypeScript language support (Microsoft.VisualStudio.Component.JavaScript.TypeScript,version=16.11.31404.150)
+        JavaScript diagnostics (Microsoft.VisualStudio.Component.JavaScript.Diagnostics,version=16.0.28517.75)
+        Just-In-Time debugger (Microsoft.VisualStudio.Component.Debugger.JustInTime,version=16.0.28517.75)
+        Library Manager (Component.Microsoft.Web.LibraryManager,version=16.10.31205.180)
+        Live Share (Component.Microsoft.VisualStudio.LiveShare,version=1.0.4441)
+        Live Unit Testing (Microsoft.VisualStudio.Component.LiveUnitTesting,version=16.10.31205.252)
+        Managed Desktop Workload Core (Microsoft.VisualStudio.Component.ManagedDesktop.Core,version=16.4.29318.151)
+        ML.NET Model Builder (Preview) (Microsoft.VisualStudio.Component.DotNetModelBuilder,version=16.10.31205.252)
+        MSIX Packaging Tools (Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging,version=16.10.31205.180)
+        NuGet package manager (Microsoft.VisualStudio.Component.NuGet,version=16.1.28829.92)
+        Razor Language Services (Component.Microsoft.VisualStudio.RazorExtension,version=16.10.31205.252)
+        Snapshot Debugger (Microsoft.VisualStudio.Component.Debugger.Snapshot,version=16.5.29813.82)
+        SQL Server Data Tools (Microsoft.VisualStudio.Component.SQL.SSDT,version=16.3.29207.166)
+        Text Template Transformation (Microsoft.VisualStudio.Component.TextTemplating,version=16.0.28625.61)
+        Universal Windows Platform tools (Microsoft.VisualStudio.ComponentGroup.UWP.Support,version=16.11.33214.272)
+        Universal Windows Platform tools for Xamarin (Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin,version=16.10.31205.180)
+        Visual Studio core editor (Microsoft.VisualStudio.Component.CoreEditor,version=16.1.28811.260)
+        Web Live Preview (Component.Microsoft.WebTools.BrowserLink.WebLivePreview,version=0.7.22.39845)
+        Xamarin (Component.Xamarin,version=16.10.31205.252)
