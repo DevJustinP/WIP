@@ -23,7 +23,9 @@ begin
 	
 	declare @TodaysDate as date = GetDAte();
 	declare @TodaysDate_Formated as Varchar(10) = format(@TodaysDate, 'yyyy/MM/dd'),
-		    @CONST_A as varchar(2) = 'A'
+		    @CONST_A as varchar(2) = 'A',
+			@LeadTime as date
+
 
 	declare @PORTOIParameters as xml = (
 										select
@@ -57,9 +59,11 @@ begin
 		OrderQty decimal(16,6),
 		PriceMethod varchar(2) default 'M',
 		Price decimal(18,6),
-		PriceUom varchar(10)
+		PriceUom varchar(10),
+		LeadTime decimal(18,6),
+		MLeadtime decimal(18,6)
 	)
-	insert into @LinestoPO(SalesOrder, SalesOrderLine, SupplierId, PurchaseOrderLine, StockCode, Warehouse, OrderQty, Price, PriceUom)
+	insert into @LinestoPO(SalesOrder, SalesOrderLine, SupplierId, PurchaseOrderLine, StockCode, Warehouse, OrderQty, Price, PriceUom, LeadTime, MLeadtime)
 		select
 			sm.SalesOrder,
 			sd.SalesOrderLine,
@@ -69,7 +73,9 @@ begin
 			sd.MWarehouse,
 			sd.MBackOrderQty,
 			[Contract].PurchasePrice,
-			[Contract].PriceUom
+			[Contract].PriceUom,
+			iw.LeadTime,
+			iw.ManufLeadTime
 		from [SOH].[SorMaster_Process_Staged] as s
 			inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
 			left join [SysproCompany100].[dbo].[SorDetail] as sd on sd.SalesOrder = sm.SalesOrder
@@ -92,29 +98,30 @@ begin
 			left join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
 																			and csd.SalesOrderInitLine = sd.SalesOrderInitLine
 																			and csd.InvoiceNumber = ''
-																			--and csd.SpecialOrder = 'Y'
+																			and csd.SpecialOrder = 'Y'
 		where s.ProcessNumber = @ProcessNumber
 
 	declare @LinestoPO_count as int = (select count(*) from @LinestoPO)
+	set @LeadTime = dateadd(day, (select max(LeadTime) from @LinestoPO), @TodaysDate)
+	
 
 	declare @PORTOIDoc as xml = (
 									select
-										@CONST_A					as [OrderHeader/OrderActionType],
-										L.SupplierId				as [OrderHeader/Supplier],
-										L.Warehouse					as [OrderHeader/Warehouse],
-										sm.Customer					as [OrderHeader/Customer],
-										sm.CustomerPoNumber			as [OrderHeader/CustomerPoNumber],
-										@TodaysDate_Formated		as [OrderHeader/OrderDate],
-										@TodaysDate_Formated		as [OrderHeader/DueDate],
-										@TodaysDate_Formated		as [OrderHeader/MemoDate],
-										@CONST_A					as [OrderHeader/ApplyDueDateToLines],
-										iwc.[Description]			as [OrderHeader/DeliveryName],
-										addr.ShippingAddress1		as [OrderHeader/DeliveryAddr1],
-										addr.ShippingAddress2		as [OrderHeader/DeliveryAddr2],
-										addr.ShippingAddress3		as [OrderHeader/DeliveryAddr3],
-										addr.ShippingAddress4		as [OrderHeader/DeliveryAddr4],
-										addr.ShippingAddress5		as [OrderHeader/DeliveryAddr5],
-										addr.ShippingPostalCode		as [OrderHeader/PostalCode],
+										@CONST_A							as [OrderHeader/OrderActionType],
+										L.SupplierId						as [OrderHeader/Supplier],
+										L.Warehouse							as [OrderHeader/Warehouse],
+										sm.Customer							as [OrderHeader/Customer],
+										sm.CustomerPoNumber					as [OrderHeader/CustomerPoNumber],
+										@TodaysDate_Formated				as [OrderHeader/OrderDate],
+										format(@LeadTime, 'yyyy/MM/dd')		as [OrderHeader/DueDate],
+										@CONST_A							as [OrderHeader/ApplyDueDateToLines],
+										iwc.[Description]					as [OrderHeader/DeliveryName],
+										addr.ShippingAddress1				as [OrderHeader/DeliveryAddr1],
+										addr.ShippingAddress2				as [OrderHeader/DeliveryAddr2],
+										addr.ShippingAddress3				as [OrderHeader/DeliveryAddr3],
+										addr.ShippingAddress4				as [OrderHeader/DeliveryAddr4],
+										addr.ShippingAddress5				as [OrderHeader/DeliveryAddr5],
+										addr.ShippingPostalCode				as [OrderHeader/PostalCode],
 										(
 											select
 												(

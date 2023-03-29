@@ -11,12 +11,14 @@ go
 					processing.
 ======================================================
 Test:
-execute [SysproDocument].[SOH].[usp_Process_Sales_Order_for_Backordered_Items]
+execute [SysproDocument].[SOH].[usp_Stage_SalesOrders_For_BackOrder]
 select * from [SysproDocument].[SOH].[SorMaster_Process_Staged]
 where ProcessType = 1
+	and processed = 0
+	and error = 0
 ======================================================
 */
-Create or Alter procedure [SOH].[usp_Process_Sales_Order_for_Backordered_Items]
+Create or Alter procedure [SOH].[usp_Stage_SalesOrders_For_BackOrder]
 as
 begin
 
