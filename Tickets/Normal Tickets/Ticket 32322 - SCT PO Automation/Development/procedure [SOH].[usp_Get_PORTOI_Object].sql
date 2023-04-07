@@ -99,7 +99,10 @@ begin
 																			and csd.SalesOrderInitLine = sd.SalesOrderInitLine
 																			and csd.InvoiceNumber = ''
 																			and csd.SpecialOrder = 'Y'
+			left join [SysproCompany100].[dbo].[PorMasterDetail] as pmd on pmd.MSalesOrder = sd.SalesOrder
+																		and pmd.MSalesOrderLine = sd.SalesOrderLine
 		where s.ProcessNumber = @ProcessNumber
+			and pmd.PurchaseOrder is null
 
 	declare @LinestoPO_count as int = (select count(*) from @LinestoPO)
 	set @LeadTime = dateadd(day, (select max(LeadTime) from @LinestoPO), @TodaysDate)
@@ -109,19 +112,19 @@ begin
 									select
 										@CONST_A							as [OrderHeader/OrderActionType],
 										L.SupplierId						as [OrderHeader/Supplier],
-										L.Warehouse							as [OrderHeader/Warehouse],
+										iwc.Warehouse						as [OrderHeader/Warehouse],
 										sm.Customer							as [OrderHeader/Customer],
 										sm.CustomerPoNumber					as [OrderHeader/CustomerPoNumber],
 										@TodaysDate_Formated				as [OrderHeader/OrderDate],
 										format(@LeadTime, 'yyyy/MM/dd')		as [OrderHeader/DueDate],
 										@CONST_A							as [OrderHeader/ApplyDueDateToLines],
 										iwc.[Description]					as [OrderHeader/DeliveryName],
-										addr.ShippingAddress1				as [OrderHeader/DeliveryAddr1],
-										addr.ShippingAddress2				as [OrderHeader/DeliveryAddr2],
-										addr.ShippingAddress3				as [OrderHeader/DeliveryAddr3],
-										addr.ShippingAddress4				as [OrderHeader/DeliveryAddr4],
-										addr.ShippingAddress5				as [OrderHeader/DeliveryAddr5],
-										addr.ShippingPostalCode				as [OrderHeader/PostalCode],
+										iwc.DeliveryAddr1					as [OrderHeader/DeliveryAddr1],
+										iwc.DeliveryAddr2					as [OrderHeader/DeliveryAddr2],
+										iwc.DeliveryAddr3					as [OrderHeader/DeliveryAddr3],
+										iwc.DeliveryAddr4					as [OrderHeader/DeliveryAddr4],
+										iwc.DeliveryAddr5					as [OrderHeader/DeliveryAddr5],
+										iwc.PostalCode						as [OrderHeader/PostalCode],
 										(
 											select
 												(
@@ -136,7 +139,7 @@ begin
 														PriceUom			as [PriceUom]
 													from @LinestoPO
 													where SupplierId = L.SupplierId
-														and Warehouse = L.Warehouse
+														and Warehouse = iwc.Warehouse collate Latin1_General_BIN
 													for xml path('StockLine'), type),
 												(
 													select 
@@ -148,18 +151,16 @@ begin
 																												  and sdc.LineType = '6'
 																												  and sdc.NCommentFromLin = lpo.SalesOrderLine
 													where SupplierId = L.SupplierId
-														and Warehouse = L.Warehouse
+														and Warehouse = iwc.Warehouse collate Latin1_General_BIN
 													for xml path('CommentLine'), type)
 											for xml path('OrderDetails'), type)
 									from [SOH].[SorMaster_Process_Staged] as s
 										inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
-										cross apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder) as addr
+										inner join [SysproCompany100].[dbo].[InvWhControl] as iwc on iwc.Branch = sm.Branch
 										cross apply (
 														select Distinct
-															SupplierId,
-															Warehouse
+															SupplierId
 														from @LinestoPO ) as L
-										left join [SysproCompany100].[dbo].[InvWhControl] as iwc on iwc.Warehouse = L.Warehouse collate Latin1_General_BIN
 									where s.ProcessNumber = @ProcessNumber
 									for xml path('Orders'), root('PostPurchaseOrders'), type)
 	

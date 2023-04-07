@@ -11,7 +11,7 @@ go
 					SORTTR object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50240
+declare @ProcessNumber as int = 50238
 execute [SOH].[usp_Get_SORTTR_Object] @ProcessNumber
 ===============================================
 */
@@ -42,8 +42,8 @@ begin
 		select
 			sm.SalesOrder,
 			sd.SalesOrderLine,
-			sd.MWarehouse,
 			iw.DefaultSourceWh,
+			sd.MWarehouse,
 			ROW_NUMBER() OVER(partition by iw.DefaultSourceWh order by sd.SalesOrderLine desc) as [NewLineNumber],
 			sd.MStockCode,
 			sd.MStockDes,
@@ -62,11 +62,11 @@ begin
 			inner join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 																   and iw.Warehouse = sd.MWarehouse
 																   and iw.TrfSuppliedItem = 'Y'
-			left join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
-																			and csd.SalesOrderInitLine = sd.SalesOrderInitLine
-																			and csd.InvoiceNumber = ''
-																			--and csd.SpecialOrder = 'Y'
+			left join [SysproCompany100].[dbo].[SorDetail] as sctsd on sctsd.MCreditOrderNo = sd.SalesOrder
+																	and sctsd.MCreditOrderLine = sd.SalesOrderLine
 		where s.ProcessNumber = @ProcessNumber
+			and sctsd.SalesOrder is null
+			
 
 	declare @LinestoSCT_count as int = (select count(*) from @LinestoSCT)
 
@@ -83,12 +83,11 @@ begin
 											for xml path('Parameters'), root('PostSalesOrdersSCT') )
 	declare @SORTTRDoc as xml = (
 									select
-										sm.CustomerName +' '+ sm.SalesOrder			[OrderHeader/CustomerPoNumber],
+										sm.SalesOrder								[OrderHeader/CustomerPoNumber],
 										warehouse.SourceWarehouse					[OrderHeader/SourceWarehouse],
 										warehouse.TargetWarehouse					[OrderHeader/TargetWarehouse],
 										convert(varchar(10), sm.OrderDate, 120)		[OrderHeader/OrderDate],
-										sm.ShippingInstrs							[OrderHeader/ShippingInstrs],
-										sm.ShippingInstrsCod						[OrderHeader/ShippingInstrsCode],
+										addr.ShippingInstrCode						[OrderHeader/ShippingInstrsCode],
 										addr.ShippingAddress1						[OrderHeader/ShipAddress1],
 										addr.ShippingAddress2						[OrderHeader/ShipAddress2],
 										addr.ShippingAddress3						[OrderHeader/ShipAddress3],
@@ -128,12 +127,12 @@ begin
 											for xml path(''), Type ) [OrderDetails]
 									from [SOH].[SorMaster_Process_Staged] as s
 										inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
-										cross apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder) as addr
 										cross apply (
 														select distinct
 															SourceWarehouse,
 															TargetWarehouse
 														from @LinestoSCT ) as warehouse
+										cross apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, warehouse.TargetWarehouse) as addr
 									where s.ProcessNumber = @ProcessNumber
 									for xml path('Orders'), root('PostSalesOrdersSCT') )
 	

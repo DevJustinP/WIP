@@ -10,7 +10,7 @@ go
 					BackOrder automation
 ===============================================
 Test:
-declare @@Branch as varchar(10)  = '320'
+declare @@Branch as varchar(10)  = '303'
 execute [SOH].[usp_GetEmailRepsByBranch] @@Branch
 ===============================================
 */
@@ -21,8 +21,14 @@ create or alter procedure [SOH].[usp_GetEmailRepsByBranch](
 begin
 	
 	select
-		*
-	from [SOH].[BranchManagementEmails]
+		e.*
+	from [SOH].[BranchManagementEmails] as e
+		cross apply (	Select 1 as [Rank]
+						where e.[Type] = 'CC'
+						union
+						Select 0 as [Rank]
+						where e.[Type] = 'TO' ) as [Order]
 	where Branch = @Branch
+	order by [Order].[Rank]
 
 end

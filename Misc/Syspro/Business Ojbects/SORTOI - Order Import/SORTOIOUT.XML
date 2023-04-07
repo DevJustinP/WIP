@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Sales Order Transaction Posting Business Object
+-->
+<SalesOrders Language="05" CssStyle="" DecFormat="2" DateFormat="01" Version="6.0.007" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTOIOUT.XSD">
+  <Order>
+    <CustomerPoNumber>BAY001-A</CustomerPoNumber>
+    <SalesOrder>002196</SalesOrder>
+    <OrderActionType>A</OrderActionType>
+    <BackOrderComment>One or more lines have been placed on back order for sales order '002196'</BackOrderComment>
+    <WarningMessages>
+      <WarningDescription>Line 0001 for stock code 'B100' was placed on back order</WarningDescription>
+      <WarningDescription>Trade promotions have been processed for sales order '002196'</WarningDescription>
+    </WarningMessages>
+    <StatusOfItems>
+      <ItemsProcessed>000001</ItemsProcessed>
+      <ItemsRejectedWithWarnings>000000</ItemsRejectedWithWarnings>
+      <ItemsProcessedWithWarnings>000001</ItemsProcessedWithWarnings>
+    </StatusOfItems>
+  </Order>
+</SalesOrders>

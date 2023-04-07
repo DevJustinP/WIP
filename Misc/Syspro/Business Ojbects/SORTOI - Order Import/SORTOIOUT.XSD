@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Sales Order Transaction Posting Business Object
+-->
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="SalesOrders">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Order">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="CustomerPoNumber" type="xsd:string"/>
+              <xsd:element name="SalesOrder" type="xsd:string"/>
+              <xsd:element name="OrderActionType" type="xsd:string"/>
+              <xsd:element name="BackOrderComment" type="xsd:string" minOccurs="0"/>
+              <xsd:element name="WarningMessages" minOccurs="0">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="WarningDescription" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="StatusOfItems" minOccurs="0">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="ItemsProcessed" type="xsd:string" minOccurs="0"/>
+                    <xsd:element name="ItemsRejectedWithWarnings" type="xsd:string" minOccurs="0"/>
+                    <xsd:element name="ItemsProcessedWithWarnings" type="xsd:string" minOccurs="0"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="Language" type="xsd:string" use="required"/>
+      <xsd:attribute name="CssStyle" type="xsd:string" use="required"/>
+      <xsd:attribute name="DecFormat" type="xsd:string" use="required"/>
+      <xsd:attribute name="DateFormat" type="xsd:string" use="required"/>
+      <xsd:attribute name="Version" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

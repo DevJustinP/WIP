@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Sales Order Transaction Posting Business Object
+-->
+<SalesOrders xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTOI.XSD">
+  <Parameters>
+    <InBoxMsgReqd>Y</InBoxMsgReqd>
+    <Process>IMPORT</Process>
+    <CustomerToUse/>
+    <WarehouseListToUse>E,FG</WarehouseListToUse>
+    <UseCustomerSalesWarehouse></UseCustomerSalesWarehouse>
+    <TypeOfOrder>ORD</TypeOfOrder>
+    <OrderStatus>1</OrderStatus>
+    <MinimumDaysToShip>4</MinimumDaysToShip>
+    <AllowNonStockItems>Y</AllowNonStockItems>
+    <AcceptOrdersIfNoCredit>Y</AcceptOrdersIfNoCredit>
+    <AcceptEarlierShipDate>N</AcceptEarlierShipDate>
+    <OperatorToInform>ADMIN</OperatorToInform>
+    <CreditFailMessage>No credit available</CreditFailMessage>
+    <ValidProductClassList>SPEC,BA,FGC</ValidProductClassList>
+    <ShipFromDefaultBin>N</ShipFromDefaultBin>
+    <AllowDuplicateOrderNumbers>Y</AllowDuplicateOrderNumbers>
+   <CheckForCustomerPoNumbers>Y</CheckForCustomerPoNumbers>
+    <AllowInvoiceInformationEntry/>
+    <AlwaysUsePriceEntered/>
+    <AllowZeroPrice/>
+   <AllowChangeToZeroPrice></AllowChangeToZeroPrice>
+    <AddStockSalesOrderText>N</AddStockSalesOrderText>
+    <AddDangerousGoodsText>N</AddDangerousGoodsText>
+    <UseStockDescSupplied/>
+    <ValidateShippingInstrs/>
+    <AllocationAction></AllocationAction>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <AddAttachedServiceCharges></AddAttachedServiceCharges>
+    <StatusInProcess></StatusInProcess>
+    <StatusInProcessResponse></StatusInProcessResponse>
+    <WarnIfCustomerOnHold>N</WarnIfCustomerOnHold>
+    <AcceptKitOptional>N</AcceptKitOptional>
+    <AllowBackOrderForPartialHold></AllowBackOrderForPartialHold>
+    <AllowBackOrderForSuperseded></AllowBackOrderForSuperseded>
+    <OverrideCustomerBackOrder></OverrideCustomerBackOrder>
+    <UseMasterAccountForCustomerPartNo></UseMasterAccountForCustomerPartNo>
+    <ApplyLeadTimeCalculation></ApplyLeadTimeCalculation>
+    <ApplyParentDiscountToComponents>N</ApplyParentDiscountToComponents>
+    <AllowManualOrderNumberToBeUsed>N</AllowManualOrderNumberToBeUsed>
+    <ReserveStock></ReserveStock>
+    <ReserveStockRequestAllocs></ReserveStockRequestAllocs>
+    <AllowBackOrderForNegativeMerchLine>N</AllowBackOrderForNegativeMerchLine>
+  </Parameters>
+</SalesOrders>

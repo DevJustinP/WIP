@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Sales Order Transaction Posting Business Object
+-->
+<SalesOrders xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTOIDOC.XSD">
+  <TransmissionHeader>
+    <TransmissionReference>00000000000003</TransmissionReference>
+    <SenderCode/>
+    <ReceiverCode>HO</ReceiverCode>
+    <DatePrepared>2006-11-04</DatePrepared>
+    <TimePrepared>11:55</TimePrepared>
+  </TransmissionHeader>
+  <Orders>
+    <OrderHeader>
+      <CustomerPoNumber>C1000</CustomerPoNumber>
+      <OrderActionType>A</OrderActionType>
+      <NewCustomerPoNumber/>
+      <Supplier/>
+      <Customer>000010</Customer>
+      <OrderDate>2006-11-04</OrderDate>
+      <InvoiceTerms>0</InvoiceTerms>
+      <Currency>$</Currency>
+      <ShippingInstrs>Ship via Hong Kong</ShippingInstrs>
+      <ShippingInstrsCode>R</ShippingInstrsCode>
+      <CustomerName>The SYSPRO Outdoors Company</CustomerName>
+      <ShipAddress1>This is the alternate delivery address 1</ShipAddress1>
+      <ShipAddress2>This is the alternate delivery address 2</ShipAddress2>
+      <ShipAddress3>This is the alternate delivery address 3</ShipAddress3>
+      <ShipAddress3Locality>This is the delivery address 3 location</ShipAddress3Locality>
+      <ShipAddress4>This is the alternate delivery address 4</ShipAddress4>
+      <ShipAddress5>This is the alternate delivery address 5</ShipAddress5>
+      <ShipPostalCode>90210</ShipPostalCode>
+      <ShipGpsLat>12.123456</ShipGpsLat>
+      <ShipGpsLong>123.123456</ShipGpsLong>
+      <LanguageCode></LanguageCode>
+      <Email>Sender001@Sender001.com</Email>
+      <OrderDiscPercent1>2.50</OrderDiscPercent1>
+      <OrderDiscPercent2>1.50</OrderDiscPercent2>
+      <OrderDiscPercent3>1.00</OrderDiscPercent3>
+      <Warehouse>E</Warehouse>
+      <SpecialInstrs>Handle with care</SpecialInstrs>
+      <SalesOrder>221124</SalesOrder>
+      <OrderType>1</OrderType>
+      <MultiShipCode/>
+      <ShipAddressPerLine/>
+      <AlternateReference/>
+      <Salesperson>100</Salesperson>
+      <Branch/>
+      <Area/>
+      <RequestedShipDate>2006-12-20</RequestedShipDate>
+      <InvoiceNumberEntered/>
+      <InvoiceDateEntered/>
+      <OrderComments/>
+      <Nationality/>
+      <DeliveryTerms/>
+      <TransactionNature/>
+      <TransportMode/>
+      <ProcessFlag/>
+      <TaxExemptNumber/>
+      <TaxExemptionStatus/>
+      <GstExemptNumber/>
+      <GstExemptionStatus/>
+      <CompanyTaxNumber/>
+      <ShipAddressPerLineTax> </ShipAddressPerLineTax>
+      <CancelReasonCode/>
+      <DocumentFormat/>
+      <State/>
+      <CountyZip/>
+      <City/>
+      <DeliveryRouteAction>N</DeliveryRouteAction>
+      <DeliveryRoute></DeliveryRoute>
+      <InvoiceWholeOrderOnly/>
+      <SalesOrderPromoQualifyAction>W</SalesOrderPromoQualifyAction>
+      <SalesOrderPromoSelectAction>A</SalesOrderPromoSelectAction>
+      <GlobalTradePromotionCodes>GLACC,GLFREE</GlobalTradePromotionCodes>
+      <POSSalesOrder></POSSalesOrder>
+      <eSignature/>
+    </OrderHeader>
+    <OrderDetails>
+      <StockLine>
+        <CustomerPoLine>1</CustomerPoLine>
+        <LineActionType>A</LineActionType>
+        <LineCancelCode/>
+        <StockCode>B100</StockCode>
+        <StockDescription>Bicycle</StockDescription>
+        <Warehouse>FG</Warehouse>
+        <CustomersPartNumber>FF334221</CustomersPartNumber>
+        <OrderQty>5</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <Price>400</Price>
+        <PriceUom>EA</PriceUom>
+        <PriceCode/>
+        <AlwaysUsePriceEntered/>
+        <Units/>
+        <Pieces/>
+        <ProductClass/>
+        <LineDiscPercent1>0.5</LineDiscPercent1>
+        <LineDiscPercent2>0</LineDiscPercent2>
+        <LineDiscPercent3>0</LineDiscPercent3>
+        <AlwaysUseDiscountEntered>N</AlwaysUseDiscountEntered>
+        <CustRequestDate>2006-12-20</CustRequestDate>
+        <CommissionCode/>
+        <LineShipDate/>
+        <LineDiscValue>0</LineDiscValue>
+        <LineDiscValFlag/>
+        <OverrideCalculatedDiscount/>
+        <UserDefined>USER</UserDefined>
+        <NonStockedLine/>
+        <NsProductClass>NSPR</NsProductClass>
+        <NsUnitCost/>
+        <UnitMass/>
+        <UnitVolume/>
+        <StockTaxCode/>
+        <StockNotTaxable/>
+        <StockFstCode/>
+        <StockNotFstTaxable/>
+        <AllocationAction/>
+        <ConfigPrintInv/>
+        <ConfigPrintDel/>
+        <ConfigPrintAck/>
+        <TariffCode/>
+        <LineMultiShipCode/>
+        <SupplementaryUnitsFactor/>
+        <ReserveStock/>
+        <ReserveStockRequestAllocs/>
+        <TradePromotionCodes>BIKEACCR,FREE1</TradePromotionCodes>
+      </StockLine>
+      <CommentLine>
+        <CustomerPoLine>2</CustomerPoLine>
+        <LineActionType>A</LineActionType>
+        <Comment>Ensure saddle is color coded</Comment>
+        <AttachedLineNumber>1</AttachedLineNumber>
+        <CommentType/>
+      </CommentLine>
+      <MiscChargeLine>
+        <CustomerPoLine>3</CustomerPoLine>
+        <LineActionType>A</LineActionType>
+        <LineCancelCode/>
+        <MiscChargeValue>78.56</MiscChargeValue>
+        <MiscChargeCost>20.00</MiscChargeCost>
+        <MiscQuantity>3</MiscQuantity>
+        <MiscProductClass>_OTH</MiscProductClass>
+        <MiscTaxCode>A</MiscTaxCode>
+        <MiscNotTaxable/>
+        <MiscFstCode>B</MiscFstCode>
+        <MiscNotFstTaxable/>
+        <MiscDescription>Sundry Items</MiscDescription>
+        <MiscChargeCode/>
+        <MiscTariffCode/>
+        <ConfigPrintInv/>
+        <ConfigPrintDel/>
+        <ConfigPrintAck/>
+      </MiscChargeLine>
+      <FreightLine>
+        <CustomerPoLine>4</CustomerPoLine>
+        <LineActionType>A</LineActionType>
+        <LineCancelCode/>
+        <FreightValue>19.00</FreightValue>
+        <FreightCost>12.00</FreightCost>
+        <FreightTaxCode>A</FreightTaxCode>
+        <FreightNotTaxable/>
+        <FreightFstCode>B</FreightFstCode>
+        <FreightNotFstTaxable/>
+      </FreightLine>
+    </OrderDetails>
+  </Orders>
+</SalesOrders>

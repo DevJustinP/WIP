@@ -27,8 +27,8 @@ begin
 		sd.MStockCode,
 		case 
 			when iw.StockCode is null and iw.Warehouse is null then ''
-			when iw.TrfSuppliedItem = 'Y' then 'SORTTR'
-			when iw.TrfSuppliedItem <> 'Y' then 'PORTOI'
+			when iw.TrfSuppliedItem = 'Y' then 'S'
+			when iw.TrfSuppliedItem <> 'Y' then 'P'
 		end as [Target],
 		case 
 			when iw.StockCode is null and iw.Warehouse is null then 'Warehouse data is not set up'
@@ -49,20 +49,15 @@ begin
 															 and sd.MBomFlag <> 'P'
 															 and sd.LineType = '1'
 															 and sd.MStockCode <> 'FILLIN'
-		left join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
-																	  and csd.SalesOrderInitLine = sd.SalesOrderInitLine
-																	  and csd.InvoiceNumber in ('',null)
-		left join [SysproCompany100].[dbo].[SorDetail] as sdsct on sdsct.SalesOrder = csd.AllocationRef
-															   and sdsct.SalesOrderLine = csd.AllocationRefVal1
-		left join [SysproCompany100].[dbo].[PorMasterDetail] as pmd on pmd.PurchaseOrder = csd.AllocationRef
-																   and pmd.MStockCode = sd.MStockCode
+		left join [SysproCompany100].[dbo].[SorDetail] as sdsct on sdsct.MCreditOrderNo = sd.SalesOrder
+															   and sdsct.MCreditOrderLine = sd.SalesOrderLine
+		left join [SysproCompany100].[dbo].[PorMasterDetail] as pmd on pmd.MSalesOrder = sd.SalesOrder
+																   and pmd.MSalesOrderLine = sd.SalesOrderLine
 		left join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 															   and iw.Warehouse = sd.MWarehouse
 	where s.ProcessNumber = @ProcessNumber
-		 and ( sd.MReviewFlag <> 'Y' or
-				(	sdsct.SalesOrder is not null and
-					sdsct.MOrderQty <> sd.MBackOrderQty) or
-				(	pmd.PurchaseOrder is not null and
-					pmd.MOrderQty <> sd.MBackOrderQty))
+		 and sd.MReviewFlag = ''
+		 and sdsct.SalesOrder is null 
+		 and pmd.PurchaseOrder is null
 
 end

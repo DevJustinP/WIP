@@ -20,25 +20,25 @@ as
 begin
 
 	select
+		'ORD' as [FormType],
 		[Info].[Type],
 		[Info].[Value]
 	from [SOH].[SorMaster_Process_Staged] as s
 		inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
-		inner join [SysproCompany100].[dbo].[ArCustomer] as ac on ac.Customer = sm.Customer
-		inner join [SysproCompany100].[dbo].[CusSorMaster+] as csm on csm.SalesOrder = sm.SalesOrder
-																  and csm.InvoiceNumber = ''
+		left join [SysproCompany100].[dbo].[ArCustomer] as ac on ac.Customer = sm.Customer
+		cross apply [SOH].[tvf_Fetch_Shipping_Address] (sm.SalesOrder, '') as addr
 		cross apply (
 						select
 							'ADDTYP' as [Type],
-							csm.AddressType as [Value]
+							addr.AddressType collate Latin1_General_BIN as [Value]
 						union
 						select
 							'DELINF',
-							csm.DeliveryInfo
+							ac.Telephone collate Latin1_General_BIN
 						union
 						select
 							'DELTYP',
-							csm.DeliveryType ) as [Info]
+							addr.DeliveryType collate Latin1_General_BIN ) as [Info]
 	where s.ProcessNumber = @ProcessNumber
 
 end
