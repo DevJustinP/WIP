@@ -30,12 +30,14 @@ begin
 			when iw.TrfSuppliedItem = 'Y' then 'S'
 			when iw.TrfSuppliedItem <> 'Y' then 'P'
 		end as [Target],
+		row_number() over(  partition by iw.TrfSuppliedItem, iw.DefaultSourceWh, im.Supplier
+							order by sd.SalesOrderLine ) as [New_Line],
 		case 
 			when iw.StockCode is null and iw.Warehouse is null then 'Warehouse data is not set up'
 			when pmd.PurchaseOrder is not null then 'Update Purchase Order'
 			when sdsct.SalesOrder is not null then 'Update Supply Transfer'
 			when iw.TrfSuppliedItem = 'Y' then 'Target Warehouse ' + iw.DefaultSourceWh
-			when iw.TrfSuppliedItem <> 'Y' then 'Supplier ' + iw.Supplier
+			when iw.TrfSuppliedItem <> 'Y' then 'Supplier ' + im.Supplier
 		end as [Target_Description],
 		case
 			when sdsct.SalesOrder is not null then sd.MBackOrderQty - sdsct.MOrderQty
@@ -49,12 +51,17 @@ begin
 															 and sd.MBomFlag <> 'P'
 															 and sd.LineType = '1'
 															 and sd.MStockCode <> 'FILLIN'
+		inner join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
+																		and csd.SalesOrderInitLine = sd.SalesOrderInitLine
+																		and csd.InvoiceNumber = ''
+																		and csd.SpecialOrder = 'Y'
 		left join [SysproCompany100].[dbo].[SorDetail] as sdsct on sdsct.MCreditOrderNo = sd.SalesOrder
 															   and sdsct.MCreditOrderLine = sd.SalesOrderLine
 		left join [SysproCompany100].[dbo].[PorMasterDetail] as pmd on pmd.MSalesOrder = sd.SalesOrder
 																   and pmd.MSalesOrderLine = sd.SalesOrderLine
 		left join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 															   and iw.Warehouse = sd.MWarehouse
+		left join [SysproCompany100].[dbo].[InvMaster] as im on im.StockCode = iw.StockCode
 	where s.ProcessNumber = @ProcessNumber
 		 and sd.MReviewFlag = ''
 		 and sdsct.SalesOrder is null 

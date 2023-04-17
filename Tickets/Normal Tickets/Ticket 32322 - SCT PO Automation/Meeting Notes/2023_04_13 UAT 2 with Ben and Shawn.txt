@@ -1,0 +1,24 @@
+Notes:
+    Stock Code status = 9
+
+sct:
+    shipment request
+    order recieve info 100-1057470
+
+
+po ack doc:
+    order date get the time off
+    start ship time off
+    deleviery address line 1 needs to be the name of where it is going
+    total units - total qty on po
+    no Discount and Misc changes
+
+Ship via code:
+Address Type:
+deleviery type:
+
+order recieve info: Customer (straight from the retail order)
+Shipment request: Complete / Available (straight from the retail order)
+
+
+need to talk with margret again

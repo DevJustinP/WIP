@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    The following issues were experienced while trying to automate creating SCTs and/or POs for Sales Order <b>315-1000006</b>.
+    Review the order with the cooresponding validation issues to confirm data is valid and accurate.
+    <table style="width:100%">
+        <tr>
+            <th><b>Error</b></th>
+            <th><b>Issues</b></th>
+            <th><b>LineNumber</b></th>
+            <th><b>StockCode</b></th>
+        </tr>
+        <tr><td>PO Creation</td><td>Item is not associated to a supplier. Validate Warehouse records for item.<br></td><td></td><td></td></tr><tr><td>PO Creation</td><td>Automation could no find a valid contracted price.<br></td><td>2</td><td>AD-77652-00</td></tr><tr><td>SCT Creation</td><td>Syspro - XML element 'Price' must be greater than zero<br></td><td></td><td></td></tr>
+    </table>
+    <table style="width:100%">
+        <tr><td><b>Service&nbsp;Name</b></td><td>46</td></tr>
+        <tr><td><b>Machine&nbsp;Name</b></td><td>JUSTINP-VM</td></tr>
+        <tr><td><b>IP&nbsp;Address</b></td><td>10.50.11.15</td></tr>
+    </table>
+</body>
+</html>

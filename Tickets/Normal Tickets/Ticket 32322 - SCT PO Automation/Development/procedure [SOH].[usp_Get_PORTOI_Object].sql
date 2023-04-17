@@ -58,47 +58,59 @@ begin
 		Warehouse varchar(10),
 		OrderQty decimal(16,6),
 		PriceMethod varchar(2) default 'M',
-		Price decimal(18,6),
+		Price decimal(18,4),
 		PriceUom varchar(10),
-		LeadTime decimal(18,6),
-		MLeadtime decimal(18,6)
+		LeadTime decimal(18,6)
 	)
-	insert into @LinestoPO(SalesOrder, SalesOrderLine, SupplierId, PurchaseOrderLine, StockCode, Warehouse, OrderQty, Price, PriceUom, LeadTime, MLeadtime)
+	insert into @LinestoPO(SalesOrder, SalesOrderLine, SupplierId, PurchaseOrderLine, StockCode, Warehouse, OrderQty, Price, PriceUom, LeadTime)
 		select
 			sm.SalesOrder,
 			sd.SalesOrderLine,
-			iw.Supplier,
+			im.Supplier,
 			row_number() over(partition by iw.Supplier order by sd.SalesOrderLine) as [PurchaseOrderLine],
 			sd.MStockCode,
 			sd.MWarehouse,
 			sd.MBackOrderQty,
 			[Contract].PurchasePrice,
 			[Contract].PriceUom,
-			iw.LeadTime,
-			iw.ManufLeadTime
+			[Time].[LeadTime]
 		from [SOH].[SorMaster_Process_Staged] as s
 			inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
 			left join [SysproCompany100].[dbo].[SorDetail] as sd on sd.SalesOrder = sm.SalesOrder
 																and sd.MBackOrderQty > 0
 																and sd.LineType = '1'
-																and sd.MReviewFlag <> 'Y'
+																and sd.MReviewFlag = ''
+			inner join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
+																		   and csd.SalesOrderInitLine = sd.SalesOrderInitLine
+																		   and csd.InvoiceNumber = ''
+																		   and csd.SpecialOrder = 'Y'
 			inner join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 																	and iw.Warehouse = sd.MWarehouse
 																	and iw.TrfSuppliedItem <> 'Y'
+			inner join [SysproCompany100].[dbo].[InvMaster] as im on im.StockCode = iw.StockCode
+			cross apply (
+							select
+								max(c.LeadTime) as LeadTime
+							from (
+								select iw.LeadTime as [LeadTime]
+								union
+								select iw.ManufLeadTime 
+								union
+								select im.LeadTime
+								union
+								select im.ManufLeadTime
+								union
+								select 0 ) as c ) as [Time]
 			outer apply ( 
 							select top 1
 								pxp.PurchasePrice,
 								pxp.PriceUom
 							from [SysproCompany100].[dbo].[PorXrefPrices] as pxp 
-							where pxp.Supplier = iw.Supplier
+							where pxp.Supplier = im.Supplier
 							  and pxp.StockCode = sd.MStockCode
 							  and pxp.MinimumQty <= sd.MBackOrderQty
 							  and pxp.PriceExpiryDate > GetDate()
 							order by MinimumQty desc ) as [Contract]
-			left join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
-																			and csd.SalesOrderInitLine = sd.SalesOrderInitLine
-																			and csd.InvoiceNumber = ''
-																			and csd.SpecialOrder = 'Y'
 			left join [SysproCompany100].[dbo].[PorMasterDetail] as pmd on pmd.MSalesOrder = sd.SalesOrder
 																		and pmd.MSalesOrderLine = sd.SalesOrderLine
 		where s.ProcessNumber = @ProcessNumber

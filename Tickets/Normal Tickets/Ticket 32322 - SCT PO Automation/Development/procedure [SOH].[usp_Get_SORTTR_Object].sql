@@ -11,7 +11,7 @@ go
 					SORTTR object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50238
+declare @ProcessNumber as int = 50429
 execute [SOH].[usp_Get_SORTTR_Object] @ProcessNumber
 ===============================================
 */
@@ -59,6 +59,10 @@ begin
 																 and sd.LineType = '1'
 																 and sd.MBackOrderQty > 0
 																 and sd.MReviewFlag = ''
+			inner join [SysproCompany100].[dbo].[CusSorDetailMerch+] as csd on csd.SalesOrder = sd.SalesOrder
+																		   and csd.SalesOrderInitLine = sd.SalesOrderInitLine
+																		   and csd.InvoiceNumber = ''
+																		   and csd.SpecialOrder = 'Y'
 			inner join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 																   and iw.Warehouse = sd.MWarehouse
 																   and iw.TrfSuppliedItem = 'Y'
@@ -83,20 +87,21 @@ begin
 											for xml path('Parameters'), root('PostSalesOrdersSCT') )
 	declare @SORTTRDoc as xml = (
 									select
-										sm.SalesOrder								[OrderHeader/CustomerPoNumber],
-										warehouse.SourceWarehouse					[OrderHeader/SourceWarehouse],
-										warehouse.TargetWarehouse					[OrderHeader/TargetWarehouse],
-										convert(varchar(10), sm.OrderDate, 120)		[OrderHeader/OrderDate],
-										addr.ShippingInstrCode						[OrderHeader/ShippingInstrsCode],
-										addr.ShippingAddress1						[OrderHeader/ShipAddress1],
-										addr.ShippingAddress2						[OrderHeader/ShipAddress2],
-										addr.ShippingAddress3						[OrderHeader/ShipAddress3],
-										addr.ShippingAddress4						[OrderHeader/ShipAddress4],
-										addr.ShippingAddress5						[OrderHeader/ShipAddress5],
-										addr.ShippingPostalCode						[OrderHeader/ShipPostalCode],
-										sm.Email									[OrderHeader/Email],
-										sm.SpecialInstrs							[OrderHeader/SpecialInstrs],
-										sm.StandardComment							[OrderHeader/OrderComments],
+										cast(sm.SalesOrder + ' ' + sm.CustomerName as varchar(20))	[OrderHeader/CustomerPoNumber],
+										warehouse.SourceWarehouse									[OrderHeader/SourceWarehouse],
+										warehouse.TargetWarehouse									[OrderHeader/TargetWarehouse],
+										convert(varchar(10), getdate(), 120)						[OrderHeader/OrderDate],
+										addr.ShippingInstrCode										[OrderHeader/ShippingInstrsCode],
+										addr.ShippingAddress1										[OrderHeader/ShipAddress1],
+										addr.ShippingAddress2										[OrderHeader/ShipAddress2],
+										addr.ShippingAddress3										[OrderHeader/ShipAddress3],
+										addr.ShippingAddress4										[OrderHeader/ShipAddress4],
+										addr.ShippingAddress5										[OrderHeader/ShipAddress5],
+										addr.ShippingPostalCode										[OrderHeader/ShipPostalCode],
+										sm.Email													[OrderHeader/Email],
+										sm.SpecialInstrs											[OrderHeader/SpecialInstrs],
+										sm.StandardComment											[OrderHeader/OrderComments],
+										sm.DocumentFormat											[OrderHeader/DocumentFormat],
 										(
 											select
 												 (

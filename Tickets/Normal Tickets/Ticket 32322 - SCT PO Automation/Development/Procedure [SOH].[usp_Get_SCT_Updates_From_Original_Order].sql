@@ -9,20 +9,25 @@ go
 =======================================================================
 test:
 
-declare @ProcessNumber as int = 50239;
-execute [SOH].[usp_Get_SCT_Updates_From_Original_Order] @ProcessNumber
+declare @ProcessNumber as int = 50239,
+	    @SCTNumber as varchar(20) = '100-15038';
+execute [SOH].[usp_Get_SCT_Updates_From_Original_Order] @ProcessNumber,
+														@SCTNumber
 =======================================================================
 */
 create or Alter Procedure [SOH].[usp_Get_SCT_Updates_From_Original_Order](
-	@ProcessNumber int
+	@ProcessNumber int,
+	@SCTNumber varchar(20)
 )
 as
 begin
 
+	declare @Document xml = (
 	select
-		'ORD' as [FormType],
-		[Info].[Type],
-		[Info].[Value]
+		'ORD' as [Key/FormType],
+		@SCTNumber as [Key/KeyField],
+		[Info].[Type] as [Key/FieldName],
+		[Info].[Value] as [AlphaValue]
 	from [SOH].[SorMaster_Process_Staged] as s
 		inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
 		left join [SysproCompany100].[dbo].[ArCustomer] as ac on ac.Customer = sm.Customer
@@ -40,5 +45,15 @@ begin
 							'DELTYP',
 							addr.DeliveryType collate Latin1_General_BIN ) as [Info]
 	where s.ProcessNumber = @ProcessNumber
+	for xml path('Item'), root('SetupCustomForm'))
 
+	declare @Parameter xml = (
+								select
+									'N' as [ValidateOnly]
+								for xml path('Parameters'), root('SetupCustomForm') )
+
+	select 
+		'COMSFM' as [BusinessObject],
+		@Parameter as [Parameters],
+		@Document as [Document]
 end

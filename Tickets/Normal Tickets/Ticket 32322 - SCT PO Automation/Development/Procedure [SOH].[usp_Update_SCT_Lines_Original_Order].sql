@@ -8,28 +8,37 @@ go
 	Description: Update SCT lines with the original order
 ====================================================================
 declare @OriginalOrder varchar(20) = '301-1012712',
-		@SCTOrder varchar(20) = '100-1054908'
+		@OriginalOrderLine integer,
+		@SCTOrder varchar(20) = '100-1054908',
+		@SCTLine integer
 
 execute [SOH].[usp_Update_SCT_Lines_Original_Order] @OriginalOrder,
-													@SCTOrder
+													@OriginalOrderLine,
+													@SCTOrder,
+													@SCTLine
 
 ====================================================================
 */
 
 Create or Alter Procedure [SOH].[usp_Update_SCT_Lines_Original_Order](
 	@OriginalOrder varchar(20),
-	@SCTOrder varchar(20)
+	@OriginalOrderLine integer,
+	@SCTOrder varchar(20),
+	@SCTLine integer
 )
 as
 begin
 
 	update sd
-		set sd.MCreditOrderNo = sd2.SalesOrder,
-			sd.MCreditOrderLine = sd2.SalesOrderLine
+		set sd.MCreditOrderNo = @OriginalOrder,
+			sd.MCreditOrderLine = @OriginalOrderLine
 	from [SysproCompany100].[dbo].[SorDetail] as sd
-		inner join [SysproCompany100].[dbo].[SorDetail] as sd2 on sd2.SalesOrder = @OriginalOrder
-															and sd2.MStockCode = sd.MStockCode
-															and sd2.MBackOrderQty = sd.MOrderQty
 	where sd.SalesOrder = @SCTOrder
+		and sd.SalesOrderLine = @SCTLine
 
+	update sd
+		set sd.MReviewFlag = 'S'
+	from [SysproCompany100].[dbo].[SorDetail] as sd
+	where sd.SalesOrder = @OriginalOrder
+		and sd.SalesOrderLine = @OriginalOrderLine
 end

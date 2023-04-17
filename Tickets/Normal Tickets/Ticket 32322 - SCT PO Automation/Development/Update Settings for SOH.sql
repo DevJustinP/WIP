@@ -1,3 +1,5 @@
+use [SysproDocument]
+go
 
 DECLARE @SettingDocument AS XML = NULL;
 
@@ -102,16 +104,14 @@ SELECT @SettingDocument = '
     </BackOrderValidation>
   </Message>
   <TimerIntervals>
-    <ProcessOrderMinutes>1</ProcessOrderMinutes>
+    <ProcessOrderMinutes>5</ProcessOrderMinutes>
   </TimerIntervals>
   <StageReprocesses>
 	<count>10</count>
-	<WaitHours>24.00</WaitHours>
+	<WaitHours>24</WaitHours>
   </StageReprocesses>
   <FileLocations>
-	<AckDocs>
-	  P:\Services\GWC Service - SOH - SalesOrderHandler\Application\Archive
-	</AckDocs>
+	<AckDocs>\\sql08\P\Services\GWC Service - SOH - SalesOrderHandler\Archive</AckDocs>
   </FileLocations>
 </Setting>
 ';
