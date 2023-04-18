@@ -1,6 +1,3 @@
-Notes:
-    Stock Code status = 9
-
 sct:
     shipment request
     order recieve info 100-1057470

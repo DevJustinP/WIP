@@ -74,7 +74,7 @@ from [SysproCompany100].[dbo].[SalBranch] b
 					select 'InvWhControl' as [Value]
 					where si.ShippingInstructions in ('D', 'PU-WH')
 					union
-					select 'SalesOrder'
+					select 'SorMaster'
 					where si.ShippingInstructions in ('PA', 'PP')
 					union
 					select 'SalBranch'

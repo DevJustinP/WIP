@@ -66,10 +66,7 @@ begin
 			inner join [SysproCompany100].[dbo].[InvWarehouse] as iw on iw.StockCode = sd.MStockCode
 																   and iw.Warehouse = sd.MWarehouse
 																   and iw.TrfSuppliedItem = 'Y'
-			left join [SysproCompany100].[dbo].[SorDetail] as sctsd on sctsd.MCreditOrderNo = sd.SalesOrder
-																	and sctsd.MCreditOrderLine = sd.SalesOrderLine
 		where s.ProcessNumber = @ProcessNumber
-			and sctsd.SalesOrder is null
 			
 
 	declare @LinestoSCT_count as int = (select count(*) from @LinestoSCT)
@@ -137,7 +134,7 @@ begin
 															SourceWarehouse,
 															TargetWarehouse
 														from @LinestoSCT ) as warehouse
-										cross apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, warehouse.TargetWarehouse) as addr
+										cross apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, sm.Branch, sm.ShippingInstrsCod, warehouse.TargetWarehouse) as addr
 									where s.ProcessNumber = @ProcessNumber
 									for xml path('Orders'), root('PostSalesOrdersSCT') )
 	
