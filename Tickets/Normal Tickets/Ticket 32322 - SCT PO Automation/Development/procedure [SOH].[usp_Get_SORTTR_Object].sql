@@ -11,7 +11,7 @@ go
 					SORTTR object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50429
+declare @ProcessNumber as int = 50446
 execute [SOH].[usp_Get_SORTTR_Object] @ProcessNumber
 ===============================================
 */
@@ -25,6 +25,7 @@ begin
 	declare @LinestoSCT table (
 		SalesOrder varchar(20),
 		SalesOrderLine int,
+		Linetype varchar(5),
 		SourceWarehouse varchar(10),
 		TargetWarehouse varchar(10),
 		NewLineNumber int,
@@ -35,16 +36,19 @@ begin
 		LineShipDate varchar(10),
 		ProductClass varchar(50),
 		UnitMass decimal(18,6),
-		UnitVolume decimal(18,6)
+		UnitVolume decimal(18,6),
+		Comment varchar(100),
+		AttachToLine int
 	)
 
 	insert into @LinestoSCT
 		select
 			sm.SalesOrder,
 			sd.SalesOrderLine,
+			sd.LineType,
 			iw.DefaultSourceWh,
 			sd.MWarehouse,
-			ROW_NUMBER() OVER(partition by iw.DefaultSourceWh order by sd.SalesOrderLine desc) as [NewLineNumber],
+			null as [NewLineNumber],
 			sd.MStockCode,
 			sd.MStockDes,
 			sd.MBackOrderQty,
@@ -52,7 +56,9 @@ begin
 			convert(varchar(10) ,DATEADD(DAY, 42, getdate()), 120) as LineShipDate,
 			sd.MProductClass,
 			sd.MStockUnitMass,
-			sd.MStockUnitVol
+			sd.MStockUnitVol,
+			null as [Comment],
+			null as [AttachToLine]
 		from [SOH].[SorMaster_Process_Staged] as s
 			inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.Salesorder collate Latin1_General_Bin
 			inner join [SysproCompany100].[dbo].[SorDetail] as sd on sd.SalesOrder = sm.SalesOrder 
@@ -68,7 +74,50 @@ begin
 																   and iw.TrfSuppliedItem = 'Y'
 		where s.ProcessNumber = @ProcessNumber
 			
+	insert into @LinestoSCT
+		select
+			sd.SalesOrder,
+			sd.SalesOrderLine,
+			sd.LineType,
+			l.SourceWarehouse,
+			l.TargetWarehouse,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			sd.NComment,
+			sd.NCommentFromLin
+		from @LinestoSCT l
+			inner join [SysproCompany100].[dbo].[SorDetail] sd on sd.SalesOrder = l.SalesOrder collate Latin1_General_Bin
+															  and sd.LineType = '6'
+															  and sd.NCommentFromLin = l.SalesOrderLine
 
+	update l
+		set NewLineNumber = CalcLineNumber
+	from (
+			select
+				SalesOrder,
+				SalesOrderLine,
+				[NewLineNumber],
+				ROW_NUMBER() over(partition by SourceWarehouse
+								  order by SalesOrderLine ) as CalcLineNumber
+			from @LinestoSCT ) l
+	
+	Update l
+		set l.AttachToLine = l.NewLineNumber
+	from ( select
+				c.SalesOrderLine,
+				c.AttachToLine,
+				s.NewLineNumber
+			from @LinestoSCT as c
+				left join @LinestoSCT as s on s.SalesOrderLine = c.AttachToLine
+			where c.Comment is not null ) l
+			
 	declare @LinestoSCT_count as int = (select count(*) from @LinestoSCT)
 
 	declare @SORTTRParameters as xml = (
@@ -100,9 +149,10 @@ begin
 										sm.StandardComment											[OrderHeader/OrderComments],
 										sm.DocumentFormat											[OrderHeader/DocumentFormat],
 										(
-											select
-												 (
-													Select
+										select
+											case
+												when l.Linetype = '1' then
+												 (	Select
 														l.StockCode,
 														l.StockDescription,
 														l.OrderQty,
@@ -110,23 +160,23 @@ begin
 														l.LineShipDate,
 														l.ProductClass,
 														l.UnitMass,
-														l.UnitVolume
-													from @LinestoSCT as l
-													where l.TargetWarehouse = warehouse.TargetWarehouse
-													order by l.NewLineNumber asc
-													for xml path('StockLine'), TYPE ),
-												 (
-													select
-														sdc.NComment		[Comment],
-														l.NewLineNumber		[AttachedLineNumber]
-													from @LinestoSCT as l
-														inner join [SysproCompany100].[dbo].[SorDetail] as sdc on sdc.SalesOrder = l.SalesOrder collate Latin1_General_BIN
-																											  and sdc.LineType = '6'
-																											  and sdc.NCommentFromLin = l.SalesOrderLine
-													where l.TargetWarehouse = warehouse.TargetWarehouse
-													order by l.NewLineNumber asc
-													for xml path('CommentLine'),TYPE )
-											for xml path(''), Type ) [OrderDetails]
+														l.UnitVolume,
+														l.SalesOrderLine	[OriginalLine],
+														l.NewLineNumber		[NewLineNumber]
+													for xml path('StockLine'), TYPE )
+												when l.Linetype = '6' then
+											 (
+												select
+													l.Comment			[Comment],
+													l.AttachToLine		[AttachedLineNumber],
+													l.SalesOrderLine	[OriginalLine],
+													l.NewLineNumber		[NewLineNumber]
+												for xml path('CommentLine'),TYPE )
+											end
+										from @LinestoSCT l
+										where l.SourceWarehouse = warehouse.SourceWarehouse
+										order by l.SalesOrderLine
+										for xml path(''), Type ) [OrderDetails]
 									from [SOH].[SorMaster_Process_Staged] as s
 										inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
 										cross apply (
@@ -134,7 +184,7 @@ begin
 															SourceWarehouse,
 															TargetWarehouse
 														from @LinestoSCT ) as warehouse
-										cross apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, sm.Branch, sm.ShippingInstrsCod, warehouse.TargetWarehouse) as addr
+										outer apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, sm.Branch, sm.ShippingInstrsCod, warehouse.SourceWarehouse) as addr
 									where s.ProcessNumber = @ProcessNumber
 									for xml path('Orders'), root('PostSalesOrdersSCT') )
 	

@@ -1,0 +1,161 @@
+<SalesOrders>
+	<Orders>
+		<OrderHeader>
+			<CustomerPoNumber>TESTSCTPO-1</CustomerPoNumber>
+			<OrderActionType>A</OrderActionType>
+			<NewCustomerPoNumber/>
+			<Customer>1196786</Customer>
+			<OrderDate>2023-04-20</OrderDate>
+			<ShippingInstrsCode>PA</ShippingInstrsCode>
+			<ShipAddress1>240 WRENWOOD LN</ShipAddress1>
+			<ShipAddress2></ShipAddress2>
+			<ShipAddress3>CHARLOTTE</ShipAddress3>
+			<ShipAddress4>NC</ShipAddress4>
+			<ShipAddress5>USA</ShipAddress5>
+			<ShipPostalCode>28211</ShipPostalCode>
+			<Warehouse></Warehouse>
+			<OrderType>S</OrderType>
+			<Branch>304</Branch>
+			<Salesperson>LIM</Salesperson>
+		</OrderHeader>
+		<OrderDetails>
+			<StockLine>
+                <CustomerPoLine>1</CustomerPoLine>
+                <StockCode>333517</StockCode>
+                <StockDescription>CROQUET SOFA</StockDescription>
+                <OrderQty>1</OrderQty>
+                <Price>1799.40</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>304</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>	
+			</StockLine>
+            <CommentLine>
+                <CustomerPoLine>2</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>GOES WITH ITEMS BELOW</Comment>
+                <AttachedLineNumber>1</AttachedLineNumber>
+            </CommentLine>	
+			<StockLine>
+                <CustomerPoLine>3</CustomerPoLine>
+                <StockCode>C313782N</StockCode>
+                <StockDescription>CROQUET ALUM SOFA CUSHION</StockDescription>
+                <OrderQty>1</OrderQty>
+                <Price>1145.40</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>304</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>	
+			</StockLine>
+            <CommentLine>
+                <CustomerPoLine>4</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>GOES WITH 333517</Comment>
+                <AttachedLineNumber>3</AttachedLineNumber>
+            </CommentLine>	
+			<StockLine>
+                <CustomerPoLine>5</CustomerPoLine>
+                <StockCode>8671774N</StockCode>
+                <StockDescription>THROW PILLOW</StockDescription>
+                <OrderQty>1</OrderQty>
+                <Price>1145.40</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>304</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>	
+			</StockLine>
+            <CommentLine>
+                <CustomerPoLine>6</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <CommentType>I</CommentType>
+                <Comment>GOES WITH 333517</Comment>
+                <AttachedLineNumber>5</AttachedLineNumber>
+            </CommentLine>	
+		</OrderDetails>
+	</Orders>
+	<Orders>
+		<OrderHeader>
+			<CustomerPoNumber>TESTSCTPO-1</CustomerPoNumber>
+			<OrderActionType>A</OrderActionType>
+			<NewCustomerPoNumber/>
+			<Customer>1131062</Customer>
+			<OrderDate>2023-04-20</OrderDate>
+			<ShippingInstrsCode>PU-ST</ShippingInstrsCode>
+			<ShipAddress1>1806 SALT LICK RD</ShipAddress1>
+			<ShipAddress2></ShipAddress2>
+			<ShipAddress3>SAN ANTONIO</ShipAddress3>
+			<ShipAddress4>TX</ShipAddress4>
+			<ShipAddress5>USA</ShipAddress5>
+			<ShipPostalCode>78232</ShipPostalCode>
+			<Warehouse></Warehouse>
+			<OrderType>S</OrderType>
+			<Branch>308</Branch>
+			<Salesperson>ELS</Salesperson>
+		</OrderHeader>
+		<OrderDetails>
+			<StockLine>
+                <CustomerPoLine>1</CustomerPoLine>
+                <StockCode>42752</StockCode>
+                <StockDescription>DOUBLE LATTICE ALUMINUM 5 LEG DINING BASE BASE</StockDescription>
+                <OrderQty>1</OrderQty>
+                <Price>256.50</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>308</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>	
+			</StockLine>
+			<StockLine>
+                <CustomerPoLine>2</CustomerPoLine>
+                <StockCode>C313782N</StockCode>
+                <StockDescription>CROQUET ALUM SOFA CUSHION</StockDescription>
+                <OrderQty>1</OrderQty>
+                <Price>2159.25</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>308</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>	
+			</StockLine>
+		</OrderDetails>	
+	</Orders>
+	<Orders>
+		<OrderHeader>
+			<CustomerPoNumber>TESTSCTPO-1</CustomerPoNumber>
+			<OrderActionType>A</OrderActionType>
+			<NewCustomerPoNumber/>
+			<Customer>1259230</Customer>
+			<OrderDate>2023-04-20</OrderDate>
+			<ShippingInstrsCode>PU-ST</ShippingInstrsCode>
+			<ShipAddress1>921 BUTTONWOOD TRL</ShipAddress1>
+			<ShipAddress2></ShipAddress2>
+			<ShipAddress3>CROWNSVILLE</ShipAddress3>
+			<ShipAddress4>MD</ShipAddress4>
+			<ShipAddress5>USA</ShipAddress5>
+			<ShipPostalCode>21032</ShipPostalCode>
+			<Warehouse></Warehouse>
+			<OrderType>S</OrderType>
+			<Branch>315</Branch>
+			<Salesperson>ELS</Salesperson>
+		</OrderHeader>
+		<OrderDetails>
+			<StockLine>
+                <CustomerPoLine>1</CustomerPoLine>
+                <StockCode>SCH-155195</StockCode>
+                <StockDescription>Annie Side Table</StockDescription>
+                <OrderQty>1</OrderQty>
+                <Price>451.00</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>315</Warehouse>
+                <AllocationAction>B</AllocationAction>
+                <ReserveStock>Y</ReserveStock>	
+			</StockLine>
+		</OrderDetails>	
+	</Orders>
+</SalesOrders>

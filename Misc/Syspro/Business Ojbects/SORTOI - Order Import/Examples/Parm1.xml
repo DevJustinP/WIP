@@ -1,0 +1,33 @@
+<SalesOrders>
+  <Parameters>
+	  <ValidateOnly>Y</ValidateOnly>
+    <AcceptOrdersIfNoCredit>Y</AcceptOrdersIfNoCredit>
+    <AcceptEarlierShipDate>N</AcceptEarlierShipDate>
+    <AddStockSalesOrderText>N</AddStockSalesOrderText>
+    <AddDangerousGoodsText>N</AddDangerousGoodsText>
+    <AddAttachedServiceCharges>N</AddAttachedServiceCharges>
+    <AllocationAction>B</AllocationAction>
+    <AllowChangeToZeroPrice>N</AllowChangeToZeroPrice>
+    <AllowDuplicateOrderNumbers>N</AllowDuplicateOrderNumbers>
+    <AllowInvoiceInformationEntry>N</AllowInvoiceInformationEntry>
+    <AllowNonStockItems>N</AllowNonStockItems>
+    <AllowZeroPrice>Y</AllowZeroPrice>
+    <AlwaysUsePriceEntered>Y</AlwaysUsePriceEntered>
+    <CheckForCustomerPoNumbers>N</CheckForCustomerPoNumbers>
+    <CreditFailMessage>No credit available</CreditFailMessage>
+    <CustomerToUse />
+    <IgnoreWarnings>Y</IgnoreWarnings>
+    <InBoxMsgReqd>N</InBoxMsgReqd>
+    <MinimumDaysToShip>1</MinimumDaysToShip>
+    <OperatorToInform />
+    <Process>IMPORT</Process>
+    <ShipFromDefaultBin />
+    <StatusInProcess />
+    <TypeOfOrder>FWD</TypeOfOrder>
+    <UseStockDescSupplied>N</UseStockDescSupplied>
+    <ValidateShippingInstrs />
+    <ValidProductClassList />
+    <WarehouseListToUse />
+    <WarnIfCustomerOnHold />
+  </Parameters>
+</SalesOrders>

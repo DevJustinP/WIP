@@ -31,7 +31,7 @@ begin
 
 	update sd
 		set sd.MCreditOrderNo = @OriginalOrder,
-			sd.MCreditOrderLine = @OriginalOrderLine
+			sd.MCreditOrderLine = @OriginalOrderLine		
 	from [SysproCompany100].[dbo].[SorDetail] as sd
 	where sd.SalesOrder = @SCTOrder
 		and sd.SalesOrderLine = @SCTLine

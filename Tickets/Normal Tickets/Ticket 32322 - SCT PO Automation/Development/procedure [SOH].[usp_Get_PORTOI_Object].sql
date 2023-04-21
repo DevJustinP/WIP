@@ -11,7 +11,7 @@ go
 					PORTOI object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50238
+declare @ProcessNumber as int = 50445
 execute [SOH].[usp_Get_PORTOI_Object] @ProcessNumber
 ===============================================
 */
@@ -51,6 +51,7 @@ begin
 	declare @LinestoPO as Table(
 		SalesOrder varchar(20),
 		SalesOrderLine int,
+		LineType varchar(6),
 		SupplierId varchar(15),
 		PurchaseOrderLine int,
 		LineActionType varchar(2) default 'A',
@@ -60,14 +61,16 @@ begin
 		PriceMethod varchar(2) default 'M',
 		Price decimal(18,4),
 		PriceUom varchar(10),
-		LeadTime decimal(18,6)
+		LeadTime decimal(18,6),
+		Comment varchar(100),
+		AttachToLine int
 	)
-	insert into @LinestoPO(SalesOrder, SalesOrderLine, SupplierId, PurchaseOrderLine, StockCode, Warehouse, OrderQty, Price, PriceUom, LeadTime)
+	insert into @LinestoPO(SalesOrder, SalesOrderLine, LineType, SupplierId, StockCode, Warehouse, OrderQty, Price, PriceUom, LeadTime)
 		select
 			sm.SalesOrder,
 			sd.SalesOrderLine,
+			sd.LineType,
 			im.Supplier,
-			row_number() over(partition by iw.Supplier order by sd.SalesOrderLine) as [PurchaseOrderLine],
 			sd.MStockCode,
 			sd.MWarehouse,
 			sd.MBackOrderQty,
@@ -88,7 +91,7 @@ begin
 																	and iw.Warehouse = sd.MWarehouse
 																	and iw.TrfSuppliedItem <> 'Y'
 			inner join [SysproCompany100].[dbo].[InvMaster] as im on im.StockCode = iw.StockCode
-			cross apply (
+			outer apply (
 							select
 								max(c.LeadTime) as LeadTime
 							from (
@@ -111,11 +114,41 @@ begin
 							  and pxp.MinimumQty <= sd.MBackOrderQty
 							  and pxp.PriceExpiryDate > GetDate()
 							order by MinimumQty desc ) as [Contract]
-			left join [SysproCompany100].[dbo].[PorMasterDetail] as pmd on pmd.MSalesOrder = sd.SalesOrder
-																		and pmd.MSalesOrderLine = sd.SalesOrderLine
 		where s.ProcessNumber = @ProcessNumber
-			and pmd.PurchaseOrder is null
 
+	insert into @LinestoPO (SalesOrder, SalesOrderLine, LineType, SupplierId, Comment, AttachToLine)
+		select
+			sdc.SalesOrder,
+			sdc.SalesOrderLine,
+			sdc.LineType,
+			s.SupplierId,
+			sdc.NComment,
+			sdc.NCommentFromLin
+		from @LinestoPO as s
+			inner join [SysproCompany100].[dbo].[SorDetail] sdc on sdc.SalesOrder = s.SalesOrder collate Latin1_General_BIN
+																and sdc.NCommentFromLin = s.SalesOrderLine
+
+	update l
+		set l.PurchaseOrderLine = l.CalLineNumber
+	from (	select	
+				SalesOrder,
+				SalesOrderLine,
+				PurchaseOrderLine,
+				ROW_NUMBER() over (partition by SupplierId 
+								   order by SalesOrderLine ) as CalLineNumber
+			from @LinestoPO ) l
+
+	update l
+		set l.AttachToLine = l.PurchaseOrderLine
+	from (
+			select
+				c.SalesOrder,
+				c.SalesOrderLine,
+				c.AttachToLine,
+				s.PurchaseOrderLine
+			from @LinestoPO c
+				inner join @LinestoPO s on s.SalesOrderLine = c.AttachToLine ) l
+				
 	declare @LinestoPO_count as int = (select count(*) from @LinestoPO)
 	set @LeadTime = dateadd(day, (select max(LeadTime) from @LinestoPO), @TodaysDate)
 	
@@ -123,56 +156,58 @@ begin
 	declare @PORTOIDoc as xml = (
 									select
 										@CONST_A							as [OrderHeader/OrderActionType],
-										L.SupplierId						as [OrderHeader/Supplier],
-										iwc.Warehouse						as [OrderHeader/Warehouse],
+										supply.SupplierId					as [OrderHeader/Supplier],
+										supply.Warehouse					as [OrderHeader/Warehouse],
 										sm.Customer							as [OrderHeader/Customer],
 										sm.CustomerPoNumber					as [OrderHeader/CustomerPoNumber],
 										@TodaysDate_Formated				as [OrderHeader/OrderDate],
 										format(@LeadTime, 'yyyy/MM/dd')		as [OrderHeader/DueDate],
 										@CONST_A							as [OrderHeader/ApplyDueDateToLines],
-										iwc.[Description]					as [OrderHeader/DeliveryName],
-										iwc.DeliveryAddr1					as [OrderHeader/DeliveryAddr1],
-										iwc.DeliveryAddr2					as [OrderHeader/DeliveryAddr2],
-										iwc.DeliveryAddr3					as [OrderHeader/DeliveryAddr3],
-										iwc.DeliveryAddr4					as [OrderHeader/DeliveryAddr4],
-										iwc.DeliveryAddr5					as [OrderHeader/DeliveryAddr5],
-										iwc.PostalCode						as [OrderHeader/PostalCode],
+										addr.ShippingAddress1				as [OrderHeader/DeliveryAddr1],
+										addr.ShippingAddress2				as [OrderHeader/DeliveryAddr2],
+										addr.ShippingAddress3				as [OrderHeader/DeliveryAddr3],
+										addr.ShippingAddress4				as [OrderHeader/DeliveryAddr4],
+										addr.ShippingAddress5				as [OrderHeader/DeliveryAddr5],
+										addr.ShippingPostalCode				as [OrderHeader/PostalCode],
 										(
 											select
-												(
-													select
-														PurchaseOrderLine	as [PuchaseOrderLine],
-														LineActionType		as [LineActionType],
-														StockCode			as [StockCode],
-														Warehouse			as [Warehouse],
-														OrderQty			as [OrderQty],
-														PriceMethod			as [PriceMethod],
-														Price				as [Price],
-														PriceUom			as [PriceUom]
-													from @LinestoPO
-													where SupplierId = L.SupplierId
-														and Warehouse = iwc.Warehouse collate Latin1_General_BIN
-													for xml path('StockLine'), type),
-												(
-													select 
-														lpo.LineActionType		as [LineActionType],
-														sdc.NComment			as [Comment],
-														lpo.PurchaseOrderLine	as [AttachedToStkLineNumber]
-														from @LinestoPO as lpo
-															inner join [SysproCompany100].[dbo].[SorDetail] as sdc on sdc.SalesOrder = lpo.SalesOrder collate Latin1_General_BIN
-																												  and sdc.LineType = '6'
-																												  and sdc.NCommentFromLin = lpo.SalesOrderLine
-													where SupplierId = L.SupplierId
-														and Warehouse = iwc.Warehouse collate Latin1_General_BIN
-													for xml path('CommentLine'), type)
-											for xml path('OrderDetails'), type)
+												case
+													when l.LineType = '1' then
+														(
+															select
+																l.PurchaseOrderLine	as [PuchaseOrderLine],
+																l.LineActionType	as [LineActionType],
+																l.StockCode			as [StockCode],
+																l.Warehouse			as [Warehouse],
+																l.OrderQty			as [OrderQty],
+																l.PriceMethod		as [PriceMethod],
+																l.Price				as [Price],
+																l.PriceUom			as [PriceUom],
+																l.SalesOrderLine	as [OriginalOrderLine]
+															for xml path('StockLine'), type)
+													when l.LineType = '6' then
+														(
+															select 
+																l.LineActionType		as [LineActionType],
+																l.PurchaseOrderLine		as [PurchaseOrderLine],
+																l.Comment				as [Comment],
+																l.AttachToLine			as [AttachedToStkLineNumber],
+																l.SalesOrderLine		as [OriginalOrderLine]
+															for xml path('CommentLine'), type)
+												end
+											from @LinestoPO l
+											where l.SupplierId = supply.SupplierId
+											order by l.SalesOrderLine
+											for xml path(''), type) [OrderDetails]
 									from [SOH].[SorMaster_Process_Staged] as s
 										inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
-										inner join [SysproCompany100].[dbo].[InvWhControl] as iwc on iwc.Branch = sm.Branch
+										outer apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, sm.Branch, sm.ShippingInstrsCod, 'PurchaseOrder') as addr
 										cross apply (
 														select Distinct
-															SupplierId
-														from @LinestoPO ) as L
+															SupplierId,
+															Warehouse
+														from @LinestoPO
+														where LineType = '1' ) as supply
 									where s.ProcessNumber = @ProcessNumber
 									for xml path('Orders'), root('PostPurchaseOrders'), type)
 	
