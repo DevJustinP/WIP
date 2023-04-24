@@ -19,6 +19,8 @@ grant execute on [SOH].[usp_Stage_SalesOrders_For_BackOrder] to [SUMMERCLASSICS\
 grant execute on [SOH].[usp_Update_Original_Order] to [SUMMERCLASSICS\Svc_WSU_SOH]
 grant execute on [SOH].[usp_Update_PO_Lines_Original_Order] to [SUMMERCLASSICS\Svc_WSU_SOH]
 grant execute on [SOH].[usp_Update_SCT_Lines_Original_Order] to [SUMMERCLASSICS\Svc_WSU_SOH]
+grant execute on [SOH].[BuildSCTAcknowledgement] to [SUMMERCLASSICS\Svc_WSU_SOH]
+grant execute on [SOH].[BuildPOAcknowledgement] to [SUMMERCLASSICS\Svc_WSU_SOH]
 
 use [SysproCompany100]
 go
