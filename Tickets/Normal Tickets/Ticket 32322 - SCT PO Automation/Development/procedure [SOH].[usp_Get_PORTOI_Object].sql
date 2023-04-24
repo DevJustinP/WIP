@@ -155,20 +155,21 @@ begin
 
 	declare @PORTOIDoc as xml = (
 									select
-										@CONST_A							as [OrderHeader/OrderActionType],
-										supply.SupplierId					as [OrderHeader/Supplier],
-										supply.Warehouse					as [OrderHeader/Warehouse],
-										sm.Customer							as [OrderHeader/Customer],
-										sm.CustomerPoNumber					as [OrderHeader/CustomerPoNumber],
-										@TodaysDate_Formated				as [OrderHeader/OrderDate],
-										format(@LeadTime, 'yyyy/MM/dd')		as [OrderHeader/DueDate],
-										@CONST_A							as [OrderHeader/ApplyDueDateToLines],
-										addr.ShippingAddress1				as [OrderHeader/DeliveryAddr1],
-										addr.ShippingAddress2				as [OrderHeader/DeliveryAddr2],
-										addr.ShippingAddress3				as [OrderHeader/DeliveryAddr3],
-										addr.ShippingAddress4				as [OrderHeader/DeliveryAddr4],
-										addr.ShippingAddress5				as [OrderHeader/DeliveryAddr5],
-										addr.ShippingPostalCode				as [OrderHeader/PostalCode],
+										@CONST_A														as [OrderHeader/OrderActionType],
+										supply.SupplierId												as [OrderHeader/Supplier],
+										supply.Warehouse												as [OrderHeader/Warehouse],
+										sm.Customer														as [OrderHeader/Customer],
+										sm.CustomerPoNumber												as [OrderHeader/CustomerPoNumber],
+										@TodaysDate_Formated											as [OrderHeader/OrderDate],
+										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')	as [OrderHeader/DueDate],
+										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')	as [OrderHeader/MemoDate],
+										@CONST_A														as [OrderHeader/ApplyDueDateToLines],
+										addr.ShippingAddress1											as [OrderHeader/DeliveryAddr1],
+										addr.ShippingAddress2											as [OrderHeader/DeliveryAddr2],
+										addr.ShippingAddress3											as [OrderHeader/DeliveryAddr3],
+										addr.ShippingAddress4											as [OrderHeader/DeliveryAddr4],
+										addr.ShippingAddress5											as [OrderHeader/DeliveryAddr5],
+										addr.ShippingPostalCode											as [OrderHeader/PostalCode],
 										(
 											select
 												case
@@ -201,6 +202,8 @@ begin
 											for xml path(''), type) [OrderDetails]
 									from [SOH].[SorMaster_Process_Staged] as s
 										inner join [SysproCompany100].[dbo].[SorMaster] as sm on sm.SalesOrder = s.SalesOrder collate Latin1_General_BIN
+										left join [SysproCompany100].[dbo].[CusSorMaster+] as csm on csm.SalesOrder = sm.SalesOrder
+																								and csm.InvoiceNumber = ''
 										outer apply [SOH].[tvf_Fetch_Shipping_Address](sm.SalesOrder, sm.Branch, sm.ShippingInstrsCod, 'PurchaseOrder') as addr
 										cross apply (
 														select Distinct
