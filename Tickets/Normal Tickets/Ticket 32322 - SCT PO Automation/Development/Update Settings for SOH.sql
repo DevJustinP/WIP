@@ -105,6 +105,7 @@ SELECT @SettingDocument = '
   </Message>
   <TimerIntervals>
     <ProcessOrderMinutes>5</ProcessOrderMinutes>
+	<StagingTimerMinutes>60</StagingTimerMinutes>
   </TimerIntervals>
   <StageReprocesses>
 	<count>10</count>

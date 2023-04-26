@@ -11,7 +11,7 @@ go
 					PORTOI object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50445
+declare @ProcessNumber as int = 50452
 execute [SOH].[usp_Get_PORTOI_Object] @ProcessNumber
 ===============================================
 */
@@ -55,7 +55,7 @@ begin
 		SupplierId varchar(15),
 		PurchaseOrderLine int,
 		LineActionType varchar(2) default 'A',
-		StockCode varchar(20),
+		StockCode varchar(30),
 		Warehouse varchar(10),
 		OrderQty decimal(16,6),
 		PriceMethod varchar(2) default 'M',

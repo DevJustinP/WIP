@@ -1,6 +1,5 @@
 <SalesOrders>
   <Parameters>
-    <ValidateOnly>Y</ValidateOnly>
     <AcceptOrdersIfNoCredit>Y</AcceptOrdersIfNoCredit>
     <AcceptEarlierShipDate>N</AcceptEarlierShipDate>
     <AddStockSalesOrderText>N</AddStockSalesOrderText>

@@ -11,7 +11,7 @@ go
 					SORTTR object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50446
+declare @ProcessNumber as int = 50452
 execute [SOH].[usp_Get_SORTTR_Object] @ProcessNumber
 ===============================================
 */
@@ -29,7 +29,7 @@ begin
 		SourceWarehouse varchar(10),
 		TargetWarehouse varchar(10),
 		NewLineNumber int,
-		StockCode varchar(20),
+		StockCode varchar(30),
 		StockDescription varchar(100),
 		OrderQty int,
 		OrderUom varchar(5),

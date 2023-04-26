@@ -297,14 +297,14 @@ declare @HTML nvarchar(max) = N'<!DOCTYPE html>
         <table id="OrderSpecs">
             <tr>
                 <th class="LeftAlign">Order Date</th>
-                <th class="LeftAlign">Credit Terms</th>
+                <th class="LeftAlign">Order Rec Info</th>
                 <th class="LeftAlign">Salesperson</th>
                 <th class="LeftAlign">Customer Purchase Order Number</th>
                 <th class="LeftAlign">Special Instructions</th>
             </tr>
             <tr>
                 <td>{OrderSpecs.OrderDate}</td>
-                <td>{OrderSpecs.CreditTerms}</td>
+                <td>{OrderSpecs.OrderRec}</td>
                 <td>{OrderSpecs.Salesperson}</td>
                 <td>{OrderSpecs.PONumber}</td>
                 <td>{OrderSpecs.SpecInstr}</td>

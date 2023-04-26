@@ -1,0 +1,71 @@
+<SalesOrders>
+	<Orders>
+		<OrderHeader>
+			<CustomerPoNumber>TEST SCT/PO-6</CustomerPoNumber>
+			<OrderActionType>A</OrderActionType>
+      		<InvoiceTerms>3</InvoiceTerms>
+			<Customer>1001412</Customer>
+			<OrderDate>2023-04-25</OrderDate>
+			<ShippingInstrsCode>PP</ShippingInstrsCode>
+			<ShipAddress1>319 SANTA DOMINGO</ShipAddress1>
+			<ShipAddress2></ShipAddress2>
+			<ShipAddress3>HELOTES</ShipAddress3>
+			<ShipAddress4>TX</ShipAddress4>
+			<ShipAddress5>USA</ShipAddress5>
+			<ShipPostalCode>78023</ShipPostalCode>
+			<OrderType>S</OrderType>
+			<Branch>308</Branch>
+			<Salesperson>ELS</Salesperson>
+		</OrderHeader>
+		<OrderDetails>
+			<StockLine>
+                <CustomerPoLine>1</CustomerPoLine>
+        		<LineActionType>A</LineActionType>
+                <StockCode>C4644325N</StockCode>
+                <StockDescription>STRATA SOFA CUSHION</StockDescription>
+                <OrderQty>3</OrderQty>
+                <Price>915.00</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>313</Warehouse>
+                <AllocationAction>B</AllocationAction>
+			</StockLine>
+		      <CommentLine>
+		        <CustomerPoLine>2</CustomerPoLine>
+		        <LineActionType>A</LineActionType>
+		        <Comment>PRIMARY FABRIC: 4325-B-ROLLO SILVER</Comment>
+		        <AttachedLineNumber>1</AttachedLineNumber>
+		      </CommentLine>
+		      <CommentLine>
+		        <CustomerPoLine>3</CustomerPoLine>
+		        <LineActionType>A</LineActionType>
+		        <Comment>PILLOW TRIM: N-NONE</Comment>
+		        <AttachedLineNumber>1</AttachedLineNumber>
+		      </CommentLine>
+			<StockLine>
+                <CustomerPoLine>3</CustomerPoLine>
+        		<LineActionType>A</LineActionType>
+                <StockCode>C631P4325N</StockCode>
+                <StockDescription>PARIS HIGH BACK SPR LNG CUSH</StockDescription>
+                <OrderQty>2</OrderQty>
+                <Price>393.00</Price>
+                <OrderUom>EA</OrderUom>
+                <PriceUom>EA</PriceUom>
+                <Warehouse>313</Warehouse>
+                <AllocationAction>B</AllocationAction>
+			</StockLine>
+		      <CommentLine>
+		        <CustomerPoLine>4</CustomerPoLine>
+		        <LineActionType>A</LineActionType>
+		        <Comment>PRIMARY FABRIC: 4325-B-ROLLO SILVER</Comment>
+		        <AttachedLineNumber>3</AttachedLineNumber>
+		      </CommentLine>
+		      <CommentLine>
+		        <CustomerPoLine>5</CustomerPoLine>
+		        <LineActionType>A</LineActionType>
+		        <Comment>PILLOW TRIM: N-NONE</Comment>
+		        <AttachedLineNumber>3</AttachedLineNumber>
+		      </CommentLine>
+		</OrderDetails>
+	</Orders>
+</SalesOrders>

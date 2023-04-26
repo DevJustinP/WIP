@@ -8,7 +8,7 @@ go
 =======================================================================
 test:
 
-declare @PONumber as varchar(20) = '100-1028685';
+declare @PONumber as varchar(20) = '308-1008246';
 execute [SOH].[BuildPOAcknowledgement] @PONumber
 select top 5
 	pmh.PurchaseOrder,
@@ -46,13 +46,13 @@ declare @POAck as nvarchar(max),
 		
 	declare @PONumber			as varchar(20),
 			@SupplierName		as varchar(50),
-			@SupplierAddr1		as varchar(40),
-			@SupplierAddr2		as varchar(40),
+			@SupplierAddr1		as varchar(80),
+			@SupplierAddr2		as varchar(120),
 			@SupplierAddr3		as varchar(40),
 			@SupplierAddr4		as varchar(40),
 			@ShipAddrLine1		as varchar(40),
-			@ShipAddrLine2		as varchar(40),
-			@ShipAddrLine3		as varchar(40),
+			@ShipAddrLine2		as varchar(80),
+			@ShipAddrLine3		as varchar(120),
 			@ShipAddrLine4		as varchar(40),
 			@OrderDate			as datetime,
 			@PayTerms			as varchar(30),
@@ -144,9 +144,9 @@ declare @POAck as nvarchar(max),
 	set @POAck = REPLACE(@POAck, '{OrderSpecs.MemoDate}', isnull(format(@MemoDate, 'yyyy/MM/dd'),''))
 	set @POAck = REPLACE(@POAck, '{OrderSpecs.DueDate}', isnull(format(@DueDate, 'yyyy/MM/dd'),''))
 	set @POAck = REPLACE(@POAck, '{OrderSpecs.ShipInstr}', isnull(@ShipInstr, ''))
-	set @POAck = REPLACE(@POAck, '{TotalUnits}', isnull(@TotalUnits, ''))
-	set @POAck = REPLACE(@POAck, '{Subtotal}', isnull(@SubTotal, ''))
-	set @POAck = REPLACE(@POAck, '{NetAmount}', isnull(@NetAmount, ''))
+	set @POAck = REPLACE(@POAck, '{TotalUnits}', isnull(cast(@TotalUnits as varchar), ''))
+	set @POAck = REPLACE(@POAck, '{Subtotal}', isnull(cast(@SubTotal as varchar), ''))
+	set @POAck = REPLACE(@POAck, '{NetAmount}', isnull(cast(@NetAmount as varchar), ''))
 	
 	declare @tempOrderItems as nvarchar(max) = '',
 			@StockCode as varchar(30), 

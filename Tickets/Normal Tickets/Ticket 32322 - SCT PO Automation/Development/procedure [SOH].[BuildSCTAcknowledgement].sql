@@ -8,13 +8,17 @@ go
 =======================================================================
 test:
 
-declare @SCTNumber as varchar(20) = '100-1057486';
+declare @SCTNumber as varchar(20) = '100-1057513';
 execute [SOH].[BuildSCTAcknowledgement] @SCTNumber
-select
-	OrderDate,
-	format(OrderDate, 'yyyy/MM/dd')
-from [Sysprocompany100].[dbo].[SorMaster] where SalesOrder = @SCTNumber
-
+select top 10
+	sd.SalesOrder,
+	count(SalesOrderLine) as cnt
+from [Sysprocompany100].[dbo].[SorMaster] sm
+	left join [Sysprocompany100].[dbo].[SorDetail] sd on sd.SalesOrder = sm.SalesOrder
+													and sd.LineType = '1'
+where sm.InterWhSale = 'Y'
+group by sd.SalesOrder
+order by newid()
 =======================================================================
 */
 create or alter procedure [SOH].[BuildSCTAcknowledgement](
@@ -43,12 +47,12 @@ begin
 		
 	declare @SalesOrder			as varchar(20),
 			@DeliveryAddr1		as varchar(40),
-			@DeliveryAddr2		as varchar(40),
-			@DeliveryAddr3		as varchar(40),
+			@DeliveryAddr2		as varchar(80),
+			@DeliveryAddr3		as varchar(120),
 			@DeliveryAddr4		as varchar(40),
 			@ShipAddrLine1		as varchar(40),
-			@ShipAddrLine2		as varchar(40),
-			@ShipAddrLine3		as varchar(40),
+			@ShipAddrLine2		as varchar(80),
+			@ShipAddrLine3		as varchar(120),
 			@ShipAddrLine4		as varchar(40),
 			@ShipVia			as varchar(60),
 			@AddressType		as varchar(20),
@@ -61,7 +65,7 @@ begin
 			@PONumber			as varchar(40),
 			@SpecInstr			as varchar(30),
 			@WarehousePhone		as varchar(20),
-			@Phone				as varchar(20)
+			@OrderRecInfo		as varchar(20)
 
 	select
 		@SalesOrder			= sm.SalesOrder,
@@ -84,7 +88,7 @@ begin
 		@PONumber			= sm.CustomerPoNumber,
 		@SpecInstr			= sm.SpecialInstrs,
 		@WarehousePhone		= cicw.PhoneNumber,
-		@Phone				= csm.DeliveryPhoneNum
+		@OrderRecInfo		= csm.OrderRecInfo
 	from [Sysprocompany100].[dbo].[SorMaster] as sm
 		left join [SysproCompany100].[dbo].[CusSorMaster+] as csm on csm.SalesOrder = sm.SalesOrder
 																	  and csm.InvoiceNumber = ''
@@ -113,12 +117,13 @@ begin
 	set @SCTAck = REPLACE(@SCTAck, '{ShipAddrLine4}',	isnull(@ShipAddrLine4,''))
 	set @SCTAck = REPLACE(@SCTAck, '{ShipAddrLine2}',	isnull(@ShipAddrLine2,''))
 	set @SCTAck = REPLACE(@SCTAck, '{ShipAddrLine3}',	isnull(@ShipAddrLine3,''))
+	set @SCTAck = REPLACE(@SCTAck, '{ShipVia}',			isnull(@ShipVia,''))
 	set @SCTAck = REPLACE(@SCTAck, '{AddressType}',		isnull(@AddressType,''))
 	set @SCTAck = REPLACE(@SCTAck, '{DeliveryType}',	isnull(@DeliveryType,''))
 	set @SCTAck = REPLACE(@SCTAck, '{DelInfo}',			isnull(@DeliveryInfo,''))
 	set @SCTAck = REPLACE(@SCTAck, '{CustTag}',			isnull(@CustomerTag,''))
 	set @SCTAck = REPLACE(@SCTAck, '{OrderSpecs.OrderDate}', format(@OrderDate, 'yyyy/MM/dd'))
-	set @SCTAck = REPLACE(@SCTAck, '{OrderSpecs.CreditTerms}', isnull(@InvTermsOverride, ''))
+	set @SCTAck = REPLACE(@SCTAck, '{OrderSpecs.OrderRec}', isnull(@OrderRecInfo, ''))
 	set @SCTAck = REPLACE(@SCTAck, '{OrderSpecs.Salesperson}', isnull(@Salesperson, ''))
 	set @SCTAck = REPLACE(@SCTAck, '{OrderSpecs.PONumber}', isnull(@PONumber, ''))
 	set @SCTAck = REPLACE(@SCTAck, '{OrderSpecs.SpecInstr}', isnull(@SpecInstr, ''))

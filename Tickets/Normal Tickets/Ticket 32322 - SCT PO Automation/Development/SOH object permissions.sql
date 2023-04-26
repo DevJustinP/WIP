@@ -36,4 +36,20 @@ grant select on [dbo].[PorMasterDetail] to [SUMMERCLASSICS\Svc_WSU_SOH]
 use [Global]
 go
 
+create user [SUMMERCLASSICS\Svc_WSU_SOH] from login [SUMMERCLASSICS\Svc_WSU_SOH] 
+
+grant select on [Settings].[EmailHeader] to [SUMMERCLASSICS\Svc_WSU_SOH] 
+grant select on [Settings].[EmailMessage] to [SUMMERCLASSICS\Svc_WSU_SOH] 
+
 grant execute on [Settings].[usp_Send_Email] to [SUMMERCLASSICS\Svc_WSU_SOH]
+
+use [msdb];
+go
+create user [SUMMERCLASSICS\Svc_WSU_SOH] for login [SUMMERCLASSICS\Svc_WSU_SOH];
+
+grant execute on [dbo].[sp_send_dbmail] to [SUMMERCLASSICS\Svc_WSU_SOH];
+
+execute msdb.dbo.sysmail_add_principalprofile_sp @profile_name = 'SQL Server',
+												 @principal_name = 'SUMMERCLASSICS\Svc_WSU_SOH',
+												 @is_default = 0; 
+

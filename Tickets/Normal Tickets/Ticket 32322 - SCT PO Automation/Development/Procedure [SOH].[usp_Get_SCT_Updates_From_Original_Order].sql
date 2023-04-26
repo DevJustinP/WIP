@@ -44,7 +44,7 @@ begin
 						union
 						select
 							'DELINF',
-							ac.Telephone collate Latin1_General_BIN,
+							addr.DeliveryPhoneNumber collate Latin1_General_BIN,
 							null as [DateValue]
 						union
 						select
