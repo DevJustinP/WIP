@@ -112,7 +112,8 @@ SELECT @SettingDocument = '
 	<WaitHours>24</WaitHours>
   </StageReprocesses>
   <FileLocations>
-	<AckDocs>\\sql08\P\Services\GWC Service - SOH - SalesOrderHandler\Archive</AckDocs>
+	<AckDocs>\\gwcapps\p$\Services\GWC Service - SOH - SalesOrderHandler\Archive</AckDocs>
+	<sql08email>\\sql08\p\SSIS\Data\Datafeed\Services\SOH</sql08email>
   </FileLocations>
 </Setting>
 ';

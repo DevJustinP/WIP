@@ -9,8 +9,8 @@ go
 =======================================================================
 test:
 
-declare @ProcessNumber as int = 50449,
-	    @SCTNumber as varchar(20) = '100-1057486';
+declare @ProcessNumber as int = 50450,
+	    @SCTNumber as varchar(20) = '100-1057496';
 execute [SOH].[usp_Get_SCT_Updates_From_Original_Order] @ProcessNumber,
 														@SCTNumber
 =======================================================================
