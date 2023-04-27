@@ -113,7 +113,7 @@ SELECT @SettingDocument = '
   </StageReprocesses>
   <FileLocations>
 	<AckDocs>\\gwcapps\p$\Services\GWC Service - SOH - SalesOrderHandler\Archive</AckDocs>
-	<sql08email>\\sql08\p\SSIS\Data\Datafeed\Services\SOH</sql08email>
+	<sql08email>\\sql08\P\Services\GWC Service - SOH - SalesOrderHandler\Archive</sql08email>
   </FileLocations>
 </Setting>
 ';
