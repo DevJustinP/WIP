@@ -11,7 +11,7 @@ go
 					SORTTR object
 ===============================================
 Test:
-declare @ProcessNumber as int = 50452
+declare @ProcessNumber as int = 50246
 execute [SOH].[usp_Get_SORTTR_Object] @ProcessNumber
 ===============================================
 */
@@ -21,6 +21,8 @@ create or alter procedure [SOH].[usp_Get_SORTTR_Object](
 ) 
 as
 begin
+
+	declare @AddressEmptyValue as varchar(5) = '-';
 
 	declare @LinestoSCT table (
 		SalesOrder varchar(20),
@@ -133,21 +135,22 @@ begin
 											for xml path('Parameters'), root('PostSalesOrdersSCT') )
 	declare @SORTTRDoc as xml = (
 									select
-										cast(sm.SalesOrder + ' ' + sm.CustomerName as varchar(20))	[OrderHeader/CustomerPoNumber],
-										warehouse.SourceWarehouse									[OrderHeader/SourceWarehouse],
-										warehouse.TargetWarehouse									[OrderHeader/TargetWarehouse],
-										convert(varchar(10), getdate(), 120)						[OrderHeader/OrderDate],
-										addr.ShippingInstrCode										[OrderHeader/ShippingInstrsCode],
-										addr.ShippingAddress1										[OrderHeader/ShipAddress1],
-										addr.ShippingAddress2										[OrderHeader/ShipAddress2],
-										addr.ShippingAddress3										[OrderHeader/ShipAddress3],
-										addr.ShippingAddress4										[OrderHeader/ShipAddress4],
-										addr.ShippingAddress5										[OrderHeader/ShipAddress5],
-										addr.ShippingPostalCode										[OrderHeader/ShipPostalCode],
-										sm.Email													[OrderHeader/Email],
-										sm.SpecialInstrs											[OrderHeader/SpecialInstrs],
-										sm.StandardComment											[OrderHeader/OrderComments],
-										sm.DocumentFormat											[OrderHeader/DocumentFormat],
+										cast(sm.SalesOrder + ' ' + sm.CustomerName as varchar(20))							[OrderHeader/CustomerPoNumber],
+										warehouse.SourceWarehouse															[OrderHeader/SourceWarehouse],
+										warehouse.TargetWarehouse															[OrderHeader/TargetWarehouse],
+										convert(varchar(10), getdate(), 120)												[OrderHeader/OrderDate],
+										addr.ShippingDescription															[OrderHeader/WarehouseName],
+										addr.ShippingInstrCode																[OrderHeader/ShippingInstrsCode],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress1	,@AddressEmptyValue)	[OrderHeader/ShipAddress1],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress2	,@AddressEmptyValue)	[OrderHeader/ShipAddress2],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3	,@AddressEmptyValue)	[OrderHeader/ShipAddress3],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress4	,@AddressEmptyValue)	[OrderHeader/ShipAddress4],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress5	,@AddressEmptyValue)	[OrderHeader/ShipAddress5],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingPostalCode,@AddressEmptyValue)	[OrderHeader/ShipPostalCode],
+										sm.Email																			[OrderHeader/Email],
+										sm.SpecialInstrs																	[OrderHeader/SpecialInstrs],
+										sm.StandardComment																	[OrderHeader/OrderComments],
+										sm.DocumentFormat																	[OrderHeader/DocumentFormat],
 										(
 										select
 											case

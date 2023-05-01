@@ -24,7 +24,8 @@ begin
 	declare @TodaysDate as date = GetDAte();
 	declare @TodaysDate_Formated as Varchar(10) = format(@TodaysDate, 'yyyy/MM/dd'),
 		    @CONST_A as varchar(2) = 'A',
-			@LeadTime as date
+			@LeadTime as date,
+			@AddressEmptyValue as varchar(5) = '-'
 
 
 	declare @PORTOIParameters as xml = (
@@ -155,21 +156,22 @@ begin
 
 	declare @PORTOIDoc as xml = (
 									select
-										@CONST_A														as [OrderHeader/OrderActionType],
-										supply.SupplierId												as [OrderHeader/Supplier],
-										supply.Warehouse												as [OrderHeader/Warehouse],
-										sm.Customer														as [OrderHeader/Customer],
-										sm.CustomerPoNumber												as [OrderHeader/CustomerPoNumber],
-										@TodaysDate_Formated											as [OrderHeader/OrderDate],
-										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')	as [OrderHeader/DueDate],
-										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')	as [OrderHeader/MemoDate],
-										@CONST_A														as [OrderHeader/ApplyDueDateToLines],
-										addr.ShippingAddress1											as [OrderHeader/DeliveryAddr1],
-										addr.ShippingAddress2											as [OrderHeader/DeliveryAddr2],
-										addr.ShippingAddress3											as [OrderHeader/DeliveryAddr3],
-										addr.ShippingAddress4											as [OrderHeader/DeliveryAddr4],
-										addr.ShippingAddress5											as [OrderHeader/DeliveryAddr5],
-										addr.ShippingPostalCode											as [OrderHeader/PostalCode],
+										@CONST_A																			as [OrderHeader/OrderActionType],
+										supply.SupplierId																	as [OrderHeader/Supplier],
+										supply.Warehouse																	as [OrderHeader/Warehouse],
+										sm.Customer																			as [OrderHeader/Customer],
+										sm.CustomerPoNumber																	as [OrderHeader/CustomerPoNumber],
+										@TodaysDate_Formated																as [OrderHeader/OrderDate],
+										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')						as [OrderHeader/DueDate],
+										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')						as [OrderHeader/MemoDate],
+										@CONST_A																			as [OrderHeader/ApplyDueDateToLines],
+										addr.ShippingDescription															as [OrderHeader/DeliveryName],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress1	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr1],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress2	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr2],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr3],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress4	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr4],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress5	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr5],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingPostalCode,@AddressEmptyValue)	as [OrderHeader/PostalCode],
 										(
 											select
 												case
