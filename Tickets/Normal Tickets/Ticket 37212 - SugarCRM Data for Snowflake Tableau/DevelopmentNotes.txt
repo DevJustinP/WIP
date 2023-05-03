@@ -1,0 +1,18 @@
+Accounts Extract:
+    The following columns are not within the Accounts module or a name convention similar to the following:
+        Customer Class
+        Team Set ID
+        Price Level
+        Customer Level
+        Team Set ID
+        Selected Team Set ID
+        Smart Guide Template
+        rel_csr_c_first_name	
+        rel_csr_c_last_name
+        rel_salesperson1_c_first_name	
+        rel_salesperson1_c_last_name	
+        rel_salesperson3_c_first_name	
+        rel_salesperson3_c_last_name	
+        rel_salesperson2_c_first_name	
+        rel_salesperson2_c_last_name
+
