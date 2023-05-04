@@ -1,0 +1,121 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    types:
+    talendType="id_Date" 
+    talendType="id_String" 
+    talendType="id_Boolean"
+    talendType="id_BigDecimal" 
+
+    relation ship:
+    Subject                 -> "name"
+    ID                      -> "ID"
+    Description             -> "description"
+    Attachment              -> "filename"
+    RelatedToModule         -> "parent_type"
+    RelatedToID             -> "parent_id"
+    ContactID               -> "contact_id"
+    AvailableExternally     ->
+    AssignedUser            - > "assigned_user_name"
+    AssignedUserID          -> "assigned_user_id"
+    TeamID                  -> "team_name[0].id"
+    TeamSetID               ->
+    DateCreated             -> "date_entered"
+    DateModified            -> "date_modified"
+    CreatedByName           -> "created_by_name"
+    CreatedByID             -> "created_by"
+    ModifiedByName          -> "modified_by_name"
+    ModifiedByID            -> "modified_user_id"
+    HasAttachment           -> "has_attachment_c"
+    VisitorID               -> "visitorid_c"
+    Type                    -> 
+    SubType                 ->
+        possible:   
+        source_type     
+        updatetype_c    
+        notetype_c  
+    FileExtension           -> "file_ext"
+    EmailType               -> "email_type"
+    EmailID                 -> "email_id"
+    NoteParentID            -> "note_parent_id"
+    ExternaID               -> "external_id"
+    NoteSoure               -> "entry_source"
+    NoteSourceDisplayLabel  -> 
+    IsAttachemnt            -> "attachment_flag"
+    Tag                     -> "tag"
+    IntegrationSyncID       -> "sync_key"
+    SelectedTeamSetID       -> 
+    Team1                   -> "team_name[0].name"
+    Team2                   -> "team_name[0].name_2"
+    SelectedTeams           -> 
+    ExternalSourceID        -> "source_id"
+    ExternalSource          -> "source_type"
+    ExternalSourceMeta      -> "source_meta"
+    /-->
+<schema>
+    <column comment="" default="" key="false" label="Subject" length="-1" nullable="true"
+        originalDbColumnName="Subject" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="ID" length="-1" nullable="true"
+        originalDbColumnName="ID" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="Description" length="-1" nullable="true"
+        originalDbColumnName="ID" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="Attachment" length="-1" nullable="true"
+        originalDbColumnName="Attachment" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="RelatedToModule" length="-1" nullable="true"
+        originalDbColumnName="RelatedToModule" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="RelatedToID" length="-1" nullable="true"
+        originalDbColumnName="RelatedToID" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="ContactID" length="-1" nullable="true"
+        originalDbColumnName="ContactID" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <!-- AvailableExternally /-->
+    <column comment="" default="" key="false" label="AssignedUser" length="-1" nullable="true"
+        originalDbColumnName="AssignedUser" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="AssignedUserID" length="-1" nullable="true"
+        originalDbColumnName="AssignedUserID" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <column comment="" default="" key="false" label="TeamID" length="-1" nullable="true"
+        originalDbColumnName="TeamID" originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type="" />
+    <!-- TeamSetID /-->
+    <column comment="" default="" key="false" label="DateCreated" length="-1" nullable="true"
+        originalDbColumnName="DateCreated" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="DateModified" length="-1" nullable="true"
+        originalDbColumnName="DateModified" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="CreatedByName" length="-1" nullable="true"
+        originalDbColumnName="CreatedByName" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="CreatedByID" length="-1" nullable="true"
+        originalDbColumnName="CreatedByID" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="ModifiedByName" length="-1" nullable="true"
+        originalDbColumnName="ModifiedByName" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="ModifiedByID" length="-1" nullable="true"
+        originalDbColumnName="ModifiedByID" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="HasAttachment" length="-1" nullable="true"
+        originalDbColumnName="HasAttachment" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+    <column comment="" default="" key="false" label="VisitorID" length="-1" nullable="true"
+        originalDbColumnName="VisitorID" originalLength="-1" 
+        pattern="yyyy-MM-dd'T'hh:SS:mm" precision="-1"
+        talendType="id_Date" type="" />
+</schema>
