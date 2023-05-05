@@ -18,15 +18,15 @@ GO
 					Active Directory
 ==================================================================\
 	Modifier:		Justin Pope
-	Modified Date:	2023 - 03 - 17
-	Description:	Updated procedure to search for the active
-					directory group Gabby Sales Reps
+	Modified Date:	2023 - 05 - 05
+	Description:	Updated procedure to look at the Sysprodb7
+					AdmOperator table to populate the table
 ==================================================================
 Test:
 	execute [dbo].[usp_Update_Reference_CustomerServiceRep]
 ==================================================================
 */
-ALTER PROCEDURE [dbo].[usp_Update_Reference_CustomerServiceRep]
+Create or Alter PROCEDURE [dbo].[usp_Update_Reference_CustomerServiceRep]
 AS
 SET XACT_ABORT ON
 BEGIN
@@ -35,43 +35,25 @@ BEGIN
 
   BEGIN TRY
 
-    DECLARE @DistinguishedName1 AS VARCHAR(1024) =   'CN=GWC_SGA_M-Files-Customer-Service,'
-                                                  + 'OU=GWC_SGA_Security-Group-Activity,'
-                                                  + 'OU=GWC_Global-Group,'
-                                                  + 'OU=GWC-Departments,'
-                                                  + 'DC=SummerClassics,DC=msft'
-		   ,@DistinguishedName2 as varchar(100) = 'Gabby Sales Reps'
-           ,@RunDateTime       AS VARCHAR(23)   = FORMAT(GETDATE(), 'yyyy-MM-dd HH:mm:ss.fff')
-		   ,@Const_DistinguishedName as varchar(20) = '<DistinguishedName>';
-	Declare @Const_Command as varchar(8000) = 'P:&PowerShell.exe -NoProfile -File ".\Update_Reference_CustomerServiceRep.ps1" -RunDateTime "'+@RunDateTime+
-											  '" -DistinguishedName "'+@Const_DistinguishedName+'"'
-	       ,@Command as varchar(8000) = '';
-											  
-	set @Command = REPLACE(@Const_Command, @Const_DistinguishedName, @DistinguishedName1);
-    EXECUTE master..xp_cmdshell @Command, no_output;
-	set @Command = REPLACE(@Const_Command, @Const_DistinguishedName, @DistinguishedName2);
-    EXECUTE master..xp_cmdshell @Command, no_output;
-
     BEGIN TRANSACTION;
 
-      DELETE FROM PRODUCT_INFO.dbo.CustomerServiceRep;
+      With CustomerReps as (
+							select
+								o.[Name],
+								o.[Email]
+							from [Sysprodb7].[dbo].[AdmOperator] o
+								inner join [SysproCompany100].[dbo].[AdmOperator+] as op on op.Operator = o.Operator
+							where op.IncludeInCsrList = 'Y' )
 
-      INSERT INTO PRODUCT_INFO.dbo.CustomerServiceRep (
-         [CustomerServiceRep]
-        ,[EmailAddress]
-      )
-      SELECT [DisplayName] AS [CustomerServiceRep]
-            ,[Mail]        AS [EmailAddress]
-      FROM PRODUCT_INFO.dbo.CustomerServiceRep_Temp
-      WHERE [ObjectClass] = 'user'
-        AND [RunDateTime] = @RunDateTime
-      GROUP BY [DisplayName]
-              ,[Mail];
-
-      DELETE
-      FROM PRODUCT_INFO.dbo.CustomerServiceRep_Temp
-      WHERE [RunDateTime] = @RunDateTime
-         OR [RunDateTime] < DATEADD(DAY, -3, @RunDateTime);
+	merge into PRODUCT_INFO.dbo.CustomerServiceRep R
+	using CustomerReps T on T.[Name] = R.[CustomerServiceRep]
+	when Matched then
+		update set [EmailAddress] = T.[Email]
+	when not matched by TARGET then
+		insert ([CustomerServiceRep],[EmailAddress])
+		values (T.[Name],T.[Email])
+	when not matched by SOURCE then
+		delete;
 
     COMMIT TRANSACTION;
 

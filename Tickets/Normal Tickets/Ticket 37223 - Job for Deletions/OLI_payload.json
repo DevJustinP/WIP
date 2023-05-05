@@ -1,0 +1,13 @@
+{
+    "job_module" : "WOLI1_OrderLineItems",
+    "job" : "Delete",
+    "context":{
+        "fields":{
+            "initial_line_number_c":"123",
+            "lookup_order_number":"301-123456"
+        }
+    }
+    "options":{
+        //options
+    }
+}

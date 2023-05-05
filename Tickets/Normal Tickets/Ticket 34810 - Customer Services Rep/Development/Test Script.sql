@@ -1,31 +1,63 @@
+select
+	r.CustomerServiceRep,
+	r.EmailAddress,
+	[Update].[Name],
+	[Update].[Email],
+	case
+		when [Update].[Name] is null then 'Delete'
+		when [Update].[Email] <> r.EmailAddress then 'Update Address - ' + r.EmailAddress
+		when r.[CustomerServiceRep] is null then 'Add Rep - ' + [Update].[Name]
+		else 'No Update'
+	end [UpdateAction]
+into #Prediction
+from [PRODUCT_INFO].[dbo].CustomerServiceRep r
+	full outer join (
+						select
+							o.[Name],
+							o.[Email]
+						from [Sysprodb7].[dbo].[AdmOperator] o
+							inner join [SysproCompany100].[dbo].[AdmOperator+] as op on op.Operator = o.Operator
+						where op.IncludeInCsrList = 'Y' ) [Update] on [Update].[Name] = r.CustomerServiceRep
 
-    DECLARE @DistinguishedName1 AS VARCHAR(1024) =   'CN=GWC_SGA_M-Files-Customer-Service,'
-                                                  + 'OU=GWC_SGA_Security-Group-Activity,'
-                                                  + 'OU=GWC_Global-Group,'
-                                                  + 'OU=GWC-Departments,'
-                                                  + 'DC=SummerClassics,DC=msft'
-		   ,@DistinguishedName2 as varchar(100) = 'Gabby Sales Reps'
-           ,@RunDateTime       AS VARCHAR(23)   = FORMAT(GETDATE(), 'yyyy-MM-dd HH:mm:ss.fff')
-		   ,@Const_DistinguishedName as varchar(20) = '<DistinguishedName>';
-	Declare @Const_Command as varchar(8000) = 'P:&PowerShell.exe -NoProfile -File ".\Update_Reference_CustomerServiceRep.ps1" -RunDateTime "'+@RunDateTime+
-											  '" -DistinguishedName "'+@Const_DistinguishedName+'"'
-	       ,@Command as varchar(8000) = '';
-											  
-	set @Command = REPLACE(@Const_Command, @Const_DistinguishedName, @DistinguishedName1);
-    EXECUTE master..xp_cmdshell @Command, no_output;
-	set @Command = REPLACE(@Const_Command, @Const_DistinguishedName, @DistinguishedName2);
-    EXECUTE master..xp_cmdshell @Command, no_output;
+select * from #Prediction
 
-	
-      SELECT [DisplayName] AS [CustomerServiceRep]
-            ,[Mail]        AS [EmailAddress]
-      FROM PRODUCT_INFO.dbo.CustomerServiceRep_Temp
-      WHERE [ObjectClass] = 'user'
-        AND [RunDateTime] = @RunDateTime
-      GROUP BY [DisplayName]
-              ,[Mail];
+	execute [dbo].[usp_Update_Reference_CustomerServiceRep]
 
-      DELETE
-      FROM PRODUCT_INFO.dbo.CustomerServiceRep_Temp
-      WHERE [RunDateTime] = @RunDateTime
-         OR [RunDateTime] < DATEADD(DAY, -3, @RunDateTime);
+select 
+	isnull(r.CustomerServiceRep, p.CustomerServiceRep) as [CustomerServiceRep],
+	r.EmailAddress,
+	p.UpdateAction,
+	[Test].Passed
+from [PRODUCT_INFO].[dbo].CustomerServiceRep r
+	full outer join #Prediction p on (p.CustomerServiceRep = r.CustomerServiceRep or p.[Name] = r.CustomerServiceRep)
+	cross apply (
+					Select top 1
+						[Tests].[Passed]
+					from (
+						select
+							1 as [Passed]
+						where p.[UpdateAction] = 'No Update'
+							and r.EmailAddress = p.EmailAddress
+						union
+						select
+							1 as [Passed]
+						where p.[UpdateAction] = 'Delete'
+							and r.CustomerServiceRep is null
+						union
+						select
+							1 as [Passed]
+						where p.[UpdateAction] like 'Update Address%'
+							and r.EmailAddress <> p.[EmailAddress]
+							and r.EmailAddress = p.[Email]
+						union
+						select
+							1 as [Passed]
+						where p.[UpdateAction] like 'Add Rep%'
+							and p.CustomerServiceRep is null
+							and p.[Name] = r.CustomerServiceRep
+						union
+						select
+							0 as [Passed] ) [Tests]
+					order by [Passed] desc ) [Test]
+
+drop table #Prediction
