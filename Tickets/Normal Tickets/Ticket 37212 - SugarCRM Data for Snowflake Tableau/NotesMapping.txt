@@ -7,11 +7,11 @@
     RelatedToModule         -> "parent_type"
     RelatedToID             -> "parent_id"
     ContactID               -> "contact_id"
-    AvailableExternally     ->
+    AvailableExternally     -> ignore
     AssignedUser            - > "assigned_user_name"
     AssignedUserID          -> "assigned_user_id"
     TeamID                  -> "team_name[0].id"
-    TeamSetID               ->
+    TeamSetID               -> ignore
     DateCreated             -> "date_entered"
     DateModified            -> "date_modified"
     CreatedByName           -> "created_by_name"
@@ -20,26 +20,26 @@
     ModifiedByID            -> "modified_user_id"
     HasAttachment           -> "has_attachment_c"
     VisitorID               -> "visitorid_c"
-    Type                    -> 
-    SubType                 ->
+    Type                    -> updatetype_c 
+    SubType                 ->notetype_c
         possible:   
         source_type     
-        updatetype_c    
-        notetype_c  
+           
+          
     FileExtension           -> "file_ext"
     EmailType               -> "email_type"
     EmailID                 -> "email_id"
     NoteParentID            -> "note_parent_id"
     ExternaID               -> "external_id"
     NoteSoure               -> "entry_source"
-    NoteSourceDisplayLabel  -> 
+    NoteSourceDisplayLabel  -> ignore
     IsAttachemnt            -> "attachment_flag"
     Tag                     -> "tag"
     IntegrationSyncID       -> "sync_key"
-    SelectedTeamSetID       -> 
+    SelectedTeamSetID       -> ignore
     Team1                   -> "team_name[0].name"
     Team2                   -> "team_name[0].name_2"
-    SelectedTeams           -> 
+    SelectedTeams           -> ignore
     ExternalSourceID        -> "source_id"
     ExternalSource          -> "source_type"
     ExternalSourceMeta      -> "source_meta"
