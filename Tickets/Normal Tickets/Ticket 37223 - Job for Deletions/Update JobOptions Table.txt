@@ -1,0 +1,28 @@
+Design:
+    Currently the following procedures are hard coded with the export types for each export within the SugarCrm ETL routine:
+        GetActiveExportTypes
+        GetJSONDataByType
+        FlagRecordsAsSubmitted
+
+    Instead of having hard coded values set on each procedure the following should be done:
+
+    1) Table [SugarCrm].[JobOptions]
+
+        add columns:
+            sp_Update
+            tvf_Dataset
+            svf_Payload
+            sp_Flag
+
+    2) Update procedures to create an executetable query
+        2.a) GetActiveExportTypes 
+            - Query active JobOptions
+            - Cursor over each Option type building a sql statement to execute the update procedure and query the tvf dataset gettting count
+            - build return of Export Type and count
+        2.b) GetJSONDataByType 
+            - query JobOptions by export type to get the svf_Payload
+            - build sql string to build using the svf_Payload
+            - return json payload 
+        2.c) FlagRecordsAsSubmitted 
+            - Query JobOptions by export type to get the sp_Flag
+            - build sql string to execute the proceudre to flag records as submitted
