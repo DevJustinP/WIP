@@ -1,0 +1,20 @@
+Design:
+
+    new export type OLI Deletions
+    
+    SQL Objects
+        - New JobOptions record for new type 'Order Line Items Delete'
+        - Table SalesOrderLineDelete_Ref
+            Columns:
+            - Line Number
+            - Sales Order
+            - Deletion Submitted
+        - Table SalesOrderLineDeleteExport_Archive
+        - Procedure UpdateSalesORderLineDeleteReferenceTable
+        - modify procedure GetJSONDataByType adding type 'Order Line Items Delete'
+        - tvf for json format payload for API            
+        - Proc for OLI_Deletions_Archive
+            insert into OLI_Deletions_Archive
+            delete from SalesOrderLine_Ref
+            delete from SalesOrderLineDelete_Ref
+            delete from OLI
