@@ -15,4 +15,5 @@ go
 insert into [SOH].[Order_Processes]
 values (0, 'Dispatch', 1), (1, 'BackOrder', 1)
 
-select * from [SOH].[Order_Processes]
+update [SOH].[Order_Processes]
+	set Enabled = 
