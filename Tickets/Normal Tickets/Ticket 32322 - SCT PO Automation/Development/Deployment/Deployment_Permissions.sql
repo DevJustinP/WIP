@@ -24,7 +24,7 @@ grant execute on [SOH].[BuildPOAcknowledgement] to [SUMMERCLASSICS\Svc_WSU_SOH]
 
 use [SysproCompany100]
 go
-b
+
 grant select on [dbo].[SorMaster] to [SUMMERCLASSICS\Svc_WSU_SOH]
 grant select on [dbo].[SorDetail] to [SUMMERCLASSICS\Svc_WSU_SOH]
 grant select on [dbo].[CusSorMaster+] to [SUMMERCLASSICS\Svc_WSU_SOH]

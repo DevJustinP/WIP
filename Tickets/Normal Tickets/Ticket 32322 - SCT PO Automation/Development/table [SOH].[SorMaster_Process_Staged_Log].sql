@@ -1,7 +1,7 @@
 use [SysproDocument]
 go
 
- drop table if exists [SOH].[SorMaster_Process_Staged_Log]
+drop table if exists [SOH].[SorMaster_Process_Staged_Log]
 go
 
 create table [SOH].[SorMaster_Process_Staged_Log](

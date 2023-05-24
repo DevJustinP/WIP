@@ -166,11 +166,12 @@ begin
 										format(isnull(csm.NoEarlierThanDate, getdate()), 'yyyy/MM/dd')						as [OrderHeader/MemoDate],
 										@CONST_A																			as [OrderHeader/ApplyDueDateToLines],
 										addr.ShippingDescription															as [OrderHeader/DeliveryName],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress1	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr1],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress2	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr2],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr3],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress4	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr4],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress5	,@AddressEmptyValue)	as [OrderHeader/DeliveryAddr5],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress1,@AddressEmptyValue)		as [OrderHeader/DeliveryAddr1],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress2,@AddressEmptyValue)		as [OrderHeader/DeliveryAddr2],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3,@AddressEmptyValue)		as [OrderHeader/DeliveryAddr3],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3Loc,@AddressEmptyValue)	as [OrderHeader/DeliveryAddrLoc],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress4,@AddressEmptyValue)		as [OrderHeader/DeliveryAddr4],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress5,@AddressEmptyValue)		as [OrderHeader/DeliveryAddr5],
 										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingPostalCode,@AddressEmptyValue)	as [OrderHeader/PostalCode],
 										(
 											select

@@ -4,7 +4,8 @@ Declare @StorePhoneNumber as table (
 )
 
 insert into @StorePhoneNumber
-values ('','')
+values 
+('','')
 
 merge [SysproCompany100].[dbo].[SalBranch+] b
 	using @StorePhoneNumber sp on sp.Branch = b.Branch collate Latin1_General_BIN

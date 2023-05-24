@@ -22,7 +22,7 @@ create or alter procedure [SOH].[usp_Get_SORTTR_Object](
 as
 begin
 
-	declare @AddressEmptyValue as varchar(5) = '-';
+	declare @AddressEmptyValue as varchar(5) = '---';
 
 	declare @LinestoSCT table (
 		SalesOrder varchar(20),
@@ -141,12 +141,13 @@ begin
 										convert(varchar(10), getdate(), 120)												[OrderHeader/OrderDate],
 										addr.ShippingDescription															[OrderHeader/WarehouseName],
 										addr.ShippingInstrCode																[OrderHeader/ShippingInstrsCode],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress1	,@AddressEmptyValue)	[OrderHeader/ShipAddress1],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress2	,@AddressEmptyValue)	[OrderHeader/ShipAddress2],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3	,@AddressEmptyValue)	[OrderHeader/ShipAddress3],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress4	,@AddressEmptyValue)	[OrderHeader/ShipAddress4],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress5	,@AddressEmptyValue)	[OrderHeader/ShipAddress5],
-										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingPostalCode,@AddressEmptyValue)	[OrderHeader/ShipPostalCode],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress1, @AddressEmptyValue)		[OrderHeader/ShipAddress1],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress2, @AddressEmptyValue)		[OrderHeader/ShipAddress2],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3, @AddressEmptyValue)		[OrderHeader/ShipAddress3],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress3Loc, @AddressEmptyValue)	[OrderHeader/ShipAddress3Loc],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress4, @AddressEmptyValue)		[OrderHeader/ShipAddress4],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingAddress5, @AddressEmptyValue)		[OrderHeader/ShipAddress5],
+										[dbo].[svf_ReplaceEmptyOrNullString](addr.ShippingPostalCode, @AddressEmptyValue)	[OrderHeader/ShipPostalCode],
 										sm.Email																			[OrderHeader/Email],
 										sm.SpecialInstrs																	[OrderHeader/SpecialInstrs],
 										sm.StandardComment																	[OrderHeader/OrderComments],

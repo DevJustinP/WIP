@@ -1,0 +1,95 @@
+What is needed:
+    1) Changes Verifcations:
+        One more look at changes that have been made and are needed
+
+    2) Test Plan:
+        Create a test plan for each of the changes made
+
+            Databases:
+
+                2Ship
+                    Changes:
+                        table
+                            Temp_ActivePickSlipWaybill_Stage
+                        function
+                            tvf_ActivePickSlipWaybill
+                        procedure
+                            usp_Stage_ActivePickSlipWaybill_Set
+
+                    Testing:
+                        1) executing usp_Stage_ActivePickSlipWaybill_set to validate changes
+                            verfication to ensure that fields are mapped straight from WarehouseCompany100.dbo.tblPickingSlipSource -> 
+                            2Ship.dbo.Stage_ActivePickSlipWaybill 
+                        2) execution of the Integration - 2Ship - GetChagnes and ShipHold job
+                            including the confirmation from above, this will hit the api and confirm that the pay load does not throw validation issues
+
+                Accounting
+                    Changes:
+                        table
+                            CIT_CreditRequest_FlatFile_Record_1_NameAddress
+                            CIT_DetailedInvoice_FlatFile_Record_1_NameAddress
+                            WellsFargo.WF_DD
+                            WellsFargo.WF_PAB
+                            WellsFargo.WF_PAO
+                            WellsFargo.WF_PAR
+                        function
+                            tvf_CIT_DetailedInvoice
+                            tvf_CIT_CreditRequest
+                        procedure
+
+                    Testing:
+                        1) execution of dbo.CIT_DetailedInvoice_Stage
+                            This will validate changes made to:
+                                tvf_CIT_DetailedInvoice
+                                CIT_DetailedInvoice_FlatFile_Record_1_NameAddress
+                            Consideration of setup to stage data
+                            verify data in the table CIT_DetailedInvoice_Stage
+                        2) execution of dbo.CIT_CreditRequest_Stage
+                            This will validate changes made to:
+                                tvf_CIT_CreditRequest
+                                CIT_CreditRequest_FlatFile_Record_1_NameAddress
+                            Consideration of setup to stage data 
+                            varify data in the table CIT_CreditRequest_Stage
+                        3) exection of WellsFargo.BuildFile
+                            This will validate the following changes:
+                                WellsFargo.WF_DD
+                                WellsFargo.WF_PAB
+                                WellsFargo.WF_PAO
+                                WellsFargo.WF_PAR
+                            varify data in the table WellsFargo.WF_FILE
+
+                Datafeed
+                    Changes:
+                        Table
+                            OrderXpert_Raw_Header
+                            OrderXpert_Temp_Stage_Header
+                        procedure
+                            usp_OrderXpert_Prep_SalesOrder_Document_Order
+                            usp_OrderXpert_Prep_SalesOrder_Stage_Header
+
+                    Testing:
+                        ***** Are these changes needed *****
+                            Looking for testing and can 
+                            not find app that calls procs
+                        *****                          *****
+                        1) execute usp_OrderXpert_SalesORder_1_Order_Document
+                            validate the business object that is returned from the stored proc
+
+                DataWarehouse
+                    Changes:
+                        Table
+                            Stage.ArCustomer
+
+                    Testing:
+
+
+                DBAdmin
+                Ecat
+                PRODUCT_INFO
+                SysproDocument
+                Transport
+            Applications:
+                B2C-ImportSystem
+                EcatSalesOrderImport
+                GWC-Service-eCat-Stage
+                SPS-EDI-System
