@@ -21,4 +21,5 @@ return
 		r.[SalesOrder],
 		r.[SalesOrderInitLine]
 	from [SugarCrm].[SalesOrderLineDelete_Ref] r
-	where r.[Submitted] = 0
+	where r.[Submitted] = 0;
+go
