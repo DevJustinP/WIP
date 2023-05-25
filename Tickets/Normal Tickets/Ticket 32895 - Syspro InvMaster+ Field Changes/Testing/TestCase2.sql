@@ -173,3 +173,8 @@ select top 2
 	*
 from [SysproCompany100_Audit].[Stage].[InvMaster+]
 order by Audit_DateTime desc
+
+select top 2
+	*
+from [SysproCompany100_Audit].[Archive].[InvMaster+]
+order by Audit_DateTime desc
