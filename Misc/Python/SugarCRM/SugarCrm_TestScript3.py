@@ -3,8 +3,8 @@ import requests
 import json
 from SugarCrm_Functions import get_access_token
 
-UserName = sys.argv[0]
-Password = sys.argv[1]
+UserName = sys.argv[1]
+Password = sys.argv[2]
 
 print(UserName)
 print(Password)
