@@ -1,0 +1,18 @@
+user extract
+    5/6 hours
+notes extract
+    0/4 hours
+Accounts
+    16/16 hours
+Traffic
+    4/4 hours
+Leads
+    0/8 hours
+xOpportunites
+    0/6 Hours
+Quotes
+    0/4 Hours
+QuotedLineItems
+    0/4 hours
+Contacts
+    0/16 hours
