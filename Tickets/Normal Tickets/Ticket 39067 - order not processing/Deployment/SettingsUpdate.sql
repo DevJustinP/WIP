@@ -111,7 +111,7 @@ declare @XML as xml = '<Setting Type="Service" Name="Sales Order Handler Service
   </TimerIntervals>
   <StageReprocesses>
     <count>10</count>
-    <WaitHours>0.25</WaitHours>
+    <WaitHours>24</WaitHours>
   </StageReprocesses>
   <FileLocations>
     <AckDocs>\\gwcapps\p$\Services\GWC Service - SOH - SalesOrderHandler\Archive</AckDocs>
