@@ -100,13 +100,13 @@ declare @XML as xml = '<Setting Type="Service" Name="Sales Order Handler Service
   <TimerIntervals>
 	 <OrderProcess>
 	  <Minutes>5</Minutes>
-	  <StartTime>0700</StartTime>
-	  <EndTime>2200</EndTime>
+	  <StartTime>0400</StartTime>
+	  <EndTime>2300</EndTime>
 	 </OrderProcess>
 	 <Staging>
 	  <Minutes>60</Minutes>
-	  <StartTime>0700</StartTime>
-	  <EndTime>2200</EndTime>
+	  <StartTime>0400</StartTime>
+	  <EndTime>2300</EndTime>
 	 </Staging>
   </TimerIntervals>
   <StageReprocesses>
