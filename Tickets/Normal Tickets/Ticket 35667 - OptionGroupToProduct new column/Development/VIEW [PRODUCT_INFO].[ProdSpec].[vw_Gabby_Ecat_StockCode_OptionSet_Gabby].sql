@@ -60,6 +60,7 @@ AS (
 					FROM ProdSpec.Options o
 					WHERE p.OptionGroup = o.OptionGroup and o.[UploadToEcatGabbyWholesale] = 1 
 					and p.[UploadToEcatGabbyWholesale] = 1			--SDM32406
+					and p.ExcludeFromEcatMatrix = 0
 					)
 			ORDER BY Optiongroup
 			FOR XML PATH('')
@@ -74,6 +75,7 @@ AS (
 					FROM ProdSpec.Options o
 					WHERE p.OptionGroup = o.OptionGroup and o.[UploadToEcatGabbyWholesale] = 1 
 					and p.[UploadToEcatGabbyWholesale] = 1			--SDM32406
+					and p.ExcludeFromEcatMatrix = 0
 					)
 			FOR XML PATH('')
 			)
