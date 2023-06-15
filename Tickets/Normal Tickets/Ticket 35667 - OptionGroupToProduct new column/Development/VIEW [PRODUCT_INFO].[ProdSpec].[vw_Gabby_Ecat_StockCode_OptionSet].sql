@@ -57,6 +57,7 @@ AS (
 					SELECT 1
 					FROM ProdSpec.Options o
 					WHERE p.OptionGroup = o.OptionGroup
+						and p.ExcludeFromEcatMatrix = 0
 					)
 			ORDER BY Optiongroup
 			FOR XML PATH('')
@@ -70,6 +71,7 @@ AS (
 					SELECT 1
 					FROM ProdSpec.Options o
 					WHERE p.OptionGroup = o.OptionGroup
+						and p.ExcludeFromEcatMatrix = 0
 					)
 			FOR XML PATH('')
 			)
