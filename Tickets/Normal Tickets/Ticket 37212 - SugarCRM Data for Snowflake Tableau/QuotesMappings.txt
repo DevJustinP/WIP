@@ -1,0 +1,25 @@
+ID	Date Quote Submitted	Customer PO	Date Shipped	Ship Preference	Delivery Type	Delivery Notes	Bill To Street	Bill To City	Bill To PostalCode	Bill To State	Bill To Country	Ship To Street	Ship To State	Ship To City	Ship To Country	Ship To PostalCode	Follow Up Date	Requested Project Completion Date	Furniture Collections	Area To Furnish	Budget for Project	Purchase Date to Meet Completion Date	Tag For	Address Type	Ordered By	Weighted Forecast	Expected Close Date	Next Step	xOpportunity (Project)	Expected Close Month	Probability %	Probability Amount	Converted Amount	Order Date	Buyer email	Pipeline Status	xQuote Terms	xSCC/Gabby/WJ	xForecast Amount	xStatus	Quote Total	Branch	Ship To Company Name	Subtotal	Channel	updatesubtotal	primaryquote	Version	BuyerFirstName	buyerlastname	customername
+ProjectName
+Discount Level
+Account Name (related Account ID)
+Base Rate
+Currency ID
+Quote Reference Number
+Date Created
+Date Modified
+Modified By ID
+Created By ID
+Notes
+Deleted
+Tags
+Integration Sync ID
+Team ID
+Team Set ID
+Selected Team Set ID
+Teams
+Selected Teams
+Assigned User ID
+Account Name
+Assigned User
+Modified By Name
+Created By Name

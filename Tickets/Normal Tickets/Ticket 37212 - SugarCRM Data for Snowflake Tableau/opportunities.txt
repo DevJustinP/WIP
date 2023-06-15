@@ -1,0 +1,74 @@
+ID -> "id" varchar(40)
+Name -> "name" varchar(100)
+Date Created -> "date_entered" datetime "2023-06-14T15:38:56-05:00"
+Date Modified -> "date_modified" datetime "2023-06-14T15:38:56-05:00"
+Modified By ID -> "modified_user_id" varchar(40)
+Modified By Name -> "modified_user_name" varchar(100)
+Created By ID -> "created_by" varchar(40)
+Created By Name -> "created_by_name" varchar(100)
+Description -> "description" varchar(100)
+Deleted -> "deleted" boolean
+Type -> "opportunity_type" varchar(20)
+Account Name -> "account_name" varchar(100)
+Account ID -> "account_id" varchar(40)
+Campaign ID -> "campaign_id" varchar(40)
+Lead Source -> "lead_source" varchar(5)
+Converted Amount -> "amount" decimal
+Expected Close Date -> "date_closed" datetime "2024-01-01"
+Expected Close Date Timestamp -> "date_closed_timestamp" integer
+Next Step -> "next_step" varchar(20)
+Sales Stage -> "sales_stage" varchar(30)
+Status -> "sales_status" varchar(15)
+Probability (%) -> "probability" integer
+Best -> "best_case" decimal 
+Worst -> "worst_case" decimal
+Forecast Stage -> "commit_stage" varchar(20)
+Forecasted Likely -> "forecast_likely" decimal
+Lost -> "lost" decimal
+# of Closed Won Revenue Line Items -> "closed_won_revenue_line_items" integer
+Service Start Date -> "service_start_date" datetime "2024-01-01"
+# of Closed Revenue Line Items -> "service_open_revenue_line_items" integer
+# of Total Revenue Line Items -> "total_revenue_line_items" integer
+# of Closed Revenue Line Items -> "closed_revenue_line_items" integer 
+# of Included Revenue Line Items -> "included_revenue_line_items" integer
+Renewal Parent ID -> "renewal_parent_id" varchar(40)
+Prediction Value -> "ai_opp_conv_score_absolute" varchar(10)
+Prediction Bin Accuracy -> "ai_opp_conv_bin_accuracy" varchar(10)
+Prediction Multiplier -> "ai_opp_conv_multiplier" varchar(10)
+Service Duration Value -> "service_duration_value" varchar(10)
+Service Duration Unit -> "service_duration_unit" varchar(10)
+# of Open Service Flex-duration Revenue Line Items -> "service_open_flex_duration_rlis" integer
+Geocode Status -> "geocode_status" varchar(10)
+Sync to Marketo&reg; -> "mkto_sync" boolean
+Marketo Lead ID -> "mkto_id" varchar(40)
+Close Week Prediction Scores -> "ai_opp_close_week_scores" varchar(10)
+Renewal	Prediction -> "renewal" boolean
+Tags -> json array parse "tag" varchar(100)
+Integration Sync ID -> "sync_key" varchar(10)
+Assigned User ID -> "assigned_user_id" varchar(40)
+Assigned User Name -> "assigned_user_name" varchar(100)
+Team ID -> "team_count_link.id" varchar(40)
+Teams ->  json array parse "team_name"
+          pull name
+          varchar(100)
+Selected Teams -> json array parse "team_name"
+                  find selected = true
+                  pull name
+                  varchar(100)
+Selected Team Set ID -> json array parse "team_name"
+                  find selected = true
+                  pull id
+                  varchar(100)
+Currency ID -> "currency_id" integer
+Currency Rate -> "base_rate" decimal
+Escalated -> "is_escalated" boolean 
+Purchaser -> "purchaser_c" varchar(10)
+Specifier -> "specifier_c" varchar(10)
+Expected PO Receipt Date -> "date_expect_po_c" datetime "2024-01-01"
+
+Likely
+Team Set ID
+Market Segment
+Specifier (related Account ID)
+Purchaser (related Account ID)
+Smart Guide Template

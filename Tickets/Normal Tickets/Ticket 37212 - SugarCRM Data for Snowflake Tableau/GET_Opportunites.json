@@ -1,0 +1,183 @@
+{
+    "id": "7bbddb70-0af3-11ee-8871-06156affe90a",
+    "name": "RD Collaborative - June 2023",
+    "date_entered": "2023-06-14T15:38:56-05:00",
+    "date_modified": "2023-06-14T15:38:56-05:00",
+    "modified_user_id": "ddda48a9-9d8b-4d0e-9efe-bbbe121daa4a",
+    "modified_by_name": "Johana Trejo",
+    "modified_user_link": {
+        "full_name": "Johana Trejo",
+        "id": "ddda48a9-9d8b-4d0e-9efe-bbbe121daa4a",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "created_by": "ddda48a9-9d8b-4d0e-9efe-bbbe121daa4a",
+    "created_by_name": "Johana Trejo",
+    "created_by_link": {
+        "full_name": "Johana Trejo",
+        "id": "ddda48a9-9d8b-4d0e-9efe-bbbe121daa4a",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "description": "Headquartered in Long Beach, CA.",
+    "deleted": false,
+    "opportunity_type": "New Business",
+    "account_name": "CONTRACT ACCOUNT FOR OPPORTUNITIES",
+    "accounts": {
+        "name": "CONTRACT ACCOUNT FOR OPPORTUNITIES",
+        "id": "04c14954-9e8c-11ed-b848-02d962f59f52",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "account_id": "04c14954-9e8c-11ed-b848-02d962f59f52",
+    "campaign_id": "",
+    "campaign_name": "",
+    "campaign_opportunities": {
+        "name": "",
+        "id": "",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "lead_source": "",
+    "amount": "0.000000",
+    "amount_usdollar": "0.000000",
+    "date_closed": "2024-01-01",
+    "date_closed_timestamp": 0,
+    "next_step": "",
+    "sales_stage": "Qualification",
+    "sales_status": "New",
+    "probability": 20,
+    "best_case": "0.000000",
+    "worst_case": "0.000000",
+    "commit_stage": "",
+    "forecasted_likely": "0.000000",
+    "lost": "0.000000",
+    "commit_stage_cascade": "",
+    "closed_won_revenue_line_items": 0,
+    "service_start_date": "",
+    "service_open_revenue_line_items": null,
+    "service_start_date_cascade": "",
+    "total_revenue_line_items": 0,
+    "closed_revenue_line_items": 0,
+    "included_revenue_line_items": 0,
+    "renewal_parent_id": "",
+    "renewal_parent_name": "",
+    "renewal_parent": {
+        "name": "",
+        "id": "",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "widget_sales_stage": "",
+    "widget_date_closed": "",
+    "widget_amount": "",
+    "sales_stage_cascade": "",
+    "date_closed_cascade": "",
+    "contact_role": "",
+    "ai_opp_conv_score_absolute": null,
+    "ai_opp_conv_bin_accuracy": null,
+    "ai_opp_conv_multiplier": null,
+    "service_duration_value": null,
+    "service_duration_unit": "",
+    "service_duration_value_cascade": null,
+    "service_duration_unit_cascade": "",
+    "service_open_flex_duration_rlis": 0,
+    "geocode_status": "",
+    "mkto_sync": false,
+    "mkto_id": null,
+    "ai_opp_close_week_scores": null,
+    "renewal": false,
+    "ai_opp_conv_score_enum": "",
+    "following": false,
+    "my_favorite": false,
+    "tag": [],
+    "locked_fields": [],
+    "sync_key": "",
+    "assigned_user_id": "ddda48a9-9d8b-4d0e-9efe-bbbe121daa4a",
+    "assigned_user_name": "Johana Trejo",
+    "assigned_user_link": {
+        "full_name": "Johana Trejo",
+        "id": "ddda48a9-9d8b-4d0e-9efe-bbbe121daa4a",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "team_count": "",
+    "team_count_link": {
+        "team_count": "",
+        "id": "eef5354c-c2e5-11ea-88ae-02c180ed988e",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "team_name": [
+        {
+            "id": "1",
+            "name": "Global",
+            "name_2": "",
+            "primary": false,
+            "selected": false
+        },
+        {
+            "id": "eef5354c-c2e5-11ea-88ae-02c180ed988e",
+            "name": "Contract Users - All",
+            "name_2": "",
+            "primary": true,
+            "selected": false
+        }
+    ],
+    "currency_id": "-99",
+    "base_rate": "1.000000",
+    "currency_name": "",
+    "currencies": {
+        "name": "",
+        "id": "-99",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        },
+        "symbol": ""
+    },
+    "currency_symbol": "",
+    "is_escalated": false,
+    "dri_workflow_template_id": "",
+    "dri_workflow_template_name": "",
+    "dri_workflow_template_link": {
+        "name": "",
+        "id": "",
+        "_acl": {
+            "fields": [],
+            "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+        }
+    },
+    "purchaser_c": "",
+    "specifier_c": "",
+    "marketsegment_c": "Multi Family",
+    "denorm_account_name": "CONTRACT ACCOUNT FOR OPPORTUNITIES",
+    "last_activity_c": "2023-06-14T13:30:00-05:00",
+    "last_note_c": "",
+    "last_call_c": "",
+    "last_email_c": "",
+    "last_quote_c": "",
+    "last_meeting_c": "",
+    "date_expect_po_c": "",
+    "date_won_c": "",
+    "account_id1_c": "",
+    "account_id_c": "",
+    "_acl": {
+        "fields": {}
+    },
+    "_module": "Opportunities"
+}
