@@ -1,0 +1,137 @@
+ID -> "id" varchar(40)
+Name -> "name" varchar(100)
+Date Created -> "date_entered" datetime "2023-06-14T15:38:56-05:00"
+Date Modified -> "date_modified" datetime "2023-06-14T15:38:56-05:00"
+Modified By ID -> "modified_user_id" varchar(40)
+Modified By Name -> "modified_user_name" varchar(100)
+Created By ID -> "created_by" varchar(40)
+Created By Name -> "created_by_name" varchar(100)
+Description -> "description" varchar(100)
+Deleted -> "deleted" boolean
+Salutation -> "salutation" varchar(20)
+First Name -> "first_name" varchar(50)
+Last Name -> "last_name" varchar(50)
+Full Name -> "full_name" varchar(100)
+Title -> "title" varchar(20)
+Facebook Link -> "facebook" varchar(50)
+Twitter Link -> "twitter" varchar(50)
+Google Plus ID -> "googelplus" varchar(50)
+Department -> "department" varchar(20)
+Do Not Call -> "do_not_call" boolean
+Home Phone -> "phone_home" varchar(20)
+Mobile Phone -> "phone_mobile" varchar(20)
+Office Phone -> "phone_work" varchar(20)
+Other Phone -> "phone_other" varchar(20)
+Fax -> "phone_fax" varchar(20)
+Primary Address Street -> "primary_address_street" varchar(50)
+Primary Address City -> "primary_address_city" varchar(50)
+Primary Address State -> "primary_address_state" varchar(50)
+Primary Address Postal Code -> "primary_address_postalcode" varchar(50)
+Primary Address Country -> "primary_address_country" varchar(50)
+Alternate Address Street -> "alt_address_street" varchar(50)
+Alternate Address City -> "alt_address_city" varchar(50)
+Alternate Address State -> "alt_address_state" varchar(50)
+Alternate Address Postal Code -> "alt_address_postalcode" varchar(50)
+Alternate Address Country -> "alt_address_country" varchar(50)
+Assistant -> "assistant" varchar(100)
+Assistant Phone -> "assistant_phone" varchar(20)
+Avatar -> "picture" varchar(50)
+Lead Source -> "lead_source" varchar(20)
+Account Name -> "account_name" varchar(20)
+Account ID -> "account_id" varchar(20)
+D&B Principal Id -> "dnb_principal_id" varchar(40)
+Reports To ID -> "reports_to_id" varchar(40)
+Birthdate -> "birthdate" varchar(20)
+Portal Name -> "portal_name" varchar(100)
+Portal Active -> "portal_active" boolean
+Password -> "portal_password" boolean
+Portal Application -> "portal_app" varchar(50)
+Portal User Company Name -> "portal_user_company_name" varchar(100)
+Language Preference -> "preferred_language" varchar(10)
+Cookie Consent -> "cookie_consent" boolean
+Cookie Consent Received On -> "cookie_consent_received_on" varchar(20)
+Business Center ID -> "business_center_id" varchar(40)
+Business Purposes Consented for -> parse "dp_business_purpose" varchar(100)
+Consent Last Updated -> "dp_consent_last_updated" datetime "yyyy-MM-dd"
+Campaign ID -> "campaign_id" varchar(40)
+Company Size -> "hint_account_size" varchar(20)
+Industry -> "hint_account_industry" varchar(20)
+Company Location -> "hint_account_location" varchar(20)
+Company Description -> "hint_account_description" varchar(20)
+Previous Jobs -> "hint_job_2" varchar(20)
+Education -> "hint_education" varchar(20)
+Education Additional -> "hint_education_2" varchar(20)
+Facebook Link -> "hint_facebook" varchar(20)
+Twitter Link -> "hint_twitter" varchar(20)
+Industry Tags -> "hint_industry_tags" varchar(20)
+Year Founded -> "hint_account_founded_year" varchar(20)
+Company Facebook -> "hint_account_facebook_handle" varchar(20)
+Company Twitter -> "hint_account_twitter_handle" varchar(20)
+Logo -> "hint_account_logo" varchar(20)
+Contact Photo -> "hint_contact_pic" varchar(20)
+Photo Link -> "hint_photo" varchar(20)
+Phone 1 -> "hint_phone_1" varchar(20)
+Phone 2 -> "hint_phone_2" varchar(20)
+Company Website -> "hint_account_website" varchar(20)
+NAICS Code -> "hint_account_naics_code_lbl" varchar(20)
+SIC Code -> "hint_account_sic_code_label" varchar(20)
+FY End -> "hint_account_fiscal_year_end" varchar(20)
+Annual Revenue -> "hint_account_annual_revenue" varchar(20)
+Market Interest Prediction -> "market_interest_prediction_score" varchar(10)
+Market Score -> "market_score" decimal 
+Sync to Marketo&reg; -> "mkto_sync" boolean
+Marketo Lead ID -> "mkto_lead_score" varchar(40)
+Lead Score -> "entry_source" varchar(20)
+Tags -> parse "tag" varchar(100)
+Integration Sync ID -> "sync_key" varchar(10)
+Assigned User ID -> "assigned_user_id" varchar(40)
+Assigned User Name -> "assigned_user_name" varchar(100)
+Team ID -> "team_count_link.id" varchar(40)
+Teams -> parse "team_name[x].name" varchar(100)
+Selected Team Set ID -> parse "team_name[x].id" where team_name[x].selected = true varchar(100)
+Selected Teams -> parse "team_name[x].name" where team_name[x].selected = true varchar(100)
+Email Address -> "email1" varchar(40)
+Invalid Email -> "invalid_email" boolean
+Email Opt Out -> "email_opt_out" boolean
+Non-primary emails -> "email_addresses_non_primary" varchar(50)
+External source ID -> "source_id" varchar(40)
+External source -> "source_type" varchar(20)
+External source meta -> "source_meta" varchar(20) 
+Tax Exempt Number -> "tax_exempt_number_c" varchar(20)
+Preferred Contact Method -> "preferred_contact_method_c" varchar(20)
+DO NOT EMAIL -> "donotemail_c" boolean
+Owner/Founder -> "owner_c" boolean 
+Do Not Mail -> "doonotmail_c" boolean
+Facebook Account -> "facebooklink_c" varchar(50)
+Twitter Account -> "twitter_c" varchar(50)
+Instagram Account -> "instagram_c" varchar(20)
+Instagram Link -> "instagramlink_c" varchar(20)
+Pinterest Account -> "pinterestaccount_c" varchar(20)
+YouTube Account -> "youtubeaccount_c" varchar(20)
+Website -> "website_c" varchar(20)
+Pinterest Link -> "pinterestlink_c" varchar(20)
+YouTube Link -> "youtubelink_c" varchar(20)
+Customer Type -> "account_type_c" varchar(20)
+Office Phone EXT -> "officephoneext_c" varchar(20)
+Account # -> "account_number_c" varchar(20)
+Employee Status -> "employeestatus_c" varchar(20)
+Birth Month -> "birthmonth_c" varchar(20)
+Birth Date Day -> "birthdateday_c" varchar(20)
+SCH - Newsletter -> "schnewsletter_c" boolean 
+Gabby - Newsletter -> "gabbynewsletter_c" boolean 
+SC - Newsletter -> "scnewsletter_c" boolean 
+Contract - Newsletter -> "contractnewsletter_c" boolean
+NPS SCORE -> "npsscore_c" varchar(10)
+NPS GROUP -> "npsgroup_c" varchar(10)
+NPS Date -> "npsdate_c" varchar(10)
+Do Not Text -> "donottext_c" boolean 
+International -> "international_c" boolean
+Last Email -> "last_email_c" datetime "yyyy-MM-dd"
+Branch -> "branch_c" varchar(5)
+
+Contact Source
+Hash of site_url and contact id
+Team Set ID
+Signed up for Retail Trade Program?
+Signed up for Retail Trade Program?
+Smart Guide Template

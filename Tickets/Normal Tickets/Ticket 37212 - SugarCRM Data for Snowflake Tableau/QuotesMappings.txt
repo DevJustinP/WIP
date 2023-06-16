@@ -1,25 +1,82 @@
-ID	Date Quote Submitted	Customer PO	Date Shipped	Ship Preference	Delivery Type	Delivery Notes	Bill To Street	Bill To City	Bill To PostalCode	Bill To State	Bill To Country	Ship To Street	Ship To State	Ship To City	Ship To Country	Ship To PostalCode	Follow Up Date	Requested Project Completion Date	Furniture Collections	Area To Furnish	Budget for Project	Purchase Date to Meet Completion Date	Tag For	Address Type	Ordered By	Weighted Forecast	Expected Close Date	Next Step	xOpportunity (Project)	Expected Close Month	Probability %	Probability Amount	Converted Amount	Order Date	Buyer email	Pipeline Status	xQuote Terms	xSCC/Gabby/WJ	xForecast Amount	xStatus	Quote Total	Branch	Ship To Company Name	Subtotal	Channel	updatesubtotal	primaryquote	Version	BuyerFirstName	buyerlastname	customername
-ProjectName
-Discount Level
-Account Name (related Account ID)
-Base Rate
-Currency ID
+ID -> "id" varchar(40)
+Date Created -> "date_entered" datetime "2020-01-16T01:17:07-06:00"
+Date Modified -> "date_modified
+Modified By ID -> "modified_user_id" varchar(40)
+Modified By Name -> "modified_user_name" varchar(100)
+Created By ID -> "created_by" varchar(40)
+Created By Name -> "created_by_name" varchar(100)
+Deleted -> "deleted" boolean
+Tags -> "tag" json loop for strings varchar(50)
+Integration Sync ID -> "sync_key" varchar(10)
+Team ID -> "team_count_link.id" varchar(40)
+Teams -> parse team_name[x].name 
+            varchar(100)
+Selected Teams -> parse team_name[x].name 
+                where team_name[x].selected = true
+                varchar(100)
+Selected Team Set ID -> parse team_name[x].id 
+                        where team_name[x].selected = true
+                        varchar(100)
+Assigned User ID -> "assigned_user_id" varchar(40)
+Assigned User -> "assigned_user_name" varchar(100)
+Date Quote Submitted -> "date_quote_submitted_c" datetime "yyyy-MM-dd"
+Customer PO -> "customer_po_c" varchar(20)
+Date Shipped -> "customer_po_c" datetime "yyyy-MM-dd"
+Ship Preference -> "ship_preference_c" varchar(50)
+Delivery Type -> "delivery_type_c" varchar(20)
+Delivery Notes -> "delivery_notes_c" varchar(50)
+Bill To Street -> "billing_to_street_c" varchar(50)
+Bill To City -> "billing_to_city_c" varchar(50)
+Bill To PostalCode -> "billing_to_state_c" varchar(50)
+Bill To State -> "billing_to_postalcode_c" varchar(50)
+Bill To Country -> "billing_to_country_c" varchar(50)
+Ship To Street -> "shipping_address_street_c" varchar(50)
+Ship To State -> "shipping_address_state_c" varchar(50)
+Ship To City -> "shipping_address_city_c" varchar(50)
+Ship To Country -> "shipping_address_country_c" varchar(50)
+Ship To PostalCode -> "shipping_address_postalcode_c" varchar(50)
+Follow Up Date -> "date_follow_up_c" datetime "yyyy-MM-dd"
+Requested Project Completion Date -> "date_req_project_complete_c" datetime "yyyy-MM-dd"
+Furniture Collections -> "furniture_collections_c" varchar(50)
+Area To Furnish -> "area_to_furnish_c" varchar(50)
+Budget for Project -> "budget_for_project_c" decimal
+Purchase Date to Meet Completion Date -> "date_purchase_to_meet_comp_c" datetime "yyyy-MM-dd"
+Tag For -> tag_for_c" varchar(40)
+Account Name -> "account_name_c" varchar(100)
+Address Type -> "address_type_c" varchar(20)
+Ordered By -> "ordered_by_c" datetime "yyyy-MM-dd"
+Account Name (related Account ID) -> "accounts_wquo1_quotes_1_name" varchar(100)
+Weighted Forecast -> "forecast_weighted_c" decimal
+Expected Close Date -> "date_expected_close_c" datetime "yyyy-MM-dd"
+Next Step -> "next_step_c" varchar(50)
+xOpportunity (Project) -> "opportunity_project_c" varchar(50)
+Expected Close Month -> "expected_close_month_c" integer
+Probability % -> "probability_c" decimal
+Probability Amount -> "prob_amt_c" decimal
+Converted Amount -> "converted_amount_c" decimal
+Order Date -> "order_date_c" -> datetime "yyyy-MM-dd"
+Buyer email -> "buyer_email_c" varchar(50)
+xQuote Terms -> "quote_terms_c" varchar(50)
+xSCC/Gabby/WJ -> "scc_gabby_wj_c" varchar(50)
+xForecast Amount -> "forecast_amount_c" decimal
+xStatus -> "stage_c" varchar(40)
+Quote Total -> "quote_total_c" decimal
+Subtotal -> "subtotal_c" decimal
+Channel -> "channel_c" varchar(20)
+updatesubtotal -> "updatesubtotal_c" boolean
+primaryquote -> "primaryquote_c" varchar(20)
+Version -> "version_c" varchar(100)
+BuyerFirstName -> "buyerfirstname_c" varchar(50)
+buyerlastname -> "buyerlastname_c" varchar(50)
+customername -> "customername_c" varchar(100)
+ProjectName -> "projectname_c" varchar(100)
+Discount Level -> "discount_level_c" varchar(10)
+Pipeline Status -> "status_pipeline_c" varchar(20)
+Currency ID -> "currency_id" integer
+Base Rate -> "base_rate" decimal
+
 Quote Reference Number
-Date Created
-Date Modified
-Modified By ID
-Created By ID
+Team Set ID 
+Branch
+Ship To Company Name
 Notes
-Deleted
-Tags
-Integration Sync ID
-Team ID
-Team Set ID
-Selected Team Set ID
-Teams
-Selected Teams
-Assigned User ID
-Account Name
-Assigned User
-Modified By Name
-Created By Name

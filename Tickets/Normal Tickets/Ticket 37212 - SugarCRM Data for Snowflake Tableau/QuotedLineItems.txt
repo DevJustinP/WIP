@@ -1,0 +1,29 @@
+Name -> "name" varchar(100)
+Date Created -> "date_entered" datetime "2020-01-16T01:17:07-06:00"
+Date Modified -> "date_modified
+Modified By ID -> "modified_user_id" varchar(40)
+Modified By Name -> "modified_user_name" varchar(100)
+Created By ID -> "created_by" varchar(40)
+Created By Name -> "created_by_name" varchar(100)
+Description -> "description" varchar(200)
+Deleted -> "deleted" boolean
+Tags -> parse "tag" varchar(100)
+Integration Sync ID -> "sync_key" varchar(10)
+Team ID -> "team_count_link.id" varchar(40)
+Teams -> parse and pull "team_name[x].name" varchar(100)
+Selected Teams -> parse and pull "team_name[x].name" where team_name[x].selected = true varchar(100)
+Selected Team Set ID -> parse and pull "team_name[x].id" where team_name[x].selected = true varchar(100)
+Assigned User ID -> "assigned_user_id" varchar(40)
+Assigned User -> "assigned_user_name" varchar(100)
+Part Number -> "part_number_c" varchar(40)
+Quantity -> "quantity_c" decimal
+Unit Price -> "unit_price_c" decimal
+Line Item Total -> "line_item_total_c" decimal 
+Quote UID -> "quote_uid_c" varchar(40)
+Product Class -> "product_class_c" varchar(20)
+quote header num -> "quote_header_num_c" varchar(20)
+pipeline -> "pipeline_c" varchar(20)
+Base Rate -> "base_rate" decimal
+Currency ID -> "currency_id" integer
+
+Team Set ID

@@ -1,0 +1,121 @@
+{
+    "next_offset": 1,
+    "records": [
+        {
+            "id": "796e066e-0969-11ee-9b03-06156affe90a",
+            "name": "Lady & granddaughter",
+            "date_entered": "2023-06-12T16:38:30-05:00",
+            "date_modified": "2023-06-12T16:38:30-05:00",
+            "modified_user_id": "88fd20b3-9fba-4488-a1dc-3d799379a59d",
+            "modified_by_name": "Deanne Puryear",
+            "modified_user_link": {
+                "full_name": "Deanne Puryear",
+                "id": "88fd20b3-9fba-4488-a1dc-3d799379a59d",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "created_by": "88fd20b3-9fba-4488-a1dc-3d799379a59d",
+            "created_by_name": "Deanne Puryear",
+            "created_by_link": {
+                "full_name": "Deanne Puryear",
+                "id": "88fd20b3-9fba-4488-a1dc-3d799379a59d",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "description": "Gabby\nBrowse",
+            "deleted": false,
+            "following": false,
+            "my_favorite": false,
+            "tag": [],
+            "locked_fields": [],
+            "sync_key": "",
+            "team_count": "",
+            "team_count_link": {
+                "team_count": "",
+                "id": "f5f89ffe-feae-11eb-af62-06d6ea5ef8e1",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "team_name": [
+                {
+                    "id": "1",
+                    "name": "Global",
+                    "name_2": "",
+                    "primary": false,
+                    "selected": false
+                },
+                {
+                    "id": "cc32eaa0-f088-11eb-ba5a-06d6ea5ef8e1",
+                    "name": "Retail",
+                    "name_2": "",
+                    "primary": false,
+                    "selected": false
+                },
+                {
+                    "id": "f5f89ffe-feae-11eb-af62-06d6ea5ef8e1",
+                    "name": "305",
+                    "name_2": "",
+                    "primary": true,
+                    "selected": false
+                }
+            ],
+            "assigned_user_id": "88fd20b3-9fba-4488-a1dc-3d799379a59d",
+            "assigned_user_name": "Deanne Puryear",
+            "assigned_user_link": {
+                "full_name": "Deanne Puryear",
+                "id": "88fd20b3-9fba-4488-a1dc-3d799379a59d",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "accounts_r01_traffic_1_name": "",
+            "accounts_r01_traffic_1": {
+                "name": "",
+                "id": "",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "accounts_r01_traffic_1accounts_ida": "",
+            "leads_r01_traffic_1_name": "",
+            "leads_r01_traffic_1": {
+                "full_name": "",
+                "id": "",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "leads_r01_traffic_1leads_ida": "",
+            "contacts_r01_traffic_1_name": "",
+            "contacts_r01_traffic_1": {
+                "full_name": "",
+                "id": "",
+                "_acl": {
+                    "fields": [],
+                    "_hash": "654d337e0e912edaa00dbb0fb3dc3c17"
+                }
+            },
+            "contacts_r01_traffic_1contacts_ida": "",
+            "quotetotal_c": "0.000000",
+            "ordertotal_c": "0.000000",
+            "housecallrequest_c": false,
+            "branch_c": "305",
+            "visitortype_c": "First Time",
+            "base_rate": 1,
+            "currency_id": "-99",
+            "_acl": {
+                "fields": {}
+            },
+            "_module": "R01_Traffic"
+        }
+    ]
+}

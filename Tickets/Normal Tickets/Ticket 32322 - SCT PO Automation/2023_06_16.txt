@@ -1,0 +1,11 @@
+SCT/PO Automation Review:
+
+Next group on the 6/29/2023
+
+The Customer PO line where it is not cutting off the 
+customer name
+salesperson
+
+invoice terms percentage
+
+Dates not coming over on the SCT - NET and CANCEL fields*
