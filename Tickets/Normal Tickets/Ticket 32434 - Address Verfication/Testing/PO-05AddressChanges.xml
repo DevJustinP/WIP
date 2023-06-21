@@ -1,0 +1,107 @@
+﻿<Order>
+  <Meta>
+    <IsDropShip>true</IsDropShip>
+  </Meta>
+  <Header>
+    <OrderHeader>
+      <TradingPartnerId>8XJALLSUMMERCLA</TradingPartnerId>
+      <PurchaseOrderNumber>05AddressChanges</PurchaseOrderNumber>
+      <TsetPurposeCode>00</TsetPurposeCode>
+      <PurchaseOrderTypeCode>SA</PurchaseOrderTypeCode>
+      <PurchaseOrderDate>2023-06-21</PurchaseOrderDate>
+      <BuyersCurrency>USD</BuyersCurrency>
+      <SellersCurrency>USD</SellersCurrency>
+      <Vendor>103760</Vendor>
+      <CustomerAccountNumber>53072</CustomerAccountNumber>
+      <CustomerOrderNumber>OKB10000693482</CustomerOrderNumber>
+    </OrderHeader>
+    <Date>
+      <DateTimeQualifier1>006</DateTimeQualifier1>
+      <Date1>2023-06-21</Date1>
+    </Date>
+    <Contact>
+      <ContactTypeCode>OC</ContactTypeCode>
+      <PrimaryPhone>332.333.6412</PrimaryPhone>
+      <PrimaryEmail>customercare@onekingslane.com</PrimaryEmail>
+    </Contact>
+    <Address>
+      <AddressTypeCode>BT</AddressTypeCode>
+      <AddressName>cheryl rowland</AddressName>
+      <AddressAlternateName>cheryl</AddressAlternateName>
+      <AddressAlternateName2>rowland</AddressAlternateName2>
+    </Address>
+    <Address>
+      <AddressTypeCode>ST</AddressTypeCode>
+      <AddressName>cheryl rowland</AddressName>
+      <AddressAlternateName>cheryl</AddressAlternateName>
+      <AddressAlternateName2>rowland</AddressAlternateName2>
+      <Address1>2970 South Lake Bradford Road</Address1>
+      <City>Tallahassee</City>
+      <State>FL</State>
+      <PostalCode>32310</PostalCode>
+      <Country>US</Country>
+      <Contact>
+        <ContactTypeCode>BD</ContactTypeCode>
+        <PrimaryPhone>(850) 766-7512</PrimaryPhone>
+        <PrimaryEmail>crowland15@gmail.com</PrimaryEmail>
+      </Contact>
+    </Address>
+    <Address>
+      <AddressTypeCode>SF</AddressTypeCode>
+      <AddressName>Eligible items are returnable within 30 days of delivery</AddressName>
+      <Address1>To learn more about eligibility and restocking fees</Address1>
+      <Address2>please visit our Returns Policy section in our FAQs</Address2>
+      <Address3>Create a return: https://returns.narvar.com/okl/returns</Address3>
+    </Address>
+    <Paperwork>
+      <ReportTypeCode>R5</ReportTypeCode>
+      <LocationCodeQualifier>UR</LocationCodeQualifier>
+      <Description>returns.narvar.com/okl/returns</Description>
+    </Paperwork>
+    <CarrierInformation>
+      <CarrierRouting>UNSP_CG</CarrierRouting>
+    </CarrierInformation>
+    <Reference>
+      <ReferenceQual>06</ReferenceQual>
+      <ReferenceID>3288541176</ReferenceID>
+    </Reference>
+    <ChargesAllowances>
+      <AllowChrgIndicator>N</AllowChrgIndicator>
+      <AllowChrgCode>SUIP</AllowChrgCode>
+      <AllowChrgHandlingDescription>gift</AllowChrgHandlingDescription>
+    </ChargesAllowances>
+    <ChargesAllowances>
+      <AllowChrgIndicator>C</AllowChrgIndicator>
+      <AllowChrgCode>GWRP</AllowChrgCode>
+      <ReferenceIdentification>y</ReferenceIdentification>
+    </ChargesAllowances>
+  </Header>
+  <LineItems>
+    <LineItem>
+      <OrderLine>
+        <LineSequenceNumber>01</LineSequenceNumber>
+        <BuyerPartNumber>77601850</BuyerPartNumber>
+        <VendorPartNumber>OKL-505311</VendorPartNumber>
+        <ConsumerPackageCode>444726018503</ConsumerPackageCode>
+        <OrderQty>1</OrderQty>
+        <PurchasePriceType>TE</PurchasePriceType>
+        <PurchasePrice>144</PurchasePrice>
+      </OrderLine>
+      <Date>
+        <DateTimeQualifier1>038</DateTimeQualifier1>
+        <Date1>2023-06-21</Date1>
+      </Date>
+      <ProductOrItemDescription>
+        <ItemDescriptionType>08</ItemDescriptionType>
+        <ProductDescription>Kit Side Table, Sandalwood</ProductDescription>
+      </ProductOrItemDescription>
+      <Reference>
+        <ReferenceQual>CO</ReferenceQual>
+        <ReferenceID>01</ReferenceID>
+      </Reference>
+      <CarrierInformation>
+        <CarrierRouting>UNSP_CG</CarrierRouting>
+      </CarrierInformation>
+    </LineItem>
+  </LineItems>
+</Order>

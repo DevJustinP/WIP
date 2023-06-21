@@ -1,0 +1,105 @@
+﻿ <Order>
+  <Meta>
+    <IsDropShip>true</IsDropShip>
+  </Meta>
+  <Header>
+    <OrderHeader>
+      <TradingPartnerId>69RALLSUMMERCLA</TradingPartnerId>
+      <PurchaseOrderNumber>04AddressChanges</PurchaseOrderNumber>
+      <TsetPurposeCode>00</TsetPurposeCode>
+      <PrimaryPOTypeCode>DS</PrimaryPOTypeCode>
+      <PurchaseOrderDate> 2023-06-18</PurchaseOrderDate>
+      <Vendor>33009</Vendor>
+    </OrderHeader>
+    <Dates>
+      <DateTimeQualifier>010</DateTimeQualifier>
+      <Date>2023-01-09</Date>
+    </Dates>
+    <Contacts>
+      <ContactTypeCode>IC</ContactTypeCode>
+      <ContactName>Gabby Home AL35115</ContactName>
+      <PrimaryPhone>2053589256</PrimaryPhone>
+    </Contacts>
+    <Address>
+      <AddressTypeCode>BT</AddressTypeCode>
+      <AddressName>Wayfair</AddressName>
+      <Address1>4 Copley Place, Floor 7</Address1>
+      <City>Boston</City>
+      <State>MA</State>
+      <PostalCode>02116</PostalCode>
+      <Country>US</Country>
+      <Contacts>
+        <ContactTypeCode>IC</ContactTypeCode>
+        <ContactName>BT</ContactName>
+        <PrimaryPhone>6175326815</PrimaryPhone>
+        <PrimaryFax>617-502-7798</PrimaryFax>
+        <PrimaryEmail>WayfairOps1@wayfair.com</PrimaryEmail>
+      </Contacts>
+    </Address>
+    <Address>
+      <AddressTypeCode>ST</AddressTypeCode>
+      <AddressName>Wayfair - McDonough</AddressName>
+      <Address1>130 Distribution Drive</Address1>
+      <City>McDonough</City>
+      <State>GA</State>
+      <PostalCode>30252</PostalCode>
+      <Country>US</Country>
+      <References>
+        <Description>Commercial</Description>
+      </References>
+    </Address>
+    <Address>
+      <AddressTypeCode>DA</AddressTypeCode>
+      <AddressName>Jamie Mountain</AddressName>
+      <Address1>903 Wakestone Court</Address1>
+      <City>Raleigh</City>
+      <State>NC</State>
+      <PostalCode>276096352</PostalCode>
+      <Country>US</Country>
+      <Contacts>
+        <ContactTypeCode>IC</ContactTypeCode>
+        <ContactName>ST</ContactName>
+        <PrimaryPhone>8442473538</PrimaryPhone>
+        <PrimaryEmail>customeremail@wayfair.com</PrimaryEmail>
+      </Contacts>
+    </Address>
+    <CarrierInformation>
+      <CarrierTransMethodCode>T</CarrierTransMethodCode>
+      <CarrierAlphaCode>EXLA</CarrierAlphaCode>
+      <CarrierRouting>TRB</CarrierRouting>
+      <ServiceLevelCodes>
+        <ServiceLevelCode>PA</ServiceLevelCode>
+      </ServiceLevelCodes>
+    </CarrierInformation>
+    <References>
+      <ReferenceQual>VN</ReferenceQual>
+      <ReferenceID>33009</ReferenceID>
+      <Description>35115</Description>
+    </References>
+    <References>
+      <ReferenceQual>2P</ReferenceQual>
+      <ReferenceID>Wayfair</ReferenceID>
+    </References>
+  </Header>
+  <LineItem>
+    <OrderLine>
+      <LineSequenceNumber>1</LineSequenceNumber>
+      <VendorPartNumber>SCH-163255</VendorPartNumber>
+      <OrderQty>1</OrderQty>
+      <OrderQtyUOM>EA</OrderQtyUOM>
+      <PurchasePrice>806</PurchasePrice>
+      <PurchasePriceBasis>PE</PurchasePriceBasis>
+    </OrderLine>
+    <ProductOrItemDescription>
+      <ProductCharacteristicCode>08</ProductCharacteristicCode>
+      <ProductDescription>Clifton Drum Coffee Table</ProductDescription>
+    </ProductOrItemDescription>
+    <Notes>
+      <Note>-- SPECIAL COMMENTS: Please dropship blind and always include Wayfair packing slip from http://partners.wayfair.com. Please do not partial ship without prior authorization from Wayfair. Please include the PO# as the reference number on the label/BO. Please reply w</Note>
+    </Notes>
+  </LineItem>
+  <Summary>
+    <TotalAmount>806</TotalAmount>
+    <TotalLineItemNumber>1</TotalLineItemNumber>
+  </Summary>
+</Order>

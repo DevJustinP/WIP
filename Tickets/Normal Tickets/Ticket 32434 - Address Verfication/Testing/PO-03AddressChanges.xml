@@ -1,0 +1,79 @@
+﻿<Order>
+  <Meta>
+    <IsDropShip>true</IsDropShip>
+  </Meta>
+  <Header>
+    <OrderHeader>
+      <TradingPartnerId>9EVALLSUMMERCLA</TradingPartnerId>
+      <PurchaseOrderNumber>03AddressChanges</PurchaseOrderNumber>
+      <TsetPurposeCode>00</TsetPurposeCode>
+      <PurchaseOrderTypeCode>DS</PurchaseOrderTypeCode>
+      <PurchaseOrderDate>2023-06-18</PurchaseOrderDate>
+      <Vendor>1183648</Vendor>
+      <CustomerOrderNumber>LW4104464</CustomerOrderNumber>
+    </OrderHeader>
+    <Date>
+      <DateTimeQualifier1>010</DateTimeQualifier1>
+      <Date1>2023-01-04</Date1>
+    </Date>
+    <Address>
+      <AddressTypeCode>ST</AddressTypeCode>
+      <AddressName>Kenneth McCurry</AddressName>
+      <Address1>534 Oak Ave.</Address1>
+      <City>Spruce Pine</City>
+      <State>NC</State>
+      <PostalCode>28777</PostalCode>
+      <Country>US</Country>
+      <Contact>
+        <ContactTypeCode>IC</ContactTypeCode>
+        <ContactName>Kenneth McCurry</ContactName>
+        <PrimaryPhone>(828) 765-9010</PrimaryPhone>
+        <PrimaryEmail>marty@barkhouse.com</PrimaryEmail>
+      </Contact>
+    </Address>
+    <Address>
+      <AddressTypeCode>SO</AddressTypeCode>
+      <AddressName>Kenneth McCurry</AddressName>
+      <Address1>534 Oak Ave.</Address1>
+      <City>Spruce Pine</City>
+      <State>NC</State>
+      <PostalCode>28777</PostalCode>
+      <Country>US</Country>
+      <Contact>
+        <ContactTypeCode>IC</ContactTypeCode>
+        <ContactName>Kenneth McCurry</ContactName>
+        <PrimaryPhone>(828) 765-9010</PrimaryPhone>
+        <PrimaryEmail>marty@barkhouse.com</PrimaryEmail>
+      </Contact>
+    </Address>
+    <Notes>
+      <NoteCode>SHP</NoteCode>
+      <NoteInformationField>*</NoteInformationField>
+    </Notes>
+  </Header>
+  <LineItems>
+    <LineItem>
+      <OrderLine>
+        <LineSequenceNumber>1</LineSequenceNumber>
+        <VendorPartNumber>28634+C5486258N</VendorPartNumber>
+        <OrderQty>2</OrderQty>
+        <OrderQtyUOM>EA</OrderQtyUOM>
+        <PurchasePrice>990</PurchasePrice>
+      </OrderLine>
+      <ProductOrItemDescription>
+        <ItemDescriptionType>08</ItemDescriptionType>
+        <ProductDescription>Club Small Chaise Lounge with Wheel - Natural Teak - (Fabric # 6258 A - Natural</ProductDescription>
+      </ProductOrItemDescription>
+      <ProductOrItemDescription>
+        <ItemDescriptionType>08</ItemDescriptionType>
+        <ProductDescription>White - Grade A) - No Welt</ProductDescription>
+      </ProductOrItemDescription>
+      <CarrierInformation>
+        <CarrierRouting>LTL</CarrierRouting>
+      </CarrierInformation>
+    </LineItem>
+  </LineItems>
+  <Summary>
+    <TotalLineItemNumber>1</TotalLineItemNumber>
+  </Summary>
+</Order>
