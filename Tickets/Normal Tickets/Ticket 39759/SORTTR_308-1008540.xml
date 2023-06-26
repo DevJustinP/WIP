@@ -1,0 +1,217 @@
+﻿<PostSalesOrdersSCT>
+  <Orders>
+    <OrderHeader>
+      <CustomerPoNumber>308-1008540 JOYCE BO</CustomerPoNumber>
+      <SourceWarehouse>MN</SourceWarehouse>
+      <TargetWarehouse>308</TargetWarehouse>
+      <OrderDate>2023-06-25</OrderDate>
+      <WarehouseName>Summer Classics Home - San Antonio (308)</WarehouseName>
+      <ShippingInstrsCode>SC</ShippingInstrsCode>
+      <ShipAddress1>1201 N Loop 1604 W</ShipAddress1>
+      <ShipAddress2>Ste 112</ShipAddress2>
+      <ShipAddress3>San Antonio, TX</ShipAddress3>
+      <ShipAddress3Loc>---</ShipAddress3Loc>
+      <ShipAddress4>---</ShipAddress4>
+      <ShipAddress5>---</ShipAddress5>
+      <ShipPostalCode>78258</ShipPostalCode>
+      <Email>JPYCEMLEHNIG@YAHOO.COM</Email>
+      <SpecialInstrs />
+      <OrderComments />
+      <DocumentFormat>O </DocumentFormat>
+    </OrderHeader>
+    <OrderDetails>
+      <StockLine>
+        <StockCode>32350</StockCode>
+        <StockDescription>NEWPORT SOFA</StockDescription>
+        <OrderQty>1</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>109.500000</UnitMass>
+        <UnitVolume>67.000000</UnitVolume>
+        <OriginalLine>3</OriginalLine>
+        <NewLineNumber>1</NewLineNumber>
+      </StockLine>
+      <CommentLine>
+        <Comment>ESTIMATED TO SHIP FROM FACTORY AUGUST</Comment>
+        <AttachedLineNumber>1</AttachedLineNumber>
+        <OriginalLine>4</OriginalLine>
+        <NewLineNumber>2</NewLineNumber>
+      </CommentLine>
+      <CommentLine>
+        <Comment>GOES WITH ITEMS C624P BELOW</Comment>
+        <AttachedLineNumber>1</AttachedLineNumber>
+        <OriginalLine>5</OriginalLine>
+        <NewLineNumber>3</NewLineNumber>
+      </CommentLine>
+      <StockLine>
+        <StockCode>C624P4861N</StockCode>
+        <StockDescription>NEWPORT SOFA PREMIUM CUSHION</StockDescription>
+        <OrderQty>1</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>45.000000</UnitMass>
+        <UnitVolume>45.000000</UnitVolume>
+        <OriginalLine>6</OriginalLine>
+        <NewLineNumber>4</NewLineNumber>
+      </StockLine>
+      <CommentLine>
+        <Comment>PRIMARY FABRIC: 4861-B-DRIFT SPOT CHAMBRAY</Comment>
+        <AttachedLineNumber>4</AttachedLineNumber>
+        <OriginalLine>7</OriginalLine>
+        <NewLineNumber>5</NewLineNumber>
+      </CommentLine>
+      <CommentLine>
+        <Comment>PILLOW TRIM: N-NONE</Comment>
+        <AttachedLineNumber>4</AttachedLineNumber>
+        <OriginalLine>8</OriginalLine>
+        <NewLineNumber>6</NewLineNumber>
+      </CommentLine>
+      <CommentLine>
+        <Comment>GOES WITH 32350</Comment>
+        <AttachedLineNumber>4</AttachedLineNumber>
+        <OriginalLine>9</OriginalLine>
+        <NewLineNumber>7</NewLineNumber>
+      </CommentLine>
+      <StockLine>
+        <StockCode>438084</StockCode>
+        <StockDescription>HAVANA LOUNGE CHAIR</StockDescription>
+        <OrderQty>2</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>42.000000</UnitMass>
+        <UnitVolume>15.500000</UnitVolume>
+        <OriginalLine>10</OriginalLine>
+        <NewLineNumber>8</NewLineNumber>
+      </StockLine>
+      <CommentLine>
+        <Comment>ESTIMATED AVAILABLE TO SHIP FROM FACTORY LATE AUGUST</Comment>
+        <AttachedLineNumber>8</AttachedLineNumber>
+        <OriginalLine>11</OriginalLine>
+        <NewLineNumber>9</NewLineNumber>
+      </CommentLine>
+      <CommentLine>
+        <Comment>GOES WITH ITEMS C759P BELOW</Comment>
+        <AttachedLineNumber>8</AttachedLineNumber>
+        <OriginalLine>12</OriginalLine>
+        <NewLineNumber>10</NewLineNumber>
+      </CommentLine>
+      <StockLine>
+        <StockCode>C759P4876N</StockCode>
+        <StockDescription>HAVANA LOUNGE CUSHION - PREMIUM</StockDescription>
+        <OrderQty>2</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>15.500000</UnitMass>
+        <UnitVolume>7.780000</UnitVolume>
+        <OriginalLine>13</OriginalLine>
+        <NewLineNumber>11</NewLineNumber>
+      </StockLine>
+      <CommentLine>
+        <Comment>PRIMARY FABRIC: 4876-C-DRIFT DOBBY CHAMBRAY</Comment>
+        <AttachedLineNumber>11</AttachedLineNumber>
+        <OriginalLine>14</OriginalLine>
+        <NewLineNumber>12</NewLineNumber>
+      </CommentLine>
+      <CommentLine>
+        <Comment>PILLOW TRIM: N-NONE</Comment>
+        <AttachedLineNumber>11</AttachedLineNumber>
+        <OriginalLine>15</OriginalLine>
+        <NewLineNumber>13</NewLineNumber>
+      </CommentLine>
+      <CommentLine>
+        <Comment>GOES WITH 438084</Comment>
+        <AttachedLineNumber>11</AttachedLineNumber>
+        <OriginalLine>16</OriginalLine>
+        <NewLineNumber>14</NewLineNumber>
+      </CommentLine>
+      <StockLine>
+        <StockCode>64105</StockCode>
+        <StockDescription>GILLIAN IRON END TABLE</StockDescription>
+        <OrderQty>2</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>37.000000</UnitMass>
+        <UnitVolume>8.400000</UnitVolume>
+        <OriginalLine>17</OriginalLine>
+        <NewLineNumber>15</NewLineNumber>
+      </StockLine>
+      <CommentLine>
+        <Comment>CURRENTLY IN STOCK</Comment>
+        <AttachedLineNumber>15</AttachedLineNumber>
+        <OriginalLine>18</OriginalLine>
+        <NewLineNumber>16</NewLineNumber>
+      </CommentLine>
+      <StockLine>
+        <StockCode>20300</StockCode>
+        <StockDescription>HARRIS ROUND DINING TABLE</StockDescription>
+        <OrderQty>1</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>114.500000</UnitMass>
+        <UnitVolume>22.600000</UnitVolume>
+        <OriginalLine>19</OriginalLine>
+        <NewLineNumber>17</NewLineNumber>
+      </StockLine>
+      <StockLine>
+        <StockCode>31540</StockCode>
+        <StockDescription>HARRIS ROUND DINING TABLE BASE ONLY</StockDescription>
+        <OrderQty>1</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>22.000000</UnitMass>
+        <UnitVolume>13.900000</UnitVolume>
+        <OriginalLine>20</OriginalLine>
+        <NewLineNumber>18</NewLineNumber>
+      </StockLine>
+      <StockLine>
+        <StockCode>31555</StockCode>
+        <StockDescription>HARRIS ROUND DINING TABLE TOP ONLY (W/ HOLE)</StockDescription>
+        <OrderQty>1</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>92.500000</UnitMass>
+        <UnitVolume>10.200000</UnitVolume>
+        <OriginalLine>21</OriginalLine>
+        <NewLineNumber>19</NewLineNumber>
+      </StockLine>
+      <CommentLine>
+        <Comment>CURRENTLY IN STOCK</Comment>
+        <AttachedLineNumber>17</AttachedLineNumber>
+        <OriginalLine>22</OriginalLine>
+        <NewLineNumber>20</NewLineNumber>
+      </CommentLine>
+      <StockLine>
+        <StockCode>32360</StockCode>
+        <StockDescription>NEWPORT ARM CHAIR</StockDescription>
+        <OrderQty>4</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>30.750000</UnitMass>
+        <UnitVolume>16.600000</UnitVolume>
+        <OriginalLine>23</OriginalLine>
+        <NewLineNumber>21</NewLineNumber>
+      </StockLine>
+      <StockLine>
+        <StockCode>C7934216N</StockCode>
+        <StockDescription>NEWPORT ARM CHAIR CUSHION</StockDescription>
+        <OrderQty>4</OrderQty>
+        <OrderUom>EA</OrderUom>
+        <LineShipDate>2023-08-06</LineShipDate>
+        <ProductClass>SCW</ProductClass>
+        <UnitMass>5.000000</UnitMass>
+        <UnitVolume>2.440000</UnitVolume>
+        <OriginalLine>26</OriginalLine>
+        <NewLineNumber>22</NewLineNumber>
+      </StockLine>
+    </OrderDetails>
+  </Orders>
+</PostSalesOrdersSCT>
