@@ -1,0 +1,8 @@
+Planned:
+    SDM 32434
+
+    Round 1 UAT for SDM 32434 at 1-2pm
+
+Log:
+    SDM 32434 8 hours
+    - Ben has verified the UAT documentation and has approved to the deployment methodoligies

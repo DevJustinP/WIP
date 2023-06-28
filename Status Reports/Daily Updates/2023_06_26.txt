@@ -1,0 +1,18 @@
+Planned:
+    SDM 32434 Address Verfication
+        - finish unit testing
+        - finish deployment plans
+
+    Meetings:
+        - 8:30 - 9:00 Daily Checkin
+        - 13:00 - 14:00 deployment
+
+Log:
+    Ticket updates - 30 minutes
+
+    SDM 39759 - 30 minutes
+        - Looking into order quantity isses on the order 308-1008540
+
+    SDM 32434   - 9 hours
+        - Testing Phase 1 changes
+    

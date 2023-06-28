@@ -1,0 +1,18 @@
+With the help function:
+    Thoughs on updating with other foreign countries
+
+    MFiles - These changes can wait until we are confident that the validation is up.
+
+    Datafeed does not need any changes
+
+    Ecat possible changes:
+        - Address3 -> Address3LOC
+        - Possible not the dashes
+
+    Validate with dondi on the EDI transmissions
+
+    Transport:
+        utilize tblPickingSlipSource over SorMaster
+
+Continue testing with Richard
+Finish Documentation
