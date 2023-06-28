@@ -17,3 +17,12 @@ Plan:
 
 logs:
     SDM 39066
+    - Checking to confirm process is correct. Currently there is no order that has come over as a kit. Will continue keeping an eye out for kit items.
+
+    SDM 39672
+    - Confirmed changes are working as intended. 
+    - Contacted ben with findings. 
+    - Ticket closed
+
+    SDM 39047
+    - Plan on closing this ticket later.
