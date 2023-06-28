@@ -1,0 +1,19 @@
+Plan:
+    SDM 32434
+    - Update documentation
+    - Cofirm rollback is correct versions
+    - communicate with Richard about testing
+        - Accounting Credit requests
+        - Transport Pick Slips
+    
+    Tickets that need to get started:
+        SDM 31845
+        SDM 38285
+        SDM 35527
+
+    Updates
+        SDM 39066
+        SDM 39672
+
+logs:
+    SDM 39066
