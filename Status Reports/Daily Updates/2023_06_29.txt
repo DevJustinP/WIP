@@ -1,0 +1,16 @@
+Plan:
+    SDM 32434
+        finish testing cases that have not been addressed
+            Accounting sql
+            Transport sql
+    
+    SDM 31845
+        Get testing set up for this change
+        a split order
+
+    SDM 38285
+        Finish coding
+        Start unit testing
+
+    Work on tickets for this sprint:
+        SDM 35527
