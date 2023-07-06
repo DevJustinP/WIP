@@ -1,5 +1,4 @@
 With the help function:
-    Thoughs on updating with other foreign countries
 
     MFiles - These changes can wait until we are confident that the validation is up.
 

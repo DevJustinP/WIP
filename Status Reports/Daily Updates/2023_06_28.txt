@@ -26,3 +26,7 @@ logs:
 
     SDM 39047
     - Plan on closing this ticket later.
+    - Ticket closed
+
+    SDM 32434
+    - Updated Documentation
