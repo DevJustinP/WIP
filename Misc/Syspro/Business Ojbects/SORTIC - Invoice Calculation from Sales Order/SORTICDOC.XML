@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate use of
+     the SO Invoice Calculation from Sales Order Business Object
+-->
+<PostSalesOrderInvoice xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTICDOC.XSD">
+  <Item>
+    <SalesOrder>842</SalesOrder>
+    <SalesOrderLineList>1,4,5</SalesOrderLineList>
+    <RoundInvoiceAsCash></RoundInvoiceAsCash>
+  </Item>
+</PostSalesOrderInvoice>

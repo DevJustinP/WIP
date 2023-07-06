@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate use of
+     the SO Disaptch Invoice Calculation from Dispatch Note Business Object
+-->
+<postdispatchinvoice Language="05" CssStyle="" DecFormat="1" DateFormat="01" Role="01" Version="6.0.000" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTNCOUT.XSD">
+	<Item>
+		<GlJournal>
+			<GlYear>2009</GlYear>
+			<GlPeriod>02</GlPeriod>
+			<GlJournal>00334</GlJournal>
+		</GlJournal>
+		<Key>
+			<DispatchNote>000156/0001</DispatchNote>
+			<InvoiceNumber>000444</InvoiceNumber>
+			<TrnYear>2000</TrnYear>
+			<TrnMonth>08</TrnMonth>
+			<Register>00384</Register>
+			<WarningNumber/>
+			<WarningDescription/>
+			<Processed>Y</Processed>
+			<GlJournal>
+				<GlYear>2009</GlYear>
+				<GlPeriod>02</GlPeriod>
+				<GlJournal>00333</GlJournal>
+			</GlJournal>
+		</Key>
+		<ItemNumber>000001</ItemNumber>
+	</Item>
+	<Item>
+		<Key>
+			<DispatchNote>000156/0002</DispatchNote>
+			<InvoiceNumber>000445</InvoiceNumber>
+			<TrnYear>2000</TrnYear>
+			<TrnMonth>08</TrnMonth>
+			<Register>00384</Register>
+		</Key>
+		<ItemNumber>000002</ItemNumber>
+	</Item>
+	<StatusOfItems>
+		<ItemsProcessed>000002</ItemsProcessed>
+		<ItemsInvalid>000000</ItemsInvalid>
+		<ItemsRejectedWithWarnings>000000</ItemsRejectedWithWarnings>
+		<ItemsProcessedWithWarnings>000000</ItemsProcessedWithWarnings>
+		<GlJournal>
+			<GlYear>2009</GlYear>
+			<GlPeriod>02</GlPeriod>
+			<GlJournal>00335</GlJournal>
+		</GlJournal>
+	</StatusOfItems>
+</postdispatchinvoice>

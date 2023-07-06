@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2012 SYSPRO Ltd.-->
+<!-- 
+     Schema for the parameters for the SO Invoice Calculation from Sales Order Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="PostSalesOrderInvoice">
+    <xsd:annotation>
+      <xsd:documentation>This is the root element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element name="Parameters" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This contains parameters</xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType mixed="false">
+            <xsd:sequence>
+              <xsd:element name="InvoiceDate" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This contains a valid date of the format CCYY-MM-DD to be used as the invoice date. If not supplied, then the system date will be used as the invoice date. However, if an invoice date has already been recorded against the order, or the SYSPRO option to move order date to invoice date is selected, then this parameter is ignored.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="OrderType" default="I" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element contains the type of order to be invoiced. It may contain 'I' - normal order, 'C' - credit note, 'D' - debit note. The default is 'I'.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="I"/>
+                    <xsd:enumeration value="C"/>
+                    <xsd:enumeration value="D"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="PostingPeriod" default="C" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>Period to which transactions must be posted. Valid values are 'C' for current period, 'P' for previous period and 'B' for before previous period (i.e. prior period 2).  </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="C"/>
+                    <xsd:enumeration value="P"/>
+                    <xsd:enumeration value="B"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="IgnoreWarnings" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element indicates whether or not an item must be rejected if there are any warnings, such as AR posting period one month behind the Inventory posting period. If it is not supplied, it defaults to 'N'. Specifies if warnings are to be ignored (Y - if the warnings are to be ignored, N - warnings will be returned as errors in the XML returned, W - warnings will be returned as warnings in the XML returned).</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value="W"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ApplyIfEntireDocumentValid" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element indicates whether to process entire document only if all items are valid. If set to 'N', each item is validated and rejected if in error or processed if correct. This is the fastest option. If set to 'Y', all items are validated and only processed if entire document is valid. Default is 'N'. Valid values are 'Y' and 'N'.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ValidateOnly" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element indicates which processing phases are to be performed. If set to 'Y' all items are validated and an XML string is returned with the result of the validation. No updating will take place. If set to 'N', each item is validated and updating is performed based on setting of the element 'ApplyIfEntireDocumentValid'. Default is 'N'. Valid values are 'N' and 'Y'.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ValidateAllLines" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is used to specify if all lines in an order are to be checked prior to invoicing. If set to 'Y', then each order selected is also checked at line level for validity, and an invoice is only processed if all lines are valid. Note this only applies if entire order is requested, and the element 'ValidateOnly' is set to 'Y', or the element 'ApplyIfEntireDocumentValid' is set to 'Y'. </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="InvoiceOnlyIfMerchLines" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element determines when an invoice is to be produced. If set to 'Y', then an invoice will only be produced if the selected order contains a valid merchandise line. Valid entries are 'N' and 'Y'.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="InvoiceChgWithoutMerchLine" default="Y" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element determines whether service charges attached to a stocked line should be processed if the stocked line is not selected for invoicing - if set to 'Y' then the service charges will be processed with no reference to the stock line. Valid entries are 'Y' and 'N'.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value="N"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="UpdateStatusWhenNoInvoice" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This option controls the resulting status of a sales order when no invoice is produced because there are no lines ready for invoicing. If set to 'Y' then the status of the order is set based on the SYSPRO Sales Order setup option for back orders. If the setup option for back orders is none, then this parameter is ignored. The default is N - do not change status. </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="OutputAllLinesToReprint" default="N" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This option controls whether or not to output all sales order lines, including those on backorder, to the reprint file for printing. If set to 'Y' then all merchandise lines, including those on back order are output to the reprint file so that these are included when printing the document. If the setup option for intitial invoice printing is set to only print lines with a ship quantity then this parameter is ignored. The default is N - only output lines to ship to the reprint table. </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="N"/>
+                    <xsd:enumeration value="Y"/>
+                    <xsd:enumeration value=""/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
