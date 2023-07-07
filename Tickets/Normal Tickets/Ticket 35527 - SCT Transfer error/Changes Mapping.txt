@@ -1,0 +1,32 @@
+Job: Gnosis - deactive
+    Proc GnosisPORTOI
+    Proc Gnosis_Rest_Utility_Logon_For_Post
+
+Job: lsi_Automated Inventory Internal SCT Process
+    Proc usp_Post_InventoryInternalSCT
+
+Job: lsi_Automated Transfers In to X and Donation Warehouses
+    Proc usp_Post_Transfers_X_and_Donation
+
+Proc: usp_Query_AdmOperator
+    Proc usp_Rest_Utility_AdmOperator
+
+Proc: usp_Query_AdmPassHistory
+    Proc usp_Rest_Utility_AdmPassHistory
+
+Job: lsi_Automated Inventory Internal SCT Process
+    Proc usp_Rest_Utility_InventoryInternalSCTPost
+
+-----------------------------------------------
+    Proc usp_Rest_Utility_logon
+    Proc usp_Rest_Utility_Logoff
+        - usp_Query_AdmPassHistory
+        - usp_Query_AdmOperator
+        - usp_Post_WipLabor
+        - usp_Post_WipMaterials
+-----------------------------------------------
+
+Job: lsi_Automated Transfers In to X and Donation Warehouses
+    Proc usp_Transfers_Auto_In_To_X_and_Donation
+    Proc usp_Rest_Utility_Transfers_X_and_Donation_Post
+    
