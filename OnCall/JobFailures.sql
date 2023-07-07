@@ -1,7 +1,7 @@
 
 DECLARE @StartDate INT, @FinalDate INT;
-SET @StartDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-03-20 00:00:00.000' as datetime2)), 112)) 
-SET @FinalDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-03-28 00:00:00.000' as datetime2)), 112)) -- This date included in results
+SET @StartDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-06-26 00:00:00.000' as datetime2)), 112)) 
+SET @FinalDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-07-03 00:00:00.000' as datetime2)), 112)) -- This date included in results
 
 SELECT  j.[name],  
         s.step_name,  
