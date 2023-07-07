@@ -1,7 +1,7 @@
 
 
-DECLARE	@StartDate	AS DATETIME = '2023-03-20'
-				,@EndDate		AS DATETIME = '2023-03-28';
+DECLARE	@StartDate	AS DATETIME = '2023-06-26'
+				,@EndDate		AS DATETIME = '2023-07-03';
 
 DROP TABLE IF EXISTS #Deadlocks;
 

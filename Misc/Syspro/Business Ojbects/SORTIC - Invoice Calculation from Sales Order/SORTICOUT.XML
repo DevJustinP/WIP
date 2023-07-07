@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate use of
+     the SO Invoice Calculation from Sales Order Business Object
+-->
+<postsalesorderinvoice Language="05" CssStyle="" DecFormat="2" DateFormat="01" Role="01" Version="6.0.000" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTICOUT.XSD">
+  <Item>
+    <Key>
+      <SalesOrder>002612</SalesOrder>
+      <InvoiceNumber>000184</InvoiceNumber>
+      <TrnYear>2000</TrnYear>
+      <TrnMonth>05</TrnMonth>
+      <Register>00107</Register>
+      <WarningNumber></WarningNumber>
+      <WarningDescription></WarningDescription>
+      <Processed>Y</Processed>
+      <GlJournal>
+        <GlYear>2000</GlYear>
+        <GlPeriod>05</GlPeriod>
+        <GlJournal>00334</GlJournal>
+      </GlJournal>
+    </Key>
+  </Item>
+  <StatusOfItems>
+    <ItemsProcessed>000001</ItemsProcessed>
+    <ItemsInvalid>000000</ItemsInvalid>
+    <ItemsRejectedWithWarnings>000000</ItemsRejectedWithWarnings>
+    <ItemsProcessedWithWarnings>000000</ItemsProcessedWithWarnings>
+  </StatusOfItems>
+</postsalesorderinvoice>

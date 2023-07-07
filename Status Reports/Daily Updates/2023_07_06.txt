@@ -1,0 +1,11 @@
+Plan:
+    Projects:
+        SDM 32434 - Address Verification
+            - Meet and Discuss Documents and Deployment
+
+        SDM 34984 - Invoice Automation
+            - 
+
+    Tickets:
+        SDM 38285 - Job Closure
+        SDM 35667 - Add field to OptionGroupToProduct Table

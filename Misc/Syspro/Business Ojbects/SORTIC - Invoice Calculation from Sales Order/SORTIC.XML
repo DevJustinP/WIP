@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate use of
+     the parameters for the SO Invoice Calculation from Sales Order Business Object
+-->
+<PostSalesOrderInvoice xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTIC.XSD">
+  <Parameters>
+    <InvoiceDate/>
+    <OrderType>I</OrderType>
+    <PostingPeriod>C</PostingPeriod>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <ApplyIfEntireDocumentValid>N</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+    <ValidateAllLines>N</ValidateAllLines>
+    <InvoiceOnlyIfMerchLines>N</InvoiceOnlyIfMerchLines>
+    <InvoiceChgWithoutMerchLine>Y</InvoiceChgWithoutMerchLine>
+    <UpdateStatusWhenNoInvoice>N</UpdateStatusWhenNoInvoice>
+    <OutputAllLinesToReprint>N</OutputAllLinesToReprint>
+  </Parameters>
+</PostSalesOrderInvoice>
