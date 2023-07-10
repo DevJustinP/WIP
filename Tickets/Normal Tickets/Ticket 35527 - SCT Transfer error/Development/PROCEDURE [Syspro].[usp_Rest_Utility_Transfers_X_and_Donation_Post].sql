@@ -19,7 +19,7 @@ Description:	Modifing Uri creation
 =============================================
 */
 
-ALTER PROCEDURE [Syspro].[usp_Rest_Utility_Transfers_X_and_Donation_Post]
+CREATE or ALTER PROCEDURE [Syspro].[usp_Rest_Utility_Transfers_X_and_Donation_Post]
    @UserId           AS VARCHAR(75)
    ,@GtrReference    AS VARCHAR(20)
    ,@SourceWarehouse AS VARCHAR(10)

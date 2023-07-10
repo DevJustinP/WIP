@@ -20,7 +20,7 @@ Description:	Modifing Uri creation
 */
 
 ALTER PROCEDURE [Syspro].[GnosisPORTOI]
-	@UserId   AS VARCHAR(34) 
+	@UserId   AS VARCHAR(50) 
 	,@Job      AS VARCHAR(20) 
    ,@OrderActionType VARCHAR(1)
   ,@PurchaseOrder VARCHAR(20)
@@ -48,8 +48,6 @@ BEGIN
          ,@Parameters         AS VARCHAR(8000) = NULL
          ,@Post               AS VARCHAR(MAX)  = NULL
          ,@PostUri            AS VARCHAR(MAX)  = 'http://'+@Server+'/SYSPROWCFService/Rest/Transaction/Post?'
-       --,@PostUri            AS VARCHAR(MAX)  = 'http://7SYSPRO:20003/SYSPROWCFService/Rest/Transaction/Post?'
-       --,@PostUri            AS VARCHAR(MAX)  = 'http://DEV-7SYSPRO:30001/SYSPROWCFService/Rest/Transaction/Post?'
          ,@Result             AS INTEGER       = NULL
          ,@SourceScript       AS VARCHAR(MAX)  = OBJECT_SCHEMA_NAME(@@PROCID) + '.' + OBJECT_NAME(@@PROCID)
          ,@XmlIn              AS VARCHAR(8000) = NULL;
