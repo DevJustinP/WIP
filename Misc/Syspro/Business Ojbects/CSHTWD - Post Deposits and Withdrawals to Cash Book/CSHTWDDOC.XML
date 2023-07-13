@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Post Cash Book Deposits and Withdrawals Business Object
+-->
+<PostCbDepositsWithdrawals xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="CSHTWDDOC.XSD">
+  <Item>
+    <AddTransaction>
+      <Bank>GB</Bank>
+      <DepositOrWithdrawal>D</DepositOrWithdrawal>
+      <Reconciled>N</Reconciled>
+      <Reference>Deposit</Reference>
+      <TransactionValue>100.00</TransactionValue>
+      <TransactionDate>2006-09-12</TransactionDate>
+      <Narration>Deposit Narration</Narration>
+      <WithdrawalType/>
+      <CheckNumber/>
+      <EftBeneficiary/>
+      <PostingCurrency/>
+      <ExchangeRate/>
+      <TaxBasis>I</TaxBasis>
+      <TaxValue/>
+      <eSignature>{12345678-1234-1234-1234-123456789012}</eSignature>
+      <LedgerDistribution>
+        <LedgerCode>30-6200</LedgerCode>
+        <PasswordForLedgerCode/>
+        <LedgerTaxCode>A</LedgerTaxCode>
+        <LedgerNotation>Ledger notation</LedgerNotation>
+        <LedgerValue>100.00</LedgerValue>
+        <AnalysisEntry/>
+        <AnalysisLineEntry>
+          <AnalysisCode1>Air</AnalysisCode1>
+          <AnalysisCode2>Conf</AnalysisCode2>
+          <AnalysisCode3>East</AnalysisCode3>
+          <AnalysisCode4/>
+          <AnalysisCode5/>
+          <StartDate/>
+          <EndDate/>
+          <EntryAmount>100</EntryAmount>
+          <Comment>Analysis entry details</Comment>
+        </AnalysisLineEntry>
+      </LedgerDistribution>
+    </AddTransaction>
+  </Item>
+  <Item>
+    <ChangeTransaction>
+      <Bank>GB</Bank>
+      <PostingYear>2006</PostingYear>
+      <PostingMonth>02</PostingMonth>
+      <PostingDate>2006-11-16</PostingDate>
+      <PostingTime>10521751</PostingTime>
+      <NewReference>Changed</NewReference>
+      <NewTransactionValue>105.00</NewTransactionValue>
+      <ReCalculateLocalValue/>
+      <NewTransactionDate/>
+      <NewCheckNumber/>
+      <NewNarration/>
+      <NewEftBeneficiary/>
+      <TaxBasis>E</TaxBasis>
+      <TaxValue/>
+      <eSignature>{12345678-1234-1234-1234-123456789012}</eSignature>
+      <LedgerDistribution>
+        <LedgerCode>00-6400</LedgerCode>
+        <PasswordForLedgerCode/>
+        <LedgerTaxCode>A</LedgerTaxCode>
+        <LedgerNotation>Ledger notation</LedgerNotation>
+        <LedgerValue>5.00</LedgerValue>
+      </LedgerDistribution>
+    </ChangeTransaction>
+  </Item>
+  <Item>
+    <ReconOrUnreconByTransaction>
+      <Bank>GB</Bank>
+      <ReconcileOrUnreconcile>R</ReconcileOrUnreconcile>
+      <PostingYear>2006</PostingYear>
+      <PostingMonth>02</PostingMonth>
+      <PostingDate>2006-11-16</PostingDate>
+      <PostingTime>10521751</PostingTime>
+      <LocalCurrencyBankEquivalent/>
+      <eSignature>{12345678-1234-1234-1234-123456789012}</eSignature>
+    </ReconOrUnreconByTransaction>
+  </Item>
+  <Item>
+    <ReconOrUnreconByCheck>
+      <Bank>GB</Bank>
+      <ReconcileOrUnreconcile>U</ReconcileOrUnreconcile>
+      <CheckNumber>2</CheckNumber>
+      <LocalCurrencyBankEquivalent/>
+      <CheckType>M</CheckType>
+      <eSignature>{12345678-1234-1234-1234-123456789012}</eSignature>
+    </ReconOrUnreconByCheck>
+  </Item>
+  <Item>
+    <UnreconByPeriod>
+      <Bank>GB</Bank>
+      <PeriodToUnrecon>C</PeriodToUnrecon>
+      <UnreconcileDeposits>Y</UnreconcileDeposits>
+      <UnreconcileWithdrawals>Y</UnreconcileWithdrawals>
+      <eSignature>{12345678-1234-1234-1234-123456789012}</eSignature>
+    </UnreconByPeriod>
+  </Item>
+</PostCbDepositsWithdrawals>

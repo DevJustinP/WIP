@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!--
+     Schema for the Cash Book Deposits and Withdrawals Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="PostCbDepositsWithdrawals">
+		<xsd:annotation>
+			<xsd:documentation>This is the root element.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="false">
+			<xsd:sequence>
+				<xsd:element name="Parameters" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>This contains parameters.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType mixed="false">
+						<xsd:all>
+							<xsd:element name="PostingPeriod" default="C" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Period to which transactions must be posted. Valid values are 'C' for current period, 'P' for previous period 1 and 'B' for before previous period 2.Default is 'C'</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:whiteSpace value="preserve"/>
+										<xsd:enumeration value="C"/>
+										<xsd:enumeration value="P"/>
+										<xsd:enumeration value="B"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="IgnoreWarnings" default="N" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>This element indicates whether or not a transaction must be rejected if there are any warnings .  Default is 'N'. N - show an error message and reject the transaction, W- show a warning message, but don't reject the transaction, Y - don't show any warning messages and don't reject the transaction</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:whiteSpace value="preserve"/>
+										<xsd:enumeration value="Y"/>
+										<xsd:enumeration value="N"/>
+										<xsd:enumeration value="W"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="ApplyIfEntireDocumentValid" default="Y" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>This element indicates whether the entire document must be validated prior to any posting taking place. If set to 'N', each item is validated and rejected if in error or posted if correct. This is the fastest option. If set to 'Y', all items in the document are first validated.If the entire document is valid then items are posted.Default  is 'Y'. Valid values are 'Y' and 'N'.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:whiteSpace value="preserve"/>
+										<xsd:enumeration value="Y"/>
+										<xsd:enumeration value="N"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="ValidateOnly" default="N" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>This element indicates which processing phases are to be performed. If set to 'Y' all items are validated and an XML string is returned with the result of the validation. No posting will take place. If set to 'N', each item is validated and posting is performed based on the value of the element 'ApplyIfEntireDocumentValid'. Default is 'N'. Valid values are 'N' and 'Y'.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:whiteSpace value="preserve"/>
+										<xsd:enumeration value="Y"/>
+										<xsd:enumeration value="N"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="IgnoreAnalysis" default="Y" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>When adding or maintaining a journal you can specify whether the G/L analysis must be validated for the ledger code. Valid entires are 'Y' (Ingore G/L analysis) or 'N' (Validate G/L analysis). If no value is supplied then a default value of 'Y' will be used. If you are supplying your wn AnalysisEntry number ensure that you have set this flag to "Y" else the program will still validate the analysis.</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:whiteSpace value="preserve"/>
+										<xsd:enumeration value="Y"/>
+										<xsd:enumeration value="N"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+							<xsd:element name="Taxable" default="Y" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>This element indicates whether a tax return entry should be generated or not. If set to 'Y', then a tax return entry is generated - if set to "N", then an entry won't be generated. If no value is supplied then a default value of 'Y' will be used. </xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:whiteSpace value="preserve"/>
+										<xsd:enumeration value="Y"/>
+										<xsd:enumeration value="N"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:all>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
