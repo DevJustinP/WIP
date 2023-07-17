@@ -1,0 +1,10 @@
+Plan:
+    SDM 35527
+    SDM 38285
+
+    SDM 34984 - Invoice Automation
+
+log:
+    SDM 35527 
+        - finished testing
+        - Notifiying Ben

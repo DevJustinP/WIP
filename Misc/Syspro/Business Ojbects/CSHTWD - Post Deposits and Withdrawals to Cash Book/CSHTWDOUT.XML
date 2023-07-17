@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Post Cash Book Deposits and Withdrawals Business Object
+-->
+<postcbdepositswithdrawals Language='05' CssStyle='' DecFormat='1' DateFormat='01' Role='01' Version='6.0.000'>
+<Item>
+<AddTransaction> 
+<Key>
+<Bank>GB</Bank>
+<CbTrnYear>2006</CbTrnYear>
+<CbTrnMonth>02</CbTrnMonth>
+<Journal>0009</Journal>
+<EntryNumber>0001</EntryNumber>
+<CbTrnDate>20061118</CbTrnDate>
+<CbTrnTime>11201193</CbTrnTime>
+- <GlJournal>
+  <GlYear>2006</GlYear> 
+  <GlPeriod>02</GlPeriod> 
+  <GlJournal>00268</GlJournal> 
+  <Company /> 
+  <GlJournalError></GlJournalError>
+  <GlJournalMessage></GlJournalMessage>
+  </GlJournal>
+</Key>
+</AddTransaction>
+</Item>
+<StatusOfItems>
+<ItemsProcessed>1</ItemsProcessed>
+<ItemsInvalid/> 
+</StatusOfItems>
+</postcbdepositswithdrawals>
+ 

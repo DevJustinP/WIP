@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Post Cash Book Deposits and Withdrawals Business Object
+-->
+<PostCbDepositsWithdrawals xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="CSHTWD.XSD">
+  <Parameters>
+    <PostingPeriod>C</PostingPeriod>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <ApplyIfEntireDocumentValid>Y</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+    <IgnoreAnalysis>Y</IgnoreAnalysis>    
+    <Taxable>Y</Taxable> 
+  </Parameters>
+</PostCbDepositsWithdrawals>

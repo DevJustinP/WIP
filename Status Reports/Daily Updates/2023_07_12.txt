@@ -1,0 +1,6 @@
+Planned:
+    update tickets
+
+    SDM 34984 - Invoice Automation
+
+Note: for one on one talk about some SCT things that have happened this week.

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!--
+     Schema for the Cash Book Deposits and Withdrawals Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Bank">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory . This is the SYSPRO bank against which a deposit or withdrawal is being added, changed, reconciled or unreconciled. The value of this element must be a valid SYSPRO bank. If the element is not supplied or if spaces are supplied the bank defined against the SYSPRO operator is used as the default.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CheckNumber">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory within the 'ReconOrUnreconByCheck' hierarchy. This is the check number assigned to the transaction that you want to reconcile/unreconcile.This element is optional within the 'AddTransaction' hierarchy. This element is only relevant if adding a withdrawal and the value supplied in the 'WithdrawalType' element is 'M' or 'E'. If 'M' is supplied this is the manual check number. If 'E' is supplied this is the EFT payment number</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="eSignature">
+    <xsd:annotation>
+      <xsd:documentation>If required, this element must contain a GUID, for the eSignature system to accept the transaction as having been authenticated. The GUID format is in the format {36303032-3330-3031-3038-323434363433}, where the numbers can be replaced with any character. It is up to the developer to have requested a password to protect the transaction. An example is that a GUID associated with the act of entering a valid password could be obtained and presented.
+                </xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="LedgerDistribution">
+    <xsd:annotation>
+      <xsd:documentation>This is an optional element. This is the top element for all data supplied for the distribution of the transaction value to the relevant  General Ledger accounts. This element can occur multiple times within the 'AddTransaction' hierarchy and the 'ChangeTransaction' hierarchy. Each occurrence represents all the data applicable to post a value to a SYSPRO General Ledger account.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element name="LedgerCode" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This element is optional. This is the SYSPRO ledger code to which the value of the 'LedgerValue' element is to be posted. If  SYSPRO G/L integration  for Cash Book is detail or summary, then the ledger code must be a valid SYSPRO ledger code.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="PasswordForLedgerCode" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This element is optional. This field defines the password associated with the ledger code supplied in the 'LedgerCode' element. This must be valid if the ledger code has a password defined against it in SYSPRO.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="LedgerTaxCode" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This element is optional. This element is the tax code that the system uses to calculate the tax value. This element is only relevant if the SYSPRO G/L Setup indicates that a Global tax file is required and/or the Cash Book setup indicates that the tax distribution file is required in detail or summary. In addition, the Cash book setup allows you to select whether you require tax on withdrawals and deposits,withdrawals only or deposits only.If not supplied or spaces are supplied, then the default tax code for withdrawals is the tax code defined against the 'LedgerCode' supplied. If this is spaces, then the withdrawals tax code  that is defined in the SYSPRO Cash Book setup options is used.If not supplied or spaces are supplied, then the default tax code for deposits is the deposits tax code defined  in the SYSPRO Cash Book setup options.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="LedgerNotation" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This element is optional. This element is only relevant if the SYSPRO Cash Book setup has the option 'Ask notation per detail distribution entry' set on. </xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="LedgerValue" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This element is optional. This is the value to be allocated to the ledger code supplied in the 'LedgerCode' element.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="AnalysisEntry" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>If an analysis entry number has been assigned to this detail line, then use this element to store the analysis entry number. If Analysis Line entry is passed then that will overwrite and analysis number supplied in the AnalysisEntry element. </xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="AnalysisLineEntry" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>If IgnoreAnalysis is set to 'Y" this node and all it's elements are ignored. If you are suuplying your own AnalysisEntry Number ensure that you have set IgnoreAnalysis to "Y"</xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="AnalysisCode1" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify an analysis code 1 for the analysis entry you are createing </xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AnalysisCode2" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify and analysis code 2 for the analysis entry you are creating</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AnalysisCode3" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify an analysis code 3 for the analysis entry you are creating</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AnalysisCode4" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify and analysis code 4 for the analysis entry you are creating</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="AnalysisCode5" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify and analysis code 5 for the analysis entry you are createing</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="StartDate" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify a start date for the analysis entry you are creating</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="EndDate" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can specify an end date for the analysis entry you are creating</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="EntryAmount" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You must specify and entry amount for the analysis entry you are creating. The entry amount entered here must be exclusive of tax.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="Comment" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>You can enter a comment for the analysis entry you are creating</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:whiteSpace value="preserve"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="LocalCurrencyBankEquivalent">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional. This element is only relevant if reconciling a transaction. If the currency exchange rate has changed and the bank has re-valued your transaction according to the new rate, then this element allows you to enter the new  local currency equivalent. Any difference is posted to the Exchange Variance Account as defined against the SYSPRO Bank .
+If this element is not supplied, the current value on the Cash Book SYSPRO file is used as the default. If spaces or nulls are supplied , the value defaults to zero.
+</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PostCbDepositsWithdrawals">
+    <xsd:annotation>
+      <xsd:documentation>This is a mandatory element. This is the root element.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element name="Item" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:documentation>This element is mandatory.This is the top element for all data required for adding a new Cash Book transaction, changing an existing transaction or reconcliling/unreconciling an existing transaction. This element can occur multiple times as the business object caters for the posting of multiple transactions to multiple banks.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType mixed="false">
+            <xsd:sequence>
+              <xsd:element name="AddTransaction" minOccurs="0">
+                <xsd:complexType mixed="false">
+                  <xsd:sequence>
+                    <xsd:element ref="Bank"/>
+                    <xsd:element name="DepositOrWithdrawal" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element indicates if a withdrawal or a deposit is being added. Possible values are  'D' - to add a deposit or 'W' - to add a withdrawal. If this element is not supplied, then the default is 'D'. If this element is not supplied and the SYSPRO operator is denied access to Cash Book deposits, then the default is 'W'.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="D"/>
+                          <xsd:enumeration value="W"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="Reconciled" default="N" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This indicates if the deposit or withdrawal that you are adding is reconciled or unreconciled. Value values or 'Y' - reconciled or 'N' - unreconciled. The default is 'N'.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="Y"/>
+                          <xsd:enumeration value="N"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="Reference" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional.This element is text that is assigned to the Cash Book transaction being added.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="TransactionValue" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the value of the deposit or withdrawal that you are adding to Cash Book.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="TransactionDate" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the transaction date that you want to assign to the deposit/withdrawal that you are adding. The default is the current system date.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="Narration" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional.  This element is additional text that is assigned to the Cash Book transaction being added.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="WithdrawalType" default="M" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the type of withdrawal you are adding.Possible values are N - no check,  M - manual check,  E - EFT payment.The default is 'M'.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="N"/>
+                          <xsd:enumeration value="M"/>
+                          <xsd:enumeration value="E"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element ref="CheckNumber" minOccurs="0"/>
+                    <xsd:element name="EftBeneficiary" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the EFT beneficiary code. This element is only relevant if adding a withdrawal and the 'WithdrawalType' element has a value of 'E'. This must be a valid SYSPRO EFT beneficiary code.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PostingCurrency" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is only relevant if the 'Bank' is a local currency bank and you want to add a foreign currency transaction against the bank.
+The value supplied must be a valid SYSPRO currency. If this element is not supplied the default is local currency.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="ExchangeRate" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the exchange rate to be used when converting the 'TransactionValue' to local currency. This is only relevant if the 'Bank' supplied is a foreign currency bank or the 'PostingCurrency' supplied is a foreign currency. If the currency defined against the 'Bank' is defined as �fixed rate�, then the exchange rate off the SYSPRO currency exchange rate table is always used, irrespective of the value supplied in this element. 
+If the rate is not defined as fixed, then the value supplied  in the 'ExchangeRate' element will be used.
+ If no exchange rate is supplied or if zero is supplied, then the rate from the SYSPRO currency exchange rate table is used.
+</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element ref="TaxBasis" minOccurs="0"/>
+                    <xsd:element ref="TaxValue" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element is only relevant it the value supplied in the 'TaxBasis' element is 'E'. This is the value of tax and must always be supplied in local currency.
+</xsd:documentation>
+                      </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element ref="eSignature" minOccurs="0"/>
+                    <xsd:element ref="LedgerDistribution" minOccurs="0" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="ChangeTransaction" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is optional. This is the top element for all data supplied for changing an existing transaction against a specific SYSPRO bank in the  SYSPRO Cash Book. </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType mixed="false">
+                  <xsd:sequence>
+                    <xsd:element ref="Bank"/>
+                    <xsd:element ref="PostingYear"/>
+                    <xsd:element ref="PostingMonth"/>
+                    <xsd:element ref="PostingDate"/>
+                    <xsd:element ref="PostingTime"/>
+                    <xsd:element name="NewReference" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the new value of the 'Reference' originally assigned to the transaction. If this element is not supplied, the existing reference against the transaction is used as the default.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="NewTransactionValue" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the new value of the Cash Book transaction.If this element is not supplied the existing value against the Cash Book transaction is used as the default. If the transaction originated from A/P the value supplied in this element is ignored and the value against the Cash Book transaction is used. This is because you can only change the value of a transaction that was created by Cash Book.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="ReCalculateLocalValue" default="Y" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the top element for all data supplied for reconciling/unreconciling an existing SYSPRO Cash Book transaction by using a check number to locate the transaction.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="Y"/>
+                          <xsd:enumeration value="N"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="NewTransactionDate" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This is the new transaction date of the Cash Book transaction that you are changing. If this element is not supplied, then the existing transaction date against the Cash Book transaction is used as the default.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="NewCheckNumber" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element is only relevant if changing a withdrawal. If this element is not supplied the existing check number against the Cash Book transaction is used as the default. If the transaction originated from A/P the value supplied in this element is ignored and the value against the Cash Book transaction is used. This is because you can only change the check number of a transaction that was created by Cash Book. If changing an EFT transaction this field is ignored.
+</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="NewNarration" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional.  This is the new value of the 'Narration' originally assigned to the transaction. If this element is not supplied, the existing narration against the transaction is used as the default.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="NewEftBeneficiary" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element is only relevant if changing a withdrawal and if the transaction you are changing was originally posted as an EFT withdrawal.If this element is not supplied, the value of this element defaults to the existing beneficiary against the Cash Book transaction.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element ref="TaxBasis" minOccurs="0"/>
+                    <xsd:element ref="TaxValue" minOccurs="0"/>
+                    <xsd:element ref="eSignature" minOccurs="0"/>
+                    <xsd:element ref="LedgerDistribution" minOccurs="0" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="ReconOrUnreconByTransaction" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is optional. This is the top element for all data supplied for reconciling/unreconciling an existing SYSPRO Cash Book transaction.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType mixed="false">
+                  <xsd:sequence>
+                    <xsd:element ref="Bank"/>
+                    <xsd:element ref="ReconcileOrUnreconcile" minOccurs="0"/>
+                    <xsd:element ref="PostingYear"/>
+                    <xsd:element ref="PostingMonth"/>
+                    <xsd:element ref="PostingDate"/>
+                    <xsd:element ref="PostingTime"/>
+                    <xsd:element ref="LocalCurrencyBankEquivalent" minOccurs="0"/>
+                    <xsd:element ref="eSignature" minOccurs="0"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="ReconOrUnreconByCheck" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is optional. This is the top element for all data supplied for reconciling/unreconciling an existing SYSPRO Cash Book transaction by using a check number to locate the transaction.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType mixed="false">
+                  <xsd:sequence>
+                    <xsd:element ref="Bank"/>
+                    <xsd:element ref="ReconcileOrUnreconcile" minOccurs="0"/>
+                    <xsd:element ref="CheckNumber"/>
+                    <xsd:element ref="LocalCurrencyBankEquivalent" minOccurs="0"/>
+                    <xsd:element name="CheckType" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element denotes the type of check that we are reconciling/unreconciling. It is possible to have multiple transactions per bank which have the same check number. The only way of differentiating between these transactions is by supplying a value in the 'CheckType' element. Possible values are 'R' - released(system generated) check, 'M' - manual check, 'V' - void check, 'E' - EFT payment
+There is no default. If this element is not </xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="R"/>
+                          <xsd:enumeration value="M"/>
+                          <xsd:enumeration value="V"/>
+                          <xsd:enumeration value="E"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element ref="eSignature" minOccurs="0"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="UnreconByPeriod" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation>This element is optional. This is the top element for all data supplied for globally unreconciling all transactions that were reconciled in a particular period.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType mixed="false">
+                  <xsd:sequence>
+                    <xsd:element ref="Bank"/>
+                    <xsd:element name="PeriodToUnrecon" default="C" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. All SYSPRO Cash Book transactions that have a reconciliation period that matches the 'PeriodToUnrecon' will be set to unreconciled. Possible options are 'C' - current period, 'P' - previous period 1, or 'B' - previous period 2. The default is 'C'.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="C"/>
+                          <xsd:enumeration value="P"/>
+                          <xsd:enumeration value="B"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="UnreconcileDeposits" default="N" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element indicates if deposits are to be included when globally unreconciling transactions by period. Valid options are 'Y' - yes and 'N' - no. The default is 'N'.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="N"/>
+                          <xsd:enumeration value="Y"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="UnreconcileWithdrawals" default="N" minOccurs="0">
+                      <xsd:annotation>
+                        <xsd:documentation>This element is optional. This element indicates if withdrawals are to be included when globally unreconciling transactions by period. Valid options are 'Y' - yes and 'N' - no. The default is 'N'.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:whiteSpace value="preserve"/>
+                          <xsd:enumeration value="N"/>
+                          <xsd:enumeration value="Y"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element ref="eSignature" minOccurs="0"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="PostingDate">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory. The 'PostingDate' forms part of the key to an existing Cash Book transaction.In order to locate the correct transaction for changing or reconciling/unreconciling this element must be supplied.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PostingMonth">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory. The 'PostingMonth' forms part of the key to an existing Cash Book transaction.In order to locate the correct transaction for changing or reconciling/unreconciling this element must be supplied.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PostingTime">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory. The 'PostingTime' forms part of the key to an existing Cash Book transaction.In order to locate the correct transaction for changing or reconciling/unreconciling this element must be supplied.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PostingYear">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory. The 'PostingYear' forms part of the key to an existing Cash Book transaction.In order to locate the correct transaction for changing or reconciling/unreconciling this element must be supplied.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ReconcileOrUnreconcile">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional. This element indicates if the transaction is to be set as reconciled or unreconciled. If this element is not supplied or spaces are supplied, then the business object will reverse the current status of the transaction. In other words if the transaction is already reconciled it will set it to unreconciled and if it is unreconciled it will set it as reconciled.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:enumeration value="R"/>
+        <xsd:enumeration value="U"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TaxBasis" default="E">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional. This element indicates whether the tax is exclusive or inclusive. Valid options are 'E' - exclusive or 'I' - inclusive. </xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:enumeration value="E"/>
+        <xsd:enumeration value="I"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TaxValue">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional. This element is only relevant it the value supplied in the 'TaxBasis' element is 'E'. This is the value of tax and must always be supplied in local currency.
+</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+</xsd:schema>
