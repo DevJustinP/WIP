@@ -1,0 +1,12 @@
+<SalesOrders Language="05" Language2="EN" CssStyle="" DecFormat="1" DateFormat="01" Role="01" Version="8.0.149" OperatorPrimaryRole="   ">
+    <Order>
+      <CustomerPoNumber />
+      <SalesOrder>200-1117087</SalesOrder>
+      <OrderActionType>C</OrderActionType>
+    </Order>
+    <StatusOfItems>
+      <ItemsProcessed>000001</ItemsProcessed>
+      <ItemsRejectedWithWarnings>000000</ItemsRejectedWithWarnings>
+      <ItemsProcessedWithWarnings>000000</ItemsProcessedWithWarnings>
+    </StatusOfItems>
+  </SalesOrders>

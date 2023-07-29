@@ -1,0 +1,15 @@
+<postsalesorderssct Language="05" Language2="EN" CssStyle="" DecFormat="1" DateFormat="01" Role="01" Version="8.0.031" OperatorPrimaryRole="   ">
+    <Item>
+      <Key>
+        <SalesOrder>100-1060858</SalesOrder>
+        <SourceWarehouse>MV</SourceWarehouse>
+        <TargetWarehouse>301</TargetWarehouse>
+        <CustomerPoNumber>301-1014813 KACY KER</CustomerPoNumber>
+      </Key>
+      <ItemNumber>000001</ItemNumber>
+    </Item>
+    <StatusOfItems>
+      <ItemsProcessed>000001</ItemsProcessed>
+      <ItemsInvalid>000000</ItemsInvalid>
+    </StatusOfItems>
+  </postsalesorderssct>
