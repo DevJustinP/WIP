@@ -17,8 +17,7 @@ where [Email] = 'SoftwareDeveloper@SummerClassics.com';
 go
 
 insert into [SOH].[BranchManagementEmails]
-values ('All','IT Department','CC','SoftwareDeveloper@SummerClassics.com','Developer','All'),
-	   ('All','Pelham','CC','','Trainer','Validation Failures');
+values ('All','Pelham','CC','margaretm@gabriellawhite.com','Trainer','Validation Failures');
 go
 
 select * from [SOH].BranchManagementEmails;
@@ -42,8 +41,10 @@ GO
 					Email Types
 ===============================================
 Test:
-declare @@Branch as varchar(10)  = '303'
-execute [SOH].[usp_GetEmailRepsByBranch] @@Branch
+declare @Branch as varchar(10)  = '316',
+	    @EmailType varchar(100) = 'ValidationFailures'
+execute [SOH].[usp_GetEmailRepsByBranch] @Branch,
+										 @EmailType
 ===============================================
 */
 
@@ -69,8 +70,8 @@ begin
 						union
 						Select 0 as [Rank]
 						where e.[Type] = 'TO' ) as [Order]
-	where Branch in (@All, @Branch)
-		and EmailType in (@All, @EmailType)
+	where (Branch in (@All, @Branch) or @Branch = @All)
+		and (EmailType in (@All, @EmailType) or @Branch = @All)
 	order by [Order].[Rank]
 
 end
