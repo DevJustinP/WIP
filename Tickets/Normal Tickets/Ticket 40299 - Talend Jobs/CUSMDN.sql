@@ -1,0 +1,1 @@
+select *  from  SysproCompany100.dbo.[CusMdnMaster+]

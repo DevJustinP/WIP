@@ -1,7 +1,7 @@
 
 
-DECLARE	@StartDate	AS DATETIME = '2023-07-03'
-				,@EndDate		AS DATETIME = '2023-07-10';
+DECLARE	@StartDate	AS DATETIME = '2023-07-24'
+				,@EndDate		AS DATETIME = '2023-07-31';
 
 DROP TABLE IF EXISTS #Deadlocks;
 
@@ -192,7 +192,8 @@ ORDER BY [Count];
 
 
 SELECT *
-FROM #Deadlocks;
+FROM #Deadlocks
+order by [Application], [Date];
 
 
 SELECT	[Application]						AS [Application]

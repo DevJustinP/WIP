@@ -1,0 +1,1 @@
+select ProblemCode,ProblemType,ProblemTypeCode,ProblemCategory from  PRODUCT_INFO.DBO.RMACATEGORY
