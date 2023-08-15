@@ -1,0 +1,12 @@
+Planned:
+    - SDM 34984 - Invoice Automation
+        Technical Design and Actual Coding
+    
+    - SDM 39565 - Status 8 Wendy Jane items
+        Get change control up for this
+
+Check on these Tickets:
+    - SDM 40639
+    - SDM 40759
+
+SDM 40617 - Follow up on with Meagan
