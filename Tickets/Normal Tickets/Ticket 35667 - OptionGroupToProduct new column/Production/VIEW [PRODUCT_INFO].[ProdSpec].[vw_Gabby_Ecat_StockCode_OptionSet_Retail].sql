@@ -33,7 +33,7 @@ Ticke:		 SDM32406 - (Contrasting Fabric Changes - SKU Builder and eCat Uploads)
 Orginal view vw_Gabby_Ecat_StockCode_OptionSet_Retail now with a filter  Options.[UploadToEcatRetail] = 1 and OptionGroupToProduct.[UploadToEcatRetail] = 1
 =============================================
 */
-CREATE VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Retail]
+CREATE OR ALTER VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Retail]
 AS
 WITH OptionSet (
 	StockCode

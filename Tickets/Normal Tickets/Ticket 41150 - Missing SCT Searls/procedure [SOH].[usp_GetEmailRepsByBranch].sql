@@ -45,14 +45,13 @@ begin
 	select
 		e.*
 	from [SOH].[BranchManagementEmails] as e
-			cross apply (	Select
-								case
-									when e.[RecepeintType] = 'CC' then 2
-									when e.[RecepeintType] = 'TO' then 1 
-									else 0
-								end as [Rank]) as [Order]
-	where Branch in (@Branch, @All)
-		and EmailType in (@EmailType, @All)
+		cross apply (	Select 1 as [Rank]
+						where e.[RecepeintType] = 'CC'
+						union
+						Select 0 as [Rank]
+						where e.[RecepeintType] = 'TO' ) as [Order]
+	where (Branch in (@All, @Branch) or @Branch = @All)
+		and (EmailType in (@All, @EmailType) or @EmailType = @All)
 	order by [Order].[Rank]
 
 end

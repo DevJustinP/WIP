@@ -42,6 +42,7 @@ WITH OptionSet (
 	StockCode
 	,OptionSetNumber
 	,OptionGroupList
+	,ExcludeFromEcatMatrix
 	,PRICE_R
 	,PRICE_T
 	)
@@ -57,11 +58,11 @@ AS (
 					SELECT 1
 					FROM ProdSpec.Options o
 					WHERE p.OptionGroup = o.OptionGroup
-						and p.ExcludeFromEcatMatrix = 0
 					)
 			ORDER BY Optiongroup
 			FOR XML PATH('')
 			)
+		,ExcludeFromEcatMatrix
 		,PRICE_R = (
 			SELECT ' ' + cast(PRICE_R AS VARCHAR(10)) + ', '
 			FROM [ProdSpec].[OptionGroupToProduct] AS p
@@ -71,7 +72,6 @@ AS (
 					SELECT 1
 					FROM ProdSpec.Options o
 					WHERE p.OptionGroup = o.OptionGroup
-						and p.ExcludeFromEcatMatrix = 0
 					)
 			FOR XML PATH('')
 			)
@@ -81,10 +81,10 @@ AS (
 			SELECT 1
 			FROM ProdSpec.Options o
 			WHERE u.OptionGroup = o.OptionGroup
-		    and u.ExcludeFromEcatMatrix = 0
 			)
 	GROUP BY ProductNumber
 		,OptionSet
+		,ExcludeFromEcatMatrix
 	)
 SELECT OptionSet.StockCode AS [StockCode]
 	,substring(OptionSet1.OptionGroupList, 1, len(OptionSet1.OptionGroupList) - 1) AS [OptionSet1]
@@ -94,12 +94,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet1.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet1.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet1.PRICE_T > 0
+			WHEN OptionSet1.PRICE_T > 0 and OptionSet1.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet1Matrixed]
 	,substring(OptionSet2.OptionGroupList, 1, len(OptionSet2.OptionGroupList) - 1) AS [OptionSet2]
 	,IIF(OptionSet2.OptionGroupList IS NULL, NULL, 1) AS [OptionSet2Required]
@@ -107,12 +105,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet2.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet2.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet2.PRICE_T > 0
+			WHEN OptionSet2.PRICE_T > 0 and OptionSet2.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet2Matrixed]
 	,substring(OptionSet3.OptionGroupList, 1, len(OptionSet3.OptionGroupList) - 1) AS [OptionSet3]
 	,IIF(OptionSet3.OptionGroupList IS NULL, NULL, 1) AS [OptionSet3Required]
@@ -120,12 +116,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet3.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet3.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet3.PRICE_T > 0
+			WHEN OptionSet3.PRICE_T > 0 and OptionSet3.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet3Matrixed]
 	,substring(OptionSet4.OptionGroupList, 1, len(OptionSet4.OptionGroupList) - 1) AS [OptionSet4]
 	,IIF(OptionSet4.OptionGroupList IS NULL, NULL, 1) AS [OptionSet4Required]
@@ -133,12 +127,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet4.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet4.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet4.PRICE_T > 0
+			WHEN OptionSet4.PRICE_T > 0 and OptionSet4.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet4Matrixed]
 	,substring(OptionSet5.OptionGroupList, 1, len(OptionSet5.OptionGroupList) - 1) AS [OptionSet5]
 	,IIF(OptionSet5.OptionGroupList IS NULL, NULL, 1) AS [OptionSet5Required]
@@ -146,12 +138,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet5.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet5.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet5.PRICE_T > 0
+			WHEN OptionSet5.PRICE_T > 0 and OptionSet5.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet5Matrixed]
 	,substring(OptionSet6.OptionGroupList, 1, len(OptionSet6.OptionGroupList) - 1) AS [OptionSet6]
 	,IIF(OptionSet6.OptionGroupList IS NULL, NULL, 1) AS [OptionSet6Required]
@@ -159,12 +149,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet6.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet6.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet6.PRICE_T > 0
+			WHEN OptionSet6.PRICE_T > 0 and OptionSet6.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet6Matrixed]
 	,substring(OptionSet7.OptionGroupList, 1, len(OptionSet7.OptionGroupList) - 1) AS [OptionSet7]
 	,IIF(OptionSet7.OptionGroupList IS NULL, NULL, 1) AS [OptionSet7Required]
@@ -172,12 +160,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet7.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet7.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet7.PRICE_T > 0
+			WHEN OptionSet7.PRICE_T > 0 and OptionSet7.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet7Matrixed]
 	,substring(OptionSet8.OptionGroupList, 1, len(OptionSet8.OptionGroupList) - 1) AS [OptionSet8]
 	,IIF(OptionSet8.OptionGroupList IS NULL, NULL, 1) AS [OptionSet8Required]
@@ -185,12 +171,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet8.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet8.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet8.PRICE_T > 0
+			WHEN OptionSet8.PRICE_T > 0 and OptionSet8.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet8Matrixed]
 	,substring(OptionSet9.OptionGroupList, 1, len(OptionSet9.OptionGroupList) - 1) AS [OptionSet9]
 	,IIF(OptionSet9.OptionGroupList IS NULL, NULL, 1) AS [OptionSet9Required]
@@ -198,12 +182,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet9.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet9.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet9.PRICE_T > 0
+			WHEN OptionSet9.PRICE_T > 0 and OptionSet9.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet9Matrixed]
 	,substring(OptionSet10.OptionGroupList, 1, len(OptionSet10.OptionGroupList) - 1) AS [OptionSet10]
 	,IIF(OptionSet10.OptionGroupList IS NULL, NULL, 1) AS [OptionSet10Required]
@@ -211,12 +193,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet10.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet10.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet10.PRICE_T > 0
+			WHEN OptionSet10.PRICE_T > 0 and OptionSet10.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet10Matrixed]
 	,substring(OptionSet11.OptionGroupList, 1, len(OptionSet11.OptionGroupList) - 1) AS [OptionSet11]
 	,IIF(OptionSet11.OptionGroupList IS NULL, NULL, 1) AS [OptionSet11Required]
@@ -224,12 +204,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet11.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet11.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet11.PRICE_T > 0
+			WHEN OptionSet11.PRICE_T > 0 and OptionSet11.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet11Matrixed]
 	,substring(OptionSet12.OptionGroupList, 1, len(OptionSet12.OptionGroupList) - 1) AS [OptionSet12]
 	,IIF(OptionSet12.OptionGroupList IS NULL, NULL, 1) AS [OptionSet12Required]
@@ -237,12 +215,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet12.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet12.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet12.PRICE_T > 0
+			WHEN OptionSet12.PRICE_T > 0 and OptionSet12.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet12Matrixed]
 	,substring(OptionSet13.OptionGroupList, 1, len(OptionSet13.OptionGroupList) - 1) AS [OptionSet13]
 	,IIF(OptionSet13.OptionGroupList IS NULL, NULL, 1) AS [OptionSet13Required]
@@ -250,12 +226,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet13.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet13.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet13.PRICE_T > 0
+			WHEN OptionSet13.PRICE_T > 0 and OptionSet13.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet13Matrixed]
 	,substring(OptionSet14.OptionGroupList, 1, len(OptionSet14.OptionGroupList) - 1) AS [OptionSet14]
 	,IIF(OptionSet14.OptionGroupList IS NULL, NULL, 1) AS [OptionSet14Required]
@@ -263,12 +237,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet14.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet14.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet14.PRICE_T > 0
+			WHEN OptionSet14.PRICE_T > 0 and OptionSet14.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet14Matrixed]
 	,substring(OptionSet15.OptionGroupList, 1, len(OptionSet15.OptionGroupList) - 1) AS [OptionSet15]
 	,IIF(OptionSet15.OptionGroupList IS NULL, NULL, 1) AS [OptionSet15Required]
@@ -276,12 +248,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet15.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet15.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet15.PRICE_T > 0
+			WHEN OptionSet15.PRICE_T > 0 and OptionSet15.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet15Matrixed]
 	,substring(OptionSet16.OptionGroupList, 1, len(OptionSet16.OptionGroupList) - 1) AS [OptionSet16]
 	,IIF(OptionSet16.OptionGroupList IS NULL, NULL, 1) AS [OptionSet16Required]
@@ -289,12 +259,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet16.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet16.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet16.PRICE_T > 0
+			WHEN OptionSet16.PRICE_T > 0 and OptionSet16.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet16Matrixed]
 	,substring(OptionSet17.OptionGroupList, 1, len(OptionSet17.OptionGroupList) - 1) AS [OptionSet17]
 	,IIF(OptionSet17.OptionGroupList IS NULL, NULL, 1) AS [OptionSet17Required]
@@ -302,12 +270,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet17.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet17.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet17.PRICE_T > 0
+			WHEN OptionSet17.PRICE_T > 0 and OptionSet17.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		end
 		) AS [OptionSet17Matrixed]
 	,substring(OptionSet18.OptionGroupList, 1, len(OptionSet18.OptionGroupList) - 1) AS [OptionSet18]
 	,IIF(OptionSet18.OptionGroupList IS NULL, NULL, 1) AS [OptionSet18Required]
@@ -315,12 +281,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet18.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet18.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet18.PRICE_T > 0
+			WHEN OptionSet18.PRICE_T > 0 and OptionSet18.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		END
 		) AS [OptionSet18Matrixed]
 	,substring(OptionSet19.OptionGroupList, 1, len(OptionSet19.OptionGroupList) - 1) AS [OptionSet19]
 	,IIF(OptionSet19.OptionGroupList IS NULL, NULL, 1) AS [OptionSet19Required]
@@ -328,12 +292,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet19.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet19.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet19.PRICE_T > 0
+			WHEN OptionSet19.PRICE_T > 0 and OptionSet19..ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		END
 		) AS [OptionSet19Matrixed]
 	,substring(OptionSet20.OptionGroupList, 1, len(OptionSet20.OptionGroupList) - 1) AS [OptionSet20]
 	,IIF(OptionSet20.OptionGroupList IS NULL, NULL, 1) AS [OptionSet20Required]
@@ -341,12 +303,10 @@ SELECT OptionSet.StockCode AS [StockCode]
 		CASE 
 			WHEN OptionSet20.OptionGroupList IS NULL
 				THEN NULL
-			WHEN OptionSet20.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet20.PRICE_T > 0
+			WHEN OptionSet20.PRICE_T > 0 and OptionSet20.ExcludeFromEcatMatrix = 0
 				THEN 1
-			ELSE NULL
-			END
+			else 0
+		END
 		) AS [OptionSet20Matrixed]
 FROM OptionSet
 LEFT OUTER JOIN OptionSet AS OptionSet1 ON OptionSet1.[StockCode] = OptionSet.[StockCode]
@@ -393,9 +353,11 @@ GROUP BY OptionSet.[StockCode]
 	,OptionSet1.[OptionGroupList]
 	,IIF(OptionSet1.OptionGroupList IS NULL, NULL, 1)
 	,OptionSet1.PRICE_T
+	,OptionSet1.ExcludeFromEcatMatrix
 	,OptionSet2.[OptionGroupList]
 	,IIF(OptionSet2.OptionGroupList IS NULL, NULL, 1)
 	,OptionSet2.PRICE_T
+	,OptionSet2.ExcludeFromEcatMatrix
 	,OptionSet3.[OptionGroupList]
 	,IIF(OptionSet3.OptionGroupList IS NULL, NULL, 1)
 	,OptionSet3.PRICE_T
