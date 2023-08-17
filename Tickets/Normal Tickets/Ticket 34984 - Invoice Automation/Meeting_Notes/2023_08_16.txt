@@ -1,0 +1,11 @@
+Sales Orders to invoice:
+    Sales Orders are out of scope
+    Marketing Sales Orders
+    - this may come down the pipe
+
+Email to Customer:
+    - Reaching out to ben with emial notifications
+    - Testing with Carla
+
+Reporting:
+    - 

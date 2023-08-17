@@ -1,0 +1,12 @@
+Plan:
+    SDM 36922 - 2Ship Ship Hold Record limitiation issue
+
+    SDM 39000 - Sales Order Allocation Purge Window
+
+    SDM 35667 - Add field to OptionGroupToProduct Table
+        Update views within changes
+        Maxtrix field needs to be incorporated with the maxtrix column in the return
+
+    SDM 31654 - 2Ship Integration Error
+    
+Actual/Notes:
