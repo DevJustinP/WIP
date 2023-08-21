@@ -11,10 +11,10 @@ declare db_cursor cursor for
 select
 	i.[subject],
 	i.body_format,
-	i.[body],
+	'"'+i.[body]+'"',
 	i.[file_attachments]
 from [msdb].dbo.sysmail_allitems i
-where i.send_request_date between '2023-08-16' and '2023-08-18'
+where i.send_request_date between '2023-08-16' and GETDATE()
 	and i.[subject] like '%Sales Order Handler%'
 	and i.[recipients] = 'SoftwareDevelopers@Summerclassics.com;'
 
