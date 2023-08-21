@@ -31,7 +31,7 @@ vw_Gabby_Ecat_StockCode_OptionSet_Contract =	[UploadToEcatGabbyWholesale] = 1
 
 =============================================
 */
-CREATE VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Contract]
+CREATE OR ALTER VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Contract]
 
 AS
 WITH OptionSet (

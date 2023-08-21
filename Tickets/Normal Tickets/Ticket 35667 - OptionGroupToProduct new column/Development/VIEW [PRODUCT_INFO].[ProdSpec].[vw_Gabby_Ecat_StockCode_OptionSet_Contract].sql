@@ -35,422 +35,494 @@ vw_Gabby_Ecat_StockCode_OptionSet_Contract =	[UploadToEcatGabbyWholesale] = 1
 	Ticket:			SDM35667 - New column OptionGroupToProduct 
 							   ExcludeFromEcatMatrix 
 ========================================================================
+TEST:
+	Select * from [PRODUCT_INFO].[ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Contract]
+========================================================================
 */
-Alter VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Contract]
-
+Create or Alter VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Contract]
 AS
 WITH OptionSet (
 	StockCode
 	,OptionSetNumber
 	,OptionGroupList
-	,PRICE_R
+	,ExcludeFromEcatMatrix
 	,PRICE_T
 	)
-AS (
+as (
 	SELECT ProductNumber AS StockCode
 		,OptionSet AS OptionSetNumber
-		,OptionGroupList = (
-			SELECT '' + Optiongroup + ','
+		,OptionGroupList = ( stuff((
+			SELECT ',' + Optiongroup 
 			FROM [ProdSpec].[OptionGroupToProduct] AS p
 			WHERE p.ProductNumber = u.ProductNumber
 				AND p.OptionSet = u.OptionSet
 				AND EXISTS (
 					SELECT 1
 					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup and [UploadToEcatContract] = 1
-						and p.ExcludeFromEcatMatrix = 0
+					WHERE p.OptionGroup = o.OptionGroup
+						and o.[UploadToEcatContract] = 1
 					)
 			ORDER BY Optiongroup
-			FOR XML PATH('')
+			FOR XML PATH('')), 1,1,'')
 			)
-		,PRICE_R = (
-			SELECT ' ' + cast(PRICE_R AS VARCHAR(10)) + ', '
-			FROM [ProdSpec].[OptionGroupToProduct] AS p
-			WHERE p.ProductNumber = u.ProductNumber
-				AND p.OptionSet = u.OptionSet
-				AND EXISTS (
-					SELECT 1
-					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup and [UploadToEcatContract] = 1
-						and p.ExcludeFromEcatMatrix = 0
-					)
-			FOR XML PATH('')
-			)
+		,min( case	
+				when u.ExcludeFromEcatMatrix = 0 then 0
+				when u.ExcludeFromEcatMatrix = 1 then 1
+			  end) as ExcludeFromEcatMatrix
 		,SUM(PRICE_R) AS PRICE_T
 	FROM [ProdSpec].[OptionGroupToProduct] AS u
 	WHERE EXISTS (
 			SELECT 1
 			FROM ProdSpec.Options o
-			WHERE u.OptionGroup = o.OptionGroup and [UploadToEcatContract] = 1
-		     and u.ExcludeFromEcatMatrix = 0
+			WHERE u.OptionGroup = o.OptionGroup
+				and o.[UploadToEcatContract] = 1
 			)
 	GROUP BY ProductNumber
-		,OptionSet
-	)
-SELECT OptionSet.StockCode AS [StockCode]
-	,substring(OptionSet1.OptionGroupList, 1, len(OptionSet1.OptionGroupList) - 1) AS [OptionSet1]
-	,IIF(OptionSet1.OptionGroupList IS NULL, NULL, 1) AS [OptionSet1Required]
-	--,IIF(OptionSet1.PRICE_T > 0 , 1, NULL) AS [OptionSet1Matrixed]
-	,(
-		CASE 
-			WHEN OptionSet1.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet1.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet1.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet1Matrixed]
-	,substring(OptionSet2.OptionGroupList, 1, len(OptionSet2.OptionGroupList) - 1) AS [OptionSet2]
-	,IIF(OptionSet2.OptionGroupList IS NULL, NULL, 1) AS [OptionSet2Required]
-	,(
-		CASE 
-			WHEN OptionSet2.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet2.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet2.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet2Matrixed]
-	,substring(OptionSet3.OptionGroupList, 1, len(OptionSet3.OptionGroupList) - 1) AS [OptionSet3]
-	,IIF(OptionSet3.OptionGroupList IS NULL, NULL, 1) AS [OptionSet3Required]
-	,(
-		CASE 
-			WHEN OptionSet3.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet3.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet3.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet3Matrixed]
-	,substring(OptionSet4.OptionGroupList, 1, len(OptionSet4.OptionGroupList) - 1) AS [OptionSet4]
-	,IIF(OptionSet4.OptionGroupList IS NULL, NULL, 1) AS [OptionSet4Required]
-	,(
-		CASE 
-			WHEN OptionSet4.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet4.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet4.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet4Matrixed]
-	,substring(OptionSet5.OptionGroupList, 1, len(OptionSet5.OptionGroupList) - 1) AS [OptionSet5]
-	,IIF(OptionSet5.OptionGroupList IS NULL, NULL, 1) AS [OptionSet5Required]
-	,(
-		CASE 
-			WHEN OptionSet5.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet5.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet5.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet5Matrixed]
-	,substring(OptionSet6.OptionGroupList, 1, len(OptionSet6.OptionGroupList) - 1) AS [OptionSet6]
-	,IIF(OptionSet6.OptionGroupList IS NULL, NULL, 1) AS [OptionSet6Required]
-	,(
-		CASE 
-			WHEN OptionSet6.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet6.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet6.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet6Matrixed]
-	,substring(OptionSet7.OptionGroupList, 1, len(OptionSet7.OptionGroupList) - 1) AS [OptionSet7]
-	,IIF(OptionSet7.OptionGroupList IS NULL, NULL, 1) AS [OptionSet7Required]
-	,(
-		CASE 
-			WHEN OptionSet7.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet7.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet7.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet7Matrixed]
-	,substring(OptionSet8.OptionGroupList, 1, len(OptionSet8.OptionGroupList) - 1) AS [OptionSet8]
-	,IIF(OptionSet8.OptionGroupList IS NULL, NULL, 1) AS [OptionSet8Required]
-	,(
-		CASE 
-			WHEN OptionSet8.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet8.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet8.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet8Matrixed]
-	,substring(OptionSet9.OptionGroupList, 1, len(OptionSet9.OptionGroupList) - 1) AS [OptionSet9]
-	,IIF(OptionSet9.OptionGroupList IS NULL, NULL, 1) AS [OptionSet9Required]
-	,(
-		CASE 
-			WHEN OptionSet9.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet9.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet9.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet9Matrixed]
-	,substring(OptionSet10.OptionGroupList, 1, len(OptionSet10.OptionGroupList) - 1) AS [OptionSet10]
-	,IIF(OptionSet10.OptionGroupList IS NULL, NULL, 1) AS [OptionSet10Required]
-	,(
-		CASE 
-			WHEN OptionSet10.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet10.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet10.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet10Matrixed]
-	,substring(OptionSet11.OptionGroupList, 1, len(OptionSet11.OptionGroupList) - 1) AS [OptionSet11]
-	,IIF(OptionSet11.OptionGroupList IS NULL, NULL, 1) AS [OptionSet11Required]
-	,(
-		CASE 
-			WHEN OptionSet11.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet11.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet11.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet11Matrixed]
-	,substring(OptionSet12.OptionGroupList, 1, len(OptionSet12.OptionGroupList) - 1) AS [OptionSet12]
-	,IIF(OptionSet12.OptionGroupList IS NULL, NULL, 1) AS [OptionSet12Required]
-	,(
-		CASE 
-			WHEN OptionSet12.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet12.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet12.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet12Matrixed]
-	,substring(OptionSet13.OptionGroupList, 1, len(OptionSet13.OptionGroupList) - 1) AS [OptionSet13]
-	,IIF(OptionSet13.OptionGroupList IS NULL, NULL, 1) AS [OptionSet13Required]
-	,(
-		CASE 
-			WHEN OptionSet13.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet13.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet13.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet13Matrixed]
-	,substring(OptionSet14.OptionGroupList, 1, len(OptionSet14.OptionGroupList) - 1) AS [OptionSet14]
-	,IIF(OptionSet14.OptionGroupList IS NULL, NULL, 1) AS [OptionSet14Required]
-	,(
-		CASE 
-			WHEN OptionSet14.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet14.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet14.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet14Matrixed]
-	,substring(OptionSet15.OptionGroupList, 1, len(OptionSet15.OptionGroupList) - 1) AS [OptionSet15]
-	,IIF(OptionSet15.OptionGroupList IS NULL, NULL, 1) AS [OptionSet15Required]
-	,(
-		CASE 
-			WHEN OptionSet15.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet15.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet15.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet15Matrixed]
-	,substring(OptionSet16.OptionGroupList, 1, len(OptionSet16.OptionGroupList) - 1) AS [OptionSet16]
-	,IIF(OptionSet16.OptionGroupList IS NULL, NULL, 1) AS [OptionSet16Required]
-	,(
-		CASE 
-			WHEN OptionSet16.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet16.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet16.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet16Matrixed]
-	,substring(OptionSet17.OptionGroupList, 1, len(OptionSet17.OptionGroupList) - 1) AS [OptionSet17]
-	,IIF(OptionSet17.OptionGroupList IS NULL, NULL, 1) AS [OptionSet17Required]
-	,(
-		CASE 
-			WHEN OptionSet17.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet17.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet17.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet17Matrixed]
-	,substring(OptionSet18.OptionGroupList, 1, len(OptionSet18.OptionGroupList) - 1) AS [OptionSet18]
-	,IIF(OptionSet18.OptionGroupList IS NULL, NULL, 1) AS [OptionSet18Required]
-	,(
-		CASE 
-			WHEN OptionSet18.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet18.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet18.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet18Matrixed]
-	,substring(OptionSet19.OptionGroupList, 1, len(OptionSet19.OptionGroupList) - 1) AS [OptionSet19]
-	,IIF(OptionSet19.OptionGroupList IS NULL, NULL, 1) AS [OptionSet19Required]
-	,(
-		CASE 
-			WHEN OptionSet19.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet19.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet19.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet19Matrixed]
-	,substring(OptionSet20.OptionGroupList, 1, len(OptionSet20.OptionGroupList) - 1) AS [OptionSet20]
-	,IIF(OptionSet20.OptionGroupList IS NULL, NULL, 1) AS [OptionSet20Required]
-	,(
-		CASE 
-			WHEN OptionSet20.OptionGroupList IS NULL
-				THEN NULL
-			WHEN OptionSet20.PRICE_T = 0
-				THEN 0
-			WHEN OptionSet20.PRICE_T > 0
-				THEN 1
-			ELSE NULL
-			END
-		) AS [OptionSet20Matrixed]
-FROM OptionSet
-LEFT OUTER JOIN OptionSet AS OptionSet1 ON OptionSet1.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet1.[OptionSetNumber] = 1
-LEFT OUTER JOIN OptionSet AS OptionSet2 ON OptionSet2.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet2.[OptionSetNumber] = 2
-LEFT OUTER JOIN OptionSet AS OptionSet3 ON OptionSet3.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet3.[OptionSetNumber] = 3
-LEFT OUTER JOIN OptionSet AS OptionSet4 ON OptionSet4.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet4.[OptionSetNumber] = 4
-LEFT OUTER JOIN OptionSet AS OptionSet5 ON OptionSet5.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet5.[OptionSetNumber] = 5
-LEFT OUTER JOIN OptionSet AS OptionSet6 ON OptionSet6.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet6.[OptionSetNumber] = 6
-LEFT OUTER JOIN OptionSet AS OptionSet7 ON OptionSet7.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet7.[OptionSetNumber] = 7
-LEFT OUTER JOIN OptionSet AS OptionSet8 ON OptionSet8.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet8.[OptionSetNumber] = 8
-LEFT OUTER JOIN OptionSet AS OptionSet9 ON OptionSet9.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet9.[OptionSetNumber] = 9
-LEFT OUTER JOIN OptionSet AS OptionSet10 ON OptionSet10.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet10.[OptionSetNumber] = 10
-LEFT OUTER JOIN OptionSet AS OptionSet11 ON OptionSet11.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet11.[OptionSetNumber] = 11
-LEFT OUTER JOIN OptionSet AS OptionSet12 ON OptionSet12.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet12.[OptionSetNumber] = 12
-LEFT OUTER JOIN OptionSet AS OptionSet13 ON OptionSet13.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet13.[OptionSetNumber] = 13
-LEFT OUTER JOIN OptionSet AS OptionSet14 ON OptionSet14.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet14.[OptionSetNumber] = 14
-LEFT OUTER JOIN OptionSet AS OptionSet15 ON OptionSet15.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet15.[OptionSetNumber] = 15
-LEFT OUTER JOIN OptionSet AS OptionSet16 ON OptionSet16.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet16.[OptionSetNumber] = 16
-LEFT OUTER JOIN OptionSet AS OptionSet17 ON OptionSet17.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet17.[OptionSetNumber] = 17
-LEFT OUTER JOIN OptionSet AS OptionSet18 ON OptionSet18.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet18.[OptionSetNumber] = 18
-LEFT OUTER JOIN OptionSet AS OptionSet19 ON OptionSet19.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet19.[OptionSetNumber] = 19
-LEFT OUTER JOIN OptionSet AS OptionSet20 ON OptionSet20.[StockCode] = OptionSet.[StockCode]
-	AND OptionSet20.[OptionSetNumber] = 20
-GROUP BY OptionSet.[StockCode]
-	,OptionSet1.[OptionGroupList]
-	,IIF(OptionSet1.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet1.PRICE_T
-	,OptionSet2.[OptionGroupList]
-	,IIF(OptionSet2.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet2.PRICE_T
-	,OptionSet3.[OptionGroupList]
-	,IIF(OptionSet3.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet3.PRICE_T
-	,OptionSet4.[OptionGroupList]
-	,IIF(OptionSet4.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet4.PRICE_T
-	,OptionSet5.[OptionGroupList]
-	,IIF(OptionSet5.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet5.PRICE_T
-	,OptionSet6.[OptionGroupList]
-	,IIF(OptionSet6.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet6.PRICE_T
-	,OptionSet7.[OptionGroupList]
-	,IIF(OptionSet7.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet7.PRICE_T
-	,OptionSet8.[OptionGroupList]
-	,IIF(OptionSet8.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet8.PRICE_T
-	,OptionSet9.[OptionGroupList]
-	,IIF(OptionSet9.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet9.PRICE_T
-	,OptionSet10.[OptionGroupList]
-	,IIF(OptionSet10.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet10.PRICE_T
-	,OptionSet11.[OptionGroupList]
-	,IIF(OptionSet11.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet11.PRICE_T
-	,OptionSet12.[OptionGroupList]
-	,IIF(OptionSet12.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet12.PRICE_T
-	,OptionSet13.[OptionGroupList]
-	,IIF(OptionSet13.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet13.PRICE_T
-	,OptionSet14.[OptionGroupList]
-	,IIF(OptionSet14.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet14.PRICE_T
-	,OptionSet15.[OptionGroupList]
-	,IIF(OptionSet15.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet15.PRICE_T
-	,OptionSet16.[OptionGroupList]
-	,IIF(OptionSet16.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet16.PRICE_T
-	,OptionSet17.[OptionGroupList]
-	,IIF(OptionSet17.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet17.PRICE_T
-	,OptionSet18.[OptionGroupList]
-	,IIF(OptionSet18.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet18.PRICE_T
-	,OptionSet19.[OptionGroupList]
-	,IIF(OptionSet19.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet19.PRICE_T
-	,OptionSet20.[OptionGroupList]
-	,IIF(OptionSet20.OptionGroupList IS NULL, NULL, 1)
-	,OptionSet20.PRICE_T
+		,OptionSet )
+select
+	StockCode,
+	max(
+		case
+			when OptionSetNumber = 1 then OptionGroupList
+			else null
+		end
+		) as [OptionSet1],
+	max(
+		case
+			when OptionSetNumber = 1 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet1Required],
+	max(
+		case
+			when OptionSetNumber = 1 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet1Matrixed],
+	max(
+		case
+			when OptionSetNumber = 2 then OptionGroupList
+			else null
+		end
+		) as [OptionSet2],
+	max(
+		case
+			when OptionSetNumber = 2 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet2Required],
+	max(
+		case
+			when OptionSetNumber = 2 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet2Matrixed],
+	max(
+		case
+			when OptionSetNumber = 3 then OptionGroupList
+			else null
+		end
+		) as [OptionSet3],
+	max(
+		case
+			when OptionSetNumber = 3 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet3Required],
+	max(
+		case
+			when OptionSetNumber = 3 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet3Matrixed],
+	max(
+		case
+			when OptionSetNumber = 4 then OptionGroupList
+			else null
+		end
+		) as [OptionSet4],
+	max(
+		case
+			when OptionSetNumber = 4 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet4Required],
+	max(
+		case
+			when OptionSetNumber = 4 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet4Matrixed],
+	max(
+		case
+			when OptionSetNumber = 5 then OptionGroupList
+			else null
+		end
+		) as [OptionSet5],
+	max(
+		case
+			when OptionSetNumber = 5 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet5Required],
+	max(
+		case
+			when OptionSetNumber = 5 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet5Matrixed],
+	max(
+		case
+			when OptionSetNumber = 6 then OptionGroupList
+			else null
+		end
+		) as [OptionSet6],
+	max(
+		case
+			when OptionSetNumber = 6 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet6Required],
+	max(
+		case
+			when OptionSetNumber = 6 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet6Matrixed],
+	max(
+		case
+			when OptionSetNumber = 7 then OptionGroupList
+			else null
+		end
+		) as [OptionSet7],
+	max(
+		case
+			when OptionSetNumber = 7 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet7Required],
+	max(
+		case
+			when OptionSetNumber = 7 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet7Matrixed],
+	max(
+		case
+			when OptionSetNumber = 8 then OptionGroupList
+			else null
+		end
+		) as [OptionSet8],
+	max(
+		case
+			when OptionSetNumber = 8 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet8Required],
+	max(
+		case
+			when OptionSetNumber = 8 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet8Matrixed],
+	max(
+		case
+			when OptionSetNumber = 9 then OptionGroupList
+			else null
+		end
+		) as [OptionSet9],
+	max(
+		case
+			when OptionSetNumber = 9 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet9Required],
+	max(
+		case
+			when OptionSetNumber = 9 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet9Matrixed],
+	max(
+		case
+			when OptionSetNumber = 10 then OptionGroupList
+			else null
+		end
+		) as [OptionSet10],
+	max(
+		case
+			when OptionSetNumber = 10 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet10Required],
+	max(
+		case
+			when OptionSetNumber = 10 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet10Matrixed],
+	max(
+		case
+			when OptionSetNumber = 11 then OptionGroupList
+			else null
+		end
+		) as [OptionSet11],
+	max(
+		case
+			when OptionSetNumber = 11 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet11Required],
+	max(
+		case
+			when OptionSetNumber = 11 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet11Matrixed],
+	max(
+		case
+			when OptionSetNumber = 12 then OptionGroupList
+			else null
+		end
+		) as [OptionSet12],
+	max(
+		case
+			when OptionSetNumber = 12 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet12Required],
+	max(
+		case
+			when OptionSetNumber = 12 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet12Matrixed],
+	max(
+		case
+			when OptionSetNumber = 13 then OptionGroupList
+			else null
+		end
+		) as [OptionSet13],
+	max(
+		case
+			when OptionSetNumber = 13 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet13Required],
+	max(
+		case
+			when OptionSetNumber = 13 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet13Matrixed],
+	max(
+		case
+			when OptionSetNumber = 14 then OptionGroupList
+			else null
+		end
+		) as [OptionSet14],
+	max(
+		case
+			when OptionSetNumber = 14 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet14Required],
+	max(
+		case
+			when OptionSetNumber = 14 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet14Matrixed],
+	max(
+		case
+			when OptionSetNumber = 15 then OptionGroupList
+			else null
+		end
+		) as [OptionSet15],
+	max(
+		case
+			when OptionSetNumber = 15 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet15Required],
+	max(
+		case
+			when OptionSetNumber = 15 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet15Matrixed],
+	max(
+		case
+			when OptionSetNumber = 16 then OptionGroupList
+			else null
+		end
+		) as [OptionSet16],
+	max(
+		case
+			when OptionSetNumber = 16 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet16Required],
+	max(
+		case
+			when OptionSetNumber = 16 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet16Matrixed],
+	max(
+		case
+			when OptionSetNumber = 17 then OptionGroupList
+			else null
+		end
+		) as [OptionSet17],
+	max(
+		case
+			when OptionSetNumber = 17 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet17Required],
+	max(
+		case
+			when OptionSetNumber = 17 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet17Matrixed],
+	max(
+		case
+			when OptionSetNumber = 18 then OptionGroupList
+			else null
+		end
+		) as [OptionSet18],
+	max(
+		case
+			when OptionSetNumber = 18 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet18Required],
+	max(
+		case
+			when OptionSetNumber = 18 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet18Matrixed],
+	max(
+		case
+			when OptionSetNumber = 19 then OptionGroupList
+			else null
+		end
+		) as [OptionSet19],
+	max(
+		case
+			when OptionSetNumber = 19 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet19Required],
+	max(
+		case
+			when OptionSetNumber = 19 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet19Matrixed],
+	max(
+		case
+			when OptionSetNumber = 20 then OptionGroupList
+			else null
+		end
+		) as [OptionSet20],
+	max(
+		case
+			when OptionSetNumber = 20 and OptionGroupList is not null then 1
+			else null
+		end
+		) as [OptionSet20Required],
+	max(
+		case
+			when OptionSetNumber = 20 then 
+				case
+					when PRICE_T > 0 and ExcludeFromEcatMatrix = 0 then 1
+					else 0
+				end
+			else null
+		end
+		) as [OptionSet20Matrixed]
+from OptionSet 
+group by StockCode
 GO
 
 

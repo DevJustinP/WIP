@@ -17,7 +17,7 @@ where [Email] = 'SoftwareDeveloper@SummerClassics.com';
 go
 
 insert into [SOH].[BranchManagementEmails]
-values ('All','Pelham','CC','margaretm@gabriellawhite.com','Trainer','Validation Failures');
+values ('All','Pelham','CC','storesupport@gabriellawhite.com','Store Support','Validation Failures');
 go
 
 select * from [SOH].BranchManagementEmails;
