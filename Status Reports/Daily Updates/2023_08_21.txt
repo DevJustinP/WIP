@@ -1,0 +1,27 @@
+Morning Check-in:
+    Previous Week:
+        - SDM 34984 - Invoice Automation
+            Meet with accounting and were able to refine requirements and scope.
+        
+        Deployed
+        - SDM 39565 - Status 8 Wendy Jane
+        - SDM 40185 - Email Typing for SCT/PO Automation emails
+
+    This Week:
+        Rock:
+            - SDM 34984 - Invoice Automation
+                Technical Design
+
+        Tickets:
+            - SDM 35667 - OptionGroupToProduct table
+                Exclude from matrix flag
+                Refining logic for ecat exports
+            - SDM 3900 - Sales Order Allocation Purge Window - L10 to Do
+                Modification to procedure [SalesOrderAllocation100].[dbo].[usp_Update_Allocation_History]
+                to exstend puge to 720 days
+            - SDM 36922 - 2Ship Ship Hold record limitation issue
+                Implement a loop in the SQL Job 'Integration - 2Ship - GetChanges and ShipHold' 
+                so that it processes all staged records at one time and not max 10
+            - SDM 31654 - 2Ship Integration Error - Orders not sent 
+                Implement a process to alert personel that orders were not sent because of missing 
+                address information
