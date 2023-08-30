@@ -1,7 +1,7 @@
 
 DECLARE @StartDate INT, @FinalDate INT;
-SET @StartDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-07-24 00:00:00.000' as datetime2)), 112)) 
-SET @FinalDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-07-31 00:00:00.000' as datetime2)), 112)) -- This date included in results
+SET @StartDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-08-21 00:00:00.000' as datetime2)), 112)) 
+SET @FinalDate = CONVERT(int , CONVERT(varchar(10), DATEADD(DAY, 0, cast('2023-08-28 00:00:00.000' as datetime2)), 112)) -- This date included in results
 
 SELECT  j.[name],  
         s.step_name,  
@@ -20,7 +20,7 @@ FROM    msdb.dbo.sysjobhistory h
                 AND h.step_id = s.step_id  
 WHERE    h.run_status = 0 -- Failure  
          AND h.run_date between @StartDate and @FinalDate  
-ORDER BY h.instance_id DESC;
+ORDER BY j.[name], h.run_date, h.run_time;
 
 
 
