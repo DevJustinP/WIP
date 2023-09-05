@@ -1,0 +1,9 @@
+<Query>
+    <Document>
+        <Status />
+        <DocumentGuid />
+        <ErrorMessage />
+        <StatusPreview />
+        <DocumentHex>HEX Encoded PDF file</DocumentHex>
+    </Document>
+</Query>

@@ -1,0 +1,19 @@
+<DocumentControl>
+    <DocumentType>SalesOrder</DocumentType>
+    <Print>False</Print>
+    <Email>False</Email>
+    <Preview>True</Preview>
+    <XmlOnly>False</XmlOnly>
+    <PrinterDetails>
+        <PrinterName />
+        <PrintCopies>1</PrintCopies>
+        <PrintCollate>True</PrintCollate>
+    </PrinterDetails>
+    <EmailDetails>
+        <EmailFromAddress />
+        <EmailToAddress />
+        <EmailCcAddress />
+        <EmailSubject />
+        <EmailBodyText />
+    </EmailDetails>
+</DocumentControl>

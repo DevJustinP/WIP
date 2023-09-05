@@ -1,0 +1,8 @@
+<Query>
+    <Option>
+        <Function>GETDOCDET</Function>
+    </Option>
+    <Filter>
+        <OrderNumber FilterType='S' FilterValue='791' />
+    </Filter>
+</Query>

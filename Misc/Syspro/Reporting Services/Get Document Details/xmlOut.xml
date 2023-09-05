@@ -1,0 +1,45 @@
+<DocumentControl Language="05" Language2="EN"
+    CssStyle="" DecFormat="1" DateFormat="01" Role="01"
+    Version="8.0.001" OperatorPrimaryRole=" ">
+    <DocumentInformation>
+        <SalesOrder>000791</SalesOrder>
+        <OrderStatus>9</OrderStatus>
+        <Translated_OrderStatus>Complete</Translated_OrderStatus>
+        <ActiveFlag>N</ActiveFlag>
+        <Translated_ActiveFlag>No</Translated_ActiveFlag>
+        <CancelledFlag />
+        <Translated_CancelledFlag>No</Translated_CancelledFlag>
+        <SODocumentType>O</SODocumentType>
+        <Translated_SODocumentType>Order</Translated_SODocumentType>
+        <CanPrintAcknowledgement>false</CanPrintAcknowledgement>
+        <CanRePrintAcknowledgement>false</CanRePrintAcknowledgement>
+        <CanPrintDeliveryNote>false</CanPrintDeliveryNote>
+        <CanRePrintDeliveryNote>false</CanRePrintDeliveryNote>
+        <CanGenerateInvoice>false</CanGenerateInvoice>
+        <Documents>
+            <Invoice>
+                <InvoiceNumber>100506</InvoiceNumber>
+                <InvoiceSource>O</InvoiceSource>
+                <Translated_InvoiceSource>Order</Translated_InvoiceSource>
+                <DateLastInvPrt>2015-04-08</DateLastInvPrt>
+            </Invoice>
+        </Documents>
+        <Formats>
+            <Format>
+                <DocumentType>Order Acknowledgement</DocumentType>
+                <FormatCode>0</FormatCode>
+                <FormatName>Order Acknowledgemen</FormatName>
+            </Format>
+            <Format>
+                <DocumentType>Delivery Note</DocumentType>
+                <FormatCode>0</FormatCode>
+                <FormatName>Delivery Note</FormatName>
+            </Format>
+            <Format>
+                <DocumentType>Invoice</DocumentType>
+                <FormatCode>0</FormatCode>
+                <FormatName>Invoice</FormatName>
+            </Format>
+        </Formats>
+    </DocumentInformation>
+</DocumentControl>

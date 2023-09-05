@@ -1,0 +1,14 @@
+<Query>
+    <Option>
+        <Function>ONLINE</Function>
+        <DocumentType>I</DocumentType>
+        <Format>0</Format>
+        <Reprint>Y</Reprint>
+    </Option>
+    <Filter>
+        <OrderNumber FilterType='S'
+            FilterValue='000791' />
+        <InvoiceNumber FilterType='S'
+            FilterValue='100506' />
+    </Filter>
+</Query>
