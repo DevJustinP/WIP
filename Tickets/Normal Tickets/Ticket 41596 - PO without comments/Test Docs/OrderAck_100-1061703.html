@@ -1,9 +1,11 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
         * {
             box-sizing: border-box;
         }
@@ -71,7 +73,7 @@
             border-top: 2px solid black;
             border-bottom: 2px solid black;
             width: 100%;
-            min-height: 95px;
+            height: 185px;
         }
 
         #FooterLeft {
@@ -97,7 +99,7 @@
             object-position: center;
         }
 
-        #SupplierPanel {
+        #CustomerPanel {
             border-radius: 10px;
             margin: 4px;
             border: 2px solid black;
@@ -109,7 +111,7 @@
             font-size: 12px;
         }
 
-        #DeliveryPanel {
+        #ShippingPanel {
             border-radius: 10px;
             margin: 4px;
             border: 2px solid black;
@@ -177,7 +179,6 @@
 </head>
 
 <body>
-
     <div class="header">
         <div class="row">
             <div class="column">
@@ -198,79 +199,99 @@
             </div>
             <div class="column">
                 <div class="center">
-                    <p><b>PO Order Acknowledgement</b></p>
+                    <p><b>SCT Order Acknowledgement</b></p>
                 </div>
                 <div class="row">
                     <div class="ColumnLeft">
-                        <p>PO Number:</p>
+                        <p>Order Number:</p>
                         <p>Printed Date:</p>
                     </div>
                     <div class="ColumnRight">
-                        <p>316-1000106</p>
-                        <p>2023/09/25</p>
+                        <p>100-1061703</p>
+                        <p>2023/09/26</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="SupplierPanel">
-            <table>
-                <tr>
-                    <td class="RightAlign"><b>Supplier :</b></td>
-                    <td class="LeftAlign">TUUCI, LLC</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">1000 SE 8TH STREET  </td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">HIALEAH, FL,   33010</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">United States</td>
-                </tr>
-            </table>
-        </div>
-        <div id="DeliveryPanel">
-            <table>
-                <tr>
-                    <td class="RightAlign"><b>Delivery address :</b></td>
-                    <td class="LeftAlign">GAIL FRENCH (1261408)</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">12975 E TURQUOISE AVE ---</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">SCOTTSDALE, AZ, - 85259</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">-</td>
-                </tr>
-            </table>
+
+        <div class="row">
+            <div id="CustomerPanel">
+                <table>
+                    <tr>
+                        <td class="RightAlign"><b>Customer :</b></td>
+                        <td class="LeftAlign">Gabriella White - Pelham DC(100)</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">3140 Pelham Parkway  </td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">Pelham, AL,   35124</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign"> </td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Phone :</b></td>
+                        <td class="LeftAlign"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ShippingPanel">
+                <table>
+                    <tr>
+                        <td class="RightAlign"><b>Shipping address :</b></td>
+                        <td class="LeftAlign">Summer Classics Home - San Antonio (308)</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">1201 N Loop 1604 W Ste 112</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">San Antonio, TX, --- 78258</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Ship Via :</b></td>
+                        <td class="LeftAlign">WITH SC TRUCKLOAD(SC)</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Address Type :</b></td>
+                        <td class="LeftAlign">Store</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Delivery Type :</b></td>
+                        <td class="LeftAlign">Standard</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Delivery Info :</b></td>
+                        <td class="LeftAlign"> </td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Customer Tag :</b></td>
+                        <td class="LeftAlign"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-
-    <div class="body">
+    <div class="Details">
         <table id="OrderSpecs">
             <tr>
                 <th class="LeftAlign">Order Date</th>
-                <th class="LeftAlign">Payment Terms</th>
-                <th class="LeftAlign">Supplier Ship Date</th>
-                <th class="LeftAlign">Memo Date</th>
-                <th class="LeftAlign">Due Date</th>
-                <th class="LeftAlign">Shipping Instructions</th>
+                <th class="LeftAlign">Order Rec Info</th>
+                <th class="LeftAlign">Salesperson</th>
+                <th class="LeftAlign">Customer Purchase Order Number</th>
+                <th class="LeftAlign">Special Instructions</th>
             </tr>
             <tr>
-                <td>2023/09/01</td>
-                <td>   </td>
-                <td>2023/09/01</td>
-                <td>2023/09/01</td>
-                <td>2023/09/01</td>
-                <td>NO C.O.D.</td>
+                <td>2023/08/22</td>
+                <td>CUSTOMER</td>
+                <td></td>
+                <td>308-1008718 LISA MCB</td>
+                <td> </td>
             </tr>
         </table>
         <div class="Seperator"></div>
@@ -279,44 +300,63 @@
                 <th class="LeftAlign">Stock Code</th>
                 <th class="LeftAlign">Description</th>
                 <th class="LeftAlign">Qty.</th>
-                <th class="LeftAlign">Price</th>
-                <th class="LeftAlign">Ext. Price</th>
             </tr>
             <tr>
-    <td>TUU-FLUSHMT</td>
-    <td>STAINLESS STEEL "AUTO-SECURE" FLUSH MOUNT</td>
-    <td>1.00</td>
-    <td>291.60</td>
-    <td>291.60</td>
+    <td>362024</td>
+    <td>CLUB WOVEN CORNER SECTIONAL (LEFT/RIGHT FACING)</td>
+    <td>4.00</td>
 </tr><tr>
-    <td></td>
-    <td>FLUSHMTSS= FLUSH MOUNT ANCHOR FOR IN POOL INSTALLATION W/ GR</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
+    <td>C585P4326N</td>
+    <td>CLUB WOVEN SECTIONAL CRNR PREM CUSH</td>
+    <td>4.00</td>
+</tr><tr>
+    <td>362124</td>
+    <td>CLUB WOVEN SLIPPER CHAIR</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>C586P4326N</td>
+    <td>CLUB WOVEN SEC SLIPPER PREM CUSHION</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>262624</td>
+    <td>CLUB WOVEN SWIVEL GLIDER</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>C1465001N</td>
+    <td>POUF SQUARE CUSHION</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>G102-202124</td>
+    <td>Herringbone Denim 20x20</td>
+    <td>3.00</td>
+</tr><tr>
+    <td>G102-102009</td>
+    <td>Mandla Chambray 20x20</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>139531</td>
+    <td>PORTSIDE SIDE TABLE SLATE GREY</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>139431</td>
+    <td>PORTSIDE COFFEE TABLE SLATE GREY</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>C1465002N</td>
+    <td>POUF SQUARE CUSHION</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>G102-201958</td>
+    <td>Grooves Chambray 20x20</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>C589P4962N</td>
+    <td>CLUB WOVEN SWVL LNG PREM CUSH</td>
+    <td>2.00</td>
 </tr>
         </table>
-    </div>
-    <div id="footer">
-        <div id="FooterLeft">
+        <div class="Seperator"></div>
 
-        </div>
-        <div id="FooterRight">
-            <table id="TotalsTable">
-                <tr>
-                    <td class="RightAlign">Total Units :</td>
-                    <td class="LeftAlign">1</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign">Subtotal :</td>
-                    <td class="LeftAlign">291.60</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"><b>Net Amount :</b></td>
-                    <td class="LeftAlign"><b>291.60</b></td>
-                </tr>
-            </table>
-        </div>
     </div>
 </body>
 

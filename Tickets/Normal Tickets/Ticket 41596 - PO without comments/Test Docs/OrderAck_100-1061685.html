@@ -1,9 +1,11 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
         * {
             box-sizing: border-box;
         }
@@ -71,7 +73,7 @@
             border-top: 2px solid black;
             border-bottom: 2px solid black;
             width: 100%;
-            min-height: 95px;
+            height: 185px;
         }
 
         #FooterLeft {
@@ -97,7 +99,7 @@
             object-position: center;
         }
 
-        #SupplierPanel {
+        #CustomerPanel {
             border-radius: 10px;
             margin: 4px;
             border: 2px solid black;
@@ -109,7 +111,7 @@
             font-size: 12px;
         }
 
-        #DeliveryPanel {
+        #ShippingPanel {
             border-radius: 10px;
             margin: 4px;
             border: 2px solid black;
@@ -177,7 +179,6 @@
 </head>
 
 <body>
-
     <div class="header">
         <div class="row">
             <div class="column">
@@ -198,79 +199,99 @@
             </div>
             <div class="column">
                 <div class="center">
-                    <p><b>PO Order Acknowledgement</b></p>
+                    <p><b>SCT Order Acknowledgement</b></p>
                 </div>
                 <div class="row">
                     <div class="ColumnLeft">
-                        <p>PO Number:</p>
+                        <p>Order Number:</p>
                         <p>Printed Date:</p>
                     </div>
                     <div class="ColumnRight">
-                        <p>316-1000107</p>
-                        <p>2023/09/25</p>
+                        <p>100-1061685</p>
+                        <p>2023/09/26</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="SupplierPanel">
-            <table>
-                <tr>
-                    <td class="RightAlign"><b>Supplier :</b></td>
-                    <td class="LeftAlign">TUUCI, LLC</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">1000 SE 8TH STREET  </td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">HIALEAH, FL,   33010</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">United States</td>
-                </tr>
-            </table>
-        </div>
-        <div id="DeliveryPanel">
-            <table>
-                <tr>
-                    <td class="RightAlign"><b>Delivery address :</b></td>
-                    <td class="LeftAlign">Summer Classics Home - Scottsdale (316)</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">C/O Fidelitone 11860 N Dysart Rd</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">Surprise, AZ, - 85379</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"></td>
-                    <td class="LeftAlign">-</td>
-                </tr>
-            </table>
+
+        <div class="row">
+            <div id="CustomerPanel">
+                <table>
+                    <tr>
+                        <td class="RightAlign"><b>Customer :</b></td>
+                        <td class="LeftAlign">Gabriella White - Pelham DC(100)</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">3140 Pelham Parkway  </td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">Pelham, AL,   35124</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign"> </td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Phone :</b></td>
+                        <td class="LeftAlign"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ShippingPanel">
+                <table>
+                    <tr>
+                        <td class="RightAlign"><b>Shipping address :</b></td>
+                        <td class="LeftAlign">Summer Classics Home - San Antonio (308)</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">1201 N Loop 1604 W Ste 112</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"></td>
+                        <td class="LeftAlign">San Antonio, TX, --- 78258</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Ship Via :</b></td>
+                        <td class="LeftAlign">WITH SC TRUCKLOAD(SC)</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Address Type :</b></td>
+                        <td class="LeftAlign">Store</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Delivery Type :</b></td>
+                        <td class="LeftAlign">Standard</td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Delivery Info :</b></td>
+                        <td class="LeftAlign"> </td>
+                    </tr>
+                    <tr>
+                        <td class="RightAlign"><b>Customer Tag :</b></td>
+                        <td class="LeftAlign"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-
-    <div class="body">
+    <div class="Details">
         <table id="OrderSpecs">
             <tr>
                 <th class="LeftAlign">Order Date</th>
-                <th class="LeftAlign">Payment Terms</th>
-                <th class="LeftAlign">Supplier Ship Date</th>
-                <th class="LeftAlign">Memo Date</th>
-                <th class="LeftAlign">Due Date</th>
-                <th class="LeftAlign">Shipping Instructions</th>
+                <th class="LeftAlign">Order Rec Info</th>
+                <th class="LeftAlign">Salesperson</th>
+                <th class="LeftAlign">Customer Purchase Order Number</th>
+                <th class="LeftAlign">Special Instructions</th>
             </tr>
             <tr>
-                <td>2023/09/01</td>
-                <td>   </td>
-                <td>2023/09/01</td>
-                <td>2023/09/01</td>
-                <td>2023/09/01</td>
-                <td>NO C.O.D.</td>
+                <td>2023/08/22</td>
+                <td>CUSTOMER</td>
+                <td></td>
+                <td>308-1008727 JENNIFER</td>
+                <td> </td>
             </tr>
         </table>
         <div class="Seperator"></div>
@@ -279,110 +300,79 @@
                 <th class="LeftAlign">Stock Code</th>
                 <th class="LeftAlign">Description</th>
                 <th class="LeftAlign">Qty.</th>
-                <th class="LeftAlign">Price</th>
-                <th class="LeftAlign">Ext. Price</th>
             </tr>
             <tr>
-    <td>TUU-OMM8-5SQ</td>
-    <td>OCEAN MASTER MANTA 8.5' SQ</td>
+    <td>423931</td>
+    <td>MAJORCA ALUMINUM SPRING LOUNGE CHAIR</td>
     <td>1.00</td>
-    <td>1140.08</td>
-    <td>1140.08</td>
 </tr><tr>
-    <td></td>
-    <td>OCEANMASTER M1 MANTA = OMM8.5SQ</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td></td>
-    <td>SQUARE 8.5 SQUARE MANTA UMBRELLA</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td></td>
-    <td>FABRIC: PLATINUM 9007 / FINISH: POLISHED TITANIUM</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td></td>
-    <td>W/EASY DRIVE CRANK UPGRADE</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td>TUU-OMM8-5SQ</td>
-    <td>OCEAN MASTER MANTA 8.5' SQ</td>
+    <td>C419P750N</td>
+    <td>MAJORCA SPRING LOUNGE -PREM CUSHION</td>
     <td>1.00</td>
-    <td>1140.08</td>
-    <td>1140.08</td>
 </tr><tr>
-    <td></td>
-    <td>OCEANMASTER M1 MANTA = OMM8.5SQ</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td></td>
-    <td>SQUARE 8.5 SQUARE MANTA UMBRELLA</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td></td>
-    <td>FABRIC: PLATINUM 9007 / FINISH: POLISHED TITANIUM</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td></td>
-    <td>PULLEY LIFT SYSTEM</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
-</tr><tr>
-    <td>TUU-BASE-GV24SQ</td>
-    <td>90LB SQUARE BASE</td>
+    <td>404731</td>
+    <td>SANTA BARBARA ALUMINUM SOFA</td>
     <td>1.00</td>
-    <td>202.50</td>
-    <td>202.50</td>
 </tr><tr>
-    <td></td>
-    <td>GV24SQ GALVANIZED STEEL SQUARE</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
+    <td>C887P750N</td>
+    <td>SANTA BARBARA ALUMINUM SOFA PREMIUM CUSH</td>
+    <td>1.00</td>
 </tr><tr>
-    <td></td>
-    <td>90LB BASE</td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0.00</td>
+    <td>404631</td>
+    <td>SANTA BARBARA ALUMINUM RAF</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>C886P750N</td>
+    <td>SANTA BARBARA ALUMINUM RAF PREMIUM CUSH</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>342731</td>
+    <td>BROOKINGS COFFEE TABLE</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>342831</td>
+    <td>BROOKINGS END TABLE</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>358331</td>
+    <td>SKYE WOVEN CHAISE</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>C4834862N</td>
+    <td>SKYE CHAISE LOUNGE CUSHION</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>358624</td>
+    <td>SKYE / CLUB WOVEN END TABLE</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>5345111</td>
+    <td>ITALIA LOUNGE</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>C847750N</td>
+    <td>ITALIA LOUNGE CUSHION</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>5345111</td>
+    <td>ITALIA LOUNGE</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>C8474862N</td>
+    <td>ITALIA LOUNGE CUSHION</td>
+    <td>2.00</td>
+</tr><tr>
+    <td>423831</td>
+    <td>MAJORCA ALUMINUM SWIVEL ROCKER LOUNGE</td>
+    <td>1.00</td>
+</tr><tr>
+    <td>C419P750N</td>
+    <td>MAJORCA SPRING LOUNGE -PREM CUSHION</td>
+    <td>1.00</td>
 </tr>
         </table>
-    </div>
-    <div id="footer">
-        <div id="FooterLeft">
+        <div class="Seperator"></div>
 
-        </div>
-        <div id="FooterRight">
-            <table id="TotalsTable">
-                <tr>
-                    <td class="RightAlign">Total Units :</td>
-                    <td class="LeftAlign">3</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign">Subtotal :</td>
-                    <td class="LeftAlign">1342.58</td>
-                </tr>
-                <tr>
-                    <td class="RightAlign"><b>Net Amount :</b></td>
-                    <td class="LeftAlign"><b>1342.58</b></td>
-                </tr>
-            </table>
-        </div>
     </div>
 </body>
 
