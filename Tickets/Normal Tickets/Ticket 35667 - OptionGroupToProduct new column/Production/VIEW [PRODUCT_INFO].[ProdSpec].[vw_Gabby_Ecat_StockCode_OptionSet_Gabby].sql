@@ -1,12 +1,13 @@
 USE [PRODUCT_INFO]
 GO
 
-/****** Object:  View [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]    Script Date: 6/2/2023 8:55:52 AM ******/
+/****** Object:  View [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]    Script Date: 9/28/2023 2:28:16 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 
@@ -33,7 +34,7 @@ Ticke:		 SDM32406 - (Contrasting Fabric Changes - SKU Builder and eCat Uploads)
 
 =============================================
 */
-CREATE OR ALTER VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
+CREATE OR ALTER   VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
 AS
 WITH OptionSet (
 	StockCode
