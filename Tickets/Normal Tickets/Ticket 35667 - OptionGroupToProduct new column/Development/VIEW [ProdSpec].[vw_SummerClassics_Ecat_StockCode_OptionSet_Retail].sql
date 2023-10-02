@@ -1,6 +1,7 @@
 USE [PRODUCT_INFO]
 GO
 
+/****** Object:  View [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]    Script Date: 6/2/2023 8:55:52 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -8,90 +9,58 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
+
+
 /*
-=============================================
-Author name: Michael Barber
-Create date: 10/30/2020
-Modified by: 
-Modify date: 10/30/2020
-Description: View used for optionsets
-SPECIAL NOTE: Excude those records that are not in ProdSpec.Options - match on OptionGroup.
-Addendum: The OptionSet#Matrixed should be 0 for items that have options in that set and the prices are all zero. 
-It would be null if there are no options in the OptionSet.
-OptionSet#Matrixed Only to be set to 1 if there is a price on one or more of the items <> 0.
-
-Modified by: Michael Barber
-Modify date: 11/03/2020
-vw_Gabby_Ecat_StockCode_OptionSet_Gabby =	[UploadToEcatGabbyWholesale] = 1
-
-Modified by: Bharathiraj K
-Modify date: 9/13/2022
-Ticke:		 SDM32406 - (Contrasting Fabric Changes - SKU Builder and eCat Uploads)
-
 ========================================================================
 	Modified By:	Justin Pope
 	Modified Date:	2023-06-02
 	Ticket:			SDM35667 - New column OptionGroupToProduct 
 							   ExcludeFromEcatMatrix 
-							   		
+					designing similar to the view
+					[PRODUCT_INFO].[ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
 ========================================================================
 TEST:
-	Select * from [PRODUCT_INFO].[ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
+	Select * from [PRODUCT_INFO].[ProdSpec].[vw_SummerClassics_Ecat_StockCode_OptionSet_Retail]
 ========================================================================
 */
-CREATE OR ALTER   VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
+Create or Alter VIEW [ProdSpec].[vw_SummerClassics_Ecat_StockCode_OptionSet_Retail]
 AS
 WITH OptionSet (
 	StockCode
 	,OptionSetNumber
 	,OptionGroupList
 	,ExcludeFromEcatMatrix
-	,PRICE_R
 	,PRICE_T
 	)
 as (
 	SELECT ProductNumber AS StockCode
 		,OptionSet AS OptionSetNumber
-		,OptionGroupList = (
-			SELECT '' + Optiongroup + ','
+		,OptionGroupList = ( stuff((
+			SELECT ',' + Optiongroup 
 			FROM [ProdSpec].[OptionGroupToProduct] AS p
 			WHERE p.ProductNumber = u.ProductNumber
 				AND p.OptionSet = u.OptionSet
 				AND EXISTS (
 					SELECT 1
 					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup 
-					and o.[UploadToEcatGabbyWholesale] = 1 
-					and p.[UploadToEcatGabbyWholesale] = 1			--SDM32406
+					WHERE p.OptionGroup = o.OptionGroup
+						and o.[UploadToEcatRetail] = 1
 					)
 			ORDER BY Optiongroup
-			FOR XML PATH('')
+			FOR XML PATH('')), 1,1,'')
 			)
 		,min( case	
 				when u.ExcludeFromEcatMatrix = 0 then 0
 				when u.ExcludeFromEcatMatrix = 1 then 1
 			  end) as ExcludeFromEcatMatrix
-		,PRICE_R = (
-			SELECT ' ' + cast(PRICE_R AS VARCHAR(10)) + ', '
-			FROM [ProdSpec].[OptionGroupToProduct] AS p
-			WHERE p.ProductNumber = u.ProductNumber
-				AND p.OptionSet = u.OptionSet
-				AND EXISTS (
-					SELECT 1
-					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup 
-					and o.[UploadToEcatGabbyWholesale] = 1 
-					and p.[UploadToEcatGabbyWholesale] = 1			--SDM32406
-					)
-			FOR XML PATH('')
-			)
 		,SUM(PRICE_R) AS PRICE_T
 	FROM [ProdSpec].[OptionGroupToProduct] AS u
 	WHERE EXISTS (
 			SELECT 1
 			FROM ProdSpec.Options o
-			WHERE u.OptionGroup = o.OptionGroup and o.[UploadToEcatGabbyWholesale] = 1 
-			and u.[UploadToEcatGabbyWholesale] = 1				--SDM32406
+			WHERE u.OptionGroup = o.OptionGroup
+				and o.[UploadToEcatRetail] = 1
 			)
 	GROUP BY ProductNumber
 		,OptionSet )

@@ -4241,41 +4241,58 @@ TEST:
 */
 Create or Alter VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Contract]
 AS
+
 WITH OptionSet (
 	StockCode
 	,OptionSetNumber
 	,OptionGroupList
 	,ExcludeFromEcatMatrix
+	,PRICE_R
 	,PRICE_T
 	)
 as (
 	SELECT ProductNumber AS StockCode
 		,OptionSet AS OptionSetNumber
-		,OptionGroupList = ( stuff((
-			SELECT ',' + Optiongroup 
+		,OptionGroupList = (
+			SELECT '' + Optiongroup + ','
 			FROM [ProdSpec].[OptionGroupToProduct] AS p
 			WHERE p.ProductNumber = u.ProductNumber
 				AND p.OptionSet = u.OptionSet
 				AND EXISTS (
 					SELECT 1
 					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup
-						and o.[UploadToEcatContract] = 1
+					WHERE p.OptionGroup = o.OptionGroup 
+					and o.[UploadToEcatContract] = 1 
+					and p.[UploadToEcatContract] = 1			--SDM32406
 					)
 			ORDER BY Optiongroup
-			FOR XML PATH('')), 1,1,'')
+			FOR XML PATH('')
 			)
 		,min( case	
 				when u.ExcludeFromEcatMatrix = 0 then 0
 				when u.ExcludeFromEcatMatrix = 1 then 1
 			  end) as ExcludeFromEcatMatrix
+		,PRICE_R = (
+			SELECT ' ' + cast(PRICE_R AS VARCHAR(10)) + ', '
+			FROM [ProdSpec].[OptionGroupToProduct] AS p
+			WHERE p.ProductNumber = u.ProductNumber
+				AND p.OptionSet = u.OptionSet
+				AND EXISTS (
+					SELECT 1
+					FROM ProdSpec.Options o
+					WHERE p.OptionGroup = o.OptionGroup 
+					and o.[UploadToEcatContract] = 1 
+					and p.[UploadToEcatContract] = 1			--SDM32406
+					)
+			FOR XML PATH('')
+			)
 		,SUM(PRICE_R) AS PRICE_T
 	FROM [ProdSpec].[OptionGroupToProduct] AS u
 	WHERE EXISTS (
 			SELECT 1
 			FROM ProdSpec.Options o
-			WHERE u.OptionGroup = o.OptionGroup
-				and o.[UploadToEcatContract] = 1
+			WHERE u.OptionGroup = o.OptionGroup and o.[UploadToEcatContract] = 1 
+			and u.[UploadToEcatContract] = 1				--SDM32406
 			)
 	GROUP BY ProductNumber
 		,OptionSet )
@@ -4762,36 +4779,52 @@ WITH OptionSet (
 	,OptionSetNumber
 	,OptionGroupList
 	,ExcludeFromEcatMatrix
+	,PRICE_R
 	,PRICE_T
 	)
 as (
 	SELECT ProductNumber AS StockCode
 		,OptionSet AS OptionSetNumber
-		,OptionGroupList = ( stuff((
-			SELECT ',' + Optiongroup 
+		,OptionGroupList = (
+			SELECT '' + Optiongroup + ','
 			FROM [ProdSpec].[OptionGroupToProduct] AS p
 			WHERE p.ProductNumber = u.ProductNumber
 				AND p.OptionSet = u.OptionSet
 				AND EXISTS (
 					SELECT 1
 					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup
-						and o.[UploadToEcatGabbyWholesale] = 1
+					WHERE p.OptionGroup = o.OptionGroup 
+					and o.[UploadToEcatGabbyWholesale] = 1 
+					and p.[UploadToEcatGabbyWholesale] = 1			--SDM32406
 					)
 			ORDER BY Optiongroup
-			FOR XML PATH('')), 1,1,'')
+			FOR XML PATH('')
 			)
 		,min( case	
 				when u.ExcludeFromEcatMatrix = 0 then 0
 				when u.ExcludeFromEcatMatrix = 1 then 1
 			  end) as ExcludeFromEcatMatrix
+		,PRICE_R = (
+			SELECT ' ' + cast(PRICE_R AS VARCHAR(10)) + ', '
+			FROM [ProdSpec].[OptionGroupToProduct] AS p
+			WHERE p.ProductNumber = u.ProductNumber
+				AND p.OptionSet = u.OptionSet
+				AND EXISTS (
+					SELECT 1
+					FROM ProdSpec.Options o
+					WHERE p.OptionGroup = o.OptionGroup 
+					and o.[UploadToEcatGabbyWholesale] = 1 
+					and p.[UploadToEcatGabbyWholesale] = 1			--SDM32406
+					)
+			FOR XML PATH('')
+			)
 		,SUM(PRICE_R) AS PRICE_T
 	FROM [ProdSpec].[OptionGroupToProduct] AS u
 	WHERE EXISTS (
 			SELECT 1
 			FROM ProdSpec.Options o
-			WHERE u.OptionGroup = o.OptionGroup
-				and o.[UploadToEcatGabbyWholesale] = 1
+			WHERE u.OptionGroup = o.OptionGroup and o.[UploadToEcatGabbyWholesale] = 1 
+			and u.[UploadToEcatGabbyWholesale] = 1				--SDM32406
 			)
 	GROUP BY ProductNumber
 		,OptionSet )
@@ -5279,36 +5312,52 @@ WITH OptionSet (
 	,OptionSetNumber
 	,OptionGroupList
 	,ExcludeFromEcatMatrix
+	,PRICE_R
 	,PRICE_T
 	)
 as (
 	SELECT ProductNumber AS StockCode
 		,OptionSet AS OptionSetNumber
-		,OptionGroupList = ( stuff((
-			SELECT ',' + Optiongroup 
+		,OptionGroupList = (
+			SELECT '' + Optiongroup + ','
 			FROM [ProdSpec].[OptionGroupToProduct] AS p
 			WHERE p.ProductNumber = u.ProductNumber
 				AND p.OptionSet = u.OptionSet
 				AND EXISTS (
 					SELECT 1
 					FROM ProdSpec.Options o
-					WHERE p.OptionGroup = o.OptionGroup
-						and o.[UploadToEcatRetail] = 1
+					WHERE p.OptionGroup = o.OptionGroup 
+					and o.[UploadToEcatRetail] = 1 
+					and p.[UploadToEcatRetail] = 1			--SDM32406
 					)
 			ORDER BY Optiongroup
-			FOR XML PATH('')), 1,1,'')
+			FOR XML PATH('')
 			)
 		,min( case	
 				when u.ExcludeFromEcatMatrix = 0 then 0
 				when u.ExcludeFromEcatMatrix = 1 then 1
 			  end) as ExcludeFromEcatMatrix
+		,PRICE_R = (
+			SELECT ' ' + cast(PRICE_R AS VARCHAR(10)) + ', '
+			FROM [ProdSpec].[OptionGroupToProduct] AS p
+			WHERE p.ProductNumber = u.ProductNumber
+				AND p.OptionSet = u.OptionSet
+				AND EXISTS (
+					SELECT 1
+					FROM ProdSpec.Options o
+					WHERE p.OptionGroup = o.OptionGroup 
+					and o.[UploadToEcatRetail] = 1 
+					and p.[UploadToEcatRetail] = 1			--SDM32406
+					)
+			FOR XML PATH('')
+			)
 		,SUM(PRICE_R) AS PRICE_T
 	FROM [ProdSpec].[OptionGroupToProduct] AS u
 	WHERE EXISTS (
 			SELECT 1
 			FROM ProdSpec.Options o
-			WHERE u.OptionGroup = o.OptionGroup
-				and o.[UploadToEcatRetail] = 1
+			WHERE u.OptionGroup = o.OptionGroup and o.[UploadToEcatRetail] = 1 
+			and u.[UploadToEcatRetail] = 1				--SDM32406
 			)
 	GROUP BY ProductNumber
 		,OptionSet )

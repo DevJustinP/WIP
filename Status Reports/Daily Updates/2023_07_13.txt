@@ -1,5 +1,0 @@
-Planned:
-    SDM 34984 - Invoice Automation
-        -continue researching Architecture
-
-        

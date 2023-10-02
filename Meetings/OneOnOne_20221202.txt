@@ -1,8 +1,0 @@
-Next Weeks Focus:
-    - SDM 34201
-    - SDM 34377
-
-New Report
-    - What was accomplished
-    - What is going to be focused
-    - What is blocking

@@ -1,9 +1,0 @@
-Plan:
-    Project:
-        SDM 34984 - Invoice Automation
-            Functional Requirements
-            Technical Documentation
-            
-    Tickets:
-        SDM 35527 - SCT Transfers In Job Error
-        SDM 38285 - Job Closure Error

@@ -32,6 +32,8 @@ Modified by: Bharathiraj K
 Modify date: 9/13/2022
 Ticke:		 SDM32406 - (Contrasting Fabric Changes - SKU Builder and eCat Uploads)
 
+select * from [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
+
 =============================================
 */
 CREATE OR ALTER   VIEW [ProdSpec].[vw_Gabby_Ecat_StockCode_OptionSet_Gabby]
