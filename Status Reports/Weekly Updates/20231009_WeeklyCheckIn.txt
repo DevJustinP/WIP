@@ -1,0 +1,21 @@
+Previous Week:
+    Production -
+        SDM 41596 - Updated PO acknowledgement document for Sales Order Handler
+        SDM 35495 - Sales Order Allocation - Historic Supply_General_History
+        SDM 41975 - Tested our SFTP connection to our CIT server
+
+    Worked on -
+        SDM 40617 - Quality of Life enhancement to our SugarCrm talend job
+        SDM 40886 - SOH truncation Error
+        SDM 35667 - OptionGroupToProduct table column change to eCat feeds
+
+    Invoice Automation - 
+        Syspro communicated that our version of Syspro is outdated to be able to
+        get the document that we want for our automation process.
+        Meet with Accounting and Finance and got buyin for our secondary plan to 
+        continue project.
+
+Upcoming Week:
+    Focus on Invoice Automation to produce functionality to get documentation format.
+
+    plan on meeting with product owners to complete tickets
