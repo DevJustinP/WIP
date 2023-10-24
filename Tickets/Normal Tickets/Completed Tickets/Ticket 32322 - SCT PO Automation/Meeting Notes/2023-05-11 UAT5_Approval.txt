@@ -1,0 +1,10 @@
+Agenda:
+
+    Review Testing Documentation:
+        - Credit Terms to set: set all 50%
+
+    Deployment | Approval:
+        - go forward with Deployment
+            308
+            301
+            311

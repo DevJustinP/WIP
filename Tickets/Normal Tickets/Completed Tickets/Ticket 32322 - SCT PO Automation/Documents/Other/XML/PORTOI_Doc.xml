@@ -1,0 +1,35 @@
+<PostPurchaseOrders>
+  <Orders>
+    <OrderHeader>
+      <OrderActionType>A</OrderActionType>
+      <Supplier>1197665</Supplier>
+      <Warehouse>305</Warehouse>
+      <Customer>1153128</Customer>
+      <CustomerPoNumber>TEST SCT/PO-4</CustomerPoNumber>
+      <OrderDate>2023/05/01</OrderDate>
+      <DueDate>2023/05/08</DueDate>
+      <MemoDate>2023/05/08</MemoDate>
+      <ApplyDueDateToLines>A</ApplyDueDateToLines>
+      <DeliveryName>Summer Classics Home - Raleigh (305)</DeliveryName>
+      <DeliveryAddr1>C/O United Furniture Services</DeliveryAddr1>
+      <DeliveryAddr2>2409 E Martin Luther King Jr Drive</DeliveryAddr2>
+      <DeliveryAddr3>High Point, NC</DeliveryAddr3>
+      <DeliveryAddr4 />
+      <DeliveryAddr5 />
+      <PostalCode>27260</PostalCode>
+    </OrderHeader>
+    <OrderDetails>
+      <StockLine>
+        <PuchaseOrderLine>1</PuchaseOrderLine>
+        <LineActionType>A</LineActionType>
+        <StockCode>BLO-AH1232</StockCode>
+        <Warehouse>305</Warehouse>
+        <OrderQty>2.000000</OrderQty>
+        <PriceMethod>M</PriceMethod>
+        <Price>25.0000</Price>
+        <PriceUom>EA</PriceUom>
+        <OriginalOrderLine>2</OriginalOrderLine>
+      </StockLine>
+    </OrderDetails>
+  </Orders>
+</PostPurchaseOrders>

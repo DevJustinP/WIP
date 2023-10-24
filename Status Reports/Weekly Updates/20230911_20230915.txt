@@ -1,0 +1,10 @@
+Tickets:
+    Follow up on:
+    - SDM 31654
+    - SDM 36922
+    - SDM 41154
+
+    Working on:
+    - SDM 40617 Talend SugarCrm job influx of errors
+    - SDM 35667 Add field to OptionGroupToProduct table
+    - SDM 34984 Invoice Automation

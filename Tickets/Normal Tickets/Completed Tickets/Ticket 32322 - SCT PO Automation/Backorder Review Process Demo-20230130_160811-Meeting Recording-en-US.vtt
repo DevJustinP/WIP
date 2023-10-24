@@ -1,0 +1,3157 @@
+WEBVTT
+
+3b85fd60-22fe-456c-a9a4-78a4f65b394e-0
+00:00:02.560 --> 00:00:08.553
+Together, because I do not have
+a good detailed outline of the
+
+3b85fd60-22fe-456c-a9a4-78a4f65b394e-1
+00:00:08.553 --> 00:00:14.546
+current state for Becker order
+review that that's the name for
+
+3b85fd60-22fe-456c-a9a4-78a4f65b394e-2
+00:00:14.546 --> 00:00:19.968
+the process per se, to order
+Scotts and purchase orders,
+
+3b85fd60-22fe-456c-a9a4-78a4f65b394e-3
+00:00:19.968 --> 00:00:25.676
+correct? Yes. OK. So I just
+want, if you don't mind, Alyssa
+
+3b85fd60-22fe-456c-a9a4-78a4f65b394e-4
+00:00:25.676 --> 00:00:31.478
+just walking through kind of a
+demo of how a person would go
+
+3b85fd60-22fe-456c-a9a4-78a4f65b394e-5
+00:00:31.478 --> 00:00:32.239
+through.
+
+55665f66-16de-4e73-aeb8-35171b924f17-0
+00:00:32.690 --> 00:00:38.732
+That process and know exactly
+what Syspro does. Um, and then
+
+55665f66-16de-4e73-aeb8-35171b924f17-1
+00:00:38.732 --> 00:00:44.676
+after that bearing time goes
+through the current functional
+
+55665f66-16de-4e73-aeb8-35171b924f17-2
+00:00:44.676 --> 00:00:50.620
+requirement document, get some
+of the questions left on the
+
+55665f66-16de-4e73-aeb8-35171b924f17-3
+00:00:50.620 --> 00:00:56.662
+document answered or schedule
+necessary meetings afterwards.
+
+55665f66-16de-4e73-aeb8-35171b924f17-4
+00:00:56.662 --> 00:00:56.960
+OK.
+
+39aa4b68-2ea9-49d4-b8b7-65dedb026500-0
+00:00:58.380 --> 00:01:02.714
+So for today's sake, do you want
+me to just do a fake order to
+
+39aa4b68-2ea9-49d4-b8b7-65dedb026500-1
+00:01:02.714 --> 00:01:06.842
+walk through how that would
+actually happen? I don't have a
+
+39aa4b68-2ea9-49d4-b8b7-65dedb026500-2
+00:01:06.842 --> 00:01:09.250
+live order for that would be
+fine.
+
+b18b1a8b-4e49-42ff-8a19-0224e9266229-0
+00:01:10.660 --> 00:01:12.350
+I won't be process one.
+
+16a8eabf-8d88-4dae-bd13-bf34b290a08b-0
+00:01:13.840 --> 00:01:18.814
+Go through the screens and then
+um, any talking points of
+
+16a8eabf-8d88-4dae-bd13-bf34b290a08b-1
+00:01:18.814 --> 00:01:22.760
+situations that may or may not
+occur through.
+
+f025daf9-1889-4a41-8224-344cddd0343d-0
+00:01:23.460 --> 00:01:29.170
+An order? Sure you have access
+to the dev environment, Alyssa.
+
+8eb616b7-7735-4f6a-8c57-3b05615d5ddd-0
+00:01:30.320 --> 00:01:31.150
+I don't know if I do.
+
+91ae8464-021b-4484-912a-4abe3a8b8d14-0
+00:01:32.890 --> 00:01:34.830
+Is there a certain password that
+I need to type in?
+
+67afa8ae-5724-428e-a1b4-3c1db96c5ee3-0
+00:01:36.600 --> 00:01:37.530
+It's a different.
+
+e34e30a5-c67b-4d3f-b6bd-ed440717669f-0
+00:01:38.220 --> 00:01:41.638
+Machine you'd have to connect
+to. Don't think we want you to
+
+e34e30a5-c67b-4d3f-b6bd-ed440717669f-1
+00:01:41.638 --> 00:01:45.001
+do this in production because
+it'll force the phone numbers
+
+e34e30a5-c67b-4d3f-b6bd-ed440717669f-2
+00:01:45.001 --> 00:01:46.290
+creating some bad data.
+
+9266135a-3955-4ed7-a39b-943a4331f176-0
+00:01:48.200 --> 00:01:48.830
+Umm.
+
+6c1e8611-2158-4880-97b3-529411a9b89d-0
+00:01:57.370 --> 00:01:59.870
+Do you want Justin? Do you want
+me to pull up?
+
+9818b824-a2e2-409e-aeb3-bcef53dfcb81-0
+00:02:01.040 --> 00:02:04.770
+Dev and she can talk us through
+one and I'll do the clicking.
+
+cc08ee8b-e7ef-4c2e-a6ba-d311ce77c401-0
+00:02:05.700 --> 00:02:08.340
+If y'all two are comfortable.
+
+99054e45-f600-4692-882c-22691807d8ad-0
+00:02:09.970 --> 00:02:10.300
+Sure.
+
+c70dbfd4-7e47-485a-a96e-3d0b7cf2461e-0
+00:02:10.980 --> 00:02:11.740
+Doing that.
+
+ae491ead-22ca-4f86-b85c-1d248fb1171a-0
+00:02:24.390 --> 00:02:31.780
+
+
+e8952166-7ec8-44ae-a81c-0ff320b27c06-0
+00:03:11.030 --> 00:03:15.657
+So what's the module program
+that you clicked on? It just
+
+e8952166-7ec8-44ae-a81c-0ff320b27c06-1
+00:03:15.657 --> 00:03:18.690
+called sales order back order
+review.
+
+d25501b2-d4bf-4490-8831-c7f4cb1a9259-0
+00:03:20.250 --> 00:03:22.970
+Or just back order review and
+the menu, but it's.
+
+98e85bc0-5441-4cd6-b884-963a415b14ec-0
+00:03:23.900 --> 00:03:25.660
+Under sales order processing.
+
+8326f122-3b29-44d2-b915-ef8fbe1d2bd0-0
+00:03:27.180 --> 00:03:27.340
+Yeah.
+
+34d048c7-b3cf-4008-89ef-341f0ede6be2-0
+00:03:33.350 --> 00:03:36.794
+So I'm just going to do for the
+showroom works that should
+
+34d048c7-b3cf-4008-89ef-341f0ede6be2-1
+00:03:36.794 --> 00:03:38.780
+should pull back multiple
+orders.
+
+9a2f02d2-6ffd-4263-b43a-2d70a55e008e-0
+00:03:43.400 --> 00:03:47.361
+And we typically can do it from
+a single order lens as well if
+
+9a2f02d2-6ffd-4263-b43a-2d70a55e008e-1
+00:03:47.361 --> 00:03:48.430
+we would like to.
+
+69f3c1f2-806c-4ab5-aa55-74d3457375fb-0
+00:03:50.000 --> 00:03:52.693
+But just to pull up orders, this
+will be able to see everything
+
+69f3c1f2-806c-4ab5-aa55-74d3457375fb-1
+00:03:52.693 --> 00:03:53.030
+at once.
+
+e04be42a-8945-4fe4-a555-4c664f700672-0
+00:03:54.820 --> 00:03:58.943
+A general user would just look
+through everything and start
+
+e04be42a-8945-4fe4-a555-4c664f700672-1
+00:03:58.943 --> 00:04:03.203
+going at it. Um. So from a store
+manager or assistant manager
+
+e04be42a-8945-4fe4-a555-4c664f700672-2
+00:04:03.203 --> 00:04:07.463
+perspective you would actually
+instead of using the warehouse
+
+e04be42a-8945-4fe4-a555-4c664f700672-3
+00:04:07.463 --> 00:04:11.243
+functionality, you would
+actually use the sales order,
+
+e04be42a-8945-4fe4-a555-4c664f700672-4
+00:04:11.243 --> 00:04:15.709
+which is the lens right below it
+and do it in a single capacity.
+
+74cca702-3659-4e62-920a-29b4f6c0e998-0
+00:04:17.060 --> 00:04:19.940
+And you can type in that
+individual cells order number.
+
+7b628d2f-f96b-459e-8c50-4312f738489f-0
+00:04:24.340 --> 00:04:27.982
+So just to make sure I interpret
+what you're saying, you all
+
+7b628d2f-f96b-459e-8c50-4312f738489f-1
+00:04:27.982 --> 00:04:31.922
+would have specific sales orders
+to process at a given time every
+
+7b628d2f-f96b-459e-8c50-4312f738489f-2
+00:04:31.922 --> 00:04:35.445
+single day. Yes, Sir. OK. And
+each number will be uniquely
+
+7b628d2f-f96b-459e-8c50-4312f738489f-3
+00:04:35.445 --> 00:04:36.579
+identified as well?
+
+83d418e5-4d3a-4866-af1c-6ac51b05a88e-0
+00:04:37.350 --> 00:04:37.620
+OK.
+
+32d57aed-c9fa-4470-8879-f874b29c8587-0
+00:04:39.430 --> 00:04:43.190
+Uh, these sales orders that have
+been identified, um.
+
+924a743c-152a-45b9-b152-fdc22f8a2155-0
+00:04:44.390 --> 00:04:49.356
+These are in a certain status
+and uh release status has a
+
+924a743c-152a-45b9-b152-fdc22f8a2155-1
+00:04:49.356 --> 00:04:54.238
+deposit on them given certain
+criteria or what are these
+
+924a743c-152a-45b9-b152-fdc22f8a2155-2
+00:04:54.238 --> 00:04:59.633
+criterias that the sales order
+are released to start doing the
+
+924a743c-152a-45b9-b152-fdc22f8a2155-3
+00:04:59.633 --> 00:05:04.257
+back order review. So from a
+retail perspective it is
+
+924a743c-152a-45b9-b152-fdc22f8a2155-4
+00:05:04.257 --> 00:05:08.967
+different than a wholesale or
+contract perspective. So
+
+924a743c-152a-45b9-b152-fdc22f8a2155-5
+00:05:08.967 --> 00:05:14.620
+customer or in consumer comes in
+that day they place their order.
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-0
+00:05:14.700 --> 00:05:19.414
+Through Ecat, Ecat will give us
+a uniquely identified number
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-1
+00:05:19.414 --> 00:05:24.205
+that Ben typed in the individual
+cells order lens line in the
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-2
+00:05:24.205 --> 00:05:28.996
+single and that will give all of
+the, Umm uniquely identified
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-3
+00:05:28.996 --> 00:05:33.942
+stock code numbers unless it is
+a special order from a purchase
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-4
+00:05:33.942 --> 00:05:38.656
+order side of the business,
+which there are some examples. I
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-5
+00:05:38.656 --> 00:05:43.602
+saw treasure garden in there as
+well that we'll use in a second
+
+0ed6a5fc-815b-479a-b213-fc14b3990b13-6
+00:05:43.602 --> 00:05:45.379
+so these are specified.
+
+399e66bc-d548-49c6-a6bc-8222af3a862c-0
+00:05:45.450 --> 00:05:49.645
+To that particular customer, how
+we qualify them to go directly
+
+399e66bc-d548-49c6-a6bc-8222af3a862c-1
+00:05:49.645 --> 00:05:53.644
+to, I just have to have a 50%
+deposit down that day to place
+
+399e66bc-d548-49c6-a6bc-8222af3a862c-2
+00:05:53.644 --> 00:05:54.300
+the order.
+
+bba8ca80-e941-446d-9bfe-d8b689286ba5-0
+00:05:55.450 --> 00:05:58.010
+OK. No, they're all customers.
+
+321d0a72-00a4-44ee-9ed4-b8a9bca7e1d8-0
+00:05:58.680 --> 00:06:02.686
+Do deposits or do you all do
+terms for any of your like
+
+321d0a72-00a4-44ee-9ed4-b8a9bca7e1d8-1
+00:06:02.686 --> 00:06:07.266
+designers or no terms everybody
+is deposits or paid in full and
+
+321d0a72-00a4-44ee-9ed4-b8a9bca7e1d8-2
+00:06:07.266 --> 00:06:07.910
+the only.
+
+440773ae-14db-4e30-92ba-c4b8bc6bf2f8-0
+00:06:08.990 --> 00:06:12.760
+Potential what you and I
+wouldn't even call it a term is
+
+440773ae-14db-4e30-92ba-c4b8bc6bf2f8-1
+00:06:12.760 --> 00:06:16.730
+when we do the financing like
+the Wells Fargo financing and
+
+440773ae-14db-4e30-92ba-c4b8bc6bf2f8-2
+00:06:16.730 --> 00:06:20.699
+they'll do a 15% down payment
+deposit and then the residual
+
+440773ae-14db-4e30-92ba-c4b8bc6bf2f8-3
+00:06:20.699 --> 00:06:23.279
+will go through Wells Fargo
+financing.
+
+f7344466-2051-4450-9f80-d35200f0c248-0
+00:06:24.840 --> 00:06:28.995
+But other than that, it's 50%
+down or 100% down, whichever way
+
+f7344466-2051-4450-9f80-d35200f0c248-1
+00:06:28.995 --> 00:06:31.040
+the customer would like to pay.
+
+c72c5706-29b2-4b47-9818-7e0d0c256360-0
+00:06:37.620 --> 00:06:37.930
+Yeah.
+
+2d88a914-371e-4b49-b758-cf246ae7c0e8-0
+00:06:39.640 --> 00:06:44.196
+OK, so to start the process, we
+go into back order review. We'll
+
+2d88a914-371e-4b49-b758-cf246ae7c0e8-1
+00:06:44.196 --> 00:06:46.370
+double click on the first line.
+
+952aed36-8ae5-41a9-87f0-e5a60ce2bd7e-0
+00:06:49.040 --> 00:06:52.457
+Um here will determine which
+particular warehouse. If it's
+
+952aed36-8ae5-41a9-87f0-e5a60ce2bd7e-1
+00:06:52.457 --> 00:06:55.932
+going to be a SCT, which would
+be which would be the supply
+
+952aed36-8ae5-41a9-87f0-e5a60ce2bd7e-2
+00:06:55.932 --> 00:06:59.581
+chain transfer, or based on the
+stock code if it is actually a
+
+952aed36-8ae5-41a9-87f0-e5a60ce2bd7e-3
+00:06:59.581 --> 00:07:03.056
+purchase order, so it will
+default based on the stock code.
+
+952aed36-8ae5-41a9-87f0-e5a60ce2bd7e-4
+00:07:03.056 --> 00:07:06.531
+This one's going to default as
+an SCT since we're doing all
+
+952aed36-8ae5-41a9-87f0-e5a60ce2bd7e-5
+00:07:06.531 --> 00:07:08.790
+summer classics and we'll push
+accept.
+
+7a70f323-dfc7-4178-9044-f1514d14af0e-0
+00:07:15.110 --> 00:07:18.556
+And then this box will pop up
+where it will actually do the
+
+7a70f323-dfc7-4178-9044-f1514d14af0e-1
+00:07:18.556 --> 00:07:22.175
+source warehouse, again based
+off of stock code which is going
+
+7a70f323-dfc7-4178-9044-f1514d14af0e-2
+00:07:22.175 --> 00:07:22.980
+to go to main.
+
+2aeb4623-1fd6-4f87-bce2-f42fbf2cd2f5-0
+00:07:24.540 --> 00:07:28.860
+So once we're in this particular
+piece, there's only two fields
+
+2aeb4623-1fd6-4f87-bce2-f42fbf2cd2f5-1
+00:07:28.860 --> 00:07:32.572
+that we fill out in this
+particular lens, which is the
+
+2aeb4623-1fd6-4f87-bce2-f42fbf2cd2f5-2
+00:07:32.572 --> 00:07:33.990
+special instructions.
+
+6ac591ba-829b-4f4a-932f-f15dbc490cc8-0
+00:07:44.940 --> 00:07:48.221
+Which would be the special
+instructions would be, is it
+
+6ac591ba-829b-4f4a-932f-f15dbc490cc8-1
+00:07:48.221 --> 00:07:51.620
+going to be a pick up, a
+delivery or a white glove out of
+
+6ac591ba-829b-4f4a-932f-f15dbc490cc8-2
+00:07:51.620 --> 00:07:55.020
+area, just depending on the
+three different ways we ship.
+
+01609b17-0156-4073-afd6-a044b14be2ef-0
+00:07:57.420 --> 00:08:00.390
+And then the ship via code would
+be the next one.
+
+a0b13775-d84d-4cfe-97dc-e999927de17f-0
+00:08:01.850 --> 00:08:05.321
+Where we would either select if
+it's going to be a full
+
+a0b13775-d84d-4cfe-97dc-e999927de17f-1
+00:08:05.321 --> 00:08:09.350
+truckload that we ship out every
+single week, we would do the SD
+
+a0b13775-d84d-4cfe-97dc-e999927de17f-2
+00:08:09.350 --> 00:08:13.131
+truck load or if it's going to
+drop ship to the customer, we
+
+a0b13775-d84d-4cfe-97dc-e999927de17f-3
+00:08:13.131 --> 00:08:16.850
+would do the prepaid freight
+because the customer pays that
+
+a0b13775-d84d-4cfe-97dc-e999927de17f-4
+00:08:16.850 --> 00:08:18.090
+at time of purchase.
+
+9d35cbf2-dea6-4d51-867f-83cf6bae12cf-0
+00:08:23.190 --> 00:08:27.311
+And then the only other thing to
+notate is if we do select
+
+9d35cbf2-dea6-4d51-867f-83cf6bae12cf-1
+00:08:27.311 --> 00:08:31.501
+prepaid freight, we do have to
+change the address to the in
+
+9d35cbf2-dea6-4d51-867f-83cf6bae12cf-2
+00:08:31.501 --> 00:08:35.273
+consumers home, otherwise it
+will default to the full
+
+9d35cbf2-dea6-4d51-867f-83cf6bae12cf-3
+00:08:35.273 --> 00:08:37.020
+truckload delivery route.
+
+a4763cb2-57cd-4472-b3b8-1ad8b0f8ba74-0
+00:08:38.570 --> 00:08:39.290
+No matter what.
+
+f1d287de-393e-4cdf-85a4-2d47bffacff1-0
+00:08:44.830 --> 00:08:50.120
+Before we get too far from this,
+what indicates?
+
+2065f3c8-994a-47be-bab9-06ac70997fff-0
+00:08:50.860 --> 00:08:56.275
+What selections need to be made?
+Is this something that you know
+
+2065f3c8-994a-47be-bab9-06ac70997fff-1
+00:08:56.275 --> 00:09:00.941
+off of hand based off the
+customer, or is there data in
+
+2065f3c8-994a-47be-bab9-06ac70997fff-2
+00:09:00.941 --> 00:09:05.440
+syspro that can specify whether
+or not these shipping
+
+2065f3c8-994a-47be-bab9-06ac70997fff-3
+00:09:05.440 --> 00:09:07.440
+instructions are needed?
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-0
+00:09:08.570 --> 00:09:12.062
+So every single order that is
+placed through which I'm just
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-1
+00:09:12.062 --> 00:09:15.671
+going to hold up a random sheet
+of paper which you can't see,
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-2
+00:09:15.671 --> 00:09:19.455
+every single order will have the
+directions of how it's going to
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-3
+00:09:19.455 --> 00:09:22.656
+be shipping. So every single
+customer gets basically a
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-4
+00:09:22.656 --> 00:09:26.265
+customer packet if you will, or
+customer profile. I have this
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-5
+00:09:26.265 --> 00:09:29.525
+detailed out in our office
+manual, Justin, that I could
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-6
+00:09:29.525 --> 00:09:33.308
+send out to you. So that way you
+can kind of see what that looks
+
+b6447df0-951e-4307-a450-38f1bc3e5fb1-7
+00:09:33.308 --> 00:09:33.599
+like.
+
+2b27a108-56fa-4376-b235-93bd86e081f2-0
+00:09:34.920 --> 00:09:38.238
+And it'll give those directions
+of what needs to happen to go
+
+2b27a108-56fa-4376-b235-93bd86e081f2-1
+00:09:38.238 --> 00:09:38.560
+where.
+
+a69d4097-d836-43d4-a77e-03c0c8a20e8b-0
+00:09:39.580 --> 00:09:40.090
+OK.
+
+d55ea608-36b4-4d32-86d9-3de0fdb92d61-0
+00:09:43.640 --> 00:09:44.680
+And then?
+
+0a9cb5b4-d97a-4330-bff7-5dde07940aca-0
+00:09:47.020 --> 00:09:51.307
+But yes, typically every single
+customer has a piece of paper
+
+0a9cb5b4-d97a-4330-bff7-5dde07940aca-1
+00:09:51.307 --> 00:09:54.765
+and then through ecat we
+actually make the design
+
+0a9cb5b4-d97a-4330-bff7-5dde07940aca-2
+00:09:54.765 --> 00:09:56.010
+consultant select.
+
+193668f3-58ed-45a1-a746-0295a4892684-0
+00:09:57.700 --> 00:09:59.600
+Some of that information through
+there too.
+
+feede599-6dda-4052-ad9d-35286aa36637-0
+00:10:01.610 --> 00:10:06.204
+So one question already, the
+shipping has been definitely
+
+feede599-6dda-4052-ad9d-35286aa36637-1
+00:10:06.204 --> 00:10:10.798
+made as an important thing that
+needs to be correct. When
+
+feede599-6dda-4052-ad9d-35286aa36637-2
+00:10:10.798 --> 00:10:15.314
+creating the CTS and PCOS,
+something that we do get from
+
+feede599-6dda-4052-ad9d-35286aa36637-3
+00:10:15.314 --> 00:10:20.383
+Ecat is shipping instructions,
+does that reflect what is in the
+
+feede599-6dda-4052-ad9d-35286aa36637-4
+00:10:20.383 --> 00:10:25.453
+customer packet and can we make
+the specific designations based
+
+feede599-6dda-4052-ad9d-35286aa36637-5
+00:10:25.453 --> 00:10:30.206
+off that information coming
+over? Yes, I believe so that is
+
+feede599-6dda-4052-ad9d-35286aa36637-6
+00:10:30.206 --> 00:10:30.839
+correct.
+
+19dc2d03-5e44-4b8c-862c-3f157e330653-0
+00:10:32.180 --> 00:10:36.761
+Something I will try to shoot
+your way is, um, things that we
+
+19dc2d03-5e44-4b8c-862c-3f157e330653-1
+00:10:36.761 --> 00:10:38.830
+see from ecat and make sure.
+
+75572d66-f24f-4042-ae75-feb099a3bdfd-0
+00:10:39.760 --> 00:10:44.380
+We make sure apples are apples
+and oranges are oranges, so.
+
+307a6f41-6f08-4f59-865b-250362b8e408-0
+00:10:47.250 --> 00:10:50.336
+OK, so once we've done all this
+information, we're going to go
+
+307a6f41-6f08-4f59-865b-250362b8e408-1
+00:10:50.336 --> 00:10:53.080
+and push create STT. It'll ask
+you want to create that.
+
+6b6f955f-0a4f-4d81-bbf4-73603a92e3e6-0
+00:10:56.070 --> 00:10:57.160
+We will print.
+
+08f15244-fe40-406b-bb5c-e6d8b7725b58-0
+00:11:15.920 --> 00:11:16.970
+Just take someone out.
+
+2379fcea-8a62-4f86-bcc4-e72bd9304935-0
+00:11:32.920 --> 00:11:37.426
+And then once this screen pops
+up, it should provide you with
+
+2379fcea-8a62-4f86-bcc4-e72bd9304935-1
+00:11:37.426 --> 00:11:41.932
+the order number which is the
+SCT number and we have to write
+
+2379fcea-8a62-4f86-bcc4-e72bd9304935-2
+00:11:41.932 --> 00:11:45.930
+that number down to make sure
+the next two additional.
+
+fec0396d-1203-4a6e-8d96-4dd5a2e5363e-0
+00:11:48.010 --> 00:11:51.683
+Order numbers will or two
+additional line items go on that
+
+fec0396d-1203-4a6e-8d96-4dd5a2e5363e-1
+00:11:51.683 --> 00:11:55.107
+exact order. So we're not
+creating multiple individual
+
+fec0396d-1203-4a6e-8d96-4dd5a2e5363e-2
+00:11:55.107 --> 00:11:55.729
+shipments.
+
+b293b548-227b-4ed2-b6d3-21981175d784-0
+00:11:59.310 --> 00:12:03.623
+Are those order acknowledgements
+being printed or are those just
+
+b293b548-227b-4ed2-b6d3-21981175d784-1
+00:12:03.623 --> 00:12:07.803
+you're basically just building
+this huge customer packet? It's
+
+b293b548-227b-4ed2-b6d3-21981175d784-2
+00:12:07.803 --> 00:12:11.520
+not very green by any means, but
+yes, it is 100% there.
+
+13130e32-78cd-4d0e-bfe4-caf31b2a3335-0
+00:12:13.010 --> 00:12:18.486
+The Prince is necessary, or is
+that something that we can
+
+13130e32-78cd-4d0e-bfe4-caf31b2a3335-1
+00:12:18.486 --> 00:12:20.280
+design a different?
+
+59f0a7db-b5cc-4d5d-85a3-c733c3b46d74-0
+00:12:21.030 --> 00:12:22.620
+Uh, process for.
+
+5582ce16-f772-414a-81f5-d5f2206aa973-0
+00:12:23.790 --> 00:12:27.206
+As long as I can have it linked
+back up to that 301 number, I'm
+
+5582ce16-f772-414a-81f5-d5f2206aa973-1
+00:12:27.206 --> 00:12:30.517
+OK with. However, if you want to
+design it a different way, I
+
+5582ce16-f772-414a-81f5-d5f2206aa973-2
+00:12:30.517 --> 00:12:33.240
+just need to know that those two
+connect together.
+
+7b704e1a-0c96-4651-b729-e026839c0bff-0
+00:12:37.210 --> 00:12:40.120
+Is it? That's just definitely
+something.
+
+fa5fde35-f327-4dc8-8fd1-0ec5321925eb-0
+00:12:40.820 --> 00:12:45.230
+Through the automation that it
+could be lost, so correct.
+
+8bf1164a-1961-447d-98a8-2f5a7ae77919-0
+00:12:46.820 --> 00:12:51.149
+So then you'll go back, double
+click on the next line has been
+
+8bf1164a-1961-447d-98a8-2f5a7ae77919-1
+00:12:51.149 --> 00:12:54.929
+has it defaults to that
+warehouse and then down at the
+
+8bf1164a-1961-447d-98a8-2f5a7ae77919-2
+00:12:54.929 --> 00:12:58.160
+bottom we check mark that add to
+existing SCT.
+
+7e64ff4f-9f8b-4b3e-a470-f0b005a7a307-0
+00:12:58.970 --> 00:13:02.495
+And then type in that supply
+chain transfer number. So that
+
+7e64ff4f-9f8b-4b3e-a470-f0b005a7a307-1
+00:13:02.495 --> 00:13:05.668
+way they're all coordinating
+together and you're just
+
+7e64ff4f-9f8b-4b3e-a470-f0b005a7a307-2
+00:13:05.668 --> 00:13:08.900
+basically building that
+information up until you're at
+
+7e64ff4f-9f8b-4b3e-a470-f0b005a7a307-3
+00:13:08.900 --> 00:13:12.073
+the very end and that's
+typically when I print it, is
+
+7e64ff4f-9f8b-4b3e-a470-f0b005a7a307-4
+00:13:12.073 --> 00:13:15.364
+that the very end. So that way
+all three lines would be
+
+7e64ff4f-9f8b-4b3e-a470-f0b005a7a307-5
+00:13:15.364 --> 00:13:17.009
+showcased on that one order.
+
+a75d908f-247c-4717-9fb4-8cbb1655053d-0
+00:13:17.930 --> 00:13:18.340
+OK.
+
+e9798c19-37aa-40cf-8ee6-7d8f8976e7dd-0
+00:13:29.760 --> 00:13:31.230
+Will follow the same thing.
+
+536bba5f-0383-497c-a631-5e8089ecd950-0
+00:13:42.860 --> 00:13:47.167
+OK. And then from there, that is
+all the back order review
+
+536bba5f-0383-497c-a631-5e8089ecd950-1
+00:13:47.167 --> 00:13:51.036
+processes. It's pretty
+simplistic. However, there is
+
+536bba5f-0383-497c-a631-5e8089ecd950-2
+00:13:51.036 --> 00:13:55.708
+one additional step that has to
+happen, so we exit a back order
+
+536bba5f-0383-497c-a631-5e8089ecd950-3
+00:13:55.708 --> 00:13:56.220
+review.
+
+22eef6ed-5f3d-48bc-84c4-c47c2500df05-0
+00:13:57.300 --> 00:13:59.890
+And then we go back into sales
+order entry.
+
+4a77e5c5-aa2e-49ae-9c71-d24c95043fe0-0
+00:14:04.620 --> 00:14:07.490
+This is where automation can
+help us tremendously.
+
+8a7c31c2-eab4-4197-8f45-99e4353a24f2-0
+00:14:08.360 --> 00:14:09.110
+Umm.
+
+4cc5d051-d039-4382-b12e-5a348920028a-0
+00:14:11.460 --> 00:14:14.772
+We got a function order
+maintenance type in that 100
+
+4cc5d051-d039-4382-b12e-5a348920028a-1
+00:14:14.772 --> 00:14:15.210
+number.
+
+05614285-e8dd-4845-ada5-64f5238312dd-0
+00:14:18.220 --> 00:14:22.470
+Y'all are manually entering the
+SCT for the line items on the
+
+05614285-e8dd-4845-ada5-64f5238312dd-1
+00:14:22.470 --> 00:14:23.910
+sales order. Awesome.
+
+44b7fbe3-f60e-4ade-b497-a8ce763bac78-0
+00:14:24.750 --> 00:14:25.170
+OK.
+
+f950a61d-9d45-4bb9-b9d5-b172bedabe62-0
+00:14:26.790 --> 00:14:30.540
+So if you look here on the
+screen, it will show the three
+
+f950a61d-9d45-4bb9-b9d5-b172bedabe62-1
+00:14:30.540 --> 00:14:34.742
+line items that we initially put
+onto the order through the back
+
+f950a61d-9d45-4bb9-b9d5-b172bedabe62-2
+00:14:34.742 --> 00:14:38.298
+order review process. But then
+I've already filled out
+
+f950a61d-9d45-4bb9-b9d5-b172bedabe62-3
+00:14:38.298 --> 00:14:42.048
+everything in this order header
+on the 300 side. All that
+
+f950a61d-9d45-4bb9-b9d5-b172bedabe62-4
+00:14:42.048 --> 00:14:45.863
+information correlated to the
+100. Then I wouldn't have to
+
+f950a61d-9d45-4bb9-b9d5-b172bedabe62-5
+00:14:45.863 --> 00:14:49.290
+dedupe. Right now we have to
+double type everything.
+
+49798195-3b4a-42b6-a981-a7f6a53b81b9-0
+00:14:50.200 --> 00:14:50.740
+OK.
+
+4c17b2da-13ac-452b-bc3c-40d30cecc258-0
+00:14:51.540 --> 00:14:54.278
+And I have this all detailed out
+in the office manual as well
+
+4c17b2da-13ac-452b-bc3c-40d30cecc258-1
+00:14:54.278 --> 00:14:56.840
+what has to be filled out, but I
+can walk you through it.
+
+bb713187-60b1-449c-bf4a-eef2abdd67c1-0
+00:14:57.810 --> 00:15:01.721
+I appreciate it. So on the
+customer purchase order line
+
+bb713187-60b1-449c-bf4a-eef2abdd67c1-1
+00:15:01.721 --> 00:15:06.121
+number and that's the customer's
+first name, last name and the
+
+bb713187-60b1-449c-bf4a-eef2abdd67c1-2
+00:15:06.121 --> 00:15:06.890
+301 number.
+
+2a2c13b7-8d30-4181-a327-203b5c1320e3-0
+00:15:09.540 --> 00:15:13.170
+The next line item is promo
+code.
+
+22492a1a-44b8-4236-b2e4-43ad70fe7d0d-0
+00:15:30.310 --> 00:15:34.009
+And then that we use the
+magnifying glass and put none
+
+22492a1a-44b8-4236-b2e4-43ad70fe7d0d-1
+00:15:34.009 --> 00:15:34.480
+always.
+
+b6371da6-bb55-4e3d-8dca-cb945178ea70-0
+00:15:36.240 --> 00:15:40.540
+The next one is the customer Rep
+so we always default to
+
+b6371da6-bb55-4e3d-8dca-cb945178ea70-1
+00:15:40.540 --> 00:15:41.220
+customer.
+
+e6b441d1-56c1-4550-8708-1409b9e98372-0
+00:15:43.760 --> 00:15:47.008
+Unless it's a store order, then
+it'll go to management or
+
+e6b441d1-56c1-4550-8708-1409b9e98372-1
+00:15:47.008 --> 00:15:47.400
+visual.
+
+c076cd28-b0d0-417f-9232-20e6e77a7dd1-0
+00:15:49.380 --> 00:15:52.704
+Umm, sorry Ben, yours looks a
+little different than my desk,
+
+c076cd28-b0d0-417f-9232-20e6e77a7dd1-1
+00:15:52.704 --> 00:15:54.830
+so I'm like, OK, hang on, you're
+fine.
+
+d4505bf0-ae22-4b90-8f53-0a6d0a38b50b-0
+00:15:56.280 --> 00:16:00.069
+See, I don't have any code blue,
+so we won't mess with that
+
+d4505bf0-ae22-4b90-8f53-0a6d0a38b50b-1
+00:16:00.069 --> 00:16:03.921
+delivery phone number. That's a
+must that I have to have for
+
+d4505bf0-ae22-4b90-8f53-0a6d0a38b50b-2
+00:16:03.921 --> 00:16:04.490
+shipping.
+
+e50de99a-6647-4b56-9220-a5bf1f0a1742-0
+00:16:12.960 --> 00:16:16.861
+What's the delivery phone number
+that needs to be entered there?
+
+e50de99a-6647-4b56-9220-a5bf1f0a1742-1
+00:16:16.861 --> 00:16:20.283
+That is the end. That's either
+the third party logistics
+
+e50de99a-6647-4b56-9220-a5bf1f0a1742-2
+00:16:20.283 --> 00:16:24.185
+company number. So that way they
+have a number to call or if I'm
+
+e50de99a-6647-4b56-9220-a5bf1f0a1742-3
+00:16:24.185 --> 00:16:28.027
+drop shipping it to the customer
+that's where FedEx, UPS or the
+
+e50de99a-6647-4b56-9220-a5bf1f0a1742-4
+00:16:28.027 --> 00:16:31.809
+White Glove agent would have a
+phone number to call and set up
+
+e50de99a-6647-4b56-9220-a5bf1f0a1742-5
+00:16:31.809 --> 00:16:32.590
+the delivery.
+
+f998ee43-775e-4a39-ad8b-65104c681ed7-0
+00:16:35.930 --> 00:16:39.640
+Um, OK, so then delivery type?
+
+dc87d165-dc85-4fb1-a14f-2c8d5a7edd2c-0
+00:16:42.160 --> 00:16:45.781
+This is actually pre selected
+through ecat in general, so this
+
+dc87d165-dc85-4fb1-a14f-2c8d5a7edd2c-1
+00:16:45.781 --> 00:16:49.116
+information could tie over
+directly to you. But right now
+
+dc87d165-dc85-4fb1-a14f-2c8d5a7edd2c-2
+00:16:49.116 --> 00:16:52.507
+we manually do see you can
+select standard or white glove.
+
+dc87d165-dc85-4fb1-a14f-2c8d5a7edd2c-3
+00:16:52.507 --> 00:16:54.980
+Those are the only two services
+in retail.
+
+43f13a73-d6e0-430f-8bc1-a7a0c27a404b-0
+00:16:56.390 --> 00:17:00.270
+Address type, but if it's
+shipping to your three PL. even
+
+43f13a73-d6e0-430f-8bc1-a7a0c27a404b-1
+00:17:00.270 --> 00:17:02.880
+though the order might be white
+glove.
+
+3c7018a3-36b3-4c74-bd8e-1c8596171aec-0
+00:17:04.510 --> 00:17:05.840
+100 correct.
+
+4012faac-db85-430b-b9aa-88c449174408-0
+00:17:07.160 --> 00:17:10.788
+Correct. I usually put the
+address type or would be
+
+4012faac-db85-430b-b9aa-88c449174408-1
+00:17:10.788 --> 00:17:13.510
+residential, that would be
+commercial.
+
+214c3109-e711-4e12-bd74-4d58dcc2efd7-0
+00:17:23.990 --> 00:17:28.166
+And then shipment requests we
+put complete on everything
+
+214c3109-e711-4e12-bd74-4d58dcc2efd7-1
+00:17:28.166 --> 00:17:30.950
+unless we're split shipping an
+order.
+
+21edc81d-2c99-4ccd-848e-03de30cefbc0-0
+00:17:32.680 --> 00:17:35.707
+It will already have that
+customers information in because
+
+21edc81d-2c99-4ccd-848e-03de30cefbc0-1
+00:17:35.707 --> 00:17:38.889
+we did that through back order
+review and that's all we do in
+
+21edc81d-2c99-4ccd-848e-03de30cefbc0-2
+00:17:38.889 --> 00:17:40.070
+that particular screen.
+
+98ad896d-82ab-4c78-b24e-7f0580905103-0
+00:17:42.640 --> 00:17:46.370
+So each order probably takes you
+about.
+
+a202f334-c4b4-424b-98d3-8b7240ff63dd-0
+00:17:49.530 --> 00:17:52.380
+10 minutes, 5 to 10 minutes to
+process.
+
+27ef8bc2-7909-4d45-a94e-1412fdca45c4-0
+00:17:53.570 --> 00:17:56.460
+As you go through all the
+different steps and then when
+
+27ef8bc2-7909-4d45-a94e-1412fdca45c4-1
+00:17:56.460 --> 00:17:58.680
+they start comingling like where
+you sell.
+
+4736e067-f414-434d-bda4-a080363cbae3-0
+00:18:00.090 --> 00:18:04.138
+Summer classics, Gabby and then
+a special order vendor. Those
+
+4736e067-f414-434d-bda4-a080363cbae3-1
+00:18:04.138 --> 00:18:06.620
+could take up to 30 minutes in
+order.
+
+9898d457-af92-4813-ad66-2ab2b44fb367-0
+00:18:08.250 --> 00:18:08.720
+OK.
+
+0dca0894-67aa-4189-b99f-5efa2c161d2a-0
+00:18:39.320 --> 00:18:41.950
+And here's an example of one
+that would get.
+
+f0037e89-3f33-462b-a255-b7b9c80e2890-0
+00:18:43.030 --> 00:18:46.710
+Two SCT's because these items
+come from different warehouses.
+
+d7c09df7-d431-42d4-bc44-90ac56e88f90-0
+00:18:47.380 --> 00:18:48.670
+Yeah, correct.
+
+41cf84ae-847f-4f7f-bf42-cc2a8af72f02-0
+00:18:52.990 --> 00:18:57.532
+So this item will get SCT from
+MSN and this one will get an SCT
+
+41cf84ae-847f-4f7f-bf42-cc2a8af72f02-1
+00:18:57.532 --> 00:18:58.100
+from MB.
+
+489714a6-9d34-4dbf-838c-637b746cc1f3-0
+00:19:01.100 --> 00:19:03.430
+And it's my understanding right
+now front.
+
+23447f61-06bb-4daf-bf7d-d6bf1021d685-0
+00:19:04.890 --> 00:19:08.608
+Excuse me, from the 301 lens,
+we're already able to go by
+
+23447f61-06bb-4daf-bf7d-d6bf1021d685-1
+00:19:08.608 --> 00:19:11.430
+stock code line as long as we
+went through.
+
+e500e7ba-d2d1-47d7-93b3-4b0405ca7cca-0
+00:19:12.900 --> 00:19:16.909
+The back order review process,
+it will tie that SCT number to
+
+e500e7ba-d2d1-47d7-93b3-4b0405ca7cca-1
+00:19:16.909 --> 00:19:17.880
+that line item.
+
+44ab1bfc-a0a7-4ab0-af06-1d8d614ddfe6-0
+00:19:18.820 --> 00:19:19.050
+Yeah.
+
+4668c7bb-fa71-44fe-af8f-ba08c9d131e0-0
+00:19:28.200 --> 00:19:30.240
+So we would still need that
+capability.
+
+d8a636ae-da62-49fc-a1f4-1c796182351e-0
+00:19:31.080 --> 00:19:32.880
+If we're eliminating STD's.
+
+1017d6f2-5b48-467f-8a80-bc06423e05cf-0
+00:19:34.280 --> 00:19:35.320
+Into automation.
+
+168dde1b-ac58-4625-b9cc-8e5ca47c98d8-0
+00:19:37.350 --> 00:19:41.220
+Or in this one you would have an
+SCT and a purchase order.
+
+c755b698-0852-4876-9c04-edb2312726a9-0
+00:19:42.400 --> 00:19:43.110
+Correct.
+
+d8a015d3-cd03-43f4-a710-69889f5d1e86-0
+00:19:44.520 --> 00:19:50.030
+Is the purchase order pretty or
+somewhat similar in creating?
+
+98f89216-df2f-4a85-9d49-6d75c613d2f1-0
+00:19:53.330 --> 00:19:57.664
+Well, that particular vendor,
+there's only 7 vendors we're
+
+98f89216-df2f-4a85-9d49-6d75c613d2f1-1
+00:19:57.664 --> 00:20:00.530
+allowed to order from that
+particular.
+
+2a8a3cb4-4f48-424e-8efd-16bd36359317-0
+00:20:01.650 --> 00:20:04.480
+Um piece would be something they
+sold off at their floor.
+
+8d191b4a-92d8-493d-9220-ec6a9b300b11-0
+00:20:06.430 --> 00:20:06.940
+OK.
+
+07179612-d9f0-4f49-bfb3-759c5371ab70-0
+00:20:08.760 --> 00:20:11.743
+And I can provide you those
+seven vendors that would be
+
+07179612-d9f0-4f49-bfb3-759c5371ab70-1
+00:20:11.743 --> 00:20:14.993
+special order capability for my
+purchase order lens if you'd
+
+07179612-d9f0-4f49-bfb3-759c5371ab70-2
+00:20:14.993 --> 00:20:15.580
+like us to.
+
+f3758ff5-1dac-4445-b87d-166cfd5b47ba-0
+00:20:19.650 --> 00:20:22.460
+That would be beneficial, OK.
+
+94791da5-3268-457f-848c-1d8be75b73af-0
+00:20:24.920 --> 00:20:27.745
+Wouldn't that be allocated
+though if they sold it off their
+
+94791da5-3268-457f-848c-1d8be75b73af-1
+00:20:27.745 --> 00:20:28.970
+floor and not backordered?
+
+094a4866-c883-44a4-9193-b09c58ac4d3b-0
+00:20:30.900 --> 00:20:31.850
+It could.
+
+04537de9-ad40-49e8-9fca-9d4f817a2056-0
+00:20:32.680 --> 00:20:33.320
+It should be.
+
+eb9d06b8-5f51-45cc-952a-029025681fbc-0
+00:20:34.340 --> 00:20:36.700
+Unless they haven't received
+that purchase order in yet.
+
+1c14d185-7248-4cf6-9b1f-434fcc91b642-0
+00:20:37.890 --> 00:20:38.400
+Gotcha.
+
+a594806c-8fa3-405c-b78b-66d1e22d0d97-0
+00:20:46.030 --> 00:20:49.224
+So even on those seven vendors
+you could have which we will
+
+a594806c-8fa3-405c-b78b-66d1e22d0d97-1
+00:20:49.224 --> 00:20:52.471
+have a line item, we'll have
+that line item flagged for this
+
+a594806c-8fa3-405c-b78b-66d1e22d0d97-2
+00:20:52.471 --> 00:20:55.240
+special order or not. So I guess
+it doesn't matter.
+
+91f8524b-c31e-4d74-97ff-d9929960e4ff-0
+00:21:03.720 --> 00:21:06.020
+But yeah, the PO process is
+pretty similar.
+
+8f0b1b44-58b8-4a9c-9193-b3208162cf0c-0
+00:21:06.800 --> 00:21:07.380
+Umm.
+
+79456ecd-5de7-44f1-bb8d-12f63e25eea8-0
+00:21:08.970 --> 00:21:11.720
+You can pick the customer's
+address.
+
+b8fbce99-2160-48e6-9543-ef40eab76fac-0
+00:21:12.880 --> 00:21:13.250
+Right.
+
+3b96ba8b-ff02-4888-92b5-1362d7d8265d-0
+00:21:16.290 --> 00:21:19.660
+The trickier part on PO's I
+would say would be.
+
+7f0876a4-3ea5-43a4-86a3-3a51c6061b95-0
+00:21:20.320 --> 00:21:23.740
+Picking the right pricing
+potentially if you had an item
+
+7f0876a4-3ea5-43a4-86a3-3a51c6061b95-1
+00:21:23.740 --> 00:21:25.300
+with multiple price tiers.
+
+7e6801e5-c500-4b5c-8deb-544e616c59fa-0
+00:21:26.400 --> 00:21:26.980
+Um.
+
+62862b00-df72-4654-93f1-92e076937ca4-0
+00:21:33.490 --> 00:21:35.880
+Well, and what we've also
+learned is that.
+
+e86b6cea-3eef-424c-86be-a508a0b98ddc-0
+00:21:38.580 --> 00:21:39.290
+Umm.
+
+054c918d-85b5-440b-906e-9e90a89cdf20-0
+00:21:40.460 --> 00:21:44.218
+Pricing for those vendors, it's
+only updated as SKU request
+
+054c918d-85b5-440b-906e-9e90a89cdf20-1
+00:21:44.218 --> 00:21:47.790
+needs are there. We don't go
+back through and re update.
+
+18205416-d7d6-4965-8956-0dc01203a30b-0
+00:21:48.470 --> 00:21:51.354
+Every single price cut
+potentially in our system, every
+
+18205416-d7d6-4965-8956-0dc01203a30b-1
+00:21:51.354 --> 00:21:54.496
+single year, no would take us
+millions and millions of years
+
+18205416-d7d6-4965-8956-0dc01203a30b-2
+00:21:54.496 --> 00:21:54.959
+to do so.
+
+10949445-d4fd-4b6a-b3ec-1bc3dc8c8a1d-0
+00:22:01.310 --> 00:22:03.810
+So is that gonna be an issue
+that the PO is going to get
+
+10949445-d4fd-4b6a-b3ec-1bc3dc8c8a1d-1
+00:22:03.810 --> 00:22:05.960
+created at whatever price we
+have in the system?
+
+ea020a14-ec05-469b-907c-815cad127e0d-0
+00:22:08.300 --> 00:22:09.700
+As long as I can edit it.
+
+06574711-760a-4951-80e1-db420f415211-0
+00:22:10.610 --> 00:22:13.629
+Before we do the final receipt
+of goods for Lee to pay the
+
+06574711-760a-4951-80e1-db420f415211-1
+00:22:13.629 --> 00:22:15.830
+bill, I don't think it should be
+an issue.
+
+ec48122f-5086-4ec9-8ff1-dd78733f784a-0
+00:22:21.600 --> 00:22:24.180
+The other thing about purchase
+orders is while.
+
+82a94909-8e0c-4e00-8d3e-d2ca2ce9e442-0
+00:22:25.050 --> 00:22:28.626
+Umm. We are going to automate
+the purchase order number to
+
+82a94909-8e0c-4e00-8d3e-d2ca2ce9e442-1
+00:22:28.626 --> 00:22:32.324
+start, I still have to send a
+separate e-mail to the vendors
+
+82a94909-8e0c-4e00-8d3e-d2ca2ce9e442-2
+00:22:32.324 --> 00:22:33.840
+placing the actual order.
+
+501dd840-9ed2-4543-9cf3-d9f804b789ad-0
+00:22:34.580 --> 00:22:36.750
+Just creating the purchase order
+doesn't.
+
+4d462f88-9acc-4a0a-b2c6-73e33078cee8-0
+00:22:40.650 --> 00:22:43.582
+That's not the end step. The
+last step is to e-mail the
+
+4d462f88-9acc-4a0a-b2c6-73e33078cee8-1
+00:22:43.582 --> 00:22:45.520
+vendors directly to place the
+order.
+
+06a7ade6-db82-40d2-b972-52912ee08fad-0
+00:22:49.410 --> 00:22:55.357
+Is this so you need to do all
+manual processing to actually
+
+06a7ade6-db82-40d2-b972-52912ee08fad-1
+00:22:55.357 --> 00:23:01.107
+order the purchase order? Is
+that something that could go
+
+06a7ade6-db82-40d2-b972-52912ee08fad-2
+00:23:01.107 --> 00:23:06.559
+into? I know we've already
+talked about reporting some
+
+06a7ade6-db82-40d2-b972-52912ee08fad-3
+00:23:06.559 --> 00:23:11.019
+errors when trying to automate a
+back order.
+
+57253c5d-80d8-4135-a453-a257213be5ab-0
+00:23:12.220 --> 00:23:14.490
+With this.
+
+23461853-940f-4520-96e8-c8e55b6b2fc0-0
+00:23:15.210 --> 00:23:20.283
+Should this just simply be
+reporting in general where it
+
+23461853-940f-4520-96e8-c8e55b6b2fc0-1
+00:23:20.283 --> 00:23:26.157
+would list issues when trying to
+process a back ordered item? Um.
+
+23461853-940f-4520-96e8-c8e55b6b2fc0-2
+00:23:26.157 --> 00:23:31.853
+But also if it was successful in
+creating Scott and or purchase
+
+23461853-940f-4520-96e8-c8e55b6b2fc0-3
+00:23:31.853 --> 00:23:33.989
+orders it will just say.
+
+12d469a9-775e-4f0b-bc8b-9b66fb4e8d7b-0
+00:23:34.850 --> 00:23:40.486
+Processing this order. These
+SCT's were created with these
+
+12d469a9-775e-4f0b-bc8b-9b66fb4e8d7b-1
+00:23:40.486 --> 00:23:46.408
+items. This purchase order was
+created with this item so that
+
+12d469a9-775e-4f0b-bc8b-9b66fb4e8d7b-2
+00:23:46.408 --> 00:23:52.236
+if more manual entry is needed,
+someone a user can go in and
+
+12d469a9-775e-4f0b-bc8b-9b66fb4e8d7b-3
+00:23:52.236 --> 00:23:53.860
+update as needed.
+
+e39c7ab6-9306-49fb-8701-f5a5f69d61ca-0
+00:23:55.300 --> 00:23:55.750
+Hmm.
+
+b034d226-3f8a-429f-917d-12255a21859c-0
+00:23:57.640 --> 00:24:02.463
+For the real. So I'm going to
+give my wish list here. OK well
+
+b034d226-3f8a-429f-917d-12255a21859c-1
+00:24:02.463 --> 00:24:06.897
+would be really cool is that
+once we create the purchase
+
+b034d226-3f8a-429f-917d-12255a21859c-2
+00:24:06.897 --> 00:24:11.254
+order number or once it
+automates, you almost have like
+
+b034d226-3f8a-429f-917d-12255a21859c-3
+00:24:11.254 --> 00:24:11.410
+a.
+
+54b4e0cf-e566-4c5c-a54c-e1d775c7e01a-0
+00:24:12.140 --> 00:24:16.452
+Because we have to submit the
+PDF with the actual order as
+
+54b4e0cf-e566-4c5c-a54c-e1d775c7e01a-1
+00:24:16.452 --> 00:24:19.230
+well. So if the PDF almost went
+into.
+
+4b0d5d2d-e422-4e43-82d7-b38c2c7c0de2-0
+00:24:20.470 --> 00:24:24.572
+Like it was like an actionable
+item that you had to go and then
+
+4b0d5d2d-e422-4e43-82d7-b38c2c7c0de2-1
+00:24:24.572 --> 00:24:26.880
+take the PDF to send to the
+vendor.
+
+990d9d47-f38d-442a-a7a1-9fe35621de42-0
+00:24:29.780 --> 00:24:34.764
+So PDF that makes sense created,
+it's just a user goes to some
+
+990d9d47-f38d-442a-a7a1-9fe35621de42-1
+00:24:34.764 --> 00:24:37.930
+file location to pull that PDF
+to send.
+
+4f954787-be14-4815-9aa6-b3071bd4d24b-0
+00:24:38.630 --> 00:24:39.050
+Correct.
+
+4f4f810a-8d5c-4209-8470-74a8012772b1-0
+00:24:42.640 --> 00:24:43.460
+Say one more time.
+
+9cb9db31-a5e7-411d-9d5c-e8c85ae186a5-0
+00:24:44.660 --> 00:24:49.609
+So automation creates the
+purchase order, yes? Through the
+
+9cb9db31-a5e7-411d-9d5c-e8c85ae186a5-1
+00:24:49.609 --> 00:24:54.979
+automation. Your wish list would
+be after the purchase order is
+
+9cb9db31-a5e7-411d-9d5c-e8c85ae186a5-2
+00:24:54.979 --> 00:25:00.012
+created to create said PDF to
+send to the vendor and I use.
+
+9cb9db31-a5e7-411d-9d5c-e8c85ae186a5-3
+00:25:00.012 --> 00:25:05.549
+All the user would have to do is
+go to that file location to pick
+
+9cb9db31-a5e7-411d-9d5c-e8c85ae186a5-4
+00:25:05.549 --> 00:25:07.060
+it up and send it.
+
+d41f7230-ae6e-44e3-90e8-c53b08875af1-0
+00:25:12.260 --> 00:25:12.820
+Correct.
+
+7148e814-44fe-43c0-a36b-35056a9c4151-0
+00:25:24.750 --> 00:25:28.690
+Knowing that you do SAT prints
+would.
+
+2ae5274b-ff3a-46b5-b64e-4fec926be5d6-0
+00:25:29.500 --> 00:25:34.190
+Having a similar thing for SAT's
+be beneficial or.
+
+6c4482fb-93da-4f87-922d-4e7e317c0f99-0
+00:25:36.960 --> 00:25:38.140
+Say that more time. I'm so
+sorry.
+
+fa135a2f-e4f1-42d2-9d96-4b9142c5901c-0
+00:25:39.150 --> 00:25:39.860
+So.
+
+8465193a-ad4e-4022-ab51-ea85f9199bc2-0
+00:25:40.620 --> 00:25:45.669
+Through the automation when
+creating SCT, would creating a
+
+8465193a-ad4e-4022-ab51-ea85f9199bc2-1
+00:25:45.669 --> 00:25:50.976
+PDF for the SCT to be printed
+off at a later time to put into
+
+8465193a-ad4e-4022-ab51-ea85f9199bc2-2
+00:25:50.976 --> 00:25:55.940
+the customer portfolio or
+whatever? Would that would that
+
+8465193a-ad4e-4022-ab51-ea85f9199bc2-3
+00:25:55.940 --> 00:26:00.220
+be beneficial? Yes, that would
+be beneficial too.
+
+118e50c3-3731-4a9a-b383-3efc3c1b3347-0
+00:26:05.890 --> 00:26:09.090
+What do you need a print out of
+the SCT for?
+
+5f47034f-cd10-45c0-9792-1b468efe2259-0
+00:26:10.810 --> 00:26:14.271
+Typically we just make a
+profile. I mean, if we're going
+
+5f47034f-cd10-45c0-9792-1b468efe2259-1
+00:26:14.271 --> 00:26:15.790
+paperless futuristically.
+
+8646bbb4-88d0-4dc9-bf83-f186dda4f151-0
+00:26:16.600 --> 00:26:17.320
+Umm.
+
+f341a210-97f8-4cc8-b4d0-1f7198fef264-0
+00:26:19.840 --> 00:26:23.392
+Then I guess we would be in a
+good position. It just has that
+
+f341a210-97f8-4cc8-b4d0-1f7198fef264-1
+00:26:23.392 --> 00:26:27.115
+proof of it's that double check
+of all of our design consultants
+
+f341a210-97f8-4cc8-b4d0-1f7198fef264-2
+00:26:27.115 --> 00:26:30.839
+go through &amp; the sales order
+and the production to make sure
+
+f341a210-97f8-4cc8-b4d0-1f7198fef264-3
+00:26:30.839 --> 00:26:34.220
+we ordered it correctly for an
+accountability perspective.
+
+b75ed0be-cb65-4f0d-be8a-6216a43d5b0d-0
+00:26:35.170 --> 00:26:35.670
+Umm.
+
+6ecc863d-8b31-4332-aa3e-780bd66ce3fa-0
+00:26:36.760 --> 00:26:37.870
+Versus.
+
+9f64c0f5-6127-4568-aa7b-420b39157790-0
+00:26:39.540 --> 00:26:40.290
+Umm.
+
+5abae42b-5832-42eb-8606-cacae3f43663-0
+00:26:42.870 --> 00:26:45.896
+Versus it just being on blind
+faith that we ordered correctly
+
+5abae42b-5832-42eb-8606-cacae3f43663-1
+00:26:45.896 --> 00:26:48.240
+because sometimes you can catch
+error same day.
+
+cce9e3b7-5e45-4fa1-9582-421b35617d9b-0
+00:26:49.190 --> 00:26:50.810
+That would really be the only
+purpose.
+
+4e4ced23-65f6-4a23-8b75-3ca31fddff34-0
+00:26:57.800 --> 00:26:58.580
+Um.
+
+5afde961-f5aa-487e-9079-755adcd3b8d0-0
+00:26:59.330 --> 00:27:05.192
+While we're on your wish list,
+who who would need these PDF's?
+
+5afde961-f5aa-487e-9079-755adcd3b8d0-1
+00:27:05.192 --> 00:27:10.682
+So if I were to create the
+service, um, either it could be
+
+5afde961-f5aa-487e-9079-755adcd3b8d0-2
+00:27:10.682 --> 00:27:16.265
+it would be stored in a file
+location that anyone or any of
+
+5afde961-f5aa-487e-9079-755adcd3b8d0-3
+00:27:16.265 --> 00:27:22.314
+the users need to get to so they
+can see it there. It could also
+
+5afde961-f5aa-487e-9079-755adcd3b8d0-4
+00:27:22.314 --> 00:27:25.850
+be attached to an e-mail for
+whoever.
+
+ceb688f2-974c-48e0-b306-ae1503b77f6f-0
+00:27:26.580 --> 00:27:30.110
+To needs to receive that could
+see it.
+
+d4377fa1-e6a5-4554-96cd-a8149cf7fe0f-0
+00:27:32.080 --> 00:27:35.790
+So who who are these people that
+would need?
+
+a3db20ff-9b7b-46b0-9c3e-c09d012c13a4-0
+00:27:36.720 --> 00:27:37.830
+These PDFs.
+
+1f3bd482-9796-4960-ac95-1b8eb964bbf9-0
+00:27:38.790 --> 00:27:43.230
+I would say it would be store
+manager. Assistant manager in
+
+1f3bd482-9796-4960-ac95-1b8eb964bbf9-1
+00:27:43.230 --> 00:27:45.450
+store support would be your 3.
+
+1c30e9d2-45cf-427e-95a6-d9bafc614dca-0
+00:27:48.430 --> 00:27:51.270
+Levels of leadership that would
+need it.
+
+fec11190-548d-4a90-a23a-03527422abad-0
+00:27:52.740 --> 00:27:55.720
+Store support would only be if
+they're backfilling for.
+
+d69d5657-6562-4ebc-ae77-c5058a2f4ef9-0
+00:27:56.550 --> 00:28:00.337
+A store remotely, but store
+managers and assistant managers
+
+d69d5657-6562-4ebc-ae77-c5058a2f4ef9-1
+00:28:00.337 --> 00:28:02.800
+per store would be the most
+important.
+
+583e382b-73c2-48fc-ad18-545ae5a5960b-0
+00:28:06.020 --> 00:28:06.310
+OK.
+
+73b3395f-f6f2-4c43-b4e0-11c40d00d116-0
+00:28:10.300 --> 00:28:12.820
+Benessere anyone else you think
+there should have access to
+
+73b3395f-f6f2-4c43-b4e0-11c40d00d116-1
+00:28:12.820 --> 00:28:13.030
+that?
+
+31495a08-6301-4b7f-94b8-5a08134e1f3f-0
+00:28:17.920 --> 00:28:20.060
+No, I would just put an impulse.
+
+2a7189cc-41e5-49c9-b17b-4a334bccc2e4-0
+00:28:21.570 --> 00:28:23.550
+Whoever has access has access.
+
+d9456cef-727d-407e-b7ee-32e06a666187-0
+00:28:25.500 --> 00:28:29.608
+Um, we only use impulse for RMA,
+so would that be something we
+
+d9456cef-727d-407e-b7ee-32e06a666187-1
+00:28:29.608 --> 00:28:33.325
+could be taught how to pull
+something out of in files to
+
+d9456cef-727d-407e-b7ee-32e06a666187-2
+00:28:33.325 --> 00:28:34.890
+attach to an e-mail? OK.
+
+c23afa01-ac09-45ab-b3bf-62a9f5ccca5e-0
+00:28:36.780 --> 00:28:37.270
+Perfect.
+
+a9981d8e-3010-4310-bd85-bf67a2292f8e-0
+00:29:02.800 --> 00:29:06.780
+Any um edge cases for.
+
+023b727b-7255-481e-aa40-458f6c7a07ce-0
+00:29:07.460 --> 00:29:10.430
+Back order review any what I'm
+sorry.
+
+85747115-330a-45db-8401-0ae0dc46e833-0
+00:29:11.100 --> 00:29:13.690
+Edge cases, so just like things
+that.
+
+55da1ce6-53b5-4231-b711-f6c992e0b675-0
+00:29:14.540 --> 00:29:18.184
+Need to be considered when
+processing back orders? Or is
+
+55da1ce6-53b5-4231-b711-f6c992e0b675-1
+00:29:18.184 --> 00:29:22.339
+would that not be within scope?
+I think the only other edge case
+
+55da1ce6-53b5-4231-b711-f6c992e0b675-2
+00:29:22.339 --> 00:29:25.920
+would actually be what's up on
+the screen, so the SC-1.
+
+629e2fe0-907a-4673-bf1c-31e3b482f6f4-0
+00:29:26.650 --> 00:29:29.750
+Those would be the ones that we
+called out. Would need to be on
+
+629e2fe0-907a-4673-bf1c-31e3b482f6f4-1
+00:29:29.750 --> 00:29:31.640
+that exception list or the error
+list.
+
+0834c5a1-6735-4042-af2a-eccf7cc5bb37-0
+00:29:31.690 --> 00:29:32.940
+Because we haven't.
+
+ecb88ba0-8afc-489a-b601-f95a49bdd86d-0
+00:29:33.720 --> 00:29:34.350
+Um.
+
+3e42451d-b781-4a7f-b4c5-16f769fdb458-0
+00:29:35.340 --> 00:29:40.098
+It's a customization scheme that
+we're having to create through
+
+3e42451d-b781-4a7f-b4c5-16f769fdb458-1
+00:29:40.098 --> 00:29:42.180
+IT that's not in our system.
+
+e9797009-57fa-4d29-9b91-ece7ebc8ba92-0
+00:29:43.930 --> 00:29:49.980
+So it could be SC1, dash or fill
+in or I'm sorry, SC1 or fill in.
+
+7114b741-d14a-4037-bb4b-a9e7f2d9ce25-0
+00:29:51.460 --> 00:29:55.902
+Skew Justin that's not set up as
+transfer supplied and also does
+
+7114b741-d14a-4037-bb4b-a9e7f2d9ce25-1
+00:29:55.902 --> 00:30:00.071
+not have a supplier so it would
+error out if you tried to do
+
+7114b741-d14a-4037-bb4b-a9e7f2d9ce25-2
+00:30:00.071 --> 00:30:00.550
+either.
+
+63ed8c1a-c4f8-44ec-bbae-575ef08689fd-0
+00:30:01.930 --> 00:30:06.576
+So my my thought process would
+be since those records aren't
+
+63ed8c1a-c4f8-44ec-bbae-575ef08689fd-1
+00:30:06.576 --> 00:30:11.070
+there, automation would skip
+over those order or at least.
+
+a0c0055e-6ff1-4fe4-a797-4d31ebbfe0c3-0
+00:30:11.770 --> 00:30:15.550
+On first pass reports it can't
+do.
+
+5a11bed6-ad9b-44f2-85c6-829a7c3cd8d7-0
+00:30:16.250 --> 00:30:20.700
+The automation because records
+aren't there. And then once that
+
+5a11bed6-ad9b-44f2-85c6-829a7c3cd8d7-1
+00:30:20.700 --> 00:30:24.595
+stock code is created, the
+automation should be able to
+
+5a11bed6-ad9b-44f2-85c6-829a7c3cd8d7-2
+00:30:24.595 --> 00:30:25.359
+pick it up.
+
+8225eba7-f50b-49f7-9750-07e8dbaed3b5-0
+00:30:26.470 --> 00:30:32.549
+Is that makes sense to everyone,
+so we would skip the order as a
+
+8225eba7-f50b-49f7-9750-07e8dbaed3b5-1
+00:30:32.549 --> 00:30:38.255
+whole, right? It would tip that
+process and then part of the
+
+8225eba7-f50b-49f7-9750-07e8dbaed3b5-2
+00:30:38.255 --> 00:30:43.586
+error reporting just report
+saying, hey, this stock code
+
+8225eba7-f50b-49f7-9750-07e8dbaed3b5-3
+00:30:43.586 --> 00:30:48.637
+does not have sufficient
+information to get an SCT or
+
+8225eba7-f50b-49f7-9750-07e8dbaed3b5-4
+00:30:48.637 --> 00:30:50.040
+purchase order.
+
+b5a36069-ae8b-4fde-82eb-b2fbe0e3e08b-0
+00:30:51.490 --> 00:30:52.600
+Rated 4.
+
+df566600-860a-40ab-8098-6033020aeab5-0
+00:30:55.320 --> 00:30:56.800
+But so it would do.
+
+2e16607c-aa9c-4b94-9b48-0e0a1e911e83-0
+00:30:57.590 --> 00:31:01.337
+For everything else on the order
+it would process through, just
+
+2e16607c-aa9c-4b94-9b48-0e0a1e911e83-1
+00:31:01.337 --> 00:31:02.860
+not that one line item or.
+
+1f42d56c-e2f9-47b2-8830-e9e311090e5c-0
+00:31:04.240 --> 00:31:08.777
+We've already defined that for
+the order, everything must be
+
+1f42d56c-e2f9-47b2-8830-e9e311090e5c-1
+00:31:08.777 --> 00:31:13.314
+fulfilled at the time, and then
+if one of the items can't be
+
+1f42d56c-e2f9-47b2-8830-e9e311090e5c-2
+00:31:13.314 --> 00:31:16.810
+fulfilled, the whole order won't
+be processed.
+
+9f2e03d7-c52b-457d-a0a3-ca617a47c737-0
+00:31:22.400 --> 00:31:25.625
+I think that's the cleanest. I
+just wanted to make sure I was
+
+9f2e03d7-c52b-457d-a0a3-ca617a47c737-1
+00:31:25.625 --> 00:31:27.030
+clear on what would happen.
+
+cdd13cbf-6f6a-4e8b-980b-aaeaf6c505e3-0
+00:31:28.430 --> 00:31:30.810
+Create a nightmare otherwise,
+right then.
+
+35154e7d-5605-4797-ae0d-e15d86e2d461-0
+00:31:42.420 --> 00:31:46.388
+Yeah, I see the vendors that are
+special order vendors and I have
+
+35154e7d-5605-4797-ae0d-e15d86e2d461-1
+00:31:46.388 --> 00:31:50.176
+two others. I've just gotta my
+brain is blinking right now and
+
+35154e7d-5605-4797-ae0d-e15d86e2d461-2
+00:31:50.176 --> 00:31:51.739
+what the other two are so.
+
+12aff6e1-d759-413e-9623-486369073c3a-0
+00:31:53.290 --> 00:31:55.790
+I've gotta go look at the master
+list to pull the other two down.
+
+5657da4e-35a1-43b9-9d3f-78b09854ec0e-0
+00:31:56.870 --> 00:31:57.370
+Sure thing.
+
+d803b178-980c-4d5d-bd2a-75e3d76835ab-0
+00:31:58.250 --> 00:32:01.699
+Well, it wouldn't really matter
+because it would be based off
+
+d803b178-980c-4d5d-bd2a-75e3d76835ab-1
+00:32:01.699 --> 00:32:02.200
+the line.
+
+bb032b1f-c60e-42c8-84e5-42ef1b909194-0
+00:32:03.030 --> 00:32:04.490
+That flag at the bottom level.
+
+8cdbc233-69fd-4520-97ec-2a5c04dae781-0
+00:32:05.320 --> 00:32:05.790
+Correct.
+
+743ba3a2-edab-4ea4-baf3-6ea9129bf78a-0
+00:32:06.850 --> 00:32:10.410
+I don't think it was a hard hard
+code any vendors into.
+
+ff70f6e9-0a96-4168-8cab-1f3e14c047c5-0
+00:32:12.090 --> 00:32:17.409
+So the the new Ecat will send
+over whether or not that item
+
+ff70f6e9-0a96-4168-8cab-1f3e14c047c5-1
+00:32:17.409 --> 00:32:23.083
+can be special ordered. There's
+gonna be no other catch that is
+
+ff70f6e9-0a96-4168-8cab-1f3e14c047c5-2
+00:32:23.083 --> 00:32:23.970
+needed to.
+
+b727767e-c79c-4d1d-a0f9-2b9ad1574197-0
+00:32:24.790 --> 00:32:30.245
+Specify whether an item can be
+automated per say. Correct.
+
+b727767e-c79c-4d1d-a0f9-2b9ad1574197-1
+00:32:30.245 --> 00:32:31.910
+Correct. Yeah, OK.
+
+5047ac35-d669-41e6-8c98-487ab03cb442-0
+00:32:37.810 --> 00:32:38.760
+Any.
+
+7d6fad7c-ef66-4f10-9be1-a36efbd28a71-0
+00:32:39.470 --> 00:32:41.020
+Any other tidbits?
+
+6074b663-1ae9-4ec6-a008-52ed116352bb-0
+00:32:47.630 --> 00:32:48.560
+Don't think so.
+
+0452c948-d35a-4ca8-8657-575599f9a086-0
+00:32:50.720 --> 00:32:52.260
+OK, um.
+
+57ffbcb8-509b-4b8c-b9e6-9fe1dc3ee9b4-0
+00:32:54.430 --> 00:32:58.170
+Just gonna go through the
+current functional requirement
+
+57ffbcb8-509b-4b8c-b9e6-9fe1dc3ee9b4-1
+00:32:58.170 --> 00:33:02.107
+document and um, if you can
+answer some of these questions,
+
+57ffbcb8-509b-4b8c-b9e6-9fe1dc3ee9b4-2
+00:33:02.107 --> 00:33:06.241
+that'd be great. If not, try to
+figure out another time to get
+
+57ffbcb8-509b-4b8c-b9e6-9fe1dc3ee9b4-3
+00:33:06.241 --> 00:33:07.160
+those answers.
+
+039558d3-169e-4bd6-b4eb-015d57ad7a00-0
+00:33:08.550 --> 00:33:09.300
+Space.
+
+4a248a4a-3087-439c-8add-e6e0c869ab29-0
+00:33:10.540 --> 00:33:13.210
+Say that again, I said. Which
+page? May I answer?
+
+a66b31c3-b96b-4767-93fd-dc0de47ddf34-0
+00:33:14.750 --> 00:33:21.933
+Ohh um I have it on my computer
+so page 5 uh so I work from
+
+a66b31c3-b96b-4767-93fd-dc0de47ddf34-1
+00:33:21.933 --> 00:33:23.250
+SharePoint.
+
+ad4bf298-553b-4ad4-9097-f5bee5aee587-0
+00:33:24.340 --> 00:33:28.964
+So if you're looking at are you
+are you're OK, let me go to that
+
+ad4bf298-553b-4ad4-9097-f5bee5aee587-1
+00:33:28.964 --> 00:33:33.517
+document. Hold on. OK, I have it
+printed in front of me, so let
+
+ad4bf298-553b-4ad4-9097-f5bee5aee587-2
+00:33:33.517 --> 00:33:36.790
+me right. I didn't want to start
+talking and.
+
+70197a65-5be8-4b5d-bf01-0c65212f70a2-0
+00:33:38.250 --> 00:33:40.400
+See what I'm looking at?
+
+45718d26-f239-44ec-93b9-6725e0dec8a6-0
+00:33:41.210 --> 00:33:41.450
+OK.
+
+fdd2ec92-682d-43a6-81f1-25c9673b03d2-0
+00:33:48.800 --> 00:34:01.490
+
+
+be2442f0-e624-4a7a-bb8d-064ac5b89315-0
+00:34:14.520 --> 00:34:16.150
+Party. I'm here.
+
+75d4fc98-0763-4bff-9285-4c4fea5f2558-0
+00:34:17.280 --> 00:34:21.964
+If you, uh, starting just at
+Section 3. Understanding the
+
+75d4fc98-0763-4bff-9285-4c4fea5f2558-1
+00:34:21.964 --> 00:34:26.487
+user environment, uh who? Who
+are these users that will
+
+75d4fc98-0763-4bff-9285-4c4fea5f2558-2
+00:34:26.487 --> 00:34:28.830
+benefit from this automation?
+
+a7e4d354-e60b-4993-a13a-e7cb644208d9-0
+00:34:30.210 --> 00:34:33.940
+Um, store manager? Assistant
+manager.
+
+78d2a557-2c24-4c4e-b1a9-5b7eed6470be-0
+00:34:35.740 --> 00:34:39.310
+Design consultants and store
+support.
+
+d2f7cd84-c382-42fb-bc3c-7d4021f40471-0
+00:34:48.700 --> 00:34:48.990
+OK.
+
+0bd76d4f-dc02-423c-a12e-20a9c75c0282-0
+00:34:49.810 --> 00:34:51.050
+I'll fill those in.
+
+95c64fb7-a57d-40d3-afd2-21edce03955b-0
+00:34:52.560 --> 00:34:56.244
+You want me to type in here as
+we're going or no? That would be
+
+95c64fb7-a57d-40d3-afd2-21edce03955b-1
+00:34:56.244 --> 00:34:56.820
+great. OK.
+
+c4c8740c-4e9d-40f6-97a6-a649aec5c09d-0
+00:34:58.480 --> 00:35:00.440
+Sorry, I didn't know if you
+wanted me to type comment or.
+
+cef888c6-ef6c-48ff-9533-836181abc376-0
+00:35:01.360 --> 00:35:02.110
+Yeah, you.
+
+3e85f67c-8a1d-46ea-907d-5eca65cbee93-0
+00:35:02.870 --> 00:35:04.730
+It would be better than me
+trying to.
+
+622eb675-57b4-49fe-89fa-6ba21aa33d17-0
+00:35:09.790 --> 00:35:12.140
+I should just put all of retail
+just kidding.
+
+b8b8ae26-1bc1-4d9f-aa9d-8b87042618de-0
+00:35:14.960 --> 00:35:17.460
+Unfortunately, I don't know if
+that's a.
+
+637ad033-7f6e-4d02-b143-2d67093a7fcf-0
+00:35:18.890 --> 00:35:20.930
+Specific enough, um.
+
+82244bf5-9ec6-4d97-9543-b3e8de8959da-0
+00:35:22.070 --> 00:35:23.010
+Let's see.
+
+a9125451-52f3-48d4-988f-80e3c6770d40-0
+00:35:26.370 --> 00:35:26.670
+OK.
+
+0188d716-8cf5-4156-8cd1-32d1075932fd-0
+00:35:27.740 --> 00:35:30.080
+The side.
+
+eb6bd378-4c4a-4da4-8bf1-2905685ec60a-0
+00:35:30.780 --> 00:35:34.800
+Before we go to the next
+section, do these answers look
+
+eb6bd378-4c4a-4da4-8bf1-2905685ec60a-1
+00:35:34.800 --> 00:35:35.160
+good?
+
+06f87d37-a6fd-46d2-8382-e42230d41086-0
+00:35:36.220 --> 00:35:36.840
+In your.
+
+c82a1955-67f8-4ce6-a5d0-60f3131fa659-0
+00:35:37.620 --> 00:35:38.200
+Point of view.
+
+9ea255ab-c278-4528-8b29-4259ce891286-0
+00:35:39.440 --> 00:35:40.850
+For the other questions.
+
+443c3041-f2b1-4155-8ce6-8e1397262d6c-0
+00:35:42.170 --> 00:35:43.030
+Longer.
+
+d3df1f2b-7bbb-4e6d-beff-375b010e2890-0
+00:35:44.510 --> 00:35:46.300
+I think we automated OK.
+
+ddebc46d-eed1-40ba-8e56-eaea3bcb2970-0
+00:35:47.480 --> 00:35:49.150
+Expectations are changing.
+
+d7c6a6ef-791c-4947-a707-18a87f5b9161-0
+00:36:05.320 --> 00:36:05.840
+Define.
+
+e5d7ad44-f2ab-4c92-a599-667298d54bf0-0
+00:36:07.030 --> 00:36:11.960
+I would think that expectations
+on training also we would want.
+
+5b96707d-95bb-479a-af91-2d5ddf5675d6-0
+00:36:13.340 --> 00:36:18.026
+Clearly we want to handle
+exceptions, but we'll want to do
+
+5b96707d-95bb-479a-af91-2d5ddf5675d6-1
+00:36:18.026 --> 00:36:22.952
+a whole training class around
+that. And then Margaret, who is
+
+5b96707d-95bb-479a-af91-2d5ddf5675d6-2
+00:36:22.952 --> 00:36:23.270
+our.
+
+bc70a703-f310-44cf-93aa-07b24b04082a-0
+00:36:25.280 --> 00:36:29.461
+Operational trainer, go ahead.
+I'm so sorry. I'm sorry. I was
+
+bc70a703-f310-44cf-93aa-07b24b04082a-1
+00:36:29.461 --> 00:36:33.709
+just trying to say I know who
+market Margaret is. OK, perfect,
+
+bc70a703-f310-44cf-93aa-07b24b04082a-2
+00:36:33.709 --> 00:36:37.756
+fantastic. You're like I know
+who she is. So Margaret would
+
+bc70a703-f310-44cf-93aa-07b24b04082a-3
+00:36:37.756 --> 00:36:41.870
+then build out these updates
+through designing them. She now
+
+bc70a703-f310-44cf-93aa-07b24b04082a-4
+00:36:41.870 --> 00:36:45.781
+has access, so we Emily has
+given her access to build out
+
+bc70a703-f310-44cf-93aa-07b24b04082a-5
+00:36:45.781 --> 00:36:47.670
+from a training perspective.
+
+e00de0cb-0350-48fa-a030-d1293916f9c7-0
+00:36:49.660 --> 00:36:50.400
+Um.
+
+b9829b5e-2f05-4753-9d47-108eaf67b944-0
+00:36:51.850 --> 00:36:52.300
+So.
+
+3f0fcbfc-dae5-44b7-b555-64f64771c803-0
+00:37:05.600 --> 00:37:06.590
+Uh.
+
+528011ab-0292-4d6f-89fa-998782457fd5-0
+00:37:08.710 --> 00:37:11.330
+So outside of this, um.
+
+70cd0903-9d23-4cbf-8d11-f44b43d73d43-0
+00:37:12.420 --> 00:37:16.735
+Functional requirement. There
+will be a technical document
+
+70cd0903-9d23-4cbf-8d11-f44b43d73d43-1
+00:37:16.735 --> 00:37:21.416
+outlining the automation that is
+set up. Um, is there any other
+
+70cd0903-9d23-4cbf-8d11-f44b43d73d43-2
+00:37:21.416 --> 00:37:25.440
+desired hard copies or other
+documentation that would?
+
+67513058-7a4d-48ad-bbc7-497a996b8621-0
+00:37:26.660 --> 00:37:28.220
+Well, have wanted.
+
+08651fb1-d65e-45c1-b5eb-870098213175-0
+00:37:29.270 --> 00:37:33.523
+Forget I'm not sure my screen.
+Yes, we'll have to build out the
+
+08651fb1-d65e-45c1-b5eb-870098213175-1
+00:37:33.523 --> 00:37:37.511
+interface for our operations
+document, which Margaret would
+
+08651fb1-d65e-45c1-b5eb-870098213175-2
+00:37:37.511 --> 00:37:41.500
+handle as well, so operations
+manual would be updated with.
+
+15dc652e-727f-4981-aaaa-17775ca64222-0
+00:37:42.870 --> 00:37:46.208
+Basically slide by slide
+picture, like walking them
+
+15dc652e-727f-4981-aaaa-17775ca64222-1
+00:37:46.208 --> 00:37:47.750
+through the whole piece.
+
+4fa04a80-7a78-4163-8ecd-b85614e45d32-0
+00:37:50.380 --> 00:37:51.790
+From start to finish.
+
+c17b2241-7138-4ecb-8eb6-5fac852c9b44-0
+00:37:57.570 --> 00:38:03.065
+Just trying to envision what
+that would look like so with
+
+c17b2241-7138-4ecb-8eb6-5fac852c9b44-1
+00:38:03.065 --> 00:38:05.340
+this automation ideally.
+
+66543669-78bf-4646-894d-ed7e0623431e-0
+00:38:06.050 --> 00:38:10.639
+No one will have to go through
+back order review, it's just to
+
+66543669-78bf-4646-894d-ed7e0623431e-1
+00:38:10.639 --> 00:38:12.970
+make sure users understand from.
+
+bb2ec9a2-6694-49ab-9c12-ccdca588e782-0
+00:38:14.240 --> 00:38:17.380
+Point of order is ready to be.
+
+2e9ab9a3-e3c7-4dca-865f-13fae893d4ea-0
+00:38:18.040 --> 00:38:22.883
+Automated, which is the order
+has been released and that
+
+2e9ab9a3-e3c7-4dca-865f-13fae893d4ea-1
+00:38:22.883 --> 00:38:27.897
+deposit is visible on retail
+orders. Hmm. A system will be
+
+2e9ab9a3-e3c7-4dca-865f-13fae893d4ea-2
+00:38:27.897 --> 00:38:33.250
+able to pick it up and process
+and purchase orders scripts are
+
+2e9ab9a3-e3c7-4dca-865f-13fae893d4ea-3
+00:38:33.250 --> 00:38:34.779
+created right? OK.
+
+be8f0ccf-11f8-402a-8794-1502b258e8f6-0
+00:38:35.700 --> 00:38:39.544
+And at the end of the, I mean
+the ultimate end game is after
+
+be8f0ccf-11f8-402a-8794-1502b258e8f6-1
+00:38:39.544 --> 00:38:43.262
+that's all done then to my
+understanding is this will flow
+
+be8f0ccf-11f8-402a-8794-1502b258e8f6-2
+00:38:43.262 --> 00:38:43.830
+to sugar.
+
+45bc781c-d584-42bc-9df2-0f9f59e5de38-0
+00:38:44.550 --> 00:38:46.840
+For um.
+
+bd5ce31b-e976-4636-9be7-4f83baa99d26-0
+00:38:48.860 --> 00:38:53.207
+This will flow to sugar to give
+the status of each line item
+
+bd5ce31b-e976-4636-9be7-4f83baa99d26-1
+00:38:53.207 --> 00:38:56.842
+like so that we can have a
+status report for those
+
+bd5ce31b-e976-4636-9be7-4f83baa99d26-2
+00:38:56.842 --> 00:38:58.910
+particular customers as well.
+
+5e791665-a754-4f0c-ad65-0cef96c9bf58-0
+00:39:00.710 --> 00:39:04.557
+OK. How does that right now that
+currently flows based off of the
+
+5e791665-a754-4f0c-ad65-0cef96c9bf58-1
+00:39:04.557 --> 00:39:08.171
+SCT, so Megan Frank would of
+course have all that information
+
+5e791665-a754-4f0c-ad65-0cef96c9bf58-2
+00:39:08.171 --> 00:39:10.270
+how we're following that right
+now?
+
+96eca535-df25-439e-b36a-a2b8264c0f09-0
+00:39:11.380 --> 00:39:14.500
+I I work on the sugar export, so
+I.
+
+e3c82243-e8ee-4d1b-bed4-a04029724b97-0
+00:39:15.440 --> 00:39:19.256
+You kind of know where I'm going
+with what all that information
+
+e3c82243-e8ee-4d1b-bed4-a04029724b97-1
+00:39:19.256 --> 00:39:20.210
+gets floated to.
+
+020c4ab5-75e0-4a36-b1e8-0acb3bf0491f-0
+00:39:22.800 --> 00:39:25.670
+OK, um, Section 4.
+
+723529c7-f0e6-4dd9-8bc6-4302e96d2d82-0
+00:39:27.000 --> 00:39:29.340
+Are these answers?
+
+d41474b6-bb96-42cc-80c7-c827b350218c-0
+00:39:30.280 --> 00:39:31.350
+Goods.
+
+e19fe84e-c86e-48f0-9f82-b85cf49dcac8-0
+00:39:35.140 --> 00:39:36.520
+Use this application.
+
+4a9f4e1c-be9c-45be-a064-4cae7e236667-0
+00:39:49.450 --> 00:39:49.900
+Yes.
+
+b23e0ef2-90e1-4498-b479-3ea8d91e2e30-0
+00:39:50.670 --> 00:39:51.260
+OK.
+
+52488f0e-d1be-4e74-beea-6b3a5faf1998-0
+00:39:52.750 --> 00:39:58.230
+Then dropping down to Section 7
+OK.
+
+91284c39-c8c9-4212-98f9-b1458843770f-0
+00:39:59.800 --> 00:40:00.610
+I feel like.
+
+40d382b5-e4a0-45e4-bcf3-f0008f088c68-0
+00:40:01.320 --> 00:40:08.326
+We've hit on some of these uh
+questions. It just hasn't been
+
+40d382b5-e4a0-45e4-bcf3-f0008f088c68-1
+00:40:08.326 --> 00:40:13.610
+uh typed out in a official
+status per se. Um.
+
+baecb70f-ac40-428c-9d8b-65e113ed19db-0
+00:40:14.520 --> 00:40:15.390
+So.
+
+80bfd108-5e35-49c0-b578-5cf92f3b59c4-0
+00:40:16.140 --> 00:40:22.866
+Statpro, we talked about uh
+stair store, the warehouse 3 PL.
+
+80bfd108-5e35-49c0-b578-5cf92f3b59c4-1
+00:40:22.866 --> 00:40:24.190
+or customer.
+
+0807a99e-b082-482d-8577-bd359614479a-0
+00:40:27.030 --> 00:40:31.259
+We noted that there is shipping
+terms coming over that should be
+
+0807a99e-b082-482d-8577-bd359614479a-1
+00:40:31.259 --> 00:40:35.424
+able to map. I don't know if we
+can answer it right here, but I
+
+0807a99e-b082-482d-8577-bd359614479a-2
+00:40:35.424 --> 00:40:36.010
+will get.
+
+cf2fe8a4-9ece-4678-9b36-68acb18e8661-0
+00:40:37.220 --> 00:40:42.185
+You a thankful list of what
+those are and make sure we
+
+cf2fe8a4-9ece-4678-9b36-68acb18e8661-1
+00:40:42.185 --> 00:40:46.610
+understand which one is which.
+Sure, absolutely.
+
+1b2fad0e-35ad-4deb-a77c-ba630efc6e86-0
+00:40:47.450 --> 00:40:48.270
+Um.
+
+e6e63c97-248c-423e-ba8b-8f98b90469f2-0
+00:40:50.870 --> 00:40:53.780
+So with the this it's.
+
+95061b01-0359-43e8-8e49-f8d3b264b156-0
+00:41:04.130 --> 00:41:04.920
+Whatever.
+
+a499f0d1-c7cd-4812-b9b2-6e35e50efb7d-0
+00:41:06.750 --> 00:41:09.300
+Last financing.
+
+d7a3494e-f2ea-4539-9d07-d102c3f7c560-0
+00:41:22.500 --> 00:41:22.770
+OK.
+
+a4e010ac-4ca9-4e11-bc84-356c976f3943-0
+00:41:25.150 --> 00:41:25.970
+Um.
+
+9fd8ad40-d304-48d6-ac24-418d0a0dc5cc-0
+00:41:27.600 --> 00:41:36.435
+The next question um, Ben, I've
+looked at the Syspro business
+
+9fd8ad40-d304-48d6-ac24-418d0a0dc5cc-1
+00:41:36.435 --> 00:41:41.850
+object who creating a purchase
+order.
+
+5b7b8329-a28b-402d-82f6-6ce4e0bc961d-0
+00:41:43.220 --> 00:41:48.889
+I haven't dived into it fully,
+but is there needed to have a
+
+5b7b8329-a28b-402d-82f6-6ce4e0bc961d-1
+00:41:48.889 --> 00:41:53.907
+price designated on that
+purchase order for SYSPRO to
+
+5b7b8329-a28b-402d-82f6-6ce4e0bc961d-2
+00:41:53.907 --> 00:41:58.090
+fully create it through the
+business object?
+
+1626e066-cac2-4f19-9d54-39104768dc95-0
+00:42:02.500 --> 00:42:06.320
+I mean technically, no. You
+could create a PO at a 0.
+
+9344cf01-e72d-40e3-8f1d-14b66af9b22a-0
+00:42:07.050 --> 00:42:09.120
+Price, but I don't think we'd
+want to.
+
+a6c0e9b8-5fbf-45da-9918-4db2eea63b35-0
+00:42:09.920 --> 00:42:13.418
+Because this would never get
+fixed, so I think if it doesn't
+
+a6c0e9b8-5fbf-45da-9918-4db2eea63b35-1
+00:42:13.418 --> 00:42:13.820
+find a.
+
+2ad01eaf-e806-4f7a-91b0-d5b665bbe6df-0
+00:42:14.600 --> 00:42:20.750
+Matching contract price then
+we'd wanted to hear out. OK, so.
+
+9898e456-63e6-4121-9e57-84a5dafe124a-0
+00:42:22.080 --> 00:42:27.202
+Back to you, Alissa. What just
+specific details on what price
+
+9898e456-63e6-4121-9e57-84a5dafe124a-1
+00:42:27.202 --> 00:42:29.350
+to pick out of the system?
+
+3915867a-d6b6-487d-a2ae-19536ef2b683-0
+00:42:33.220 --> 00:42:37.350
+It's going to. Each vendor is
+different. That's the problem.
+
+aad761ec-bfee-45cf-b655-acd913a02834-0
+00:42:41.850 --> 00:42:45.899
+But should probably need to go
+and look at. I can't remember
+
+aad761ec-bfee-45cf-b655-acd913a02834-1
+00:42:45.899 --> 00:42:46.630
+all of the.
+
+db0aabb7-c0c2-4a77-ac39-fb36e1dd4a92-0
+00:42:48.220 --> 00:42:51.761
+I need to go look at it, so I
+apologize. I don't I'd have to
+
+db0aabb7-c0c2-4a77-ac39-fb36e1dd4a92-1
+00:42:51.761 --> 00:42:54.780
+answer that question next unless
+Ben can give me a.
+
+0402c65b-e713-4584-90e2-78c66d5dd91f-0
+00:42:55.730 --> 00:42:59.889
+Well, my assumption would be it
+would be, you know, based off
+
+0402c65b-e713-4584-90e2-78c66d5dd91f-1
+00:42:59.889 --> 00:43:03.110
+the contract prices you have to
+not be expired.
+
+d93d9203-4013-4a2c-aeea-f042938642cd-0
+00:43:04.230 --> 00:43:04.970
+And.
+
+f9c97478-11ce-4237-a6db-7b5713b38923-0
+00:43:05.970 --> 00:43:10.889
+The order quantity would have to
+meet the minimum quantity of the
+
+f9c97478-11ce-4237-a6db-7b5713b38923-1
+00:43:10.889 --> 00:43:11.560
+PR price.
+
+ad3724e9-088d-44bf-8949-51cd88b15926-0
+00:43:13.030 --> 00:43:16.649
+And then if you have multiples
+that meet that criteria, assume
+
+ad3724e9-088d-44bf-8949-51cd88b15926-1
+00:43:16.649 --> 00:43:19.350
+we would want to always take the
+lowest price.
+
+dd221ce2-3cc5-4875-b0cc-df9b5b013964-0
+00:43:20.030 --> 00:43:22.830
+Yes, that's, that's accurate,
+yes.
+
+36642665-e166-4a9c-977b-05a580443b05-0
+00:43:24.150 --> 00:43:24.520
+OK.
+
+e9a4f806-a041-40f0-8518-00d6771b8059-0
+00:43:33.680 --> 00:43:37.276
+OK, when items are added to the
+order after the initially
+
+e9a4f806-a041-40f0-8518-00d6771b8059-1
+00:43:37.276 --> 00:43:38.950
+processed, should these be?
+
+738cea86-9632-4a0a-8694-c3f428b6cbbd-0
+00:43:43.740 --> 00:43:46.610
+So my first assumption would be.
+
+128dd60a-bb7e-4195-a231-321b8ba306e7-0
+00:43:47.330 --> 00:43:52.276
+There's two ways of automation
+could see an order. One it's
+
+128dd60a-bb7e-4195-a231-321b8ba306e7-1
+00:43:52.276 --> 00:43:57.058
+been initially released,
+automation should be able to see
+
+128dd60a-bb7e-4195-a231-321b8ba306e7-2
+00:43:57.058 --> 00:43:59.119
+that and then process it.
+
+1404c2f7-3df2-4f1a-8038-de831ed21d18-0
+00:44:00.480 --> 00:44:05.128
+Something that else the
+automation can see is definitely
+
+1404c2f7-3df2-4f1a-8038-de831ed21d18-1
+00:44:05.128 --> 00:44:09.939
+when a new item has been added
+and put into the back order
+
+1404c2f7-3df2-4f1a-8038-de831ed21d18-2
+00:44:09.939 --> 00:44:10.510
+status.
+
+41be1424-3785-4343-b9ad-10243ecc4dad-0
+00:44:12.700 --> 00:44:18.312
+The question would be then, uh,
+Ben, would the new feel to
+
+41be1424-3785-4343-b9ad-10243ecc4dad-1
+00:44:18.312 --> 00:44:24.019
+special order said back order
+item be available to users to
+
+41be1424-3785-4343-b9ad-10243ecc4dad-2
+00:44:24.019 --> 00:44:29.726
+designate, yeah, OK, so then
+yeah, the automation should be
+
+41be1424-3785-4343-b9ad-10243ecc4dad-3
+00:44:29.726 --> 00:44:35.719
+able to pick up new orders and
+then back order items on orders
+
+41be1424-3785-4343-b9ad-10243ecc4dad-4
+00:44:35.719 --> 00:44:41.902
+that already exist and possibly
+have already been processed. OK,
+
+41be1424-3785-4343-b9ad-10243ecc4dad-5
+00:44:41.902 --> 00:44:43.710
+so the question is.
+
+3f824648-e57c-4cbd-9c0d-d5fbe4429884-0
+00:44:44.950 --> 00:44:48.890
+Does the business process want
+that to be allowed?
+
+daf7d13a-5b7a-4371-918a-af80f8d83946-0
+00:44:52.990 --> 00:44:56.720
+I would think yes, unless then
+you told me no.
+
+b303d46b-02f6-4824-988a-9e9cf7b21371-0
+00:44:59.080 --> 00:45:02.925
+Um, yeah, it would. Just you'd
+have to put it on a new PO or
+
+b303d46b-02f6-4824-988a-9e9cf7b21371-1
+00:45:02.925 --> 00:45:03.430
+new SCT.
+
+b0afb714-e9db-4bdd-ad8a-c759e0c135d5-0
+00:45:04.290 --> 00:45:04.740
+OK.
+
+658cefbe-468a-46a2-b8fa-e5b9d430f92d-0
+00:45:08.990 --> 00:45:10.920
+Because I don't think we want to
+go.
+
+70e3bf15-cef7-46da-978e-03f93955ad61-0
+00:45:11.770 --> 00:45:15.900
+Add it to one that's might have
+been submitted 3 weeks ago.
+
+d3e6e04a-2070-4142-9e12-d7d372703819-0
+00:45:18.420 --> 00:45:22.111
+Is there not any indicator on
+the SCT to know whether or not
+
+d3e6e04a-2070-4142-9e12-d7d372703819-1
+00:45:22.111 --> 00:45:24.350
+we could add more items to that
+SCT?
+
+8aa1f49a-b3de-4a54-8e22-8b46c7045aee-0
+00:45:26.730 --> 00:45:27.430
+Umm.
+
+0382fb4d-e2d4-49da-a29c-0da4bda18a00-0
+00:45:28.740 --> 00:45:32.124
+It would delay the production
+schedule. Is that correct? Is
+
+0382fb4d-e2d4-49da-a29c-0da4bda18a00-1
+00:45:32.124 --> 00:45:34.380
+that mess up Scott in them in
+the back?
+
+f97c1684-aa5a-4146-9db1-7b68c4f31cf0-0
+00:45:39.930 --> 00:45:40.870
+Umm.
+
+cf874185-55c9-4d79-9773-2ba0dc03422e-0
+00:45:45.200 --> 00:45:49.190
+Because I'm not going to say it
+doesn't not happen properly so.
+
+ffcac730-bf0d-4baf-b08f-8e03ebfeba80-0
+00:45:50.390 --> 00:45:51.280
+Theory.
+
+0bb7ee27-0406-4433-ab28-e2ceb4b56b60-0
+00:45:52.340 --> 00:45:54.310
+Yeah, I'd be less worried about
+an SCT.
+
+c17d4fa3-eda7-4032-a979-e354f64b056a-0
+00:45:55.300 --> 00:45:58.728
+We could add it to an SCT that's
+already in the system. You're
+
+c17d4fa3-eda7-4032-a979-e354f64b056a-1
+00:45:58.728 --> 00:46:01.830
+just going to essentially jump
+in front of anybody that.
+
+0d0d5caa-00d0-461f-b0c0-6bf9c4ff3778-0
+00:46:02.680 --> 00:46:06.545
+Like if I add something to an
+SCT from two months ago, I'm
+
+0d0d5caa-00d0-461f-b0c0-6bf9c4ff3778-1
+00:46:06.545 --> 00:46:10.280
+jumping in front of two months
+worth of customers. Yeah.
+
+51b34abc-31f4-4d6e-bc0d-9273e73eece9-0
+00:46:11.710 --> 00:46:16.068
+Whether that matters or not,
+other than that it does mess up
+
+51b34abc-31f4-4d6e-bc0d-9273e73eece9-1
+00:46:16.068 --> 00:46:20.570
+some of our kind of like level
+of service reporting on saying.
+
+e4d7bbbc-191d-4cec-9ad6-2d7794032692-0
+00:46:21.930 --> 00:46:26.010
+Well, I entered the order on
+January 1st and you can make the
+
+e4d7bbbc-191d-4cec-9ad6-2d7794032692-1
+00:46:26.010 --> 00:46:30.091
+cushions till April 15th. Well,
+if that item was added to the
+
+e4d7bbbc-191d-4cec-9ad6-2d7794032692-2
+00:46:30.091 --> 00:46:34.105
+order April 1st, it's kind of a
+unfair penalty. So I kind of
+
+e4d7bbbc-191d-4cec-9ad6-2d7794032692-3
+00:46:34.105 --> 00:46:36.870
+would lean towards we should
+just always.
+
+9ce0309e-e263-46ed-aa53-7de6722d6fa1-0
+00:46:37.610 --> 00:46:42.360
+Create a new SCT or a new PO
+just to keep things clean.
+
+b50afaaf-bd1f-4159-8e51-aacf08f41397-0
+00:46:46.530 --> 00:46:49.710
+Simpler on my part for sure,
+yeah.
+
+a4e6a497-b102-4a47-860b-a41e3910609b-0
+00:46:50.780 --> 00:46:52.440
+OK, so then yes, let's go that
+route.
+
+141ff221-ef33-4d42-a3c7-4870faa45380-0
+00:47:25.770 --> 00:47:26.620
+
+
+9425f4f1-d2d1-4032-abc6-70fb33c56848-0
+00:47:30.900 --> 00:47:34.704
+Unless I've been do you have any
+other lingering questions for
+
+9425f4f1-d2d1-4032-abc6-70fb33c56848-1
+00:47:34.704 --> 00:47:35.490
+this project?
+
+54f48850-1af0-4a91-bbbc-71bc9e47a5ab-0
+00:47:39.600 --> 00:47:43.689
+I'm sure I'm going to have a ton
+as we go through this, but as of
+
+54f48850-1af0-4a91-bbbc-71bc9e47a5ab-1
+00:47:43.689 --> 00:47:46.230
+right now off the top of my head
+though.
+
+db6dfa39-cb3a-4da0-9931-2c0844d7d2d1-0
+00:47:47.710 --> 00:47:53.879
+Ever. Whenever one of those come
+up, feel free to, uh, ask me or
+
+db6dfa39-cb3a-4da0-9931-2c0844d7d2d1-1
+00:47:53.879 --> 00:47:58.150
+Ben. Yep, and we'll get back
+with y'all, OK.
+
+fe830b89-0f66-4d93-93b0-feae9ab9d61a-0
+00:47:59.310 --> 00:48:04.607
+So what is the net? I see we
+have dates and timelines next.
+
+fe830b89-0f66-4d93-93b0-feae9ab9d61a-1
+00:48:04.607 --> 00:48:09.551
+So what is next steps that we
+need to help with or what
+
+fe830b89-0f66-4d93-93b0-feae9ab9d61a-2
+00:48:09.551 --> 00:48:14.760
+expectations do you expect out
+of us so from this meeting?
+
+0ca7820c-535c-40e4-9dc7-bc3942879db9-0
+00:48:15.490 --> 00:48:19.300
+I should be able to build out
+the rest of the current state.
+
+e15527e7-ad14-4c77-871c-7920850771f9-0
+00:48:21.230 --> 00:48:24.830
+Sean said to get with.
+
+c2d16154-50ae-4416-b4d9-b73f14ee60c1-0
+00:48:25.710 --> 00:48:34.320
+Certain people on UM confirming
+that this is all good. Um.
+
+b45e9c6d-4fc0-4d3f-bbf3-a7f48073b1e4-0
+00:48:35.550 --> 00:48:37.770
+Think that with clay and someone
+in accounting.
+
+fc11915d-da02-477f-b8a9-273ea8723c78-0
+00:48:38.720 --> 00:48:42.414
+Or traffic and accounting or
+somebody, we had two different
+
+fc11915d-da02-477f-b8a9-273ea8723c78-1
+00:48:42.414 --> 00:48:43.030
+people so.
+
+b45179aa-38d5-468d-858f-9dae1f606d57-0
+00:48:44.630 --> 00:48:49.387
+At least having a meeting with
+them once I get this functional
+
+b45179aa-38d5-468d-858f-9dae1f606d57-1
+00:48:49.387 --> 00:48:53.390
+requirement document. Um. At a
+more solid-state, um.
+
+c83bcef3-4781-4724-9e7f-7df2d876e88b-0
+00:48:55.490 --> 00:49:01.260
+Get that done and then just sign
+off from whoever. Uh.
+
+5a3fe242-1923-4e1d-b8c3-2e9a2a6c9f3e-0
+00:49:02.320 --> 00:49:06.620
+Once the responsibility is
+signed off on this, I guess. Um.
+
+8bf231bb-e8e4-4e35-b5d3-25b232f356a1-0
+00:49:07.340 --> 00:49:11.936
+Alyssa do you? Would it be you
+or would it be someone else? Um,
+
+8bf231bb-e8e4-4e35-b5d3-25b232f356a1-1
+00:49:11.936 --> 00:49:16.030
+it either be myself or Sean,
+just depending on the work.
+
+9e468a89-8917-45e2-8d9c-5d3c6da63ddb-0
+00:49:17.310 --> 00:49:21.694
+I the only reason why I say that
+is middle of March I go out on
+
+9e468a89-8917-45e2-8d9c-5d3c6da63ddb-1
+00:49:21.694 --> 00:49:25.668
+maternity leave, so it would
+just be that timeline of and
+
+9e468a89-8917-45e2-8d9c-5d3c6da63ddb-2
+00:49:25.668 --> 00:49:29.504
+he's my second in command to
+make sure everything rolls
+
+9e468a89-8917-45e2-8d9c-5d3c6da63ddb-3
+00:49:29.504 --> 00:49:33.410
+correctly. So it'd be either one
+of us that can do that.
+
+e48583ad-0995-4575-a161-3bcf6697ccc1-0
+00:49:34.420 --> 00:49:35.760
+OK, um.
+
+c5efd248-2eee-4809-933a-ede5c6750286-0
+00:49:37.380 --> 00:49:42.170
+So I'm already, uh, working on
+putting together, uh, technical
+
+c5efd248-2eee-4809-933a-ede5c6750286-1
+00:49:42.170 --> 00:49:46.352
+specifications for this. It is
+actually gonna. This is
+
+c5efd248-2eee-4809-933a-ede5c6750286-2
+00:49:46.352 --> 00:49:51.066
+technical information that you
+probably won't care about, but
+
+c5efd248-2eee-4809-933a-ede5c6750286-3
+00:49:51.066 --> 00:49:55.933
+there's already a service that
+the service would be modified to
+
+c5efd248-2eee-4809-933a-ede5c6750286-4
+00:49:55.933 --> 00:49:57.530
+pick up this process.
+
+df18cc9e-9923-4d9b-9bd3-92a9e7db6aea-0
+00:49:58.920 --> 00:50:04.020
+So I'll be working on those
+modifications.
+
+c622edc2-2ace-469e-b01f-62f4c45e0fd4-0
+00:50:04.740 --> 00:50:11.424
+Within a week or two, um, then
+once we'll be in development
+
+c622edc2-2ace-469e-b01f-62f4c45e0fd4-1
+00:50:11.424 --> 00:50:11.870
+and.
+
+67fa7bcf-37c7-4d5c-b8ff-19b411b6712d-0
+00:50:12.750 --> 00:50:18.909
+I estimate in March we should be
+able to get into uh UAT testing
+
+67fa7bcf-37c7-4d5c-b8ff-19b411b6712d-1
+00:50:18.909 --> 00:50:24.310
+and preparation for deployment
+as long as everything is.
+
+6b2f000a-4a43-4858-ac36-a530e84b25c1-0
+00:50:25.160 --> 00:50:27.530
+Kosher. OK, awesome.
+
+f4354a37-bb81-48f3-8981-4e80c308954b-0
+00:50:30.120 --> 00:50:34.607
+Is that timeline estimates good
+with you? I know you'll be out
+
+f4354a37-bb81-48f3-8981-4e80c308954b-1
+00:50:34.607 --> 00:50:38.881
+on the return to you. I'll be
+out, but Sean will be leading
+
+f4354a37-bb81-48f3-8981-4e80c308954b-2
+00:50:38.881 --> 00:50:43.368
+the project at that point. So
+yes, him and I, he's on vacation
+
+f4354a37-bb81-48f3-8981-4e80c308954b-3
+00:50:43.368 --> 00:50:47.856
+this week, so he'll be back in
+these meetings as we start back
+
+f4354a37-bb81-48f3-8981-4e80c308954b-4
+00:50:47.856 --> 00:50:48.070
+up.
+
+b1afc2ed-a8a5-40f6-b5ae-17942637d52c-0
+00:50:49.320 --> 00:50:50.710
+Great. Uh.
+
+bf397e2f-2820-491c-8549-f258db3e5536-0
+00:50:52.760 --> 00:50:57.020
+The marketing or accounting and
+traffic meeting, wait until Sean
+
+bf397e2f-2820-491c-8549-f258db3e5536-1
+00:50:57.020 --> 00:51:01.216
+is back to try to schedule that
+one. Yes, if you don't mind, if
+
+bf397e2f-2820-491c-8549-f258db3e5536-2
+00:51:01.216 --> 00:51:05.411
+we could do that next week, that
+would be perfect. OK, I'll try
+
+bf397e2f-2820-491c-8549-f258db3e5536-3
+00:51:05.411 --> 00:51:08.229
+and sometime this week get that
+scheduled.
+
+23efe42b-bea5-41dc-8e92-51b676c6e3cf-0
+00:51:10.440 --> 00:51:13.140
+Awesome. Anything else you need
+of me?
+
+686d3b37-5e4c-4058-8a31-39617d0eb0eb-0
+00:51:14.170 --> 00:51:17.709
+I don't think so. I appreciate
+it. I'm sorry I was 7 minutes
+
+686d3b37-5e4c-4058-8a31-39617d0eb0eb-1
+00:51:17.709 --> 00:51:18.580
+late, so sorry.
+
+40bbc603-4247-42f3-b079-bbbc9484d2fa-0
+00:51:19.990 --> 00:51:22.800
+Ben was probably like, I'm about
+to log off. She's here.
+
+1d9c9283-f2fc-4ca5-ac47-403e31f4ffcc-0
+00:51:24.720 --> 00:51:28.733
+Well, I appreciate you spending
+this time with me walking it
+
+1d9c9283-f2fc-4ca5-ac47-403e31f4ffcc-1
+00:51:28.733 --> 00:51:32.746
+through urgently. We appreciate
+it tremendously if I can get
+
+1d9c9283-f2fc-4ca5-ac47-403e31f4ffcc-2
+00:51:32.746 --> 00:51:36.693
+from you a link to that OPS
+document and access to view it.
+
+1d9c9283-f2fc-4ca5-ac47-403e31f4ffcc-3
+00:51:36.693 --> 00:51:40.970
+So I'll actually what I'll do is
+I already have it downloaded, I
+
+1d9c9283-f2fc-4ca5-ac47-403e31f4ffcc-4
+00:51:40.970 --> 00:51:45.049
+had to send it to accounting on
+Friday. So I'll just flip you
+
+1d9c9283-f2fc-4ca5-ac47-403e31f4ffcc-5
+00:51:45.049 --> 00:51:49.260
+the OPS document on this e-mail
+trail. So that way you have it.
+
+386f0d28-a397-40d5-934d-d893fb6b187a-0
+00:51:50.310 --> 00:51:55.103
+Um, awesome. Is that right now?
+OK, fantastic. Thank you so, so
+
+386f0d28-a397-40d5-934d-d893fb6b187a-1
+00:51:55.103 --> 00:51:58.250
+much. I appreciate it. OK. Bye,
+bye, bye.
+
+c23396f1-23af-42eb-a548-63436f42ba3a-0
+00:51:59.040 --> 00:51:59.400
+There.

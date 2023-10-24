@@ -1,0 +1,8 @@
+Marketing fulfillment:
+    What do we need to do for this?
+
+    Thoughts:
+        Order process:
+            How does an order get recieved?
+            Inventory?
+            

@@ -1,0 +1,24 @@
+Demo:
+- SO Back Order Review
+- Retail Orders
+  - stuff coming from eCat
+  - 50% deposit or 100%
+- Within Create SCT
+  - Special Instructions
+    - Special Instructions
+    - Shipping Instructions
+    - Ops manual
+- create the sct and then print
+  - print needs to be printed for the account
+
+- Sales order updates to be updated from back order Review
+
+- Purchase Order can only be purchased from 7 vendors
+
+- SC-1 or Fillin
+
+Wish List:
+- PDF is created on PO creation to be able to send to vendor
+- PDF of SCT for customer
+- Store Manager, Store Assistance, per store
+- these print outs in M-Files

@@ -1,0 +1,4 @@
+some issues:
+    barabra: sct updates
+        Special Order Flag
+        Typing in the sct number

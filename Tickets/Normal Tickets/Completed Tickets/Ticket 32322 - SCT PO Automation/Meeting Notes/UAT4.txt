@@ -1,0 +1,18 @@
+UAT 4:
+
+    Review Requirements:
+        - Notes to discuss, changes to InvWhControl+ and SalBranch+ for phone numbers
+            - Email Ben and Shawn for Phone numbers for 3PL
+        - TblArTerms+ for depositpercent
+
+    Review Testing Orders:
+        - Order
+    
+    Hands On Testing:
+        - 
+
+    Discuss Roll Out:
+        - Scedule for May 1st
+        - will inform when deployed
+
+        - Special Order flag needs to be added to the Retail Role

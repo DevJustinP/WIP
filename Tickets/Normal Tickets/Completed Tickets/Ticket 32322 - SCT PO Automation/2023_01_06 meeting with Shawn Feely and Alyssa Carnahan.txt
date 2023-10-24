@@ -1,0 +1,32 @@
+Points of interest:
+-Current process for Back order review for a retail order
+    - status F to Status 1
+    - Items are first in backorder and then shipped if not
+    - 50% deposit on the order
+    - Do not process order if the entire order can not be full filled
+        - How is a PO created
+            - Select the price:
+                - Purchase Price select a manual price, vendor price
+                - Price not found - Report that the order could not be fullfilled
+                - Purchase Price is defualt
+                - Report if multiple pricing or zero dollar
+            - There is an email that sends to the vendor
+        - How is a SCT created
+            - Phone number filled on to the SCT per shipping type
+    - Specific detail
+        - Shippment based on Type
+            - local 3pl
+            - National 3pl
+            - Customer
+
+Issue:
+    - SKU is not created yet?
+        -Report for SKUs that were not created and for the process could not handle
+        -When SCT to be created or use existing
+    - Sold off from the floor?
+        - eCat field will denote this item
+
+Follow up:
+    - How to select the correct address after talking with Ben
+
+May Launch

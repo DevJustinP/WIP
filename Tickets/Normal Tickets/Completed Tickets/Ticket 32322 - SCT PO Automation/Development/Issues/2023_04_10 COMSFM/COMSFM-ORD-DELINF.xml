@@ -1,0 +1,36 @@
+<COMSFM>
+    <Parameters>
+        <SetupCustomForm>
+            <Parameters>
+                <ValidateOnly>N</ValidateOnly>
+            </Parameters>
+        </SetupCustomForm>
+    </Parameters>
+    <Document>
+        <SetupCustomForm>
+            <Item>
+                <Key>
+                    <FormType>ORD</FormType>
+                    <KeyField>100-1054928</KeyField>
+                    <FieldName>DELINF</FieldName>
+                </Key>
+            </Item>
+            <AlphaValue>205-412-2199</AlphaValue>
+        </SetupCustomForm>
+    </Document>
+    <OUT>
+        <setupcustomform Language='05' Language2='EN' CssStyle='' DecFormat='1' DateFormat='01' Role='01' Version='8.0.011' OperatorPrimaryRole='   '>
+            <item>
+                <key>
+                    <formtype>ORD</formtype>
+                    <keyfield>100-1054928</keyfield>
+                    <fieldname>DELINF</fieldname>
+                </key>
+            </item>
+            <StatusOfItems>
+                <RecordsRead>1</RecordsRead>
+                <RecordsInvalid>0</RecordsInvalid>
+            </StatusOfItems>
+        </setupcustomform>
+    </OUT>
+</COMSFM>
