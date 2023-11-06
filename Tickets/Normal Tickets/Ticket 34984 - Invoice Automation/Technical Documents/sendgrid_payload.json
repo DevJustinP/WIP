@@ -1,0 +1,37 @@
+{
+  "template_id": "d-3134927f376948cdaaec1e29f78dedb9",
+  "from": {
+    "name": "Elaine Greene-Yancey",
+    "email": "ElaineG@summerclassics.com"
+  },
+  "personalizations": [
+    {
+      "to": [{ "email": "lisa@sunrisehome.com", "name": "SUNRISE HOME" }],
+      "cc": [
+        {
+          "email": "ElaineG@summerclassics.com",
+          "name": "Elaine Greene-Yancey"
+        },
+        { "email": "PamelaE@summerclassics.com", "name": "Pamela Ellison" }
+      ],
+      "bcc": [
+        {
+          "email": "NotifyCustomer@gabriellawhite.com",
+          "name": "Notify Customer"
+        }
+      ],
+      "dynamic_template_data": {
+        "BranchName": "Summer Classics Wholesale",
+        "CustomerId": "1103504",
+        "CustomerName": "SUNRISE HOME",
+        "SalesOrder": "200-1116813",
+        "CustomerPoNumber": "84930",
+        "Invoice": "200-1179100",
+        "TestingMessage": "<p>This is the data that would have been sent in production.<table><tr><th>TO: Customer Name</th><th>TO: Customer Email</th><th>CC: Customer Service Rep</th><th>CC: Customer Service Rep Email</th><th>CC: Branch Service Rep</th><th>CC: Branch Service Rep Email</th><th>BCC: Notify Customer</th><th>BCC: Notify Customer Eamil</th></tr><tr><td>SUNRISE HOME</td><td>lisa@sunrisehome.com</td><td>Pamela Ellison</td><td>PamelaE@summerclassics.com</td><td>Elaine Greene-Yancey</td><td>ElaineG@summerclassics.com</td><td>Notify Customer</td><td>NotifyCustomer@gabriellawhite.com</td></tr></table></p>",
+        "MessageReference": 5,
+        "CustomerServiceName": "Elaine Greene-Yancey",
+        "CustomerServiceEmail": "ElaineG@summerclassics.com"
+      }
+    }
+  ]
+}
