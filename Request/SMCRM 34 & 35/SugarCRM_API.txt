@@ -1,0 +1,72 @@
+list of api:
+    Prod:
+    https://summerclassics.sugarondemand.com/rest/v11_7/help
+    DEV:
+    https://summerclassicsdev.sugarondemand.com/rest/v11_7/help
+
+
+Authority Token:
+    before a call to sugarcrm can be made, an Authority token must be attained.
+    The following call grants a token.
+
+    endpoint: https://<site_url>/rest/<version>/oauth2/token 
+    pay load: 
+    {
+        "grant_type":"password", 
+        "client_id":"sugar", 
+        "client_secret":"", 
+        "username":"<username>", 
+        "password":"<password>", 
+        "platform":"base" 
+    }
+
+    grant_type - string type of request. Can be "password" or "refresh_token"
+    client_id - string Used to identify the client. A client_id of "sugar" will automatically create an OAuth Key in the system that is used for "password" authentication. A client_id of "support_portal" will create an OAuth Key that will allow for portal authentication. Additional client_id's can be created by the administrator in Admin > OAuth Keys to allow for additional grant types. If the client secret is populated, it will be validated against the client id.
+    cleint_secret - string client string
+    username - string username for authenticating
+    password - string plaintext password for authentication 
+    platform - string platform type. Can be "base", "mobile", and "portal"
+
+    expected return:
+    {
+        "access_token": "5ee48ec7-023e-ecff-5184-530bd0358868",
+        "expires_in": 3600,
+        "token_type": "bearer",
+        "scope": null,
+        "refresh_token": "5f197357-0167-f7a6-7912-530bd03275b6",
+        "refresh_expires_in": 1209600,
+        "download_token": "5f531625-e301-e3ea-1b11-530bd098be41"
+    }
+
+    access_token - string access token needed for other methods
+    expires_in - integer seconds till toke expires_in
+    token_type - string type, currently only "bearer" is supported
+    scope - string scope of Oauth
+    refresh_token - string token needed to extend the access_token expiration timeout
+    refresh_expires_in - integer seconds that refresh_token expires 
+    download_token - string token used to download images and files
+
+    Once a token has been granted, and based on expires_in and refresh_expires_in the following payload can be used to refresh token
+    {
+        "grant_type":"refresh_token",
+        "refresh_token":"c1be5132-655b-1ca3-fb44-512e36709871",
+        "client_id":"sugar",
+        "client_secret":"",
+        "platform":"base"
+    }
+
+    NOTE: the refresh token does not work as it says it works. It will return an entirely new access_token and refresh_token to use. 
+        Though testing suggests that the refresh_token works as inteneded and can be used until the original refresh_expires_in expires. 
+
+CRUD operations:
+
+    GET /<module>/ - all redcords
+    GET /<module>/<record> - specific record
+    POST /<module> - create a specific record
+    PUT /<module>/<record> - update specific record
+    delete /<module>/<record> - delete record
+
+List of modules
+    https://summerclassics.sugarondemand.com/rest/v11_7//metadata?type_filter=full_module_list
+
+    returns full module list

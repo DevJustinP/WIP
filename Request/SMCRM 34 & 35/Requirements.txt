@@ -1,0 +1,3 @@
+Request:
+    We want to be able to take a newly created lead and create a new customer from SugarCRM.
+    We want to be able be able to see updates from Sugar and apply them in Syspro for Customer Records.
