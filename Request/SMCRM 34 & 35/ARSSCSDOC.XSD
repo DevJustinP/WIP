@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!--
+     Schema for the Customer Setup Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Customer">
+    <xsd:annotation>
+      <xsd:documentation>This is the key to the customer being maintained. This is mandatory.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Name">
+    <xsd:annotation>
+      <xsd:documentation>This is the name of the customer and is used primarily to identify the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Salesperson">
+    <xsd:annotation>
+      <xsd:documentation>Salesperson is the primary salesperson assigned to the customer and can be used as a selection criterion for various Sales Analysis reports. It is also be used to calculate commissions if you require the source of commission to be based on the salesperson, and not the price of the product being sold.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Branch">
+    <xsd:annotation>
+      <xsd:documentation>Branch assigned to the customer is used to integrate sales and payments to the General Ledger module.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TermsCode">
+    <xsd:annotation>
+      <xsd:documentation>Invoice terms is used to determine the default settlement terms required for a customer. SYSPRO uses the invoice terms to calculate discount amounts as well as discount dates and due dates of customer documents processed within the Invoice Posting and Permanent Entries programs.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ArStatementNo">
+    <xsd:annotation>
+      <xsd:documentation>Statement format for customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShortName">
+    <xsd:annotation>
+      <xsd:documentation>This is a short name and is used in searching for a customer. It is also used as selection criteria in some reports.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ExemptFinChg">
+    <xsd:annotation>
+      <xsd:documentation>Exempt from finance charge flag indicates whether the customer is exempt from finance charges calculated by the Finance Charge Calculation program. (Y - Exempt, N - Not exempt)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MaintHistory">
+    <xsd:annotation>
+      <xsd:documentation>Detail history required flag indicates whether or not you require detail sales history to be recorded for any transaction processed against the customer. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CreditStatus">
+    <xsd:annotation>
+      <xsd:documentation>Credit status flag indicates the customer's current status based on the age of his oldest invoice. This is calculated by the Balance function of the Period End Processing program. The following describes the status code settings:
+0 - indicates only current invoices
+1 - indicates at least one invoice which is 30 days or over
+2 - indicates at least one invoice which is 60 days or over
+3 - indicates at least one invoice which is 90 days or over
+4 - indicates at least one invoice which is 120 days or over
+5 - indicates at least one invoice which is 150 days or over
+6 - indicates at least one invoice which is 180 days or over
+9 - indicates a manual hold on the account which suspends all credit for the customer</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="0"/>
+        <xsd:enumeration value="1"/>
+        <xsd:enumeration value="2"/>
+        <xsd:enumeration value="3"/>
+        <xsd:enumeration value="4"/>
+        <xsd:enumeration value="5"/>
+        <xsd:enumeration value="6"/>
+        <xsd:enumeration value="7"/>
+        <xsd:enumeration value="8"/>
+        <xsd:enumeration value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CreditLimit">
+    <xsd:annotation>
+      <xsd:documentation>Credit limit is the maximum limit that the customer's balance can reach, taking into account any outstanding order values.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CreditCheckFlag">
+    <xsd:annotation>
+      <xsd:documentation>Credit checking method for customer. Valid values are T (check terms only), L (check limit only), B (check both), N (no checking), and Blank (use company method).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PriceCode">
+    <xsd:annotation>
+      <xsd:documentation>If you are using simple pricing, then the code entered here is used to establish the price (or discount code) applicable to a specific stock code for the customer, depending on whether the inventory pricing method is coded or discounted.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CustomerClass">
+    <xsd:annotation>
+      <xsd:documentation>Customer class enables you to classify customers into categories for reports and sales history analysis.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="InvDiscCode">
+    <xsd:annotation>
+      <xsd:documentation>Invoice disount code is used to establish the automatic discount applicable to the customer for each invoice entered in the Detail Invoice Posting and Sales Order Order Entry programs. A blank entry indicates that no automatic invoice discount is required for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BalanceType">
+    <xsd:annotation>
+      <xsd:documentation>Balance print type flag. Settings are as follows:
+I - Open item if you do not want the customer's balance to be brought forward at the end of each month. All transactions are retained on file until the outstanding balance reaches zero and the number of months to retain zero balance invoices has been reached (Accounts Receivable Setup).
+B - Balance forward if you want to accumulate the total amount owing by the customer at the end of each month and represent the figure as a balance brought forward from previous months on the debtors statement. If you require brought forward customers to be consolidated at month end (Accounts Receivable Setup) then at month end all details are accumulated into a series of aged balance figures. Payments, adjustments and transactions are made against a specific aged balance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="I"/>
+        <xsd:enumeration value="B"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Area">
+    <xsd:annotation>
+      <xsd:documentation>Geographic area is used to classify the customer's location. If you require tax by geographic area (Tax Options Setup) then the tax code assigned to the customer's geographic area can be used to override the tax codes normally used throughout the system.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="LineDiscCode">
+    <xsd:annotation>
+      <xsd:documentation>Line discount code is used to establish the automatic discount applicable to the customer for each order line entered in the Detail Invoice Posting and Sales Order Order Entry programs. A blank entry indicates that no automatic line discount is required for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TaxStatus">
+    <xsd:annotation>
+      <xsd:documentation>Tax status flag. Settings are as follows:
+E - Exempt to exempt the customer from sales tax.
+N - To indicate that sales tax is applicable to the customer.
+O - Other tax code if the tax entry held in the Other tax code field against the stock item is to be used when making a sale against the customer in the Invoice Posting or Sales Order Entry programs.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="E"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="O"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TaxExemptNumber">
+    <xsd:annotation>
+      <xsd:documentation>Customer's tax exempt number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SpecialInstrs">
+    <xsd:annotation>
+      <xsd:documentation>Special instructions is used in the Sales Order Entry program and can be printed on invoices and reports.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PriceCategoryTable">
+    <xsd:annotation>
+      <xsd:documentation>Price category table. If you are using extended pricing, then you can enter up to 26 codes, determining the price or discount code applicable to a category (A - Z) of products being sold . The pricing category from the inventory file is used to locate a place in the customer's price category/code table. Depending on whether the inventory pricing method is coded or discounted, the price code found in this table is used against the discount table to locate the required discount or to locate a price entry in the inventory file.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Telephone">
+    <xsd:annotation>
+      <xsd:documentation>Telephone number for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TelephoneExtn">
+    <xsd:annotation>
+      <xsd:documentation>Telephone extension for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Contact">
+    <xsd:annotation>
+      <xsd:documentation>Contact name for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Fax">
+    <xsd:annotation>
+      <xsd:documentation>Fax number for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Currency">
+    <xsd:annotation>
+      <xsd:documentation>Currency code used to determine the currency in which to process invoices for the customer. 
+Note: If foreign currency sales are not required (Accounts Receivable Setup)  or a blank entry is made then the local currency is used.  
+You cannot change a customer's currency once transactions (sales orders etc.) have been processed for that customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="UserField1">
+    <xsd:annotation>
+      <xsd:documentation>This is a free format alphanumeric user defined field.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="UserField2">
+    <xsd:annotation>
+      <xsd:documentation>This is a numeric user defined field.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GstExemptFlag">
+    <xsd:annotation>
+      <xsd:documentation>Canadian GST exemption flag. Settings are as follows:
+E - Exempt to exempt the customer from GST.
+N - To indicate that GST is applicable to the customer. Note: Only required if your nationality code is defined as CAN (System Setup) and you indicated that the Canadian GST system is required (Tax Options Setup) </xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="E"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GstExemptNum">
+    <xsd:annotation>
+      <xsd:documentation>Canadian GST exempt number for customer. 
+Note: Only required if your nationality code is defined as CAN (System Setup) and you indicated that the Canadian GST system is required (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="GstLevel">
+    <xsd:annotation>
+      <xsd:documentation>Canadian GST shown by flag. Settings as follows:
+I - Invoice if you want GST that is calculated on invoice lines to be shown separately in the invoice totals, and not included in the prices.
+L - Line if you want the GST that is calculated on invoice lines to be included in the line values.
+For stocked items that have GST included in the price, this option has no effect for non-exempt customers as the GST is already part of the price shown at line level. For exempt customers, the GST value that is part of the price is deducted from the line or the total GST value, depending on your selection at this field.
+Note: Only required if your nationality code is defined as CAN (System Setup) and you indicated that the Canadian GST system is required (Tax Options Setup)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="I"/>
+        <xsd:enumeration value="L"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DetailMoveReqd">
+    <xsd:annotation>
+      <xsd:documentation>Retain detail sales movements against the customer. These detail stock movements can be viewed in the Customer Query program and reported on in the Customer Movements program. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ContractPrcReqd">
+    <xsd:annotation>
+      <xsd:documentation>Contract pricing flag. Select this option if you require special prices (or price discounts) for stock items to be available for the customer over a fixed time period. During Sales Order Entry the lowest contract price for the customer is used as the price for the order line. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BuyingGroup1">
+    <xsd:annotation>
+      <xsd:documentation>First buying group to which the customer is associated. This must be different to all the other buying groups.
+Buying groups enable you to classify a number of contract customers into a common group for use within the Contract Pricing program. A maximum of five buying groups can be assigned to the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BuyingGroup2">
+    <xsd:annotation>
+      <xsd:documentation>Second buying group to which the customer is associated. This must be different to all the other buying groups and cannot be entered if the first is blank.
+Buying groups enable you to classify a number of contract customers into a common group for use within the Contract Pricing program. A maximum of five buying groups can be assigned to the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BuyingGroup3">
+    <xsd:annotation>
+      <xsd:documentation>Third buying group to which the customer is associated. This must be different to all the other buying groups and cannot be entered if the second is blank.
+Buying groups enable you to classify a number of contract customers into a common group for use within the Contract Pricing program. A maximum of five buying groups can be assigned to the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BuyingGroup4">
+    <xsd:annotation>
+      <xsd:documentation>Fourth buying group to which the customer is associated. This must be different to all the other buying groups and cannot be entered if the third is blank.
+Buying groups enable you to classify a number of contract customers into a common group for use within the Contract Pricing program. A maximum of five buying groups can be assigned to the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BuyingGroup5">
+    <xsd:annotation>
+      <xsd:documentation>Fifth buying group to which the customer is associated. This must be different to all the other buying groups and cannot be entered if the fourth is blank.
+Buying groups enable you to classify a number of contract customers into a common group for use within the Contract Pricing program. A maximum of five buying groups can be assigned to the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StatementReqd">
+    <xsd:annotation>
+      <xsd:documentation>Statements required flag. Select this option if you want to include this customer for selection when statements are produced for customers using the Statement Print program. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="BackOrdReqd">
+    <xsd:annotation>
+      <xsd:documentation>Back orders allowed. Select this option to allow backorder quantities to be entered against the customer during processing in the Sales Order Entry.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="R"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShippingInstrs">
+    <xsd:annotation>
+      <xsd:documentation>Ship via is the default shipping instruction message to be used for this customer in the Sales Order Entry program. If you leave this field blank, then the default shipping message defined in the Sales Order module (Sales Order Setup) is used.
+However, if in SYSPRO Sales Order Setup, the format of the shipping instructions is defined as 'Coded', the first characters designate an existing code and the shipping instructions will be picked up from the code's description. If this code does not exist, the shipping instructions will be saved as entered.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShippingInstrsCod">
+    <xsd:annotation>
+      <xsd:documentation>In SYSPRO Sales Order Setup, if the format of the shipping instructions is defined as 'Coded', then the shipping instructions code has to be valid.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StateCode">
+    <xsd:annotation>
+      <xsd:documentation>State code for customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DateCustAdded">
+    <xsd:annotation>
+      <xsd:documentation>Date created is the date the customer was initially taken on. If zero then the system date is used.
+Format is CCYY-MM-DD</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StockInterchange">
+    <xsd:annotation>
+      <xsd:documentation>Stock code interchange required. Select this option if you want the customer's stock codes to be converted to the standard SYSPRO stock code during processing in Sales Order Entry. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MaintLastPrcPaid">
+    <xsd:annotation>
+      <xsd:documentation>Customer/stock code cross-reference required. Select this option if you want to retain the last two sales details of any stock item sold to the customer. At the time of entering sales order detail lines you can retrieve this information if you want to enter the same details that were previously processed for the customer. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="IbtCustomer">
+    <xsd:annotation>
+      <xsd:documentation>IBT customer. Select this option if you want to be able to enter inter-branch transfers for this customer during Sales Order Entry. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoDefaultDoc">
+    <xsd:annotation>
+      <xsd:documentation>Default document format is a default document format for the customer used when batch invoices and/or delivery notes are printed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="0"/>
+        <xsd:enumeration value="1"/>
+        <xsd:enumeration value="2"/>
+        <xsd:enumeration value="3"/>
+        <xsd:enumeration value="4"/>
+        <xsd:enumeration value="5"/>
+        <xsd:enumeration value="6"/>
+        <xsd:enumeration value="7"/>
+        <xsd:enumeration value="8"/>
+        <xsd:enumeration value="9"/>
+        <xsd:enumeration value="0"/>
+        <xsd:enumeration value="A"/>
+        <xsd:enumeration value="B"/>
+        <xsd:enumeration value="C"/>
+        <xsd:enumeration value="D"/>
+        <xsd:enumeration value="E"/>
+        <xsd:enumeration value="F"/>
+        <xsd:enumeration value="G"/>
+        <xsd:enumeration value="H"/>
+        <xsd:enumeration value="I"/>
+        <xsd:enumeration value="J"/>
+        <xsd:enumeration value="K"/>
+        <xsd:enumeration value="L"/>
+        <xsd:enumeration value="M"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="O"/>
+        <xsd:enumeration value="P"/>
+        <xsd:enumeration value="Q"/>
+        <xsd:enumeration value="R"/>
+        <xsd:enumeration value="S"/>
+        <xsd:enumeration value="T"/>
+        <xsd:enumeration value="U"/>
+        <xsd:enumeration value="V"/>
+        <xsd:enumeration value="W"/>
+        <xsd:enumeration value="X"/>
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="Z"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CounterSlsOnly">
+    <xsd:annotation>
+      <xsd:documentation>Counter sales only. Select this option if you only require counter sales orders to be accepted for the customer during processing in the Sales Order Entry program. This also prevents any part of a counter sales invoice from being placed on account. This option is only used if the Counter Sales module is installed. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Nationality">
+    <xsd:annotation>
+      <xsd:documentation>Nationality code. If the EC tax system is installed (Tax Options Setup) then you assign a Nationality code to the customer. This is required by EC Vat regulations to generate various reports required for the proper administration of the EC tax system.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CustomerOnHold">
+    <xsd:annotation>
+      <xsd:documentation>Customer on hold flag. Select this option if you want to prohibit new orders from being processed for the customer in the Invoice Posting and Sales Order Entry programs. You will also be unable to process adjustments against the customer in the Payments and Adjustments program. 
+( Y - On hold, N - Not on hold)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="InvCommentCode">
+    <xsd:annotation>
+      <xsd:documentation>Standard comment code is the standard sales order comments to be used for the customer during processing in Sales Order Entry.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="EdiSenderCode">
+    <xsd:annotation>
+      <xsd:documentation>EDI sender code. You use this field to indicate the Sender code of the company from which you import orders electronically via an ASCII file. You can import this file (EDI Sales Order Import) providing that the entry made here matches the sender code of the company transmitting the file (Interface Setup, Local Site).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="EdiFlag">
+    <xsd:annotation>
+      <xsd:documentation>EDI trading partner. Select this option to indicate that the Electronic Data Interchange (EDI) system can be used to generate orders for this customer. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoDefaultType">
+    <xsd:annotation>
+      <xsd:documentation>Default type of sales order that applies to the customer. Settings are as follows:
+Space - Operator default
+O - Sales order
+B - Billing
+S - Scheduled order
+C - Credit note
+D - Debit note
+F - Forward order
+U - Counter sale
+I - IBT
+H - Hierachical order</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="O"/>
+        <xsd:enumeration value="B"/>
+        <xsd:enumeration value="S"/>
+        <xsd:enumeration value="C"/>
+        <xsd:enumeration value="D"/>
+        <xsd:enumeration value="F"/>
+        <xsd:enumeration value="U"/>
+        <xsd:enumeration value="I"/>
+        <xsd:enumeration value="H"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Email">
+    <xsd:annotation>
+      <xsd:documentation>Enter the e-mail address for the customer. If the 'FaxInvoices' element or the 'FaxStatements' element has been set to email documents, this element cannot be spaces.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ApplyOrdDisc">
+    <xsd:annotation>
+      <xsd:documentation>Calculate order discount based on order value/quantity flag. Select this option if you want to be able to assign order discount breaks to this customer. These discounts are applied to the total value or total quantity of an order processed against the customer within the Sales Order Order Entry program. (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ApplyLineDisc">
+    <xsd:annotation>
+      <xsd:documentation>Calculate order line discounts according to product class sold. Select this option if you want to be able to assign order discount breaks to specific customer/product class combinations. These discounts are applied to the order line value or order line quantity of orders processed against the customer within the Sales Order Order Entry program. All common product classes for an order are accumulated and the total of each product class is compared to the discount break tables and the discount applied to each line accordingly.  (Y - Yes, N - No)</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="FaxInvoices" default="N">
+    <xsd:annotation>
+      <xsd:documentation>Fax invoices flag. This element indicates which S/O documents, if any, are to be automatically faxed or emailed. The valid values are:
+
+Spaces or 'N' - No documents faxed or emailed (Default)
+
+'A' - Fax Order ack and Delivery note
+'B' - Fax Order ack and Dispatch note
+'C' - Fax Order ack and Invoice
+'D' - Fax Delivery note and Dispatch note
+'E' - Fax Delivery note and Invoice
+'F' - Fax Dispatch note and Invoice
+'G' - Fax Order ack, Delivery note and Dispatch note
+'H' - Fax Order ack, Delivery note and Invoice
+'I' - Fax Order ack, Dispatch note and Invoice
+'J' - Fax Delivery note, Dispatch note and Invoice
+'K' - Fax Order ack, Delivery note, Dispatch note and invoice
+'W' - Order ack
+'X' - Delivery note
+'Y' - Invoice
+'Z' - Dispatch note
+
+The above codes in lower case will indicate the same combination of documents but to be emailed, eg,
+
+'a' - Email Order ack and Delivery note
+'b' - Email Order ack and Dispatch note
+and so on....</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=" "/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="A"/>
+        <xsd:enumeration value="B"/>
+        <xsd:enumeration value="C"/>
+        <xsd:enumeration value="D"/>
+        <xsd:enumeration value="E"/>
+        <xsd:enumeration value="F"/>
+        <xsd:enumeration value="G"/>
+        <xsd:enumeration value="H"/>
+        <xsd:enumeration value="I"/>
+        <xsd:enumeration value="J"/>
+        <xsd:enumeration value="K"/>
+        <xsd:enumeration value="W"/>
+        <xsd:enumeration value="X"/>
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="Z"/>
+        <xsd:enumeration value="a"/>
+        <xsd:enumeration value="b"/>
+        <xsd:enumeration value="c"/>
+        <xsd:enumeration value="d"/>
+        <xsd:enumeration value="e"/>
+        <xsd:enumeration value="f"/>
+        <xsd:enumeration value="g"/>
+        <xsd:enumeration value="h"/>
+        <xsd:enumeration value="i"/>
+        <xsd:enumeration value="j"/>
+        <xsd:enumeration value="k"/>
+        <xsd:enumeration value="w"/>
+        <xsd:enumeration value="x"/>
+        <xsd:enumeration value="y"/>
+        <xsd:enumeration value="z"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="FaxStatements">
+    <xsd:annotation>
+      <xsd:documentation>Fax statements flag. Select this option if you wish to automatically fax statements to the customer. (Y - Fax, E - Email, N - Print).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="E"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="FaxQuotes">
+    <xsd:annotation>
+      <xsd:documentation>Fax quotes flag. Select this option if you wish to automatically fax quotations to the customer. (Y - Fax, E - Email, N - Print).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:pattern value="N"/>
+        <xsd:pattern value="Y"/>
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="E"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DocFax">
+    <xsd:annotation>
+      <xsd:documentation>Fax number to use when automatically faxing invoices (FaxInvoices = "Y") and or statements  (FaxStatements = "Y") to the customer. If either are set to "Y" then this entry cannot be blank.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DocFaxContact">
+    <xsd:annotation>
+      <xsd:documentation>Contact name to add to the invoices/statements being automatically faxed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToAddr1">
+    <xsd:annotation>
+      <xsd:documentation>First line of the Sold to address. Sold to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToAddr2">
+    <xsd:annotation>
+      <xsd:documentation>Second line of the Sold to address. Sold to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToAddr3">
+    <xsd:annotation>
+      <xsd:documentation>Third line of the Sold to address. Sold to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToAddr3Loc">
+    <xsd:annotation>
+      <xsd:documentation>This is the Sold to address location. Sold to address location can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToAddr4">
+    <xsd:annotation>
+      <xsd:documentation>Fourth line of the Sold to address. Sold to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToAddr5">
+    <xsd:annotation>
+      <xsd:documentation>Fifth line of the Sold to address. Sold to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldPostalCode">
+    <xsd:annotation>
+      <xsd:documentation>Postal/zip code for the sold to address. Sold to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToAddr1">
+    <xsd:annotation>
+      <xsd:documentation>First line of the Ship to address. Ship to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToAddr2">
+    <xsd:annotation>
+      <xsd:documentation>Second line of the Ship to address. Ship to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToAddr3">
+    <xsd:annotation>
+      <xsd:documentation>Third line of the Ship to address. Ship to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToAddr3Loc">
+    <xsd:annotation>
+      <xsd:documentation>This is the Ship to address location. Ship to address location can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToAddr4">
+    <xsd:annotation>
+      <xsd:documentation>Fourth line of the Ship to address. Ship to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToAddr5">
+    <xsd:annotation>
+      <xsd:documentation>Fifth line of the Ship to address. Ship to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipPostalCode">
+    <xsd:annotation>
+      <xsd:documentation>Postal/zip code for the ship to address. Ship to address can be printed on invoices and faxes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="State">
+    <xsd:annotation>
+      <xsd:documentation>This is the state code that is part of the extended tax code applicable to the sold to address. 
+Note: The Extended tax code field is only displayed if your nationality code is defined as USA and either the AVP sales tax system is required or you require tax by advanced geocodes (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CountyZip">
+    <xsd:annotation>
+      <xsd:documentation>This is the county or zip code that is part of the extended tax code applicable to the sold to address. 
+Note: The Extended tax code field is only displayed if your nationality code is defined as USA and either the AVP sales tax system is required or you require tax by advanced geocodes (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="City">
+    <xsd:annotation>
+      <xsd:documentation>This is the city code that is part of the extended tax code applicable to the sold to address. 
+Note: The Extended tax code field is only displayed if your nationality code is defined as USA and either the AVP sales tax system is required or you require tax by advanced geocodes (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="State1">
+    <xsd:annotation>
+      <xsd:documentation>This is the state code that is part of the extended tax code applicable to the ship to address. 
+Note: The Extended tax code field is only displayed if your nationality code is defined as USA and either the AVP sales tax system is required or you require tax by advanced geocodes (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CountyZip1">
+    <xsd:annotation>
+      <xsd:documentation>This is the county or zip code that is part of the extended tax code applicable to the shipto address. 
+Note: The Extended tax code field is only displayed if your nationality code is defined as USA and either the AVP sales tax system is required or you require tax by advanced geocodes (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="City1">
+    <xsd:annotation>
+      <xsd:documentation>This is the city code that is part of the extended tax code applicable to the sold to address. 
+Note: The Extended tax code field is only displayed if your nationality code is defined as USA and either the AVP sales tax system is required or you require tax by advanced geocodes (Tax Options Setup).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DefaultOrdType">
+    <xsd:annotation>
+      <xsd:documentation>Default order type to be used when an order is generated for this customer at header level in the Sales Order Entry program. The entry made here overrides whatever default order type is defined within the Sales Order module.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PoNumberMandatory">
+    <xsd:annotation>
+      <xsd:documentation>Is a customer purchase order required when entering a sales order?</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value=" "/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CompanyTaxNumber">
+    <xsd:annotation>
+      <xsd:documentation>Company registration number</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TransactionNature">
+    <xsd:annotation>
+      <xsd:documentation>Default Intrastat Nature of Transaction for Invoices to be used against customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TransactionNatureC">
+    <xsd:annotation>
+      <xsd:documentation>Default Intrastat Nature of Transaction for Credit Notes to be used against customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DeliveryTerms">
+    <xsd:annotation>
+      <xsd:documentation>Default Intrastat Delivery Terms for Invoices to be used against customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DeliveryTermsC">
+    <xsd:annotation>
+      <xsd:documentation>Default Intrastat Delivery Terms for Credit Notes to be used against customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TpmCustomerFlag">
+    <xsd:annotation>
+      <xsd:documentation>Is the customer a Trade Promotions customer?</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TpmCreditCheck">
+    <xsd:annotation>
+      <xsd:documentation>Does the customer require Trade Promotions credit checking. This is only relevant if the customer is a Trade Promotions customer, and credit checking is required.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="TpmPricingFlag">
+    <xsd:annotation>
+      <xsd:documentation>Does the customer require Trade Promotions pricing. This is only relevant if the customer is a Trade Promotions customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RouteCode">
+    <xsd:annotation>
+      <xsd:documentation>This is the default delivery route to be used in Load Planning is required. If entered, it must be a valid SYSPRO load planning route code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="RouteDistance">
+    <xsd:annotation>
+      <xsd:documentation>This is the distance or sequence to be used against all loads for this customer. It is used to determine the order of loading items.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SalesWarehouse">
+    <xsd:annotation>
+      <xsd:documentation>This is the default warehouse to be used for this customer when entering a sales order. If entered, it must be a valid SYSPRO warehouse.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="WholeOrderShipFlag">
+    <xsd:annotation>
+      <xsd:documentation>Only ship whole order flag. Select this option if you want to invoice the whole order only.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="N"/>
+        <xsd:enumeration value="Y"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="MinimumOrderValue" type="xsd:integer">
+    <xsd:annotation>
+      <xsd:documentation>Minimum order value for customer.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="MinimumOrderChgCod" type="xsd:string">
+    <xsd:annotation>
+      <xsd:documentation>Charge code if below minimum order value. Charge code to be applied if below minimum order value.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="UkVatFlag">
+    <xsd:annotation>
+      <xsd:documentation>Is UK VAT applicable to the customer? Accept A /   / N. Value is A when registered for VAT and UK VAT applicable, blank when registered for VAT and not UK VAT applicable, and N when not registered for VAT and not UK VAT applicable.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="A"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="UkCurrency">
+    <xsd:annotation>
+      <xsd:documentation>Only used if UK VAT flag is set to A. Cannot be the same as the customer currency.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value=""/>
+        <xsd:enumeration value="A"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Salesperson1">
+    <xsd:annotation>
+      <xsd:documentation>First additional salesperson to be used if you are splitting commission. It cannot be the same as the primary salesperson or either of the other additional salespersons defined.
+You can assign three additional salespersons to share the commission earned for any sale made to this customer. You indicate the amount of commission that each salesperson should earn, at the end of capturing an order for this customer. 
+Note: This facility is merely for documentation purposes (i.e. no calculations are actualy performed by the program at the time of capturing the order).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Salesperson2">
+    <xsd:annotation>
+      <xsd:documentation>Second additional salesperson to be used if you are splitting commission. It cannot be the same as the primary salesperson or either of the other additional salespersons defined. It must be left blank if the first additional salesperson is not defined.
+You can assign three additional salespersons to share the commission earned for any sale made to this customer. You indicate the amount of commission that each salesperson should earn, at the end of capturing an order for this customer. 
+Note: This facility is merely for documentation purposes (i.e. no calculations are actualy performed by the program at the time of capturing the order).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Salesperson3">
+    <xsd:annotation>
+      <xsd:documentation>Third additional salesperson to be used if you are splitting commission. It cannot be the same as the primary salesperson or either of the other additional salespersons defined. It must be left blank if the second additional salesperson is not defined.
+You can assign three additional salespersons to share the commission earned for any sale made to this customer. You indicate the amount of commission that each salesperson should earn, at the end of capturing an order for this customer.
+Note: This facility is merely for documentation purposes (i.e. no calculations are actualy performed by the program at the time of capturing the order).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AddTelephone">
+    <xsd:annotation>
+      <xsd:documentation>Additional telephone number for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Telex">
+    <xsd:annotation>
+      <xsd:documentation>Telex number for the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="HighestBalance">
+    <xsd:annotation>
+      <xsd:documentation>This field is usually one entered during the takeon of a debtors book.Highest balance attained represents the highest balance ever held by the customer and is updated automatically by the system after the initial takeon.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="HighInv">
+    <xsd:annotation>
+      <xsd:documentation>Invoice number of oldest outstanding invoice. These fields are normally updated by the system only. However, during the 'takeon' process of a 'Debtors Book' (New installation or new module) - this information may be available and is useful to the credit controller.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="HighInvDays">
+    <xsd:annotation>
+      <xsd:documentation>Age of oldest outstanding invoice. These fields are normally updated by the system only. However, during the 'takeon' process of a 'Debtors Book' (New installation or new module) - this information may be available and is useful to the credit controller.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="eSignature">
+    <xsd:annotation>
+      <xsd:documentation>GUID for eSignature</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToGpsLat">
+    <xsd:annotation>
+      <xsd:documentation> This is the sold to address Latitude.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SoldToGpsLong">
+    <xsd:annotation>
+      <xsd:documentation> This is the sold to address Longitude.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToGpsLat">
+    <xsd:annotation>
+      <xsd:documentation> This is the ship to address Latitude.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="ShipToGpsLong">
+    <xsd:annotation>
+      <xsd:documentation> This is the ship to address Longitude.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="LanguageCode">
+    <xsd:annotation>
+      <xsd:documentation>Language code. Only saved to the record if you have multi language document printing switched on and the language code differs from the default system language.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SetupArCustomer">
+    <xsd:annotation>
+      <xsd:documentation>This is the root element.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element ref="Item" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Item">
+    <xsd:annotation>
+      <xsd:documentation>This element contains information to maintain a single customer.
+NOTE: The information held within the key element is mandatory for all functions. Information held outside the key element is optional for Add/Update and is not required for Delete</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element ref="Key"/>
+        <xsd:element ref="Name" minOccurs="0"/>
+        <xsd:element ref="Salesperson" minOccurs="0"/>
+        <xsd:element ref="Branch" minOccurs="0"/>
+        <xsd:element ref="TermsCode" minOccurs="0"/>
+        <xsd:element ref="ArStatementNo" minOccurs="0"/>
+        <xsd:element ref="ShortName" minOccurs="0"/>
+        <xsd:element ref="ExemptFinChg" minOccurs="0"/>
+        <xsd:element ref="MaintHistory" minOccurs="0"/>
+        <xsd:element ref="CreditStatus" minOccurs="0"/>
+        <xsd:element ref="CreditLimit" minOccurs="0"/>
+        <xsd:element ref="CreditCheckFlag" minOccurs="0"/>
+        <xsd:element ref="PriceCode" minOccurs="0"/>
+        <xsd:element ref="CustomerClass" minOccurs="0"/>
+        <xsd:element ref="InvDiscCode" minOccurs="0"/>
+        <xsd:element ref="BalanceType" minOccurs="0"/>
+        <xsd:element ref="Area" minOccurs="0"/>
+        <xsd:element ref="LineDiscCode" minOccurs="0"/>
+        <xsd:element ref="TaxStatus" minOccurs="0"/>
+        <xsd:element ref="TaxExemptNumber" minOccurs="0"/>
+        <xsd:element ref="SpecialInstrs" minOccurs="0"/>
+        <xsd:element ref="PriceCategoryTable" minOccurs="0"/>
+        <xsd:element ref="Telephone" minOccurs="0"/>
+        <xsd:element ref="TelephoneExtn" minOccurs="0"/>
+        <xsd:element ref="Contact" minOccurs="0"/>
+        <xsd:element ref="Fax" minOccurs="0"/>
+        <xsd:element ref="Currency" minOccurs="0"/>
+        <xsd:element ref="UserField1" minOccurs="0"/>
+        <xsd:element ref="UserField2" minOccurs="0"/>
+        <xsd:element ref="GstExemptFlag" minOccurs="0"/>
+        <xsd:element ref="GstExemptNum" minOccurs="0"/>
+        <xsd:element ref="GstLevel" minOccurs="0"/>
+        <xsd:element ref="DetailMoveReqd" minOccurs="0"/>
+        <xsd:element ref="ContractPrcReqd" minOccurs="0"/>
+        <xsd:element ref="BuyingGroup1" minOccurs="0"/>
+        <xsd:element ref="BuyingGroup2" minOccurs="0"/>
+        <xsd:element ref="BuyingGroup3" minOccurs="0"/>
+        <xsd:element ref="BuyingGroup4" minOccurs="0"/>
+        <xsd:element ref="BuyingGroup5" minOccurs="0"/>
+        <xsd:element ref="StatementReqd" minOccurs="0"/>
+        <xsd:element ref="BackOrdReqd" minOccurs="0"/>
+        <xsd:element ref="ShippingInstrs" minOccurs="0"/>
+        <xsd:element ref="ShippingInstrsCod"/>
+        <xsd:element ref="StateCode" minOccurs="0"/>
+        <xsd:element ref="DateCustAdded" minOccurs="0"/>
+        <xsd:element ref="StockInterchange" minOccurs="0"/>
+        <xsd:element ref="MaintLastPrcPaid" minOccurs="0"/>
+        <xsd:element ref="IbtCustomer" minOccurs="0"/>
+        <xsd:element ref="SoDefaultDoc" minOccurs="0"/>
+        <xsd:element ref="CounterSlsOnly" minOccurs="0"/>
+        <xsd:element ref="Nationality" minOccurs="0"/>
+        <xsd:element ref="CustomerOnHold" minOccurs="0"/>
+        <xsd:element ref="InvCommentCode" minOccurs="0"/>
+        <xsd:element ref="EdiSenderCode" minOccurs="0"/>
+        <xsd:element ref="EdiFlag" minOccurs="0"/>
+        <xsd:element ref="SoDefaultType" minOccurs="0"/>
+        <xsd:element ref="Email" minOccurs="0"/>
+        <xsd:element ref="ApplyOrdDisc" minOccurs="0"/>
+        <xsd:element ref="ApplyLineDisc" minOccurs="0"/>
+        <xsd:element ref="FaxInvoices" minOccurs="0"/>
+        <xsd:element ref="FaxStatements" minOccurs="0"/>
+        <xsd:element ref="FaxQuotes" minOccurs="0"/>
+        <xsd:element ref="DocFax" minOccurs="0"/>
+        <xsd:element ref="DocFaxContact" minOccurs="0"/>
+        <xsd:element ref="SoldToAddr1" minOccurs="0"/>
+        <xsd:element ref="SoldToAddr2" minOccurs="0"/>
+        <xsd:element ref="SoldToAddr3" minOccurs="0"/>
+        <xsd:element ref="SoldToAddr3Loc" minOccurs="0"/>
+        <xsd:element ref="SoldToAddr4" minOccurs="0"/>
+        <xsd:element ref="SoldToAddr5" minOccurs="0"/>
+        <xsd:element ref="SoldPostalCode" minOccurs="0"/>
+        <xsd:element ref="ShipToAddr1" minOccurs="0"/>
+        <xsd:element ref="ShipToAddr2" minOccurs="0"/>
+        <xsd:element ref="ShipToAddr3" minOccurs="0"/>
+        <xsd:element ref="ShipToAddr3Loc" minOccurs="0"/>
+        <xsd:element ref="ShipToAddr4" minOccurs="0"/>
+        <xsd:element ref="ShipToAddr5" minOccurs="0"/>
+        <xsd:element ref="ShipPostalCode" minOccurs="0"/>
+        <xsd:element ref="State" minOccurs="0"/>
+        <xsd:element ref="CountyZip" minOccurs="0"/>
+        <xsd:element ref="City" minOccurs="0"/>
+        <xsd:element ref="State1" minOccurs="0"/>
+        <xsd:element ref="CountyZip1" minOccurs="0"/>
+        <xsd:element ref="City1" minOccurs="0"/>
+        <xsd:element ref="DefaultOrdType" minOccurs="0"/>
+        <xsd:element ref="PoNumberMandatory" minOccurs="0"/>
+        <xsd:element ref="CompanyTaxNumber" minOccurs="0"/>
+        <xsd:element ref="TransactionNature" minOccurs="0"/>
+        <xsd:element ref="TransactionNatureC" minOccurs="0"/>
+        <xsd:element ref="DeliveryTerms" minOccurs="0"/>
+        <xsd:element ref="DeliveryTermsC" minOccurs="0"/>
+        <xsd:element ref="ShippingLocation" minOccurs="0"/>
+        <xsd:element ref="TpmCustomerFlag" minOccurs="0"/>
+        <xsd:element ref="TpmCreditCheck" minOccurs="0"/>
+        <xsd:element ref="TpmPricingFlag" minOccurs="0"/>
+        <xsd:element ref="RouteCode" minOccurs="0"/>
+        <xsd:element ref="RouteDistance" minOccurs="0"/>
+        <xsd:element ref="SalesWarehouse" minOccurs="0"/>
+        <xsd:element ref="WholeOrderShipFlag" minOccurs="0"/>
+        <xsd:element ref="MinimumOrderValue" minOccurs="0"/>
+        <xsd:element ref="MinimumOrderChgCod" minOccurs="0"/>
+        <xsd:element ref="UkVatFlag" minOccurs="0"/>
+        <xsd:element ref="UkCurrency" minOccurs="0"/>
+        <xsd:element ref="Salesperson1" minOccurs="0"/>
+        <xsd:element ref="Salesperson2" minOccurs="0"/>
+        <xsd:element ref="Salesperson3" minOccurs="0"/>
+        <xsd:element ref="AddTelephone" minOccurs="0"/>
+        <xsd:element ref="Telex" minOccurs="0"/>
+        <xsd:element ref="HighestBalance" minOccurs="0"/>
+        <xsd:element ref="HighInv" minOccurs="0"/>
+        <xsd:element ref="HighInvDays" minOccurs="0"/>
+        <xsd:element ref="eSignature" minOccurs="0"/>
+        <xsd:element ref="SoldToGpsLat" minOccurs="0"/>
+        <xsd:element ref="SoldToGpsLong" minOccurs="0"/>
+        <xsd:element ref="ShipToGpsLat" minOccurs="0"/>
+        <xsd:element ref="ShipToGpsLong" minOccurs="0"/>
+        <xsd:element ref="LanguageCode" minOccurs="0"/>
+        <xsd:element name="AltMethodFlag" default="N" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>If the flag is set Y (Yes) then, when adding a stock code with the relevant flag as a line in Sales Order Entry, the alternate stock code substitution will be done automatically.  If not then the supply request window will be displayed.  Default to N. This functionality will only be available after Syspro 7</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="N"/>
+              <xsd:enumeration value="Y"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element ref="SalesAllowed" minOccurs="0"/>
+        <xsd:element ref="UnappPayAllowed" minOccurs="0"/>
+        <xsd:element ref="PaymentsAllowed" minOccurs="0"/>
+        <xsd:element ref="QuotesAllowed" minOccurs="0"/>
+        <xsd:element ref="CrNotesAllowed" minOccurs="0"/>
+        <xsd:element ref="DrNotesAllowed" minOccurs="0"/>
+        <xsd:element ref="QueryAllowed" minOccurs="0"/>
+        <xsd:element ref="PriceGroup" minOccurs="0"/>
+        <xsd:element name="DunningGroup" type="xsd:string" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This is the dunning group of the customer and is used as the default dunning group of this customers invoices.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="DunningFax" type="xsd:string" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>Fax number for the dunning group</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="DunningEmail" type="xsd:string" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>Email address for the dunning group</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PickMarshalling" minOccurs="0">
+          <xsd:annotation>
+            <xsd:documentation>This option allows a customer to use marshalling for their orders where marshalling is not the normal practice, but some Customers require the picks and dispatches to be double checked. Valid options are "Y" - Yes and "N" - No. Default is "N" - No.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="Y"/>
+              <xsd:enumeration value="N"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Key">
+    <xsd:annotation>
+      <xsd:documentation>This element contains the key information required to maintain a customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element ref="Customer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ShippingLocation">
+    <xsd:annotation>
+      <xsd:documentation>Default Shipping Location to be used against customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="QueryAllowed">
+    <xsd:annotation>
+      <xsd:documentation>Queries allowed flag determines if Queries associated with the selected customer will be allowed or denied. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DrNotesAllowed">
+    <xsd:annotation>
+      <xsd:documentation>Debit notes allowed flag determines if Debit not will be allowed or denied for the selected customer. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="CrNotesAllowed">
+    <xsd:annotation>
+      <xsd:documentation>Credit notes allowed flag determines if Credit not will be allowed or denied for the selected customer. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="QuotesAllowed">
+    <xsd:annotation>
+      <xsd:documentation>Quotations allowed flag determines if Quotations are allowed or denied for the selected customer. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PaymentsAllowed">
+    <xsd:annotation>
+      <xsd:documentation>The payment flag determines if payments are allowed are allowed or denied for the selected customer. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="UnappPayAllowed">
+    <xsd:annotation>
+      <xsd:documentation>An Unapplied payment flag determines if unapplied payments are allowed or denied for the selected customer. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="SalesAllowed">
+    <xsd:annotation>
+      <xsd:documentation>Sales order flag determined if Sales orders transactions are allowed or denied for the selected. Customer. This option is only used for Point of Sale (POS).Valid options are (N – Denied and Y-Allowed). If no values is defined, a Y – Allowed is assumed.
+</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PriceGroup">
+    <xsd:annotation>
+      <xsd:documentation>Sales Order Price Group. Used only if 'Pricing method' is set to 'Price Groups'. If 'Price Group Level' in setup options is set to 'Customer', then the value will be validated against 'Price Groups' with selection type of 'Customer', else no value should be entered as 'Price Group' will determined automatically. </xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+  </xsd:element>
+</xsd:schema>

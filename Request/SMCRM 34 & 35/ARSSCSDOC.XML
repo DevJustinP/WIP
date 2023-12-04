@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2021 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Customer Setup Business Object
+-->
+<SetupArCustomer xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="ARSSCSDOC.XSD">
+	<Item>
+		<Key>
+			<Customer>000075</Customer>
+		</Key>
+		<Name>Johnsons Bicycles - South</Name>
+		<Salesperson>100</Salesperson>
+		<Branch>10</Branch>
+		<TermsCode>0</TermsCode>
+		<ArStatementNo/>
+		<ShortName>Johnsons B</ShortName>
+		<ExemptFinChg>N</ExemptFinChg>
+		<MaintHistory>Y</MaintHistory>
+		<CreditStatus>0</CreditStatus>
+		<CreditLimit>       99999</CreditLimit>
+		<CreditCheckFlag/>
+		<PriceCode>A</PriceCode>
+		<CustomerClass/>
+		<InvDiscCode/>
+		<BalanceType>I</BalanceType>
+		<Area>S</Area>
+		<LineDiscCode/>
+		<TaxStatus>E</TaxStatus>
+		<TaxExemptNumber/>
+		<SpecialInstrs/>
+		<PriceCategoryTable/>
+		<Telephone>555-2844</Telephone>
+		<TelephoneExtn/>
+		<Contact>Gena Davis</Contact>
+		<Fax/>
+		<Currency>$</Currency>
+		<UserField1/>
+		<UserField2>           0.00</UserField2>
+		<GstExemptFlag>E</GstExemptFlag>
+		<GstExemptNum/>
+		<GstLevel>I</GstLevel>
+		<DetailMoveReqd>Y</DetailMoveReqd>
+		<ContractPrcReqd>Y</ContractPrcReqd>
+		<BuyingGroup1/>
+		<BuyingGroup2/>
+		<BuyingGroup3/>
+		<BuyingGroup4/>
+		<BuyingGroup5/>
+		<StatementReqd>Y</StatementReqd>
+		<BackOrdReqd>Y</BackOrdReqd>
+		<ShippingInstrs/>
+		<ShippingInstrsCod/>
+		<StateCode/>
+		<DateCustAdded>2006-02-28</DateCustAdded>
+		<StockInterchange>N</StockInterchange>
+		<MaintLastPrcPaid>N</MaintLastPrcPaid>
+		<IbtCustomer>N</IbtCustomer>
+		<SoDefaultDoc>0</SoDefaultDoc>
+		<CounterSlsOnly>N</CounterSlsOnly>
+		<Nationality/>
+		<CustomerOnHold>N</CustomerOnHold>
+		<InvCommentCode/>
+		<EdiSenderCode/>
+		<EdiFlag>N</EdiFlag>
+		<SoDefaultType/>
+		<Email/>
+		<ApplyOrdDisc>Y</ApplyOrdDisc>
+		<ApplyLineDisc>Y</ApplyLineDisc>
+		<FaxInvoices>N</FaxInvoices>
+		<FaxStatements>N</FaxStatements>
+		<FaxQuotes>N</FaxQuotes>
+		<DocFax/>
+		<DocFaxContact/>
+		<SoldToAddr1>P O Box 1754</SoldToAddr1>
+		<SoldToAddr2>Industrial Area</SoldToAddr2>
+		<SoldToAddr3>Southern Region</SoldToAddr3>
+		<SoldToAddr3Loc/>
+		<SoldToAddr4/>
+		<SoldToAddr5/>
+		<SoldPostalCode/>
+		<ShipToAddr1>82 First Street</ShipToAddr1>
+		<ShipToAddr2>Industrial Area</ShipToAddr2>
+		<ShipToAddr3>Southern Region</ShipToAddr3>
+		<ShipToAddr3Loc/>
+		<ShipToAddr4/>
+		<ShipToAddr5/>
+		<ShipPostalCode/>
+		<State/>
+		<CountyZip/>
+		<City/>
+		<State1/>
+		<CountyZip1/>
+		<City1/>
+		<DefaultOrdType/>
+		<PoNumberMandatory/>
+		<CompanyTaxNumber/>
+		<TransactionNature/>
+		<TransactionNatureC/>
+		<DeliveryTerms/>
+		<DeliveryTermsC/>
+		<ShippingLocation/>
+		<TpmCustomerFlag>N</TpmCustomerFlag>
+		<TpmCreditCheck/>
+		<TpmPricingFlag>N</TpmPricingFlag>
+		<RouteCode/>
+		<RouteDistance/>
+		<SalesWarehouse/>
+		<WholeOrderShipFlag>N</WholeOrderShipFlag>
+		<MinimumOrderValue>0</MinimumOrderValue>
+		<MinimumOrderChgCod/>
+		<UkVatFlag/>
+		<UkCurrency/>
+		<Salesperson1/>
+		<Salesperson2/>
+		<Salesperson3/>
+		<AddTelephone/>
+		<Telex/>
+		<HighestBalance/>
+		<HighInv/>
+		<HighInvDays/>
+		<eSignature>{36303032-3330-3031-3038-323434363433}</eSignature>
+		<SoldToGpsLat/>
+		<SoldToGpsLong/>
+		<ShipToGpsLat/>
+		<ShipToGpsLong/>
+		<LanguageCode/>
+		<AltMethodFlag/>
+		<SalesAllowed>Y</SalesAllowed>
+		<UnappPayAllowed>Y</UnappPayAllowed>
+		<PaymentsAllowed>Y</PaymentsAllowed>
+		<QuotesAllowed>Y</QuotesAllowed>
+		<CrNotesAllowed>Y</CrNotesAllowed>
+		<DrNotesAllowed>Y</DrNotesAllowed>
+		<QueryAllowed>Y</QueryAllowed>
+		<PriceGroup>BPG</PriceGroup>
+		<DunningGroup/>
+		<DunningFax/>
+		<DunningEmail/>        
+		<PickMarshalling>N</PickMarshalling>
+  </Item>
+</SetupArCustomer>

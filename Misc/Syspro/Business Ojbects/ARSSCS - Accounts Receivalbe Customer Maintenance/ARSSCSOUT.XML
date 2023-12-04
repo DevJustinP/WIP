@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Customer Setup Business Object
+-->
+<setuparcustomer Language="05" CssStyle="" DecFormat="1" DateFormat="01" Version="6.0.003">
+  <item>
+    <key>
+      <customer>JOH002</customer>
+    </key>
+  </item>
+  <StatusOfItems>
+    <RecordsRead>1</RecordsRead>
+    <RecordsInvalid>0</RecordsInvalid>
+  </StatusOfItems>
+</setuparcustomer>

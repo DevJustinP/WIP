@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2014 SYSPRO Ltd.-->
+<!-- 
+     Sample XML for the Customer Maintenance Business Object
+-->
+<SetupArCustomer xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="ARSSCS.XSD">
+  <Parameters>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <ApplyIfEntireDocumentValid>Y</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+    <UpdateFaxEmailOrders>N</UpdateFaxEmailOrders>
+    <UpdateFaxEmailReprint>N</UpdateFaxEmailReprint>
+  </Parameters>
+</SetupArCustomer>
