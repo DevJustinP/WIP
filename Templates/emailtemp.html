@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Gabriella White Open Orders</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrate"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body {
+                font-family: Montserrat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <button onclick="Button_onclick" class="bi bi-envelope">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+            </button>
+        </div>
+        <script>
+            function Button_onclick() {
+                let toEmail = document.getElementById("RepEmail");
+                let toName = document.getElementById("RepName");
+                window.location.href = "mailto:" + toEmail;
+            }
+        </script>
+    </body>
+</html>
