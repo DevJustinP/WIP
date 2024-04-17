@@ -1,0 +1,36 @@
+CRP - 
+    1 - OPS-144
+        update table to carrier 
+
+    2 - OPS-165 (before 166)
+        button validation
+         first click - go to a success page
+         second click - result page
+         return - fine
+
+    3 - OPS-166
+        multiple addresses
+
+    4 - OPS-167
+        update orders in syspro
+        update pickslip in sql tblpickingslipsource
+
+        check drop down for DeliveryType and AddressType in page 
+
+        optional smarty address licenses
+
+    5 - ops-173
+        base off 172  apply to multiple orders
+
+    6 - ops-172
+        allow the customer to see appointments already schedules
+        issues with booking vs available
+        logic for batching appointments together
+        update appointments with multiple pickslips
+
+    - OPS-164
+        address update to emails
+
+fast deadline May 20th
+
+hard deadline May 30th
